@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const autoprefixer = require('autoprefixer');
+const plumber = require('gulp-plumber');
 
 // Configurations
 const buildFiles = [
@@ -16,6 +17,7 @@ const buildFileName = 'eve';
 // Tasks
 gulp.task('build-eve', () => {
     return gulp.src(buildFiles)
+        .pipe(plumber())
         .pipe(sass())
         .pipe(rename({
             basename: buildFileName
@@ -28,6 +30,7 @@ gulp.task('build-eve', () => {
 
 gulp.task('build-eve-min', () => {
     return gulp.src(buildFiles)
+        .pipe(plumber())
         .pipe(sass({
             outputStyle: 'compressed'
         }))
