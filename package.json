@@ -1,0 +1,28 @@
+{
+  "name": "eve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hpivanov/eve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hpivanov/eve/issues"
+  },
+  "homepage": "https://github.com/hpivanov/eve#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2"
+  }
+}
