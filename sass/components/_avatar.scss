@@ -1,0 +1,39 @@
+$eve-avatar-sizes: (
+    x-tiny: 16px,
+    tiny: 24px,
+    small: 28px,
+    normal: 32px,
+    large: 40px,
+    x-large: 96px
+);
+
+@mixin getEveAvatarSize($size) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+}
+
+@mixin getEveAvatarFontSize($sizeName) {
+    @if $sizeName == 'large' {
+        font-size: $eve-font-size-large;
+    } @else if $sizeName == 'x-large' {
+        font-size: $eve-font-size-huge;
+    } @else {
+        font-size: $eve-font-size-small;
+    }
+}
+
+.eve-avatar {
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    vertical-align: middle;
+    color: $eve-primary-color-white;
+
+    @each $eveAvatarSize in map-keys($eve-avatar-sizes) {
+        &.eve-avatar-#{$eveAvatarSize} {
+            @include getEveAvatarSize(map-get($eve-avatar-sizes, $eveAvatarSize));
+            @include getEveAvatarFontSize($eveAvatarSize);
+        }
+    }
+}

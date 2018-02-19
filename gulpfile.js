@@ -25,6 +25,7 @@ gulp.task('build-eve', () => {
         .pipe(postcss([
             autoprefixer()
         ]))
+        .pipe(plumber.stop())
         .pipe(gulp.dest(buildDestination));
 });
 
@@ -41,6 +42,7 @@ gulp.task('build-eve-min', () => {
         .pipe(postcss([
             autoprefixer()
         ]))
+        .pipe(plumber.stop())
         .pipe(gulp.dest(buildDestination));
 });
 
