@@ -1,0 +1,57 @@
+$eve-button-types: (
+    primary: $eve-primary-color-blue,
+    success: $eve-secondary-color-green,
+    warning: $eve-secondary-color-orange,
+    danger: $eve-secondary-color-red
+) !default;
+$eve-button-height: 36px !default;
+$eve-button-outline-border-width: 1px !default;
+
+@mixin getEveButton() {
+    height: $eve-button-height;
+    line-height: $eve-button-height;
+    padding: 0 $eve-spacing-small;
+    border: 0;
+    text-decoration: none;
+    color: $eve-primary-color-white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: $eve-button-height / 2;
+    font-family: sans-serif;
+    font-size: $eve-font-size-normal;
+    outline: none;
+    text-align: center;
+}
+
+@mixin getEveButtonOutline($eveButtonColor) {
+    color: $eveButtonColor;
+    border: $eve-button-outline-border-width solid $eveButtonColor;
+    background: $eve-primary-color-white;
+    height: $eve-button-height - ($eve-button-outline-border-width * 2);
+    line-height: $eve-button-height - ($eve-button-outline-border-width * 2);
+}
+
+@mixin getEveButtonDisabled() {
+    pointer-events: none !important;
+    background: $eve-neutral-color-100 !important;
+    color: $eve-neutral-color-500 !important;
+    border-color: $eve-neutral-color-100 !important;
+}
+
+.eve-button {
+    @include getEveButton();
+
+    @each $eveButtonType in map-keys($eve-button-types) {
+        &.eve-button-#{$eveButtonType} {
+            background: map-get($eve-button-types, $eveButtonType);
+
+            &.eve-button-outline {
+                @include getEveButtonOutline(map-get($eve-button-types, $eveButtonType));
+            }
+        }
+    }
+
+    &.eve-button-disabled {
+        @include getEveButtonDisabled();
+    }
+}

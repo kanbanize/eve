@@ -5,7 +5,15 @@ $eve-avatar-sizes: (
     normal: 32px,
     large: 40px,
     x-large: 96px
-);
+) !default;
+
+@mixin getEveAvatar() {
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    vertical-align: middle;
+    color: $eve-primary-color-white;
+}
 
 @mixin getEveAvatarSize($size) {
     width: $size;
@@ -24,11 +32,7 @@ $eve-avatar-sizes: (
 }
 
 .eve-avatar {
-    display: inline-block;
-    text-align: center;
-    border-radius: 100%;
-    vertical-align: middle;
-    color: $eve-primary-color-white;
+    @include getEveAvatar();
 
     @each $eveAvatarSize in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eveAvatarSize} {

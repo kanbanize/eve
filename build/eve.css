@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-body {
-  font-family: 'Open Sans', sans-serif; }
-
 .eve-avatar {
   display: inline-block;
   text-align: center;
@@ -38,3 +34,55 @@ body {
     height: 96px;
     line-height: 96px;
     font-size: 48px; }
+
+.eve-button {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 18px;
+  font-family: sans-serif;
+  font-size: 14px;
+  outline: none;
+  text-align: center; }
+  .eve-button.eve-button-primary {
+    background: #2196f3; }
+    .eve-button.eve-button-primary.eve-button-outline {
+      color: #2196f3;
+      border: 1px solid #2196f3;
+      background: #fff;
+      height: 34px;
+      line-height: 34px; }
+  .eve-button.eve-button-success {
+    background: #4caf50; }
+    .eve-button.eve-button-success.eve-button-outline {
+      color: #4caf50;
+      border: 1px solid #4caf50;
+      background: #fff;
+      height: 34px;
+      line-height: 34px; }
+  .eve-button.eve-button-warning {
+    background: #ff9800; }
+    .eve-button.eve-button-warning.eve-button-outline {
+      color: #ff9800;
+      border: 1px solid #ff9800;
+      background: #fff;
+      height: 34px;
+      line-height: 34px; }
+  .eve-button.eve-button-danger {
+    background: #f44336; }
+    .eve-button.eve-button-danger.eve-button-outline {
+      color: #f44336;
+      border: 1px solid #f44336;
+      background: #fff;
+      height: 34px;
+      line-height: 34px; }
+  .eve-button.eve-button-disabled {
+    pointer-events: none !important;
+    background: #cfd8dc !important;
+    color: #607d8b !important;
+    border-color: #cfd8dc !important; }
