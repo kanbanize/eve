@@ -1,12 +1,9 @@
 @charset 'utf-8';
 
-// Base
-@import 'sass/base/typography';
-
 // Variables
-@import 'sass/variables/colors';
-@import 'sass/variables/spacing';
-@import 'sass/variables/font';
+@import 'sass/foundations/colors';
+@import 'sass/foundations/spacing';
+@import 'sass/foundations/font';
 
 // Components
 @import 'sass/components/avatar';
