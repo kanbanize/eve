@@ -36,53 +36,79 @@
     font-size: 48px; }
 
 .eve-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 36px;
-  line-height: 36px;
   padding: 0 16px;
   border: 0;
   text-decoration: none;
   color: #fff;
-  display: inline-block;
   cursor: pointer;
   border-radius: 18px;
   font-family: sans-serif;
   font-size: 14px;
   outline: none;
-  text-align: center; }
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  min-width: 72px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
   .eve-button.eve-button-primary {
     background: #2196f3; }
     .eve-button.eve-button-primary.eve-button-outline {
       color: #2196f3;
       border: 1px solid #2196f3;
-      background: #fff;
-      height: 34px;
-      line-height: 34px; }
+      background: #fff; }
+    .eve-button.eve-button-primary:hover {
+      background: #1976d2;
+      border-color: #1976d2;
+      color: #fff; }
   .eve-button.eve-button-success {
     background: #4caf50; }
     .eve-button.eve-button-success.eve-button-outline {
       color: #4caf50;
       border: 1px solid #4caf50;
-      background: #fff;
-      height: 34px;
-      line-height: 34px; }
+      background: #fff; }
+    .eve-button.eve-button-success:hover {
+      background: #388e3c;
+      border-color: #388e3c;
+      color: #fff; }
   .eve-button.eve-button-warning {
     background: #ff9800; }
     .eve-button.eve-button-warning.eve-button-outline {
       color: #ff9800;
       border: 1px solid #ff9800;
-      background: #fff;
-      height: 34px;
-      line-height: 34px; }
+      background: #fff; }
+    .eve-button.eve-button-warning:hover {
+      background: #f57c00;
+      border-color: #f57c00;
+      color: #fff; }
   .eve-button.eve-button-danger {
     background: #f44336; }
     .eve-button.eve-button-danger.eve-button-outline {
       color: #f44336;
       border: 1px solid #f44336;
-      background: #fff;
-      height: 34px;
-      line-height: 34px; }
-  .eve-button.eve-button-disabled {
+      background: #fff; }
+    .eve-button.eve-button-danger:hover {
+      background: #d32f2f;
+      border-color: #d32f2f;
+      color: #fff; }
+  .eve-button.eve-button-disable {
     pointer-events: none !important;
     background: #cfd8dc !important;
     color: #607d8b !important;
     border-color: #cfd8dc !important; }
+
+.eve-button-group {
+  display: inline-flex; }
+  .eve-button-group .eve-button {
+    border-radius: 0; }
+  .eve-button-group .eve-button:first-child {
+    border-radius: 18px 0 0 18px; }
+  .eve-button-group .eve-button:last-child {
+    border-radius: 0 18px 18px 0; }

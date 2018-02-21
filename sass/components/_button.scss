@@ -5,33 +5,53 @@ $eve-button-types: (
     danger: $eve-secondary-color-red
 ) !default;
 $eve-button-height: 36px !default;
-$eve-button-outline-border-width: 1px !default;
+$eve-button-border-radius: $eve-button-height / 2 !default;
 
 @mixin getEveButton() {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: $eve-button-height;
-    line-height: $eve-button-height;
     padding: 0 $eve-spacing-small;
     border: 0;
     text-decoration: none;
     color: $eve-primary-color-white;
-    display: inline-block;
     cursor: pointer;
-    border-radius: $eve-button-height / 2;
+    border-radius: $eve-button-border-radius;
     font-family: sans-serif;
     font-size: $eve-font-size-normal;
     outline: none;
-    text-align: center;
+    user-select: none;
+    box-sizing: border-box;
+    min-width: 72px;
+    appearance: none;
 }
 
 @mixin getEveButtonOutline($eveButtonColor) {
     color: $eveButtonColor;
-    border: $eve-button-outline-border-width solid $eveButtonColor;
+    border: 1px solid $eveButtonColor;
     background: $eve-primary-color-white;
-    height: $eve-button-height - ($eve-button-outline-border-width * 2);
-    line-height: $eve-button-height - ($eve-button-outline-border-width * 2);
 }
 
-@mixin getEveButtonDisabled() {
+@mixin getEveButtonHover($eveButtonType, $eveButtonColor) {
+    @if $eveButtonType == 'primary' {
+        background: $eve-extended-color-blue-700;
+        border-color: $eve-extended-color-blue-700;
+    } @else if $eveButtonType == 'success' {
+        background: $eve-extended-color-green-700;
+        border-color: $eve-extended-color-green-700;
+    } @else if $eveButtonType == 'warning' {
+        background: $eve-extended-color-orange-700;
+        border-color: $eve-extended-color-orange-700;
+    } @else if $eveButtonType == 'danger' {
+        background: $eve-extended-color-red-700;
+        border-color: $eve-extended-color-red-700;
+    }
+
+    color: $eve-primary-color-white;
+}
+
+@mixin getEveButtonDisable() {
     pointer-events: none !important;
     background: $eve-neutral-color-100 !important;
     color: $eve-neutral-color-500 !important;
@@ -48,10 +68,30 @@ $eve-button-outline-border-width: 1px !default;
             &.eve-button-outline {
                 @include getEveButtonOutline(map-get($eve-button-types, $eveButtonType));
             }
+
+            &:hover {
+                @include getEveButtonHover($eveButtonType, map-get($eve-button-types, $eveButtonType));
+            }
         }
     }
 
-    &.eve-button-disabled {
-        @include getEveButtonDisabled();
+    &.eve-button-disable {
+        @include getEveButtonDisable();
+    }
+}
+
+.eve-button-group {
+    display: inline-flex;
+
+    .eve-button {
+        border-radius: 0;
+    }
+
+    .eve-button:first-child {
+        border-radius: $eve-button-border-radius 0 0 $eve-button-border-radius;
+    }
+
+    .eve-button:last-child {
+        border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
     }
 }
