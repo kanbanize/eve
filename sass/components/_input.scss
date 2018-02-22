@@ -1,0 +1,28 @@
+$eve-input-height: 32px;
+$eve-input-border-radius: $eve-input-height / 2;
+
+@mixin getEveInput() {
+    height: $eve-input-height;
+    border-radius: $eve-input-border-radius;
+    background: $eve-neutral-color-50;
+    border: 0;
+    outline: none;
+    padding: 0 $eve-spacing-normal;
+    font-size: $eve-font-size-normal;
+    font-family: sans-serif;
+    color: $eve-primary-color-grey;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.eve-input {
+    @include getEveInput();
+
+    &::placeholder {
+        color: $eve-neutral-color-200;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 1px $eve-neutral-color-100;
+    }
+}

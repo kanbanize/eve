@@ -54,10 +54,7 @@
       -ms-user-select: none;
           user-select: none;
   box-sizing: border-box;
-  min-width: 72px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  min-width: 72px; }
   .eve-button.eve-button-primary {
     background: #2196f3; }
     .eve-button.eve-button-primary.eve-button-outline {
@@ -112,3 +109,26 @@
     border-radius: 18px 0 0 18px; }
   .eve-button-group .eve-button:last-child {
     border-radius: 0 18px 18px 0; }
+
+.eve-input {
+  height: 32px;
+  border-radius: 16px;
+  background: #eceff1;
+  border: 0;
+  outline: none;
+  padding: 0 24px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #333;
+  box-sizing: border-box;
+  width: 100%; }
+  .eve-input::-webkit-input-placeholder {
+    color: #b0bec5; }
+  .eve-input:-ms-input-placeholder {
+    color: #b0bec5; }
+  .eve-input::-ms-input-placeholder {
+    color: #b0bec5; }
+  .eve-input::placeholder {
+    color: #b0bec5; }
+  .eve-input:focus {
+    box-shadow: 0 0 0 1px #cfd8dc; }

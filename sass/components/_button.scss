@@ -24,7 +24,6 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
     user-select: none;
     box-sizing: border-box;
     min-width: 72px;
-    appearance: none;
 }
 
 @mixin getEveButtonOutline($eveButtonColor) {
