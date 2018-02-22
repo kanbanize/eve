@@ -6,9 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="build/eve.css">
-    <title>eve</titlexw>
+    <title>eve</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        .eve-title {
+            text-align: center;
+        }
+
+        .eve-component {
+            border: 1px solid #e0e0e0;
+            background: #eee;
+            padding: 24px;
+            margin: 48px;
+        }
+
+        .eve-component .eve-component-title {
+            /* text-align: center; */
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .eve-component .eve-component-content:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    </style>
 </head>
 <body>
+    <h1 class="eve-title">Eve</h1>
+    <!-- Avatar Component -->
+    <div class="eve-component">
+        <div class="eve-component-title">Avatar</div>
+        <div class="eve-component-content">
+            <div class="eve-avatar eve-avatar-x-large" style="background: #2196f3;">HI</div>
+            <div class="eve-avatar eve-avatar-large" style="background: #2196f3;">HI</div>
+            <div class="eve-avatar eve-avatar-normal" style="background: #2196f3;">HI</div>
+            <div class="eve-avatar eve-avatar-small" style="background: #2196f3;">HI</div>
+            <div class="eve-avatar eve-avatar-tiny" style="background: #2196f3;">HI</div>
+            <div class="eve-avatar eve-avatar-x-tiny" style="background: #2196f3;">HI</div>
+        </div>
+    </div>
 
+    <!-- Button Component -->
+    <div class="eve-component">
+        <div class="eve-component-title">Button</div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary">Primary</button>
+            <button class="eve-button eve-button-success">Success</button>
+            <button class="eve-button eve-button-warning">Warning</button>
+            <button class="eve-button eve-button-danger">Danger</button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-outline">Primary</button>
+            <button class="eve-button eve-button-success eve-button-outline">Success</button>
+            <button class="eve-button eve-button-warning eve-button-outline">Warning</button>
+            <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
+        </div>
+        <div class="eve-component-content">
+            <div class="eve-button-group">
+                <button class="eve-button eve-button-primary">Prev</button>
+                <button class="eve-button eve-button-primary">Next</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -8,7 +8,7 @@
     width: 16px;
     height: 16px;
     line-height: 16px;
-    font-size: 12px; }
+    font-size: 10px; }
   .eve-avatar.eve-avatar-tiny {
     width: 24px;
     height: 24px;
@@ -63,7 +63,7 @@
     .eve-button.eve-button-primary.eve-button-outline {
       color: #2196f3;
       border: 1px solid #2196f3;
-      background: #fff; }
+      background: transparent; }
     .eve-button.eve-button-primary:hover {
       background: #1976d2;
       border-color: #1976d2;
@@ -73,7 +73,7 @@
     .eve-button.eve-button-success.eve-button-outline {
       color: #4caf50;
       border: 1px solid #4caf50;
-      background: #fff; }
+      background: transparent; }
     .eve-button.eve-button-success:hover {
       background: #388e3c;
       border-color: #388e3c;
@@ -83,7 +83,7 @@
     .eve-button.eve-button-warning.eve-button-outline {
       color: #ff9800;
       border: 1px solid #ff9800;
-      background: #fff; }
+      background: transparent; }
     .eve-button.eve-button-warning:hover {
       background: #f57c00;
       border-color: #f57c00;
@@ -93,7 +93,7 @@
     .eve-button.eve-button-danger.eve-button-outline {
       color: #f44336;
       border: 1px solid #f44336;
-      background: #fff; }
+      background: transparent; }
     .eve-button.eve-button-danger:hover {
       background: #d32f2f;
       border-color: #d32f2f;

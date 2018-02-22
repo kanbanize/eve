@@ -22,7 +22,9 @@ $eve-avatar-sizes: (
 }
 
 @mixin getEveAvatarFontSize($sizeName) {
-    @if $sizeName == 'large' {
+    @if $sizeName == 'x-tiny' {
+        font-size: $eve-font-size-tiny;
+    } @else if $sizeName == 'large' {
         font-size: $eve-font-size-large;
     } @else if $sizeName == 'x-large' {
         font-size: $eve-font-size-huge;

@@ -30,7 +30,7 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
 @mixin getEveButtonOutline($eveButtonColor) {
     color: $eveButtonColor;
     border: 1px solid $eveButtonColor;
-    background: $eve-primary-color-white;
+    background: transparent;
 }
 
 @mixin getEveButtonHover($eveButtonType, $eveButtonColor) {
