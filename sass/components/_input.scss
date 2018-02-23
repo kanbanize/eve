@@ -7,7 +7,7 @@ $eve-input-border-radius: $eve-input-height / 2;
     background: $eve-neutral-color-50;
     border: 0;
     outline: none;
-    padding: 0 $eve-spacing-normal;
+    padding: 0 $eve-spacing-small;
     font-size: $eve-font-size-normal;
     font-family: sans-serif;
     color: $eve-primary-color-grey;
@@ -26,3 +26,11 @@ $eve-input-border-radius: $eve-input-height / 2;
         box-shadow: inset 0 0 0 1px $eve-neutral-color-100;
     }
 }
+
+// .eve-input-control {
+//     display: flex;
+
+//     .eve-button {
+//         height: $eve-button-height - abs($eve-button-height - $eve-input-height);
+//     }
+// }
