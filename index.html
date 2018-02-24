@@ -4,50 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="build/eve.css">
+    <meta name="google" content="notranslate">
     <title>eve</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="build/eve.min.css">
     <style>
+        html {
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
         body {
-            font-family: sans-serif;
             margin: 0;
             background: #f5f5f5;
             width: 50%;
             margin: 0 auto;
+            font-size: 14px;
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: sans-serif;
         }
 
         .eve-component {
             border: 1px solid #e0e0e0;
             background: #fff;
-            padding: 24px;
             margin: 48px;
-            /* text-align: center; */
         }
 
         .eve-component .eve-component-title {
-            font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 24px;
+            padding: 0 24px;
+            color: #2196f3;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dotted #e0e0e0;
+            letter-spacing: 3px;
+            font-weight: 600;
         }
 
-        .eve-component .eve-component-content:not(:last-child) {
-            margin-bottom: 16px;
+        .eve-component .eve-component-content {
+            padding: 0 24px 24px;
         }
     </style>
 </head>
 <body>
-    <!-- Avatar Component -->
-    <div class="eve-component">
-        <div class="eve-component-title">Avatar</div>
-        <div class="eve-component-content">
-            <div class="eve-avatar eve-avatar-x-large" style="background: #E91E63;">HI</div>
-            <div class="eve-avatar eve-avatar-large" style="background: #E91E63;">HI</div>
-            <div class="eve-avatar eve-avatar-normal" style="background: #E91E63;">HI</div>
-            <div class="eve-avatar eve-avatar-small" style="background: #E91E63;">HI</div>
-            <div class="eve-avatar eve-avatar-tiny" style="background: #E91E63;">HI</div>
-            <div class="eve-avatar eve-avatar-x-tiny" style="background: #E91E63;">HI</div>
-        </div>
-    </div>
-
     <!-- Button Component -->
     <div class="eve-component">
         <div class="eve-component-title">Button</div>
@@ -64,7 +71,76 @@
             <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
         </div>
         <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-text">Primary</button>
+            <button class="eve-button eve-button-success eve-button-text">Success</button>
+            <button class="eve-button eve-button-warning eve-button-text">Warning</button>
+            <button class="eve-button eve-button-danger eve-button-text">Danger</button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary">
+                <i class="material-icons">favorite</i>Primary
+            </button>
+            <button class="eve-button eve-button-success">
+                <i class="material-icons">favorite</i>Success
+            </button>
+            <button class="eve-button eve-button-warning">
+                <i class="material-icons">favorite</i>Warning
+            </button>
+            <button class="eve-button eve-button-danger">
+                <i class="material-icons">favorite</i>Danger
+            </button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-outline">
+                <i class="material-icons">favorite</i>Primary
+            </button>
+            <button class="eve-button eve-button-success eve-button-outline">
+                <i class="material-icons">favorite</i>Success
+            </button>
+            <button class="eve-button eve-button-warning eve-button-outline">
+                <i class="material-icons">favorite</i>Warning
+            </button>
+            <button class="eve-button eve-button-danger eve-button-outline">
+                <i class="material-icons">favorite</i>Danger
+            </button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-text">
+                <i class="material-icons">favorite</i>Primary
+            </button>
+            <button class="eve-button eve-button-success eve-button-text">
+                <i class="material-icons">favorite</i>Success
+            </button>
+            <button class="eve-button eve-button-warning eve-button-text">
+                <i class="material-icons">favorite</i>Warning
+            </button>
+            <button class="eve-button eve-button-danger eve-button-text">
+                <i class="material-icons">favorite</i>Danger
+            </button>
+        </div>
+        <div class="eve-component-content">
+            <button class="eve-button eve-button-primary eve-button-icon">
+                <i class="material-icons">favorite</i>
+            </button>
+            <button class="eve-button eve-button-success eve-button-icon">
+                <i class="material-icons">favorite</i>
+            </button>
+            <button class="eve-button eve-button-warning eve-button-icon">
+                <i class="material-icons">favorite</i>
+            </button>
+            <button class="eve-button eve-button-danger eve-button-icon">
+                <i class="material-icons">favorite</i>
+            </button>
+        </div>
+        <div class="eve-component-content">
             <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
+            <button class="eve-button eve-button-primary eve-button-text eve-button-disable">
+                <i class="material-icons">favorite</i>Disabled
+            </button>
+            <button class="eve-button eve-button-primary eve-button-text eve-button-disable">Disabled</button>
+            <button class="eve-button eve-button-primary eve-button-icon eve-button-disable">
+                <i class="material-icons">favorite</i>
+            </button>
         </div>
         <div class="eve-component-content">
             <div class="eve-button-group">
@@ -86,12 +162,19 @@
         <div class="eve-component-content">
             <input type="text" value="Lorem Ipsum" class="eve-input"/>
         </div>
-        <!-- <div class="eve-component-content">
-            <div class="eve-input-control">
-                <input type="text" value="Lorem Ipsum" class="eve-input"/>
-                <button class="eve-button eve-button-primary">Search</button>
-            </div>
-        </div> -->
+    </div>
+
+    <!-- Avatar Component -->
+    <div class="eve-component">
+        <div class="eve-component-title">Avatar</div>
+        <div class="eve-component-content">
+            <div class="eve-avatar eve-avatar-x-large" style="background: #E91E63;">HI</div>
+            <div class="eve-avatar eve-avatar-large" style="background: #E91E63;">HI</div>
+            <div class="eve-avatar eve-avatar-normal" style="background: #E91E63;">HI</div>
+            <div class="eve-avatar eve-avatar-small" style="background: #E91E63;">HI</div>
+            <div class="eve-avatar eve-avatar-tiny" style="background: #E91E63;">HI</div>
+            <div class="eve-avatar eve-avatar-x-tiny" style="background: #E91E63;">HI</div>
+        </div>
     </div>
 
     <!-- Tooltip Component -->

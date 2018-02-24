@@ -1,5 +1,5 @@
-$eve-tooltip-height: 24px;
-$eve-tooltip-border-radius: $eve-tooltip-height / 2;
+$eve-tooltip-height: 24px !default;
+$eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
 
 @mixin getEveTooltip() {
     background: $eve-primary-color-blue-grey;

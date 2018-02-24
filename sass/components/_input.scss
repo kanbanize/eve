@@ -1,5 +1,5 @@
-$eve-input-height: 32px;
-$eve-input-border-radius: $eve-input-height / 2;
+$eve-input-height: 32px !default;
+$eve-input-border-radius: $eve-input-height / 2 !default;
 
 @mixin getEveInput() {
     height: $eve-input-height;
@@ -9,10 +9,10 @@ $eve-input-border-radius: $eve-input-height / 2;
     outline: none;
     padding: 0 $eve-spacing-small;
     font-size: $eve-font-size-normal;
-    font-family: sans-serif;
     color: $eve-primary-color-grey;
     box-sizing: border-box;
     width: 100%;
+    vertical-align: top;
 }
 
 .eve-input {
@@ -26,11 +26,3 @@ $eve-input-border-radius: $eve-input-height / 2;
         box-shadow: inset 0 0 0 1px $eve-neutral-color-100;
     }
 }
-
-// .eve-input-control {
-//     display: flex;
-
-//     .eve-button {
-//         height: $eve-button-height - abs($eve-button-height - $eve-input-height);
-//     }
-// }
