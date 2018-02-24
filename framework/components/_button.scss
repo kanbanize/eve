@@ -1,0 +1,150 @@
+$eve-button-types: (
+    primary: $eve-primary-color-blue,
+    success: $eve-secondary-color-green,
+    warning: $eve-secondary-color-orange,
+    danger: $eve-secondary-color-red
+) !default;
+$eve-button-height: 36px !default;
+$eve-button-border-radius: $eve-button-height / 2 !default;
+
+.eve-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: $eve-button-height;
+    padding: 0 $eve-spacing-small;
+    border: 0;
+    text-decoration: none;
+    color: $eve-primary-color-white;
+    cursor: pointer;
+    border-radius: $eve-button-border-radius;
+    font-size: $eve-font-size-normal;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    i {
+        font-size: 18px; // TODO: Change this with variable
+        margin-right: $eve-spacing-x-tiny;
+    }
+
+    @each $eveButtonType in map-keys($eve-button-types) {
+        $eveButtonColor: map-get($eve-button-types, $eveButtonType);
+
+        &.eve-button-#{$eveButtonType} {
+            background: $eveButtonColor;
+
+            &:hover {
+                @if $eveButtonType == 'primary' {
+                    background: $eve-extended-color-blue-700;
+                } @else if $eveButtonType == 'success' {
+                    background: $eve-extended-color-green-700;
+                } @else if $eveButtonType == 'warning' {
+                    background: $eve-extended-color-orange-700;
+                } @else if $eveButtonType == 'danger' {
+                    background: $eve-extended-color-red-700;
+                }
+            }
+
+            &:active {
+                @if $eveButtonType == 'primary' {
+                    background: $eve-extended-color-blue-800;
+                } @else if $eveButtonType == 'success' {
+                    background: $eve-extended-color-green-800;
+                } @else if $eveButtonType == 'warning' {
+                    background: $eve-extended-color-orange-800;
+                } @else if $eveButtonType == 'danger' {
+                    background: $eve-extended-color-red-800;
+                }
+            }
+
+            &.eve-button-outline {
+                color: $eveButtonColor;
+                border: 1px solid $eveButtonColor;
+                background: transparent;
+
+                &:hover {
+                    background: $eve-neutral-color-50;
+                    border-color: $eve-neutral-color-50;
+                }
+
+                &:active {
+                    background: $eve-neutral-color-100;
+                    border-color: $eve-neutral-color-100;
+                }
+            }
+
+            &.eve-button-text {
+                text-transform: uppercase;
+                background: transparent;
+                border: 0;
+                color: $eveButtonColor;
+                font-weight: bold;
+
+                &:hover {
+                    background: $eve-neutral-color-50;
+                }
+
+                &:active {
+                    background: $eve-neutral-color-100;
+                }
+            }
+
+            &.eve-button-icon {
+                padding: 0;
+                width: $eve-button-height;
+                height: $eve-button-height;
+                border-radius: 100%;
+                color: $eve-neutral-color-200;
+                background: transparent;
+
+                i {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: $eve-neutral-color-50;
+                    color: $eveButtonColor;
+                }
+
+                &:active {
+                    background: $eve-neutral-color-100;
+                    color: $eveButtonColor;
+                }
+            }
+        }
+    }
+
+    &.eve-button-disable {
+        pointer-events: none;
+        background: $eve-neutral-color-200;
+
+        &.eve-button-outline {
+            background: $eve-neutral-color-200;
+            border-color: $eve-neutral-color-200;
+            color: $eve-primary-color-white;
+        }
+
+        &.eve-button-text {
+            background: transparent;
+            color: $eve-neutral-color-200;
+        }
+    }
+}
+
+.eve-button-group {
+    display: inline-flex;
+
+    .eve-button:not(:first-child):not(:last-child) {
+        border-radius: 0;
+    }
+
+    .eve-button:first-child:not(:last-child) {
+        border-radius: $eve-button-border-radius 0 0 $eve-button-border-radius;
+    }
+
+    .eve-button:last-child:not(:first-child) {
+        border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
+    }
+}

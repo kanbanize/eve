@@ -53,11 +53,7 @@
       -ms-user-select: none;
           user-select: none;
   box-sizing: border-box;
-  min-width: 72px;
-  vertical-align: top;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  vertical-align: top; }
   .eve-button i {
     font-size: 18px;
     margin-right: 4px; }
@@ -82,7 +78,7 @@
       background: transparent;
       border: 0;
       color: #2196f3;
-      font-weight: 600; }
+      font-weight: bold; }
       .eve-button.eve-button-primary.eve-button-text:hover {
         background: #eceff1; }
       .eve-button.eve-button-primary.eve-button-text:active {
@@ -93,8 +89,7 @@
       height: 36px;
       border-radius: 100%;
       color: #b0bec5;
-      background: transparent;
-      min-width: initial; }
+      background: transparent; }
       .eve-button.eve-button-primary.eve-button-icon i {
         margin-right: 0; }
       .eve-button.eve-button-primary.eve-button-icon:hover {
@@ -124,7 +119,7 @@
       background: transparent;
       border: 0;
       color: #4caf50;
-      font-weight: 600; }
+      font-weight: bold; }
       .eve-button.eve-button-success.eve-button-text:hover {
         background: #eceff1; }
       .eve-button.eve-button-success.eve-button-text:active {
@@ -135,8 +130,7 @@
       height: 36px;
       border-radius: 100%;
       color: #b0bec5;
-      background: transparent;
-      min-width: initial; }
+      background: transparent; }
       .eve-button.eve-button-success.eve-button-icon i {
         margin-right: 0; }
       .eve-button.eve-button-success.eve-button-icon:hover {
@@ -166,7 +160,7 @@
       background: transparent;
       border: 0;
       color: #ff9800;
-      font-weight: 600; }
+      font-weight: bold; }
       .eve-button.eve-button-warning.eve-button-text:hover {
         background: #eceff1; }
       .eve-button.eve-button-warning.eve-button-text:active {
@@ -177,8 +171,7 @@
       height: 36px;
       border-radius: 100%;
       color: #b0bec5;
-      background: transparent;
-      min-width: initial; }
+      background: transparent; }
       .eve-button.eve-button-warning.eve-button-icon i {
         margin-right: 0; }
       .eve-button.eve-button-warning.eve-button-icon:hover {
@@ -208,7 +201,7 @@
       background: transparent;
       border: 0;
       color: #f44336;
-      font-weight: 600; }
+      font-weight: bold; }
       .eve-button.eve-button-danger.eve-button-text:hover {
         background: #eceff1; }
       .eve-button.eve-button-danger.eve-button-text:active {
@@ -219,8 +212,7 @@
       height: 36px;
       border-radius: 100%;
       color: #b0bec5;
-      background: transparent;
-      min-width: initial; }
+      background: transparent; }
       .eve-button.eve-button-danger.eve-button-icon i {
         margin-right: 0; }
       .eve-button.eve-button-danger.eve-button-icon:hover {
@@ -242,11 +234,11 @@
 
 .eve-button-group {
   display: inline-flex; }
-  .eve-button-group .eve-button {
+  .eve-button-group .eve-button:not(:first-child):not(:last-child) {
     border-radius: 0; }
-  .eve-button-group .eve-button:first-child {
+  .eve-button-group .eve-button:first-child:not(:last-child) {
     border-radius: 18px 0 0 18px; }
-  .eve-button-group .eve-button:last-child {
+  .eve-button-group .eve-button:last-child:not(:first-child) {
     border-radius: 0 18px 18px 0; }
 
 .eve-input {

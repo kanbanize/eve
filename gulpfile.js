@@ -7,10 +7,7 @@ const autoprefixer = require('autoprefixer');
 const plumber = require('gulp-plumber');
 
 // Configurations
-const buildFiles = [
-    'eve.scss',
-    'sass/**/*.scss'
-];
+const buildFiles = ['framework/**/*.scss'];
 const buildDestination = 'build';
 const buildFileName = 'eve';
 
