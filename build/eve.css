@@ -254,15 +254,21 @@
   width: 100%;
   vertical-align: top; }
   .eve-input::-webkit-input-placeholder {
-    color: #b0bec5; }
+    color: #607d8b; }
   .eve-input:-ms-input-placeholder {
-    color: #b0bec5; }
+    color: #607d8b; }
   .eve-input::-ms-input-placeholder {
-    color: #b0bec5; }
+    color: #607d8b; }
   .eve-input::placeholder {
-    color: #b0bec5; }
+    color: #607d8b; }
   .eve-input:focus {
-    box-shadow: inset 0 0 0 1px #cfd8dc; }
+    box-shadow: inset 0 0 0 1px #2196f3; }
+  .eve-input.eve-input-disable {
+    background: #b0bec5;
+    color: #fff;
+    pointer-events: none; }
+    .eve-input.eve-input-disable:focus {
+      box-shadow: none; }
 
 .eve-tooltip {
   position: relative; }
