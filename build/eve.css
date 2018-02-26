@@ -234,6 +234,10 @@
 
 .eve-button-group {
   display: inline-flex; }
+  .eve-button-group .eve-button i {
+    margin: 0; }
+  .eve-button-group .eve-button:not(:last-child) {
+    border-right: 1px solid #fff; }
   .eve-button-group .eve-button:not(:first-child):not(:last-child) {
     border-radius: 0; }
   .eve-button-group .eve-button:first-child:not(:last-child) {
