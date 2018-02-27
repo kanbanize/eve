@@ -274,6 +274,19 @@
     .eve-input.eve-input-disable:focus {
       box-shadow: none; }
 
+.eve-input-control {
+  display: flex; }
+  .eve-input-control .eve-input {
+    height: 36px; }
+  .eve-input-control .eve-button::before {
+    content: ' ';
+    display: block; }
+
+.eve-input-group {
+  display: flex; }
+  .eve-input-group .eve-input:not(:last-child) {
+    margin-right: 8px; }
+
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {

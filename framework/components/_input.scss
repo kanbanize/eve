@@ -32,3 +32,26 @@ $eve-input-border-radius: $eve-input-height / 2 !default;
         }
     }
 }
+
+.eve-input-control {
+    display: flex;
+
+    .eve-input {
+        height: 36px;
+    }
+
+    .eve-button {
+        &::before {
+            content: ' ';
+            display: block;
+        }
+    }
+}
+
+.eve-input-group {
+    display: flex;
+
+    .eve-input:not(:last-child) {
+        margin-right: $eve-spacing-tiny;
+    }
+}
