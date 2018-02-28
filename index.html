@@ -115,8 +115,7 @@
 
         .eve-component .eve-component-content .eve-component-snippet pre {
             margin: 0;
-            /* white-space: pre-wrap;
-            tab-size: 2; */
+            white-space: pre-wrap;
         }
 
         .eve-snippet {
@@ -300,25 +299,35 @@
             <div id="input" class="eve-component">
                 <div class="eve-component-title">Input</div>
                 <div class="eve-component-content">
-                    <input type="text" class="eve-input"/>
-                </div>
-                <div class="eve-component-content">
-                    <input type="text" placeholder="Placeholder" class="eve-input"/>
-                </div>
-                <div class="eve-component-content">
-                    <input type="text" value="Disabled" class="eve-input eve-input-disable"/>
-                </div>
-                <div class="eve-component-content">
-                    <div class="eve-input-control">
+                    <div class="eve-component-example">
                         <input type="text" class="eve-input"/>
-                        <button class="eve-button eve-button-primary">Search</button>
                     </div>
                 </div>
                 <div class="eve-component-content">
-                    <div class="eve-input-group">
-                        <input type="text" class="eve-input" value="input1"/>
-                        <input type="text" class="eve-input" value="input2"/>
-                        <input type="text" class="eve-input" value="input3"/>
+                    <div class="eve-component-example">
+                        <input type="text" placeholder="Placeholder" class="eve-input"/>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <input type="text" value="Disabled" class="eve-input eve-input-disable"/>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-input-control">
+                            <input type="text" class="eve-input"/>
+                            <button class="eve-button eve-button-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-input-group">
+                            <input type="text" class="eve-input" value="input1"/>
+                            <input type="text" class="eve-input" value="input2"/>
+                            <input type="text" class="eve-input" value="input3"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,12 +336,14 @@
             <div id="avatar" class="eve-component">
                 <div class="eve-component-title">Avatar</div>
                 <div class="eve-component-content">
-                    <div class="eve-avatar eve-avatar-x-large" style="background: #263238;">HI</div>
-                    <div class="eve-avatar eve-avatar-large" style="background: #263238;">HI</div>
-                    <div class="eve-avatar eve-avatar-normal" style="background: #263238;">HI</div>
-                    <div class="eve-avatar eve-avatar-small" style="background: #263238;">HI</div>
-                    <div class="eve-avatar eve-avatar-tiny" style="background: #263238;">HI</div>
-                    <div class="eve-avatar eve-avatar-x-tiny" style="background: #263238;">HI</div>
+                    <div class="eve-component-example">
+                        <div class="eve-avatar eve-avatar-x-large" style="background: #263238;">XL</div>
+                        <div class="eve-avatar eve-avatar-large" style="background: #263238;">L</div>
+                        <div class="eve-avatar eve-avatar-normal" style="background: #263238;">N</div>
+                        <div class="eve-avatar eve-avatar-small" style="background: #263238;">S</div>
+                        <div class="eve-avatar eve-avatar-tiny" style="background: #263238;">T</div>
+                        <div class="eve-avatar eve-avatar-x-tiny" style="background: #263238;">XT</div>
+                    </div>
                 </div>
             </div>
 
@@ -340,10 +351,24 @@
             <div id="tooltip" class="eve-component">
                 <div class="eve-component-title">Tooltip</div>
                 <div class="eve-component-content">
-                    <div class="eve-tooltip eve-tooltip-top" data-tooltip="Tooltip Top" style="display: inline-block;" >Top</div>
-                    <div class="eve-tooltip eve-tooltip-bottom" data-tooltip="Tooltip Bottom" style="display: inline-block;" >Bottom</div>
-                    <div class="eve-tooltip eve-tooltip-left" data-tooltip="Tooltip Left" style="display: inline-block;" >Left</div>
-                    <div class="eve-tooltip eve-tooltip-right" data-tooltip="Tooltip Right" style="display: inline-block;" >Right</div>
+                    <div class="eve-component-example">
+                        <div class="eve-tooltip eve-tooltip-top" data-tooltip="Top" style="display: inline-block;" >Tooltip Top</div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-tooltip eve-tooltip-bottom" data-tooltip="Bottom" style="display: inline-block;" >Tooltip Bottom</div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-tooltip eve-tooltip-left" data-tooltip="Left" style="display: inline-block;" >Tooltip Left</div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-tooltip eve-tooltip-right" data-tooltip="Right" style="display: inline-block;" >Tooltip Right</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -418,7 +443,14 @@
                 .replace(/\${tag(.*?)}/g, function(str) {
                     return snippetMap.tag(snippetCache[str]);
                 })
-                .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s/g, '<br>')
+                // This is a cheat!!!
+                .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s/g, function(str, pos) {
+                    if (!pos) {
+                        return '';
+                    }
+
+                    return '<br/>';
+                })
                 .trim();
 
             snippet.insertAdjacentHTML('afterend',

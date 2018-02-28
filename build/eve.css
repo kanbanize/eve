@@ -277,7 +277,8 @@
 .eve-input-control {
   display: flex; }
   .eve-input-control .eve-input {
-    height: 36px; }
+    height: 36px;
+    margin-right: 8px; }
   .eve-input-control .eve-button::before {
     content: ' ';
     display: block; }

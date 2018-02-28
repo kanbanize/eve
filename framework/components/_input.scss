@@ -38,6 +38,7 @@ $eve-input-border-radius: $eve-input-height / 2 !default;
 
     .eve-input {
         height: 36px;
+        margin-right: $eve-spacing-tiny;
     }
 
     .eve-button {
