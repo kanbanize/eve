@@ -86,11 +86,12 @@
 
         .eve-component .eve-component-title {
             text-transform: uppercase;
-            margin: 0 24px 24px;
+            margin-bottom: 24px;
+            padding: 0 24px;
             height: 48px;
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px dotted #e0e0e0;
             position: sticky;
             background: #fff;
             top: 0;
@@ -100,6 +101,43 @@
 
         .eve-component .eve-component-content {
             padding: 0 24px 24px;
+        }
+
+        .eve-component .eve-component-content .eve-component-example {
+            margin-bottom: 24px;
+        }
+
+        .eve-component .eve-component-content .eve-component-snippet {
+            padding: 24px;
+            /* margin-bottom: 64px; */
+            background: #f5f5f5;
+        }
+
+        .eve-component .eve-component-content .eve-component-snippet pre {
+            margin: 0;
+            /* white-space: pre-wrap;
+            tab-size: 2; */
+        }
+
+        .eve-snippet {
+            line-height: 20px;
+            -webkit-font-smoothing: auto;
+        }
+
+        .eve-snippet-lt,
+        .eve-snippet-gt,
+        .eve-snippet-fs,
+        .eve-snippet-tag {
+            color: #3f51b5;
+        }
+
+        .eve-snippet-eq,
+        .eve-snippet-attr {
+            color: #009688;
+        }
+
+        .eve-snippet-val {
+            color: #e91e63;
         }
     </style>
 </head>
@@ -119,129 +157,141 @@
             <div id="button" class="eve-component">
                 <div class="eve-component-title">Button</div>
                 <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary">Primary</button>
-                    <button class="eve-button eve-button-success">Success</button>
-                    <button class="eve-button eve-button-warning">Warning</button>
-                    <button class="eve-button eve-button-danger">Danger</button>
-                    <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
-                    <div class="eve-component-preview">
+                    <div class="eve-component-example">
                         <button class="eve-button eve-button-primary">Primary</button>
-                    </div>
-                    <div class="eve-component-snippet">
-                        <code class="eve-snippet">
-                            <button class="eve-button eve-button-primary">Primary</button>
-                        </code>
-                    </div>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary eve-button-outline">Primary</button>
-                    <button class="eve-button eve-button-success eve-button-outline">Success</button>
-                    <button class="eve-button eve-button-warning eve-button-outline">Warning</button>
-                    <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
-                    <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary eve-button-text">Primary</button>
-                    <button class="eve-button eve-button-success eve-button-text">Success</button>
-                    <button class="eve-button eve-button-warning eve-button-text">Warning</button>
-                    <button class="eve-button eve-button-danger eve-button-text">Danger</button>
-                    <button class="eve-button eve-button-primary eve-button-text eve-button-disable">Disabled</button>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary">
-                        <i class="material-icons">favorite</i>Primary
-                    </button>
-                    <button class="eve-button eve-button-success">
-                        <i class="material-icons">favorite</i>Success
-                    </button>
-                    <button class="eve-button eve-button-warning">
-                        <i class="material-icons">favorite</i>Warning
-                    </button>
-                    <button class="eve-button eve-button-danger">
-                        <i class="material-icons">favorite</i>Danger
-                    </button>
-                    <button class="eve-button eve-button-primary eve-button-disable">
-                        <i class="material-icons">favorite</i>Disabled
-                    </button>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary eve-button-outline">
-                        <i class="material-icons">favorite</i>Primary
-                    </button>
-                    <button class="eve-button eve-button-success eve-button-outline">
-                        <i class="material-icons">favorite</i>Success
-                    </button>
-                    <button class="eve-button eve-button-warning eve-button-outline">
-                        <i class="material-icons">favorite</i>Warning
-                    </button>
-                    <button class="eve-button eve-button-danger eve-button-outline">
-                        <i class="material-icons">favorite</i>Danger
-                    </button>
-                    <button class="eve-button eve-button-primary eve-button-outline eve-button-disable">
-                        <i class="material-icons">favorite</i>Disabled
-                    </button>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary eve-button-text">
-                        <i class="material-icons">favorite</i>Primary
-                    </button>
-                    <button class="eve-button eve-button-success eve-button-text">
-                        <i class="material-icons">favorite</i>Success
-                    </button>
-                    <button class="eve-button eve-button-warning eve-button-text">
-                        <i class="material-icons">favorite</i>Warning
-                    </button>
-                    <button class="eve-button eve-button-danger eve-button-text">
-                        <i class="material-icons">favorite</i>Danger
-                    </button>
-                    <button class="eve-button eve-button-primary eve-button-text eve-button-disable">
-                        <i class="material-icons">favorite</i>Disabled
-                    </button>
-                </div>
-                <div class="eve-component-content">
-                    <button class="eve-button eve-button-primary eve-button-icon">
-                        <i class="material-icons">favorite</i>
-                    </button>
-                    <button class="eve-button eve-button-success eve-button-icon">
-                        <i class="material-icons">favorite</i>
-                    </button>
-                    <button class="eve-button eve-button-warning eve-button-icon">
-                        <i class="material-icons">favorite</i>
-                    </button>
-                    <button class="eve-button eve-button-danger eve-button-icon">
-                        <i class="material-icons">favorite</i>
-                    </button>
-                    <button class="eve-button eve-button-primary eve-button-icon eve-button-disable">
-                        <i class="material-icons">favorite</i>
-                    </button>
-                </div>
-                <div class="eve-component-content">
-                    <div class="eve-button-group">
-                        <button class="eve-button eve-button-primary">1</button>
-                        <button class="eve-button eve-button-primary">2</button>
-                    </div>
-                    <div class="eve-button-group">
-                        <button class="eve-button eve-button-primary">1</button>
-                        <button class="eve-button eve-button-primary">2</button>
-                        <button class="eve-button eve-button-primary">3</button>
+                        <button class="eve-button eve-button-success">Success</button>
+                        <button class="eve-button eve-button-warning">Warning</button>
+                        <button class="eve-button eve-button-danger">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
                     </div>
                 </div>
                 <div class="eve-component-content">
-                    <div class="eve-button-group">
-                        <button class="eve-button eve-button-primary">Dropdown</button>
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-outline">Primary</button>
+                        <button class="eve-button eve-button-success eve-button-outline">Success</button>
+                        <button class="eve-button eve-button-warning eve-button-outline">Warning</button>
+                        <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-text">Primary</button>
+                        <button class="eve-button eve-button-success eve-button-text">Success</button>
+                        <button class="eve-button eve-button-warning eve-button-text">Warning</button>
+                        <button class="eve-button eve-button-danger eve-button-text">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-text eve-button-disable">Disabled</button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
                         <button class="eve-button eve-button-primary">
-                            <i class="material-icons">keyboard_arrow_down</i>
+                            <i class="material-icons">favorite</i>Primary
+                        </button>
+                        <button class="eve-button eve-button-success">
+                            <i class="material-icons">favorite</i>Success
+                        </button>
+                        <button class="eve-button eve-button-warning">
+                            <i class="material-icons">favorite</i>Warning
+                        </button>
+                        <button class="eve-button eve-button-danger">
+                            <i class="material-icons">favorite</i>Danger
+                        </button>
+                        <button class="eve-button eve-button-primary eve-button-disable">
+                            <i class="material-icons">favorite</i>Disabled
                         </button>
                     </div>
                 </div>
                 <div class="eve-component-content">
-                    <div class="eve-button-group">
-                        <button class="eve-button eve-button-primary">
-                            <i class="material-icons">chevron_left</i>
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-outline">
+                            <i class="material-icons">favorite</i>Primary
                         </button>
-                        <button class="eve-button eve-button-primary">
-                            <i class="material-icons">chevron_right</i>
+                        <button class="eve-button eve-button-success eve-button-outline">
+                            <i class="material-icons">favorite</i>Success
                         </button>
+                        <button class="eve-button eve-button-warning eve-button-outline">
+                            <i class="material-icons">favorite</i>Warning
+                        </button>
+                        <button class="eve-button eve-button-danger eve-button-outline">
+                            <i class="material-icons">favorite</i>Danger
+                        </button>
+                        <button class="eve-button eve-button-primary eve-button-outline eve-button-disable">
+                            <i class="material-icons">favorite</i>Disabled
+                        </button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-text">
+                            <i class="material-icons">favorite</i>Primary
+                        </button>
+                        <button class="eve-button eve-button-success eve-button-text">
+                            <i class="material-icons">favorite</i>Success
+                        </button>
+                        <button class="eve-button eve-button-warning eve-button-text">
+                            <i class="material-icons">favorite</i>Warning
+                        </button>
+                        <button class="eve-button eve-button-danger eve-button-text">
+                            <i class="material-icons">favorite</i>Danger
+                        </button>
+                        <button class="eve-button eve-button-primary eve-button-text eve-button-disable">
+                            <i class="material-icons">favorite</i>Disabled
+                        </button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-icon">
+                            <i class="material-icons">favorite</i>
+                        </button>
+                        <button class="eve-button eve-button-success eve-button-icon">
+                            <i class="material-icons">favorite</i>
+                        </button>
+                        <button class="eve-button eve-button-warning eve-button-icon">
+                            <i class="material-icons">favorite</i>
+                        </button>
+                        <button class="eve-button eve-button-danger eve-button-icon">
+                            <i class="material-icons">favorite</i>
+                        </button>
+                        <button class="eve-button eve-button-primary eve-button-icon eve-button-disable">
+                            <i class="material-icons">favorite</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-button-group">
+                            <button class="eve-button eve-button-primary">1</button>
+                            <button class="eve-button eve-button-primary">2</button>
+                        </div>
+                        <div class="eve-button-group">
+                            <button class="eve-button eve-button-primary">1</button>
+                            <button class="eve-button eve-button-primary">2</button>
+                            <button class="eve-button eve-button-primary">3</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-button-group">
+                            <button class="eve-button eve-button-primary">Dropdown</button>
+                            <button class="eve-button eve-button-primary">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-button-group">
+                            <button class="eve-button eve-button-primary">
+                                <i class="material-icons">chevron_left</i>
+                            </button>
+                            <button class="eve-button eve-button-primary">
+                                <i class="material-icons">chevron_right</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,18 +351,86 @@
     <script>
         // <button class="eve-button eve-button-primary">Primary</button>
 
-        var snippets = document.getElementsByClassName('eve-snippet');
-
-        console.log(snippets);
+        var snippets = document.getElementsByClassName('eve-component-example');
+        var snippetMap = {
+            // lt: '<span class="eve-snippet-lt">&lt;</span>',
+            gt: '<span class="eve-snippet-gt">&gt;</span>',
+            // eq: '<span class="eve-snippet-eq">=</span>',
+            // fs: '<span class="eve-snippet-fs">/</span>',
+            val: function(val) {
+                return '<span class="eve-snippet-val">' + val + '</span>';
+            },
+            attr: function(attr) {
+                return '<span class="eve-snippet-attr">' + attr + '</span>';
+            },
+            tag: function(tag) {
+                return '<span class="eve-snippet-tag">' + tag.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
+            }
+        };
 
         for (var i = 0; i < snippets.length; i++) {
             var snippet = snippets[i];
-            var snippetHtml = snippet.innerHTML;
+            var snippetCache = {};
+            var snippetTemplate = snippet.innerHTML
+                // Prepare
+                .replace(/<(\/?)([a-z]+)(>?)/gi, function(str) {
+                    var tagId = '${tag' + guid()  + '}';
 
-            snippet.innerHTML = snippetHtml.replace(/</g, '<span class="eve-snippet-lt">&lt;</span>')
-                .replace(/>/g, '<span class="eve-snippet-eq">&gt;</span>')
-                // .replace(/=/g, '&lt;span class="eve-snippet-gt"&gt;=&lt/span&gt')
-                // .replace(/class/g, '&lt;span class="eve-snippet-class"&gt;class&lt/span&gt');
+                    snippetCache[tagId] = str;
+
+                    return tagId;
+                })
+                .replace(/>/g, '${gt}')
+                // .replace(/=/g, '${eq}')
+                // .replace(/\//g, '${fs}')
+                .replace(/".*?"/g, function(str) {
+                    var valId = '${val' + guid() + '}';
+
+                    snippetCache[valId] = str;
+
+                    return valId;
+                })
+                .replace(/[a-z\-]+=/gi, function(str) {
+                    var attrId = '${attr' + guid() + '}';
+
+                    snippetCache[attrId] = str;
+
+                    return attrId;
+                })
+                // .replace(/button/g, function(str, pos) {
+                //     var tagId = '${tag' + pos + '}';
+
+                //     snippetCache[tagId] = str;
+
+                //     return tagId;
+                // })
+                // Replace
+                .replace(/\${lt}/g, snippetMap.lt)
+                .replace(/\${gt}/g, snippetMap.gt)
+                // .replace(/\${eq}/g, snippetMap.eq)
+                // .replace(/\${fs}/g, snippetMap.fs)
+                .replace(/\${val(.*?)}/g, function(str) {
+                    return snippetMap.val(snippetCache[str]);
+                })
+                .replace(/\${attr(.*?)}/g, function(str) {
+                    return snippetMap.attr(snippetCache[str]);
+                })
+                .replace(/\${tag(.*?)}/g, function(str) {
+                    return snippetMap.tag(snippetCache[str]);
+                })
+                .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s/g, '<br>')
+                .trim();
+
+            snippet.insertAdjacentHTML('afterend',
+                '<div class="eve-component-snippet"><pre><code class="eve-snippet">' + snippetTemplate + '</code></pre></div>')
+        }
+
+        function guid() {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+            }
+
+            return s4() + s4() + s4() + s4() + s4() + s4() + s4() + s4();
         }
     </script>
 </body>
