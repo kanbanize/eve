@@ -430,3 +430,39 @@
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+.eve-feedback {
+  height: 100%;
+  min-height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+  color: #333; }
+  .eve-feedback.eve-feedback-primary {
+    background: #2196f3; }
+  .eve-feedback.eve-feedback-success {
+    background: #a5d6a7; }
+  .eve-feedback.eve-feedback-warning {
+    background: #ffcc80; }
+  .eve-feedback.eve-feedback-danger {
+    background: #f44336; }
+  .eve-feedback button.eve-button-success.eve-button-text:hover {
+    background-color: transparent;
+    color: #388e3c; }
+  .eve-feedback button.eve-button-success.eve-button-text:active {
+    color: #2e7d32; }
+  .eve-feedback-icon {
+    display: flex; }
+    .eve-feedback-icon .material-icons {
+      margin-right: 8px;
+      color: #4caf50;
+      font-size: 18px; }
+  .eve-feedback-long-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px; }
+    .eve-feedback-long-action-buttons {
+      display: flex; }
