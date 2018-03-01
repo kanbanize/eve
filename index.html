@@ -98,6 +98,7 @@
             top: 0;
             color: #2196f3;
             font-size: 20px;
+            /* z-index: 1; */
         }
 
         .eve-component .eve-component-content {
@@ -124,14 +125,10 @@
             -webkit-font-smoothing: auto;
         }
 
-        .eve-snippet-lt,
-        .eve-snippet-gt,
-        .eve-snippet-fs,
         .eve-snippet-tag {
             color: #3f51b5;
         }
 
-        .eve-snippet-eq,
         .eve-snippet-attr {
             color: #009688;
         }
@@ -150,9 +147,15 @@
                 <a href="#input" class="eve-navigation-list-item">Input</a>
                 <a href="#avatar" class="eve-navigation-list-item">Avatar</a>
                 <a href="#tooltip" class="eve-navigation-list-item">Tooltip</a>
+                <a href="#progress" class="eve-navigation-list-item">Progress</a>
             </div>
         </div>
         <div class="eve-content">
+            <!-- <div data-component-id="1"></div>
+            <div data-component-id="2"></div>
+            <div data-component-id="3"></div>
+            <div data-component-id="4"></div> -->
+
             <!-- Button Component -->
             <div id="button" class="eve-component">
                 <div class="eve-component-title">Button</div>
@@ -171,7 +174,7 @@
                         <button class="eve-button eve-button-success eve-button-outline">Success</button>
                         <button class="eve-button eve-button-warning eve-button-outline">Warning</button>
                         <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
-                        <button class="eve-button eve-button-primary eve-button-disable">Disabled</button>
+                        <button class="eve-button eve-button-primary eve-button-outline eve-button-disable">Disabled</button>
                     </div>
                 </div>
                 <div class="eve-component-content">
@@ -316,6 +319,16 @@
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
+                        <input type="text" value="Lorem Ipsum" class="eve-input eve-input-success"/>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <input type="text" value="Lorem Ipsum" class="eve-input eve-input-danger"/>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
                         <div class="eve-input-control">
                             <input type="text" class="eve-input"/>
                             <button class="eve-button eve-button-primary">Search</button>
@@ -329,6 +342,11 @@
                             <input type="text" class="eve-input" value="input2"/>
                             <input type="text" class="eve-input" value="input3"/>
                         </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <textarea class="eve-textarea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, natus nam. Commodi corporis natus quis, dolores sapiente quas modi cupiditate, animi delectus eligendi laudantium, porro ab facilis provident similique quo.</textarea>
                     </div>
                 </div>
             </div>
@@ -353,22 +371,42 @@
                 <div class="eve-component-title">Tooltip</div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <div class="eve-tooltip eve-tooltip-top" data-tooltip="Top" style="display: inline-block;" >Tooltip Top</div>
+                        <div class="eve-tooltip eve-tooltip-top" data-tooltip="Top" style="display: inline-block;">Tooltip Top</div>
                     </div>
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <div class="eve-tooltip eve-tooltip-bottom" data-tooltip="Bottom" style="display: inline-block;" >Tooltip Bottom</div>
+                        <div class="eve-tooltip eve-tooltip-bottom" data-tooltip="Bottom" style="display: inline-block;">Tooltip Bottom</div>
                     </div>
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <div class="eve-tooltip eve-tooltip-left" data-tooltip="Left" style="display: inline-block;" >Tooltip Left</div>
+                        <div class="eve-tooltip eve-tooltip-left" data-tooltip="Left" style="display: inline-block;">Tooltip Left</div>
                     </div>
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <div class="eve-tooltip eve-tooltip-right" data-tooltip="Right" style="display: inline-block;" >Tooltip Right</div>
+                        <div class="eve-tooltip eve-tooltip-right" data-tooltip="Right" style="display: inline-block;">Tooltip Right</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Component -->
+            <div id="progress" class="eve-component">
+                <div class="eve-component-title">Progress</div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-progress-line"></div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-progress-oval"></div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-progress-oval" data-label="Lorem Ipsum..."></div>
                     </div>
                 </div>
             </div>
@@ -379,10 +417,6 @@
 
         var snippets = document.getElementsByClassName('eve-component-example');
         var snippetMap = {
-            // lt: '<span class="eve-snippet-lt">&lt;</span>',
-            gt: '<span class="eve-snippet-gt">&gt;</span>',
-            // eq: '<span class="eve-snippet-eq">=</span>',
-            // fs: '<span class="eve-snippet-fs">/</span>',
             val: function(val) {
                 return '<span class="eve-snippet-val">' + val + '</span>';
             },
@@ -407,8 +441,6 @@
                     return tagId;
                 })
                 .replace(/>/g, '${gt}')
-                // .replace(/=/g, '${eq}')
-                // .replace(/\//g, '${fs}')
                 .replace(/".*?"/g, function(str) {
                     var valId = '${val' + guid() + '}';
 
@@ -423,18 +455,8 @@
 
                     return attrId;
                 })
-                // .replace(/button/g, function(str, pos) {
-                //     var tagId = '${tag' + pos + '}';
-
-                //     snippetCache[tagId] = str;
-
-                //     return tagId;
-                // })
                 // Replace
-                .replace(/\${lt}/g, snippetMap.lt)
-                .replace(/\${gt}/g, snippetMap.gt)
-                // .replace(/\${eq}/g, snippetMap.eq)
-                // .replace(/\${fs}/g, snippetMap.fs)
+                .replace(/\${gt}/g, snippetMap.tag('&gt;'))
                 .replace(/\${val(.*?)}/g, function(str) {
                     return snippetMap.val(snippetCache[str]);
                 })

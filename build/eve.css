@@ -267,6 +267,10 @@
     color: #607d8b; }
   .eve-input:focus {
     box-shadow: inset 0 0 0 1px #2196f3; }
+  .eve-input.eve-input-success {
+    box-shadow: inset 0 0 0 1px #4caf50; }
+  .eve-input.eve-input-danger {
+    box-shadow: inset 0 0 0 1px #f44336; }
   .eve-input.eve-input-disable {
     background: #b0bec5;
     color: #fff;
@@ -278,6 +282,7 @@
   display: flex; }
   .eve-input-control .eve-input {
     height: 36px;
+    border-radius: 18px;
     margin-right: 8px; }
   .eve-input-control .eve-button::before {
     content: ' ';
@@ -287,6 +292,19 @@
   display: flex; }
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
+
+.eve-textarea {
+  resize: none;
+  background: #eceff1;
+  padding: 16px;
+  vertical-align: top;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 108px;
+  width: 100%;
+  font-size: 14px;
+  color: #333; }
 
 .eve-tooltip {
   position: relative; }
@@ -334,3 +352,81 @@
   .eve-tooltip.eve-tooltip-right::after {
     bottom: calc(50% - 12px);
     left: calc(100% + 8px); }
+
+.eve-progress-line {
+  width: 100%;
+  background: #eceff1;
+  height: 4px;
+  position: relative;
+  overflow: hidden; }
+  .eve-progress-line::after {
+    content: ' ';
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #2196f3;
+    -webkit-animation-name: eveProgressLine;
+            animation-name: eveProgressLine;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.25s;
+            animation-duration: 1.25s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+
+@-webkit-keyframes eveProgressLine {
+  from {
+    left: -20%; }
+  to {
+    left: 100%; } }
+
+@keyframes eveProgressLine {
+  from {
+    left: -20%; }
+  to {
+    left: 100%; } }
+
+.eve-progress-oval {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .eve-progress-oval::before {
+    content: ' ';
+    background: transparent;
+    border-radius: 100%;
+    border: 4px solid #eceff1;
+    border-top-color: #2196f3;
+    padding: 20px;
+    display: inline-block;
+    -webkit-animation-name: eveProgressOval;
+            animation-name: eveProgressOval;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.25s;
+            animation-duration: 1.25s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  .eve-progress-oval::after {
+    content: attr(data-label);
+    margin-left: 24px; }
+
+@-webkit-keyframes eveProgressOval {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes eveProgressOval {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }

@@ -1,21 +1,25 @@
 {
   "name": "eve",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "A minimalist CSS framework.",
+  "main": "framework/eve.scss",
+  "style": "build/eve.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hpivanov/eve.git"
   },
-  "author": "",
+  "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "css-framework"
+  ],
   "bugs": {
     "url": "https://github.com/hpivanov/eve/issues"
   },
-  "homepage": "https://github.com/hpivanov/eve#readme",
+  "homepage": "https://hpivanov.github.io/eve/",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "gulp": "^3.9.1",
@@ -24,5 +28,11 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "sass-lint": "^1.12.1"
-  }
+  },
+  "files": [
+    "build",
+    "framework",
+    "LICENSE",
+    "README.md"
+  ]
 }
