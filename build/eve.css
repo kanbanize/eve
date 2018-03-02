@@ -414,8 +414,8 @@
             animation-iteration-count: infinite;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
 
 @-webkit-keyframes eveProgressLine {
   from {
