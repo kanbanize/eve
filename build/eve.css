@@ -470,3 +470,23 @@
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+.eve-dialog {
+  width: 400px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 24px; }
+  .eve-dialog .eve-dialog-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2196f3;
+    margin-bottom: 16px; }
+  .eve-dialog .eve-dialog-body {
+    margin-bottom: 16px;
+    line-height: 20px;
+    font-size: 14px; }
+  .eve-dialog .eve-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .eve-dialog .eve-dialog-footer .eve-button:not(:first-child) {
+      margin-left: 16px; }
