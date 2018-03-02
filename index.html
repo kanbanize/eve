@@ -98,21 +98,21 @@
             top: 0;
             color: #2196f3;
             font-size: 20px;
-            /* z-index: 1; */
+            z-index: 1;
         }
 
         .eve-component .eve-component-content {
-            padding: 0 24px 24px;
+            padding: 0 24px 64px;
         }
 
         .eve-component .eve-component-content .eve-component-example {
-            margin-bottom: 24px;
+            padding: 24px;
+            border: 4px solid #f5f5f5;
         }
 
         .eve-component .eve-component-content .eve-component-snippet {
             padding: 24px;
-            /* margin-bottom: 64px; */
-            background: #f5f5ff;
+            background: #f5f5f5;
         }
 
         .eve-component .eve-component-content .eve-component-snippet pre {
@@ -149,6 +149,7 @@
                 <a href="#tooltip" class="eve-navigation-list-item">Tooltip</a>
                 <a href="#progress" class="eve-navigation-list-item">Progress</a>
                 <a href="#feedback" class="eve-navigation-list-item">Feedback</a>
+                <a href="#chips" class="eve-navigation-list-item">Chips</a>
             </div>
         </div>
         <div class="eve-content">
@@ -180,11 +181,11 @@
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <button class="eve-button eve-button-primary eve-button-text">Primary</button>
-                        <button class="eve-button eve-button-success eve-button-text">Success</button>
-                        <button class="eve-button eve-button-warning eve-button-text">Warning</button>
-                        <button class="eve-button eve-button-danger eve-button-text">Danger</button>
-                        <button class="eve-button eve-button-primary eve-button-text eve-button-disable">Disabled</button>
+                        <button class="eve-button eve-button-primary eve-button-invert">Primary</button>
+                        <button class="eve-button eve-button-success eve-button-invert">Success</button>
+                        <button class="eve-button eve-button-warning eve-button-invert">Warning</button>
+                        <button class="eve-button eve-button-danger eve-button-invert">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-invert eve-button-disable">Disabled</button>
                     </div>
                 </div>
                 <div class="eve-component-content">
@@ -227,21 +228,30 @@
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <button class="eve-button eve-button-primary eve-button-text">
+                        <button class="eve-button eve-button-primary eve-button-invert">
                             <i class="material-icons">favorite</i>Primary
                         </button>
-                        <button class="eve-button eve-button-success eve-button-text">
+                        <button class="eve-button eve-button-success eve-button-invert">
                             <i class="material-icons">favorite</i>Success
                         </button>
-                        <button class="eve-button eve-button-warning eve-button-text">
+                        <button class="eve-button eve-button-warning eve-button-invert">
                             <i class="material-icons">favorite</i>Warning
                         </button>
-                        <button class="eve-button eve-button-danger eve-button-text">
+                        <button class="eve-button eve-button-danger eve-button-invert">
                             <i class="material-icons">favorite</i>Danger
                         </button>
-                        <button class="eve-button eve-button-primary eve-button-text eve-button-disable">
+                        <button class="eve-button eve-button-primary eve-button-invert eve-button-disable">
                             <i class="material-icons">favorite</i>Disabled
                         </button>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <button class="eve-button eve-button-primary eve-button-text">Primary</button>
+                        <button class="eve-button eve-button-success eve-button-text">Success</button>
+                        <button class="eve-button eve-button-warning eve-button-text">Warning</button>
+                        <button class="eve-button eve-button-danger eve-button-text">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-text eve-button-disable">Disabled</button>
                     </div>
                 </div>
                 <div class="eve-component-content">
@@ -358,11 +368,11 @@
                 <div class="eve-component-content">
                     <div class="eve-component-example">
                         <div class="eve-avatar eve-avatar-x-large" style="background: #263238;">XL</div>
-                        <div class="eve-avatar eve-avatar-large" style="background: #263238;">L</div>
-                        <div class="eve-avatar eve-avatar-normal" style="background: #263238;">N</div>
-                        <div class="eve-avatar eve-avatar-small" style="background: #263238;">S</div>
-                        <div class="eve-avatar eve-avatar-tiny" style="background: #263238;">T</div>
-                        <div class="eve-avatar eve-avatar-x-tiny" style="background: #263238;">XT</div>
+                        <div class="eve-avatar eve-avatar-large" style="background: #2196f3;">L</div>
+                        <div class="eve-avatar eve-avatar-normal" style="background: #f44336;">N</div>
+                        <div class="eve-avatar eve-avatar-small" style="background: #4caf50;">S</div>
+                        <div class="eve-avatar eve-avatar-tiny" style="background: #4caf50;">T</div>
+                        <div class="eve-avatar eve-avatar-x-tiny" style="background: #ff9800;">Z</div>
                     </div>
                 </div>
             </div>
@@ -407,7 +417,7 @@
                 </div>
                 <div class="eve-component-content">
                     <div class="eve-component-example">
-                        <div class="eve-progress-oval" data-label="Lorem Ipsum..."></div>
+                        <div class="eve-progress-oval" data-label="Loading..."></div>
                     </div>
                 </div>
             </div>
@@ -419,6 +429,24 @@
                 <div class="eve-component-content">
                     <div class="eve-component-example">
                         <div class="eve-feedback eve-feedback-success">
+                            <div class="eve-feedback-text">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-warning">
+                            <div class="eve-feedback-text">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-danger">
                             <div class="eve-feedback-text">
                                 Lorem ipsum dolor sit amet.
                             </div>
@@ -441,11 +469,61 @@
 
                 <div class="eve-component-content">
                     <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-warning">
+                            <div class="eve-feedback-icon">
+                                <i class="material-icons material-icons-warning">favorite</i>
+                                <div class="eve-feedback-text">
+                                Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-danger">
+                            <div class="eve-feedback-icon">
+                                <i class="material-icons material-icons-danger">favorite</i>
+                                <div class="eve-feedback-text">
+                                Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
                         <div class="eve-feedback eve-feedback-success">
                             <div class="eve-feedback-text"> 
                             Lorem ipsum dolor sit amet.
                             </div>
                             <button class="eve-button eve-button-success eve-button-text"> Success
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-warning">
+                            <div class="eve-feedback-text"> 
+                            Lorem ipsum dolor sit amet.
+                            </div>
+                            <button class="eve-button eve-button-warning eve-button-text"> Success
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-danger">
+                            <div class="eve-feedback-text"> 
+                            Lorem ipsum dolor sit amet.
+                            </div>
+                            <button class="eve-button eve-button-danger eve-button-text"> Success
                             </button>
                         </div>
                     </div> 
@@ -465,10 +543,40 @@
                     </div> 
                 </div>
 
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-warning">
+                            <p class="eve-feedback-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, numquam?
+                            </p>
+                            <div class="eve-feedback--buttons">
+                                <button class="eve-button eve-button-warning eve-button-text">Failure</button>
+                                <button class="eve-button eve-button-warning eve-button-text">Success</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-feedback eve-feedback-danger">
+                            <p class="eve-feedback-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, numquam?
+                            </p>
+                            <div class="eve-feedback--buttons">
+                                <button class="eve-button eve-button-danger eve-button-text">Failure</button>
+                                <button class="eve-button eve-button-danger eve-button-text">Success</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                    
             </div>
         </div>
     </div>
 
+                
            
     <script>
         // <button class="eve-button eve-button-primary">Primary</button>

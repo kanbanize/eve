@@ -1,7 +1,7 @@
 $eve-feedback-types: (
-    success: $eve-extended-color-green-200,
-    warning: $eve-extended-color-orange-200,
-    danger: $eve-extended-color-red-200,
+    success: $eve-extended-color-green-100,
+    warning: $eve-extended-color-orange-100,
+    danger: $eve-extended-color-red-100,
 ) !default;
 
 @mixin getEveFeedback() {
@@ -26,15 +26,6 @@ $eve-feedback-types: (
         }
     }
 
-    button.eve-button-success.eve-button-text:hover {
-        background-color: transparent;
-        color: $eve-extended-color-green-700;
-    }
-
-    button.eve-button-success.eve-button-text:active {
-        color: $eve-extended-color-green-800;
-    }
-
     &-icon {
     display: flex;
         
@@ -44,11 +35,19 @@ $eve-feedback-types: (
             font: {
                 size: 18px
             }
+
+            &-warning {
+                color: $eve-extended-color-orange-500;
+            }
+
+            &-danger {
+                color: $eve-extended-color-red-500;
+            }
         }
     }
 
-        &-buttons {
-            display: flex;
-        }
+    &-buttons {
+        display: flex;
     }
+    
 }

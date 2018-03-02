@@ -7,39 +7,32 @@ $eve-avatar-sizes: (
     x-large: 96px
 ) !default;
 
-@mixin getEveAvatar() {
-    display: inline-block;
-    text-align: center;
-    border-radius: 100%;
-    vertical-align: middle;
-    color: $eve-primary-color-white;
-}
-
 @mixin getEveAvatarSize($size) {
     width: $size;
     height: $size;
     line-height: $size;
 }
 
-@mixin getEveAvatarFontSize($sizeName) {
-    @if $sizeName == 'x-tiny' {
-        font-size: $eve-font-size-tiny;
-    } @else if $sizeName == 'large' {
-        font-size: $eve-font-size-large;
-    } @else if $sizeName == 'x-large' {
-        font-size: $eve-font-size-huge;
-    } @else {
-        font-size: $eve-font-size-small;
-    }
-}
-
 .eve-avatar {
-    @include getEveAvatar();
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    vertical-align: middle;
+    color: $eve-primary-color-white;
 
     @each $eveAvatarSize in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eveAvatarSize} {
             @include getEveAvatarSize(map-get($eve-avatar-sizes, $eveAvatarSize));
-            @include getEveAvatarFontSize($eveAvatarSize);
+
+            @if $eveAvatarSize == 'x-tiny' {
+                font-size: $eve-font-size-tiny;
+            } @else if $eveAvatarSize == 'large' {
+                font-size: $eve-font-size-large;
+            } @else if $eveAvatarSize == 'x-large' {
+                font-size: $eve-font-size-huge;
+            } @else {
+                font-size: $eve-font-size-small;
+            }
         }
     }
 }
