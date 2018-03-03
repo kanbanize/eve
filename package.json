@@ -1,5 +1,5 @@
 {
-  "name": "eve",
+  "name": "@hpivanov/eve",
   "version": "0.0.1",
   "description": "A minimalist CSS framework.",
   "main": "framework/eve.scss",
