@@ -1,3 +1,6 @@
-language: sass
+language: node_js
+
 before_install:
- - gem install sass
+  - npm install
+
+script: gulp build
