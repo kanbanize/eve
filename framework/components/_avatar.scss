@@ -7,7 +7,7 @@ $eve-avatar-sizes: (
     x-large: 96px
 ) !default;
 
-@mixin getEveAvatarSize($size) {
+@mixin get-eve-avatar-size($size) {
     width: $size;
     height: $size;
     line-height: $size;
@@ -20,15 +20,15 @@ $eve-avatar-sizes: (
     vertical-align: middle;
     color: $eve-primary-color-white;
 
-    @each $eveAvatarSize in map-keys($eve-avatar-sizes) {
-        &.eve-avatar-#{$eveAvatarSize} {
-            @include getEveAvatarSize(map-get($eve-avatar-sizes, $eveAvatarSize));
+    @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
+        &.eve-avatar-#{$eve-avatar-size} {
+            @include get-eve-avatar-size(map-get($eve-avatar-sizes, $eve-avatar-size));
 
-            @if $eveAvatarSize == 'x-tiny' {
+            @if $eve-avatar-size == 'x-tiny' {
                 font-size: $eve-font-size-tiny;
-            } @else if $eveAvatarSize == 'large' {
+            } @else if $eve-avatar-size == 'large' {
                 font-size: $eve-font-size-large;
-            } @else if $eveAvatarSize == 'x-large' {
+            } @else if $eve-avatar-size == 'x-large' {
                 font-size: $eve-font-size-huge;
             } @else {
                 font-size: $eve-font-size-small;

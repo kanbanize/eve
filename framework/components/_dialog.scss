@@ -1,12 +1,14 @@
+$eve-dialog-box-shadow-color: rgba(0, 0, 0, .1);
+
 .eve-dialog {
     width: 400px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px 0 $eve-dialog-box-shadow-color;
     padding: $eve-spacing-normal;
 
     .eve-dialog-header {
         font-weight: bold;
         font-size: $eve-font-size-x-large;
-        color: $eve-primary-color-blue;;
+        color: $eve-primary-color-blue;
         margin-bottom: $eve-spacing-small;
     }
 
@@ -21,8 +23,10 @@
         align-items: center;
         justify-content: flex-end;
 
-        .eve-button:not(:first-child) {
-            margin-left: $eve-spacing-small;
+        .eve-button {
+            &:not(:first-child) {
+                margin-left: $eve-spacing-small;
+            }
         }
     }
 }

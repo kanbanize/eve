@@ -64,8 +64,10 @@ $eve-textarea-min-height: 108px !default;
 .eve-input-group {
     display: flex;
 
-    .eve-input:not(:last-child) {
-        margin-right: $eve-spacing-tiny;
+    .eve-input {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-tiny;
+        }
     }
 }
 

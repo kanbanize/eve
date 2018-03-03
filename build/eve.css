@@ -490,3 +490,67 @@
     justify-content: flex-end; }
     .eve-dialog .eve-dialog-footer .eve-button:not(:first-child) {
       margin-left: 16px; }
+
+.eve-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  vertical-align: top; }
+  .eve-checkbox .eve-checkbox-native {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: inherit; }
+    .eve-checkbox .eve-checkbox-native:checked ~ .eve-checkbox-mark {
+      background: #4caf50;
+      border-color: #4caf50; }
+      .eve-checkbox .eve-checkbox-native:checked ~ .eve-checkbox-mark::after {
+        display: block; }
+  .eve-checkbox .eve-checkbox-mark {
+    background: #fff;
+    border: 2px solid #b0bec5;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    pointer-events: none; }
+    .eve-checkbox .eve-checkbox-mark::after {
+      content: '';
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+  .eve-checkbox.eve-checkbox-disable {
+    pointer-events: none; }
+    .eve-checkbox.eve-checkbox-disable .eve-checkbox-native:checked ~ .eve-checkbox-mark {
+      background: #b0bec5;
+      border: 0; }
+    .eve-checkbox.eve-checkbox-disable .eve-checkbox-mark {
+      background: #b0bec5;
+      border: 0; }
+      .eve-checkbox.eve-checkbox-disable .eve-checkbox-mark::after {
+        display: block; }
+
+.eve-checkbox-control {
+  display: flex;
+  align-items: center; }
+  .eve-checkbox-control .eve-checkbox {
+    flex-shrink: 0;
+    margin-right: 8px; }
+
+.eve-checkbox-list .eve-checkbox-control:not(:last-child) {
+  margin-bottom: 8px; }
