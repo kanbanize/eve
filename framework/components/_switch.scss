@@ -1,11 +1,15 @@
+$eve-switch-width: 32px !default;
+$eve-switch-height: 18px !default;
+$eve-switch-radius: $eve-switch-height / 2 !default;
+
 .eve-switch {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
-    width: 32px;
-    height: 18px;
+    width: $eve-switch-width;
+    height: $eve-switch-height;
     vertical-align: top;
 
     .eve-switch-native {
@@ -22,7 +26,7 @@
         &:checked ~ .eve-switch-mark {
             &::after {
                 background: $eve-secondary-color-green;
-                left: 16px;
+                left: $eve-switch-width / 2;
             }
         }
     }
@@ -33,13 +37,13 @@
         height: 100%;
         box-sizing: border-box;
         pointer-events: none;
-        border-radius: 9px;
+        border-radius: $eve-switch-radius;
         padding: 2px;
 
         &::after {
             content: '';
-            width: 14px;
-            height: 14px;
+            width: $eve-switch-height - 4;
+            height: $eve-switch-height - 4;
             background: $eve-neutral-color-200;
             border-radius: 100%;
             position: absolute;
