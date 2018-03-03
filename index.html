@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
     <title>eve</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="build/eve.min.css">
     <style>
@@ -148,14 +147,10 @@
                 <a href="#tooltip" class="eve-navigation-list-item">Tooltip</a>
                 <a href="#progress" class="eve-navigation-list-item">Progress</a>
                 <a href="#dialog" class="eve-navigation-list-item">Dialog</a>
+                <a href="#checkbox" class="eve-navigation-list-item">Checkbox</a>
             </div>
         </div>
         <div class="eve-content">
-            <!-- <div data-component-id="1"></div>
-            <div data-component-id="2"></div>
-            <div data-component-id="3"></div>
-            <div data-component-id="4"></div> -->
-
             <!-- Button Component -->
             <div id="button" class="eve-component">
                 <div class="eve-component-title">Button</div>
@@ -436,11 +431,61 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Checkbox Component -->
+            <div id="checkbox" class="eve-component">
+                <div class="eve-component-title">Checkbox</div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-checkbox">
+                            <input class="eve-checkbox-native" type="checkbox" checked="checked">
+                            <div class="eve-checkbox-mark"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-checkbox eve-checkbox-disable">
+                            <input class="eve-checkbox-native" type="checkbox">
+                            <div class="eve-checkbox-mark"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <label class="eve-checkbox-control">
+                            <div class="eve-checkbox">
+                                <input class="eve-checkbox-native" type="checkbox">
+                                <div class="eve-checkbox-mark"></div>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </label>
+                    </div>
+                </div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-checkbox-list">
+                            <label class="eve-checkbox-control">
+                                <div class="eve-checkbox">
+                                    <input class="eve-checkbox-native" type="checkbox" checked="checked">
+                                    <div class="eve-checkbox-mark"></div>
+                                </div>
+                                Checkbox control #1
+                            </label>
+                            <label class="eve-checkbox-control">
+                                <div class="eve-checkbox">
+                                    <input class="eve-checkbox-native" type="checkbox">
+                                    <div class="eve-checkbox-mark"></div>
+                                </div>
+                                Checkbox control #2
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
-        // <button class="eve-button eve-button-primary">Primary</button>
-
         var snippets = document.getElementsByClassName('eve-component-example');
         var snippetMap = {
             val: function(val) {
