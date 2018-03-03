@@ -1,18 +1,18 @@
 // Dependencies
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const rename = require('gulp-rename');
-const autoprefixer = require('autoprefixer');
-const plumber = require('gulp-plumber');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var rename = require('gulp-rename');
+var autoprefixer = require('autoprefixer');
+var plumber = require('gulp-plumber');
 
 // Configurations
-const buildFiles = ['framework/**/*.scss'];
-const buildDestination = 'build';
-const buildFileName = 'eve';
+var buildFiles = ['framework/**/*.scss'];
+var buildDestination = 'build';
+var buildFileName = 'eve';
 
 // Tasks
-gulp.task('build-eve', () => {
+gulp.task('build-eve', function() {
     return gulp.src(buildFiles)
         .pipe(plumber())
         .pipe(sass.sync())
@@ -25,7 +25,7 @@ gulp.task('build-eve', () => {
         .pipe(gulp.dest(buildDestination));
 });
 
-gulp.task('build-eve-min', () => {
+gulp.task('build-eve-min', function() {
     return gulp.src(buildFiles)
         .pipe(plumber())
         .pipe(sass.sync({
@@ -43,6 +43,6 @@ gulp.task('build-eve-min', () => {
 
 gulp.task('build', ['build-eve', 'build-eve-min']);
 
-gulp.task('watch', () => {
+gulp.task('watch', function() {
     gulp.watch(buildFiles, ['build']);
 });
