@@ -14,7 +14,8 @@
     "css",
     "sass",
     "responsive",
-    "css-framework"
+    "css-framework",
+    "flexbox"
   ],
   "bugs": {
     "url": "https://github.com/hpivanov/eve/issues"
