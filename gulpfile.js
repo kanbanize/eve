@@ -15,21 +15,20 @@ const buildFileName = 'eve';
 gulp.task('build-eve', () => {
     return gulp.src(buildFiles)
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass.sync())
         .pipe(rename({
             basename: buildFileName
         }))
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(plumber.stop())
         .pipe(gulp.dest(buildDestination));
 });
 
 gulp.task('build-eve-min', () => {
     return gulp.src(buildFiles)
         .pipe(plumber())
-        .pipe(sass({
+        .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
         .pipe(rename({
@@ -39,7 +38,6 @@ gulp.task('build-eve-min', () => {
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(plumber.stop())
         .pipe(gulp.dest(buildDestination));
 });
 
