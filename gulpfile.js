@@ -14,7 +14,7 @@ const buildFileName = 'eve';
 // Tasks
 gulp.task('build-eve', () => {
     return gulp.src(buildFiles)
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(sass.sync())
         .pipe(rename({
             basename: buildFileName
@@ -27,7 +27,7 @@ gulp.task('build-eve', () => {
 
 gulp.task('build-eve-min', () => {
     return gulp.src(buildFiles)
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
