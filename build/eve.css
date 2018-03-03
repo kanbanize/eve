@@ -453,7 +453,7 @@
             animation-timing-function: linear; }
   .eve-progress-oval::after {
     content: attr(data-label);
-    margin-left: 24px; }
+    margin-left: 16px; }
 
 @-webkit-keyframes eveProgressOval {
   from {
@@ -478,9 +478,8 @@
   .eve-dialog .eve-dialog-header {
     font-weight: bold;
     font-size: 20px;
-    color: #2196f3;
     margin-bottom: 16px; }
-  .eve-dialog .eve-dialog-body {
+  .eve-dialog .eve-dialog-content {
     margin-bottom: 16px;
     line-height: 20px;
     font-size: 14px; }
@@ -490,6 +489,14 @@
     justify-content: flex-end; }
     .eve-dialog .eve-dialog-footer .eve-button:not(:first-child) {
       margin-left: 16px; }
+  .eve-dialog.eve-dialog-primary .eve-dialog-header {
+    color: #2196f3; }
+  .eve-dialog.eve-dialog-success .eve-dialog-header {
+    color: #4caf50; }
+  .eve-dialog.eve-dialog-warning .eve-dialog-header {
+    color: #ff9800; }
+  .eve-dialog.eve-dialog-danger .eve-dialog-header {
+    color: #f44336; }
 
 .eve-checkbox {
   display: inline-flex;

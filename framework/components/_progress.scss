@@ -52,7 +52,7 @@
 
     &::after {
         content: attr(data-label);
-        margin-left: $eve-spacing-normal;
+        margin-left: $eve-spacing-small;
     }
 
     @keyframes eveProgressOval {
