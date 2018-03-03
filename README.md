@@ -7,8 +7,6 @@
 
 ## Quick install
 
-Bulma is constantly in development! Try it out now:
-
 ### NPM
 
 ```sh
