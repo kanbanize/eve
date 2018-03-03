@@ -15,6 +15,6 @@ Bulma is constantly in development! Try it out now:
 npm install @hpivanov/eve
 ```
 
-## Copyright and license
+<!-- ## Copyright and license
 
-Code copyright 2018 Hristo Ivanov. Code released under the [MIT license](https://github.com/hpivanov/eve/blob/master/LICENSE).
+Code copyright 2018 Hristo Ivanov. Code released under the [MIT license](https://github.com/hpivanov/eve/blob/master/LICENSE). -->
