@@ -3,7 +3,10 @@
   text-align: center;
   border-radius: 100%;
   vertical-align: middle;
-  color: #fff; }
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   .eve-avatar.eve-avatar-x-tiny {
     width: 16px;
     height: 16px;

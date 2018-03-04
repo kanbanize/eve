@@ -19,6 +19,9 @@ $eve-avatar-sizes: (
     border-radius: 100%;
     vertical-align: middle;
     color: $eve-primary-color-white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eve-avatar-size} {
