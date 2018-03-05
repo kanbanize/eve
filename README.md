@@ -23,11 +23,11 @@ yarn add @hpivanov/eve
 
 | Browser | Support |
 |---------|---------|
-| Chrome | :heavy_check_mark: |
-| Firefox | :heavy_check_mark: |
-| Safari | :heavy_check_mark: |
-| IE 11/Edge | :heavy_check_mark: |
-| Opera | :heavy_check_mark: |
+| Chrome | Yes |
+| Firefox | Yes |
+| Safari | Yes |
+| IE 11/Edge | Yes |
+| Opera | Yes |
 
 ## License
 
