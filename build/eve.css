@@ -680,3 +680,20 @@
 
 .eve-switch-list .eve-switch-control:not(:last-child) {
   margin-bottom: 8px; }
+
+.eve-list .eve-list-item {
+  display: flex; }
+  .eve-list .eve-list-item:not(:last-child) {
+    margin-bottom: 16px; }
+  .eve-list .eve-list-item .eve-avatar {
+    flex-shrink: 0;
+    margin-right: 24px; }
+  .eve-list .eve-list-item .eve-list-item-content .eve-list-item-title {
+    font-size: 16px;
+    margin-bottom: 4px; }
+  .eve-list .eve-list-item .eve-list-item-content .eve-list-item-description {
+    line-height: 20px;
+    color: #607d8b; }
+  .eve-list .eve-list-item .eve-switch {
+    flex-shrink: 0;
+    margin-left: 24px; }

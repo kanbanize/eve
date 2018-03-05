@@ -150,6 +150,7 @@
                 <a href="#checkbox" class="eve-navigation-list-item">Checkbox</a>
                 <a href="#radio" class="eve-navigation-list-item">Radio</a>
                 <a href="#switch" class="eve-navigation-list-item">Switch</a>
+                <a href="#list" class="eve-navigation-list-item">List</a>
             </div>
         </div>
         <div class="eve-content">
@@ -628,6 +629,39 @@
                     </div>
                 </div>
             </div>
+
+            <!-- List Component -->
+            <div id="list" class="eve-component">
+                <div class="eve-component-title">List</div>
+                <div class="eve-component-content">
+                    <div class="eve-component-example">
+                        <div class="eve-list">
+                            <div class="eve-list-item">
+                                <div class="eve-avatar eve-avatar-large" style="background: #2196f3;">YT</div>
+                                <div class="eve-list-item-content">
+                                    <div class="eve-list-item-title">List item 1</div>
+                                    <div class="eve-list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla, corrupti ullam ut ad placeat explicabo hic cum deserunt est dignissimos vero consequuntur porro. Nam ad earum odit explicabo? Repellat?</div>
+                                </div>
+                                <div class="eve-switch">
+                                    <input class="eve-switch-native" type="checkbox">
+                                    <div class="eve-switch-mark"></div>
+                                </div>
+                            </div>
+                            <div class="eve-list-item">
+                                <div class="eve-avatar eve-avatar-large" style="background: #4caf50;">YT</div>
+                                <div class="eve-list-item-content">
+                                    <div class="eve-list-item-title">List item 2</div>
+                                    <div class="eve-list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla, corrupti ullam ut ad placeat explicabo hic cum deserunt est dignissimos vero consequuntur porro. Nam ad earum odit explicabo? Repellat?</div>
+                                </div>
+                                <div class="eve-switch">
+                                    <input class="eve-switch-native" type="checkbox" checked="checked">
+                                    <div class="eve-switch-mark"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -649,37 +683,35 @@
             var snippetCache = {};
             var snippetTemplate = snippet.innerHTML
                 // Prepare
-                .replace(/<(\/?)([a-z]+)(>?)/gi, function(str) {
-                    var tagId = '${tag' + guid()  + '}';
+                .replace(/(<(\/?)([a-z0-9]+)(>?))|((\/?)>)/gi, function(str) {
+                    var tagId = '{tag' + guid() + '}';
 
                     snippetCache[tagId] = str;
 
                     return tagId;
                 })
-                .replace(/>/g, '${gt}')
-                .replace(/".*?"/g, function(str) {
-                    var valId = '${val' + guid() + '}';
-
-                    snippetCache[valId] = str;
-
-                    return valId;
-                })
                 .replace(/[a-z\-]+=/gi, function(str) {
-                    var attrId = '${attr' + guid() + '}';
+                    var attrId = '{attr' + guid() + '}';
 
                     snippetCache[attrId] = str;
 
                     return attrId;
                 })
+                .replace(/".*?"/g, function(str) {
+                    var valId = '{val' + guid() + '}';
+
+                    snippetCache[valId] = str;
+
+                    return valId;
+                })
                 // Replace
-                .replace(/\${gt}/g, snippetMap.tag('&gt;'))
-                .replace(/\${val(.*?)}/g, function(str) {
+                .replace(/{val.*?}/g, function(str) {
                     return snippetMap.val(snippetCache[str]);
                 })
-                .replace(/\${attr(.*?)}/g, function(str) {
+                .replace(/{attr.*?}/g, function(str) {
                     return snippetMap.attr(snippetCache[str]);
                 })
-                .replace(/\${tag(.*?)}/g, function(str) {
+                .replace(/{tag.*?}/g, function(str) {
                     return snippetMap.tag(snippetCache[str]);
                 })
                 // This is a cheat!!!
@@ -688,7 +720,7 @@
                         return '';
                     }
 
-                    return '<br/>';
+                    return '<br>';
                 })
                 .trim();
 
