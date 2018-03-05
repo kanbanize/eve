@@ -8,8 +8,8 @@ const plumber = require('gulp-plumber');
 const gulpif = require('gulp-if');
 
 // Configurations
-const buildFiles = ['framework/**/*.scss'];
-const buildDestination = 'build';
+const buildFiles = ['src/**/*.scss'];
+const buildDestination = 'dist';
 const buildFileName = 'eve';
 
 // Tasks

@@ -32,7 +32,7 @@
     "sass-lint": "^1.12.1"
   },
   "files": [
-    "build",
+    "dist",
     "LICENSE",
     "README.md"
   ]
