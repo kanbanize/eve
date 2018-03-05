@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/@hpivanov/eve.svg)](https://www.npmjs.com/package/@hpivanov/eve)
 [![Build Status](https://travis-ci.org/hpivanov/eve.svg?branch=master)](https://travis-ci.org/hpivanov/eve)
 
-## Quick install
+## Quick Install
 
 ### NPM
 
@@ -13,6 +13,8 @@
 npm install @hpivanov/eve
 ```
 
-<!-- ## Copyright and license
+### Yarn
 
-Code copyright 2018 Hristo Ivanov. Code released under the [MIT license](https://github.com/hpivanov/eve/blob/master/LICENSE). -->
+```sh
+yarn add @hpivanov/eve
+```
