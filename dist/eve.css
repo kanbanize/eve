@@ -1,43 +1,3 @@
-.eve-avatar {
-  display: inline-block;
-  text-align: center;
-  border-radius: 100%;
-  vertical-align: middle;
-  color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  .eve-avatar.eve-avatar-x-tiny {
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    font-size: 10px; }
-  .eve-avatar.eve-avatar-tiny {
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    font-size: 12px; }
-  .eve-avatar.eve-avatar-small {
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    font-size: 12px; }
-  .eve-avatar.eve-avatar-normal {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 12px; }
-  .eve-avatar.eve-avatar-large {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 16px; }
-  .eve-avatar.eve-avatar-x-large {
-    width: 96px;
-    height: 96px;
-    line-height: 96px;
-    font-size: 48px; }
-
 .eve-button {
   display: inline-flex;
   align-items: center;
@@ -348,6 +308,46 @@
   width: 100%;
   font-size: 14px;
   color: #333; }
+
+.eve-avatar {
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .eve-avatar.eve-avatar-x-tiny {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 10px; }
+  .eve-avatar.eve-avatar-tiny {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px; }
+  .eve-avatar.eve-avatar-small {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px; }
+  .eve-avatar.eve-avatar-normal {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px; }
+  .eve-avatar.eve-avatar-large {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px; }
+  .eve-avatar.eve-avatar-x-large {
+    width: 96px;
+    height: 96px;
+    line-height: 96px;
+    font-size: 48px; }
 
 .eve-tooltip {
   position: relative; }
