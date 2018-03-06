@@ -1,4 +1,4 @@
-# [eve](https://hpivanov.github.io/eve/)
+# [eve.css](https://hpivanov.github.io/evecss)
 
 **A minimalist CSS framework.**
 
