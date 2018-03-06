@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "A minimalist CSS framework.",
   "main": "framework/eve.scss",
-  "style": "build/eve.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hpivanov/evecss.git"
