@@ -2,7 +2,7 @@
 
 **A minimalist CSS framework.**
 
-[![npm](https://img.shields.io/npm/v/eve.svg)](https://www.npmjs.com/package/evecss)
+[![npm](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![Build Status](https://travis-ci.org/hpivanov/evecss.svg?branch=master)](https://travis-ci.org/hpivanov/evecss)
 
 ## Quick Install
