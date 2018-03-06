@@ -1,0 +1,74 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js publish
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  6.9.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "evecss",
+    "version": "0.0.1",
+    "description": "A minimalist CSS framework.",
+    "main": "framework/eve.scss",
+    "style": "build/eve.css",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hpivanov/evecss.git"
+    },
+    "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+      "css",
+      "sass",
+      "responsive",
+      "css-framework",
+      "flexbox"
+    ],
+    "bugs": {
+      "url": "https://github.com/hpivanov/evecss/issues"
+    },
+    "homepage": "https://hpivanov.github.io/evecss/",
+    "devDependencies": {
+      "autoprefixer": "^8.0.0",
+      "gulp": "^3.9.1",
+      "gulp-if": "^2.0.2",
+      "gulp-plumber": "^1.2.0",
+      "gulp-postcss": "^7.0.1",
+      "gulp-rename": "^1.2.2",
+      "gulp-sass": "^3.1.0",
+      "sass-lint": "^1.12.1"
+    },
+    "files": [
+      "dist",
+      "LICENSE",
+      "README.md"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:128791:13)
+      at emitNone (events.js:86:13)
+      at Interface.emit (events.js:185:7)
+      at Interface._ttyWrite (readline.js:726:16)
+      at ReadStream.onkeypress (readline.js:126:10)
+      at emitTwo (events.js:106:13)
+      at ReadStream.emit (events.js:191:7)
+      at emitKeys (internal/readline.js:389:14)
+      at next (native)
+      at ReadStream.onData (readline.js:972:36)
