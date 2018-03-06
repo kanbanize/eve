@@ -706,7 +706,8 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0 8px;
-  color: #333; }
+  color: #333;
+  box-sizing: border-box; }
   .eve-feedback.eve-feedback-success {
     background: #c8e6c9; }
     .eve-feedback.eve-feedback-success i {

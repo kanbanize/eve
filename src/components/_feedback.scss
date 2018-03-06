@@ -19,6 +19,7 @@ $eve-icons-types: (
     justify-content: space-between;
     padding: 0 $eve-spacing-tiny;
     color: $eve-primary-color-grey;
+    box-sizing: border-box;
 
     @each $eve-feedback-type in map-keys($eve-feedback-types) {
         &.eve-feedback-#{$eve-feedback-type} {
