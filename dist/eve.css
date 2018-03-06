@@ -703,26 +703,23 @@
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0 8px;
   color: #333; }
   .eve-feedback.eve-feedback-success {
     background: #c8e6c9; }
+    .eve-feedback.eve-feedback-success i {
+      color: #4caf50; }
   .eve-feedback.eve-feedback-warning {
     background: #ffe0b2; }
+    .eve-feedback.eve-feedback-warning i {
+      color: #ff9800; }
   .eve-feedback.eve-feedback-danger {
     background: #ffcdd2; }
-  .eve-feedback .material-icons-success {
-    color: #4caf50; }
-  .eve-feedback .material-icons-warning {
-    color: #ff9800; }
-  .eve-feedback .material-icons-danger {
-    color: #f44336; }
+    .eve-feedback.eve-feedback-danger i {
+      color: #f44336; }
   .eve-feedback i {
     margin-right: 8px;
     font-size: 18px;
     vertical-align: middle; }
-
-.eve-feedback-actions {
-  display: flex;
-  flex-wrap: nowrap; }
