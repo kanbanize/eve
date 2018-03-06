@@ -1,0 +1,66 @@
+$eve-tooltip-height: 24px !default;
+$eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
+
+.eve-tooltip {
+    position: relative;
+
+    &::after {
+        background: $eve-primary-color-blue-grey;
+        color: $eve-primary-color-white;
+        content: attr(data-tooltip);
+        font-size: $eve-font-size-small;
+        opacity: 0;
+        padding: 0 $eve-spacing-small;
+        border-radius: $eve-tooltip-border-radius;
+        pointer-events: none;
+        position: absolute;
+        text-transform: none;
+        transition: opacity 150ms ease, visibility 150ms ease, transform 150ms ease;
+        visibility: hidden;
+        white-space: pre;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: $eve-tooltip-height;
+        transform: scale(.9);
+        font-family: sans-serif;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+
+    &.eve-tooltip-top {
+        &::after {
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &.eve-tooltip-left {
+        &::after {
+            bottom: calc(50% - 12px);
+            right: calc(100% + 8px);
+        }
+    }
+
+    &.eve-tooltip-bottom {
+        &::after {
+            top: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &.eve-tooltip-right {
+        &::after {
+            bottom: calc(50% - 12px);
+            left: calc(100% + 8px);
+        }
+    }
+}

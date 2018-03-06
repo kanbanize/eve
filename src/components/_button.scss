@@ -29,37 +29,37 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
         margin-right: $eve-spacing-x-tiny;
     }
 
-    @each $eveButtonType in map-keys($eve-button-types) {
-        &.eve-button-#{$eveButtonType} {
-            background: map-get($eve-button-types, $eveButtonType);
+    @each $eve-button-type in map-keys($eve-button-types) {
+        &.eve-button-#{$eve-button-type} {
+            background: map-get($eve-button-types, $eve-button-type);
 
             &:hover {
-                @if $eveButtonType == 'primary' {
+                @if $eve-button-type == 'primary' {
                     background: $eve-extended-color-blue-700;
-                } @else if $eveButtonType == 'success' {
+                } @else if $eve-button-type == 'success' {
                     background: $eve-extended-color-green-700;
-                } @else if $eveButtonType == 'warning' {
+                } @else if $eve-button-type == 'warning' {
                     background: $eve-extended-color-orange-700;
-                } @else if $eveButtonType == 'danger' {
+                } @else if $eve-button-type == 'danger' {
                     background: $eve-extended-color-red-700;
                 }
             }
 
             &:active {
-                @if $eveButtonType == 'primary' {
+                @if $eve-button-type == 'primary' {
                     background: $eve-extended-color-blue-800;
-                } @else if $eveButtonType == 'success' {
+                } @else if $eve-button-type == 'success' {
                     background: $eve-extended-color-green-800;
-                } @else if $eveButtonType == 'warning' {
+                } @else if $eve-button-type == 'warning' {
                     background: $eve-extended-color-orange-800;
-                } @else if $eveButtonType == 'danger' {
+                } @else if $eve-button-type == 'danger' {
                     background: $eve-extended-color-red-800;
                 }
             }
 
             &.eve-button-outline {
-                color: map-get($eve-button-types, $eveButtonType);
-                border: 1px solid map-get($eve-button-types, $eveButtonType);
+                color: map-get($eve-button-types, $eve-button-type);
+                border: 1px solid map-get($eve-button-types, $eve-button-type);
                 background: transparent;
 
                 &:hover {
@@ -77,7 +77,7 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 text-transform: uppercase;
                 background: transparent;
                 border: 0;
-                color: map-get($eve-button-types, $eveButtonType);
+                color: map-get($eve-button-types, $eve-button-type);
                 font-weight: bold;
 
                 &:hover {
@@ -93,29 +93,29 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 text-transform: uppercase;
                 background: transparent;
                 border: 0;
-                color: map-get($eve-button-types, $eveButtonType);
+                color: map-get($eve-button-types, $eve-button-type);
                 font-weight: bold;
 
                 &:hover {
-                    @if $eveButtonType == 'primary' {
+                    @if $eve-button-type == 'primary' {
                         color: $eve-extended-color-blue-700;
-                    } @else if $eveButtonType == 'success' {
+                    } @else if $eve-button-type == 'success' {
                         color: $eve-extended-color-green-700;
-                    } @else if $eveButtonType == 'warning' {
+                    } @else if $eve-button-type == 'warning' {
                         color: $eve-extended-color-orange-700;
-                    } @else if $eveButtonType == 'danger' {
+                    } @else if $eve-button-type == 'danger' {
                         color: $eve-extended-color-red-700;
                     }
                 }
 
                 &:active {
-                    @if $eveButtonType == 'primary' {
+                    @if $eve-button-type == 'primary' {
                         color: $eve-extended-color-blue-800;
-                    } @else if $eveButtonType == 'success' {
+                    } @else if $eve-button-type == 'success' {
                         color: $eve-extended-color-green-800;
-                    } @else if $eveButtonType == 'warning' {
+                    } @else if $eve-button-type == 'warning' {
                         color: $eve-extended-color-orange-800;
-                    } @else if $eveButtonType == 'danger' {
+                    } @else if $eve-button-type == 'danger' {
                         color: $eve-extended-color-red-800;
                     }
                 }
@@ -135,12 +135,12 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
 
                 &:hover {
                     background: $eve-neutral-color-50;
-                    color: map-get($eve-button-types, $eveButtonType);
+                    color: map-get($eve-button-types, $eve-button-type);
                 }
 
                 &:active {
                     background: $eve-neutral-color-100;
-                    color: map-get($eve-button-types, $eveButtonType);
+                    color: map-get($eve-button-types, $eve-button-type);
                 }
             }
         }
@@ -173,19 +173,25 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
         }
 
         &:not(:last-child) {
-            border-right: 1px solid #fff;
+            border-right: 1px solid $eve-primary-color-white;
         }
 
-        &:not(:first-child):not(:last-child) {
-            border-radius: 0;
+        &:not(:first-child) {
+            &:not(:last-child) {
+                border-radius: 0;
+            }
         }
 
-        &:first-child:not(:last-child) {
-            border-radius: $eve-button-border-radius 0 0 $eve-button-border-radius;
+        &:first-child {
+            &:not(:last-child) {
+                border-radius: $eve-button-border-radius 0 0 $eve-button-border-radius;
+            }
         }
 
-        &:last-child:not(:first-child) {
-            border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
+        &:last-child {
+            &:not(:first-child) {
+                border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
+            }
         }
     }
 }

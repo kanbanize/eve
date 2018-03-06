@@ -16,8 +16,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
         animation-duration: 1s;
-        animation-timing-function: linear;
-
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes eveProgressLine {
@@ -53,7 +52,7 @@
 
     &::after {
         content: attr(data-label);
-        margin-left: $eve-spacing-normal;
+        margin-left: $eve-spacing-small;
     }
 
     @keyframes eveProgressOval {

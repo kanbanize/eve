@@ -1,6 +1,6 @@
 {
-  "name": "eve",
-  "version": "0.0.1",
+  "name": "@hpivanov/eve",
+  "version": "0.0.5",
   "description": "A minimalist CSS framework.",
   "main": "framework/eve.scss",
   "style": "build/eve.css",
@@ -14,7 +14,8 @@
     "css",
     "sass",
     "responsive",
-    "css-framework"
+    "css-framework",
+    "flexbox"
   ],
   "bugs": {
     "url": "https://github.com/hpivanov/eve/issues"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
@@ -30,8 +32,7 @@
     "sass-lint": "^1.12.1"
   },
   "files": [
-    "build",
-    "framework",
+    "dist",
     "LICENSE",
     "README.md"
   ]

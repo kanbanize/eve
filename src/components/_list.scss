@@ -1,0 +1,31 @@
+.eve-list {
+    .eve-list-item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-small;
+        }
+
+        .eve-avatar {
+            flex-shrink: 0;
+            margin-right: $eve-spacing-normal;
+        }
+
+        .eve-list-item-content {
+            .eve-list-item-title {
+                font-size: $eve-font-size-large;
+                margin-bottom: $eve-spacing-x-tiny;
+            }
+
+            .eve-list-item-description {
+                line-height: 20px;
+                color: $eve-neutral-color-500;
+            }
+        }
+
+        .eve-switch {
+            flex-shrink: 0;
+            margin-left: $eve-spacing-normal;
+        }
+    }
+}

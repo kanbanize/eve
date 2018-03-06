@@ -1,0 +1,45 @@
+$eve-dialog-types: (
+    primary: $eve-primary-color-blue,
+    success: $eve-secondary-color-green,
+    warning: $eve-secondary-color-orange,
+    danger: $eve-secondary-color-red
+) !default;
+$eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
+
+.eve-dialog {
+    width: 400px;
+    box-shadow: 0 5px 10px 0 $eve-dialog-box-shadow-color;
+    padding: $eve-spacing-normal;
+
+    .eve-dialog-header {
+        font-weight: bold;
+        font-size: $eve-font-size-x-large;
+        margin-bottom: $eve-spacing-small;
+    }
+
+    .eve-dialog-content {
+        margin-bottom: $eve-spacing-small;
+        line-height: 20px;
+        font-size: $eve-font-size-normal;
+    }
+
+    .eve-dialog-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .eve-button {
+            &:not(:first-child) {
+                margin-left: $eve-spacing-small;
+            }
+        }
+    }
+
+    @each $eve-dialog-type in map-keys($eve-dialog-types) {
+        &.eve-dialog-#{$eve-dialog-type} {
+            .eve-dialog-header {
+                color: map-get($eve-dialog-types, $eve-dialog-type);
+            }
+        }
+    }
+}

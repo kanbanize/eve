@@ -1,0 +1,48 @@
+$eve-feedback-types: (
+    success: $eve-extended-color-green-100,
+    warning: $eve-extended-color-orange-100,
+    danger: $eve-extended-color-red-100,
+) !default;
+
+$eve-icons-types: (
+    success: $eve-extended-color-green-500,
+    warning: $eve-extended-color-orange-500,
+    danger: $eve-extended-color-red-500,
+) !default;
+
+.eve-feedback {
+    min-height: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $eve-spacing-tiny;
+    color: $eve-primary-color-grey;
+            
+    @each $eveFeedbackType in map-keys($eve-feedback-types) {
+        $eveFeedbackColor: map-get($eve-feedback-types, $eveFeedbackType);
+
+        &.eve-feedback-#{$eveFeedbackType} {
+            background: $eveFeedbackColor;
+        }
+    }    
+
+    @each $eveIconsType in map-keys($eve-icons-types) {
+        $eveIconsColor: map-get($eve-icons-types, $eveIconsType);
+
+        .material-icons-#{$eveIconsType} {
+            color: $eveIconsColor;
+        }
+    }
+    
+    i {
+        margin-right: $eve-spacing-tiny;
+        font-size:18px;
+        vertical-align: middle;
+    }
+}
+
+.eve-feedback-actions {
+    display: flex;
+    flex-wrap: nowrap;
+}
