@@ -661,7 +661,7 @@
       border-radius: 100%;
       position: absolute;
       left: 2px;
-      transition: left 300ms ease, background 300ms ease; }
+      transition: left 150ms ease, background 150ms ease; }
   .eve-switch.eve-switch-disable {
     pointer-events: none; }
     .eve-switch.eve-switch-disable .eve-switch-native:checked ~ .eve-switch-mark {
@@ -699,13 +699,12 @@
     margin-left: 24px; }
 
 .eve-feedback {
-  min-height: 32px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 8px;
+  padding: 8px;
   color: #333;
   box-sizing: border-box; }
   .eve-feedback.eve-feedback-success {
@@ -724,3 +723,16 @@
     margin-right: 8px;
     font-size: 18px;
     vertical-align: middle; }
+  .eve-feedback .eve-feedback-content {
+    display: flex;
+    align-items: center; }
+  .eve-feedback .eve-feedback-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 8px; }
+    .eve-feedback .eve-feedback-actions .eve-button {
+      font-size: 12px;
+      padding: 0;
+      height: initial; }
+      .eve-feedback .eve-feedback-actions .eve-button:not(:first-child) {
+        margin-left: 8px; }

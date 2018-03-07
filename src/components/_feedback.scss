@@ -11,13 +11,12 @@ $eve-icons-types: (
 ) !default;
 
 .eve-feedback {
-    min-height: 32px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0 $eve-spacing-tiny;
+    padding: $eve-spacing-tiny;
     color: $eve-primary-color-grey;
     box-sizing: border-box;
 
@@ -35,5 +34,26 @@ $eve-icons-types: (
         margin-right: $eve-spacing-tiny;
         font-size: 18px;
         vertical-align: middle;
+    }
+
+    .eve-feedback-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .eve-feedback-actions {
+        display: flex;
+        align-items: center;
+        margin-left: $eve-spacing-tiny;
+
+        .eve-button {
+            font-size: $eve-font-size-small;
+            padding: 0;
+            height: initial;
+
+            &:not(:first-child) {
+                margin-left: $eve-spacing-tiny;
+            }
+        }
     }
 }
