@@ -22,6 +22,7 @@ $eve-avatar-sizes: (
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eve-avatar-size} {
@@ -36,6 +37,35 @@ $eve-avatar-sizes: (
             } @else {
                 font-size: $eve-font-size-small;
             }
+
+            &.eve-avatar-available {
+                &::after {
+                    content: '';
+                    display: block;
+                    height: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
+                    width: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
+                    border-radius: 100%;
+                    background: $eve-secondary-color-green;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+
+                    @if $eve-avatar-size == 'x-tiny' or $eve-avatar-size == 'tiny' {
+                        border: 1px solid $eve-primary-color-white;
+                    } @else {
+                        border: 2px solid $eve-primary-color-white;
+                    }
+                }
+            }
         }
+    }
+}
+
+.eve-avatar-label {
+    display: inline-flex;
+    align-items: center;
+
+    .eve-avatar {
+        margin-right: $eve-spacing-tiny;
     }
 }
