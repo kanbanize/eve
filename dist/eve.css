@@ -772,8 +772,7 @@
     margin-left: 24px; }
 
 .eve-feedback {
-  width: 100%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -809,3 +808,25 @@
       height: initial; }
       .eve-feedback .eve-feedback-actions .eve-button:not(:first-child) {
         margin-left: 8px; }
+
+.eve-navigation {
+  display: flex;
+  border-bottom: 1px solid #cfd8dc; }
+  .eve-navigation .eve-navigation-tab {
+    padding: 8px 8px 12px;
+    margin: 0 16px;
+    color: #607d8b;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
+      color: #2196f3;
+      font-weight: bold;
+      position: relative; }
+      .eve-navigation .eve-navigation-tab.eve-navigation-tab-active::after {
+        content: '';
+        height: 4px;
+        background: #2196f3;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        right: 0; }

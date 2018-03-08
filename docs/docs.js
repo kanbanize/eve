@@ -1,14 +1,14 @@
 (function() {
-    var snippets = document.getElementsByClassName('eve-component-example');
+    var snippets = document.getElementsByClassName('component-example');
     var snippetMap = {
         val: function(val) {
-            return '<span class="eve-snippet-val">' + val + '</span>';
+            return '<span class="snippet-val">' + val + '</span>';
         },
         attr: function(attr) {
-            return '<span class="eve-snippet-attr">' + attr + '</span>';
+            return '<span class="snippet-attr">' + attr + '</span>';
         },
         tag: function(tag) {
-            return '<span class="eve-snippet-tag">' + tag.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
+            return '<span class="snippet-tag">' + tag.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
         }
     };
 
@@ -59,7 +59,7 @@
             .trim();
 
         snippet.insertAdjacentHTML('afterend',
-            '<div class="eve-component-snippet"><pre><code class="eve-snippet">' + snippetTemplate + '</code></pre></div>')
+            '<div class="component-snippet"><pre><code class="snippet">' + snippetTemplate + '</code></pre></div>')
     }
 
     function guid() {

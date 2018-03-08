@@ -19,18 +19,18 @@ textarea {
     font-family: sans-serif;
 }
 
-.eve-container {
+.container {
     display: flex;
     height: 100%;
 }
 
-.eve-navigation {
+.navigation {
     width: 220px;
     box-shadow: 10px 0 20px 0px rgba(0, 0, 0, .2);
     background: #fff;
 }
 
-.eve-navigation-header {
+.navigation-header {
     color: #2196f3;
     height: 48px;
     display: flex;
@@ -42,18 +42,18 @@ textarea {
     margin-bottom: 24px;
 }
 
-.eve-navigation-sub-header {
+.navigation-sub-header {
     padding: 0 16px;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
 
-.eve-navigation-list {
+.navigation-list {
     padding: 0 24px;
     margin-bottom: 16px;
 }
 
-.eve-navigation-list-item {
+.navigation-list-item {
     line-height: 24px;
     text-transform: uppercase;
     font-size: 12px;
@@ -63,24 +63,24 @@ textarea {
     display: block;
 }
 
-.eve-navigation-list-item:hover {
+.navigation-list-item:hover {
     color: #2196f3;
 }
 
-.eve-content {
+.content {
     flex: 1;
     overflow: auto;
     height: 100%;
     padding: 0 96px;
 }
 
-.eve-component {
+.component {
     background: #fff;
     margin: 48px auto;
     max-width: 1024px;
 }
 
-.eve-component .eve-component-title {
+.component .component-title {
     text-transform: uppercase;
     margin: 0 24px 48px;
     height: 48px;
@@ -95,38 +95,38 @@ textarea {
     z-index: 1;
 }
 
-.eve-component .eve-component-content {
+.component .component-content {
     padding: 0 24px 64px;
 }
 
-.eve-component .eve-component-content .eve-component-example {
+.component .component-content .component-example {
     padding: 24px;
     border: 4px solid #f5f5f5;
 }
 
-.eve-component .eve-component-content .eve-component-snippet {
+.component .component-content .component-snippet {
     padding: 24px;
     background: #f5f5f5;
 }
 
-.eve-component .eve-component-content .eve-component-snippet pre {
+.component .component-content .component-snippet pre {
     margin: 0;
     white-space: pre-wrap;
 }
 
-.eve-snippet {
+.snippet {
     line-height: 20px;
     -webkit-font-smoothing: auto;
 }
 
-.eve-snippet-tag {
+.snippet-tag {
     color: #3f51b5;
 }
 
-.eve-snippet-attr {
+.snippet-attr {
     color: #009688;
 }
 
-.eve-snippet-val {
+.snippet-val {
     color: #e91e63;
 }

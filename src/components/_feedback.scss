@@ -11,8 +11,7 @@ $eve-icons-types: (
 ) !default;
 
 .eve-feedback {
-    width: 100%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
