@@ -4,12 +4,6 @@ $eve-feedback-types: (
     danger: $eve-extended-color-red-100,
 ) !default;
 
-$eve-icons-types: (
-    success: $eve-extended-color-green-500,
-    warning: $eve-extended-color-orange-500,
-    danger: $eve-extended-color-red-500,
-) !default;
-
 .eve-feedback {
     display: inline-flex;
     align-items: center;
@@ -23,24 +17,24 @@ $eve-icons-types: (
         &.eve-feedback-#{$eve-feedback-type} {
             background: map-get($eve-feedback-types, $eve-feedback-type);
 
-            i {
-                color: map-get($eve-icons-types, $eve-feedback-type);
-            }
+            // i {
+            //     color: map-get($eve-icons-types, $eve-feedback-type);
+            // }
         }
     }
 
-    i {
-        margin-right: $eve-spacing-tiny;
-        font-size: 18px;
-        vertical-align: middle;
-    }
+    // i {
+    //     margin-right: $eve-spacing-tiny;
+    //     font-size: 18px;
+    //     vertical-align: middle;
+    // }
 
     .eve-feedback-content {
         display: flex;
         align-items: center;
     }
 
-    .eve-feedback-actions {
+    .eve-feedback-action {
         display: flex;
         align-items: center;
         margin-left: $eve-spacing-tiny;

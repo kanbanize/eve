@@ -1,0 +1,80 @@
+$eve-chip-types: (
+    primary: $eve-primary-color-blue,
+    success: $eve-secondary-color-green,
+    warning: $eve-secondary-color-orange,
+    danger: $eve-secondary-color-red
+) !default;
+$eve-chip-height: 24px !default;
+$eve-chip-border-radius: $eve-chip-height / 2 !default;
+
+.eve-chip {
+    display: inline-flex;
+    align-items: center;
+    height: $eve-chip-height;
+    line-height: $eve-chip-height;
+    border-radius: $eve-chip-border-radius;
+    background: $eve-neutral-color-50;
+
+    @each $eve-chip-type in map-keys($eve-chip-types) {
+        &.eve-chip-#{$eve-chip-type} {
+            .eve-chip-icon {
+                background: map-get($eve-chip-types, $eve-chip-type);
+            }
+
+            &:hover {
+                $eve-chip-hover-color: rgba(map-get($eve-chip-types, $eve-chip-type), .1);
+
+                background: $eve-chip-hover-color;
+
+                .eve-chip-action {
+                    background: map-get($eve-chip-types, $eve-chip-type);
+
+                    i {
+                        color: $eve-primary-color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .eve-avatar {
+        border: 1px solid $eve-primary-color-white;
+        height: $eve-chip-height;
+        width: $eve-chip-height;
+    }
+
+    .eve-chip-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        height: $eve-chip-height;
+        width: $eve-chip-height;
+        border: 1px solid $eve-primary-color-white;
+        box-sizing: border-box;
+
+        i {
+            font-size: $eve-font-size-normal;
+            color: $eve-primary-color-white;
+        }
+    }
+
+    .eve-chip-content {
+        padding: 0 $eve-spacing-tiny;
+        font-size: $eve-font-size-small;
+    }
+
+    .eve-chip-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: $eve-spacing-tiny;
+        cursor: pointer;
+        border-radius: 100%;
+
+        i {
+            color: $eve-neutral-color-200;
+            font-size: $eve-font-size-normal;
+        }
+    }
+}

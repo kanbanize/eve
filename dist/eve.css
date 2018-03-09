@@ -318,7 +318,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  box-sizing: border-box; }
   .eve-avatar.eve-avatar-x-tiny {
     width: 16px;
     height: 16px;
@@ -781,32 +782,22 @@
   box-sizing: border-box; }
   .eve-feedback.eve-feedback-success {
     background: #c8e6c9; }
-    .eve-feedback.eve-feedback-success i {
-      color: #4caf50; }
   .eve-feedback.eve-feedback-warning {
     background: #ffe0b2; }
-    .eve-feedback.eve-feedback-warning i {
-      color: #ff9800; }
   .eve-feedback.eve-feedback-danger {
     background: #ffcdd2; }
-    .eve-feedback.eve-feedback-danger i {
-      color: #f44336; }
-  .eve-feedback i {
-    margin-right: 8px;
-    font-size: 18px;
-    vertical-align: middle; }
   .eve-feedback .eve-feedback-content {
     display: flex;
     align-items: center; }
-  .eve-feedback .eve-feedback-actions {
+  .eve-feedback .eve-feedback-action {
     display: flex;
     align-items: center;
     margin-left: 8px; }
-    .eve-feedback .eve-feedback-actions .eve-button {
+    .eve-feedback .eve-feedback-action .eve-button {
       font-size: 12px;
       padding: 0;
       height: initial; }
-      .eve-feedback .eve-feedback-actions .eve-button:not(:first-child) {
+      .eve-feedback .eve-feedback-action .eve-button:not(:first-child) {
         margin-left: 8px; }
 
 .eve-navigation {
@@ -830,3 +821,72 @@
         left: 0;
         bottom: -1px;
         right: 0; }
+
+.eve-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  background: #eceff1; }
+  .eve-chip.eve-chip-primary .eve-chip-icon {
+    background: #2196f3; }
+  .eve-chip.eve-chip-primary:hover {
+    background: rgba(33, 150, 243, 0.1); }
+    .eve-chip.eve-chip-primary:hover .eve-chip-action {
+      background: #2196f3; }
+      .eve-chip.eve-chip-primary:hover .eve-chip-action i {
+        color: #fff; }
+  .eve-chip.eve-chip-success .eve-chip-icon {
+    background: #4caf50; }
+  .eve-chip.eve-chip-success:hover {
+    background: rgba(76, 175, 80, 0.1); }
+    .eve-chip.eve-chip-success:hover .eve-chip-action {
+      background: #4caf50; }
+      .eve-chip.eve-chip-success:hover .eve-chip-action i {
+        color: #fff; }
+  .eve-chip.eve-chip-warning .eve-chip-icon {
+    background: #ff9800; }
+  .eve-chip.eve-chip-warning:hover {
+    background: rgba(255, 152, 0, 0.1); }
+    .eve-chip.eve-chip-warning:hover .eve-chip-action {
+      background: #ff9800; }
+      .eve-chip.eve-chip-warning:hover .eve-chip-action i {
+        color: #fff; }
+  .eve-chip.eve-chip-danger .eve-chip-icon {
+    background: #f44336; }
+  .eve-chip.eve-chip-danger:hover {
+    background: rgba(244, 67, 54, 0.1); }
+    .eve-chip.eve-chip-danger:hover .eve-chip-action {
+      background: #f44336; }
+      .eve-chip.eve-chip-danger:hover .eve-chip-action i {
+        color: #fff; }
+  .eve-chip .eve-avatar {
+    border: 1px solid #fff;
+    height: 24px;
+    width: 24px; }
+  .eve-chip .eve-chip-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #fff;
+    box-sizing: border-box; }
+    .eve-chip .eve-chip-icon i {
+      font-size: 14px;
+      color: #fff; }
+  .eve-chip .eve-chip-content {
+    padding: 0 8px;
+    font-size: 12px; }
+  .eve-chip .eve-chip-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 100%; }
+    .eve-chip .eve-chip-action i {
+      color: #b0bec5;
+      font-size: 14px; }

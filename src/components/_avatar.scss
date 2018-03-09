@@ -23,6 +23,7 @@ $eve-avatar-sizes: (
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    box-sizing: border-box;
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eve-avatar-size} {
