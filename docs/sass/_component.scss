@@ -28,7 +28,10 @@
 
         .navigation-list {
             padding: 0 24px;
-            margin-bottom: 16px;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
         }
 
         .navigation-list-item {

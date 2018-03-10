@@ -1,0 +1,41 @@
+// sass-lint:disable no-color-literals
+.component-colors {
+    display: flex;
+
+    .component-colors-primary {
+        margin-right: 96px;
+    }
+}
+
+.component-color {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: 38px;
+    }
+
+    .component-color-square {
+        width: 80px;
+        height: 80px;
+        border-radius: 6px;
+        margin-right: 16px;
+    }
+
+    .component-color-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .component-color-name {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .component-color-rgba,
+        .component-color-hex {
+            font-size: 12px;
+            color: #b0bec5;
+        }
+    }
+}

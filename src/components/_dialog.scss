@@ -1,8 +1,8 @@
 $eve-dialog-types: (
-    primary: $eve-primary-color-blue,
-    success: $eve-secondary-color-green,
-    warning: $eve-secondary-color-orange,
-    danger: $eve-secondary-color-red
+    primary: $eve-color-blue,
+    success: $eve-color-green,
+    warning: $eve-color-orange,
+    danger: $eve-color-red
 ) !default;
 $eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
@@ -13,14 +13,14 @@ $eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
     .eve-dialog-header {
         font-weight: bold;
-        font-size: $eve-font-size-x-large;
+        font-size: $eve-font-x-large;
         margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-content {
         margin-bottom: $eve-spacing-small;
         line-height: 20px;
-        font-size: $eve-font-size-normal;
+        font-size: $eve-font-normal;
     }
 
     .eve-dialog-footer {

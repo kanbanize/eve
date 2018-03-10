@@ -7,10 +7,10 @@ $eve-chip-border-radius: $eve-chip-height / 2 !default;
     height: $eve-chip-height;
     line-height: $eve-chip-height;
     border-radius: $eve-chip-border-radius;
-    background: $eve-neutral-color-50;
+    background: $eve-color-bright-silver;
 
     .eve-avatar {
-        border: 1px solid $eve-primary-color-white;
+        border: 1px solid $eve-color-white;
         height: $eve-chip-height;
         width: $eve-chip-height;
     }
@@ -22,19 +22,19 @@ $eve-chip-border-radius: $eve-chip-height / 2 !default;
         border-radius: 100%;
         height: $eve-chip-height;
         width: $eve-chip-height;
-        border: 1px solid $eve-primary-color-white;
+        border: 1px solid $eve-color-white;
         box-sizing: border-box;
-        background: $eve-primary-color-blue;
+        background: $eve-color-blue;
 
         i {
-            font-size: $eve-font-size-normal;
-            color: $eve-primary-color-white;
+            font-size: $eve-font-normal;
+            color: $eve-color-white;
         }
     }
 
     .eve-chip-content {
         padding: 0 $eve-spacing-tiny;
-        font-size: $eve-font-size-small;
+        font-size: $eve-font-small;
     }
 
     .eve-chip-action {
@@ -46,8 +46,8 @@ $eve-chip-border-radius: $eve-chip-height / 2 !default;
         border-radius: 100%;
 
         i {
-            color: $eve-neutral-color-200;
-            font-size: $eve-font-size-normal;
+            color: $eve-color-neutral;
+            font-size: $eve-font-normal;
         }
     }
 }

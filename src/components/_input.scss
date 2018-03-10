@@ -7,35 +7,35 @@ $eve-textarea-min-height: 108px !default;
 .eve-input {
     height: $eve-input-height;
     border-radius: $eve-input-border-radius;
-    background: $eve-neutral-color-50;
+    background: $eve-color-bright-silver;
     border: 0;
     outline: none;
     padding: 0 $eve-spacing-small;
-    font-size: $eve-font-size-normal;
-    color: $eve-primary-color-grey;
+    font-size: $eve-font-normal;
+    color: $eve-color-grey-black;
     box-sizing: border-box;
     width: 100%;
     vertical-align: top;
 
     &::placeholder {
-        color: $eve-neutral-color-500;
+        color: $eve-color-bright-silver;
     }
 
     &:focus {
-        box-shadow: inset 0 0 0 1px $eve-primary-color-blue;
+        box-shadow: inset 0 0 0 1px $eve-color-blue;
     }
 
     &.eve-input-success {
-        box-shadow: inset 0 0 0 1px $eve-secondary-color-green;
+        box-shadow: inset 0 0 0 1px $eve-color-green;
     }
 
     &.eve-input-danger {
-        box-shadow: inset 0 0 0 1px $eve-secondary-color-red;
+        box-shadow: inset 0 0 0 1px $eve-color-red;
     }
 
     &.eve-input-disable {
-        background: $eve-neutral-color-200;
-        color: $eve-primary-color-white;
+        background: $eve-color-neutral;
+        color: $eve-color-white;
         pointer-events: none;
 
         &:focus {
@@ -73,7 +73,7 @@ $eve-textarea-min-height: 108px !default;
 
 .eve-textarea {
     resize: none;
-    background: $eve-neutral-color-50;
+    background: $eve-color-bright-silver;
     padding: $eve-spacing-small;
     vertical-align: top;
     border: 0;
@@ -81,6 +81,6 @@ $eve-textarea-min-height: 108px !default;
     box-sizing: border-box;
     min-height: $eve-textarea-min-height;
     width: 100%;
-    font-size: $eve-font-size-normal;
-    color: $eve-primary-color-grey;
+    font-size: $eve-font-normal;
+    color: $eve-color-grey-black;
 }

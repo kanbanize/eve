@@ -25,14 +25,14 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
 
         &:checked ~ .eve-switch-mark {
             &::after {
-                background: $eve-secondary-color-green;
+                background: $eve-color-green;
                 left: $eve-switch-width / 2;
             }
         }
     }
 
     .eve-switch-mark {
-        background: $eve-neutral-color-50;
+        background: $eve-color-bright-silver;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -44,7 +44,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             content: '';
             width: $eve-switch-height - 4;
             height: $eve-switch-height - 4;
-            background: $eve-neutral-color-200;
+            background: $eve-color-neutral;
             border-radius: 100%;
             position: absolute;
             left: 2px;
@@ -57,15 +57,15 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
 
         .eve-switch-native {
             &:checked ~ .eve-switch-mark {
-                background: $eve-neutral-color-200;
+                background: $eve-color-neutral;
             }
         }
 
         .eve-switch-mark {
-            background: $eve-neutral-color-200;
+            background: $eve-color-neutral;
 
             &::after {
-                background: $eve-primary-color-white;
+                background: $eve-color-white;
             }
         }
     }

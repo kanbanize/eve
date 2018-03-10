@@ -12,6 +12,7 @@ body {
     background: #fff;
     font-size: 14px;
     height: 100%;
+    color: #333;
 }
 
 body,
@@ -23,4 +24,5 @@ textarea {
 }
 
 @import 'component';
+@import 'component-color';
 @import 'snippet';

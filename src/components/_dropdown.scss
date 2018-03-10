@@ -1,18 +1,18 @@
 $eve-dropdown-box-shadow-color: rgba(0, 0, 0, .1) !default;
 $eve-dropdown-list-item-height: 32px !default;
-$eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
+$eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default;
 
 .eve-dropdown {
     box-shadow: 0 5px 10px 0 $eve-dropdown-box-shadow-color;
     display: inline-flex;
     flex-direction: column;
     min-width: 150px;
-    background: $eve-primary-color-white;
+    background: $eve-color-white;
 
     .eve-dropdown-filter {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid $eve-neutral-color-50;
+        border-bottom: 1px solid $eve-color-bright-silver;
         padding: 0 $eve-spacing-small 0 $eve-spacing-tiny;
         box-sizing: border-box;
 
@@ -22,17 +22,17 @@ $eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
 
             i {
                 font-size: 18px;
-                color: $eve-neutral-color-200;
+                color: $eve-color-neutral;
             }
         }
 
         .eve-input {
             box-shadow: none;
-            background: $eve-primary-color-white;
+            background: $eve-color-white;
             padding: 0 0 0 $eve-spacing-tiny;
 
             &::placeholder {
-                color: $eve-neutral-color-100;
+                color: $eve-color-dark-silver;
             }
         }
     }
@@ -52,7 +52,7 @@ $eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
             align-items: center;
             padding: 0 $eve-spacing-small;
             text-transform: uppercase;
-            font-size: $eve-font-size-small;
+            font-size: $eve-font-small;
         }
 
         .eve-dropdown-list-item {
@@ -69,7 +69,7 @@ $eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
 
                 i {
                     font-size: 18px;
-                    color: $eve-neutral-color-200;
+                    color: $eve-color-neutral;
                 }
             }
 
@@ -78,17 +78,17 @@ $eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
             }
 
             &.eve-dropdown-list-item-active {
-                background: $eve-neutral-color-50;
+                background: $eve-color-bright-silver;
             }
 
             &:hover {
                 // TODO: Remove !important;
-                background: $eve-neutral-color-50 !important; // sass-lint:disable-line no-important
+                background: $eve-color-bright-silver !important; // sass-lint:disable-line no-important
             }
         }
 
         .eve-dropdown-list-separator {
-            background: $eve-neutral-color-50;
+            background: $eve-color-bright-silver;
             height: 1px;
         }
     }

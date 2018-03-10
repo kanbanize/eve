@@ -20,8 +20,8 @@
         cursor: inherit;
 
         &:checked ~ .eve-checkbox-mark {
-            background: $eve-secondary-color-green;
-            border-color: $eve-secondary-color-green;
+            background: $eve-color-green;
+            border-color: $eve-color-green;
 
             &::after {
                 display: block;
@@ -30,8 +30,8 @@
     }
 
     .eve-checkbox-mark {
-        background: $eve-primary-color-white;
-        border: 2px solid $eve-neutral-color-200;
+        background: $eve-color-white;
+        border: 2px solid $eve-color-neutral;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -45,8 +45,8 @@
             top: 1px;
             width: 5px;
             height: 10px;
-            border-right: 2px solid $eve-primary-color-white;
-            border-bottom: 2px solid $eve-primary-color-white;
+            border-right: 2px solid $eve-color-white;
+            border-bottom: 2px solid $eve-color-white;
             transform: rotate(45deg);
         }
     }
@@ -56,13 +56,13 @@
 
         .eve-checkbox-native {
             &:checked ~ .eve-checkbox-mark {
-                background: $eve-neutral-color-200;
+                background: $eve-color-neutral;
                 border: 0;
             }
         }
 
         .eve-checkbox-mark {
-            background: $eve-neutral-color-200;
+            background: $eve-color-neutral;
             border: 0;
 
             &::after {

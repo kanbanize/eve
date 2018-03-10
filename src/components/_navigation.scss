@@ -1,23 +1,23 @@
 .eve-navigation {
     display: flex;
-    border-bottom: 1px solid $eve-neutral-color-100;
+    border-bottom: 1px solid $eve-color-dark-silver;
 
     .eve-navigation-tab {
         padding: $eve-spacing-tiny $eve-spacing-tiny 12px;
         margin: 0 $eve-spacing-small;
-        color: $eve-neutral-color-500;
+        color: $eve-color-bright-silver;
         text-transform: uppercase;
         cursor: pointer;
 
         &.eve-navigation-tab-active {
-            color: $eve-primary-color-blue;
+            color: $eve-color-blue;
             font-weight: bold;
             position: relative;
 
             &::after {
                 content: '';
                 height: 4px;
-                background: $eve-primary-color-blue;
+                background: $eve-color-blue;
                 position: absolute;
                 left: 0;
                 bottom: -1px;

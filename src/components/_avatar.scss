@@ -18,7 +18,7 @@ $eve-avatar-sizes: (
     text-align: center;
     border-radius: 100%;
     vertical-align: middle;
-    color: $eve-primary-color-white;
+    color: $eve-color-white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,13 +30,13 @@ $eve-avatar-sizes: (
             @include get-eve-avatar-size(map-get($eve-avatar-sizes, $eve-avatar-size));
 
             @if $eve-avatar-size == 'x-tiny' {
-                font-size: $eve-font-size-tiny;
+                font-size: $eve-font-tiny;
             } @else if $eve-avatar-size == 'large' {
-                font-size: $eve-font-size-large;
+                font-size: $eve-font-large;
             } @else if $eve-avatar-size == 'x-large' {
-                font-size: $eve-font-size-huge;
+                font-size: $eve-font-huge;
             } @else {
-                font-size: $eve-font-size-small;
+                font-size: $eve-font-small;
             }
 
             &.eve-avatar-available {
@@ -46,15 +46,15 @@ $eve-avatar-sizes: (
                     height: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
                     width: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
                     border-radius: 100%;
-                    background: $eve-secondary-color-green;
+                    background: $eve-color-green;
                     position: absolute;
                     bottom: 0;
                     right: 0;
 
                     @if $eve-avatar-size == 'x-tiny' or $eve-avatar-size == 'tiny' {
-                        border: 1px solid $eve-primary-color-white;
+                        border: 1px solid $eve-color-white;
                     } @else {
-                        border: 2px solid $eve-primary-color-white;
+                        border: 2px solid $eve-color-white;
                     }
                 }
             }

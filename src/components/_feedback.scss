@@ -1,7 +1,7 @@
-$eve-feedback-types: (
-    success: $eve-extended-color-green-100,
-    warning: $eve-extended-color-orange-100,
-    danger: $eve-extended-color-red-100,
+$eve-feedback-colors: (
+    success: $eve-color-green,
+    warning: $eve-color-orange,
+    danger: $eve-color-red,
 ) !default;
 
 .eve-feedback {
@@ -10,12 +10,14 @@ $eve-feedback-types: (
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: $eve-spacing-tiny;
-    color: $eve-primary-color-grey;
+    color: $eve-color-grey-black;
     box-sizing: border-box;
 
-    @each $eve-feedback-type in map-keys($eve-feedback-types) {
-        &.eve-feedback-#{$eve-feedback-type} {
-            background: map-get($eve-feedback-types, $eve-feedback-type);
+    @each $eve-feedback-color in map-keys($eve-feedback-colors) {
+        &.eve-feedback-#{$eve-feedback-color} {
+            $eve-feedback-color-rgb: rgba(map-get($eve-feedback-colors, $eve-feedback-color), .2);
+
+            background: $eve-feedback-color-rgb;
 
             // i {
             //     color: map-get($eve-icons-types, $eve-feedback-type);
@@ -40,7 +42,7 @@ $eve-feedback-types: (
         margin-left: $eve-spacing-tiny;
 
         .eve-button {
-            font-size: $eve-font-size-small;
+            font-size: $eve-font-small;
             padding: 0;
             height: initial;
 

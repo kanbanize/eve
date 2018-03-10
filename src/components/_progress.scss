@@ -1,6 +1,6 @@
 .eve-progress-line {
     width: 100%;
-    background: $eve-neutral-color-50;
+    background: $eve-color-bright-silver;
     height: 4px;
     position: relative;
     overflow: hidden;
@@ -11,7 +11,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        background: $eve-primary-color-blue;
+        background: $eve-color-blue;
         animation-name: eveProgressLine;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
@@ -39,8 +39,8 @@
         content: ' ';
         background: transparent;
         border-radius: 100%;
-        border: 4px solid $eve-neutral-color-50;
-        border-top-color: $eve-primary-color-blue;
+        border: 4px solid $eve-color-bright-silver;
+        border-top-color: $eve-color-blue;
         padding: 20px;
         display: inline-block;
         animation-name: eveProgressOval;

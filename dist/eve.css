@@ -261,13 +261,13 @@
   width: 100%;
   vertical-align: top; }
   .eve-input::-webkit-input-placeholder {
-    color: #607d8b; }
+    color: #eceff1; }
   .eve-input:-ms-input-placeholder {
-    color: #607d8b; }
+    color: #eceff1; }
   .eve-input::-ms-input-placeholder {
-    color: #607d8b; }
+    color: #eceff1; }
   .eve-input::placeholder {
-    color: #607d8b; }
+    color: #eceff1; }
   .eve-input:focus {
     box-shadow: inset 0 0 0 1px #2196f3; }
   .eve-input.eve-input-success {
@@ -426,7 +426,7 @@
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
-    background: #263238;
+    background: #333;
     color: #fff;
     content: attr(data-tooltip);
     font-size: 12px;
@@ -767,7 +767,7 @@
     margin-bottom: 4px; }
   .eve-list .eve-list-item .eve-list-item-content .eve-list-item-description {
     line-height: 20px;
-    color: #607d8b; }
+    color: #eceff1; }
   .eve-list .eve-list-item .eve-switch {
     flex-shrink: 0;
     margin-left: 24px; }
@@ -781,11 +781,11 @@
   color: #333;
   box-sizing: border-box; }
   .eve-feedback.eve-feedback-success {
-    background: #c8e6c9; }
+    background: rgba(76, 175, 80, 0.2); }
   .eve-feedback.eve-feedback-warning {
-    background: #ffe0b2; }
+    background: rgba(255, 152, 0, 0.2); }
   .eve-feedback.eve-feedback-danger {
-    background: #ffcdd2; }
+    background: rgba(244, 67, 54, 0.2); }
   .eve-feedback .eve-feedback-content {
     display: flex;
     align-items: center; }
@@ -806,7 +806,7 @@
   .eve-navigation .eve-navigation-tab {
     padding: 8px 8px 12px;
     margin: 0 16px;
-    color: #607d8b;
+    color: #eceff1;
     text-transform: uppercase;
     cursor: pointer; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {

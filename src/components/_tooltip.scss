@@ -5,10 +5,10 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
     position: relative;
 
     &::after {
-        background: $eve-primary-color-blue-grey;
-        color: $eve-primary-color-white;
+        background: $eve-color-grey-black;
+        color: $eve-color-white;
         content: attr(data-tooltip);
-        font-size: $eve-font-size-small;
+        font-size: $eve-font-small;
         opacity: 0;
         padding: 0 $eve-spacing-small;
         border-radius: $eve-tooltip-border-radius;
