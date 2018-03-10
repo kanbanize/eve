@@ -1,6 +1,6 @@
 {
   "name": "evecss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A minimalist CSS framework.",
   "main": "framework/eve.scss",
   "repository": {
