@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
-    <title>eve.css</title>
+    <title>eve</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="docs/docs.css">
     <link rel="stylesheet" href="dist/eve.min.css">
@@ -35,6 +35,7 @@
                 <a href="#feedback" class="navigation-list-item">Feedback</a>
                 <a href="#navigation" class="navigation-list-item">Navigation</a>
                 <a href="#chip" class="navigation-list-item">Chip</a>
+                <a href="#dropdown" class="navigation-list-item">Dropdown</a>
             </div>
         </div>
         <div class="content">
@@ -153,33 +154,20 @@
                         </button>
                     </div>
                 </div>
+                <!-- <div class="component-content">
+                    <div class="component-example">
+                        <button class="eve-button eve-button-primary eve-button-progress">Primary</button>
+                        <button class="eve-button eve-button-success eve-button-progress">Success</button>
+                        <button class="eve-button eve-button-warning eve-button-progress">Warning</button>
+                        <button class="eve-button eve-button-danger eve-button-progress">Danger</button>
+                        <button class="eve-button eve-button-primary eve-button-progress eve-button-disable">Disabled</button>
+                    </div>
+                </div> -->
                 <div class="component-content">
                     <div class="component-example">
                         <div class="eve-button-group">
                             <button class="eve-button eve-button-primary">Button 1</button>
                             <button class="eve-button eve-button-primary">Button 2</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="component-content">
-                    <div class="component-example">
-                        <div class="eve-button-group">
-                            <button class="eve-button eve-button-primary">Dropdown</button>
-                            <button class="eve-button eve-button-primary">
-                                <i class="material-icons">keyboard_arrow_down</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="component-content">
-                    <div class="component-example">
-                        <div class="eve-button-group">
-                            <button class="eve-button eve-button-primary">
-                                <i class="material-icons">chevron_left</i>
-                            </button>
-                            <button class="eve-button eve-button-primary">
-                                <i class="material-icons">chevron_right</i>
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -696,6 +684,183 @@
                             <div class="eve-chip-content">John Doe</div>
                             <div class="eve-chip-action">
                                 <i class="material-icons">clear</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown Component -->
+            <div id="dropdown" class="component">
+                <div class="component-title">Dropdown</div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">Item 01</div>
+                                <div class="eve-dropdown-list-item eve-dropdown-list-item-active">Item 02</div>
+                                <div class="eve-dropdown-list-item">Item 03</div>
+                                <div class="eve-dropdown-list-item">Item 04</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-dropdown-list-item-icon">
+                                        <i class="material-icons">settings</i>
+                                    </div>
+                                    Item 01
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-dropdown-list-item-icon">
+                                        <i class="material-icons">settings</i>
+                                    </div>
+                                    Item 02
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-dropdown-list-item-icon">
+                                        <i class="material-icons">settings</i>
+                                    </div>
+                                    Item 03
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-dropdown-list-item-icon">
+                                        <i class="material-icons">settings</i>
+                                    </div>
+                                    Item 04
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-avatar eve-avatar-tiny" style="background: #2196f3;">J</div>
+                                    Item 01
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-avatar eve-avatar-tiny" style="background: #f44336;">J</div>
+                                    Item 02
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-avatar eve-avatar-tiny" style="background: #ff9800;">J</div>
+                                    Item 03
+                                </div>
+                                <div class="eve-dropdown-list-item">
+                                    <div class="eve-avatar eve-avatar-tiny" style="background: #4caf50;">J</div>
+                                    Item 04
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-filter">
+                                <div class="eve-dropdown-filter-icon">
+                                    <i class="material-icons">filter_list</i>
+                                </div>
+                                <input type="text" placeholder="Filter" class="eve-input"/>
+                            </div>
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">Item 01</div>
+                                <div class="eve-dropdown-list-item">Item 02</div>
+                                <div class="eve-dropdown-list-item">Item 03</div>
+                                <div class="eve-dropdown-list-item">Item 04</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown eve-dropdown-strip">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">Welcome</div>
+                                <div class="eve-dropdown-list-item">Inbox</div>
+                                <div class="eve-dropdown-list-item">Workflow</div>
+                                <div class="eve-dropdown-list-item">Timeline</div>
+                                <div class="eve-dropdown-list-item">Power-ups</div>
+                                <div class="eve-dropdown-list-item">Setup</div>
+                                <div class="eve-dropdown-list-item">Done</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-header">Header 01</div>
+                                <div class="eve-dropdown-list-item">Item 01</div>
+                                <div class="eve-dropdown-list-item">Item 02</div>
+                                <div class="eve-dropdown-list-item">Item 03</div>
+                                <div class="eve-dropdown-list-item">Item 04</div>
+                            </div>
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-header">Header 02</div>
+                                <div class="eve-dropdown-list-item">Item 01</div>
+                                <div class="eve-dropdown-list-item">Item 02</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <div class="eve-dropdown-list-item">Welcome</div>
+                                <div class="eve-dropdown-list-separator"></div>
+                                <div class="eve-dropdown-list-item">Inbox</div>
+                                <div class="eve-dropdown-list-item">Workflow</div>
+                                <div class="eve-dropdown-list-item">Timeline</div>
+                                <div class="eve-dropdown-list-separator"></div>
+                                <div class="eve-dropdown-list-item">Power-ups</div>
+                                <div class="eve-dropdown-list-item">Setup</div>
+                                <div class="eve-dropdown-list-item">Done</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-content">
+                    <div class="component-example">
+                        <div class="eve-dropdown">
+                            <div class="eve-dropdown-list">
+                                <label class="eve-dropdown-list-item eve-checkbox-control">
+                                    <div class="eve-checkbox">
+                                        <input class="eve-checkbox-native" type="checkbox">
+                                        <div class="eve-checkbox-mark"></div>
+                                    </div>
+                                    Item 01
+                                </label>
+                                <label class="eve-dropdown-list-item eve-checkbox-control">
+                                    <div class="eve-checkbox">
+                                        <input class="eve-checkbox-native" type="checkbox">
+                                        <div class="eve-checkbox-mark"></div>
+                                    </div>
+                                    Item 02
+                                </label>
+                                <label class="eve-dropdown-list-item eve-checkbox-control">
+                                    <div class="eve-checkbox">
+                                        <input class="eve-checkbox-native" type="checkbox">
+                                        <div class="eve-checkbox-mark"></div>
+                                    </div>
+                                    Item 03
+                                </label>
+                                <label class="eve-dropdown-list-item eve-checkbox-control">
+                                    <div class="eve-checkbox">
+                                        <input class="eve-checkbox-native" type="checkbox">
+                                        <div class="eve-checkbox-mark"></div>
+                                    </div>
+                                    Item 04
+                                </label>
                             </div>
                         </div>
                     </div>

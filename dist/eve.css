@@ -859,3 +859,69 @@
     .eve-chip .eve-chip-action i {
       color: #b0bec5;
       font-size: 14px; }
+
+.eve-dropdown {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 150px;
+  background: #fff; }
+  .eve-dropdown .eve-dropdown-filter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eceff1;
+    padding: 0 16px 0 8px;
+    box-sizing: border-box; }
+    .eve-dropdown .eve-dropdown-filter .eve-dropdown-filter-icon {
+      display: flex;
+      margin-left: 8px; }
+      .eve-dropdown .eve-dropdown-filter .eve-dropdown-filter-icon i {
+        font-size: 18px;
+        color: #b0bec5; }
+    .eve-dropdown .eve-dropdown-filter .eve-input {
+      box-shadow: none;
+      background: #fff;
+      padding: 0 0 0 8px; }
+      .eve-dropdown .eve-dropdown-filter .eve-input::-webkit-input-placeholder {
+        color: #cfd8dc; }
+      .eve-dropdown .eve-dropdown-filter .eve-input:-ms-input-placeholder {
+        color: #cfd8dc; }
+      .eve-dropdown .eve-dropdown-filter .eve-input::-ms-input-placeholder {
+        color: #cfd8dc; }
+      .eve-dropdown .eve-dropdown-filter .eve-input::placeholder {
+        color: #cfd8dc; }
+  .eve-dropdown .eve-dropdown-list {
+    width: 100%;
+    padding: 8px 0; }
+    .eve-dropdown .eve-dropdown-list .eve-dropdown-list-header {
+      font-weight: bold;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-size: 12px; }
+    .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item {
+      height: 32px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-dropdown-list-item-icon {
+        margin-right: 8px;
+        display: flex;
+        align-items: center; }
+        .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-dropdown-list-item-icon i {
+          font-size: 18px;
+          color: #b0bec5; }
+      .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-avatar {
+        margin-right: 8px; }
+      .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item.eve-dropdown-list-item-active {
+        background: #eceff1; }
+      .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item:hover {
+        background: #eceff1 !important; }
+    .eve-dropdown .eve-dropdown-list .eve-dropdown-list-separator {
+      background: #eceff1;
+      height: 1px; }
+  .eve-dropdown.eve-dropdown-strip .eve-dropdown-list .eve-dropdown-list-item:nth-child(even) {
+    background: rgba(236, 239, 241, 0.5); }

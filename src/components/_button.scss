@@ -143,6 +143,35 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                     color: map-get($eve-button-types, $eve-button-type);
                 }
             }
+
+            // &.eve-button-progress {
+            //     &::before {
+            //         content: '';
+            //         display: inline-block;
+            //         box-sizing: border-box;
+            //         border: 2px solid transparent;
+            //         border-top-color: $eve-primary-color-white;
+            //         border-radius: 100%;
+            //         margin-right: $eve-spacing-tiny;
+            //         animation-name: eveButtonProgressOval;
+            //         animation-fill-mode: forwards;
+            //         animation-iteration-count: infinite;
+            //         animation-duration: .5s;
+            //         animation-timing-function: linear;
+            //         height: $eve-button-height / 2;
+            //         width: $eve-button-height / 2;
+            //     }
+
+            //     @keyframes eveButtonProgressOval {
+            //         from {
+            //             transform: rotate(0);
+            //         }
+
+            //         to {
+            //             transform: rotate(360deg);
+            //         }
+            //     }
+            // }
         }
     }
 
