@@ -1,9 +1,3 @@
-$eve-chip-types: (
-    primary: $eve-primary-color-blue,
-    success: $eve-secondary-color-green,
-    warning: $eve-secondary-color-orange,
-    danger: $eve-secondary-color-red
-) !default;
 $eve-chip-height: 24px !default;
 $eve-chip-border-radius: $eve-chip-height / 2 !default;
 
@@ -14,28 +8,6 @@ $eve-chip-border-radius: $eve-chip-height / 2 !default;
     line-height: $eve-chip-height;
     border-radius: $eve-chip-border-radius;
     background: $eve-neutral-color-50;
-
-    @each $eve-chip-type in map-keys($eve-chip-types) {
-        &.eve-chip-#{$eve-chip-type} {
-            .eve-chip-icon {
-                background: map-get($eve-chip-types, $eve-chip-type);
-            }
-
-            &:hover {
-                $eve-chip-hover-color: rgba(map-get($eve-chip-types, $eve-chip-type), .1);
-
-                background: $eve-chip-hover-color;
-
-                .eve-chip-action {
-                    background: map-get($eve-chip-types, $eve-chip-type);
-
-                    i {
-                        color: $eve-primary-color-white;
-                    }
-                }
-            }
-        }
-    }
 
     .eve-avatar {
         border: 1px solid $eve-primary-color-white;
@@ -52,6 +24,7 @@ $eve-chip-border-radius: $eve-chip-height / 2 !default;
         width: $eve-chip-height;
         border: 1px solid $eve-primary-color-white;
         box-sizing: border-box;
+        background: $eve-primary-color-blue;
 
         i {
             font-size: $eve-font-size-normal;

@@ -829,38 +829,6 @@
   line-height: 24px;
   border-radius: 12px;
   background: #eceff1; }
-  .eve-chip.eve-chip-primary .eve-chip-icon {
-    background: #2196f3; }
-  .eve-chip.eve-chip-primary:hover {
-    background: rgba(33, 150, 243, 0.1); }
-    .eve-chip.eve-chip-primary:hover .eve-chip-action {
-      background: #2196f3; }
-      .eve-chip.eve-chip-primary:hover .eve-chip-action i {
-        color: #fff; }
-  .eve-chip.eve-chip-success .eve-chip-icon {
-    background: #4caf50; }
-  .eve-chip.eve-chip-success:hover {
-    background: rgba(76, 175, 80, 0.1); }
-    .eve-chip.eve-chip-success:hover .eve-chip-action {
-      background: #4caf50; }
-      .eve-chip.eve-chip-success:hover .eve-chip-action i {
-        color: #fff; }
-  .eve-chip.eve-chip-warning .eve-chip-icon {
-    background: #ff9800; }
-  .eve-chip.eve-chip-warning:hover {
-    background: rgba(255, 152, 0, 0.1); }
-    .eve-chip.eve-chip-warning:hover .eve-chip-action {
-      background: #ff9800; }
-      .eve-chip.eve-chip-warning:hover .eve-chip-action i {
-        color: #fff; }
-  .eve-chip.eve-chip-danger .eve-chip-icon {
-    background: #f44336; }
-  .eve-chip.eve-chip-danger:hover {
-    background: rgba(244, 67, 54, 0.1); }
-    .eve-chip.eve-chip-danger:hover .eve-chip-action {
-      background: #f44336; }
-      .eve-chip.eve-chip-danger:hover .eve-chip-action i {
-        color: #fff; }
   .eve-chip .eve-avatar {
     border: 1px solid #fff;
     height: 24px;
@@ -873,7 +841,8 @@
     height: 24px;
     width: 24px;
     border: 1px solid #fff;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    background: #2196f3; }
     .eve-chip .eve-chip-icon i {
       font-size: 14px;
       color: #fff; }
