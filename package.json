@@ -2,10 +2,9 @@
   "name": "evecss",
   "version": "0.0.4",
   "description": "A minimalist CSS framework.",
-  "main": "framework/eve.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hpivanov/evecss.git"
+    "url": "git+https://github.com/hpivanov/eve.git"
   },
   "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
   "license": "MIT",
@@ -17,17 +16,20 @@
     "flexbox"
   ],
   "bugs": {
-    "url": "https://github.com/hpivanov/evecss/issues"
+    "url": "https://github.com/hpivanov/eve/issues"
   },
-  "homepage": "https://hpivanov.github.io/evecss/",
+  "homepage": "https://hpivanov.github.io/eve/",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
+    "gulp-inject": "^4.3.1",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
     "sass-lint": "^1.12.1"
   },
   "files": [

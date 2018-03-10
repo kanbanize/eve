@@ -49,7 +49,7 @@
                 return snippetMap.tag(snippetCache[str]);
             })
             // This is a cheat!!!
-            .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s/g, function(str, pos) {
+            .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s/g, function(str, pos) {
                 if (!pos) {
                     return '';
                 }

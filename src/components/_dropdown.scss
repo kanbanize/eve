@@ -1,6 +1,6 @@
 $eve-dropdown-box-shadow-color: rgba(0, 0, 0, .1) !default;
 $eve-dropdown-list-item-height: 32px !default;
-$eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5);
+$eve-dropdown-strip-list-item-color: rgba($eve-neutral-color-50, .5) !default;
 
 .eve-dropdown {
     box-shadow: 0 5px 10px 0 $eve-dropdown-box-shadow-color;

@@ -1,0 +1,85 @@
+// sass-lint:disable no-color-literals
+.container {
+    display: flex;
+    height: 100%;
+
+    .navigation {
+        width: 220px;
+        box-shadow: 10px 0 20px 0 rgba(0, 0, 0, .2);
+        background: #fff;
+
+        .navigation-header {
+            color: #2196f3;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            padding: 0 16px;
+            margin-bottom: 24px;
+        }
+
+        .navigation-sub-header {
+            padding: 0 16px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .navigation-list {
+            padding: 0 24px;
+            margin-bottom: 16px;
+        }
+
+        .navigation-list-item {
+            line-height: 24px;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+                color: #2196f3;
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+        overflow: auto;
+        height: 100%;
+        padding: 0 96px;
+
+        .component {
+            background: #fff;
+            margin: 48px auto;
+            max-width: 1024px;
+
+            .component-title {
+                text-transform: uppercase;
+                margin: 0 24px 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #e0e0e0;
+                position: sticky;
+                background: #fff;
+                top: 0;
+                color: #2196f3;
+                font-size: 20px;
+                z-index: 1;
+            }
+
+            .component-content {
+                padding: 0 24px 64px;
+
+                .component-example {
+                    padding: 24px;
+                    border: 4px solid #f5f5f5;
+                }
+            }
+        }
+    }
+}

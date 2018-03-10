@@ -1,49 +1,118 @@
 // Dependencies
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const rename = require('gulp-rename');
-const autoprefixer = require('autoprefixer');
-const plumber = require('gulp-plumber');
-const gulpif = require('gulp-if');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var rename = require('gulp-rename');
+var autoprefixer = require('autoprefixer');
+var plumber = require('gulp-plumber');
+var gulpif = require('gulp-if');
+var inject = require('gulp-inject');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 // Configurations
-const buildFiles = ['src/**/*.scss'];
-const buildDestination = 'dist';
-const buildFileName = 'eve';
+var config = {
+    eve: {
+        src: ['src/**/*.scss'],
+        dest: 'dist',
+        out: 'eve'
+    },
+    docs: {
+        js: {
+            src: ['docs/js/**/*.js'],
+            dest: 'docs/dist',
+            out: 'docs'
+        },
+        css: {
+            src: ['docs/sass/**/*.scss'],
+            dest: 'docs/dist',
+            out: 'docs'
+        },
+        html: {
+            src: ['docs/index.html', 'docs/partials/**/*.html'],
+            dest: './'
+        }
+    }
+};
 
-// Tasks
-gulp.task('build-eve', (callback) => {
-    return gulp.src(buildFiles)
+// Eve tasks
+gulp.task('build-eve', function() {
+    return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync())
         .pipe(rename({
-            basename: buildFileName
+            basename: config.eve.out
         }))
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(gulp.dest(buildDestination));
+        .pipe(gulp.dest(config.eve.dest));
 });
 
-gulp.task('build-eve-min', (callback) => {
-    return gulp.src(buildFiles)
+gulp.task('build-eve-min', function() {
+    return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
         .pipe(rename({
-            basename: buildFileName,
+            basename: config.eve.out,
             suffix: '.min'
         }))
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(gulp.dest(buildDestination));
+        .pipe(gulp.dest(config.eve.dest));
 });
 
 gulp.task('build', ['build-eve', 'build-eve-min']);
 
-gulp.task('watch', () => {
-    gulp.watch(buildFiles, ['build']);
+// Docs tasks
+gulp.task('build-docs-js', function() {
+    return gulp.src(config.docs.js.src)
+        .pipe(gulpif(!process.env.TRAVIS, plumber()))
+        .pipe(uglify())
+        .pipe(concat(config.docs.js.out + '.min.js'))
+        .pipe(gulp.dest(config.docs.js.dest))
+});
+
+gulp.task('build-docs-css', function() {
+    return gulp.src(config.docs.css.src)
+        .pipe(gulpif(!process.env.TRAVIS, plumber()))
+        .pipe(sass.sync({
+            outputStyle: 'compressed'
+        }))
+        .pipe(rename({
+            basename: config.docs.css.out,
+            suffix: '.min'
+        }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest(config.docs.css.dest));
+});
+
+gulp.task('build-docs-html', function() {
+    return gulp.src('./docs/index.html')
+        .pipe(inject(gulp.src(config.docs.html.src), {
+            starttag: '<!-- inject:{{path}} -->',
+            relative: true,
+            transform: function(filePath, file) {
+                return file.contents.toString('utf-8');
+            }
+        }))
+        .pipe(gulp.dest(config.docs.html.dest));
+});
+
+gulp.task('build-docs', ['build-docs-js', 'build-docs-css', 'build-docs-html']);
+
+// Watchers
+gulp.task('watch', ['build', 'build-docs'], () => {
+    // Eve watcher
+    gulp.watch(config.eve.src, ['build']);
+
+    // Docs watchers
+    gulp.watch(config.docs.js.src, ['build-docs-js']);
+    gulp.watch(config.docs.css.src, ['build-docs-css']);
+    gulp.watch(config.docs.html.src, ['build-docs-html']);
 });

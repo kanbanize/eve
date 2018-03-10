@@ -1,8 +1,8 @@
-# [eve](https://hpivanov.github.io/evecss)
+# [eve](https://hpivanov.github.io/eve)
 
 **A minimalist CSS framework.**
 
-[![Build Status](https://travis-ci.org/hpivanov/evecss.svg?branch=master)](https://travis-ci.org/hpivanov/evecss)
+[![Build Status](https://travis-ci.org/hpivanov/eve.svg?branch=master)](https://travis-ci.org/hpivanov/eve)
 [![npm](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![npm](https://img.shields.io/npm/dm/evecss.svg)](https://www.npmjs.com/package/evecss)
 
@@ -32,4 +32,4 @@ yarn add evecss
 
 ## License
 
-See the included file [LICENSE](https://github.com/hpivanov/evecss/blob/master/LICENSE).
+See the included file [LICENSE](https://github.com/hpivanov/eve/blob/master/LICENSE).

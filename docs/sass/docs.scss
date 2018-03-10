@@ -1,0 +1,26 @@
+// sass-lint:disable no-color-literals,no-vendor-prefixes
+@charset 'utf-8';
+
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-size: 14px;
+    height: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+@import 'component';
+@import 'snippet';

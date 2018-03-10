@@ -1,0 +1,27 @@
+// sass-lint:disable no-color-literals,no-vendor-prefixes
+.component-snippet {
+    padding: 24px;
+    background: #f5f5f5;
+
+    pre {
+        margin: 0;
+        white-space: pre-wrap;
+
+        .snippet {
+            line-height: 20px;
+            -webkit-font-smoothing: auto;
+        }
+
+        .snippet-tag {
+            color: #3f51b5;
+        }
+
+        .snippet-attr {
+            color: #009688;
+        }
+
+        .snippet-val {
+            color: #e91e63;
+        }
+    }
+}
