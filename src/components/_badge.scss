@@ -1,0 +1,37 @@
+$eve-badge-height: 18px !default;
+$eve-badge-border-radius: $eve-badge-height / 2 !default;
+
+.eve-badge {
+    position: relative;
+
+    &::after {
+        content: attr(data-badge);
+        background: $eve-color-red;
+        border-radius: $eve-badge-border-radius;
+        box-shadow: 0 0 0 2px $eve-color-white;
+        box-sizing: border-box;
+        height: $eve-badge-height;
+        padding: 0 $eve-spacing-x-tiny;
+        min-width: $eve-badge-height;
+        color: $eve-color-white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:not([data-badge]) {
+        &::after {
+            width: 8px;
+            height: 8px;
+            min-width: 6px;
+            padding: 0;
+            border-radius: 100%;
+            transform: none;
+        }
+    }
+}
