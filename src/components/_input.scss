@@ -47,6 +47,7 @@ $eve-input-placeholder-color: #607d8b !default;
 
 .eve-input-control {
     display: flex;
+    width: 100%;
 
     .eve-input {
         height: $eve-input-group-height;
@@ -64,6 +65,7 @@ $eve-input-placeholder-color: #607d8b !default;
 
 .eve-input-group {
     display: flex;
+    width: 100%;
 
     .eve-input {
         &:not(:last-child) {

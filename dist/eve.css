@@ -321,7 +321,8 @@ a {
       box-shadow: none; }
 
 .eve-input-control {
-  display: flex; }
+  display: flex;
+  width: 100%; }
   .eve-input-control .eve-input {
     height: 36px;
     border-radius: 18px;
@@ -331,7 +332,8 @@ a {
     display: block; }
 
 .eve-input-group {
-  display: flex; }
+  display: flex;
+  width: 100%; }
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
 
@@ -826,7 +828,8 @@ a {
   justify-content: space-between;
   padding: 8px;
   color: #333;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 12px; }
   .eve-feedback.eve-feedback-success {
     background: rgba(76, 175, 80, 0.2); }
   .eve-feedback.eve-feedback-warning {
@@ -856,6 +859,8 @@ a {
     color: #607d8b;
     text-transform: uppercase;
     cursor: pointer; }
+    .eve-navigation .eve-navigation-tab:hover {
+      color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
       color: #2196f3;
       font-weight: bold;

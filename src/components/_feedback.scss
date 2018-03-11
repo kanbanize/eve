@@ -12,6 +12,7 @@ $eve-feedback-colors: (
     padding: $eve-spacing-tiny;
     color: $eve-color-grey-black;
     box-sizing: border-box;
+    font-size: $eve-font-small;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
         &.eve-feedback-#{$eve-feedback-color} {
