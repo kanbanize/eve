@@ -1,9 +1,9 @@
 @charset 'utf-8';
 
 // Foundations
+@import 'foundations/typography';
 @import 'foundations/colors';
 @import 'foundations/spacing';
-@import 'foundations/font';
 
 // Components
 @import 'components/button';

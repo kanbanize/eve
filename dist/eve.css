@@ -1,3 +1,42 @@
+h1 {
+  font-size: 32px;
+  line-height: 40px; }
+
+h2 {
+  font-size: 24px;
+  line-height: 32px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h4 {
+  font-size: 18px;
+  line-height: 28px; }
+
+h5 {
+  font-size: 16px;
+  line-height: 24px; }
+
+h6 {
+  font-size: 12px;
+  line-height: 18px; }
+
+p {
+  font-size: 14px;
+  line-height: 20px; }
+
+mark {
+  color: #fff;
+  background: #2196f3; }
+
+sup,
+sub {
+  font-size: 8px; }
+
+a {
+  color: #2196f3; }
+
 .eve-button {
   display: inline-flex;
   align-items: center;
@@ -261,13 +300,13 @@
   width: 100%;
   vertical-align: top; }
   .eve-input::-webkit-input-placeholder {
-    color: #eceff1; }
+    color: #607d8b; }
   .eve-input:-ms-input-placeholder {
-    color: #eceff1; }
+    color: #607d8b; }
   .eve-input::-ms-input-placeholder {
-    color: #eceff1; }
+    color: #607d8b; }
   .eve-input::placeholder {
-    color: #eceff1; }
+    color: #607d8b; }
   .eve-input:focus {
     box-shadow: inset 0 0 0 1px #2196f3; }
   .eve-input.eve-input-success {
@@ -308,6 +347,14 @@
   width: 100%;
   font-size: 14px;
   color: #333; }
+  .eve-textarea::-webkit-input-placeholder {
+    color: #607d8b; }
+  .eve-textarea:-ms-input-placeholder {
+    color: #607d8b; }
+  .eve-textarea::-ms-input-placeholder {
+    color: #607d8b; }
+  .eve-textarea::placeholder {
+    color: #607d8b; }
 
 .eve-avatar {
   display: inline-block;
@@ -477,7 +524,7 @@
   position: relative;
   overflow: hidden; }
   .eve-progress-line::after {
-    content: ' ';
+    content: '';
     width: 20%;
     position: absolute;
     top: 0;
@@ -511,7 +558,7 @@
   align-items: center;
   justify-content: center; }
   .eve-progress-oval::before {
-    content: ' ';
+    content: '';
     background: transparent;
     border-radius: 100%;
     border: 4px solid #eceff1;
@@ -524,8 +571,8 @@
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
   .eve-progress-oval::after {
@@ -767,7 +814,7 @@
     margin-bottom: 4px; }
   .eve-list .eve-list-item .eve-list-item-content .eve-list-item-description {
     line-height: 20px;
-    color: #eceff1; }
+    color: #607d8b; }
   .eve-list .eve-list-item .eve-switch {
     flex-shrink: 0;
     margin-left: 24px; }
@@ -806,7 +853,7 @@
   .eve-navigation .eve-navigation-tab {
     padding: 8px 8px 12px;
     margin: 0 16px;
-    color: #eceff1;
+    color: #607d8b;
     text-transform: uppercase;
     cursor: pointer; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {

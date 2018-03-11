@@ -6,7 +6,7 @@
     overflow: hidden;
 
     &::after {
-        content: ' ';
+        content: '';
         width: 20%;
         position: absolute;
         top: 0;
@@ -36,7 +36,7 @@
     justify-content: center;
 
     &::before {
-        content: ' ';
+        content: '';
         background: transparent;
         border-radius: 100%;
         border: 4px solid $eve-color-bright-silver;
@@ -46,7 +46,7 @@
         animation-name: eveProgressOval;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-duration: 1s;
+        animation-duration: .5s;
         animation-timing-function: linear;
     }
 

@@ -48,18 +48,10 @@
             .replace(/{tag.*?}/g, function(str) {
                 return snippetMap.tag(snippetCache[str]);
             })
-            // This is a cheat!!!
-            .replace(/\s\s\s\s\s\s\s\s\s\s\s\s\s/g, function(str, pos) {
-                if (!pos) {
-                    return '';
-                }
-
-                return '<br>';
-            })
+            .replace(/^\s{12}/gm, '')
             .trim();
 
-        snippet.insertAdjacentHTML('afterend',
-            '<div class="component-snippet"><pre><code class="snippet">' + snippetTemplate + '</code></pre></div>')
+        snippet.insertAdjacentHTML('afterend', '<pre class="snippet">' + snippetTemplate + '</pre>')
     }
 
     function guid() {

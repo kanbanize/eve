@@ -19,6 +19,47 @@
         height: 80px;
         border-radius: 6px;
         margin-right: 16px;
+
+        &.component-color-square-blue {
+            background: #2196f3;
+        }
+
+        &.component-color-square-red {
+            background: #f44336;
+        }
+
+        &.component-color-square-warning {
+            background: #ff9800;
+        }
+
+        &.component-color-square-green {
+            background: #4caf50;
+        }
+
+        &.component-color-square-indigo {
+            background: #3f51b5;
+        }
+
+        &.component-color-square-black {
+            background: #000;
+        }
+
+        &.component-color-square-grey-black {
+            background: #333;
+        }
+
+        &.component-color-square-dark-silver {
+            background: #cfd8dc;
+        }
+
+        &.component-color-square-bright-silver {
+            background: #eceff1;
+        }
+
+        &.component-color-square-white {
+            background: #fff;
+            border: 1px solid #dfe1e6;
+        }
     }
 
     .component-color-data {

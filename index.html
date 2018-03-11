@@ -14,39 +14,69 @@
     <div class="container">
         <div class="navigation">
             <div class="navigation-header">eve</div>
-            <div class="navigation-sub-header">Foundations</div>
-            <div class="navigation-list">
-                <!-- <a href="#typography" class="navigation-list-item">Typography</a> -->
-                <a href="#colors" class="navigation-list-item">Colors</a>
-                <!-- <a href="#spacing" class="navigation-list-item">Spacing</a> -->
+            <div class="navigation-body">
+                <div class="navigation-sub-header">Foundations</div>
+                <div class="navigation-list">
+                    <a href="#typography" class="navigation-list-item">Typography</a>
+                    <a href="#colors" class="navigation-list-item">Colors</a>
+                    <a href="#spacing" class="navigation-list-item">Spacing</a>
+                </div>
+                <div class="navigation-sub-header">Components</div>
+                <div class="navigation-list">
+                    <a href="#button" class="navigation-list-item">Button</a>
+                    <a href="#input" class="navigation-list-item">Input</a>
+                    <a href="#avatar" class="navigation-list-item">Avatar</a>
+                    <a href="#tooltip" class="navigation-list-item">Tooltip</a>
+                    <a href="#progress" class="navigation-list-item">Progress</a>
+                    <a href="#dialog" class="navigation-list-item">Dialog</a>
+                    <a href="#checkbox" class="navigation-list-item">Checkbox</a>
+                    <a href="#radio" class="navigation-list-item">Radio</a>
+                    <a href="#switch" class="navigation-list-item">Switch</a>
+                    <a href="#list" class="navigation-list-item">List</a>
+                    <a href="#feedback" class="navigation-list-item">Feedback</a>
+                    <a href="#navigation" class="navigation-list-item">Navigation</a>
+                    <a href="#chip" class="navigation-list-item">Chip</a>
+                    <a href="#dropdown" class="navigation-list-item">Dropdown</a>
+                </div>
             </div>
-            <div class="navigation-sub-header">Components</div>
-            <div class="navigation-list">
-                <a href="#button" class="navigation-list-item">Button</a>
-                <a href="#input" class="navigation-list-item">Input</a>
-                <a href="#avatar" class="navigation-list-item">Avatar</a>
-                <a href="#tooltip" class="navigation-list-item">Tooltip</a>
-                <a href="#progress" class="navigation-list-item">Progress</a>
-                <a href="#dialog" class="navigation-list-item">Dialog</a>
-                <a href="#checkbox" class="navigation-list-item">Checkbox</a>
-                <a href="#radio" class="navigation-list-item">Radio</a>
-                <a href="#switch" class="navigation-list-item">Switch</a>
-                <a href="#list" class="navigation-list-item">List</a>
-                <a href="#feedback" class="navigation-list-item">Feedback</a>
-                <a href="#navigation" class="navigation-list-item">Navigation</a>
-                <a href="#chip" class="navigation-list-item">Chip</a>
-                <a href="#dropdown" class="navigation-list-item">Dropdown</a>
+            <div class="navigation-footer">
+                <a href="https://github.com/hpivanov/eve" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="content">
-<!-- inject:partials/foundations/colors.html -->
-<div id="colors" class="component">
+            <!-- inject:partials/foundations/typography.html --><div id="typography" class="component">
+    <div class="component-title">Typography</div>
+    <div class="component-content">
+        <h1>h1- 32px / 40px - Oversized Screen Titles</h1>
+        <h2>h2 - 24px / 32px - Top Level Headers</h2>
+        <h3>h3 - 20px / 28px - Main Titles</h3>
+        <h4>h4 - 18px / 28px- Sub Section</h4>
+        <h5>h5 - 16px / 24px - Highlighting Important Information</h5>
+        <h6>h6 - 12px / 18px - Lowest Level Heading</h6>
+        <!-- <h6>h6 Capitalized- 12px / 18px - Lowest level heading</h6> -->
+        <p>Paragraph 14px / 20px</p>
+        <div>normal</div>
+        <em>italic</em>
+        <br>
+        <strong>bold</strong>
+        <br>
+        <u>underline</u>
+        <br>
+        <strike>line through</strike>
+        <br>
+        <mark>highlighted</mark>
+        <div>normal<sup>superscripted</sup></div>
+        <div>normal<sub>superscripted</sub></div>
+        <a href="javascript:;">link</a>
+    </div>
+</div><!-- endinject -->
+            <!-- inject:partials/foundations/colors.html --><div id="colors" class="component">
     <div class="component-title">Colors</div>
     <div class="component-content">
         <div class="component-colors">
             <div class="component-colors-primary">
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #2196f3;"></div>
+                    <div class="component-color-square component-color-square-blue"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Blue</div>
                         <div class="component-color-rgba">rgba(33, 150, 243, 1)</div>
@@ -54,7 +84,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #f44336;"></div>
+                    <div class="component-color-square component-color-square-red"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Red</div>
                         <div class="component-color-rgba">rgba(244, 67, 54, 1)</div>
@@ -62,7 +92,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #ff9800;"></div>
+                    <div class="component-color-square component-color-square-warning"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Orange</div>
                         <div class="component-color-rgba">rgba(255, 152, 0, 1)</div>
@@ -70,7 +100,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #4caf50;"></div>
+                    <div class="component-color-square component-color-square-green"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Green</div>
                         <div class="component-color-rgba">rgba(76, 175, 80, 1)</div>
@@ -78,7 +108,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #3f51b5;"></div>
+                    <div class="component-color-square component-color-square-indigo"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Indigo</div>
                         <div class="component-color-rgba">rgba(63, 81, 181, 1)</div>
@@ -88,7 +118,7 @@
             </div>
             <div class="component-colors-secondary">
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #000000;"></div>
+                    <div class="component-color-square component-color-square-black"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Black</div>
                         <div class="component-color-rgba">rgba(0, 0, 0, 1)</div>
@@ -96,7 +126,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #333333;"></div>
+                    <div class="component-color-square component-color-square-grey-black"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Grey Black</div>
                         <div class="component-color-rgba">rgba(51, 51, 51, 1)</div>
@@ -104,7 +134,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #cfd8dc;"></div>
+                    <div class="component-color-square component-color-square-dark-silver"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Dark Silver</div>
                         <div class="component-color-rgba">rgba(207, 216, 220, 1)</div>
@@ -112,7 +142,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #eceff1;"></div>
+                    <div class="component-color-square component-color-square-bright-silver"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">Bright Silver</div>
                         <div class="component-color-rgba">rgba(236, 239, 241, 1)</div>
@@ -120,7 +150,7 @@
                     </div>
                 </div>
                 <div class="component-color">
-                    <div class="component-color-square" style="background: #ffffff; border: 1px solid #dfe1e6;"></div>
+                    <div class="component-color-square component-color-square-white"></div>
                     <div class="component-color-data">
                         <div class="component-color-name">White</div>
                         <div class="component-color-rgba">rgba(255, 255, 255, 1)</div>
@@ -130,11 +160,39 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/button.html -->
-<div id="button" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/foundations/spacing.html --><div id="spacing" class="component">
+    <div class="component-title">Spacing</div>
+    <div class="component-content">
+        <div class="component-spacings">
+            <div class="component-spacing">
+                <div class="component-spacing-square component-spacing-square-x-tiny"></div>
+                <div class="component-spacing-name">4px - x - tiny</div>
+            </div>
+            <div class="component-spacing">
+                <div class="component-spacing-square component-spacing-square-tiny"></div>
+                <div class="component-spacing-name">8px - tiny</div>
+            </div>
+            <div class="component-spacing component-spacing-small">
+                <div class="component-spacing-square component-spacing-square-small"></div>
+                <div class="component-spacing-name">16px - small</div>
+            </div>
+            <div class="component-spacing component-spacing-normal">
+                <div class="component-spacing-square component-spacing-square-normal"></div>
+                <div class="component-spacing-name">24px - normal</div>
+            </div>
+            <div class="component-spacing component-spacing-large">
+                <div class="component-spacing-square component-spacing-square-large"></div>
+                <div class="component-spacing-name">48px - large</div>
+            </div>
+            <div class="component-spacing component-spacing-x-large">
+                <div class="component-spacing-square component-spacing-square-x-large"></div>
+                <div class="component-spacing-name">64px - x - large</div>
+            </div>
+        </div>
+    </div>
+</div><!-- endinject -->
+            <!-- inject:partials/components/button.html --><div id="button" class="component">
     <div class="component-title">Button</div>
     <div class="component-content">
         <div class="component-example">
@@ -256,11 +314,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/input.html -->
-
+</div><!-- endinject -->
+            <!-- inject:partials/components/input.html -->
 <div id="input" class="component">
     <div class="component-title">Input</div>
     <div class="component-content">
@@ -310,11 +365,8 @@
             <textarea class="eve-textarea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, natus nam. Commodi corporis natus quis, dolores sapiente quas modi cupiditate, animi delectus eligendi laudantium, porro ab facilis provident similique quo.</textarea>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/avatar.html -->
-<div id="avatar" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/avatar.html --><div id="avatar" class="component">
     <div class="component-title">Avatar</div>
     <div class="component-content">
         <div class="component-example">
@@ -344,11 +396,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/tooltip.html -->
-<div id="tooltip" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/tooltip.html --><div id="tooltip" class="component">
     <div class="component-title">Tooltip</div>
     <div class="component-content">
         <div class="component-example">
@@ -370,11 +419,8 @@
             <div class="eve-tooltip eve-tooltip-right" data-tooltip="Right" style="display: inline-block;">Tooltip Right</div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/progress.html -->
-<div id="progress" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/progress.html --><div id="progress" class="component">
     <div class="component-title">Progress</div>
     <div class="component-content">
         <div class="component-example">
@@ -391,11 +437,8 @@
             <div class="eve-progress-oval" data-label="Loading..."></div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/dialog.html -->
-<div id="dialog" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/dialog.html --><div id="dialog" class="component">
     <div class="component-title">Dialog</div>
     <div class="component-content">
         <div class="component-example">
@@ -445,11 +488,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/checkbox.html -->
-<div id="checkbox" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/checkbox.html --><div id="checkbox" class="component">
     <div class="component-title">Checkbox</div>
     <div class="component-content">
         <div class="component-example">
@@ -465,17 +505,6 @@
                 <input class="eve-checkbox-native" type="checkbox">
                 <div class="eve-checkbox-mark"></div>
             </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <label class="eve-checkbox-control">
-                <div class="eve-checkbox">
-                    <input class="eve-checkbox-native" type="checkbox">
-                    <div class="eve-checkbox-mark"></div>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </label>
         </div>
     </div>
     <div class="component-content">
@@ -498,11 +527,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/radio.html -->
-<div id="radio" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/radio.html --><div id="radio" class="component">
     <div class="component-title">Radio</div>
     <div class="component-content">
         <div class="component-example">
@@ -530,17 +556,6 @@
     </div>
     <div class="component-content">
         <div class="component-example">
-            <label class="eve-radio-control">
-                <div class="eve-radio">
-                    <input class="eve-radio-native" type="radio">
-                    <div class="eve-radio-mark"></div>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </label>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
             <div class="eve-radio-list">
                 <label class="eve-radio-control">
                     <div class="eve-radio">
@@ -559,11 +574,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/switch.html -->
-<div id="switch" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/switch.html --><div id="switch" class="component">
     <div class="component-title">Switch</div>
     <div class="component-content">
         <div class="component-example">
@@ -579,17 +591,6 @@
                 <input class="eve-switch-native" type="checkbox">
                 <div class="eve-switch-mark"></div>
             </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <label class="eve-switch-control">
-                <div class="eve-switch">
-                    <input class="eve-switch-native" type="checkbox">
-                    <div class="eve-switch-mark"></div>
-                </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </label>
         </div>
     </div>
     <div class="component-content">
@@ -612,11 +613,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/list.html -->
-<div id="list" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/list.html --><div id="list" class="component">
     <div class="component-title">List</div>
     <div class="component-content">
         <div class="component-example">
@@ -664,11 +662,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/feedback.html -->
-<div id="feedback" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/feedback.html --><div id="feedback" class="component">
     <div class="component-title">Feedback</div>
     <div class="component-content">
         <div class="component-example">
@@ -715,11 +710,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/navigation.html -->
-<div id="navigation" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/navigation.html --><div id="navigation" class="component">
     <div class="component-title">Navigation</div>
     <div class="component-content">
         <div class="component-example">
@@ -731,11 +723,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/chip.html -->
-<div id="chip" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/chip.html --><div id="chip" class="component">
     <div class="component-title">Chip</div>
     <div class="component-content">
         <div class="component-example">
@@ -786,11 +775,8 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
-
-<!-- inject:partials/components/dropdown.html -->
-<div id="dropdown" class="component">
+</div><!-- endinject -->
+            <!-- inject:partials/components/dropdown.html --><div id="dropdown" class="component">
     <div class="component-title">Dropdown</div>
     <div class="component-content">
         <div class="component-example">
@@ -964,8 +950,7 @@
             </div>
         </div>
     </div>
-</div>
-<!-- endinject -->
+</div><!-- endinject -->
         </div>
     </div>
     <script src="docs/dist/docs.min.js"></script>

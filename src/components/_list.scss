@@ -1,3 +1,5 @@
+$eve-list-item-description-color: #607d8b !default;
+
 .eve-list {
     .eve-list-item {
         display: flex;
@@ -19,7 +21,7 @@
 
             .eve-list-item-description {
                 line-height: 20px;
-                color: $eve-color-bright-silver;
+                color: $eve-list-item-description-color;
             }
         }
 

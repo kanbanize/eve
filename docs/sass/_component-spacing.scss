@@ -1,0 +1,51 @@
+// sass-lint:disable no-color-literals
+.component-spacings {
+    display: flex;
+    align-items: flex-end;
+
+    .component-spacing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 48px;
+
+        .component-spacing-square {
+            border: 1px dotted #2196f3;
+            background: #eceff1;
+
+            &.component-spacing-square-x-tiny {
+                width: 4px;
+                height: 4px;
+            }
+
+            &.component-spacing-square-tiny {
+                width: 8px;
+                height: 8px;
+            }
+
+            &.component-spacing-square-small {
+                width: 16px;
+                height: 16px;
+            }
+
+            &.component-spacing-square-normal {
+                width: 24px;
+                height: 24px;
+            }
+
+            &.component-spacing-square-large {
+                width: 48px;
+                height: 48px;
+            }
+
+            &.component-spacing-square-x-large {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        .component-spacing-name {
+            margin-top: 24px;
+        }
+    }
+}

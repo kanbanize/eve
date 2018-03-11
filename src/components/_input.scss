@@ -3,6 +3,7 @@ $eve-input-border-radius: $eve-input-height / 2 !default;
 $eve-input-group-height: 36px !default;
 $eve-input-group-border-radius: $eve-input-group-height / 2 !default;
 $eve-textarea-min-height: 108px !default;
+$eve-input-placeholder-color: #607d8b !default;
 
 .eve-input {
     height: $eve-input-height;
@@ -18,7 +19,7 @@ $eve-textarea-min-height: 108px !default;
     vertical-align: top;
 
     &::placeholder {
-        color: $eve-color-bright-silver;
+        color: $eve-input-placeholder-color;
     }
 
     &:focus {
@@ -83,4 +84,8 @@ $eve-textarea-min-height: 108px !default;
     width: 100%;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
+
+    &::placeholder {
+        color: $eve-input-placeholder-color;
+    }
 }

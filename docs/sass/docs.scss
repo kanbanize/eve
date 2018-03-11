@@ -23,6 +23,26 @@ textarea {
     font-family: sans-serif;
 }
 
+.container {
+    display: flex;
+    height: 100%;
+
+    .content {
+        flex: 1;
+        overflow: auto;
+        height: 100%;
+        padding: 0 96px;
+    }
+}
+
+// .github-link {
+//     .github-icon {
+//         fill: #24292f;
+//     }
+// }
+
+@import 'navigation';
 @import 'component';
 @import 'component-color';
+@import 'component-spacing';
 @import 'snippet';
