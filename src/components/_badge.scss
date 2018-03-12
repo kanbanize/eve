@@ -22,6 +22,7 @@ $eve-badge-border-radius: $eve-badge-height / 2 !default;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        font-size: $eve-font-normal;
     }
 
     &:not([data-badge]) {

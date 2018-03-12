@@ -39,6 +39,12 @@ $eve-avatar-sizes: (
                 font-size: $eve-font-small;
             }
 
+            @if $eve-avatar-size == 'x-large' {
+                font-weight: normal;
+            } @else {
+                font-weight: bold;
+            }
+
             &.eve-avatar-available {
                 &::after {
                     content: '';
