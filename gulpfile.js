@@ -116,3 +116,6 @@ gulp.task('watch', ['build', 'build-docs'], () => {
     gulp.watch(config.docs.css.src, ['build-docs-css']);
     gulp.watch(config.docs.html.src, ['build-docs-html']);
 });
+
+// All
+gulp.task('build-all', ['build', 'build-docs']);
