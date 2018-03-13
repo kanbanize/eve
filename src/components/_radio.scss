@@ -31,7 +31,7 @@
 
     .eve-radio-mark {
         background: $eve-color-white;
-        border: 2px solid $eve-color-darkest-silver;
+        border: 2px solid $eve-color-darker-silver;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -53,12 +53,12 @@
 
         .eve-radio-native {
             &:checked ~ .eve-radio-mark {
-                background: $eve-color-darkest-silver;
+                background: $eve-color-darker-silver;
             }
         }
 
         .eve-radio-mark {
-            background: $eve-color-darkest-silver;
+            background: $eve-color-darker-silver;
 
             &::after {
                 display: block;
