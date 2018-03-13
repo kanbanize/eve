@@ -45,8 +45,10 @@ $eve-avatar-sizes: (
                 font-weight: bold;
             }
 
-            &.eve-avatar-available,
-            &.eve-avatar-unavailable {
+            &.eve-avatar-online,
+            &.eve-avatar-busy,
+            &.eve-avatar-away,
+            &.eve-avatar-offline {
                 &::after {
                     content: '';
                     display: block;
@@ -65,13 +67,25 @@ $eve-avatar-sizes: (
                 }
             }
 
-            &.eve-avatar-available {
+            &.eve-avatar-online {
                 &::after {
                     background: $eve-color-green;
                 }
             }
 
-            &.eve-avatar-unavailable {
+            &.eve-avatar-busy {
+                &::after {
+                    background: $eve-color-red;
+                }
+            }
+
+            &.eve-avatar-away {
+                &::after {
+                    background: $eve-color-orange;
+                }
+            }
+
+            &.eve-avatar-offline {
                 &::after {
                     background: $eve-color-dark-silver;
                 }
