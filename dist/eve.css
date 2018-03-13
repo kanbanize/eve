@@ -295,8 +295,7 @@ a {
     border-radius: 0 18px 18px 0; }
 
 .eve-input {
-  height: 32px;
-  border-radius: 16px;
+  height: 36px;
   background: #eceff1;
   border: 0;
   outline: none;
@@ -307,22 +306,23 @@ a {
   width: 100%;
   vertical-align: top; }
   .eve-input::-webkit-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-input:-ms-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-input::-ms-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-input::placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-input:focus {
-    box-shadow: inset 0 0 0 1px #2196f3; }
+    box-shadow: inset 0 0 0 1px #2196f3;
+    background: #fff; }
   .eve-input.eve-input-success {
     box-shadow: inset 0 0 0 1px #4caf50; }
   .eve-input.eve-input-danger {
     box-shadow: inset 0 0 0 1px #f44336; }
   .eve-input.eve-input-disable {
-    background: #b0bec5;
-    color: #fff;
+    background: #cfd8dc;
+    color: #607d8b;
     pointer-events: none; }
     .eve-input.eve-input-disable:focus {
       box-shadow: none; }
@@ -330,13 +330,8 @@ a {
 .eve-input-control {
   display: flex;
   width: 100%; }
-  .eve-input-control .eve-input {
-    height: 36px;
-    border-radius: 18px;
-    margin-right: 8px; }
-  .eve-input-control .eve-button::before {
-    content: ' ';
-    display: block; }
+  .eve-input-control .eve-button {
+    border-radius: 0; }
 
 .eve-input-group {
   display: flex;
@@ -357,13 +352,16 @@ a {
   font-size: 14px;
   color: #333; }
   .eve-textarea::-webkit-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-textarea:-ms-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-textarea::-ms-input-placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
   .eve-textarea::placeholder {
-    color: #607d8b; }
+    color: #b0bec5; }
+  .eve-textarea:focus {
+    box-shadow: inset 0 0 0 1px #2196f3;
+    background: #fff; }
 
 .eve-avatar {
   display: inline-block;
