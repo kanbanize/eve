@@ -37,7 +37,7 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
     vertical-align: top;
 
     i {
-        font-size: 18px; // TODO: Change this with variable
+        font-size: 18px;
         margin-right: $eve-spacing-x-tiny;
     }
 
@@ -59,13 +59,11 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 background: transparent;
 
                 &:hover {
-                    background: $eve-color-bright-silver;
-                    border-color: $eve-color-bright-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
                 }
 
                 &:active {
-                    background: $eve-color-dark-silver;
-                    border-color: $eve-color-dark-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
                 }
             }
 
@@ -77,11 +75,11 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 font-weight: bold;
 
                 &:hover {
-                    background: $eve-color-bright-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
                 }
 
                 &:active {
-                    background: $eve-color-dark-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
                 }
             }
 
@@ -114,12 +112,12 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 }
 
                 &:hover {
-                    background: $eve-color-bright-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
                     color: map-get($eve-button-colors, $eve-button-color);
                 }
 
                 &:active {
-                    background: $eve-color-dark-silver;
+                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
                     color: map-get($eve-button-colors, $eve-button-color);
                 }
             }
