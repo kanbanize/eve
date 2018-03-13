@@ -390,102 +390,120 @@ a {
     line-height: 16px;
     font-size: 10px;
     font-weight: bold; }
-    .eve-avatar.eve-avatar-x-tiny.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-x-tiny.eve-avatar-available::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 4px;
       width: 4px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 1px solid #fff; }
+    .eve-avatar.eve-avatar-x-tiny.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-x-tiny.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
   .eve-avatar.eve-avatar-tiny {
     width: 24px;
     height: 24px;
     line-height: 24px;
     font-size: 12px;
     font-weight: bold; }
-    .eve-avatar.eve-avatar-tiny.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-tiny.eve-avatar-available::after, .eve-avatar.eve-avatar-tiny.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 6px;
       width: 6px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 1px solid #fff; }
+    .eve-avatar.eve-avatar-tiny.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-tiny.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
   .eve-avatar.eve-avatar-small {
     width: 28px;
     height: 28px;
     line-height: 28px;
     font-size: 12px;
     font-weight: bold; }
-    .eve-avatar.eve-avatar-small.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-small.eve-avatar-available::after, .eve-avatar.eve-avatar-small.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 7px;
       width: 7px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 2px solid #fff; }
+    .eve-avatar.eve-avatar-small.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-small.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
   .eve-avatar.eve-avatar-normal {
     width: 32px;
     height: 32px;
     line-height: 32px;
     font-size: 12px;
     font-weight: bold; }
-    .eve-avatar.eve-avatar-normal.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-normal.eve-avatar-available::after, .eve-avatar.eve-avatar-normal.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 8px;
       width: 8px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 2px solid #fff; }
+    .eve-avatar.eve-avatar-normal.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-normal.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
   .eve-avatar.eve-avatar-large {
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
     font-weight: bold; }
-    .eve-avatar.eve-avatar-large.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-large.eve-avatar-available::after, .eve-avatar.eve-avatar-large.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 10px;
       width: 10px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 2px solid #fff; }
+    .eve-avatar.eve-avatar-large.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-large.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
   .eve-avatar.eve-avatar-x-large {
     width: 96px;
     height: 96px;
     line-height: 96px;
     font-size: 48px;
     font-weight: normal; }
-    .eve-avatar.eve-avatar-x-large.eve-avatar-available::after {
+    .eve-avatar.eve-avatar-x-large.eve-avatar-available::after, .eve-avatar.eve-avatar-x-large.eve-avatar-unavailable::after {
       content: '';
       display: block;
       height: 24px;
       width: 24px;
       border-radius: 100%;
-      background: #4caf50;
       position: absolute;
       bottom: 0;
       right: 0;
       border: 2px solid #fff; }
+    .eve-avatar.eve-avatar-x-large.eve-avatar-available::after {
+      background: #4caf50; }
+    .eve-avatar.eve-avatar-x-large.eve-avatar-unavailable::after {
+      background: #cfd8dc; }
 
 .eve-avatar-label {
   display: inline-flex;

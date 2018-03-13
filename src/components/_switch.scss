@@ -44,7 +44,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             content: '';
             width: $eve-switch-height - 4;
             height: $eve-switch-height - 4;
-            background: $eve-color-neutral;
+            background: $eve-color-darkest-silver;
             border-radius: 100%;
             position: absolute;
             left: 2px;
@@ -57,12 +57,12 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
 
         .eve-switch-native {
             &:checked ~ .eve-switch-mark {
-                background: $eve-color-neutral;
+                background: $eve-color-darkest-silver;
             }
         }
 
         .eve-switch-mark {
-            background: $eve-color-neutral;
+            background: $eve-color-darkest-silver;
 
             &::after {
                 background: $eve-color-white;

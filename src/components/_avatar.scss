@@ -45,14 +45,14 @@ $eve-avatar-sizes: (
                 font-weight: bold;
             }
 
-            &.eve-avatar-available {
+            &.eve-avatar-available,
+            &.eve-avatar-unavailable {
                 &::after {
                     content: '';
                     display: block;
                     height: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
                     width: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
                     border-radius: 100%;
-                    background: $eve-color-green;
                     position: absolute;
                     bottom: 0;
                     right: 0;
@@ -62,6 +62,18 @@ $eve-avatar-sizes: (
                     } @else {
                         border: 2px solid $eve-color-white;
                     }
+                }
+            }
+
+            &.eve-avatar-available {
+                &::after {
+                    background: $eve-color-green;
+                }
+            }
+
+            &.eve-avatar-unavailable {
+                &::after {
+                    background: $eve-color-dark-silver;
                 }
             }
         }

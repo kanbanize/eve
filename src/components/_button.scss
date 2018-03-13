@@ -106,7 +106,7 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
                 width: $eve-button-height;
                 height: $eve-button-height;
                 border-radius: 100%;
-                color: $eve-color-neutral;
+                color: $eve-color-darkest-silver;
                 background: transparent;
 
                 i {
@@ -128,18 +128,18 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
 
     &.eve-button-disable {
         pointer-events: none;
-        background: $eve-color-neutral;
+        background: $eve-color-darkest-silver;
 
         &.eve-button-outline {
-            background: $eve-color-neutral;
-            border-color: $eve-color-neutral;
+            background: $eve-color-darkest-silver;
+            border-color: $eve-color-darkest-silver;
             color: $eve-color-white;
         }
 
         &.eve-button-invert,
         &.eve-button-text {
             background: transparent;
-            color: $eve-color-neutral;
+            color: $eve-color-darkest-silver;
         }
     }
 }
