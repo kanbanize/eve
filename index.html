@@ -38,6 +38,7 @@
                     <a href="#chip" class="navigation-list-item">Chip</a>
                     <a href="#dropdown" class="navigation-list-item">Dropdown</a>
                     <a href="#badge" class="navigation-list-item">Badge</a>
+                    <a href="#breadcrumb" class="navigation-list-item">Breadcrumb</a>
                 </div>
                 <div class="navigation-sub-header">Utilities</div>
                 <div class="navigation-list">
@@ -49,6 +50,7 @@
             </div>
         </div>
         <div class="content">
+            <!-- Start Foundations Injection -->
             <!-- inject:partials/foundations/typography.html --><div id="typography" class="component">
     <div class="component-title">Typography</div>
     <div class="component-content">
@@ -205,6 +207,9 @@
         </div>
     </div>
 </div><!-- endinject -->
+            <!-- End Foundations Injection -->
+
+            <!-- Start Components Injection -->
             <!-- inject:partials/components/button.html --><div id="button" class="component">
     <div class="component-title">Button</div>
     <div class="component-content">
@@ -1018,6 +1023,30 @@
         </div>
     </div>
 </div><!-- endinject -->
+            <!-- inject:partials/components/breadcrumb.html --><div id="breadcrumb" class="component">
+    <div class="component-title">Breadcrumb</div>
+    <div class="component-content">
+        <div class="component-example">
+            <ul class="eve-breadcrumb">
+                <li class="eve-breadcrumb-item">
+                    <a href="#">Eve</a>
+                </li>
+                <li class="eve-breadcrumb-item">
+                    <a href="#">Documentation</a>
+                </li>
+                <li class="eve-breadcrumb-item">
+                    <a href="#">Components</a>
+                </li>
+                <li class="eve-breadcrumb-item">
+                    <a href="#">Breadcrumb</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- endinject -->
+            <!-- End Components Injection -->
+
+            <!-- Start Utilities Injection -->
             <!-- inject:partials/utilities/text-colors.html --><div id="text-colors" class="component">
     <div class="component-title">Text Colors</div>
     <div class="component-content">
@@ -1031,6 +1060,7 @@
     </div>
 </div>
 <!-- endinject -->
+            <!-- End Utilities Injection -->
         </div>
     </div>
     <script src="docs/dist/docs.min.js"></script>

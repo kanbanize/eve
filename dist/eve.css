@@ -1071,3 +1071,21 @@ a {
     border-radius: 100%;
     -webkit-transform: none;
             transform: none; }
+
+.eve-breadcrumb {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .eve-breadcrumb .eve-breadcrumb-item:not(:last-child)::after {
+    content: '/';
+    padding: 0 8px 0 4px; }
+  .eve-breadcrumb .eve-breadcrumb-item a {
+    text-decoration: none;
+    color: #333; }
+    .eve-breadcrumb .eve-breadcrumb-item a:hover {
+      text-decoration: underline;
+      color: #2196f3; }
+  .eve-breadcrumb .eve-breadcrumb-item:last-child a {
+    color: #2196f3;
+    pointer-events: none; }

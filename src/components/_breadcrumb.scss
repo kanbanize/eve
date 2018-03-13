@@ -1,0 +1,32 @@
+.eve-breadcrumb {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    .eve-breadcrumb-item {
+        &:not(:last-child) {
+            &::after {
+                content: '/';
+                padding: 0 $eve-spacing-tiny 0 $eve-spacing-x-tiny;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $eve-color-grey-black;
+
+            &:hover {
+                text-decoration: underline;
+                color: $eve-color-blue;
+            }
+        }
+
+        &:last-child {
+            a {
+                color: $eve-color-blue;
+                pointer-events: none;
+            }
+        }
+    }
+}
