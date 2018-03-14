@@ -32,7 +32,7 @@ $eve-textarea-min-height: 108px !default;
 
     &.eve-input-disable {
         background: $eve-color-dark-silver;
-        color: #607d8b;
+        color: #607d8b; // sass-lint:disable-line no-color-literals
         pointer-events: none;
 
         &:focus {
