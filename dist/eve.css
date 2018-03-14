@@ -70,7 +70,8 @@ a {
       -ms-user-select: none;
           user-select: none;
   box-sizing: border-box;
-  vertical-align: top; }
+  vertical-align: top;
+  font-family: inherit; }
   .eve-button i {
     font-size: 18px;
     margin-right: 4px; }
@@ -305,14 +306,19 @@ a {
   box-sizing: border-box;
   width: 100%;
   vertical-align: top;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-family: inherit; }
   .eve-input::-webkit-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-input:-ms-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-input::-ms-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-input::placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-input:focus {
     box-shadow: inset 0 0 0 1px #2196f3;
@@ -351,14 +357,20 @@ a {
   min-height: 108px;
   width: 100%;
   font-size: 14px;
-  color: #333; }
+  color: #333;
+  -webkit-appearance: none;
+  font-family: inherit; }
   .eve-textarea::-webkit-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-textarea:-ms-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-textarea::-ms-input-placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-textarea::placeholder {
+    font-family: inherit;
     color: #b0bec5; }
   .eve-textarea:focus {
     box-shadow: inset 0 0 0 1px #2196f3;
@@ -1081,3 +1093,29 @@ a {
   .eve-breadcrumb .eve-breadcrumb-item:last-child a {
     color: #2196f3;
     pointer-events: none; }
+
+.eve-table {
+  border-spacing: 0;
+  border: 1px solid #cfd8dc;
+  border-collapse: collapse;
+  width: 100%; }
+  .eve-table thead {
+    text-align: left; }
+    .eve-table thead tr {
+      border-bottom: 1px solid #cfd8dc; }
+      .eve-table thead tr th {
+        height: 56px;
+        line-height: 56px;
+        font-weight: normal;
+        background: #eceff1;
+        color: #607d8b;
+        padding: 0 24px; }
+  .eve-table tbody tr {
+    height: 48px;
+    line-height: 48px; }
+    .eve-table tbody tr:not(:last-child) {
+      border-bottom: 1px solid #cfd8dc; }
+    .eve-table tbody tr td {
+      padding: 0 24px; }
+  .eve-table.eve-table-strip tbody tr:nth-child(even) {
+    background: rgba(236, 239, 241, 0.5); }

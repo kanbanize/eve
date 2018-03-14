@@ -1,0 +1,49 @@
+.eve-table {
+    border-spacing: 0;
+    border: 1px solid $eve-color-dark-silver;
+    border-collapse: collapse;
+    width: 100%;
+
+    thead {
+        text-align: left;
+
+
+        tr {
+            border-bottom: 1px solid $eve-color-dark-silver;
+
+            th {
+                height: 56px;
+                line-height: 56px;
+                font-weight: normal;
+                background: $eve-color-bright-silver;
+                color: #607d8b; // sass-lint:disable-line no-color-literals
+                padding: 0 24px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            height: 48px;
+            line-height: 48px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $eve-color-dark-silver;
+            }
+
+            td {
+                padding: 0 24px;
+            }
+        }
+    }
+
+    &.eve-table-strip {
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
+                }
+            }
+        }
+    }
+}
