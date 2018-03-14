@@ -90,6 +90,7 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
         .eve-dropdown-list-separator {
             background: $eve-color-bright-silver;
             height: 1px;
+            margin: $eve-spacing-tiny 0;
         }
     }
 

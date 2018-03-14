@@ -304,7 +304,8 @@ a {
   color: #333;
   box-sizing: border-box;
   width: 100%;
-  vertical-align: top; }
+  vertical-align: top;
+  -webkit-appearance: none; }
   .eve-input::-webkit-input-placeholder {
     color: #b0bec5; }
   .eve-input:-ms-input-placeholder {
@@ -1027,7 +1028,8 @@ a {
         background: #eceff1 !important; }
     .eve-dropdown .eve-dropdown-list .eve-dropdown-list-separator {
       background: #eceff1;
-      height: 1px; }
+      height: 1px;
+      margin: 8px 0; }
   .eve-dropdown.eve-dropdown-strip .eve-dropdown-list .eve-dropdown-list-item:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 

@@ -12,6 +12,7 @@ $eve-textarea-min-height: 108px !default;
     box-sizing: border-box;
     width: 100%;
     vertical-align: top;
+    -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
 
     &::placeholder {
         color: $eve-color-darker-silver;
