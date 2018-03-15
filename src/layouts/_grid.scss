@@ -1,0 +1,36 @@
+$eve-grid-margins: (
+    tiny: $eve-spacing-tiny,
+    small: $eve-spacing-small,
+    normal: $eve-spacing-normal,
+    large: $eve-spacing-large
+) !default;
+
+$eve-grid-gutters: (
+    tiny: $eve-spacing-tiny,
+    small: $eve-spacing-small,
+    normal: $eve-spacing-normal,
+    large: $eve-spacing-large
+) !default;
+
+.eve-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+    @each $eve-grid-margin in map-keys($eve-grid-margins) {
+        &.eve-grid-margin-#{$eve-grid-margin} {
+            padding: map-get($eve-grid-margins, $eve-grid-margin);
+        }
+    }
+
+    @each $eve-grid-gutter in map-keys($eve-grid-gutters) {
+        &.eve-grid-gutter-#{$eve-grid-gutter} {
+            grid-gap: map-get($eve-grid-gutters, $eve-grid-gutter);
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .eve-grid-cell-#{$i} {
+            grid-column-end: span $i;
+        }
+    }
+}

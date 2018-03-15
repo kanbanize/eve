@@ -37,21 +37,6 @@ sub {
 a {
   color: #2196f3; }
 
-.eve-color-blue {
-  color: #2196f3; }
-
-.eve-color-red {
-  color: #f44336; }
-
-.eve-color-orange {
-  color: #ff9800; }
-
-.eve-color-green {
-  color: #4caf50; }
-
-.eve-color-indigo {
-  color: #3f51b5; }
-
 .eve-button {
   display: inline-flex;
   align-items: center;
@@ -1119,3 +1104,62 @@ a {
       padding: 0 24px; }
   .eve-table.eve-table-strip tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
+
+.eve-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .eve-grid.eve-grid-margin-tiny {
+    padding: 8px; }
+  .eve-grid.eve-grid-margin-small {
+    padding: 16px; }
+  .eve-grid.eve-grid-margin-normal {
+    padding: 24px; }
+  .eve-grid.eve-grid-margin-large {
+    padding: 48px; }
+  .eve-grid.eve-grid-gutter-tiny {
+    grid-gap: 8px; }
+  .eve-grid.eve-grid-gutter-small {
+    grid-gap: 16px; }
+  .eve-grid.eve-grid-gutter-normal {
+    grid-gap: 24px; }
+  .eve-grid.eve-grid-gutter-large {
+    grid-gap: 48px; }
+  .eve-grid .eve-grid-cell-1 {
+    grid-column-end: span 1; }
+  .eve-grid .eve-grid-cell-2 {
+    grid-column-end: span 2; }
+  .eve-grid .eve-grid-cell-3 {
+    grid-column-end: span 3; }
+  .eve-grid .eve-grid-cell-4 {
+    grid-column-end: span 4; }
+  .eve-grid .eve-grid-cell-5 {
+    grid-column-end: span 5; }
+  .eve-grid .eve-grid-cell-6 {
+    grid-column-end: span 6; }
+  .eve-grid .eve-grid-cell-7 {
+    grid-column-end: span 7; }
+  .eve-grid .eve-grid-cell-8 {
+    grid-column-end: span 8; }
+  .eve-grid .eve-grid-cell-9 {
+    grid-column-end: span 9; }
+  .eve-grid .eve-grid-cell-10 {
+    grid-column-end: span 10; }
+  .eve-grid .eve-grid-cell-11 {
+    grid-column-end: span 11; }
+  .eve-grid .eve-grid-cell-12 {
+    grid-column-end: span 12; }
+
+.eve-color-blue {
+  color: #2196f3; }
+
+.eve-color-red {
+  color: #f44336; }
+
+.eve-color-orange {
+  color: #ff9800; }
+
+.eve-color-green {
+  color: #4caf50; }
+
+.eve-color-indigo {
+  color: #3f51b5; }

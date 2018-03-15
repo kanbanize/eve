@@ -5,9 +5,6 @@
 @import 'foundations/colors';
 @import 'foundations/spacing';
 
-// Utilities
-@import 'utilities/text-colors';
-
 // Components
 @import 'components/button';
 @import 'components/input';
@@ -26,3 +23,10 @@
 @import 'components/badge';
 @import 'components/breadcrumb';
 @import 'components/table';
+
+// Layouts
+@import 'layouts/grid';
+@import 'layouts/flex';
+
+// Utilities
+@import 'utilities/text-colors';
