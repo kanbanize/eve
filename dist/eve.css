@@ -898,7 +898,8 @@ a {
     .eve-feedback .eve-feedback-action .eve-button {
       font-size: 12px;
       padding: 0;
-      height: initial; }
+      height: initial;
+      min-width: auto; }
       .eve-feedback .eve-feedback-action .eve-button:not(:first-child) {
         margin-left: 8px; }
 

@@ -19,18 +19,8 @@ $eve-feedback-colors: (
             $eve-feedback-color-rgb: rgba(map-get($eve-feedback-colors, $eve-feedback-color), .2);
 
             background: $eve-feedback-color-rgb;
-
-            // i {
-            //     color: map-get($eve-icons-types, $eve-feedback-type);
-            // }
         }
     }
-
-    // i {
-    //     margin-right: $eve-spacing-tiny;
-    //     font-size: 18px;
-    //     vertical-align: middle;
-    // }
 
     .eve-feedback-content {
         display: flex;
@@ -46,6 +36,7 @@ $eve-feedback-colors: (
             font-size: $eve-font-small;
             padding: 0;
             height: initial;
+            min-width: auto;
 
             &:not(:first-child) {
                 margin-left: $eve-spacing-tiny;
