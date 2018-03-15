@@ -7,7 +7,6 @@
     thead {
         text-align: left;
 
-
         tr {
             border-bottom: 1px solid $eve-color-dark-silver;
 
@@ -17,7 +16,7 @@
                 font-weight: normal;
                 background: $eve-color-bright-silver;
                 color: #607d8b; // sass-lint:disable-line no-color-literals
-                padding: 0 24px;
+                padding: 0 $eve-spacing-normal;
             }
         }
     }
@@ -32,7 +31,7 @@
             }
 
             td {
-                padding: 0 24px;
+                padding: 0 $eve-spacing-normal;
             }
         }
     }
