@@ -73,6 +73,7 @@ $eve-button-min-width: 94px !default;
             // Invert Buttons
             &.eve-button-invert {
                 color: $color;
+                background: transparent;
 
                 &:hover {
                     background: rgba($color, .1); // sass-lint:disable-line no-color-literals
@@ -86,6 +87,7 @@ $eve-button-min-width: 94px !default;
             // Text Buttons
             &.eve-button-text {
                 color: $color;
+                background: transparent;
 
                 &:hover {
                     color: $hover-color;
@@ -127,7 +129,6 @@ $eve-button-min-width: 94px !default;
     &.eve-button-invert,
     &.eve-button-text {
         text-transform: uppercase;
-        background: transparent;
         border: 0;
         font-weight: bold;
     }
