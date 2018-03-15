@@ -1,13 +1,13 @@
 $eve-text-colors: (
-    color-blue: $eve-color-blue,
-    color-red: $eve-color-red,
-    color-orange: $eve-color-orange,
-    color-green: $eve-color-green,
-    color-indigo: $eve-color-indigo
+    primary: $eve-color-blue,
+    danger: $eve-color-red,
+    warning: $eve-color-orange,
+    success: $eve-color-green,
+    info: $eve-color-indigo
 ) !default;
 
 @each $eve-text-color in map-keys($eve-text-colors) {
-    .eve-#{$eve-text-color} {
+    .eve-color-#{$eve-text-color} {
         color: map-get($eve-text-colors, $eve-text-color);
     }
 }

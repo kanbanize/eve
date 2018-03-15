@@ -1149,17 +1149,17 @@ a {
   .eve-grid .eve-grid-cell-12 {
     grid-column-end: span 12; }
 
-.eve-color-blue {
+.eve-color-primary {
   color: #2196f3; }
 
-.eve-color-red {
+.eve-color-danger {
   color: #f44336; }
 
-.eve-color-orange {
+.eve-color-warning {
   color: #ff9800; }
 
-.eve-color-green {
+.eve-color-success {
   color: #4caf50; }
 
-.eve-color-indigo {
+.eve-color-info {
   color: #3f51b5; }
