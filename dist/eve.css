@@ -1106,6 +1106,19 @@ a {
   .eve-table.eve-table-strip tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 
+.eve-divider {
+  width: 100%;
+  margin: 24px 0;
+  height: 1px;
+  background: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .eve-divider::after {
+    content: attr(data-content);
+    padding: 0 8px;
+    background: #fff; }
+
 .eve-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr)); }
