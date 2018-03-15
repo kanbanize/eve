@@ -143,6 +143,40 @@ $eve-button-min-width: 94px !default;
         color: $eve-color-darker-silver;
     }
 
+    &.eve-button-load {
+        color: transparent;
+        position: relative;
+
+        &::after {
+            content: '';
+            border-radius: 100%;
+            border: 2px solid transparent;
+            border-top-color: $eve-color-white;
+            border-left-color: $eve-color-white;
+            position: absolute;
+            top: calc(50% - 11px);
+            left: calc(50% - 11px);
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 18px;
+            animation-name: eveButtonLoad;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-duration: .5s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes eveButtonLoad {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
     &.eve-button-disable {
         pointer-events: none;
         background: $eve-color-darker-silver;

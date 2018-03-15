@@ -215,6 +215,48 @@ a {
     background: transparent;
     min-width: 36px;
     color: #b0bec5; }
+  .eve-button.eve-button-load {
+    color: transparent;
+    position: relative; }
+    .eve-button.eve-button-load::after {
+      content: '';
+      border-radius: 100%;
+      border: 2px solid transparent;
+      border-top-color: #fff;
+      border-left-color: #fff;
+      position: absolute;
+      top: calc(50% - 11px);
+      left: calc(50% - 11px);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 18px;
+      height: 18px;
+      -webkit-animation-name: eveButtonLoad;
+              animation-name: eveButtonLoad;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-duration: .5s;
+              animation-duration: .5s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear; }
+
+@-webkit-keyframes eveButtonLoad {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes eveButtonLoad {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
   .eve-button.eve-button-disable {
     pointer-events: none;
     background: #b0bec5; }
