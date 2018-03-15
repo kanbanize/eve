@@ -18,6 +18,7 @@ $eve-button-active-colors: (
 ) !default;
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
+$eve-button-min-width: 94px !default;
 
 .eve-button {
     display: inline-flex;
@@ -36,93 +37,109 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
     box-sizing: border-box;
     vertical-align: top;
     font-family: inherit;
+    min-width: $eve-button-min-width;
+
+    @each $eve-button-color in map-keys($eve-button-colors) {
+        $color: map-get($eve-button-colors, $eve-button-color);
+        $hover-color: map-get($eve-button-hover-colors, $eve-button-color);
+        $active-color: map-get($eve-button-active-colors, $eve-button-color);
+
+        // Default Buttons
+        &.eve-button-#{$eve-button-color} {
+            background: $color;
+
+            &:hover {
+                background: $hover-color;
+            }
+
+            &:active {
+                background: $active-color;
+            }
+
+            // Outline Buttons
+            &.eve-button-outline {
+                color: $color;
+                border: 1px solid $color;
+
+                &:hover {
+                    background: rgba($color, .1); // sass-lint:disable-line no-color-literals
+                }
+
+                &:active {
+                    background: rgba($color, .2); // sass-lint:disable-line no-color-literals
+                }
+            }
+
+            // Invert Buttons
+            &.eve-button-invert {
+                color: $color;
+
+                &:hover {
+                    background: rgba($color, .1); // sass-lint:disable-line no-color-literals
+                }
+
+                &:active {
+                    background: rgba($color, .2); // sass-lint:disable-line no-color-literals
+                }
+            }
+
+            // Text Buttons
+            &.eve-button-text {
+                color: $color;
+
+                &:hover {
+                    color: $hover-color;
+                }
+
+                &:active {
+                    color: $active-color;
+                }
+            }
+
+            // Icon Buttons
+            &.eve-button-icon {
+                i {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: rgba($color, .1); // sass-lint:disable-line no-color-literals
+                    color: $color;
+                }
+
+                &:active {
+                    background: rgba($color, .2); // sass-lint:disable-line no-color-literals
+                    color: $color;
+                }
+            }
+        }
+    }
 
     i {
         font-size: 18px;
         margin-right: $eve-spacing-x-tiny;
     }
 
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        &.eve-button-#{$eve-button-color} {
-            background: map-get($eve-button-colors, $eve-button-color);
+    &.eve-button-outline {
+        background: transparent;
+    }
 
-            &:hover {
-                background: map-get($eve-button-hover-colors, $eve-button-color);
-            }
+    &.eve-button-invert,
+    &.eve-button-text {
+        text-transform: uppercase;
+        background: transparent;
+        border: 0;
+        font-weight: bold;
+    }
 
-            &:active {
-                background: map-get($eve-button-active-colors, $eve-button-color);
-            }
-
-            &.eve-button-outline {
-                color: map-get($eve-button-colors, $eve-button-color);
-                border: 1px solid map-get($eve-button-colors, $eve-button-color);
-                background: transparent;
-
-                &:hover {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
-                }
-
-                &:active {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
-                }
-            }
-
-            &.eve-button-invert {
-                text-transform: uppercase;
-                background: transparent;
-                border: 0;
-                color: map-get($eve-button-colors, $eve-button-color);
-                font-weight: bold;
-
-                &:hover {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
-                }
-
-                &:active {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
-                }
-            }
-
-            &.eve-button-text {
-                text-transform: uppercase;
-                background: transparent;
-                border: 0;
-                color: map-get($eve-button-colors, $eve-button-color);
-                font-weight: bold;
-
-                &:hover {
-                    color: map-get($eve-button-hover-colors, $eve-button-color);
-                }
-
-                &:active {
-                    color: map-get($eve-button-active-colors, $eve-button-color);
-                }
-            }
-
-            &.eve-button-icon {
-                padding: 0;
-                width: $eve-button-height;
-                height: $eve-button-height;
-                border-radius: 100%;
-                color: $eve-color-darker-silver;
-                background: transparent;
-
-                i {
-                    margin-right: 0;
-                }
-
-                &:hover {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .1); // sass-lint:disable-line no-color-literals
-                    color: map-get($eve-button-colors, $eve-button-color);
-                }
-
-                &:active {
-                    background: rgba(map-get($eve-button-colors, $eve-button-color), .2); // sass-lint:disable-line no-color-literals
-                    color: map-get($eve-button-colors, $eve-button-color);
-                }
-            }
-        }
+    &.eve-button-icon {
+        padding: 0;
+        width: $eve-button-height;
+        height: $eve-button-height;
+        border-radius: 100%;
+        background: transparent;
+        min-width: $eve-button-height;
+        color: $eve-color-darker-silver;
     }
 
     &.eve-button-disable {
@@ -136,7 +153,8 @@ $eve-button-border-radius: $eve-button-height / 2 !default;
         }
 
         &.eve-button-invert,
-        &.eve-button-text {
+        &.eve-button-text,
+        &.eve-button-icon {
             background: transparent;
             color: $eve-color-darker-silver;
         }
