@@ -1125,30 +1125,32 @@ a {
     grid-gap: 24px; }
   .eve-grid.eve-grid-gutter-large {
     grid-gap: 48px; }
-  .eve-grid .eve-grid-cell-1 {
-    grid-column-end: span 1; }
-  .eve-grid .eve-grid-cell-2 {
-    grid-column-end: span 2; }
-  .eve-grid .eve-grid-cell-3 {
-    grid-column-end: span 3; }
-  .eve-grid .eve-grid-cell-4 {
-    grid-column-end: span 4; }
-  .eve-grid .eve-grid-cell-5 {
-    grid-column-end: span 5; }
-  .eve-grid .eve-grid-cell-6 {
-    grid-column-end: span 6; }
-  .eve-grid .eve-grid-cell-7 {
-    grid-column-end: span 7; }
-  .eve-grid .eve-grid-cell-8 {
-    grid-column-end: span 8; }
-  .eve-grid .eve-grid-cell-9 {
-    grid-column-end: span 9; }
-  .eve-grid .eve-grid-cell-10 {
-    grid-column-end: span 10; }
-  .eve-grid .eve-grid-cell-11 {
-    grid-column-end: span 11; }
-  .eve-grid .eve-grid-cell-12 {
-    grid-column-end: span 12; }
+  .eve-grid .eve-grid-cell {
+    box-sizing: border-box; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-1 {
+      grid-column-end: span 1; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-2 {
+      grid-column-end: span 2; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-3 {
+      grid-column-end: span 3; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-4 {
+      grid-column-end: span 4; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-5 {
+      grid-column-end: span 5; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-6 {
+      grid-column-end: span 6; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-7 {
+      grid-column-end: span 7; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-8 {
+      grid-column-end: span 8; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-9 {
+      grid-column-end: span 9; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-10 {
+      grid-column-end: span 10; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-11 {
+      grid-column-end: span 11; }
+    .eve-grid .eve-grid-cell.eve-grid-cell-12 {
+      grid-column-end: span 12; }
 
 .eve-color-primary {
   color: #2196f3; }

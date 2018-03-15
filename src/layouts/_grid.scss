@@ -28,9 +28,13 @@ $eve-grid-gutters: (
         }
     }
 
-    @for $i from 1 through 12 {
-        .eve-grid-cell-#{$i} {
-            grid-column-end: span $i;
+    .eve-grid-cell {
+        box-sizing: border-box;
+
+        @for $i from 1 through 12 {
+            &.eve-grid-cell-#{$i} {
+                grid-column-end: span $i;
+            }
         }
     }
 }
