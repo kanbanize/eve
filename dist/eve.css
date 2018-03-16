@@ -231,8 +231,8 @@ a {
               transform: translate(-50%, -50%);
       width: 18px;
       height: 18px;
-      -webkit-animation-name: eveButtonLoad;
-              animation-name: eveButtonLoad;
+      -webkit-animation-name: eveButtonProgress;
+              animation-name: eveButtonProgress;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards;
       -webkit-animation-iteration-count: infinite;
@@ -242,7 +242,7 @@ a {
       -webkit-animation-timing-function: linear;
               animation-timing-function: linear; }
 
-@-webkit-keyframes eveButtonLoad {
+@-webkit-keyframes eveButtonProgress {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0); }
@@ -250,7 +250,7 @@ a {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
-@keyframes eveButtonLoad {
+@keyframes eveButtonProgress {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0); }

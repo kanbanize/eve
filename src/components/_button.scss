@@ -159,14 +159,14 @@ $eve-button-min-width: 94px !default;
             transform: translate(-50%, -50%);
             width: 18px;
             height: 18px;
-            animation-name: eveButtonLoad;
+            animation-name: eveButtonProgress;
             animation-fill-mode: forwards;
             animation-iteration-count: infinite;
             animation-duration: .5s;
             animation-timing-function: linear;
         }
 
-        @keyframes eveButtonLoad {
+        @keyframes eveButtonProgress {
             from {
                 transform: rotate(0);
             }
