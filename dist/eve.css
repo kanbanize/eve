@@ -333,7 +333,6 @@ a {
     margin-right: 8px; }
 
 .eve-textarea {
-  resize: none;
   background: #eceff1;
   padding: 16px;
   vertical-align: top;
@@ -342,6 +341,7 @@ a {
   box-sizing: border-box;
   min-height: 108px;
   width: 100%;
+  max-width: 100%;
   font-size: 14px;
   color: #333;
   -webkit-appearance: none;
