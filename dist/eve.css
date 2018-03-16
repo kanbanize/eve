@@ -291,6 +291,7 @@ a {
   color: #333;
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   vertical-align: top;
   -webkit-appearance: none;
   font-family: inherit; }
@@ -361,6 +362,38 @@ a {
   .eve-textarea:focus {
     box-shadow: inset 0 0 0 1px #2196f3;
     background: #fff; }
+
+.eve-select {
+  height: 36px;
+  background: #eceff1;
+  border: 0;
+  outline: none;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  vertical-align: top;
+  -webkit-appearance: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 0;
+  max-width: 100%;
+  min-width: 94px; }
+  .eve-select:focus {
+    box-shadow: inset 0 0 0 1px #2196f3;
+    background: #fff; }
+
+.eve-select-control {
+  display: flex;
+  width: 100%; }
+  .eve-select-control .eve-button {
+    border-radius: 0; }
+
+.eve-select-group {
+  display: flex;
+  width: 100%; }
+  .eve-select-group .eve-select:not(:last-child) {
+    margin-right: 8px; }
 
 .eve-avatar {
   display: inline-block;

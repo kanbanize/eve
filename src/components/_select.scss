@@ -1,6 +1,6 @@
-$eve-input-height: 36px !default;
+$eve-select-min-width: 94px !default;
 
-.eve-input {
+.eve-select {
     height: $eve-input-height;
     background: $eve-color-bright-silver;
     border: 0;
@@ -9,42 +9,21 @@ $eve-input-height: 36px !default;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
     vertical-align: top;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
-
-    &::placeholder {
-        font-family: inherit;
-        color: $eve-color-darker-silver;
-    }
+    cursor: pointer;
+    border-radius: 0;
+    max-width: 100%;
+    min-width: $eve-select-min-width;
 
     &:focus {
         box-shadow: inset 0 0 0 1px $eve-color-blue;
         background: $eve-color-white;
     }
-
-    &.eve-input-success {
-        box-shadow: inset 0 0 0 1px $eve-color-green;
-    }
-
-    &.eve-input-danger {
-        box-shadow: inset 0 0 0 1px $eve-color-red;
-    }
-
-    &.eve-input-disable {
-        background: $eve-color-dark-silver;
-        color: #607d8b; // sass-lint:disable-line no-color-literals
-        pointer-events: none;
-
-        &:focus {
-            box-shadow: none;
-        }
-    }
 }
 
-.eve-input-control {
+.eve-select-control {
     display: flex;
     width: 100%;
 
@@ -53,11 +32,11 @@ $eve-input-height: 36px !default;
     }
 }
 
-.eve-input-group {
+.eve-select-group {
     display: flex;
     width: 100%;
 
-    .eve-input {
+    .eve-select {
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
         }
