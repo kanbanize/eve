@@ -27,7 +27,7 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
         }
 
         .eve-input {
-            box-shadow: none;
+            border: 0;
             background: $eve-color-white;
             padding: 0 0 0 $eve-spacing-tiny;
 

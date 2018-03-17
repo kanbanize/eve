@@ -1027,7 +1027,7 @@ a {
         font-size: 18px;
         color: #b0bec5; }
     .eve-dropdown .eve-dropdown-filter .eve-input {
-      box-shadow: none;
+      border: 0;
       background: #fff;
       padding: 0 0 0 8px; }
       .eve-dropdown .eve-dropdown-filter .eve-input::-webkit-input-placeholder {
