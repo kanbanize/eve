@@ -2,10 +2,10 @@ $eve-textarea-min-height: 108px !default;
 
 .eve-textarea {
     // resize: none;
-    background: $eve-color-bright-silver;
+    background: $eve-color-white;
     padding: $eve-spacing-small;
     vertical-align: top;
-    border: 0;
+    border: 1px solid $eve-color-dark-silver;
     outline: none;
     box-sizing: border-box;
     min-height: $eve-textarea-min-height;
@@ -15,6 +15,7 @@ $eve-textarea-min-height: 108px !default;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
+    transition: border-color 300ms ease;
 
     &::placeholder {
         font-family: inherit;
@@ -22,7 +23,14 @@ $eve-textarea-min-height: 108px !default;
     }
 
     &:focus {
-        box-shadow: inset 0 0 0 1px $eve-color-blue;
-        background: $eve-color-white;
+        border-color: $eve-color-blue;
+    }
+
+    &.eve-textarea-disable {
+        background: $eve-color-dark-silver;
+        border-color: $eve-color-dark-silver;
+        color: #607d8b; // sass-lint:disable-line no-color-literals
+        pointer-events: none;
+        resize: none;
     }
 }

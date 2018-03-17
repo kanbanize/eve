@@ -283,8 +283,8 @@ a {
 
 .eve-input {
   height: 36px;
-  background: #eceff1;
-  border: 0;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   outline: none;
   padding: 0 16px;
   font-size: 14px;
@@ -294,7 +294,8 @@ a {
   max-width: 100%;
   vertical-align: top;
   -webkit-appearance: none;
-  font-family: inherit; }
+  font-family: inherit;
+  transition: border-color 300ms ease; }
   .eve-input::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -308,18 +309,16 @@ a {
     font-family: inherit;
     color: #b0bec5; }
   .eve-input:focus {
-    box-shadow: inset 0 0 0 1px #2196f3;
-    background: #fff; }
+    border-color: #2196f3; }
   .eve-input.eve-input-success {
-    box-shadow: inset 0 0 0 1px #4caf50; }
+    border-color: #4caf50; }
   .eve-input.eve-input-danger {
-    box-shadow: inset 0 0 0 1px #f44336; }
+    border-color: #f44336; }
   .eve-input.eve-input-disable {
     background: #cfd8dc;
+    border-color: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
-    .eve-input.eve-input-disable:focus {
-      box-shadow: none; }
 
 .eve-input-control {
   display: flex;
@@ -334,10 +333,10 @@ a {
     margin-right: 8px; }
 
 .eve-textarea {
-  background: #eceff1;
+  background: #fff;
   padding: 16px;
   vertical-align: top;
-  border: 0;
+  border: 1px solid #cfd8dc;
   outline: none;
   box-sizing: border-box;
   min-height: 108px;
@@ -346,7 +345,8 @@ a {
   font-size: 14px;
   color: #333;
   -webkit-appearance: none;
-  font-family: inherit; }
+  font-family: inherit;
+  transition: border-color 300ms ease; }
   .eve-textarea::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -360,13 +360,18 @@ a {
     font-family: inherit;
     color: #b0bec5; }
   .eve-textarea:focus {
-    box-shadow: inset 0 0 0 1px #2196f3;
-    background: #fff; }
+    border-color: #2196f3; }
+  .eve-textarea.eve-textarea-disable {
+    background: #cfd8dc;
+    border-color: #cfd8dc;
+    color: #607d8b;
+    pointer-events: none;
+    resize: none; }
 
 .eve-select {
   height: 36px;
-  background: #eceff1;
-  border: 0;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   outline: none;
   padding: 0 16px;
   font-size: 14px;
@@ -378,10 +383,14 @@ a {
   cursor: pointer;
   border-radius: 0;
   max-width: 100%;
-  min-width: 94px; }
+  transition: border-color 300ms ease; }
   .eve-select:focus {
-    box-shadow: inset 0 0 0 1px #2196f3;
-    background: #fff; }
+    border-color: #2196f3; }
+  .eve-select.eve-select-disable {
+    background: #cfd8dc;
+    border-color: #cfd8dc;
+    color: #607d8b;
+    pointer-events: none; }
 
 .eve-select-control {
   display: flex;

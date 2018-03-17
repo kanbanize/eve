@@ -1,9 +1,7 @@
-$eve-select-min-width: 94px !default;
-
 .eve-select {
     height: $eve-input-height;
-    background: $eve-color-bright-silver;
-    border: 0;
+    background: $eve-color-white;
+    border: 1px solid $eve-color-dark-silver;
     outline: none;
     padding: 0 $eve-spacing-small;
     font-size: $eve-font-normal;
@@ -15,11 +13,17 @@ $eve-select-min-width: 94px !default;
     cursor: pointer;
     border-radius: 0;
     max-width: 100%;
-    min-width: $eve-select-min-width;
+    transition: border-color 300ms ease;
 
     &:focus {
-        box-shadow: inset 0 0 0 1px $eve-color-blue;
-        background: $eve-color-white;
+        border-color: $eve-color-blue;
+    }
+
+    &.eve-select-disable {
+        background: $eve-color-dark-silver;
+        border-color: $eve-color-dark-silver;
+        color: #607d8b; // sass-lint:disable-line no-color-literals
+        pointer-events: none;
     }
 }
 
