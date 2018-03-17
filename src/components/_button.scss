@@ -38,6 +38,7 @@ $eve-button-min-width: 94px !default;
     vertical-align: top;
     font-family: inherit;
     min-width: $eve-button-min-width;
+    transition: background 250ms ease, border-color 250ms ease;
 
     @each $eve-button-color in map-keys($eve-button-colors) {
         $color: map-get($eve-button-colors, $eve-button-color);

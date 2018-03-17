@@ -57,7 +57,8 @@ a {
   box-sizing: border-box;
   vertical-align: top;
   font-family: inherit;
-  min-width: 94px; }
+  min-width: 94px;
+  transition: background 250ms ease, border-color 250ms ease; }
   .eve-button.eve-button-primary {
     background: #2196f3; }
     .eve-button.eve-button-primary:hover {
@@ -295,7 +296,7 @@ a {
   vertical-align: top;
   -webkit-appearance: none;
   font-family: inherit;
-  transition: border-color 300ms ease; }
+  transition: border-color 250ms ease; }
   .eve-input::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -346,7 +347,7 @@ a {
   color: #333;
   -webkit-appearance: none;
   font-family: inherit;
-  transition: border-color 300ms ease; }
+  transition: border-color 250ms ease; }
   .eve-textarea::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -383,7 +384,7 @@ a {
   cursor: pointer;
   border-radius: 0;
   max-width: 100%;
-  transition: border-color 300ms ease; }
+  transition: border-color 250ms ease; }
   .eve-select:focus {
     border-color: #2196f3; }
   .eve-select.eve-select-disable {

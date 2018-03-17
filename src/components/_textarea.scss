@@ -15,7 +15,7 @@ $eve-textarea-min-height: 108px !default;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
-    transition: border-color 300ms ease;
+    transition: border-color 250ms ease;
 
     &::placeholder {
         font-family: inherit;
