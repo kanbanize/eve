@@ -8,6 +8,18 @@
 
 ## Quick Install
 
+### Manual
+
+Download the compiled and minified version.
+
+[Download](https://github.com/hpivanov/eve/releases)
+
+### Unpkg
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
+```
+
 ### NPM
 
 ```sh
@@ -18,12 +30,6 @@ npm install evecss
 
 ```sh
 yarn add evecss
-```
-
-### Unpkg
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
 ```
 
 ## Browser Support
