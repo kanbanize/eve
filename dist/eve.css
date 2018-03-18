@@ -272,10 +272,8 @@ a {
       color: #b0bec5; }
 
 .eve-button-group {
-  display: inline-flex; }
-  .eve-button-group .eve-button i {
-    margin: 0; }
-  .eve-button-group .eve-button:not(:last-child) {
+  display: flex; }
+  .eve-button-group .eve-button:not(.eve-button-outline):not(:last-child) {
     border-right: 1px solid #fff; }
   .eve-button-group .eve-button:not(:first-child):not(:last-child) {
     border-radius: 0; }
@@ -283,6 +281,10 @@ a {
     border-radius: 18px 0 0 18px; }
   .eve-button-group .eve-button:last-child:not(:first-child) {
     border-radius: 0 18px 18px 0; }
+  .eve-button-group.eve-button-group-round .eve-button {
+    border-radius: 18px !important; }
+    .eve-button-group.eve-button-group-round .eve-button:not(:last-child) {
+      margin-right: 16px; }
 
 .eve-input {
   height: 36px;
@@ -328,12 +330,19 @@ a {
   width: 100%; }
   .eve-input-control .eve-button {
     border-radius: 0; }
+  .eve-input-control.eve-input-control-round .eve-input {
+    margin-right: 8px;
+    border-radius: 18px; }
+  .eve-input-control.eve-input-control-round .eve-button {
+    border-radius: 18px; }
 
 .eve-input-group {
   display: flex;
   width: 100%; }
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
+  .eve-input-group.eve-input-group-round .eve-input {
+    border-radius: 18px; }
 
 .eve-textarea {
   background: #fff;

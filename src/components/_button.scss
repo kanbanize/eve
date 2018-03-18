@@ -202,15 +202,13 @@ $eve-button-min-width: 94px !default;
 }
 
 .eve-button-group {
-    display: inline-flex;
+    display: flex;
 
     .eve-button {
-        i {
-            margin: 0;
-        }
-
-        &:not(:last-child) {
-            border-right: 1px solid $eve-color-white;
+        &:not(.eve-button-outline) {
+            &:not(:last-child) {
+                border-right: 1px solid $eve-color-white;
+            }
         }
 
         &:not(:first-child) {
@@ -228,6 +226,16 @@ $eve-button-min-width: 94px !default;
         &:last-child {
             &:not(:first-child) {
                 border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
+            }
+        }
+    }
+
+    &.eve-button-group-round {
+        .eve-button {
+            border-radius: $eve-button-border-radius !important; // sass-lint:disable-line no-important
+
+            &:not(:last-child) {
+                margin-right: $eve-spacing-small;
             }
         }
     }
