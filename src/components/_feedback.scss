@@ -22,11 +22,6 @@ $eve-feedback-colors: (
         }
     }
 
-    .eve-feedback-content {
-        display: flex;
-        align-items: center;
-    }
-
     .eve-feedback-action {
         display: flex;
         align-items: center;
@@ -36,6 +31,7 @@ $eve-feedback-colors: (
             font-size: $eve-font-small;
             padding: 0;
             height: initial;
+            line-height: normal;
             min-width: auto;
 
             &:not(:first-child) {

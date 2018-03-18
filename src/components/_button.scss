@@ -25,6 +25,7 @@ $eve-button-min-width: 94px !default;
     align-items: center;
     justify-content: center;
     height: $eve-button-height;
+    line-height: $eve-button-height;
     padding: 0 $eve-spacing-small;
     border: 0;
     text-decoration: none;
@@ -121,6 +122,7 @@ $eve-button-min-width: 94px !default;
     i {
         font-size: 18px;
         margin-right: $eve-spacing-x-tiny;
+        transition: color 250ms ease;
     }
 
     &.eve-button-outline {
@@ -131,7 +133,7 @@ $eve-button-min-width: 94px !default;
     &.eve-button-text {
         text-transform: uppercase;
         border: 0;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     &.eve-button-icon {
@@ -147,13 +149,13 @@ $eve-button-min-width: 94px !default;
     &.eve-button-load {
         color: transparent;
         position: relative;
+        pointer-events: none;
 
         &::after {
             content: '';
             border-radius: 100%;
             border: 2px solid transparent;
             border-top-color: $eve-color-white;
-            border-left-color: $eve-color-white;
             position: absolute;
             top: calc(50% - 11px);
             left: calc(50% - 11px);

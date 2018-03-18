@@ -42,6 +42,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 36px;
+  line-height: 36px;
   padding: 0 16px;
   border: 0;
   text-decoration: none;
@@ -201,13 +202,14 @@ a {
       color: #f44336; }
   .eve-button i {
     font-size: 18px;
-    margin-right: 4px; }
+    margin-right: 4px;
+    transition: color 250ms ease; }
   .eve-button.eve-button-outline {
     background: transparent; }
   .eve-button.eve-button-invert, .eve-button.eve-button-text {
     text-transform: uppercase;
     border: 0;
-    font-weight: bold; }
+    font-weight: 600; }
   .eve-button.eve-button-icon {
     padding: 0;
     width: 36px;
@@ -218,13 +220,13 @@ a {
     color: #b0bec5; }
   .eve-button.eve-button-load {
     color: transparent;
-    position: relative; }
+    position: relative;
+    pointer-events: none; }
     .eve-button.eve-button-load::after {
       content: '';
       border-radius: 100%;
       border: 2px solid transparent;
       border-top-color: #fff;
-      border-left-color: #fff;
       position: absolute;
       top: calc(50% - 11px);
       left: calc(50% - 11px);
@@ -284,6 +286,7 @@ a {
 
 .eve-input {
   height: 36px;
+  line-height: 36px;
   background: #fff;
   border: 1px solid #cfd8dc;
   outline: none;
@@ -347,7 +350,8 @@ a {
   color: #333;
   -webkit-appearance: none;
   font-family: inherit;
-  transition: border-color 250ms ease; }
+  transition: border-color 250ms ease;
+  line-height: 20px; }
   .eve-textarea::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -371,6 +375,7 @@ a {
 
 .eve-select {
   height: 36px;
+  line-height: 36px;
   background: #fff;
   border: 1px solid #cfd8dc;
   outline: none;
@@ -411,17 +416,33 @@ a {
   border-radius: 100%;
   vertical-align: middle;
   color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box; }
+  .eve-avatar[data-initial] {
+    background: #2196f3; }
+    .eve-avatar[data-initial]::before {
+      content: attr(data-initial);
+      font-weight: 600; }
+  .eve-avatar img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    width: inherit;
+    height: inherit; }
   .eve-avatar.eve-avatar-x-tiny {
     width: 16px;
     height: 16px;
-    line-height: 16px;
-    font-size: 10px;
-    font-weight: bold; }
+    line-height: 16px; }
+    .eve-avatar.eve-avatar-x-tiny[data-initial]::before {
+      font-size: 10px; }
     .eve-avatar.eve-avatar-x-tiny.eve-avatar-online::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-busy::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-away::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -443,9 +464,9 @@ a {
   .eve-avatar.eve-avatar-tiny {
     width: 24px;
     height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-    font-weight: bold; }
+    line-height: 24px; }
+    .eve-avatar.eve-avatar-tiny[data-initial]::before {
+      font-size: 12px; }
     .eve-avatar.eve-avatar-tiny.eve-avatar-online::after, .eve-avatar.eve-avatar-tiny.eve-avatar-busy::after, .eve-avatar.eve-avatar-tiny.eve-avatar-away::after, .eve-avatar.eve-avatar-tiny.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -467,9 +488,9 @@ a {
   .eve-avatar.eve-avatar-small {
     width: 28px;
     height: 28px;
-    line-height: 28px;
-    font-size: 12px;
-    font-weight: bold; }
+    line-height: 28px; }
+    .eve-avatar.eve-avatar-small[data-initial]::before {
+      font-size: 12px; }
     .eve-avatar.eve-avatar-small.eve-avatar-online::after, .eve-avatar.eve-avatar-small.eve-avatar-busy::after, .eve-avatar.eve-avatar-small.eve-avatar-away::after, .eve-avatar.eve-avatar-small.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -491,9 +512,9 @@ a {
   .eve-avatar.eve-avatar-normal {
     width: 32px;
     height: 32px;
-    line-height: 32px;
-    font-size: 12px;
-    font-weight: bold; }
+    line-height: 32px; }
+    .eve-avatar.eve-avatar-normal[data-initial]::before {
+      font-size: 12px; }
     .eve-avatar.eve-avatar-normal.eve-avatar-online::after, .eve-avatar.eve-avatar-normal.eve-avatar-busy::after, .eve-avatar.eve-avatar-normal.eve-avatar-away::after, .eve-avatar.eve-avatar-normal.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -515,9 +536,9 @@ a {
   .eve-avatar.eve-avatar-large {
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-    font-weight: bold; }
+    line-height: 40px; }
+    .eve-avatar.eve-avatar-large[data-initial]::before {
+      font-size: 16px; }
     .eve-avatar.eve-avatar-large.eve-avatar-online::after, .eve-avatar.eve-avatar-large.eve-avatar-busy::after, .eve-avatar.eve-avatar-large.eve-avatar-away::after, .eve-avatar.eve-avatar-large.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -539,9 +560,9 @@ a {
   .eve-avatar.eve-avatar-x-large {
     width: 96px;
     height: 96px;
-    line-height: 96px;
-    font-size: 48px;
-    font-weight: normal; }
+    line-height: 96px; }
+    .eve-avatar.eve-avatar-x-large[data-initial]::before {
+      font-size: 48px; }
     .eve-avatar.eve-avatar-x-large.eve-avatar-online::after, .eve-avatar.eve-avatar-x-large.eve-avatar-busy::after, .eve-avatar.eve-avatar-x-large.eve-avatar-away::after, .eve-avatar.eve-avatar-x-large.eve-avatar-offline::after {
       content: '';
       display: block;
@@ -561,16 +582,10 @@ a {
     .eve-avatar.eve-avatar-x-large.eve-avatar-offline::after {
       background: #cfd8dc; }
 
-.eve-avatar-label {
-  display: inline-flex;
-  align-items: center; }
-  .eve-avatar-label .eve-avatar {
-    margin-right: 8px; }
-
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
-    background: #333;
+    background: #263238;
     color: #fff;
     content: attr(data-tooltip);
     font-size: 12px;
@@ -591,7 +606,8 @@ a {
     height: 24px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    font-weight: normal; }
   .eve-tooltip:hover::after {
     opacity: 1;
     visibility: visible;
@@ -697,7 +713,7 @@ a {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   padding: 24px; }
   .eve-dialog .eve-dialog-header {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 16px; }
   .eve-dialog .eve-dialog-content {
@@ -931,9 +947,6 @@ a {
     background: rgba(255, 152, 0, 0.2); }
   .eve-feedback.eve-feedback-danger {
     background: rgba(244, 67, 54, 0.2); }
-  .eve-feedback .eve-feedback-content {
-    display: flex;
-    align-items: center; }
   .eve-feedback .eve-feedback-action {
     display: flex;
     align-items: center;
@@ -942,6 +955,7 @@ a {
       font-size: 12px;
       padding: 0;
       height: initial;
+      line-height: normal;
       min-width: auto; }
       .eve-feedback .eve-feedback-action .eve-button:not(:first-child) {
         margin-left: 8px; }
@@ -959,7 +973,7 @@ a {
       color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
       color: #2196f3;
-      font-weight: bold;
+      font-weight: 600;
       position: relative; }
       .eve-navigation .eve-navigation-tab.eve-navigation-tab-active::after {
         content: '';
@@ -976,11 +990,15 @@ a {
   height: 24px;
   line-height: 24px;
   border-radius: 12px;
-  background: #eceff1; }
+  background: #eceff1;
+  padding: 0 8px;
+  font-size: 12px; }
   .eve-chip .eve-avatar {
-    border: 1px solid #fff;
+    box-shadow: 0 0 0 1px #fff;
     height: 24px;
-    width: 24px; }
+    width: 24px;
+    position: relative;
+    left: -8px; }
   .eve-chip .eve-chip-icon {
     display: flex;
     align-items: center;
@@ -988,20 +1006,18 @@ a {
     border-radius: 100%;
     height: 24px;
     width: 24px;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    background: #2196f3; }
+    box-shadow: 0 0 0 1px #fff;
+    background: #2196f3;
+    position: relative;
+    left: -8px; }
     .eve-chip .eve-chip-icon i {
       font-size: 14px;
       color: #fff; }
-  .eve-chip .eve-chip-content {
-    padding: 0 8px;
-    font-size: 12px; }
   .eve-chip .eve-chip-action {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    margin-left: 8px;
     cursor: pointer;
     border-radius: 100%; }
     .eve-chip .eve-chip-action i {
@@ -1041,6 +1057,8 @@ a {
   .eve-dropdown .eve-dropdown-list {
     width: 100%;
     padding: 8px 0; }
+    .eve-dropdown .eve-dropdown-list:not(:last-child) {
+      padding-bottom: 0; }
     .eve-dropdown .eve-dropdown-list .eve-dropdown-list-header {
       font-weight: bold;
       height: 32px;
@@ -1092,7 +1110,7 @@ a {
     right: 0;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    font-weight: bold;
+    font-weight: normal;
     display: inline-flex;
     align-items: center;
     justify-content: center;

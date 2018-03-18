@@ -41,9 +41,9 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
         width: 100%;
         padding: $eve-spacing-tiny 0;
 
-        // &:not(:last-child) {
-        //     padding-bottom: 0;
-        // }
+        &:not(:last-child) {
+            padding-bottom: 0;
+        }
 
         .eve-dropdown-list-header {
             font-weight: bold;

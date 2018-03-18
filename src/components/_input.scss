@@ -2,6 +2,7 @@ $eve-input-height: 36px !default;
 
 .eve-input {
     height: $eve-input-height;
+    line-height: $eve-input-height;
     background: $eve-color-white;
     border: 1px solid $eve-color-dark-silver;
     outline: none;

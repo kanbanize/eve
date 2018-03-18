@@ -5,7 +5,7 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
     position: relative;
 
     &::after {
-        background: $eve-color-grey-black;
+        background: #263238; // sass-lint:disable-line no-color-literals
         color: $eve-color-white;
         content: attr(data-tooltip);
         font-size: $eve-font-small;
@@ -24,6 +24,7 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
         height: $eve-tooltip-height;
         transform: scale(.9);
         font-family: sans-serif;
+        font-weight: normal;
     }
 
     &:hover {

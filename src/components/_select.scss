@@ -1,5 +1,8 @@
+$eve-select-height: 36px !default;
+
 .eve-select {
-    height: $eve-input-height;
+    height: $eve-select-height;
+    line-height: $eve-select-height;
     background: $eve-color-white;
     border: 1px solid $eve-color-dark-silver;
     outline: none;

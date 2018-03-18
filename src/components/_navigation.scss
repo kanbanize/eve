@@ -17,7 +17,7 @@ $eve-navigation-tab-color: #607d8b;
 
         &.eve-navigation-tab-active {
             color: $eve-color-blue;
-            font-weight: bold;
+            font-weight: 600;
             position: relative;
 
             &::after {

@@ -19,30 +19,48 @@ $eve-avatar-sizes: (
     border-radius: 100%;
     vertical-align: middle;
     color: $eve-color-white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;
+
+    &[data-initial] {
+        background: $eve-color-blue;
+
+        &::before {
+            content: attr(data-initial);
+            font-weight: 600;
+        }
+    }
+
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        width: inherit;
+        height: inherit;
+    }
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         &.eve-avatar-#{$eve-avatar-size} {
             @include get-eve-avatar-size(map-get($eve-avatar-sizes, $eve-avatar-size));
 
-            @if $eve-avatar-size == 'x-tiny' {
-                font-size: $eve-font-tiny;
-            } @else if $eve-avatar-size == 'large' {
-                font-size: $eve-font-large;
-            } @else if $eve-avatar-size == 'x-large' {
-                font-size: $eve-font-huge;
-            } @else {
-                font-size: $eve-font-small;
-            }
-
-            @if $eve-avatar-size == 'x-large' {
-                font-weight: normal;
-            } @else {
-                font-weight: bold;
+            &[data-initial] {
+                &::before {
+                    @if $eve-avatar-size == 'x-tiny' {
+                        font-size: $eve-font-tiny;
+                    } @else if $eve-avatar-size == 'large' {
+                        font-size: $eve-font-large;
+                    } @else if $eve-avatar-size == 'x-large' {
+                        font-size: $eve-font-huge;
+                    } @else {
+                        font-size: $eve-font-small;
+                    }
+                }
             }
 
             &.eve-avatar-online,
@@ -91,14 +109,5 @@ $eve-avatar-sizes: (
                 }
             }
         }
-    }
-}
-
-.eve-avatar-label {
-    display: inline-flex;
-    align-items: center;
-
-    .eve-avatar {
-        margin-right: $eve-spacing-tiny;
     }
 }
