@@ -144,6 +144,10 @@ $eve-button-min-width: 94px !default;
         color: $eve-color-darker-silver;
     }
 
+    &.eve-button-block {
+        width: 100%;
+    }
+
     &.eve-button-load {
         color: transparent;
         position: relative;

@@ -216,6 +216,8 @@ a {
     background: transparent;
     min-width: 36px;
     color: #b0bec5; }
+  .eve-button.eve-button-block {
+    width: 100%; }
   .eve-button.eve-button-load {
     color: transparent;
     position: relative;
