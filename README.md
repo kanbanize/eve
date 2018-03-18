@@ -10,9 +10,7 @@
 
 ### Manual
 
-Download the compiled and minified version.
-
-[Download](https://github.com/hpivanov/eve/releases)
+[Download](https://github.com/hpivanov/eve/releases) the compiled and minified version.
 
 ### Unpkg
 
