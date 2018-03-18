@@ -16,7 +16,6 @@ $eve-select-height: 36px !default;
     cursor: pointer;
     border-radius: 0;
     max-width: 100%;
-    transition: border-color 250ms ease;
 
     &:focus {
         border-color: $eve-color-blue;

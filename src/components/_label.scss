@@ -1,0 +1,85 @@
+$eve-label-colors: (
+    primary: $eve-color-blue,
+    success: $eve-color-green,
+    warning: $eve-color-orange,
+    danger: $eve-color-red
+) !default;
+$eve-label-height: 24px !default;
+$eve-label-border-radius: $eve-label-height / 2 !default;
+
+.eve-label {
+    display: inline-flex;
+    align-items: center;
+    height: $eve-label-height;
+    line-height: $eve-label-height;
+    border-radius: $eve-label-border-radius;
+    padding: 0 $eve-spacing-tiny;
+    font-size: $eve-font-small;
+    color: $eve-color-white;
+    box-sizing: border-box;
+
+    @each $eve-label-color in map-keys($eve-label-colors) {
+        $color: map-get($eve-label-colors, $eve-label-color);
+        $hover-color: rgba($color, .2);
+
+        &.eve-label-#{$eve-label-color} {
+            background: $color;
+
+            &:hover {
+                background: $hover-color;
+                color: $color;
+
+                .eve-label-action {
+                    background: $color;
+
+                    i {
+                        color: $eve-color-white;
+                    }
+                }
+            }
+
+            &.eve-label-outline {
+                border: 1px solid $color;
+                color: $color;
+
+                .eve-label-icon {
+                    i {
+                        color: $color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.eve-label-outline {
+        background: transparent;
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+
+    .eve-label-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: $eve-spacing-tiny;
+
+        i {
+            font-size: $eve-font-normal;
+        }
+    }
+
+    .eve-label-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: $eve-spacing-tiny;
+        cursor: pointer;
+        border-radius: 100%;
+
+        i {
+            font-size: $eve-font-normal;
+        }
+    }
+}

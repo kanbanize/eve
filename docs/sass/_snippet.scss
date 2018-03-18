@@ -4,9 +4,17 @@
     white-space: pre-wrap;
     padding: 24px;
     background: #263238;
-    line-height: 20px;
+    // line-height: 20px;
     font-family: monospace;
     color: #fff;
+    position: relative;
+
+    &::after {
+        content: 'HTML';
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
 
     .snippet-tag {
         color: #00bcd4;

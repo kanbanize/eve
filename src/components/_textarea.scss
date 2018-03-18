@@ -16,7 +16,6 @@ $eve-textarea-line-height: 20px !default;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
-    transition: border-color 250ms ease;
     line-height: $eve-textarea-line-height;
 
     &::placeholder {
