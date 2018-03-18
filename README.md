@@ -8,10 +8,6 @@
 
 ## Quick Install
 
-### Manual
-
-[Download](https://github.com/hpivanov/eve/releases) the compiled and minified version.
-
 ### Unpkg
 
 ```html
@@ -29,6 +25,10 @@ npm install evecss
 ```sh
 yarn add evecss
 ```
+
+### Manual
+
+[Download](https://github.com/hpivanov/eve/releases) the compiled and minified version.
 
 ## Browser Support
 
