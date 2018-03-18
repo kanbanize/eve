@@ -81,6 +81,17 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     }
 }
 
+.eve-switch-group {
+    display: flex;
+    align-items: center;
+
+    .eve-switch-control {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-normal;
+        }
+    }
+}
+
 .eve-switch-list {
     .eve-switch-control {
         &:not(:last-child) {

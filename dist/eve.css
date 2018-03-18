@@ -802,6 +802,12 @@ a {
     flex-shrink: 0;
     margin-right: 8px; }
 
+.eve-checkbox-group {
+  display: flex;
+  align-items: center; }
+  .eve-checkbox-group .eve-checkbox-control:not(:last-child) {
+    margin-right: 24px; }
+
 .eve-checkbox-list .eve-checkbox-control:not(:last-child) {
   margin-bottom: 8px; }
 
@@ -860,6 +866,12 @@ a {
     flex-shrink: 0;
     margin-right: 8px; }
 
+.eve-radio-group {
+  display: flex;
+  align-items: center; }
+  .eve-radio-group .eve-radio-control:not(:last-child) {
+    margin-right: 24px; }
+
 .eve-radio-list .eve-radio-control:not(:last-child) {
   margin-bottom: 8px; }
 
@@ -917,6 +929,12 @@ a {
   .eve-switch-control .eve-switch {
     flex-shrink: 0;
     margin-right: 8px; }
+
+.eve-switch-group {
+  display: flex;
+  align-items: center; }
+  .eve-switch-group .eve-switch-control:not(:last-child) {
+    margin-right: 24px; }
 
 .eve-switch-list .eve-switch-control:not(:last-child) {
   margin-bottom: 8px; }

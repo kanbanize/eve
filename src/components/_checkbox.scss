@@ -82,6 +82,17 @@
     }
 }
 
+.eve-checkbox-group {
+    display: flex;
+    align-items: center;
+
+    .eve-checkbox-control {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-normal;
+        }
+    }
+}
+
 .eve-checkbox-list {
     .eve-checkbox-control {
         &:not(:last-child) {

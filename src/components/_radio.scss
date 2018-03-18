@@ -77,6 +77,17 @@
     }
 }
 
+.eve-radio-group {
+    display: flex;
+    align-items: center;
+
+    .eve-radio-control {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-normal;
+        }
+    }
+}
+
 .eve-radio-list {
     .eve-radio-control {
         &:not(:last-child) {
