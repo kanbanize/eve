@@ -20,6 +20,12 @@ npm install evecss
 yarn add evecss
 ```
 
+### Unpkg
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
+```
+
 ## Browser Support
 
 | Browser | Support |
