@@ -4,27 +4,23 @@
     white-space: pre-wrap;
     padding: 24px;
     background: #263238;
-    // line-height: 20px;
+    line-height: 20px;
     font-family: monospace;
     color: #fff;
-    position: relative;
-
-    &::after {
-        content: 'HTML';
-        position: absolute;
-        top: 8px;
-        right: 8px;
-    }
 
     .snippet-tag {
-        color: #00bcd4;
+        color: #ff6188;
     }
 
     .snippet-attr {
-        color: #9e9e9e;
+        color: #a9dc76;
     }
 
     .snippet-val {
-        color: #ff5b93;
+        color: #ffd866;
+    }
+
+    .snippet-sign {
+        color: #fff;
     }
 }

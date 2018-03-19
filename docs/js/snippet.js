@@ -1,13 +1,25 @@
 var Snippet = (function() {
     var snippetMap = {
-        val: function(val) {
-            return '<span class="snippet-val">' + val + '</span>';
+        tag: function(tag) {
+            return '<span class="snippet-tag">' + tag.replace(/\/|<|>/g, function(char) {
+                switch (char) {
+                    case '<': {
+                        return '<span class="snippet-sign">&lt;</span>';
+                    }
+                    case '>': {
+                        return '<span class="snippet-sign">&gt;</span>';
+                    }
+                    default: {
+                        return '<span class="snippet-sign">' + char + '</span>';
+                    }
+                }
+            }) + '</span>';
         },
         attr: function(attr) {
             return '<span class="snippet-attr">' + attr + '</span>';
         },
-        tag: function(tag) {
-            return '<span class="snippet-tag">' + tag.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
+        val: function(val) {
+            return '<span class="snippet-val">' + val + '</span>';
         }
     };
 
@@ -41,14 +53,16 @@ var Snippet = (function() {
                     return valId;
                 })
                 // Replace
-                .replace(/{val.*?}/g, function(str) {
-                    return snippetMap.val(snippetCache[str]);
-                })
-                .replace(/{attr.*?}/g, function(str) {
-                    return snippetMap.attr(snippetCache[str]);
-                })
                 .replace(/{tag.*?}/g, function(str) {
                     return snippetMap.tag(snippetCache[str]);
+                })
+                .replace(/{attr.*?}/g, function(str) {
+                    console.log(snippetMap.attr(snippetCache[str]));
+
+                    return snippetMap.attr(snippetCache[str]);
+                })
+                .replace(/{val.*?}/g, function(str) {
+                    return snippetMap.val(snippetCache[str]);
                 })
                 .replace(/^\s{12}/gm, '')
                 .trim();
