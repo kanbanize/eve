@@ -328,12 +328,10 @@ a {
 .eve-input-control {
   display: flex;
   width: 100%; }
-  .eve-input-control .eve-button {
+  .eve-input-control:not(.eve-input-control-round) .eve-button {
     border-radius: 0; }
   .eve-input-control.eve-input-control-round .eve-input {
     margin-right: 8px;
-    border-radius: 18px; }
-  .eve-input-control.eve-input-control-round .eve-button {
     border-radius: 18px; }
 
 .eve-input-group {
@@ -407,14 +405,19 @@ a {
 .eve-select-control {
   display: flex;
   width: 100%; }
-  .eve-select-control .eve-button {
+  .eve-select-control:not(.eve-select-control-round) .eve-button {
     border-radius: 0; }
+  .eve-select-control.eve-select-control-round .eve-select {
+    margin-right: 8px;
+    border-radius: 18px; }
 
 .eve-select-group {
   display: flex;
   width: 100%; }
   .eve-select-group .eve-select:not(:last-child) {
     margin-right: 8px; }
+  .eve-select-group.eve-select-group-round .eve-select {
+    border-radius: 18px; }
 
 .eve-avatar {
   display: inline-block;

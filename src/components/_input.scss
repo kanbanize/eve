@@ -45,17 +45,15 @@ $eve-input-height: 36px !default;
     display: flex;
     width: 100%;
 
-    .eve-button {
-        border-radius: 0;
+    &:not(.eve-input-control-round) {
+        .eve-button {
+            border-radius: 0;
+        }
     }
 
     &.eve-input-control-round {
         .eve-input {
             margin-right: $eve-spacing-tiny;
-            border-radius: $eve-input-height / 2;
-        }
-
-        .eve-button {
             border-radius: $eve-input-height / 2;
         }
     }

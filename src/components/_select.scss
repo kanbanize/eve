@@ -33,8 +33,17 @@ $eve-select-height: 36px !default;
     display: flex;
     width: 100%;
 
-    .eve-button {
-        border-radius: 0;
+    &:not(.eve-select-control-round) {
+        .eve-button {
+            border-radius: 0;
+        }
+    }
+
+    &.eve-select-control-round {
+        .eve-select {
+            margin-right: $eve-spacing-tiny;
+            border-radius: $eve-select-height / 2;
+        }
     }
 }
 
@@ -45,6 +54,12 @@ $eve-select-height: 36px !default;
     .eve-select {
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
+        }
+    }
+
+    &.eve-select-group-round {
+        .eve-select {
+            border-radius: $eve-select-height / 2;
         }
     }
 }
