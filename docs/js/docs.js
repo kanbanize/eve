@@ -45,12 +45,10 @@
         var xhr = new XMLHttpRequest();
 
         xhr.onload = function() {
-            if (xhr.status === 200) {
-                var templateHtml = Handlebars.compile(xhr.responseText)();
+            if (this.status === 200) {
+                loadTemplateHtml(this.responseText);
 
-                loadTemplateHtml(templateHtml);
-
-                templatesCache[path] = templateHtml;
+                templatesCache[path] = this.responseText;
             }
         };
 
