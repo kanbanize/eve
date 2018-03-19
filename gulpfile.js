@@ -90,7 +90,7 @@ gulp.task('build-docs-css', function() {
 gulp.task('build-docs', ['build-docs-js', 'build-docs-css']);
 
 // Watchers
-gulp.task('watch', ['build', 'build-docs'], () => {
+gulp.task('watch', ['build', 'build-docs'], function() {
     // Eve watcher
     gulp.watch(config.eve.src, ['build']);
 
