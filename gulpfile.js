@@ -6,7 +6,6 @@ var rename = require('gulp-rename');
 var autoprefixer = require('autoprefixer');
 var plumber = require('gulp-plumber');
 var gulpif = require('gulp-if');
-var inject = require('gulp-inject');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -27,10 +26,6 @@ var config = {
             src: ['docs/sass/**/*.scss'],
             dest: 'docs/dist',
             out: 'docs'
-        },
-        html: {
-            src: ['docs/index.html', 'docs/partials/**/*.html'],
-            dest: './'
         }
     }
 };
@@ -92,19 +87,7 @@ gulp.task('build-docs-css', function() {
         .pipe(gulp.dest(config.docs.css.dest));
 });
 
-gulp.task('build-docs-html', function() {
-    return gulp.src('./docs/index.html')
-        .pipe(inject(gulp.src(config.docs.html.src), {
-            starttag: '<!-- inject:{{path}} -->',
-            relative: true,
-            transform: function(filePath, file) {
-                return file.contents.toString('utf-8');
-            }
-        }))
-        .pipe(gulp.dest(config.docs.html.dest));
-});
-
-gulp.task('build-docs', ['build-docs-js', 'build-docs-css', 'build-docs-html']);
+gulp.task('build-docs', ['build-docs-js', 'build-docs-css']);
 
 // Watchers
 gulp.task('watch', ['build', 'build-docs'], () => {
@@ -114,7 +97,6 @@ gulp.task('watch', ['build', 'build-docs'], () => {
     // Docs watchers
     gulp.watch(config.docs.js.src, ['build-docs-js']);
     gulp.watch(config.docs.css.src, ['build-docs-css']);
-    gulp.watch(config.docs.html.src, ['build-docs-html']);
 });
 
 // All

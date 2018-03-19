@@ -1,5 +1,4 @@
-(function() {
-    var snippets = document.getElementsByClassName('component-example');
+var Snippet = (function() {
     var snippetMap = {
         val: function(val) {
             return '<span class="snippet-val">' + val + '</span>';
@@ -12,46 +11,50 @@
         }
     };
 
-    for (var i = 0; i < snippets.length; i++) {
-        var snippet = snippets[i];
-        var snippetCache = {};
-        var snippetTemplate = snippet.innerHTML
-            // Prepare
-            .replace(/(<(\/?)([a-z0-9]+)(>?))|((\/?)>)/gi, function(str) {
-                var tagId = '{tag' + guid() + '}';
+    function execute() {
+        var snippets = document.getElementsByClassName('component-example');
 
-                snippetCache[tagId] = str;
+        for (var i = 0; i < snippets.length; i++) {
+            var snippet = snippets[i];
+            var snippetCache = {};
+            var snippetTemplate = snippet.innerHTML
+                // Prepare
+                .replace(/(<(\/?)([a-z0-9]+)(>?))|((\/?)>)/gi, function(str) {
+                    var tagId = '{tag' + guid() + '}';
 
-                return tagId;
-            })
-            .replace(/[a-z\-]+=/gi, function(str) {
-                var attrId = '{attr' + guid() + '}';
+                    snippetCache[tagId] = str;
 
-                snippetCache[attrId] = str;
+                    return tagId;
+                })
+                .replace(/[a-z\-]+=/gi, function(str) {
+                    var attrId = '{attr' + guid() + '}';
 
-                return attrId;
-            })
-            .replace(/".*?"/g, function(str) {
-                var valId = '{val' + guid() + '}';
+                    snippetCache[attrId] = str;
 
-                snippetCache[valId] = str;
+                    return attrId;
+                })
+                .replace(/".*?"/g, function(str) {
+                    var valId = '{val' + guid() + '}';
 
-                return valId;
-            })
-            // Replace
-            .replace(/{val.*?}/g, function(str) {
-                return snippetMap.val(snippetCache[str]);
-            })
-            .replace(/{attr.*?}/g, function(str) {
-                return snippetMap.attr(snippetCache[str]);
-            })
-            .replace(/{tag.*?}/g, function(str) {
-                return snippetMap.tag(snippetCache[str]);
-            })
-            .replace(/^\s{12}/gm, '')
-            .trim();
+                    snippetCache[valId] = str;
 
-        snippet.insertAdjacentHTML('afterend', '<pre class="snippet">' + snippetTemplate + '</pre>')
+                    return valId;
+                })
+                // Replace
+                .replace(/{val.*?}/g, function(str) {
+                    return snippetMap.val(snippetCache[str]);
+                })
+                .replace(/{attr.*?}/g, function(str) {
+                    return snippetMap.attr(snippetCache[str]);
+                })
+                .replace(/{tag.*?}/g, function(str) {
+                    return snippetMap.tag(snippetCache[str]);
+                })
+                .replace(/^\s{12}/gm, '')
+                .trim();
+
+            snippet.insertAdjacentHTML('afterend', '<pre class="snippet">' + snippetTemplate + '</pre>')
+        }
     }
 
     function guid() {
@@ -61,4 +64,8 @@
 
         return s4() + s4() + s4() + s4() + s4() + s4() + s4() + s4();
     }
+
+    return {
+        execute: execute
+    };
 })();
