@@ -68,6 +68,6 @@
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
     } else {
-        loadTemplate('foundations');
+        document.querySelector('a[href="#typography"]').click();
     }
 })();
