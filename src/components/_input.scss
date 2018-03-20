@@ -57,6 +57,35 @@ $eve-input-height: 36px !default;
             border-radius: $eve-input-height / 2;
         }
     }
+
+    &.eve-input-control-icon {
+        position: relative;
+        align-items: center;
+
+        .eve-input {
+            padding-left: 18px + $eve-spacing-normal;
+
+            &:focus {
+                & ~ .eve-input-icon {
+                    i {
+                        color: $eve-color-blue;
+                    }
+                }
+            }
+        }
+
+        .eve-input-icon {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: $eve-spacing-small;
+
+            i {
+                font-size: 18px;
+                color: $eve-color-dark-silver;
+            }
+        }
+    }
 }
 
 .eve-input-group {
@@ -73,5 +102,21 @@ $eve-input-height: 36px !default;
         .eve-input {
             border-radius: $eve-input-height / 2;
         }
+    }
+}
+
+.eve-input-form {
+    &:not(:last-child) {
+        margin-bottom: $eve-spacing-small;
+    }
+
+    .eve-input-label {
+        display: block;
+        margin-bottom: $eve-spacing-tiny;
+    }
+
+    .eve-input-hint {
+        display: block;
+        margin-top: $eve-spacing-x-tiny;
     }
 }

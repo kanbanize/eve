@@ -333,6 +333,21 @@ a {
   .eve-input-control.eve-input-control-round .eve-input {
     margin-right: 8px;
     border-radius: 18px; }
+  .eve-input-control.eve-input-control-icon {
+    position: relative;
+    align-items: center; }
+    .eve-input-control.eve-input-control-icon .eve-input {
+      padding-left: 42px; }
+      .eve-input-control.eve-input-control-icon .eve-input:focus ~ .eve-input-icon i {
+        color: #2196f3; }
+    .eve-input-control.eve-input-control-icon .eve-input-icon {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 16px; }
+      .eve-input-control.eve-input-control-icon .eve-input-icon i {
+        font-size: 18px;
+        color: #cfd8dc; }
 
 .eve-input-group {
   display: flex;
@@ -342,16 +357,28 @@ a {
   .eve-input-group.eve-input-group-round .eve-input {
     border-radius: 18px; }
 
+.eve-input-form:not(:last-child) {
+  margin-bottom: 16px; }
+
+.eve-input-form .eve-input-label {
+  display: block;
+  margin-bottom: 8px; }
+
+.eve-input-form .eve-input-hint {
+  display: block;
+  margin-top: 4px; }
+
 .eve-textarea {
   background: #fff;
-  padding: 16px;
+  padding: 8px 16px;
   vertical-align: top;
   border: 1px solid #cfd8dc;
   outline: none;
   box-sizing: border-box;
-  min-height: 108px;
+  min-height: 100px;
   width: 100%;
   max-width: 100%;
+  min-width: 100%;
   font-size: 14px;
   color: #333;
   -webkit-appearance: none;
@@ -377,6 +404,17 @@ a {
     color: #607d8b;
     pointer-events: none;
     resize: none; }
+
+.eve-textarea-form:not(:last-child) {
+  margin-bottom: 16px; }
+
+.eve-textarea-form .eve-textarea-label {
+  display: block;
+  margin-bottom: 8px; }
+
+.eve-textarea-form .eve-textarea-hint {
+  display: block;
+  margin-top: 4px; }
 
 .eve-select {
   height: 36px;

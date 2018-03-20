@@ -16,7 +16,7 @@
     <div class="component-content">
         <div class="component-header">Input disabled</div>
         <div class="component-example">
-            <input type="text" value="Disabled" class="eve-input eve-input-disable"/>
+            <input type="text" value="Disabled" class="eve-input eve-input-disable" disabled="true"/>
         </div>
     </div>
     <div class="component-content">
@@ -50,6 +50,17 @@
         </div>
     </div>
     <div class="component-content">
+        <div class="component-header">Input control with icon</div>
+        <div class="component-example">
+            <div class="eve-input-control eve-input-control-icon">
+                <input type="text" class="eve-input"/>
+                <div class="eve-input-icon">
+                    <i class="material-icons">search</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
         <div class="component-header">Inputs group</div>
         <div class="component-example">
             <div class="eve-input-group">
@@ -66,6 +77,25 @@
                 <input type="text" class="eve-input" value="input1"/>
                 <input type="text" class="eve-input" value="input2"/>
                 <input type="text" class="eve-input" value="input3"/>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Input with label</div>
+        <div class="component-example">
+            <div class="eve-input-form">
+                <label class="eve-input-label">Default input</label>
+                <input type="text" class="eve-input"/>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Input with label and hint</div>
+        <div class="component-example">
+            <div class="eve-input-form">
+                <label class="eve-input-label">Password</label>
+                <input type="password" class="eve-input"/>
+                <div class="eve-input-hint">Password must have at least 10 characters.</div>
             </div>
         </div>
     </div>
