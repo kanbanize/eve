@@ -10,7 +10,9 @@
 
 ### Manual
 
-Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/releases), and include eve.css or eve.min.css located in /dist inside your <head> tag.
+Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/releases), and include `eve.css` or `eve.min.css` located in /dist inside your &lt;head&gt; tag.
+
+`<link rel="stylesheet" href="eve.min.css">`
 
 ### Unpkg
 
