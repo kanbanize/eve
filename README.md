@@ -12,7 +12,9 @@
 
 Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/releases), and include `eve.css` or `eve.min.css` located in /dist inside your &lt;head&gt; tag.
 
-`<link rel="stylesheet" href="eve.min.css">`
+```html
+<link rel="stylesheet" href="eve.min.css">
+```
 
 ### Unpkg
 
@@ -34,14 +36,16 @@ yarn add evecss
 
 ## Browser support
 
-Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers.
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. According to [Can I use](https://caniuse.com), Eve is compatible with recent versions of:
 
 - Chrome
 - Firefox
 - Safari
-- Microsoft Edge
 - Opera
-- Internet Explorer 11 (IE10 is partially supported)
+- Microsoft Edge
+- Internet Explorer 11
+
+Internet Explorer 10 is partially supported.
 
 ## License
 
