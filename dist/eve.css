@@ -696,10 +696,10 @@ a {
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
+    -webkit-animation-duration: .75s;
+            animation-duration: .75s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
 
 @-webkit-keyframes eveProgressLine {
   from {
