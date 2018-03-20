@@ -917,6 +917,10 @@ a {
   .eve-radio-group .eve-radio-control:not(:last-child) {
     margin-right: 24px; }
 
+.eve-radio-list > .eve-radio-list {
+  padding-left: 16px;
+  margin-bottom: 8px; }
+
 .eve-radio-list .eve-radio-control:not(:last-child) {
   margin-bottom: 8px; }
 

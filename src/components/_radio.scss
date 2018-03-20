@@ -89,6 +89,11 @@
 }
 
 .eve-radio-list {
+    & > .eve-radio-list {
+        padding-left: $eve-spacing-small;
+        margin-bottom: $eve-spacing-tiny;
+    }
+
     .eve-radio-control {
         &:not(:last-child) {
             margin-bottom: $eve-spacing-tiny;
