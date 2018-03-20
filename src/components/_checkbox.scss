@@ -94,6 +94,11 @@
 }
 
 .eve-checkbox-list {
+    & > .eve-checkbox-list {
+        padding-left: $eve-spacing-small;
+        margin-bottom: $eve-spacing-tiny;
+    }
+
     .eve-checkbox-control {
         &:not(:last-child) {
             margin-bottom: $eve-spacing-tiny;

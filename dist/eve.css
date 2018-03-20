@@ -849,6 +849,10 @@ a {
   .eve-checkbox-group .eve-checkbox-control:not(:last-child) {
     margin-right: 24px; }
 
+.eve-checkbox-list > .eve-checkbox-list {
+  padding-left: 16px;
+  margin-bottom: 8px; }
+
 .eve-checkbox-list .eve-checkbox-control:not(:last-child) {
   margin-bottom: 8px; }
 
