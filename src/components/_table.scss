@@ -32,6 +32,10 @@
 
             td {
                 padding: 0 $eve-spacing-normal;
+
+                .eve-checkbox {
+                    display: flex;
+                }
             }
         }
     }
@@ -43,6 +47,36 @@
                     background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
                 }
             }
+        }
+    }
+
+    &.eve-table-select {
+        tbody {
+            tr {
+                &:hover {
+                    background: rgba($eve-color-blue, .1); // sass-lint:disable-line no-color-literals
+                }
+            }
+        }
+    }
+}
+
+.eve-table-filter {
+    .eve-input-control {
+        height: 56px;
+        line-height: 56px;
+        border-left: 1px solid $eve-color-dark-silver;
+        border-top: 1px solid $eve-color-dark-silver;
+        border-right: 1px solid $eve-color-dark-silver;
+        box-sizing: border-box;
+        padding: 0 $eve-spacing-tiny;
+
+        .eve-input {
+            border: 0;
+        }
+
+        .eve-input-icon {
+            left: 24px;
         }
     }
 }

@@ -1211,8 +1211,25 @@ a {
       border-bottom: 1px solid #cfd8dc; }
     .eve-table tbody tr td {
       padding: 0 24px; }
+      .eve-table tbody tr td .eve-checkbox {
+        display: flex; }
   .eve-table.eve-table-strip tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
+  .eve-table.eve-table-select tbody tr:hover {
+    background: rgba(33, 150, 243, 0.1); }
+
+.eve-table-filter .eve-input-control {
+  height: 56px;
+  line-height: 56px;
+  border-left: 1px solid #cfd8dc;
+  border-top: 1px solid #cfd8dc;
+  border-right: 1px solid #cfd8dc;
+  box-sizing: border-box;
+  padding: 0 8px; }
+  .eve-table-filter .eve-input-control .eve-input {
+    border: 0; }
+  .eve-table-filter .eve-input-control .eve-input-icon {
+    left: 24px; }
 
 .eve-divider {
   width: 100%;
