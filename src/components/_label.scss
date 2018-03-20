@@ -63,7 +63,7 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: $eve-spacing-tiny;
+        margin-right: $eve-spacing-x-tiny;
 
         i {
             font-size: $eve-font-normal;
@@ -74,7 +74,7 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: $eve-spacing-tiny;
+        margin-left: $eve-spacing-x-tiny;
         cursor: pointer;
         border-radius: 100%;
 
