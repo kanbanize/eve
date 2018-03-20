@@ -8,6 +8,10 @@
 
 ## Quick Install
 
+### Manual
+
+Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/releases), and include eve.css or eve.min.css located in /dist inside your <head> tag.
+
 ### Unpkg
 
 ```html
@@ -26,19 +30,16 @@ npm install evecss
 yarn add evecss
 ```
 
-### Manual
+## Browser support
 
-[Download](https://github.com/hpivanov/eve/releases) the compiled and minified version.
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers.
 
-## Browser Support
-
-| Browser | Support |
-|---------|---------|
-| Chrome | Yes |
-| Firefox | Yes |
-| Safari | Yes |
-| IE 11/Edge | Yes |
-| Opera | Yes |
+- Chrome
+- Firefox
+- Safari
+- Microsoft Edge
+- Opera
+- Internet Explorer 11 (IE10 is partially supported)
 
 ## License
 
