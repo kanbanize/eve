@@ -46,7 +46,3 @@ Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most cs
 - Internet Explorer 11
 
 Internet Explorer 10 is partially supported.
-
-## License
-
-See the included file [LICENSE](https://github.com/hpivanov/eve/blob/master/LICENSE).
