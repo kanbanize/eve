@@ -10,30 +10,11 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
     background: $eve-color-white;
 
     .eve-dropdown-filter {
-        display: flex;
-        align-items: center;
         border-bottom: 1px solid $eve-color-bright-silver;
-        padding: 0 $eve-spacing-small 0 $eve-spacing-tiny;
         box-sizing: border-box;
-
-        .eve-dropdown-filter-icon {
-            display: flex;
-            margin-left: $eve-spacing-tiny;
-
-            i {
-                font-size: 18px;
-                color: $eve-color-darker-silver;
-            }
-        }
 
         .eve-input {
             border: 0;
-            background: $eve-color-white;
-            padding: 0 0 0 $eve-spacing-tiny;
-
-            &::placeholder {
-                color: $eve-color-dark-silver;
-            }
         }
     }
 

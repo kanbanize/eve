@@ -1096,29 +1096,10 @@ a {
   min-width: 150px;
   background: #fff; }
   .eve-dropdown .eve-dropdown-filter {
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #eceff1;
-    padding: 0 16px 0 8px;
     box-sizing: border-box; }
-    .eve-dropdown .eve-dropdown-filter .eve-dropdown-filter-icon {
-      display: flex;
-      margin-left: 8px; }
-      .eve-dropdown .eve-dropdown-filter .eve-dropdown-filter-icon i {
-        font-size: 18px;
-        color: #b0bec5; }
     .eve-dropdown .eve-dropdown-filter .eve-input {
-      border: 0;
-      background: #fff;
-      padding: 0 0 0 8px; }
-      .eve-dropdown .eve-dropdown-filter .eve-input::-webkit-input-placeholder {
-        color: #cfd8dc; }
-      .eve-dropdown .eve-dropdown-filter .eve-input:-ms-input-placeholder {
-        color: #cfd8dc; }
-      .eve-dropdown .eve-dropdown-filter .eve-input::-ms-input-placeholder {
-        color: #cfd8dc; }
-      .eve-dropdown .eve-dropdown-filter .eve-input::placeholder {
-        color: #cfd8dc; }
+      border: 0; }
   .eve-dropdown .eve-dropdown-list {
     width: 100%;
     padding: 8px 0; }
