@@ -57,8 +57,6 @@ var Snippet = (function() {
                     return snippetMap.tag(snippetCache[str]);
                 })
                 .replace(/{attr.*?}/g, function(str) {
-                    console.log(snippetMap.attr(snippetCache[str]));
-
                     return snippetMap.attr(snippetCache[str]);
                 })
                 .replace(/{val.*?}/g, function(str) {
