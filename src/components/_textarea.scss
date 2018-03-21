@@ -1,18 +1,23 @@
 $eve-textarea-min-height: 100px !default;
 $eve-textarea-line-height: 20px !default;
+$eve-textarea-width: 100% !default;
+$eve-textarea-min-width: 100% !default;
+$eve-textarea-max-width: 100% !default;
+$eve-textarea-border-width: 1px !default;
+$eve-textarea-disable-color: #607d8b !default;
 
 .eve-textarea {
     // resize: none;
     background: $eve-color-white;
     padding: $eve-spacing-tiny $eve-spacing-small;
     vertical-align: top;
-    border: 1px solid $eve-color-dark-silver;
+    border: $eve-textarea-border-width solid $eve-color-dark-silver;
     outline: none;
     box-sizing: border-box;
     min-height: $eve-textarea-min-height;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    width: $eve-textarea-width;
+    max-width: $eve-textarea-min-width;
+    min-width: $eve-textarea-max-width;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
@@ -31,17 +36,13 @@ $eve-textarea-line-height: 20px !default;
     &.eve-textarea-disable {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
-        color: #607d8b; // sass-lint:disable-line no-color-literals
+        color: $eve-textarea-disable-color;
         pointer-events: none;
         resize: none;
     }
 }
 
 .eve-textarea-form {
-    &:not(:last-child) {
-        margin-bottom: $eve-spacing-small;
-    }
-
     .eve-textarea-label {
         display: block;
         margin-bottom: $eve-spacing-tiny;
@@ -50,5 +51,25 @@ $eve-textarea-line-height: 20px !default;
     .eve-textarea-hint {
         display: block;
         margin-top: $eve-spacing-x-tiny;
+    }
+
+    &.eve-textarea-form-success {
+        .eve-textarea {
+            border-color: $eve-color-green;
+        }
+
+        .eve-textarea-hint {
+            color: $eve-color-green;
+        }
+    }
+
+    &.eve-textarea-form-danger {
+        .eve-textarea {
+            border-color: $eve-color-red;
+        }
+
+        .eve-textarea-hint {
+            color: $eve-color-red;
+        }
     }
 }

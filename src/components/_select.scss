@@ -1,37 +1,68 @@
 $eve-select-height: 36px !default;
+$eve-select-border-width: 1px !default;
+$eve-select-max-width: 100% !default;
+$eve-select-disable-color: #607d8b !default;
+$eve-select-arrow-size: 6px !default;
+$eve-select-arrow-border-width: 1px !default;
 
 .eve-select {
-    height: $eve-select-height;
-    line-height: $eve-select-height;
-    background: $eve-color-white;
-    border: 1px solid $eve-color-dark-silver;
-    outline: none;
-    padding: 0 $eve-spacing-small;
-    font-size: $eve-font-normal;
-    color: $eve-color-grey-black;
-    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    max-width: $eve-select-max-width;
     vertical-align: top;
-    -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
-    font-family: inherit;
-    cursor: pointer;
-    border-radius: 0;
-    max-width: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        border: $eve-select-arrow-border-width solid $eve-color-grey-black;
+        border-right: 0;
+        border-top: 0;
+        transform: rotate(-45deg);
+        width: $eve-select-arrow-size;
+        height: $eve-select-arrow-size;
+        right: $eve-spacing-small;
+        top: calc(50% - #{$eve-select-arrow-size / 2 + 1});
+        box-sizing: border-box;
+        pointer-events: none;
+    }
+
+    select {
+        -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+        outline: none;
+        font-family: inherit;
+        font-size: $eve-font-normal;
+        border-radius: 0;
+        background: transparent;
+        width: inherit;
+        color: $eve-color-grey-black;
+        cursor: pointer;
+        border: $eve-select-border-width solid $eve-color-dark-silver;
+        box-sizing: border-box;
+        height: $eve-select-height;
+        line-height: $eve-select-height;
+        padding: 0 ($eve-spacing-small * 2) 0 $eve-spacing-small;
+    }
 
     &:focus {
         border-color: $eve-color-blue;
     }
 
     &.eve-select-disable {
-        background: $eve-color-dark-silver;
-        border-color: $eve-color-dark-silver;
-        color: #607d8b; // sass-lint:disable-line no-color-literals
-        pointer-events: none;
+        &::after {
+            border-color: $eve-select-disable-color;
+        }
+
+        select {
+            background: $eve-color-dark-silver;
+            border-color: $eve-color-dark-silver;
+            color: $eve-select-disable-color;
+            pointer-events: none;
+        }
     }
 }
 
 .eve-select-control {
     display: flex;
-    width: 100%;
 
     &:not(.eve-select-control-round) {
         .eve-button {
@@ -42,16 +73,20 @@ $eve-select-height: 36px !default;
     &.eve-select-control-round {
         .eve-select {
             margin-right: $eve-spacing-tiny;
-            border-radius: $eve-select-height / 2;
+
+            select {
+                border-radius: $eve-select-height / 2;
+            }
         }
     }
 }
 
 .eve-select-group {
     display: flex;
-    width: 100%;
 
     .eve-select {
+        width: 100%;
+
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
         }
@@ -59,7 +94,9 @@ $eve-select-height: 36px !default;
 
     &.eve-select-group-round {
         .eve-select {
-            border-radius: $eve-select-height / 2;
+            select {
+                border-radius: $eve-select-height / 2;
+            }
         }
     }
 }

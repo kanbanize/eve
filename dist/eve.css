@@ -315,10 +315,6 @@ a {
     color: #b0bec5; }
   .eve-input:focus {
     border-color: #2196f3; }
-  .eve-input.eve-input-success {
-    border-color: #4caf50; }
-  .eve-input.eve-input-danger {
-    border-color: #f44336; }
   .eve-input.eve-input-disable {
     background: #cfd8dc;
     border-color: #cfd8dc;
@@ -326,8 +322,7 @@ a {
     pointer-events: none; }
 
 .eve-input-control {
-  display: flex;
-  width: 100%; }
+  display: flex; }
   .eve-input-control:not(.eve-input-control-round) .eve-button {
     border-radius: 0; }
   .eve-input-control.eve-input-control-round .eve-input {
@@ -350,15 +345,11 @@ a {
         color: #cfd8dc; }
 
 .eve-input-group {
-  display: flex;
-  width: 100%; }
+  display: flex; }
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
   .eve-input-group.eve-input-group-round .eve-input {
     border-radius: 18px; }
-
-.eve-input-form:not(:last-child) {
-  margin-bottom: 16px; }
 
 .eve-input-form .eve-input-label {
   display: block;
@@ -367,6 +358,18 @@ a {
 .eve-input-form .eve-input-hint {
   display: block;
   margin-top: 4px; }
+
+.eve-input-form.eve-input-form-success .eve-input {
+  border-color: #4caf50; }
+
+.eve-input-form.eve-input-form-success .eve-input-hint {
+  color: #4caf50; }
+
+.eve-input-form.eve-input-form-danger .eve-input {
+  border-color: #f44336; }
+
+.eve-input-form.eve-input-form-danger .eve-input-hint {
+  color: #f44336; }
 
 .eve-textarea {
   background: #fff;
@@ -405,9 +408,6 @@ a {
     pointer-events: none;
     resize: none; }
 
-.eve-textarea-form:not(:last-child) {
-  margin-bottom: 16px; }
-
 .eve-textarea-form .eve-textarea-label {
   display: block;
   margin-bottom: 8px; }
@@ -416,45 +416,78 @@ a {
   display: block;
   margin-top: 4px; }
 
+.eve-textarea-form.eve-textarea-form-success .eve-textarea {
+  border-color: #4caf50; }
+
+.eve-textarea-form.eve-textarea-form-success .eve-textarea-hint {
+  color: #4caf50; }
+
+.eve-textarea-form.eve-textarea-form-danger .eve-textarea {
+  border-color: #f44336; }
+
+.eve-textarea-form.eve-textarea-form-danger .eve-textarea-hint {
+  color: #f44336; }
+
 .eve-select {
-  height: 36px;
-  line-height: 36px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  outline: none;
-  padding: 0 16px;
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  vertical-align: top;
-  -webkit-appearance: none;
-  font-family: inherit;
-  cursor: pointer;
-  border-radius: 0;
-  max-width: 100%; }
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  vertical-align: top; }
+  .eve-select::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #333;
+    border-right: 0;
+    border-top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 6px;
+    height: 6px;
+    right: 16px;
+    top: calc(50% - 4px);
+    box-sizing: border-box;
+    pointer-events: none; }
+  .eve-select select {
+    -webkit-appearance: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 0;
+    background: transparent;
+    width: inherit;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #cfd8dc;
+    box-sizing: border-box;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 32px 0 16px; }
   .eve-select:focus {
     border-color: #2196f3; }
-  .eve-select.eve-select-disable {
+  .eve-select.eve-select-disable::after {
+    border-color: #607d8b; }
+  .eve-select.eve-select-disable select {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
 
 .eve-select-control {
-  display: flex;
-  width: 100%; }
+  display: flex; }
   .eve-select-control:not(.eve-select-control-round) .eve-button {
     border-radius: 0; }
   .eve-select-control.eve-select-control-round .eve-select {
-    margin-right: 8px;
-    border-radius: 18px; }
+    margin-right: 8px; }
+    .eve-select-control.eve-select-control-round .eve-select select {
+      border-radius: 18px; }
 
 .eve-select-group {
-  display: flex;
-  width: 100%; }
-  .eve-select-group .eve-select:not(:last-child) {
-    margin-right: 8px; }
-  .eve-select-group.eve-select-group-round .eve-select {
+  display: flex; }
+  .eve-select-group .eve-select {
+    width: 100%; }
+    .eve-select-group .eve-select:not(:last-child) {
+      margin-right: 8px; }
+  .eve-select-group.eve-select-group-round .eve-select select {
     border-radius: 18px; }
 
 .eve-avatar {
@@ -1338,6 +1371,25 @@ a {
     border-radius: 100%; }
     .eve-label .eve-label-action i {
       font-size: 14px; }
+
+.eve-form .eve-form-group:not(:last-child) {
+  margin-bottom: 16px; }
+
+.eve-form .eve-form-group .eve-form-label {
+  margin-bottom: 8px;
+  display: block; }
+
+.eve-form .eve-form-group.eve-form-group-left {
+  text-align: left; }
+
+.eve-form .eve-form-group.eve-form-group-center {
+  text-align: center; }
+
+.eve-form .eve-form-group.eve-form-group-right {
+  text-align: right; }
+
+.eve-form .eve-form-group .eve-button-group {
+  display: inline-flex; }
 
 .eve-grid {
   display: grid;

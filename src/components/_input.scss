@@ -1,17 +1,23 @@
 $eve-input-height: 36px !default;
+$eve-input-icon-size: 18px !default;
+$eve-input-border-radius: $eve-input-height / 2 !default;
+$eve-input-border-width: 1px !default;
+$eve-input-width: 100% !default;
+$eve-input-max-width: 100% !default;
+$eve-input-disable-color: #607d8b !default;
 
 .eve-input {
     height: $eve-input-height;
     line-height: $eve-input-height;
     background: $eve-color-white;
-    border: 1px solid $eve-color-dark-silver;
+    border: $eve-input-border-width solid $eve-color-dark-silver;
     outline: none;
     padding: 0 $eve-spacing-small;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
+    width: $eve-input-width;
+    max-width: $eve-input-max-width;
     vertical-align: top;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
@@ -25,25 +31,17 @@ $eve-input-height: 36px !default;
         border-color: $eve-color-blue;
     }
 
-    &.eve-input-success {
-        border-color: $eve-color-green;
-    }
-
-    &.eve-input-danger {
-        border-color: $eve-color-red;
-    }
 
     &.eve-input-disable {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
-        color: #607d8b; // sass-lint:disable-line no-color-literals
+        color: $eve-input-disable-color;
         pointer-events: none;
     }
 }
 
 .eve-input-control {
     display: flex;
-    width: 100%;
 
     &:not(.eve-input-control-round) {
         .eve-button {
@@ -54,7 +52,7 @@ $eve-input-height: 36px !default;
     &.eve-input-control-round {
         .eve-input {
             margin-right: $eve-spacing-tiny;
-            border-radius: $eve-input-height / 2;
+            border-radius: $eve-input-border-radius;
         }
     }
 
@@ -63,7 +61,7 @@ $eve-input-height: 36px !default;
         align-items: center;
 
         .eve-input {
-            padding-left: 18px + $eve-spacing-normal;
+            padding-left: $eve-input-icon-size + $eve-spacing-normal;
 
             &:focus {
                 & ~ .eve-input-icon {
@@ -81,7 +79,7 @@ $eve-input-height: 36px !default;
             left: $eve-spacing-small;
 
             i {
-                font-size: 18px;
+                font-size: $eve-input-icon-size;
                 color: $eve-color-dark-silver;
             }
         }
@@ -90,7 +88,6 @@ $eve-input-height: 36px !default;
 
 .eve-input-group {
     display: flex;
-    width: 100%;
 
     .eve-input {
         &:not(:last-child) {
@@ -100,16 +97,12 @@ $eve-input-height: 36px !default;
 
     &.eve-input-group-round {
         .eve-input {
-            border-radius: $eve-input-height / 2;
+            border-radius: $eve-input-border-radius;
         }
     }
 }
 
 .eve-input-form {
-    &:not(:last-child) {
-        margin-bottom: $eve-spacing-small;
-    }
-
     .eve-input-label {
         display: block;
         margin-bottom: $eve-spacing-tiny;
@@ -118,5 +111,25 @@ $eve-input-height: 36px !default;
     .eve-input-hint {
         display: block;
         margin-top: $eve-spacing-x-tiny;
+    }
+
+    &.eve-input-form-success {
+        .eve-input {
+            border-color: $eve-color-green;
+        }
+
+        .eve-input-hint {
+            color: $eve-color-green;
+        }
+    }
+
+    &.eve-input-form-danger {
+        .eve-input {
+            border-color: $eve-color-red;
+        }
+
+        .eve-input-hint {
+            color: $eve-color-red;
+        }
     }
 }

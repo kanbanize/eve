@@ -16,7 +16,9 @@
     }
 
     .component-content {
-        margin-bottom: 64px;
+        &:not(:last-child) {
+            margin-bottom: 64px;
+        }
 
         .component-header {
             font-size: 16px;
