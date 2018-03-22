@@ -45,7 +45,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             width: $eve-switch-height - 4;
             height: $eve-switch-height - 4;
             background: $eve-color-darker-silver;
-            border-radius: 100%;
+            border-radius: 50%;
             position: absolute;
             left: 2px;
             transition: left 150ms ease, background 150ms ease;

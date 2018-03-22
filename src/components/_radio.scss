@@ -36,13 +36,13 @@
         height: 100%;
         box-sizing: border-box;
         pointer-events: none;
-        border-radius: 100%;
+        border-radius: 50%;
 
         &::after {
             content: '';
             display: none;
             height: 100%;
-            border-radius: 100%;
+            border-radius: 50%;
             box-sizing: border-box;
             border: 3px solid $eve-color-white;
         }

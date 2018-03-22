@@ -76,7 +76,7 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
         cursor: pointer;
-        border-radius: 100%;
+        border-radius: 50%;
 
         i {
             font-size: $eve-font-normal;
