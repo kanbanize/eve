@@ -6,6 +6,8 @@ $eve-avatar-sizes: (
     large: 40px,
     x-large: 96px
 ) !default;
+$eve-avatar-border-radius: 50% !default;
+$eve-avatar-state-border-radius: 50% !default;
 
 @mixin get-eve-avatar-size($size) {
     width: $size;
@@ -16,7 +18,7 @@ $eve-avatar-sizes: (
 .eve-avatar {
     display: inline-block;
     text-align: center;
-    border-radius: 50%;
+    border-radius: $eve-avatar-border-radius;
     vertical-align: middle;
     color: $eve-color-white;
     position: relative;
@@ -40,7 +42,7 @@ $eve-avatar-sizes: (
         position: absolute;
         left: 0;
         top: 0;
-        border-radius: 50%;
+        border-radius: $eve-avatar-border-radius;
         width: inherit;
         height: inherit;
     }
@@ -72,7 +74,7 @@ $eve-avatar-sizes: (
                     display: block;
                     height: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
                     width: map-get($eve-avatar-sizes, $eve-avatar-size) / 4;
-                    border-radius: 50%;
+                    border-radius: $eve-avatar-state-border-radius;
                     position: absolute;
                     bottom: 0;
                     right: 0;
