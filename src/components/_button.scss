@@ -19,6 +19,14 @@ $eve-button-active-colors: (
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
 $eve-button-min-width: 94px !default;
+$eve-button-outline-border-width: 1px !default;
+$eve-button-icon-size: 18px !default;
+$eve-button-icon-border-radius: 50% !default;
+$eve-button-block-width: 100% !default;
+$eve-button-load-progress-border-radius: 50% !default;
+$eve-button-load-progress-border-width: 2px !default;
+$eve-button-load-progress-size: 20px !default;
+$eve-button-load-progress-duration: .5s !default;
 
 .eve-button {
     display: inline-flex;
@@ -60,7 +68,7 @@ $eve-button-min-width: 94px !default;
             // Outline Buttons
             &.eve-button-outline {
                 color: $color;
-                border: 1px solid $color;
+                border: $eve-button-outline-border-width solid $color;
 
                 &:hover {
                     background: rgba($color, .1); // sass-lint:disable-line no-color-literals
@@ -119,7 +127,7 @@ $eve-button-min-width: 94px !default;
     }
 
     i {
-        font-size: 18px;
+        font-size: $eve-button-icon-size;
         margin-right: $eve-spacing-x-tiny;
     }
 
@@ -131,21 +139,21 @@ $eve-button-min-width: 94px !default;
     &.eve-button-text {
         text-transform: uppercase;
         border: 0;
-        font-weight: 600;
+        font-weight: bold;
     }
 
     &.eve-button-icon {
         padding: 0;
         width: $eve-button-height;
         height: $eve-button-height;
-        border-radius: 50%;
+        border-radius: $eve-button-icon-border-radius;
         background: transparent;
         min-width: $eve-button-height;
         color: $eve-color-darker-silver;
     }
 
     &.eve-button-block {
-        width: 100%;
+        width: $eve-button-block-width;
     }
 
     &.eve-button-load {
@@ -155,20 +163,22 @@ $eve-button-min-width: 94px !default;
 
         &::after {
             content: '';
-            border-radius: 50%;
-            border: 2px solid transparent;
+            border-radius: $eve-button-load-progress-border-radius;
+            border: $eve-button-load-progress-border-width solid transparent;
             border-top-color: $eve-color-white;
+            border-right-color: $eve-color-white;
             position: absolute;
-            top: calc(50% - 11px);
-            left: calc(50% - 11px);
+            top: calc(50% - #{$eve-button-load-progress-size / 2});
+            left: calc(50% - #{$eve-button-load-progress-size / 2});
             transform: translate(-50%, -50%);
-            width: 18px;
-            height: 18px;
+            width: $eve-button-load-progress-size;
+            height: $eve-button-load-progress-size;
             animation-name: eveButtonProgress;
             animation-fill-mode: forwards;
             animation-iteration-count: infinite;
-            animation-duration: .5s;
+            animation-duration: $eve-button-load-progress-duration;
             animation-timing-function: linear;
+            box-sizing: border-box;
         }
 
         @keyframes eveButtonProgress {

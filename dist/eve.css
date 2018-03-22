@@ -207,7 +207,7 @@ a {
   .eve-button.eve-button-invert, .eve-button.eve-button-text {
     text-transform: uppercase;
     border: 0;
-    font-weight: 600; }
+    font-weight: bold; }
   .eve-button.eve-button-icon {
     padding: 0;
     width: 36px;
@@ -227,23 +227,25 @@ a {
       border-radius: 50%;
       border: 2px solid transparent;
       border-top-color: #fff;
+      border-right-color: #fff;
       position: absolute;
-      top: calc(50% - 11px);
-      left: calc(50% - 11px);
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       -webkit-animation-name: eveButtonProgress;
               animation-name: eveButtonProgress;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards;
       -webkit-animation-iteration-count: infinite;
               animation-iteration-count: infinite;
-      -webkit-animation-duration: .5s;
-              animation-duration: .5s;
+      -webkit-animation-duration: 0.5s;
+              animation-duration: 0.5s;
       -webkit-animation-timing-function: linear;
-              animation-timing-function: linear; }
+              animation-timing-function: linear;
+      box-sizing: border-box; }
 
 @-webkit-keyframes eveButtonProgress {
   from {
