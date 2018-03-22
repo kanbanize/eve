@@ -1207,7 +1207,7 @@ a {
     height: 8px;
     min-width: 6px;
     padding: 0;
-    border-radius: 50%;
+    border-radius: 9px;
     -webkit-transform: none;
             transform: none; }
 

@@ -1,5 +1,8 @@
 $eve-badge-height: 18px !default;
 $eve-badge-border-radius: $eve-badge-height / 2 !default;
+$eve-badge-size: 8px !default;
+$eve-badge-min-width: 6px !default;
+$eve-badge-border-radius: 50% !default;
 
 .eve-badge {
     position: relative;
@@ -27,11 +30,11 @@ $eve-badge-border-radius: $eve-badge-height / 2 !default;
 
     &:not([data-badge]) {
         &::after {
-            width: 8px;
-            height: 8px;
-            min-width: 6px;
+            width: $eve-badge-size;
+            height: $eve-badge-size;
+            min-width: $eve-badge-min-width;
             padding: 0;
-            border-radius: 50%;
+            border-radius: $eve-badge-border-radius;
             transform: none;
         }
     }
