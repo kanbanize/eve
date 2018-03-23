@@ -1,6 +1,5 @@
 $eve-chip-height: 24px !default;
 $eve-chip-border-radius: $eve-chip-height / 2 !default;
-$eve-chip-border-width: 1px !default;
 $eve-chip-icon-border-radius: 50% !default;
 $eve-chip-action-border-radius: 50% !default;
 $eve-chip-action-size: 18px !default;
@@ -18,7 +17,7 @@ $eve-chip-padding: $eve-spacing-tiny !default;
 
     .eve-avatar,
     .eve-chip-icon {
-        box-shadow: 0 0 0 $eve-chip-border-width $eve-color-white;
+        box-shadow: 0 0 0 1px $eve-color-white;
         height: $eve-chip-height;
         width: $eve-chip-height;
         position: relative;
