@@ -1100,7 +1100,8 @@ a {
   background: #eceff1;
   padding: 0 8px;
   font-size: 12px; }
-  .eve-chip .eve-avatar {
+  .eve-chip .eve-avatar,
+  .eve-chip .eve-chip-icon {
     box-shadow: 0 0 0 1px #fff;
     height: 24px;
     width: 24px;
@@ -1111,12 +1112,7 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height: 24px;
-    width: 24px;
-    box-shadow: 0 0 0 1px #fff;
-    background: #2196f3;
-    position: relative;
-    left: -8px; }
+    background: #2196f3; }
     .eve-chip .eve-chip-icon i {
       font-size: 14px;
       color: #fff; }
@@ -1129,7 +1125,7 @@ a {
     border-radius: 50%; }
     .eve-chip .eve-chip-action i {
       color: #b0bec5;
-      font-size: 14px; }
+      font-size: 18px; }
 
 .eve-dropdown {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
