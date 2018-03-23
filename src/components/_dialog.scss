@@ -5,9 +5,10 @@ $eve-dialog-types: (
     danger: $eve-color-red
 ) !default;
 $eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
+$eve-dialog-width: 400px !default;
 
 .eve-dialog {
-    width: 400px;
+    width: $eve-dialog-width;
     box-shadow: 0 5px 10px 0 $eve-dialog-box-shadow-color;
     padding: $eve-spacing-normal;
 
