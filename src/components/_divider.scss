@@ -1,7 +1,10 @@
+$eve-divider-width: 100% !default;
+$eve-divider-height: 1px !default;
+
 .eve-divider {
-    width: 100%;
+    width: $eve-divider-width;
     margin: $eve-spacing-normal 0;
-    height: 1px;
+    height: $eve-divider-height;
     background: $eve-color-blue;
     display: flex;
     align-items: center;
