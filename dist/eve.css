@@ -715,7 +715,7 @@ a {
 .eve-progress-line {
   width: 100%;
   background: #eceff1;
-  height: 4px;
+  height: 2px;
   position: relative;
   overflow: hidden; }
   .eve-progress-line::after {
@@ -756,9 +756,9 @@ a {
     content: '';
     background: transparent;
     border-radius: 50%;
-    border: 4px solid #eceff1;
+    border: 2px solid #eceff1;
     border-top-color: #2196f3;
-    padding: 20px;
+    border-right-color: #2196f3;
     display: inline-block;
     -webkit-animation-name: eveProgressOval;
             animation-name: eveProgressOval;
@@ -769,7 +769,10 @@ a {
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
+            animation-timing-function: linear;
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box; }
   .eve-progress-oval::after {
     content: attr(data-label);
     margin-left: 16px; }
@@ -1358,7 +1361,7 @@ a {
     justify-content: center;
     margin-right: 4px; }
     .eve-label .eve-label-icon i {
-      font-size: 14px; }
+      font-size: 18px; }
   .eve-label .eve-label-action {
     display: flex;
     align-items: center;
@@ -1367,30 +1370,13 @@ a {
     cursor: pointer;
     border-radius: 50%; }
     .eve-label .eve-label-action i {
-      font-size: 14px; }
-
-.eve-form .eve-form-group:not(:last-child) {
-  margin-bottom: 16px; }
-
-.eve-form .eve-form-group .eve-form-label {
-  margin-bottom: 8px;
-  display: block; }
-
-.eve-form .eve-form-group.eve-form-group-left {
-  text-align: left; }
-
-.eve-form .eve-form-group.eve-form-group-center {
-  text-align: center; }
-
-.eve-form .eve-form-group.eve-form-group-right {
-  text-align: right; }
-
-.eve-form .eve-form-group .eve-button-group {
-  display: inline-flex; }
+      font-size: 18px; }
 
 .eve-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .eve-grid.eve-grid-margin-x-tiny {
+    padding: 4px; }
   .eve-grid.eve-grid-margin-tiny {
     padding: 8px; }
   .eve-grid.eve-grid-margin-small {
@@ -1399,6 +1385,10 @@ a {
     padding: 24px; }
   .eve-grid.eve-grid-margin-large {
     padding: 48px; }
+  .eve-grid.eve-grid-margin-x-large {
+    padding: 64px; }
+  .eve-grid.eve-grid-gutter-x-tiny {
+    grid-gap: 4px; }
   .eve-grid.eve-grid-gutter-tiny {
     grid-gap: 8px; }
   .eve-grid.eve-grid-gutter-small {
@@ -1407,6 +1397,8 @@ a {
     grid-gap: 24px; }
   .eve-grid.eve-grid-gutter-large {
     grid-gap: 48px; }
+  .eve-grid.eve-grid-gutter-x-large {
+    grid-gap: 64px; }
   .eve-grid .eve-grid-cell {
     box-sizing: border-box; }
     .eve-grid .eve-grid-cell.eve-grid-cell-1 {

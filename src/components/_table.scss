@@ -1,3 +1,8 @@
+$eve-table-th-height: 56px !default;
+$eve-table-th-color: #607d8b !default;
+$eve-table-tr-height: 48px !default;
+$eve-table-filter-height: 56px !default;
+
 .eve-table {
     border-spacing: 0;
     border: 1px solid $eve-color-dark-silver;
@@ -11,11 +16,11 @@
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                height: 56px;
-                line-height: 56px;
+                height: $eve-table-th-height;
+                line-height: $eve-table-th-height;
                 font-weight: normal;
                 background: $eve-color-bright-silver;
-                color: #607d8b; // sass-lint:disable-line no-color-literals
+                color: $eve-table-th-color;
                 padding: 0 $eve-spacing-normal;
             }
         }
@@ -23,8 +28,8 @@
 
     tbody {
         tr {
-            height: 48px;
-            line-height: 48px;
+            height: $eve-table-tr-height;
+            line-height: $eve-table-tr-height;
 
             &:not(:last-child) {
                 border-bottom: 1px solid $eve-color-dark-silver;
@@ -63,8 +68,8 @@
 
 .eve-table-filter {
     .eve-input-control {
-        height: 56px;
-        line-height: 56px;
+        height: $eve-table-filter-height;
+        line-height: $eve-table-filter-height;
         border-left: 1px solid $eve-color-dark-silver;
         border-top: 1px solid $eve-color-dark-silver;
         border-right: 1px solid $eve-color-dark-silver;

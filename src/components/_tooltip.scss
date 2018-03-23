@@ -1,11 +1,12 @@
 $eve-tooltip-height: 24px !default;
 $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
+$eve-tooltip-background-color: #263238 !default;
 
 .eve-tooltip {
     position: relative;
 
     &::after {
-        background: #263238; // sass-lint:disable-line no-color-literals
+        background: $eve-tooltip-background-color;
         color: $eve-color-white;
         content: attr(data-tooltip);
         font-size: $eve-font-small;
@@ -37,7 +38,7 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
 
     &.eve-tooltip-top {
         &::after {
-            bottom: calc(100% + 8px);
+            bottom: calc(100% + #{$eve-spacing-tiny});
             left: 50%;
             transform: translateX(-50%);
         }
@@ -45,14 +46,14 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
 
     &.eve-tooltip-left {
         &::after {
-            bottom: calc(50% - 12px);
-            right: calc(100% + 8px);
+            bottom: calc(50% - #{$eve-tooltip-height / 2});
+            right: calc(100% + #{$eve-spacing-tiny});
         }
     }
 
     &.eve-tooltip-bottom {
         &::after {
-            top: calc(100% + 8px);
+            top: calc(100% + #{$eve-spacing-tiny});
             left: 50%;
             transform: translateX(-50%);
         }
@@ -60,8 +61,8 @@ $eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
 
     &.eve-tooltip-right {
         &::after {
-            bottom: calc(50% - 12px);
-            left: calc(100% + 8px);
+            bottom: calc(50% - #{$eve-tooltip-height / 2});
+            left: calc(100% + #{$eve-spacing-tiny});
         }
     }
 }

@@ -21,7 +21,7 @@ $eve-select-arrow-border-width: 1px !default;
         width: $eve-select-arrow-size;
         height: $eve-select-arrow-size;
         right: $eve-spacing-small;
-        top: calc(50% - #{$eve-select-arrow-size / 2 + 1});
+        top: calc(50% - #{$eve-select-arrow-size / 2 + $eve-select-arrow-border-width});
         box-sizing: border-box;
         pointer-events: none;
     }

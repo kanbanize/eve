@@ -6,6 +6,9 @@ $eve-label-colors: (
 ) !default;
 $eve-label-height: 24px !default;
 $eve-label-border-radius: $eve-label-height / 2 !default;
+$eve-label-outline-border-width: 1px !default;
+$eve-label-action-border-radius: 50% !default;
+$eve-label-icon-size: 18px !default;
 
 .eve-label {
     display: inline-flex;
@@ -39,7 +42,7 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
             }
 
             &.eve-label-outline {
-                border: 1px solid $color;
+                border: $eve-label-outline-border-width solid $color;
                 color: $color;
 
                 .eve-label-icon {
@@ -66,7 +69,7 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
         margin-right: $eve-spacing-x-tiny;
 
         i {
-            font-size: $eve-font-normal;
+            font-size: $eve-label-icon-size;
         }
     }
 
@@ -76,10 +79,10 @@ $eve-label-border-radius: $eve-label-height / 2 !default;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
         cursor: pointer;
-        border-radius: 50%;
+        border-radius: $eve-label-action-border-radius;
 
         i {
-            font-size: $eve-font-normal;
+            font-size: $eve-label-icon-size;
         }
     }
 }
