@@ -493,13 +493,13 @@ a {
     border-radius: 18px; }
 
 .eve-avatar {
-  display: inline-block;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   vertical-align: middle;
   color: #fff;
-  position: relative;
-  box-sizing: border-box; }
+  position: relative; }
   .eve-avatar[data-initial] {
     background: #2196f3; }
     .eve-avatar[data-initial]::before {
@@ -521,8 +521,7 @@ a {
     height: inherit; }
   .eve-avatar.eve-avatar-x-tiny {
     width: 16px;
-    height: 16px;
-    line-height: 16px; }
+    height: 16px; }
     .eve-avatar.eve-avatar-x-tiny[data-initial]::before {
       font-size: 10px; }
     .eve-avatar.eve-avatar-x-tiny.eve-avatar-online::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-busy::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-away::after, .eve-avatar.eve-avatar-x-tiny.eve-avatar-offline::after {
@@ -545,8 +544,7 @@ a {
       background: #cfd8dc; }
   .eve-avatar.eve-avatar-tiny {
     width: 24px;
-    height: 24px;
-    line-height: 24px; }
+    height: 24px; }
     .eve-avatar.eve-avatar-tiny[data-initial]::before {
       font-size: 12px; }
     .eve-avatar.eve-avatar-tiny.eve-avatar-online::after, .eve-avatar.eve-avatar-tiny.eve-avatar-busy::after, .eve-avatar.eve-avatar-tiny.eve-avatar-away::after, .eve-avatar.eve-avatar-tiny.eve-avatar-offline::after {
@@ -569,8 +567,7 @@ a {
       background: #cfd8dc; }
   .eve-avatar.eve-avatar-small {
     width: 28px;
-    height: 28px;
-    line-height: 28px; }
+    height: 28px; }
     .eve-avatar.eve-avatar-small[data-initial]::before {
       font-size: 12px; }
     .eve-avatar.eve-avatar-small.eve-avatar-online::after, .eve-avatar.eve-avatar-small.eve-avatar-busy::after, .eve-avatar.eve-avatar-small.eve-avatar-away::after, .eve-avatar.eve-avatar-small.eve-avatar-offline::after {
@@ -593,8 +590,7 @@ a {
       background: #cfd8dc; }
   .eve-avatar.eve-avatar-normal {
     width: 32px;
-    height: 32px;
-    line-height: 32px; }
+    height: 32px; }
     .eve-avatar.eve-avatar-normal[data-initial]::before {
       font-size: 12px; }
     .eve-avatar.eve-avatar-normal.eve-avatar-online::after, .eve-avatar.eve-avatar-normal.eve-avatar-busy::after, .eve-avatar.eve-avatar-normal.eve-avatar-away::after, .eve-avatar.eve-avatar-normal.eve-avatar-offline::after {
@@ -617,8 +613,7 @@ a {
       background: #cfd8dc; }
   .eve-avatar.eve-avatar-large {
     width: 40px;
-    height: 40px;
-    line-height: 40px; }
+    height: 40px; }
     .eve-avatar.eve-avatar-large[data-initial]::before {
       font-size: 16px; }
     .eve-avatar.eve-avatar-large.eve-avatar-online::after, .eve-avatar.eve-avatar-large.eve-avatar-busy::after, .eve-avatar.eve-avatar-large.eve-avatar-away::after, .eve-avatar.eve-avatar-large.eve-avatar-offline::after {
@@ -641,8 +636,7 @@ a {
       background: #cfd8dc; }
   .eve-avatar.eve-avatar-x-large {
     width: 96px;
-    height: 96px;
-    line-height: 96px; }
+    height: 96px; }
     .eve-avatar.eve-avatar-x-large[data-initial]::before {
       font-size: 48px; }
     .eve-avatar.eve-avatar-x-large.eve-avatar-online::after, .eve-avatar.eve-avatar-x-large.eve-avatar-busy::after, .eve-avatar.eve-avatar-x-large.eve-avatar-away::after, .eve-avatar.eve-avatar-x-large.eve-avatar-offline::after {
@@ -663,6 +657,13 @@ a {
       background: #ff9800; }
     .eve-avatar.eve-avatar-x-large.eve-avatar-offline::after {
       background: #cfd8dc; }
+
+.eve-avatar-group {
+  display: flex; }
+  .eve-avatar-group .eve-avatar {
+    border: 2px solid #fff; }
+    .eve-avatar-group .eve-avatar:not(:first-child) {
+      margin-left: -8px; }
 
 .eve-tooltip {
   position: relative; }
