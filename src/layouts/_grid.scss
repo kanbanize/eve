@@ -18,7 +18,6 @@ $eve-grid-gutters: (
 
 .eve-grid {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
 
     @each $eve-grid-margin in map-keys($eve-grid-margins) {
         &.eve-grid-margin-#{$eve-grid-margin} {
@@ -40,5 +39,21 @@ $eve-grid-gutters: (
                 grid-column-end: span $i;
             }
         }
+    }
+
+    @media only screen and (min-width: 1366px) {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
