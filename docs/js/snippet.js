@@ -1,5 +1,5 @@
 var Snippet = (function() {
-    var snippetMap = {
+    var map = {
         tag: function(tag) {
             return '<span class="snippet-tag">' + tag.replace(/\/|<|>/g, function(char) {
                 switch (char) {
@@ -23,50 +23,54 @@ var Snippet = (function() {
         }
     };
 
-    function execute() {
-        var snippets = document.getElementsByClassName('component-example');
+    function load() {
+        var examples = document.getElementsByClassName('component-example');
 
-        for (var i = 0; i < snippets.length; i++) {
-            var snippet = snippets[i];
-            var snippetCache = {};
-            var snippetTemplate = snippet.innerHTML
-                // Prepare
-                .replace(/(<(\/?)([a-z0-9]+)(>?))|((\/?)>)/gi, function(str) {
-                    var tagId = '{tag' + guid() + '}';
+        for (var i = 0; i < examples.length; i++) {
+            var example = examples[i];
 
-                    snippetCache[tagId] = str;
-
-                    return tagId;
-                })
-                .replace(/[a-z\-]+=/gi, function(str) {
-                    var attrId = '{attr' + guid() + '}';
-
-                    snippetCache[attrId] = str;
-
-                    return attrId;
-                })
-                .replace(/".*?"/g, function(str) {
-                    var valId = '{val' + guid() + '}';
-
-                    snippetCache[valId] = str;
-
-                    return valId;
-                })
-                // Replace
-                .replace(/{tag.*?}/g, function(str) {
-                    return snippetMap.tag(snippetCache[str]);
-                })
-                .replace(/{attr.*?}/g, function(str) {
-                    return snippetMap.attr(snippetCache[str]);
-                })
-                .replace(/{val.*?}/g, function(str) {
-                    return snippetMap.val(snippetCache[str]);
-                })
-                .replace(/^\s{12}/gm, '')
-                .trim();
-
-            snippet.insertAdjacentHTML('afterend', '<pre class="snippet">' + snippetTemplate + '</pre>')
+            example.insertAdjacentHTML('afterend', '<pre class="snippet">' + generateSnippet(example.innerHTML) + '</pre>');
         }
+    }
+
+    function generateSnippet(html) {
+        var cache = {};
+
+        return html
+            // Prepare
+            .replace(/(<(\/?)([a-z0-9]+)(>?))|((\/?)>)/gi, function(str) {
+                var tagId = '{tag' + guid() + '}';
+
+                cache[tagId] = str;
+
+                return tagId;
+            })
+            .replace(/[a-z\-]+=/gi, function(str) {
+                var attrId = '{attr' + guid() + '}';
+
+                cache[attrId] = str;
+
+                return attrId;
+            })
+            .replace(/".*?"/g, function(str) {
+                var valId = '{val' + guid() + '}';
+
+                cache[valId] = str;
+
+                return valId;
+            })
+            // Replace
+            .replace(/{tag.*?}/g, function(str) {
+                return map.tag(cache[str]);
+            })
+            .replace(/{attr.*?}/g, function(str) {
+                return map.attr(cache[str]);
+            })
+            .replace(/{val.*?}/g, function(str) {
+                return map.val(cache[str]);
+            })
+            .replace(/^\s{12}/gm, '')
+            .trim();
     }
 
     function guid() {
@@ -78,6 +82,6 @@ var Snippet = (function() {
     }
 
     return {
-        execute: execute
+        load: load
     };
 })();

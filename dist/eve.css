@@ -85,6 +85,9 @@ sub {
 a {
   color: #2196f3; }
 
+ul {
+  list-style: none; }
+
 .eve-button {
   display: inline-flex;
   align-items: center;

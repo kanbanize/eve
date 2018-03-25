@@ -37,7 +37,10 @@
 
     function loadTemplate(path) {
         if (templatesCache.hasOwnProperty(path)) {
-            if (path === 'foundations' && ['typography', 'colors', 'spacing'].indexOf(location.hash) > -1) {
+            if (
+                (path === 'getting-started' && ['installation', 'starter-template'].indexOf(location.hash) > -1) ||
+                (path === 'foundations' && ['typography', 'colors', 'spacing'].indexOf(location.hash) > -1)
+            ) {
                 return;
             }
 
@@ -63,13 +66,13 @@
             content.innerHTML = html;
             content.scroll(0, 0);
 
-            Snippet.execute();
+            Snippet.load();
         }
     }
 
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
     } else {
-        loadTemplate('foundations');
+        loadTemplate('getting-started');
     }
 })();
