@@ -1,4 +1,4 @@
-# [Eve CSS](https://hpivanov.github.io/eve)
+# [Eve](https://hpivanov.github.io/eve)
 
 **A minimalist CSS framework.**
 
@@ -8,7 +8,7 @@
 
 ## Installation
 
-There are 3 ways to install Eve CSS. You can either install it via package managers, CDN, or manually.
+There are 3 ways to install Eve. You can either install it via package managers, CDN, or manually.
 
 ### NPM
 
@@ -30,7 +30,7 @@ yarn add evecss
 
 ### Manually
 
-Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
+Download the compiled and minified [Eve](https://github.com/hpivanov/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
 
 ```html
 <link rel="stylesheet" href="eve.min.css">

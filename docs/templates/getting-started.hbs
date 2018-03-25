@@ -1,6 +1,6 @@
 <div id="installation" class="component">
     <div class="component-title">Installation</div>
-    <div class="component-description">There are 3 ways to install Eve CSS. You can either install it via package managers, CDN, or manually.</div>
+    <div class="component-description">There are 3 ways to install Eve. You can either install it via package managers, CDN, or manually.</div>
     <div class="component-content">
         <h3>NPM</h3>
         <pre class="snippet">npm install evecss</pre>
@@ -15,9 +15,9 @@
     </div>
     <div class="component-content">
         <h3>Manually</h3>
-        <p>Download the compiled and minified Eve CSS.</p>
+        <p>Download the compiled and minified Eve.</p>
         <p>
-            <a href="https://github.com/hpivanov/eve/releases" target="_blank" class="eve-button eve-button-success">Download Eve CSS</a>
+            <a href="https://github.com/hpivanov/eve/releases" target="_blank" class="eve-button eve-button-success">Download Eve</a>
         </p>
         <p>Include <strong>eve.css</strong> or <strong>eve.min.css</strong> located in <strong>/dist</strong> inside your <strong>&lt;head&gt;</strong> tag.</p>
         <pre class="snippet">&lt;<span class="snippet-tag">link</span> <span class="snippet-attr">rel=</span><span class="snippet-val">"stylesheet"</span> <span class="snippet-attr">href=</span><span class="snippet-val">"eve.min.css"</span>&gt;</pre>
@@ -30,8 +30,8 @@
 </div>
 <div id="starter-template" class="component">
     <div class="component-title">Starter Template</div>
-    <div class="component-description">If you want to get started right away, you can use this starter template.</div>
     <div class="component-content">
+    <p>If you want to get started right away, you can use this starter template.</p>
 <pre class="snippet">
 &lt;!<span class="snippet-tag">DOCTYPE</span> html&gt;
 &lt;<span class="snippet-tag">html</span> <span class="snippet-attr">lang=</span><span class="snippet-val">"en"</span>&gt;
@@ -53,5 +53,19 @@
 &lt;/<span class="snippet-tag">body</span>&gt;
 &lt;/<span class="snippet-tag">html</span>&gt;
 </pre>
+    </div>
+</div>
+<div id="browser-support" class="component">
+    <div class="component-title">Browser Support</div>
+    <div class="component-content">
+        <p>Eve uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most css styles compatible with earlier browsers. According to <a href="https://caniuse.com" target="_blank">Can I use</a>, Eve is compatible with recent versions of:</p>
+        <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Safari</li>
+            <li>Opera</li>
+            <li>Edge</li>
+        </ul>
+        <p>Internet Explorer (10+) is partially supported.</p>
     </div>
 </div>

@@ -1,11 +1,21 @@
 // sass-lint:disable no-ids, no-color-literals
 #installation,
-#starter-template {
+#starter-template,
+#browser-support {
     h3 {
         margin-bottom: 24px;
     }
 
     p {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    ul {
         margin-bottom: 16px;
+        list-style-type: circle;
+        line-height: 24px;
+        padding-left: 32px;
     }
 }

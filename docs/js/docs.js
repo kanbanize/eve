@@ -38,7 +38,7 @@
     function loadTemplate(path) {
         if (templatesCache.hasOwnProperty(path)) {
             if (
-                (path === 'getting-started' && ['installation', 'starter-template'].indexOf(location.hash) > -1) ||
+                (path === 'getting-started' && ['installation', 'starter-template', 'browser-support'].indexOf(location.hash) > -1) ||
                 (path === 'foundations' && ['typography', 'colors', 'spacing'].indexOf(location.hash) > -1)
             ) {
                 return;
