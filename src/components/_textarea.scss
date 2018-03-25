@@ -4,7 +4,6 @@ $eve-textarea-width: 100% !default;
 $eve-textarea-min-width: 100% !default;
 $eve-textarea-max-width: 100% !default;
 $eve-textarea-border-width: 1px !default;
-$eve-textarea-disable-color: #607d8b !default;
 
 .eve-textarea {
     background: $eve-color-white;
@@ -12,7 +11,6 @@ $eve-textarea-disable-color: #607d8b !default;
     vertical-align: top;
     border: $eve-textarea-border-width solid $eve-color-dark-silver;
     outline: none;
-    box-sizing: border-box;
     min-height: $eve-textarea-min-height;
     width: $eve-textarea-width;
     max-width: $eve-textarea-min-width;
@@ -35,7 +33,7 @@ $eve-textarea-disable-color: #607d8b !default;
     &.eve-textarea-disable {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
-        color: $eve-textarea-disable-color;
+        color: $eve-color-darkest-silver;
         pointer-events: none;
         resize: none;
     }

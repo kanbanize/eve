@@ -4,7 +4,6 @@ $eve-input-border-radius: $eve-input-height / 2 !default;
 $eve-input-border-width: 1px !default;
 $eve-input-width: 100% !default;
 $eve-input-max-width: 100% !default;
-$eve-input-disable-color: #607d8b !default;
 
 .eve-input {
     height: $eve-input-height;
@@ -15,7 +14,6 @@ $eve-input-disable-color: #607d8b !default;
     padding: 0 $eve-spacing-small;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
-    box-sizing: border-box;
     width: $eve-input-width;
     max-width: $eve-input-max-width;
     vertical-align: top;
@@ -35,7 +33,7 @@ $eve-input-disable-color: #607d8b !default;
     &.eve-input-disable {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
-        color: $eve-input-disable-color;
+        color: $eve-color-darkest-silver;
         pointer-events: none;
     }
 }

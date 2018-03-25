@@ -54,7 +54,6 @@ $eve-progress-oval-size: 48px !default;
         animation-timing-function: linear;
         height: $eve-progress-oval-size;
         width: $eve-progress-oval-size;
-        box-sizing: border-box;
     }
 
     &::after {

@@ -8,7 +8,6 @@ body {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
     background: #fff;
     font-size: 14px;
     color: #333;
@@ -44,7 +43,7 @@ body {
 
     .navigation {
         width: 240px;
-        background: #f0f2f4;
+        background: #eceff1;
         padding: 48px 0 24px;
         overflow: auto;
 
@@ -89,7 +88,7 @@ body {
     .content {
         flex: 1;
         overflow: auto;
-        height: calc(100% - 96px);
+        height: 100%;
         padding: 48px;
     }
 }
@@ -113,7 +112,8 @@ body {
     }
 }
 
+@import 'foundation-typography';
+@import 'foundation-color';
+@import 'foundation-spacing';
 @import 'snippet';
 @import 'component';
-@import 'component-color';
-@import 'component-spacing';

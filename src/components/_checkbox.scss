@@ -18,7 +18,6 @@ $eve-checkbox-mark-border-width: 2px !default;
         left: 0;
         width: 100%;
         height: 100%;
-        margin: 0;
         padding: 0;
         opacity: 0;
         cursor: inherit;
@@ -38,7 +37,6 @@ $eve-checkbox-mark-border-width: 2px !default;
         border: $eve-checkbox-border-width solid $eve-color-darker-silver;
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
         pointer-events: none;
         position: relative;
 
@@ -53,6 +51,7 @@ $eve-checkbox-mark-border-width: 2px !default;
             border-right: $eve-checkbox-mark-border-width solid $eve-color-white;
             border-bottom: $eve-checkbox-mark-border-width solid $eve-color-white;
             transform: translate(-50%, -50%) rotate(45deg);
+            box-sizing: content-box;
         }
     }
 

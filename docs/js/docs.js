@@ -37,6 +37,10 @@
 
     function loadTemplate(path) {
         if (templatesCache.hasOwnProperty(path)) {
+            if (path === 'foundations' && ['typography', 'colors', 'spacing'].indexOf(location.hash) > -1) {
+                return;
+            }
+
             loadTemplateHtml(templatesCache[path]);
 
             return;
@@ -66,6 +70,6 @@
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
     } else {
-        document.querySelector('a[href="#typography"]').click();
+        document.querySelector('a[href="#foundations"]').click();
     }
 })();

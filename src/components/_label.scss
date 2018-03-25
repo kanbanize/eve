@@ -19,7 +19,6 @@ $eve-label-icon-size: 14px !default;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-small;
     color: $eve-color-white;
-    box-sizing: border-box;
 
     @each $eve-label-color in map-keys($eve-label-colors) {
         $color: map-get($eve-label-colors, $eve-label-color);

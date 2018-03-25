@@ -1,3 +1,51 @@
+html {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit; }
+  *::before, *::after {
+    box-sizing: inherit; }
+
+blockquote,
+body,
+dd,
+dl,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+ul,
+input,
+textarea,
+select,
+button {
+  margin: 0; }
+
+fieldset,
+legend,
+menu,
+ol,
+ul {
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
 h1 {
   font-size: 32px;
   line-height: 40px; }
@@ -55,7 +103,6 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  box-sizing: border-box;
   vertical-align: top;
   font-family: inherit;
   min-width: 94px; }
@@ -244,8 +291,7 @@ a {
       -webkit-animation-duration: .5s;
               animation-duration: .5s;
       -webkit-animation-timing-function: linear;
-              animation-timing-function: linear;
-      box-sizing: border-box; }
+              animation-timing-function: linear; }
 
 @-webkit-keyframes eveButtonProgress {
   from {
@@ -297,7 +343,6 @@ a {
   padding: 0 16px;
   font-size: 14px;
   color: #333;
-  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
   vertical-align: top;
@@ -379,7 +424,6 @@ a {
   vertical-align: top;
   border: 1px solid #cfd8dc;
   outline: none;
-  box-sizing: border-box;
   min-height: 100px;
   width: 100%;
   max-width: 100%;
@@ -447,7 +491,6 @@ a {
     height: 6px;
     right: 16px;
     top: calc(50% - 4px);
-    box-sizing: border-box;
     pointer-events: none; }
   .eve-select select {
     -webkit-appearance: none;
@@ -460,7 +503,6 @@ a {
     color: #333;
     cursor: pointer;
     border: 1px solid #cfd8dc;
-    box-sizing: border-box;
     height: 36px;
     line-height: 36px;
     padding: 0 32px 0 16px; }
@@ -661,9 +703,9 @@ a {
 .eve-avatar-group {
   display: flex; }
   .eve-avatar-group .eve-avatar {
-    border: 2px solid #fff; }
+    box-shadow: 0 0 0 2px #fff; }
     .eve-avatar-group .eve-avatar:not(:first-child) {
-      margin-left: -8px; }
+      margin-left: -4px; }
 
 .eve-tooltip {
   position: relative; }
@@ -772,8 +814,7 @@ a {
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     height: 48px;
-    width: 48px;
-    box-sizing: border-box; }
+    width: 48px; }
   .eve-progress-oval::after {
     content: attr(data-label);
     margin-left: 16px; }
@@ -836,7 +877,6 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
     opacity: 0;
     cursor: inherit; }
@@ -850,7 +890,6 @@ a {
     border: 2px solid #b0bec5;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     pointer-events: none;
     position: relative; }
     .eve-checkbox .eve-checkbox-mark::after {
@@ -864,7 +903,8 @@ a {
       border-right: 2px solid #fff;
       border-bottom: 2px solid #fff;
       -webkit-transform: translate(-50%, -50%) rotate(45deg);
-              transform: translate(-50%, -50%) rotate(45deg); }
+              transform: translate(-50%, -50%) rotate(45deg);
+      box-sizing: content-box; }
   .eve-checkbox.eve-checkbox-disable {
     pointer-events: none; }
     .eve-checkbox.eve-checkbox-disable .eve-checkbox-native:checked ~ .eve-checkbox-mark {
@@ -909,7 +949,6 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
     opacity: 0;
     cursor: inherit; }
@@ -923,7 +962,6 @@ a {
     border: 2px solid #b0bec5;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     pointer-events: none;
     border-radius: 50%; }
     .eve-radio .eve-radio-mark::after {
@@ -931,7 +969,6 @@ a {
       display: none;
       height: 100%;
       border-radius: 50%;
-      box-sizing: border-box;
       border: 3px solid #fff; }
   .eve-radio.eve-radio-disable {
     pointer-events: none; }
@@ -977,7 +1014,6 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
     opacity: 0;
     cursor: inherit; }
@@ -988,7 +1024,6 @@ a {
     background: #eceff1;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     pointer-events: none;
     border-radius: 9px;
     padding: 2px; }
@@ -1050,7 +1085,6 @@ a {
   justify-content: space-between;
   padding: 8px;
   color: #333;
-  box-sizing: border-box;
   font-size: 12px; }
   .eve-feedback.eve-feedback-success {
     background: rgba(76, 175, 80, 0.2); }
@@ -1138,8 +1172,7 @@ a {
   min-width: 150px;
   background: #fff; }
   .eve-dropdown .eve-dropdown-filter {
-    border-bottom: 1px solid #eceff1;
-    box-sizing: border-box; }
+    border-bottom: 1px solid #eceff1; }
     .eve-dropdown .eve-dropdown-filter .eve-input {
       border: 0; }
   .eve-dropdown .eve-dropdown-list {
@@ -1188,7 +1221,6 @@ a {
     background: #f44336;
     border-radius: 9px;
     box-shadow: 0 0 0 2px #fff;
-    box-sizing: border-box;
     height: 18px;
     padding: 0 4px;
     min-width: 18px;
@@ -1214,8 +1246,6 @@ a {
 
 .eve-breadcrumb {
   display: flex;
-  margin: 0;
-  padding: 0;
   list-style-type: none; }
   .eve-breadcrumb .eve-breadcrumb-item:not(:last-child)::after {
     content: '/';
@@ -1266,7 +1296,6 @@ a {
   border-left: 1px solid #cfd8dc;
   border-top: 1px solid #cfd8dc;
   border-right: 1px solid #cfd8dc;
-  box-sizing: border-box;
   padding: 0 8px; }
   .eve-table-filter .eve-input-control .eve-input {
     border: 0; }
@@ -1294,8 +1323,7 @@ a {
   border-radius: 12px;
   padding: 0 8px;
   font-size: 12px;
-  color: #fff;
-  box-sizing: border-box; }
+  color: #fff; }
   .eve-label.eve-label-primary {
     background: #2196f3; }
     .eve-label.eve-label-primary:hover {
@@ -1400,7 +1428,7 @@ a {
   .eve-grid.eve-grid-gutter-x-large {
     grid-gap: 64px; }
   .eve-grid .eve-grid-cell {
-    box-sizing: border-box; }
+    grid-column-end: span 4; }
     .eve-grid .eve-grid-cell.eve-grid-cell-1 {
       grid-column-end: span 1; }
     .eve-grid .eve-grid-cell.eve-grid-cell-2 {
@@ -1455,8 +1483,7 @@ a {
     padding: 64px; }
   .eve-flex .eve-flex-cell {
     flex: 1;
-    max-width: 100%;
-    box-sizing: border-box; }
+    max-width: 100%; }
     .eve-flex .eve-flex-cell.eve-flex-cell-1 {
       flex: none;
       width: 8.33333%; }

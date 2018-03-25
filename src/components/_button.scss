@@ -41,7 +41,6 @@ $eve-button-load-progress-size: 20px !default;
     font-size: $eve-font-normal;
     outline: none;
     user-select: none;
-    box-sizing: border-box;
     vertical-align: top;
     font-family: inherit;
     min-width: $eve-button-min-width;
@@ -176,7 +175,6 @@ $eve-button-load-progress-size: 20px !default;
             animation-iteration-count: infinite;
             animation-duration: .5s;
             animation-timing-function: linear;
-            box-sizing: border-box;
         }
 
         @keyframes eveButtonProgress {

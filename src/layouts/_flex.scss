@@ -20,7 +20,6 @@ $eve-flex-margins: (
     .eve-flex-cell {
         flex: 1;
         max-width: 100%;
-        box-sizing: border-box;
 
         @for $i from 1 through 12 {
             &.eve-flex-cell-#{$i} {

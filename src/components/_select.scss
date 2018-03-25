@@ -1,7 +1,6 @@
 $eve-select-height: 36px !default;
 $eve-select-border-width: 1px !default;
 $eve-select-max-width: 100% !default;
-$eve-select-disable-color: #607d8b !default;
 $eve-select-arrow-size: 6px !default;
 $eve-select-arrow-border-width: 1px !default;
 
@@ -22,7 +21,6 @@ $eve-select-arrow-border-width: 1px !default;
         height: $eve-select-arrow-size;
         right: $eve-spacing-small;
         top: calc(50% - #{$eve-select-arrow-size / 2 + $eve-select-arrow-border-width});
-        box-sizing: border-box;
         pointer-events: none;
     }
 
@@ -37,7 +35,6 @@ $eve-select-arrow-border-width: 1px !default;
         color: $eve-color-grey-black;
         cursor: pointer;
         border: $eve-select-border-width solid $eve-color-dark-silver;
-        box-sizing: border-box;
         height: $eve-select-height;
         line-height: $eve-select-height;
         padding: 0 ($eve-spacing-small * 2) 0 $eve-spacing-small;
@@ -49,13 +46,13 @@ $eve-select-arrow-border-width: 1px !default;
 
     &.eve-select-disable {
         &::after {
-            border-color: $eve-select-disable-color;
+            border-color: $eve-color-darkest-silver;
         }
 
         select {
             background: $eve-color-dark-silver;
             border-color: $eve-color-dark-silver;
-            color: $eve-select-disable-color;
+            color: $eve-color-darkest-silver;
             pointer-events: none;
         }
     }

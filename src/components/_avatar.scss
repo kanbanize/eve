@@ -115,10 +115,10 @@ $eve-avatar-state-border-radius: 50% !default;
     display: flex;
 
     .eve-avatar {
-        border: 2px solid $eve-color-white;
+        box-shadow: 0 0 0 2px $eve-color-white;
 
         &:not(:first-child) {
-            margin-left: -#{$eve-spacing-tiny};
+            margin-left: -#{$eve-spacing-x-tiny};
         }
     }
 }

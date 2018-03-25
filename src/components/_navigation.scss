@@ -1,5 +1,3 @@
-$eve-navigation-tab-color: #607d8b;
-
 .eve-navigation {
     display: flex;
     border-bottom: 1px solid $eve-color-dark-silver;
@@ -7,7 +5,7 @@ $eve-navigation-tab-color: #607d8b;
     .eve-navigation-tab {
         padding: $eve-spacing-tiny $eve-spacing-tiny 12px;
         margin: 0 $eve-spacing-small;
-        color: $eve-navigation-tab-color;
+        color: $eve-color-darkest-silver;
         text-transform: uppercase;
         cursor: pointer;
 

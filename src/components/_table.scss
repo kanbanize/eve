@@ -1,5 +1,4 @@
 $eve-table-th-height: 56px !default;
-$eve-table-th-color: #607d8b !default;
 $eve-table-tr-height: 48px !default;
 $eve-table-filter-height: 56px !default;
 
@@ -20,7 +19,7 @@ $eve-table-filter-height: 56px !default;
                 line-height: $eve-table-th-height;
                 font-weight: normal;
                 background: $eve-color-bright-silver;
-                color: $eve-table-th-color;
+                color: $eve-color-darkest-silver;
                 padding: 0 $eve-spacing-normal;
             }
         }
@@ -73,7 +72,6 @@ $eve-table-filter-height: 56px !default;
         border-left: 1px solid $eve-color-dark-silver;
         border-top: 1px solid $eve-color-dark-silver;
         border-right: 1px solid $eve-color-dark-silver;
-        box-sizing: border-box;
         padding: 0 $eve-spacing-tiny;
 
         .eve-input {

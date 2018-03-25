@@ -1,12 +1,15 @@
 // sass-lint:disable no-color-literals
 .component {
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
     .component-title {
         margin-bottom: 24px;
         display: flex;
         align-items: center;
         font-size: 24px;
         font-weight: 600;
-        box-sizing: border-box;
     }
 
     .component-description {

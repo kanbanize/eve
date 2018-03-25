@@ -32,7 +32,7 @@ $eve-grid-gutters: (
     }
 
     .eve-grid-cell {
-        box-sizing: border-box;
+        grid-column-end: span 4;
 
         @for $i from 1 through 12 {
             &.eve-grid-cell-#{$i} {
