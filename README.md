@@ -46,15 +46,15 @@ Download the compiled and minified [Eve CSS](https://github.com/hpivanov/eve/rel
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
 </head>
 <body>
     <h1>
         Hello World!
     </h1>
     <h2>
-        My first website with <strong>Eve CSS</strong>
+        My first project with <strong>Eve CSS</strong>
     </h2>
 </body>
 </html>
