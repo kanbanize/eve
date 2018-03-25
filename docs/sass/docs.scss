@@ -81,7 +81,7 @@ body {
 
             &.navigation-list-item-active {
                 color: #2196f3;
-                font-weight: 600;
+                // font-weight: 600;
             }
         }
     }
@@ -99,6 +99,16 @@ body {
 
     .eve-grid-cell {
         background: #263238;
+        height: 100px;
+    }
+}
+
+.eve-flex {
+    background: #eceff1;
+
+    .eve-flex-cell {
+        background: #263238;
+        color: #fff;
         height: 100px;
     }
 }
