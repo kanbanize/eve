@@ -42,7 +42,6 @@ Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most cs
 - Firefox
 - Safari
 - Opera
-- Microsoft Edge
-- Internet Explorer 11
+- Edge
 
-Internet Explorer 10 is partially supported.
+Internet Explorer 10+ is partially supported.
