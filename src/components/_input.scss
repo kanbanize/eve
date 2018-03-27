@@ -4,6 +4,11 @@ $eve-input-border-radius: $eve-input-height / 2 !default;
 $eve-input-border-width: 1px !default;
 $eve-input-width: 100% !default;
 $eve-input-max-width: 100% !default;
+$eve-input-sizes: (
+    small: 28px,
+    normal: 36px,
+    large: 48px
+) !default;
 
 .eve-input {
     height: $eve-input-height;
@@ -19,6 +24,15 @@ $eve-input-max-width: 100% !default;
     vertical-align: top;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
+
+    @each $eve-input-size in map-keys($eve-input-sizes) {
+        $size: map-get($eve-input-sizes, $eve-input-size);
+
+        &.eve-input-#{$eve-input-size} {
+            height: $size;
+            line-height: $size;
+        }
+    }
 
     &::placeholder {
         font-family: inherit;
@@ -41,17 +55,8 @@ $eve-input-max-width: 100% !default;
 .eve-input-control {
     display: flex;
 
-    &:not(.eve-input-control-round) {
-        .eve-button {
-            border-radius: 0;
-        }
-    }
-
-    &.eve-input-control-round {
-        .eve-input {
-            margin-right: $eve-spacing-tiny;
-            border-radius: $eve-input-border-radius;
-        }
+    .eve-button {
+        border-radius: 0;
     }
 
     &.eve-input-control-icon {
@@ -90,12 +95,6 @@ $eve-input-max-width: 100% !default;
     .eve-input {
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
-        }
-    }
-
-    &.eve-input-group-round {
-        .eve-input {
-            border-radius: $eve-input-border-radius;
         }
     }
 }

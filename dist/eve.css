@@ -351,6 +351,15 @@ ul {
   vertical-align: top;
   -webkit-appearance: none;
   font-family: inherit; }
+  .eve-input.eve-input-small {
+    height: 28px;
+    line-height: 28px; }
+  .eve-input.eve-input-normal {
+    height: 36px;
+    line-height: 36px; }
+  .eve-input.eve-input-large {
+    height: 48px;
+    line-height: 48px; }
   .eve-input::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -373,11 +382,8 @@ ul {
 
 .eve-input-control {
   display: flex; }
-  .eve-input-control:not(.eve-input-control-round) .eve-button {
+  .eve-input-control .eve-button {
     border-radius: 0; }
-  .eve-input-control.eve-input-control-round .eve-input {
-    margin-right: 8px;
-    border-radius: 18px; }
   .eve-input-control.eve-input-control-icon {
     position: relative;
     align-items: center; }
@@ -398,8 +404,6 @@ ul {
   display: flex; }
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
-  .eve-input-group.eve-input-group-round .eve-input {
-    border-radius: 18px; }
 
 .eve-input-form .eve-input-label {
   display: block;
