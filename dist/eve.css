@@ -109,6 +109,18 @@ ul {
   vertical-align: top;
   font-family: inherit;
   min-width: 94px; }
+  .eve-button.eve-button-small {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 14px; }
+  .eve-button.eve-button-normal {
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px; }
+  .eve-button.eve-button-large {
+    height: 48px;
+    line-height: 48px;
+    border-radius: 24px; }
   .eve-button.eve-button-primary {
     background: #2196f3; }
     .eve-button.eve-button-primary:hover {

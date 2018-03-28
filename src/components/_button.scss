@@ -25,6 +25,11 @@ $eve-button-icon-border-radius: 50% !default;
 $eve-button-load-progress-border-radius: 50% !default;
 $eve-button-load-progress-border-width: 2px !default;
 $eve-button-load-progress-size: 20px !default;
+$eve-button-sizes: (
+    small: 28px,
+    normal: 36px,
+    large: 48px
+) !default;
 
 .eve-button {
     display: inline-flex;
@@ -44,6 +49,16 @@ $eve-button-load-progress-size: 20px !default;
     vertical-align: top;
     font-family: inherit;
     min-width: $eve-button-min-width;
+
+    @each $eve-button-size in map-keys($eve-button-sizes) {
+        $size: map-get($eve-button-sizes, $eve-button-size);
+
+        &.eve-button-#{$eve-button-size} {
+            height: $size;
+            line-height: $size;
+            border-radius: $size / 2;
+        }
+    }
 
     @each $eve-button-color in map-keys($eve-button-colors) {
         $color: map-get($eve-button-colors, $eve-button-color);
