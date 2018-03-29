@@ -6,6 +6,7 @@
 [![npm](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![npm](https://img.shields.io/npm/dm/evecss.svg)](https://www.npmjs.com/package/evecss)
 
+
 ## Installation
 
 There are 3 ways to install Eve. You can either install it via package managers, CDN, or manually.
@@ -36,6 +37,7 @@ Download the compiled and minified [Eve](https://github.com/hpivanov/eve/release
 <link rel="stylesheet" href="eve.min.css">
 ```
 
+
 ## Icons
 
 Eve is compatible with [Material Icons](https://material.io/icons/), [Font Awesome](https://fontawesome.com/) and [Ionicons](http://ionicons.com/).
@@ -49,6 +51,7 @@ Eve is compatible with [Material Icons](https://material.io/icons/), [Font Aweso
 {{!-- Font Awesome --}}
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 ```
+
 
 ## Starter Template
 
@@ -72,6 +75,7 @@ Eve is compatible with [Material Icons](https://material.io/icons/), [Font Aweso
 </body>
 </html>
 ```
+
 
 ## Browser Support
 
