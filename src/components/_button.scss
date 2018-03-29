@@ -226,6 +226,16 @@ $eve-button-sizes: (
     display: flex;
 
     .eve-button {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-small;
+        }
+    }
+}
+
+.eve-button-addons {
+    display: flex;
+
+    .eve-button {
         &:not(.eve-button-outline) {
             &:not(:last-child) {
                 border-right: 1px solid $eve-color-white;
@@ -247,16 +257,6 @@ $eve-button-sizes: (
         &:last-child {
             &:not(:first-child) {
                 border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
-            }
-        }
-    }
-
-    &.eve-button-group-round {
-        .eve-button {
-            border-radius: $eve-button-border-radius !important; // sass-lint:disable-line no-important
-
-            &:not(:last-child) {
-                margin-right: $eve-spacing-small;
             }
         }
     }

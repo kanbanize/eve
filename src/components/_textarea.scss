@@ -38,35 +38,3 @@ $eve-textarea-border-width: 1px !default;
         resize: none;
     }
 }
-
-.eve-textarea-form {
-    .eve-textarea-label {
-        display: block;
-        margin-bottom: $eve-spacing-tiny;
-    }
-
-    .eve-textarea-hint {
-        display: block;
-        margin-top: $eve-spacing-x-tiny;
-    }
-
-    &.eve-textarea-form-success {
-        .eve-textarea {
-            border-color: $eve-color-green;
-        }
-
-        .eve-textarea-hint {
-            color: $eve-color-green;
-        }
-    }
-
-    &.eve-textarea-form-danger {
-        .eve-textarea {
-            border-color: $eve-color-red;
-        }
-
-        .eve-textarea-hint {
-            color: $eve-color-red;
-        }
-    }
-}

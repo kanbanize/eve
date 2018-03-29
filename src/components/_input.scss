@@ -43,7 +43,6 @@ $eve-input-sizes: (
         border-color: $eve-color-blue;
     }
 
-
     &.eve-input-disable {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
@@ -95,38 +94,6 @@ $eve-input-sizes: (
     .eve-input {
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
-        }
-    }
-}
-
-.eve-input-form {
-    .eve-input-label {
-        display: block;
-        margin-bottom: $eve-spacing-tiny;
-    }
-
-    .eve-input-hint {
-        display: block;
-        margin-top: $eve-spacing-x-tiny;
-    }
-
-    &.eve-input-form-success {
-        .eve-input {
-            border-color: $eve-color-green;
-        }
-
-        .eve-input-hint {
-            color: $eve-color-green;
-        }
-    }
-
-    &.eve-input-form-danger {
-        .eve-input {
-            border-color: $eve-color-red;
-        }
-
-        .eve-input-hint {
-            color: $eve-color-red;
         }
     }
 }

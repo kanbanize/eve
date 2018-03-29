@@ -336,18 +336,19 @@ ul {
 
 .eve-button-group {
   display: flex; }
-  .eve-button-group .eve-button:not(.eve-button-outline):not(:last-child) {
+  .eve-button-group .eve-button:not(:last-child) {
+    margin-right: 16px; }
+
+.eve-button-addons {
+  display: flex; }
+  .eve-button-addons .eve-button:not(.eve-button-outline):not(:last-child) {
     border-right: 1px solid #fff; }
-  .eve-button-group .eve-button:not(:first-child):not(:last-child) {
+  .eve-button-addons .eve-button:not(:first-child):not(:last-child) {
     border-radius: 0; }
-  .eve-button-group .eve-button:first-child:not(:last-child) {
+  .eve-button-addons .eve-button:first-child:not(:last-child) {
     border-radius: 18px 0 0 18px; }
-  .eve-button-group .eve-button:last-child:not(:first-child) {
+  .eve-button-addons .eve-button:last-child:not(:first-child) {
     border-radius: 0 18px 18px 0; }
-  .eve-button-group.eve-button-group-round .eve-button {
-    border-radius: 18px !important; }
-    .eve-button-group.eve-button-group-round .eve-button:not(:last-child) {
-      margin-right: 16px; }
 
 .eve-input {
   height: 36px;
@@ -417,26 +418,6 @@ ul {
   .eve-input-group .eve-input:not(:last-child) {
     margin-right: 8px; }
 
-.eve-input-form .eve-input-label {
-  display: block;
-  margin-bottom: 8px; }
-
-.eve-input-form .eve-input-hint {
-  display: block;
-  margin-top: 4px; }
-
-.eve-input-form.eve-input-form-success .eve-input {
-  border-color: #4caf50; }
-
-.eve-input-form.eve-input-form-success .eve-input-hint {
-  color: #4caf50; }
-
-.eve-input-form.eve-input-form-danger .eve-input {
-  border-color: #f44336; }
-
-.eve-input-form.eve-input-form-danger .eve-input-hint {
-  color: #f44336; }
-
 .eve-textarea {
   background: #fff;
   padding: 8px 16px;
@@ -472,26 +453,6 @@ ul {
     color: #607d8b;
     pointer-events: none;
     resize: none; }
-
-.eve-textarea-form .eve-textarea-label {
-  display: block;
-  margin-bottom: 8px; }
-
-.eve-textarea-form .eve-textarea-hint {
-  display: block;
-  margin-top: 4px; }
-
-.eve-textarea-form.eve-textarea-form-success .eve-textarea {
-  border-color: #4caf50; }
-
-.eve-textarea-form.eve-textarea-form-success .eve-textarea-hint {
-  color: #4caf50; }
-
-.eve-textarea-form.eve-textarea-form-danger .eve-textarea {
-  border-color: #f44336; }
-
-.eve-textarea-form.eve-textarea-form-danger .eve-textarea-hint {
-  color: #f44336; }
 
 .eve-select {
   display: inline-block;
@@ -1419,6 +1380,13 @@ ul {
     border-radius: 50%; }
     .eve-label .eve-label-action i {
       font-size: 14px; }
+
+.eve-form .eve-form-group:not(:last-child) {
+  margin-bottom: 16px; }
+
+.eve-form .eve-form-group .eve-form-label {
+  margin-bottom: 8px;
+  display: block; }
 
 .eve-grid {
   display: grid; }

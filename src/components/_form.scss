@@ -1,0 +1,12 @@
+.eve-form {
+    .eve-form-group {
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-small;
+        }
+
+        .eve-form-label {
+            margin-bottom: $eve-spacing-tiny;
+            display: block;
+        }
+    }
+}
