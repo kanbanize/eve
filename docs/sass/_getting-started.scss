@@ -1,5 +1,6 @@
 // sass-lint:disable no-ids, no-color-literals
 #installation,
+#icons,
 #starter-template,
 #browser-support {
     h3 {
@@ -7,9 +8,7 @@
     }
 
     p {
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
+        margin-bottom: 16px;
     }
 
     ul {

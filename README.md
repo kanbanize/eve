@@ -36,6 +36,20 @@ Download the compiled and minified [Eve](https://github.com/hpivanov/eve/release
 <link rel="stylesheet" href="eve.min.css">
 ```
 
+## Icons
+
+Eve is compatible with [Material Icons](https://material.io/icons/), [Font Awesome](https://fontawesome.com/) and [Ionicons](http://ionicons.com/).
+
+```html
+{{!-- Material Icons --}}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
+
+```html
+{{!-- Font Awesome --}}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+```
+
 ## Starter Template
 
 ```html
@@ -46,7 +60,6 @@ Download the compiled and minified [Eve](https://github.com/hpivanov/eve/release
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
 </head>
 <body>
@@ -54,7 +67,7 @@ Download the compiled and minified [Eve](https://github.com/hpivanov/eve/release
         Hello World!
     </h1>
     <h2>
-        My first project with <strong>Eve CSS</strong>
+        This is my first project with <strong>Eve CSS</strong>
     </h2>
 </body>
 </html>
