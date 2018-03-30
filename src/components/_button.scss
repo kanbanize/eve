@@ -230,6 +230,18 @@ $eve-button-sizes: (
             margin-right: $eve-spacing-small;
         }
     }
+
+    &.eve-button-group-left {
+        justify-content: flex-start;
+    }
+
+    &.eve-button-group-center {
+        justify-content: center;
+    }
+
+    &.eve-button-group-right {
+        justify-content: flex-end;
+    }
 }
 
 .eve-button-addons {
