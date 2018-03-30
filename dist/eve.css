@@ -455,10 +455,11 @@ ul {
     resize: none; }
 
 .eve-select {
-  display: inline-block;
+  width: 100%;
   position: relative;
   max-width: 100%;
-  vertical-align: top; }
+  vertical-align: top;
+  background: #fff; }
   .eve-select::after {
     content: '';
     position: absolute;
@@ -486,8 +487,8 @@ ul {
     height: 36px;
     line-height: 36px;
     padding: 0 32px 0 16px; }
-  .eve-select:focus {
-    border-color: #2196f3; }
+    .eve-select select:focus {
+      border-color: #2196f3; }
   .eve-select.eve-select-disable::after {
     border-color: #607d8b; }
   .eve-select.eve-select-disable select {
@@ -498,19 +499,13 @@ ul {
 
 .eve-select-control {
   display: flex; }
-  .eve-select-control:not(.eve-select-control-round) .eve-button {
+  .eve-select-control .eve-button {
     border-radius: 0; }
-  .eve-select-control.eve-select-control-round .eve-select {
-    margin-right: 8px; }
-    .eve-select-control.eve-select-control-round .eve-select select {
-      border-radius: 18px; }
 
 .eve-select-group {
   display: flex; }
-  .eve-select-group .eve-select {
-    width: 100%; }
-    .eve-select-group .eve-select:not(:last-child) {
-      margin-right: 8px; }
+  .eve-select-group .eve-select:not(:last-child) {
+    margin-right: 8px; }
   .eve-select-group.eve-select-group-round .eve-select select {
     border-radius: 18px; }
 

@@ -1,3 +1,4 @@
+$eve-select-width: 100% !default;
 $eve-select-height: 36px !default;
 $eve-select-border-width: 1px !default;
 $eve-select-max-width: 100% !default;
@@ -5,10 +6,11 @@ $eve-select-arrow-size: 6px !default;
 $eve-select-arrow-border-width: 1px !default;
 
 .eve-select {
-    display: inline-block;
+    width: $eve-select-width;
     position: relative;
     max-width: $eve-select-max-width;
     vertical-align: top;
+    background: $eve-color-white;
 
     &::after {
         content: '';
@@ -38,10 +40,10 @@ $eve-select-arrow-border-width: 1px !default;
         height: $eve-select-height;
         line-height: $eve-select-height;
         padding: 0 ($eve-spacing-small * 2) 0 $eve-spacing-small;
-    }
 
-    &:focus {
-        border-color: $eve-color-blue;
+        &:focus {
+            border-color: $eve-color-blue;
+        }
     }
 
     &.eve-select-disable {
@@ -61,20 +63,8 @@ $eve-select-arrow-border-width: 1px !default;
 .eve-select-control {
     display: flex;
 
-    &:not(.eve-select-control-round) {
-        .eve-button {
-            border-radius: 0;
-        }
-    }
-
-    &.eve-select-control-round {
-        .eve-select {
-            margin-right: $eve-spacing-tiny;
-
-            select {
-                border-radius: $eve-select-height / 2;
-            }
-        }
+    .eve-button {
+        border-radius: 0;
     }
 }
 
@@ -82,8 +72,6 @@ $eve-select-arrow-border-width: 1px !default;
     display: flex;
 
     .eve-select {
-        width: 100%;
-
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
         }
