@@ -1095,6 +1095,9 @@ ul {
     color: #607d8b;
     text-transform: uppercase;
     cursor: pointer; }
+    .eve-navigation .eve-navigation-tab a {
+      text-decoration: none;
+      color: inherit; }
     .eve-navigation .eve-navigation-tab:hover {
       color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {

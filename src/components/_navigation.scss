@@ -9,6 +9,11 @@
         text-transform: uppercase;
         cursor: pointer;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         &:hover {
             color: $eve-color-blue;
         }
