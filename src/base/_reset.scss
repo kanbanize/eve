@@ -1,4 +1,3 @@
- // sass-lint:disable no-color-literals
 html {
     box-sizing: border-box;
 }
@@ -90,18 +89,9 @@ p {
     line-height: 20px;
 }
 
-mark {
-    color: #fff;
-    background: #2196f3;
-}
-
 sup,
 sub {
     font-size: 8px;
-}
-
-a {
-    color: #2196f3;
 }
 
 ul {

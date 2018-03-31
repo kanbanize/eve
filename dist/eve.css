@@ -74,16 +74,9 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
-mark {
-  color: #fff;
-  background: #2196f3; }
-
 sup,
 sub {
   font-size: 8px; }
-
-a {
-  color: #2196f3; }
 
 ul {
   list-style: none; }
