@@ -4,18 +4,6 @@ $eve-button-colors: (
     warning: $eve-color-orange,
     danger: $eve-color-red
 ) !default;
-$eve-button-hover-colors: (
-    primary: #1976d2,
-    success: #388e3c,
-    warning: #f57c00,
-    danger: #d32f2f
-) !default;
-$eve-button-active-colors: (
-    primary: #1565c0,
-    success: #2e7d32,
-    warning: #ef6c00,
-    danger: #c62828
-) !default;
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
 $eve-button-min-width: 94px !default;
@@ -62,8 +50,8 @@ $eve-button-sizes: (
 
     @each $eve-button-color in map-keys($eve-button-colors) {
         $color: map-get($eve-button-colors, $eve-button-color);
-        $hover-color: map-get($eve-button-hover-colors, $eve-button-color);
-        $active-color: map-get($eve-button-active-colors, $eve-button-color);
+        $hover-color: darken($color, 5);
+        $active-color: darken($color, 10);
 
         // Default Buttons
         &.eve-button-#{$eve-button-color} {
