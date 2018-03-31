@@ -17,15 +17,10 @@ $eve-flex-margins: (
         }
     }
 
-    .eve-flex-cell {
-        flex: 1;
-        max-width: 100%;
-
-        @for $i from 1 through 12 {
-            &.eve-flex-cell-#{$i} {
-                flex: none;
-                width: percentage($i / 12);
-            }
+    @for $i from 1 through 12 {
+        .eve-flex-cell-#{$i} {
+            width: percentage($i / 12);
+            max-width: 100%;
         }
     }
 
@@ -33,9 +28,10 @@ $eve-flex-margins: (
         & {
             flex-wrap: nowrap;
 
-            .eve-flex-cell {
-                flex: none !important; // sass-lint:disable-line no-important
-                width: 100% !important; // sass-lint:disable-line no-important
+            @for $i from 1 through 12 {
+                .eve-flex-cell-#{$i} {
+                    width: 100%;
+                }
             }
         }
     }

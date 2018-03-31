@@ -96,19 +96,26 @@ body {
 .eve-grid {
     background: #eceff1;
 
-    .eve-grid-cell {
-        background: #263238;
-        height: 100px;
+    @for $i from 1 through 12 {
+        .eve-grid-cell-#{$i} {
+            background: #263238;
+            height: 100px;
+        }
     }
 }
 
 .eve-flex {
     background: #eceff1;
 
-    .eve-flex-cell {
-        background: #263238;
-        color: #fff;
-        height: 100px;
+    @for $i from 1 through 12 {
+        .eve-flex-cell-#{$i} {
+            background: #263238;
+            color: #fff;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

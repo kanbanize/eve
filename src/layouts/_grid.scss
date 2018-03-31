@@ -31,13 +31,9 @@ $eve-grid-gutters: (
         }
     }
 
-    .eve-grid-cell {
-        grid-column-end: span 4;
-
-        @for $i from 1 through 12 {
-            &.eve-grid-cell-#{$i} {
-                grid-column-end: span $i;
-            }
+    @for $i from 1 through 12 {
+        .eve-grid-cell-#{$i} {
+            grid-column-end: span $i;
         }
     }
 
