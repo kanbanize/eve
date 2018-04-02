@@ -58,6 +58,7 @@ $eve-button-sizes: (
             background: $color;
 
             &:hover {
+                color: inherit;
                 background: $hover-color;
             }
 

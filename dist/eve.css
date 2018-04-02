@@ -109,6 +109,7 @@ ul {
   .eve-button.eve-button-primary {
     background: #2196f3; }
     .eve-button.eve-button-primary:hover {
+      color: inherit;
       background: #0d8aee; }
     .eve-button.eve-button-primary:active {
       background: #0c7cd5; }
@@ -144,6 +145,7 @@ ul {
   .eve-button.eve-button-success {
     background: #4caf50; }
     .eve-button.eve-button-success:hover {
+      color: inherit;
       background: #449d48; }
     .eve-button.eve-button-success:active {
       background: #3d8b40; }
@@ -179,6 +181,7 @@ ul {
   .eve-button.eve-button-warning {
     background: #ff9800; }
     .eve-button.eve-button-warning:hover {
+      color: inherit;
       background: #e68900; }
     .eve-button.eve-button-warning:active {
       background: #cc7a00; }
@@ -214,6 +217,7 @@ ul {
   .eve-button.eve-button-danger {
     background: #f44336; }
     .eve-button.eve-button-danger:hover {
+      color: inherit;
       background: #f32c1e; }
     .eve-button.eve-button-danger:active {
       background: #ea1c0d; }
