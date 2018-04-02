@@ -58,13 +58,17 @@ $eve-button-sizes: (
             background: $color;
 
             &:hover {
-                color: $eve-color-white;
                 background: $hover-color;
             }
 
             &:active {
-                color: $eve-color-white;
                 background: $active-color;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $eve-color-white;
             }
 
             // Outline Buttons
