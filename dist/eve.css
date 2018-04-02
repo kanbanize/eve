@@ -102,10 +102,6 @@ ul {
     height: 28px;
     line-height: 28px;
     border-radius: 14px; }
-  .eve-button.eve-button-normal {
-    height: 36px;
-    line-height: 36px;
-    border-radius: 18px; }
   .eve-button.eve-button-large {
     height: 48px;
     line-height: 48px;
@@ -362,9 +358,6 @@ ul {
   .eve-input.eve-input-small {
     height: 28px;
     line-height: 28px; }
-  .eve-input.eve-input-normal {
-    height: 36px;
-    line-height: 36px; }
   .eve-input.eve-input-large {
     height: 48px;
     line-height: 48px; }
