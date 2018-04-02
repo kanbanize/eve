@@ -38,6 +38,16 @@ $eve-button-sizes: (
     font-family: inherit;
     min-width: $eve-button-min-width;
 
+    &:hover,
+    &:active,
+    &:focus {
+        color: $eve-color-white;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+
     @each $eve-button-size in map-keys($eve-button-sizes) {
         $size: map-get($eve-button-sizes, $eve-button-size);
 
@@ -63,12 +73,6 @@ $eve-button-sizes: (
 
             &:active {
                 background: $active-color;
-            }
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: $eve-color-white;
             }
 
             // Outline Buttons
