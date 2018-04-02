@@ -63,6 +63,7 @@ $eve-button-sizes: (
             }
 
             &:active {
+                color: $eve-color-white;
                 background: $active-color;
             }
 
