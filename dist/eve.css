@@ -250,7 +250,7 @@ ul {
     font-size: 18px;
     margin-right: 4px; }
   .eve-button.eve-button-outline {
-    background: transparent; }
+    background: #fff; }
   .eve-button.eve-button-invert, .eve-button.eve-button-text {
     text-transform: uppercase;
     border: 0;

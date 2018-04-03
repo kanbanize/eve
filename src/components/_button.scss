@@ -141,7 +141,7 @@ $eve-button-sizes: (
     }
 
     &.eve-button-outline {
-        background: transparent;
+        background: $eve-color-white;
     }
 
     &.eve-button-invert,
