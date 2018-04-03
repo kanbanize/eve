@@ -200,6 +200,27 @@ $eve-button-sizes: (
         }
     }
 
+    &.eve-button-file {
+        position: relative;
+        overflow: hidden;
+
+        input {
+            &[type='file'] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                cursor: inherit;
+                border-radius: inherit;
+                display: block;
+            }
+        }
+    }
+
     &.eve-button-disable {
         pointer-events: none;
         background: $eve-color-darker-silver;
