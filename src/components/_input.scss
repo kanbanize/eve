@@ -30,6 +30,12 @@ $eve-input-sizes: (
         &.eve-input-#{$eve-input-size} {
             height: $size;
             line-height: $size;
+
+            @if $eve-input-size == 'small' {
+                padding: 0 $eve-spacing-tiny;
+            } @else if $eve-input-size == 'large' {
+                padding: 0 $eve-spacing-normal;
+            }
         }
     }
 

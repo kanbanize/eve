@@ -54,6 +54,12 @@ $eve-button-sizes: (
             height: $size;
             line-height: $size;
             border-radius: $size / 2;
+
+            @if $eve-button-size == 'small' {
+                padding: 0 $eve-spacing-tiny;
+            } @else if $eve-button-size == 'large' {
+                padding: 0 $eve-spacing-normal;
+            }
         }
     }
 
