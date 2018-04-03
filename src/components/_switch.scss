@@ -12,20 +12,22 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     height: $eve-switch-height;
     vertical-align: top;
 
-    .eve-switch-native {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        opacity: 0;
-        cursor: inherit;
+    input {
+        &[type='checkbox'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            opacity: 0;
+            cursor: inherit;
 
-        &:checked ~ .eve-switch-mark {
-            &::after {
-                background: $eve-color-green;
-                left: $eve-switch-width / 2;
+            &:checked ~ .eve-switch-mark {
+                &::after {
+                    background: $eve-color-green;
+                    left: $eve-switch-width / 2;
+                }
             }
         }
     }
@@ -53,9 +55,12 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     &.eve-switch-disable {
         pointer-events: none;
 
-        .eve-switch-native {
-            &:checked ~ .eve-switch-mark {
-                background: $eve-color-darker-silver;
+
+        input {
+            &[type='checkbox'] {
+                &:checked ~ .eve-switch-mark {
+                    background: $eve-color-darker-silver;
+                }
             }
         }
 

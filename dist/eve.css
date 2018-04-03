@@ -323,14 +323,14 @@ ul {
       cursor: inherit;
       border-radius: inherit;
       display: block; }
-  .eve-button.eve-button-disable {
+  .eve-button.eve-button-disable, .eve-button:disabled {
     pointer-events: none;
     background: #b0bec5; }
-    .eve-button.eve-button-disable.eve-button-outline {
+    .eve-button.eve-button-disable.eve-button-outline, .eve-button:disabled.eve-button-outline {
       background: #b0bec5;
       color: #fff;
       box-shadow: none; }
-    .eve-button.eve-button-disable.eve-button-invert, .eve-button.eve-button-disable.eve-button-text, .eve-button.eve-button-disable.eve-button-icon {
+    .eve-button.eve-button-disable.eve-button-invert, .eve-button.eve-button-disable.eve-button-text, .eve-button.eve-button-disable.eve-button-icon, .eve-button:disabled.eve-button-invert, .eve-button:disabled.eve-button-text, .eve-button:disabled.eve-button-icon {
       background: transparent;
       color: #b0bec5; }
 
@@ -849,7 +849,7 @@ ul {
   width: 18px;
   height: 18px;
   vertical-align: top; }
-  .eve-checkbox .eve-checkbox-native {
+  .eve-checkbox input[type='checkbox'] {
     position: absolute;
     top: 0;
     left: 0;
@@ -858,10 +858,10 @@ ul {
     padding: 0;
     opacity: 0;
     cursor: inherit; }
-    .eve-checkbox .eve-checkbox-native:checked ~ .eve-checkbox-mark {
+    .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark {
       background: #4caf50;
       border-color: #4caf50; }
-      .eve-checkbox .eve-checkbox-native:checked ~ .eve-checkbox-mark::after {
+      .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark::after {
         display: block; }
   .eve-checkbox .eve-checkbox-mark {
     background: #fff;
@@ -885,7 +885,7 @@ ul {
       box-sizing: content-box; }
   .eve-checkbox.eve-checkbox-disable {
     pointer-events: none; }
-    .eve-checkbox.eve-checkbox-disable .eve-checkbox-native:checked ~ .eve-checkbox-mark {
+    .eve-checkbox.eve-checkbox-disable input[type='checkbox']:checked ~ .eve-checkbox-mark {
       background: #b0bec5; }
     .eve-checkbox.eve-checkbox-disable .eve-checkbox-mark {
       background: #b0bec5; }
@@ -921,7 +921,7 @@ ul {
   width: 18px;
   height: 18px;
   vertical-align: top; }
-  .eve-radio .eve-radio-native {
+  .eve-radio input[type='radio'] {
     position: absolute;
     top: 0;
     left: 0;
@@ -930,10 +930,10 @@ ul {
     padding: 0;
     opacity: 0;
     cursor: inherit; }
-    .eve-radio .eve-radio-native:checked ~ .eve-radio-mark {
+    .eve-radio input[type='radio']:checked ~ .eve-radio-mark {
       background: #4caf50;
       border-color: #4caf50; }
-      .eve-radio .eve-radio-native:checked ~ .eve-radio-mark::after {
+      .eve-radio input[type='radio']:checked ~ .eve-radio-mark::after {
         display: block; }
   .eve-radio .eve-radio-mark {
     background: #fff;
@@ -950,7 +950,7 @@ ul {
       border: 3px solid #fff; }
   .eve-radio.eve-radio-disable {
     pointer-events: none; }
-    .eve-radio.eve-radio-disable .eve-radio-native:checked ~ .eve-radio-mark {
+    .eve-radio.eve-radio-disable input[type='radio']:checked ~ .eve-radio-mark {
       background: #b0bec5; }
     .eve-radio.eve-radio-disable .eve-radio-mark {
       background: #b0bec5; }
@@ -986,7 +986,7 @@ ul {
   width: 32px;
   height: 18px;
   vertical-align: top; }
-  .eve-switch .eve-switch-native {
+  .eve-switch input[type='checkbox'] {
     position: absolute;
     top: 0;
     left: 0;
@@ -995,7 +995,7 @@ ul {
     padding: 0;
     opacity: 0;
     cursor: inherit; }
-    .eve-switch .eve-switch-native:checked ~ .eve-switch-mark::after {
+    .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
       background: #4caf50;
       left: 16px; }
   .eve-switch .eve-switch-mark {
@@ -1016,7 +1016,7 @@ ul {
       transition: left 150ms ease, background 150ms ease; }
   .eve-switch.eve-switch-disable {
     pointer-events: none; }
-    .eve-switch.eve-switch-disable .eve-switch-native:checked ~ .eve-switch-mark {
+    .eve-switch.eve-switch-disable input[type='checkbox']:checked ~ .eve-switch-mark {
       background: #b0bec5; }
     .eve-switch.eve-switch-disable .eve-switch-mark {
       background: #b0bec5; }

@@ -12,22 +12,24 @@ $eve-checkbox-mark-border-width: 2px !default;
     height: $eve-checkbox-size;
     vertical-align: top;
 
-    .eve-checkbox-native {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        opacity: 0;
-        cursor: inherit;
+    input {
+        &[type='checkbox'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            opacity: 0;
+            cursor: inherit;
 
-        &:checked ~ .eve-checkbox-mark {
-            background: $eve-color-green;
-            border-color: $eve-color-green;
+            &:checked ~ .eve-checkbox-mark {
+                background: $eve-color-green;
+                border-color: $eve-color-green;
 
-            &::after {
-                display: block;
+                &::after {
+                    display: block;
+                }
             }
         }
     }
@@ -58,9 +60,11 @@ $eve-checkbox-mark-border-width: 2px !default;
     &.eve-checkbox-disable {
         pointer-events: none;
 
-        .eve-checkbox-native {
-            &:checked ~ .eve-checkbox-mark {
-                background: $eve-color-darker-silver;
+        input {
+            &[type='checkbox'] {
+                &:checked ~ .eve-checkbox-mark {
+                    background: $eve-color-darker-silver;
+                }
             }
         }
 

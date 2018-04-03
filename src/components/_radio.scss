@@ -12,22 +12,24 @@ $eve-radio-mark-border-radius: 50% !default;
     height: $eve-radio-size;
     vertical-align: top;
 
-    .eve-radio-native {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        opacity: 0;
-        cursor: inherit;
+    input {
+        &[type='radio'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            opacity: 0;
+            cursor: inherit;
 
-        &:checked ~ .eve-radio-mark {
-            background: $eve-color-green;
-            border-color: $eve-color-green;
+            &:checked ~ .eve-radio-mark {
+                background: $eve-color-green;
+                border-color: $eve-color-green;
 
-            &::after {
-                display: block;
+                &::after {
+                    display: block;
+                }
             }
         }
     }
@@ -52,9 +54,12 @@ $eve-radio-mark-border-radius: 50% !default;
     &.eve-radio-disable {
         pointer-events: none;
 
-        .eve-radio-native {
-            &:checked ~ .eve-radio-mark {
-                background: $eve-color-darker-silver;
+
+        input {
+            &[type='radio'] {
+                &:checked ~ .eve-radio-mark {
+                    background: $eve-color-darker-silver;
+                }
             }
         }
 
