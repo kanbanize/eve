@@ -221,7 +221,8 @@ $eve-button-sizes: (
         }
     }
 
-    &.eve-button-disable {
+    &.eve-button-disable,
+    &:disabled {
         pointer-events: none;
         background: $eve-color-darker-silver;
 
