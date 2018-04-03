@@ -245,8 +245,8 @@ $eve-button-sizes: (
     display: flex;
 
     .eve-button {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-small;
+        &:not(:first-child) {
+            margin-left: $eve-spacing-small;
         }
     }
 
