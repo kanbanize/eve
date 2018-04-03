@@ -12,6 +12,10 @@ $eve-input-paddings: (
     small: $eve-spacing-tiny,
     large: $eve-spacing-normal
 ) !default;
+$eve-input-font-sizes: (
+    small: $eve-font-small,
+    large: $eve-font-large
+) !default;
 
 .eve-input {
     height: $eve-input-height;
@@ -37,6 +41,10 @@ $eve-input-paddings: (
 
             @if map-has-key($eve-input-paddings, $eve-input-size) {
                 padding: 0 map-get($eve-input-paddings, $eve-input-size);
+            }
+
+            @if map-has-key($eve-input-font-sizes, $eve-input-size) {
+                font-size: map-get($eve-input-font-sizes, $eve-input-size);
             }
         }
     }

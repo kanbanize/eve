@@ -386,11 +386,13 @@ ul {
   .eve-input.eve-input-small {
     height: 28px;
     line-height: 28px;
-    padding: 0 8px; }
+    padding: 0 8px;
+    font-size: 12px; }
   .eve-input.eve-input-large {
     height: 48px;
     line-height: 48px;
-    padding: 0 24px; }
+    padding: 0 24px;
+    font-size: 16px; }
   .eve-input::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
