@@ -17,6 +17,13 @@ $eve-button-sizes: (
     small: 28px,
     large: 48px
 ) !default;
+$eve-button-paddings: (
+    small: $eve-spacing-tiny,
+    large: $eve-spacing-normal
+) !default;
+$eve-button-min-widths: (
+    small: 56px
+) !default;
 
 .eve-button {
     display: inline-flex;
@@ -55,10 +62,12 @@ $eve-button-sizes: (
             line-height: $size;
             border-radius: $size / 2;
 
-            @if $eve-button-size == 'small' {
-                padding: 0 $eve-spacing-tiny;
-            } @else if $eve-button-size == 'large' {
-                padding: 0 $eve-spacing-normal;
+            @if map-has-key($eve-button-paddings, $eve-button-size) {
+                padding: 0 map-get($eve-button-paddings, $eve-button-size);
+            }
+
+            @if map-has-key($eve-button-min-widths, $eve-button-size) {
+                min-width: map-get($eve-button-min-widths, $eve-button-size);
             }
         }
     }
