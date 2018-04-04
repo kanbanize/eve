@@ -271,8 +271,6 @@ $eve-button-font-sizes: (
     display: flex;
 
     .eve-button {
-        min-width: auto;
-
         &:not(:first-child) {
             margin-left: $eve-spacing-small;
         }

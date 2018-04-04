@@ -349,10 +349,8 @@ ul {
 
 .eve-button-group {
   display: flex; }
-  .eve-button-group .eve-button {
-    min-width: auto; }
-    .eve-button-group .eve-button:not(:first-child) {
-      margin-left: 16px; }
+  .eve-button-group .eve-button:not(:first-child) {
+    margin-left: 16px; }
   .eve-button-group.eve-button-group-center {
     justify-content: center; }
   .eve-button-group.eve-button-group-right {
