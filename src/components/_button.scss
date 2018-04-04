@@ -103,14 +103,20 @@ $eve-button-font-sizes: (
                 color: $color;
                 box-shadow: inset 0 0 0 $eve-button-outline-box-shadow-spread $color;
 
-                &:hover {
-                    background: rgba($color, .1); // sass-lint:disable-line no-color-literals
-                    box-shadow: none;
-                }
+                // &:hover {
+                //     background: rgba($color, .1); // sass-lint:disable-line no-color-literals
+                //     box-shadow: none;
+                // }
 
+                // &:active {
+                //     background: rgba($color, .2); // sass-lint:disable-line no-color-literals
+                //     box-shadow: none;
+                // }
+
+                &:hover,
                 &:active {
-                    background: rgba($color, .2); // sass-lint:disable-line no-color-literals
-                    box-shadow: none;
+                    background: $color;
+                    color: $eve-color-white;
                 }
             }
 
@@ -174,7 +180,7 @@ $eve-button-font-sizes: (
     &.eve-button-text {
         text-transform: uppercase;
         border: 0;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     &.eve-button-icon {
