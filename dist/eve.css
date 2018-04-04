@@ -349,25 +349,31 @@ ul {
 
 .eve-button-group {
   display: flex; }
-  .eve-button-group .eve-button:not(:first-child) {
-    margin-left: 16px; }
-  .eve-button-group.eve-button-group-left {
-    justify-content: flex-start; }
+  .eve-button-group .eve-button {
+    min-width: auto; }
+    .eve-button-group .eve-button:not(:first-child) {
+      margin-left: 16px; }
   .eve-button-group.eve-button-group-center {
     justify-content: center; }
   .eve-button-group.eve-button-group-right {
     justify-content: flex-end; }
 
-.eve-button-addons {
+.eve-button-addon {
   display: flex; }
-  .eve-button-addons .eve-button:not(.eve-button-outline):not(:last-child) {
-    border-right: 1px solid #fff; }
-  .eve-button-addons .eve-button:not(:first-child):not(:last-child) {
-    border-radius: 0; }
-  .eve-button-addons .eve-button:first-child:not(:last-child) {
-    border-radius: 18px 0 0 18px; }
-  .eve-button-addons .eve-button:last-child:not(:first-child) {
-    border-radius: 0 18px 18px 0; }
+  .eve-button-addon .eve-button {
+    min-width: auto; }
+    .eve-button-addon .eve-button:not(.eve-button-outline):not(:last-child) {
+      border-right: 1px solid #fff; }
+    .eve-button-addon .eve-button:not(:first-child):not(:last-child) {
+      border-radius: 0; }
+    .eve-button-addon .eve-button:first-child:not(:last-child) {
+      border-radius: 18px 0 0 18px; }
+    .eve-button-addon .eve-button:last-child:not(:first-child) {
+      border-radius: 0 18px 18px 0; }
+  .eve-button-addon.eve-button-addon-center {
+    justify-content: center; }
+  .eve-button-addon.eve-button-addon-right {
+    justify-content: flex-end; }
 
 .eve-input {
   height: 36px;
