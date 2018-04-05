@@ -38,7 +38,7 @@ Download the compiled and minified [Eve](https://github.com/hpivanov/eve/release
 
 ## Browser Support
 
-Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. According to [Can I use](https://caniuse.com), Eve is compatible with recent versions of:
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. Eve is compatible with recent versions of:
 
 - Chrome
 - Firefox
