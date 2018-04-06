@@ -355,8 +355,6 @@ ul {
     justify-content: center; }
   .eve-button-group.eve-button-group-right {
     justify-content: flex-end; }
-  .eve-button-group.eve-button-group-inline {
-    display: inline-flex; }
 
 .eve-button-addon {
   display: flex; }
@@ -374,8 +372,6 @@ ul {
     justify-content: center; }
   .eve-button-addon.eve-button-addon-right {
     justify-content: flex-end; }
-  .eve-button-addon.eve-button-addon-inline {
-    display: inline-flex; }
 
 .eve-input {
   height: 36px;
