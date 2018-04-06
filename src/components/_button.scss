@@ -283,6 +283,10 @@ $eve-button-font-sizes: (
     &.eve-button-group-right {
         justify-content: flex-end;
     }
+
+    &.eve-button-group-inline {
+        display: inline-flex;
+    }
 }
 
 .eve-button-addon {
@@ -322,5 +326,9 @@ $eve-button-font-sizes: (
 
     &.eve-button-addon-right {
         justify-content: flex-end;
+    }
+
+    &.eve-button-addon-inline {
+        display: inline-flex;
     }
 }
