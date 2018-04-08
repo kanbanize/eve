@@ -1,6 +1,9 @@
 .eve-navigation {
     display: flex;
     border-bottom: 1px solid $eve-color-dark-silver;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
     .eve-navigation-tab {
         padding: $eve-spacing-tiny $eve-spacing-tiny 12px;

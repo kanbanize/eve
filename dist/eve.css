@@ -6,37 +6,6 @@ html {
   *::before, *::after {
     box-sizing: inherit; }
 
-blockquote,
-body,
-dd,
-dl,
-fieldset,
-figure,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-menu,
-ol,
-p,
-pre,
-ul,
-input,
-textarea,
-select,
-button {
-  margin: 0; }
-
-fieldset,
-legend,
-menu,
-ol,
-ul {
-  padding: 0; }
-
 h1 {
   font-size: 32px;
   line-height: 40px; }
@@ -68,9 +37,6 @@ p {
 sup,
 sub {
   font-size: 8px; }
-
-ul {
-  list-style: none; }
 
 .eve-button {
   display: inline-flex;
@@ -878,7 +844,8 @@ ul {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit; }
+    cursor: inherit;
+    margin: 0; }
     .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark {
       background: #4caf50;
       border-color: #4caf50; }
@@ -950,7 +917,8 @@ ul {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit; }
+    cursor: inherit;
+    margin: 0; }
     .eve-radio input[type='radio']:checked ~ .eve-radio-mark {
       background: #4caf50;
       border-color: #4caf50; }
@@ -1015,7 +983,8 @@ ul {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit; }
+    cursor: inherit;
+    margin: 0; }
     .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
       background: #4caf50;
       left: 16px; }
@@ -1106,7 +1075,10 @@ ul {
 
 .eve-navigation {
   display: flex;
-  border-bottom: 1px solid #cfd8dc; }
+  border-bottom: 1px solid #cfd8dc;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
   .eve-navigation .eve-navigation-tab {
     padding: 8px 8px 12px;
     margin: 0 16px;
@@ -1248,7 +1220,9 @@ ul {
 
 .eve-breadcrumb {
   display: flex;
-  list-style-type: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
   .eve-breadcrumb .eve-breadcrumb-item:not(:last-child)::after {
     content: '/';
     padding: 0 8px 0 4px; }
@@ -1563,6 +1537,3 @@ ul {
 
 .eve-color-success {
   color: #4caf50; }
-
-.eve-color-info {
-  color: #3f51b5; }

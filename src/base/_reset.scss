@@ -11,40 +11,6 @@ html {
     }
 }
 
-blockquote,
-body,
-dd,
-dl,
-fieldset,
-figure,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-// hr,
-menu,
-ol,
-p,
-pre,
-ul,
-input,
-textarea,
-select,
-button {
-    margin: 0;
-}
-
-fieldset,
-legend,
-menu,
-ol,
-ul {
-    padding: 0;
-}
-
 h1 {
     font-size: 32px;
     line-height: 40px;
@@ -83,8 +49,4 @@ p {
 sup,
 sub {
     font-size: 8px;
-}
-
-ul {
-    list-style: none;
 }
