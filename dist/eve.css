@@ -445,7 +445,7 @@ sub {
     resize: none; }
 
 .eve-select {
-  width: 100%;
+  display: inline-block;
   position: relative;
   max-width: 100%;
   vertical-align: top;
@@ -496,8 +496,6 @@ sub {
   display: flex; }
   .eve-select-group .eve-select:not(:last-child) {
     margin-right: 8px; }
-  .eve-select-group.eve-select-group-round .eve-select select {
-    border-radius: 18px; }
 
 .eve-avatar {
   display: inline-flex;

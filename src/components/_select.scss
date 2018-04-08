@@ -1,4 +1,3 @@
-$eve-select-width: 100% !default;
 $eve-select-height: 36px !default;
 $eve-select-border-width: 1px !default;
 $eve-select-max-width: 100% !default;
@@ -6,7 +5,7 @@ $eve-select-arrow-size: 6px !default;
 $eve-select-arrow-border-width: 1px !default;
 
 .eve-select {
-    width: $eve-select-width;
+    display: inline-block;
     position: relative;
     max-width: $eve-select-max-width;
     vertical-align: top;
@@ -74,14 +73,6 @@ $eve-select-arrow-border-width: 1px !default;
     .eve-select {
         &:not(:last-child) {
             margin-right: $eve-spacing-tiny;
-        }
-    }
-
-    &.eve-select-group-round {
-        .eve-select {
-            select {
-                border-radius: $eve-select-height / 2;
-            }
         }
     }
 }
