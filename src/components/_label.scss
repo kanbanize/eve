@@ -6,7 +6,7 @@ $eve-label-colors: (
 ) !default;
 $eve-label-height: 24px !default;
 $eve-label-border-radius: $eve-label-height / 2 !default;
-$eve-label-outline-border-width: 1px !default;
+$eve-label-box-shadow-spread: 1px !default;
 $eve-label-action-border-radius: 50% !default;
 $eve-label-icon-size: 14px !default;
 
@@ -41,7 +41,7 @@ $eve-label-icon-size: 14px !default;
             }
 
             &.eve-label-outline {
-                border: $eve-label-outline-border-width solid $color;
+                box-shadow: inset 0 0 0 $eve-label-box-shadow-spread $color;
                 color: $color;
 
                 .eve-label-icon {
@@ -57,7 +57,7 @@ $eve-label-icon-size: 14px !default;
         background: transparent;
 
         &:hover {
-            border-color: transparent;
+            box-shadow: none;
         }
     }
 

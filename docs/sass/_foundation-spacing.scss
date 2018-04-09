@@ -12,6 +12,7 @@
         .component-spacing-square {
             border: 1px dotted #2196f3;
             background: #eceff1;
+            box-sizing: border-box;
 
             &.component-spacing-square-x-tiny {
                 width: 4px;
@@ -46,6 +47,7 @@
 
         .component-spacing-name {
             margin-top: 24px;
+            font-size: 14px;
         }
     }
 }

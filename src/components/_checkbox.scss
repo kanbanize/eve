@@ -42,6 +42,7 @@ $eve-checkbox-mark-border-width: 2px !default;
         height: 100%;
         pointer-events: none;
         position: relative;
+        box-sizing: border-box;
 
         &::after {
             content: '';
@@ -82,6 +83,7 @@ $eve-checkbox-mark-border-width: 2px !default;
 .eve-checkbox-control {
     display: flex;
     align-items: center;
+    font-size: $eve-font-normal;
 
     .eve-checkbox {
         flex-shrink: 0;

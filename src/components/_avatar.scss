@@ -77,9 +77,9 @@ $eve-avatar-state-border-radius: 50% !default;
                     right: 0;
 
                     @if $eve-avatar-size == 'x-tiny' or $eve-avatar-size == 'tiny' {
-                        border: 1px solid $eve-color-white;
+                        box-shadow: 0 0 0 1px $eve-color-white;
                     } @else {
-                        border: 2px solid $eve-color-white;
+                        box-shadow: 0 0 0 2px $eve-color-white;
                     }
                 }
             }

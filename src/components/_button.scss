@@ -213,6 +213,7 @@ $eve-button-font-sizes: (
             animation-iteration-count: infinite;
             animation-duration: .5s;
             animation-timing-function: linear;
+            box-sizing: border-box;
         }
 
         @keyframes eveButtonProgress {

@@ -42,6 +42,7 @@ $eve-radio-mark-border-radius: 50% !default;
         height: 100%;
         pointer-events: none;
         border-radius: $eve-radio-mark-border-radius;
+        box-sizing: border-box;
 
         &::after {
             content: '';
@@ -49,6 +50,7 @@ $eve-radio-mark-border-radius: 50% !default;
             height: 100%;
             border-radius: $eve-radio-mark-border-radius;
             border: 3px solid $eve-color-white;
+            box-sizing: inherit;
         }
     }
 
@@ -77,6 +79,7 @@ $eve-radio-mark-border-radius: 50% !default;
 .eve-radio-control {
     display: flex;
     align-items: center;
+    font-size: $eve-font-normal;
 
     .eve-radio {
         flex-shrink: 0;

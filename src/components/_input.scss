@@ -31,6 +31,7 @@ $eve-input-font-sizes: (
     vertical-align: top;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
+    box-sizing: border-box;
 
     @each $eve-input-size in map-keys($eve-input-sizes) {
         $size: map-get($eve-input-sizes, $eve-input-size);

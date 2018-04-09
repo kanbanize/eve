@@ -10,6 +10,7 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
     flex-direction: column;
     min-width: $eve-dropdown-min-width;
     background: $eve-color-white;
+    font-size: $eve-font-normal;
 
     .eve-dropdown-filter {
         border-bottom: 1px solid $eve-color-bright-silver;

@@ -1,11 +1,3 @@
-html {
-  box-sizing: border-box; }
-
-* {
-  box-sizing: inherit; }
-  *::before, *::after {
-    box-sizing: inherit; }
-
 h1 {
   font-size: 32px;
   line-height: 40px; }
@@ -33,10 +25,6 @@ h6 {
 p {
   font-size: 14px;
   line-height: 20px; }
-
-sup,
-sub {
-  font-size: 8px; }
 
 .eve-button {
   display: inline-flex;
@@ -270,7 +258,8 @@ sub {
       -webkit-animation-duration: .5s;
               animation-duration: .5s;
       -webkit-animation-timing-function: linear;
-              animation-timing-function: linear; }
+              animation-timing-function: linear;
+      box-sizing: border-box; }
 
 @-webkit-keyframes eveButtonProgress {
   from {
@@ -352,7 +341,8 @@ sub {
   max-width: 100%;
   vertical-align: top;
   -webkit-appearance: none;
-  font-family: inherit; }
+  font-family: inherit;
+  box-sizing: border-box; }
   .eve-input.eve-input-small {
     height: 28px;
     line-height: 28px;
@@ -422,7 +412,8 @@ sub {
   color: #333;
   -webkit-appearance: none;
   font-family: inherit;
-  line-height: 20px; }
+  line-height: 20px;
+  box-sizing: border-box; }
   .eve-textarea::-webkit-input-placeholder {
     font-family: inherit;
     color: #b0bec5; }
@@ -538,7 +529,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 1px solid #fff; }
+      box-shadow: 0 0 0 1px #fff; }
     .eve-avatar.eve-avatar-x-tiny.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-x-tiny.eve-avatar-busy::after {
@@ -561,7 +552,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 1px solid #fff; }
+      box-shadow: 0 0 0 1px #fff; }
     .eve-avatar.eve-avatar-tiny.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-tiny.eve-avatar-busy::after {
@@ -584,7 +575,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 2px solid #fff; }
+      box-shadow: 0 0 0 2px #fff; }
     .eve-avatar.eve-avatar-small.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-small.eve-avatar-busy::after {
@@ -607,7 +598,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 2px solid #fff; }
+      box-shadow: 0 0 0 2px #fff; }
     .eve-avatar.eve-avatar-normal.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-normal.eve-avatar-busy::after {
@@ -630,7 +621,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 2px solid #fff; }
+      box-shadow: 0 0 0 2px #fff; }
     .eve-avatar.eve-avatar-large.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-large.eve-avatar-busy::after {
@@ -653,7 +644,7 @@ sub {
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 2px solid #fff; }
+      box-shadow: 0 0 0 2px #fff; }
     .eve-avatar.eve-avatar-x-large.eve-avatar-online::after {
       background: #4caf50; }
     .eve-avatar.eve-avatar-x-large.eve-avatar-busy::after {
@@ -777,10 +768,12 @@ sub {
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     height: 48px;
-    width: 48px; }
+    width: 48px;
+    box-sizing: border-box; }
   .eve-progress-oval::after {
     content: attr(data-label);
-    margin-left: 16px; }
+    margin-left: 16px;
+    font-size: 14px; }
 
 @-webkit-keyframes eveProgressOval {
   from {
@@ -855,7 +848,8 @@ sub {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     .eve-checkbox .eve-checkbox-mark::after {
       content: '';
       position: absolute;
@@ -880,7 +874,8 @@ sub {
 
 .eve-checkbox-control {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 14px; }
   .eve-checkbox-control .eve-checkbox {
     flex-shrink: 0;
     margin-right: 8px; }
@@ -928,13 +923,15 @@ sub {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    border-radius: 50%; }
+    border-radius: 50%;
+    box-sizing: border-box; }
     .eve-radio .eve-radio-mark::after {
       content: '';
       display: none;
       height: 100%;
       border-radius: 50%;
-      border: 3px solid #fff; }
+      border: 3px solid #fff;
+      box-sizing: inherit; }
   .eve-radio.eve-radio-disable {
     pointer-events: none; }
     .eve-radio.eve-radio-disable input[type='radio']:checked ~ .eve-radio-mark {
@@ -946,7 +943,8 @@ sub {
 
 .eve-radio-control {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 14px; }
   .eve-radio-control .eve-radio {
     flex-shrink: 0;
     margin-right: 8px; }
@@ -992,7 +990,8 @@ sub {
     height: 100%;
     pointer-events: none;
     border-radius: 9px;
-    padding: 2px; }
+    padding: 2px;
+    box-sizing: border-box; }
     .eve-switch .eve-switch-mark::after {
       content: '';
       width: 14px;
@@ -1013,7 +1012,8 @@ sub {
 
 .eve-switch-control {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 14px; }
   .eve-switch-control .eve-switch {
     flex-shrink: 0;
     margin-right: 8px; }
@@ -1039,7 +1039,8 @@ sub {
     margin-bottom: 4px; }
   .eve-list .eve-list-item .eve-list-item-content .eve-list-item-description {
     line-height: 20px;
-    color: #607d8b; }
+    color: #607d8b;
+    font-size: 14px; }
   .eve-list .eve-list-item .eve-switch {
     flex-shrink: 0;
     margin-left: 24px; }
@@ -1076,7 +1077,8 @@ sub {
   border-bottom: 1px solid #cfd8dc;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
   .eve-navigation .eve-navigation-tab {
     padding: 8px 8px 12px;
     margin: 0 16px;
@@ -1142,7 +1144,8 @@ sub {
   display: inline-flex;
   flex-direction: column;
   min-width: 150px;
-  background: #fff; }
+  background: #fff;
+  font-size: 14px; }
   .eve-dropdown .eve-dropdown-filter {
     border-bottom: 1px solid #eceff1; }
     .eve-dropdown .eve-dropdown-filter .eve-input {
@@ -1206,7 +1209,8 @@ sub {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px; }
+    font-size: 14px;
+    box-sizing: border-box; }
   .eve-badge:not([data-badge])::after {
     width: 8px;
     height: 8px;
@@ -1220,7 +1224,8 @@ sub {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 14px; }
   .eve-breadcrumb .eve-breadcrumb-item:not(:last-child)::after {
     content: '/';
     padding: 0 8px 0 4px; }
@@ -1238,7 +1243,8 @@ sub {
   border-spacing: 0;
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
-  width: 100%; }
+  width: 100%;
+  font-size: 14px; }
   .eve-table thead {
     text-align: left; }
     .eve-table thead tr {
@@ -1283,7 +1289,8 @@ sub {
   background: #2196f3;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 14px; }
   .eve-divider::after {
     content: attr(data-content);
     padding: 0 8px;
@@ -1308,7 +1315,7 @@ sub {
         .eve-label.eve-label-primary:hover .eve-label-action i {
           color: #fff; }
     .eve-label.eve-label-primary.eve-label-outline {
-      border: 1px solid #2196f3;
+      box-shadow: inset 0 0 0 1px #2196f3;
       color: #2196f3; }
       .eve-label.eve-label-primary.eve-label-outline .eve-label-icon i {
         color: #2196f3; }
@@ -1322,7 +1329,7 @@ sub {
         .eve-label.eve-label-success:hover .eve-label-action i {
           color: #fff; }
     .eve-label.eve-label-success.eve-label-outline {
-      border: 1px solid #4caf50;
+      box-shadow: inset 0 0 0 1px #4caf50;
       color: #4caf50; }
       .eve-label.eve-label-success.eve-label-outline .eve-label-icon i {
         color: #4caf50; }
@@ -1336,7 +1343,7 @@ sub {
         .eve-label.eve-label-warning:hover .eve-label-action i {
           color: #fff; }
     .eve-label.eve-label-warning.eve-label-outline {
-      border: 1px solid #ff9800;
+      box-shadow: inset 0 0 0 1px #ff9800;
       color: #ff9800; }
       .eve-label.eve-label-warning.eve-label-outline .eve-label-icon i {
         color: #ff9800; }
@@ -1350,14 +1357,14 @@ sub {
         .eve-label.eve-label-danger:hover .eve-label-action i {
           color: #fff; }
     .eve-label.eve-label-danger.eve-label-outline {
-      border: 1px solid #f44336;
+      box-shadow: inset 0 0 0 1px #f44336;
       color: #f44336; }
       .eve-label.eve-label-danger.eve-label-outline .eve-label-icon i {
         color: #f44336; }
   .eve-label.eve-label-outline {
     background: transparent; }
     .eve-label.eve-label-outline:hover {
-      border-color: transparent; }
+      box-shadow: none; }
   .eve-label .eve-label-icon {
     display: flex;
     align-items: center;
@@ -1380,7 +1387,8 @@ sub {
 
 .eve-form .eve-form-group .eve-form-label {
   margin-bottom: 8px;
-  display: block; }
+  display: block;
+  font-size: 14px; }
 
 .eve-grid {
   display: grid; }

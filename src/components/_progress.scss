@@ -54,11 +54,13 @@ $eve-progress-oval-size: 48px !default;
         animation-timing-function: linear;
         height: $eve-progress-oval-size;
         width: $eve-progress-oval-size;
+        box-sizing: border-box;
     }
 
     &::after {
         content: attr(data-label);
         margin-left: $eve-spacing-small;
+        font-size: $eve-font-normal;
     }
 
     @keyframes eveProgressOval {

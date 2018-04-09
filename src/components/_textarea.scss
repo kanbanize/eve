@@ -20,6 +20,7 @@ $eve-textarea-border-width: 1px !default;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
     line-height: $eve-textarea-line-height;
+    box-sizing: border-box;
 
     &::placeholder {
         font-family: inherit;

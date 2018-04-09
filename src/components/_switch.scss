@@ -40,6 +40,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
         pointer-events: none;
         border-radius: $eve-switch-radius;
         padding: 2px;
+        box-sizing: border-box;
 
         &::after {
             content: '';
@@ -78,6 +79,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
 .eve-switch-control {
     display: flex;
     align-items: center;
+    font-size: $eve-font-normal;
 
     .eve-switch {
         flex-shrink: 0;

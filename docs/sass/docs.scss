@@ -9,9 +9,9 @@ body {
 body {
     font-family: 'Open Sans', sans-serif;
     background: #fff;
-    font-size: 14px;
     color: #333;
     margin: 0;
+    font-size: 14px;
 }
 
 a {
@@ -30,6 +30,7 @@ a {
         align-items: center;
         justify-content: space-between;
         padding: 48px 0 24px;
+        box-sizing: border-box;
 
         .sidebar-eve {
             color: #fff;
@@ -52,6 +53,7 @@ a {
         background: #eceff1;
         padding: 48px 0 24px;
         overflow: auto;
+        box-sizing: border-box;
 
         .navigation-header {
             padding: 0 48px;
@@ -86,7 +88,7 @@ a {
 
             &.navigation-list-item-active {
                 color: #2196f3;
-                // font-weight: 600;
+                font-weight: 600;
             }
         }
     }
@@ -96,6 +98,7 @@ a {
         overflow: auto;
         height: 100%;
         padding: 48px;
+        box-sizing: border-box;
     }
 }
 
@@ -125,8 +128,6 @@ a {
     }
 }
 
-@import 'getting-started';
-@import 'foundation-typography';
 @import 'foundation-color';
 @import 'foundation-spacing';
 @import 'snippet';
