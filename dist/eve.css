@@ -856,6 +856,8 @@ p {
     color: #ff9800; }
   .eve-dialog.eve-dialog-danger .eve-dialog-header {
     color: #f44336; }
+  .eve-dialog.eve-dialog-info .eve-dialog-header {
+    color: #3f51b5; }
 
 .eve-checkbox {
   display: inline-flex;
