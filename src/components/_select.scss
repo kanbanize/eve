@@ -23,6 +23,7 @@ $eve-select-arrow-border-width: 1px !default;
         right: $eve-spacing-small;
         top: calc(50% - #{$eve-select-arrow-size / 2 + $eve-select-arrow-border-width});
         pointer-events: none;
+        box-sizing: border-box;
     }
 
     select {

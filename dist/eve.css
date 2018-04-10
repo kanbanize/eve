@@ -454,7 +454,8 @@ p {
     height: 6px;
     right: 16px;
     top: calc(50% - 4px);
-    pointer-events: none; }
+    pointer-events: none;
+    box-sizing: border-box; }
   .eve-select select {
     -webkit-appearance: none;
     outline: none;
