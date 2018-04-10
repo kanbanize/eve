@@ -2,7 +2,8 @@ $eve-button-colors: (
     primary: $eve-color-blue,
     success: $eve-color-green,
     warning: $eve-color-orange,
-    danger: $eve-color-red
+    danger: $eve-color-red,
+    info: $eve-color-indigo
 ) !default;
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
