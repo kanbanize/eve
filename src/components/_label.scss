@@ -2,7 +2,8 @@ $eve-label-colors: (
     primary: $eve-color-blue,
     success: $eve-color-green,
     warning: $eve-color-orange,
-    danger: $eve-color-red
+    danger: $eve-color-red,
+    info: $eve-color-indigo
 ) !default;
 $eve-label-height: 24px !default;
 $eve-label-border-radius: $eve-label-height / 2 !default;

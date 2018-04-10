@@ -1402,6 +1402,20 @@ p {
       color: #f44336; }
       .eve-label.eve-label-danger.eve-label-outline .eve-label-icon i {
         color: #f44336; }
+  .eve-label.eve-label-info {
+    background: #3f51b5; }
+    .eve-label.eve-label-info:hover {
+      background: rgba(63, 81, 181, 0.2);
+      color: #3f51b5; }
+      .eve-label.eve-label-info:hover .eve-label-action {
+        background: #3f51b5; }
+        .eve-label.eve-label-info:hover .eve-label-action i {
+          color: #fff; }
+    .eve-label.eve-label-info.eve-label-outline {
+      box-shadow: inset 0 0 0 1px #3f51b5;
+      color: #3f51b5; }
+      .eve-label.eve-label-info.eve-label-outline .eve-label-icon i {
+        color: #3f51b5; }
   .eve-label.eve-label-outline {
     background: transparent; }
     .eve-label.eve-label-outline:hover {
