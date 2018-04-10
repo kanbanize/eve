@@ -213,43 +213,6 @@ p {
     .eve-button.eve-button-danger.eve-button-icon:active {
       background: rgba(244, 67, 54, 0.2);
       color: #f44336; }
-  .eve-button.eve-button-info {
-    background: #3f51b5; }
-    .eve-button.eve-button-info:hover {
-      background: #3849a2; }
-    .eve-button.eve-button-info:active {
-      background: #32408f; }
-    .eve-button.eve-button-info.eve-button-outline {
-      color: #3f51b5;
-      box-shadow: inset 0 0 0 1px #3f51b5; }
-      .eve-button.eve-button-info.eve-button-outline:hover {
-        background: rgba(63, 81, 181, 0.1);
-        box-shadow: none; }
-      .eve-button.eve-button-info.eve-button-outline:active {
-        background: rgba(63, 81, 181, 0.2);
-        box-shadow: none; }
-    .eve-button.eve-button-info.eve-button-invert {
-      color: #3f51b5;
-      background: transparent; }
-      .eve-button.eve-button-info.eve-button-invert:hover {
-        background: rgba(63, 81, 181, 0.1); }
-      .eve-button.eve-button-info.eve-button-invert:active {
-        background: rgba(63, 81, 181, 0.2); }
-    .eve-button.eve-button-info.eve-button-text {
-      color: #3f51b5;
-      background: transparent; }
-      .eve-button.eve-button-info.eve-button-text:hover {
-        color: #3849a2; }
-      .eve-button.eve-button-info.eve-button-text:active {
-        color: #32408f; }
-    .eve-button.eve-button-info.eve-button-icon i {
-      margin-right: 0; }
-    .eve-button.eve-button-info.eve-button-icon:hover {
-      background: rgba(63, 81, 181, 0.1);
-      color: #3f51b5; }
-    .eve-button.eve-button-info.eve-button-icon:active {
-      background: rgba(63, 81, 181, 0.2);
-      color: #3f51b5; }
   .eve-button i {
     font-size: 18px;
     margin-right: 4px; }
@@ -856,8 +819,6 @@ p {
     color: #ff9800; }
   .eve-dialog.eve-dialog-danger .eve-dialog-header {
     color: #f44336; }
-  .eve-dialog.eve-dialog-info .eve-dialog-header {
-    color: #3f51b5; }
 
 .eve-checkbox {
   display: inline-flex;
@@ -1402,20 +1363,6 @@ p {
       color: #f44336; }
       .eve-label.eve-label-danger.eve-label-outline .eve-label-icon i {
         color: #f44336; }
-  .eve-label.eve-label-info {
-    background: #3f51b5; }
-    .eve-label.eve-label-info:hover {
-      background: rgba(63, 81, 181, 0.2);
-      color: #3f51b5; }
-      .eve-label.eve-label-info:hover .eve-label-action {
-        background: #3f51b5; }
-        .eve-label.eve-label-info:hover .eve-label-action i {
-          color: #fff; }
-    .eve-label.eve-label-info.eve-label-outline {
-      box-shadow: inset 0 0 0 1px #3f51b5;
-      color: #3f51b5; }
-      .eve-label.eve-label-info.eve-label-outline .eve-label-icon i {
-        color: #3f51b5; }
   .eve-label.eve-label-outline {
     background: transparent; }
     .eve-label.eve-label-outline:hover {
