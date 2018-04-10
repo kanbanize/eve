@@ -273,7 +273,7 @@ $eve-button-font-sizes: (
     display: flex;
 
     .eve-button {
-        &:not(:first-child) {
+        &:not(:first-of-type) {
             margin-left: $eve-spacing-small;
         }
     }
@@ -294,25 +294,25 @@ $eve-button-font-sizes: (
         min-width: auto;
 
         &:not(.eve-button-outline) {
-            &:not(:last-child) {
+            &:not(:last-of-type) {
                 border-right: 1px solid $eve-color-white;
             }
         }
 
-        &:not(:first-child) {
-            &:not(:last-child) {
+        &:not(:first-of-type) {
+            &:not(:last-of-type) {
                 border-radius: 0;
             }
         }
 
-        &:first-child {
-            &:not(:last-child) {
+        &:first-of-type {
+            &:not(:last-of-type) {
                 border-radius: $eve-button-border-radius 0 0 $eve-button-border-radius;
             }
         }
 
-        &:last-child {
-            &:not(:first-child) {
+        &:last-of-type {
+            &:not(:first-of-type) {
                 border-radius: 0 $eve-button-border-radius $eve-button-border-radius 0;
             }
         }
