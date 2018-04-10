@@ -1383,14 +1383,6 @@ p {
     .eve-label .eve-label-action i {
       font-size: 14px; }
 
-.eve-form .eve-form-group:not(:last-child) {
-  margin-bottom: 16px; }
-
-.eve-form .eve-form-group .eve-form-label {
-  margin-bottom: 8px;
-  display: block;
-  font-size: 14px; }
-
 .eve-grid {
   display: grid; }
   .eve-grid.eve-grid-margin-x-tiny {
