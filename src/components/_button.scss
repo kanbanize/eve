@@ -188,6 +188,7 @@ $eve-button-font-sizes: (
     }
 
     &.eve-button-block {
+        display: flex;
         width: 100%;
     }
 
