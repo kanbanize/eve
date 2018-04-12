@@ -852,10 +852,6 @@ p {
       width: 14px;
       height: 14px;
       fill: #607d8b; }
-    .eve-dialog .eve-dialog-close:hover i {
-      color: #2196f3; }
-    .eve-dialog .eve-dialog-close:hover svg {
-      fill: #2196f3; }
   .eve-dialog .eve-dialog-header {
     font-weight: 600;
     font-size: 20px;
@@ -870,12 +866,28 @@ p {
     justify-content: flex-end; }
     .eve-dialog .eve-dialog-footer .eve-button:not(:first-child) {
       margin-left: 16px; }
+  .eve-dialog.eve-dialog-primary .eve-dialog-close:hover i {
+    color: #2196f3; }
+  .eve-dialog.eve-dialog-primary .eve-dialog-close:hover svg {
+    fill: #2196f3; }
   .eve-dialog.eve-dialog-primary .eve-dialog-header {
     color: #2196f3; }
+  .eve-dialog.eve-dialog-success .eve-dialog-close:hover i {
+    color: #4caf50; }
+  .eve-dialog.eve-dialog-success .eve-dialog-close:hover svg {
+    fill: #4caf50; }
   .eve-dialog.eve-dialog-success .eve-dialog-header {
     color: #4caf50; }
+  .eve-dialog.eve-dialog-warning .eve-dialog-close:hover i {
+    color: #ff9800; }
+  .eve-dialog.eve-dialog-warning .eve-dialog-close:hover svg {
+    fill: #ff9800; }
   .eve-dialog.eve-dialog-warning .eve-dialog-header {
     color: #ff9800; }
+  .eve-dialog.eve-dialog-danger .eve-dialog-close:hover i {
+    color: #f44336; }
+  .eve-dialog.eve-dialog-danger .eve-dialog-close:hover svg {
+    fill: #f44336; }
   .eve-dialog.eve-dialog-danger .eve-dialog-header {
     color: #f44336; }
 

@@ -41,16 +41,6 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
             height: $eve-dialog-close-icon-size;
             fill: $eve-color-darkest-silver;
         }
-
-        &:hover {
-            i {
-                color: $eve-color-blue;
-            }
-
-            svg {
-                fill: $eve-color-blue;
-            }
-        }
     }
 
     .eve-dialog-header {
@@ -78,9 +68,23 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
     }
 
     @each $eve-dialog-type in map-keys($eve-dialog-types) {
+        $color: map-get($eve-dialog-types, $eve-dialog-type);
+
         &.eve-dialog-#{$eve-dialog-type} {
+            .eve-dialog-close {
+                &:hover {
+                    i {
+                        color: $color;
+                    }
+
+                    svg {
+                        fill: $color;
+                    }
+                }
+            }
+
             .eve-dialog-header {
-                color: map-get($eve-dialog-types, $eve-dialog-type);
+                color: $color;
             }
         }
     }
