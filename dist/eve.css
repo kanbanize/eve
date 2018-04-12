@@ -915,6 +915,13 @@ p {
       border-color: #4caf50; }
       .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark::after {
         display: block; }
+    .eve-checkbox input[type='checkbox']:disabled {
+      pointer-events: none; }
+      .eve-checkbox input[type='checkbox']:disabled ~ .eve-checkbox-mark {
+        background: #b0bec5;
+        border-color: #b0bec5; }
+        .eve-checkbox input[type='checkbox']:disabled ~ .eve-checkbox-mark::after {
+          display: block; }
   .eve-checkbox .eve-checkbox-mark {
     background: #fff;
     border: 2px solid #b0bec5;
@@ -936,14 +943,6 @@ p {
       -webkit-transform: translate(-50%, -50%) rotate(45deg);
               transform: translate(-50%, -50%) rotate(45deg);
       box-sizing: content-box; }
-  .eve-checkbox.eve-checkbox-disable {
-    pointer-events: none; }
-    .eve-checkbox.eve-checkbox-disable input[type='checkbox']:checked ~ .eve-checkbox-mark {
-      background: #b0bec5; }
-    .eve-checkbox.eve-checkbox-disable .eve-checkbox-mark {
-      background: #b0bec5; }
-      .eve-checkbox.eve-checkbox-disable .eve-checkbox-mark::after {
-        display: block; }
 
 .eve-checkbox-control {
   display: flex;
@@ -990,6 +989,13 @@ p {
       border-color: #4caf50; }
       .eve-radio input[type='radio']:checked ~ .eve-radio-mark::after {
         display: block; }
+    .eve-radio input[type='radio']:disabled {
+      pointer-events: none; }
+      .eve-radio input[type='radio']:disabled ~ .eve-radio-mark {
+        background: #b0bec5;
+        border-color: #b0bec5; }
+        .eve-radio input[type='radio']:disabled ~ .eve-radio-mark::after {
+          display: block; }
   .eve-radio .eve-radio-mark {
     background: #fff;
     border: 2px solid #b0bec5;
@@ -1005,14 +1011,6 @@ p {
       border-radius: 50%;
       border: 3px solid #fff;
       box-sizing: inherit; }
-  .eve-radio.eve-radio-disable {
-    pointer-events: none; }
-    .eve-radio.eve-radio-disable input[type='radio']:checked ~ .eve-radio-mark {
-      background: #b0bec5; }
-    .eve-radio.eve-radio-disable .eve-radio-mark {
-      background: #b0bec5; }
-      .eve-radio.eve-radio-disable .eve-radio-mark::after {
-        display: block; }
 
 .eve-radio-control {
   display: flex;
@@ -1057,6 +1055,12 @@ p {
     .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
       background: #4caf50;
       left: 16px; }
+    .eve-switch input[type='checkbox']:disabled {
+      pointer-events: none; }
+      .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark {
+        background: #b0bec5; }
+        .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark::after {
+          background: #fff; }
   .eve-switch .eve-switch-mark {
     background: #eceff1;
     width: 100%;
@@ -1074,14 +1078,6 @@ p {
       position: absolute;
       left: 2px;
       transition: left 150ms ease, background 150ms ease; }
-  .eve-switch.eve-switch-disable {
-    pointer-events: none; }
-    .eve-switch.eve-switch-disable input[type='checkbox']:checked ~ .eve-switch-mark {
-      background: #b0bec5; }
-    .eve-switch.eve-switch-disable .eve-switch-mark {
-      background: #b0bec5; }
-      .eve-switch.eve-switch-disable .eve-switch-mark::after {
-        background: #fff; }
 
 .eve-switch-control {
   display: flex;

@@ -32,6 +32,20 @@ $eve-checkbox-mark-border-width: 2px !default;
                     display: block;
                 }
             }
+
+            // TODO: Remove cursor: pointer;
+            &:disabled {
+                pointer-events: none;
+
+                & ~ .eve-checkbox-mark {
+                    background: $eve-color-darker-silver;
+                    border-color: $eve-color-darker-silver;
+
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 
@@ -56,26 +70,6 @@ $eve-checkbox-mark-border-width: 2px !default;
             border-bottom: $eve-checkbox-mark-border-width solid $eve-color-white;
             transform: translate(-50%, -50%) rotate(45deg);
             box-sizing: content-box;
-        }
-    }
-
-    &.eve-checkbox-disable {
-        pointer-events: none;
-
-        input {
-            &[type='checkbox'] {
-                &:checked ~ .eve-checkbox-mark {
-                    background: $eve-color-darker-silver;
-                }
-            }
-        }
-
-        .eve-checkbox-mark {
-            background: $eve-color-darker-silver;
-
-            &::after {
-                display: block;
-            }
         }
     }
 }

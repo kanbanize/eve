@@ -30,6 +30,18 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
                     left: $eve-switch-width / 2;
                 }
             }
+
+            &:disabled {
+                pointer-events: none;
+
+                & ~ .eve-switch-mark {
+                    background: $eve-color-darker-silver;
+
+                    &::after {
+                        background: $eve-color-white;
+                    }
+                }
+            }
         }
     }
 
@@ -51,27 +63,6 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             position: absolute;
             left: 2px;
             transition: left 150ms ease, background 150ms ease;
-        }
-    }
-
-    &.eve-switch-disable {
-        pointer-events: none;
-
-
-        input {
-            &[type='checkbox'] {
-                &:checked ~ .eve-switch-mark {
-                    background: $eve-color-darker-silver;
-                }
-            }
-        }
-
-        .eve-switch-mark {
-            background: $eve-color-darker-silver;
-
-            &::after {
-                background: $eve-color-white;
-            }
         }
     }
 }

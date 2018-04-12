@@ -32,6 +32,20 @@ $eve-radio-mark-border-radius: 50% !default;
                     display: block;
                 }
             }
+
+            // TODO: Remove cursor: pointer;
+            &:disabled {
+                pointer-events: none;
+
+                & ~ .eve-radio-mark {
+                    background: $eve-color-darker-silver;
+                    border-color: $eve-color-darker-silver;
+
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 
@@ -51,27 +65,6 @@ $eve-radio-mark-border-radius: 50% !default;
             border-radius: $eve-radio-mark-border-radius;
             border: 3px solid $eve-color-white;
             box-sizing: inherit;
-        }
-    }
-
-    &.eve-radio-disable {
-        pointer-events: none;
-
-
-        input {
-            &[type='radio'] {
-                &:checked ~ .eve-radio-mark {
-                    background: $eve-color-darker-silver;
-                }
-            }
-        }
-
-        .eve-radio-mark {
-            background: $eve-color-darker-silver;
-
-            &::after {
-                display: block;
-            }
         }
     }
 }
