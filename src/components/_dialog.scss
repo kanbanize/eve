@@ -7,6 +7,7 @@ $eve-dialog-types: (
 $eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
 $eve-dialog-width: 400px !default;
 $eve-dialog-close-size: 24px !default;
+$eve-dialog-close-border-radius: 50% !default;
 $eve-dialog-close-icon-size: 14px !default;
 $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
@@ -23,7 +24,7 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
         right: -($eve-dialog-close-size / 2);
         background: $eve-color-white;
         box-shadow: 0 5px 10px 0 $eve-dialog-close-box-shadow-color;
-        border-radius: 50%;
+        border-radius: $eve-dialog-close-border-radius;
         width: $eve-dialog-close-size;
         height: $eve-dialog-close-size;
         display: flex;
