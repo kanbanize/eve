@@ -6,7 +6,7 @@ $eve-button-colors: (
 ) !default;
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
-$eve-button-min-width: 88px !default;
+$eve-button-min-width: 64px !default;
 $eve-button-icon-size: 18px !default;
 $eve-button-icon-border-radius: 50% !default;
 $eve-button-load-progress-border-radius: 50% !default;
@@ -103,6 +103,10 @@ $eve-button-font-sizes: (
                 color: $color;
                 box-shadow: inset 0 0 0 $eve-button-outline-box-shadow-spread $color;
 
+                svg {
+                    fill: $color;
+                }
+
                 &:hover {
                     background: rgba($color, .1); // sass-lint:disable-line no-color-literals
                     box-shadow: none;
@@ -118,6 +122,10 @@ $eve-button-font-sizes: (
             &.eve-button-invert {
                 color: $color;
                 background: transparent;
+
+                svg {
+                    fill: $color;
+                }
 
                 &:hover {
                     background: rgba($color, .1); // sass-lint:disable-line no-color-literals
@@ -144,8 +152,13 @@ $eve-button-font-sizes: (
 
             // Icon Buttons
             &.eve-button-icon {
-                i {
+                i,
+                svg {
                     margin-right: 0;
+                }
+
+                svg {
+                    fill: $color;
                 }
 
                 &:hover {
@@ -164,6 +177,13 @@ $eve-button-font-sizes: (
     i {
         font-size: $eve-button-icon-size;
         margin-right: $eve-spacing-x-tiny;
+    }
+
+    svg {
+        width: $eve-button-icon-size;
+        height: $eve-button-icon-size;
+        margin-right: $eve-spacing-x-tiny;
+        fill: $eve-color-white;
     }
 
     &.eve-button-outline {
