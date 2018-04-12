@@ -1,3 +1,5 @@
+$eve-navigation-tab-size: 48px !default;
+
 .eve-navigation {
     display: flex;
     border-bottom: 1px solid $eve-color-dark-silver;
@@ -5,10 +7,13 @@
     padding: 0;
     margin: 0;
     font-size: $eve-font-normal;
+    background: $eve-color-white;
 
     .eve-navigation-tab {
-        padding: $eve-spacing-tiny $eve-spacing-tiny 12px;
+        padding: 0 $eve-spacing-tiny;
         margin: 0 $eve-spacing-small;
+        height: $eve-navigation-tab-size;
+        line-height: $eve-navigation-tab-size;
         color: $eve-color-darkest-silver;
         text-transform: uppercase;
         cursor: pointer;

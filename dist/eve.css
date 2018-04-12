@@ -1151,10 +1151,13 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px; }
+  font-size: 14px;
+  background: #fff; }
   .eve-navigation .eve-navigation-tab {
-    padding: 8px 8px 12px;
+    padding: 0 8px;
     margin: 0 16px;
+    height: 48px;
+    line-height: 48px;
     color: #607d8b;
     text-transform: uppercase;
     cursor: pointer; }
