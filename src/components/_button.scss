@@ -6,7 +6,7 @@ $eve-button-colors: (
 ) !default;
 $eve-button-height: 36px !default;
 $eve-button-border-radius: $eve-button-height / 2 !default;
-$eve-button-min-width: 64px !default;
+$eve-button-min-width: 96px !default;
 $eve-button-icon-size: 18px !default;
 $eve-button-icon-border-radius: 50% !default;
 $eve-button-load-progress-border-radius: 50% !default;
@@ -22,8 +22,8 @@ $eve-button-paddings: (
     large: $eve-spacing-normal
 ) !default;
 $eve-button-min-widths: (
-    small: 56px,
-    large: 120px
+    small: 48px,
+    large: 144px
 ) !default;
 $eve-button-font-sizes: (
     small: $eve-font-small,
