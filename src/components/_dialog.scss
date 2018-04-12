@@ -11,6 +11,7 @@ $eve-dialog-width: 400px !default;
     width: $eve-dialog-width;
     box-shadow: 0 5px 10px 0 $eve-dialog-box-shadow-color;
     padding: $eve-spacing-normal;
+    background: $eve-color-white;
 
     .eve-dialog-header {
         font-weight: 600;
