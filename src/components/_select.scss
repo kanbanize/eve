@@ -1,14 +1,15 @@
 $eve-select-height: 36px !default;
 $eve-select-border-width: 1px !default;
 $eve-select-max-width: 100% !default;
+$eve-select-width: 100% !default;
 $eve-select-arrow-size: 6px !default;
 $eve-select-arrow-border-width: 1px !default;
 
 .eve-select {
-    display: inline-block;
+    display: block;
     position: relative;
     max-width: $eve-select-max-width;
-    vertical-align: top;
+    width: $eve-select-width;
     background: $eve-color-white;
 
     &::after {

@@ -470,10 +470,10 @@ p {
     resize: none; }
 
 .eve-select {
-  display: inline-block;
+  display: block;
   position: relative;
   max-width: 100%;
-  vertical-align: top;
+  width: 100%;
   background: #fff; }
   .eve-select::after {
     content: '';
