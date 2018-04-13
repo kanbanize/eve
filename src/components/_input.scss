@@ -28,7 +28,7 @@ $eve-input-font-sizes: (
     color: $eve-color-grey-black;
     width: $eve-input-width;
     max-width: $eve-input-max-width;
-    vertical-align: top;
+    vertical-align: middle;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
     box-sizing: border-box;

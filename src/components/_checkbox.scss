@@ -10,7 +10,7 @@ $eve-checkbox-mark-border-width: 2px !default;
     cursor: pointer;
     width: $eve-checkbox-size;
     height: $eve-checkbox-size;
-    vertical-align: top;
+    vertical-align: middle;
 
     input {
         &[type='checkbox'] {

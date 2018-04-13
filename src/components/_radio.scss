@@ -10,7 +10,7 @@ $eve-radio-mark-border-radius: 50% !default;
     cursor: pointer;
     width: $eve-radio-size;
     height: $eve-radio-size;
-    vertical-align: top;
+    vertical-align: middle;
 
     input {
         &[type='radio'] {

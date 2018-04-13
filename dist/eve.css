@@ -44,7 +44,7 @@ p {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  vertical-align: top;
+  vertical-align: middle;
   font-family: inherit;
   min-width: 96px; }
   .eve-button:hover, .eve-button:active, .eve-button:focus {
@@ -373,7 +373,7 @@ p {
   color: #333;
   width: 100%;
   max-width: 100%;
-  vertical-align: top;
+  vertical-align: middle;
   -webkit-appearance: none;
   font-family: inherit;
   box-sizing: border-box; }
@@ -435,7 +435,7 @@ p {
 .eve-textarea {
   background: #fff;
   padding: 8px 16px;
-  vertical-align: top;
+  vertical-align: middle;
   border: 1px solid #cfd8dc;
   outline: none;
   min-height: 100px;
@@ -899,7 +899,7 @@ p {
   cursor: pointer;
   width: 18px;
   height: 18px;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-checkbox input[type='checkbox'] {
     position: absolute;
     top: 0;
@@ -973,7 +973,7 @@ p {
   cursor: pointer;
   width: 18px;
   height: 18px;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-radio input[type='radio'] {
     position: absolute;
     top: 0;
@@ -1041,7 +1041,7 @@ p {
   cursor: pointer;
   width: 32px;
   height: 18px;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-switch input[type='checkbox'] {
     position: absolute;
     top: 0;

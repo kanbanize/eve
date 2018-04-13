@@ -10,7 +10,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     cursor: pointer;
     width: $eve-switch-width;
     height: $eve-switch-height;
-    vertical-align: top;
+    vertical-align: middle;
 
     input {
         &[type='checkbox'] {

@@ -8,7 +8,7 @@ $eve-textarea-border-width: 1px !default;
 .eve-textarea {
     background: $eve-color-white;
     padding: $eve-spacing-tiny $eve-spacing-small;
-    vertical-align: top;
+    vertical-align: middle;
     border: $eve-textarea-border-width solid $eve-color-dark-silver;
     outline: none;
     min-height: $eve-textarea-min-height;
