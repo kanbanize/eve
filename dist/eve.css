@@ -496,7 +496,7 @@ p {
     font-size: 14px;
     border-radius: 0;
     background: transparent;
-    width: inherit;
+    width: 100%;
     color: #333;
     cursor: pointer;
     border: 1px solid #cfd8dc;
