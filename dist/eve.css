@@ -1534,42 +1534,55 @@ p {
     padding: 64px; }
   .eve-flex .eve-flex-cell-1 {
     width: 8.33333%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-2 {
     width: 16.66667%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-3 {
     width: 25%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-4 {
     width: 33.33333%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-5 {
     width: 41.66667%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-6 {
     width: 50%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-7 {
     width: 58.33333%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-8 {
     width: 66.66667%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-9 {
     width: 75%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-10 {
     width: 83.33333%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-11 {
     width: 91.66667%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   .eve-flex .eve-flex-cell-12 {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex-shrink: 0; }
   @media (max-width: 480px) {
     .eve-flex {
+      flex-direction: column;
       flex-wrap: nowrap; }
       .eve-flex .eve-flex-cell-1 {
         width: 100%; }
