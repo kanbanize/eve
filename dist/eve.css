@@ -1156,7 +1156,8 @@ p {
     line-height: 48px;
     color: #607d8b;
     text-transform: uppercase;
-    cursor: pointer; }
+    cursor: pointer;
+    font-weight: 600; }
     .eve-navigation .eve-navigation-tab a {
       text-decoration: none;
       color: inherit; }
@@ -1164,7 +1165,6 @@ p {
       color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
       color: #2196f3;
-      font-weight: 600;
       position: relative; }
       .eve-navigation .eve-navigation-tab.eve-navigation-tab-active::after {
         content: '';
