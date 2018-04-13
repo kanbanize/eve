@@ -1174,6 +1174,11 @@ p {
         left: 0;
         bottom: -1px;
         right: 0; }
+    .eve-navigation .eve-navigation-tab.eve-navigation-tab-disable {
+      color: #b0bec5;
+      pointer-events: none; }
+      .eve-navigation .eve-navigation-tab.eve-navigation-tab-disable::after {
+        background: #b0bec5; }
 
 .eve-chip {
   display: inline-flex;

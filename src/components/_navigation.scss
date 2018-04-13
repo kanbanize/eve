@@ -42,5 +42,14 @@ $eve-navigation-tab-size: 48px !default;
                 right: 0;
             }
         }
+
+        &.eve-navigation-tab-disable {
+            color: $eve-color-darker-silver;
+            pointer-events: none;
+
+            &::after {
+                background: $eve-color-darker-silver;
+            }
+        }
     }
 }
