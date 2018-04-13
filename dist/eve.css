@@ -1525,6 +1525,10 @@ p {
 .eve-flex {
   display: flex;
   flex-wrap: wrap; }
+  .eve-flex.eve-flex-vertical-center {
+    align-items: center; }
+  .eve-flex.eve-flex-horizontal-center {
+    justify-content: center; }
   .eve-flex.eve-flex-margin-x-tiny {
     padding: 4px; }
   .eve-flex.eve-flex-margin-tiny {

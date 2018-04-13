@@ -19,6 +19,14 @@ $eve-flex-margins: (
     display: flex;
     flex-wrap: wrap;
 
+    &.eve-flex-vertical-center {
+        align-items: center;
+    }
+
+    &.eve-flex-horizontal-center {
+        justify-content: center;
+    }
+
     @each $eve-flex-margin in map-keys($eve-flex-margins) {
         &.eve-flex-margin-#{$eve-flex-margin} {
             padding: map-get($eve-flex-margins, $eve-flex-margin);
