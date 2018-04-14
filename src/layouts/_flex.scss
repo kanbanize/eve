@@ -6,14 +6,6 @@ $eve-flex-margins: (
     large: $eve-spacing-large,
     x-large: $eve-spacing-x-large
 ) !default;
-// $eve-flex-gutters: (
-//     x-tiny: $eve-spacing-x-tiny,
-//     tiny: $eve-spacing-tiny,
-//     small: $eve-spacing-small,
-//     normal: $eve-spacing-normal,
-//     large: $eve-spacing-large,
-//     x-large: $eve-spacing-x-large
-// ) !default;
 
 .eve-flex {
     display: flex;
@@ -32,24 +24,6 @@ $eve-flex-margins: (
             padding: map-get($eve-flex-margins, $eve-flex-margin);
         }
     }
-
-    // @each $eve-flex-gutter in map-keys($eve-flex-gutters) {
-    //     &.eve-flex-gutter-#{$eve-flex-gutter} {
-    //         // padding-bottom: calc(#{map-get($eve-flex-gutters, $eve-flex-gutter)} - 24px);
-
-    //         @for $i from 1 through 12 {
-    //             .eve-flex-cell-#{$i} {
-    //                 &:not(:last-child) {
-    //                     $gutter-size: map-get($eve-flex-gutters, $eve-flex-gutter);
-
-    //                     margin-right: $gutter-size;
-    //                     // margin-bottom: $gutter-size;
-    //                     width: calc(#{percentage($i / 12)} - #{$gutter-size});
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 
     @for $i from 1 through 12 {
         .eve-flex-cell-#{$i} {
