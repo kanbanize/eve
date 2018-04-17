@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Custom
+@import 'custom';
+
 // Foundations
 @import 'foundations/typography';
 @import 'foundations/colors';
@@ -34,6 +37,3 @@
 
 // Utilities
 @import 'utilities/text-colors';
-
-// Custom
-@import 'custom';
