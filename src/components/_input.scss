@@ -72,6 +72,7 @@ $eve-input-font-sizes: (
 
     .eve-button {
         border-radius: 0;
+        flex-shrink: 0;
     }
 
     &.eve-input-control-icon {

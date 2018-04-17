@@ -410,7 +410,8 @@ p {
 .eve-input-control {
   display: flex; }
   .eve-input-control .eve-button {
-    border-radius: 0; }
+    border-radius: 0;
+    flex-shrink: 0; }
   .eve-input-control.eve-input-control-icon {
     position: relative;
     align-items: center; }
