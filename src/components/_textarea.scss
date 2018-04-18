@@ -31,7 +31,8 @@ $eve-textarea-border-width: 1px !default;
         border-color: $eve-color-blue;
     }
 
-    &.eve-textarea-disable {
+    &.eve-textarea-disable,
+    &:disabled {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
         color: $eve-color-darkest-silver;

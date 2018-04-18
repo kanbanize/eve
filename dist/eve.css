@@ -401,7 +401,7 @@ p {
     color: #b0bec5; }
   .eve-input:focus {
     border-color: #2196f3; }
-  .eve-input.eve-input-disable {
+  .eve-input.eve-input-disable, .eve-input:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
@@ -463,7 +463,7 @@ p {
     color: #b0bec5; }
   .eve-textarea:focus {
     border-color: #2196f3; }
-  .eve-textarea.eve-textarea-disable {
+  .eve-textarea.eve-textarea-disable, .eve-textarea:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
