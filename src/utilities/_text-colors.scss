@@ -2,7 +2,8 @@ $eve-text-colors: (
     primary: $eve-color-blue,
     danger: $eve-color-red,
     warning: $eve-color-orange,
-    success: $eve-color-green
+    success: $eve-color-green,
+    mute: $eve-color-darkest-silver
 ) !default;
 
 @each $eve-text-color in map-keys($eve-text-colors) {
