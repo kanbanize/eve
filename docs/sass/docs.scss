@@ -116,15 +116,13 @@ a {
 .eve-flex {
     background: #eceff1;
 
-    @for $i from 1 through 12 {
-        .eve-flex-cell-#{$i} {
-            background: #263238;
-            color: #fff;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .eve-flex-cell {
+        background: #263238;
+        color: #fff;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

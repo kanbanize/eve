@@ -14,17 +14,29 @@ $eve-flex-gutters: (
     large: $eve-spacing-large,
     x-large: $eve-spacing-x-large
 ) !default;
+$eve-flex-aligns: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+    baseline: baseline
+) !default;
+$eve-flex-justifies: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly
+) !default;
 
 .eve-flex {
     display: flex;
     flex-wrap: wrap;
 
-    &.eve-flex-vertical-center {
-        align-items: center;
-    }
-
-    &.eve-flex-horizontal-center {
-        justify-content: center;
+    .eve-flex-cell {
+        flex: 1 0 auto;
+        max-width: 100%;
     }
 
     @each $eve-flex-margin in map-keys($eve-flex-margins) {
@@ -35,35 +47,41 @@ $eve-flex-gutters: (
 
     @each $eve-flex-gutter in map-keys($eve-flex-gutters) {
         &.eve-flex-gutter-#{$eve-flex-gutter} {
-            @for $i from 1 through 12 {
-                .eve-flex-cell-#{$i} {
-                    &:not(:last-child) {
-                        $gutter-size: map-get($eve-flex-gutters, $eve-flex-gutter);
-
-                        margin-right: $gutter-size;
-                        width: calc(#{percentage($i / 12)} - #{$gutter-size});
-                    }
+            .eve-flex-cell {
+                &:not(:last-child) {
+                    margin: 0 map-get($eve-flex-gutters, $eve-flex-gutter) 0 0;
                 }
             }
         }
     }
 
-    @for $i from 1 through 12 {
-        .eve-flex-cell-#{$i} {
-            width: percentage($i / 12);
-            max-width: 100%;
-            flex-shrink: 0;
+    @each $eve-flex-align in map-keys($eve-flex-aligns) {
+        &.eve-flex-align-#{$eve-flex-align} {
+            align-items: map-get($eve-flex-aligns, $eve-flex-align);
+        }
+    }
+
+    @each $eve-flex-justify in map-keys($eve-flex-justifies) {
+        &.eve-flex-justify-#{$eve-flex-justify} {
+            justify-content: map-get($eve-flex-justifies, $eve-flex-justify);
         }
     }
 
     @media (max-width: 480px) {
         & {
-            flex-direction: column;
-            flex-wrap: nowrap;
+            flex-flow: column nowrap;
 
-            @for $i from 1 through 12 {
-                .eve-flex-cell-#{$i} {
-                    width: 100%;
+            .eve-flex-cell {
+                flex: 1 1 100%;
+            }
+
+            @each $eve-flex-gutter in map-keys($eve-flex-gutters) {
+                &.eve-flex-gutter-#{$eve-flex-gutter} {
+                    .eve-flex-cell {
+                        &:not(:last-child) {
+                            margin: 0 0 map-get($eve-flex-gutters, $eve-flex-gutter);
+                        }
+                    }
                 }
             }
         }
