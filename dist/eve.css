@@ -1531,7 +1531,7 @@ p {
   display: flex;
   flex-wrap: wrap; }
   .eve-flex .eve-flex-cell {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     max-width: 100%; }
   .eve-flex.eve-flex-margin-x-tiny {
     padding: 4px; }
@@ -1579,6 +1579,30 @@ p {
     justify-content: space-around; }
   .eve-flex.eve-flex-justify-evenly {
     justify-content: space-evenly; }
+  .eve-flex .eve-flex-cell-1 {
+    flex: 0 0 8.33333%; }
+  .eve-flex .eve-flex-cell-2 {
+    flex: 0 0 16.66667%; }
+  .eve-flex .eve-flex-cell-3 {
+    flex: 0 0 25%; }
+  .eve-flex .eve-flex-cell-4 {
+    flex: 0 0 33.33333%; }
+  .eve-flex .eve-flex-cell-5 {
+    flex: 0 0 41.66667%; }
+  .eve-flex .eve-flex-cell-6 {
+    flex: 0 0 50%; }
+  .eve-flex .eve-flex-cell-7 {
+    flex: 0 0 58.33333%; }
+  .eve-flex .eve-flex-cell-8 {
+    flex: 0 0 66.66667%; }
+  .eve-flex .eve-flex-cell-9 {
+    flex: 0 0 75%; }
+  .eve-flex .eve-flex-cell-10 {
+    flex: 0 0 83.33333%; }
+  .eve-flex .eve-flex-cell-11 {
+    flex: 0 0 91.66667%; }
+  .eve-flex .eve-flex-cell-12 {
+    flex: 0 0 100%; }
   @media (max-width: 480px) {
     .eve-flex {
       flex-flow: column nowrap; }

@@ -35,7 +35,7 @@ $eve-flex-justifies: (
     flex-wrap: wrap;
 
     .eve-flex-cell {
-        flex: 1 0 auto;
+        flex: 1 1 auto;
         max-width: 100%;
     }
 
@@ -64,6 +64,12 @@ $eve-flex-justifies: (
     @each $eve-flex-justify in map-keys($eve-flex-justifies) {
         &.eve-flex-justify-#{$eve-flex-justify} {
             justify-content: map-get($eve-flex-justifies, $eve-flex-justify);
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .eve-flex-cell-#{$i} {
+            flex: 0 0 percentage($i / 12);
         }
     }
 
