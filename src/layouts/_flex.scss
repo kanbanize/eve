@@ -35,7 +35,7 @@ $eve-flex-justifies: (
     flex-wrap: wrap;
 
     .eve-flex-cell {
-        flex: 1 1 auto;
+        flex: 1;
         max-width: 100%;
     }
 
@@ -69,7 +69,7 @@ $eve-flex-justifies: (
 
     @for $i from 1 through 12 {
         .eve-flex-cell-#{$i} {
-            flex: 0 0 percentage($i / 12);
+            flex: 1 percentage($i / 12);
         }
     }
 
@@ -78,7 +78,7 @@ $eve-flex-justifies: (
             flex-flow: column nowrap;
 
             .eve-flex-cell {
-                flex: 1 1 100%;
+                flex: 1 100%;
             }
 
             @each $eve-flex-gutter in map-keys($eve-flex-gutters) {
