@@ -1254,6 +1254,10 @@ p {
         .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-dropdown-list-item-icon i {
           font-size: 18px;
           color: #b0bec5; }
+        .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-dropdown-list-item-icon svg {
+          width: 18px;
+          height: 18px;
+          fill: #b0bec5; }
       .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item .eve-avatar {
         margin-right: 8px; }
       .eve-dropdown .eve-dropdown-list .eve-dropdown-list-item.eve-dropdown-list-item-active {

@@ -54,6 +54,12 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
                     font-size: $eve-dropdown-list-item-icon-size;
                     color: $eve-color-darker-silver;
                 }
+
+                svg {
+                    width: $eve-dropdown-list-item-icon-size;
+                    height: $eve-dropdown-list-item-icon-size;
+                    fill: $eve-color-darker-silver;
+                }
             }
 
             .eve-avatar {
