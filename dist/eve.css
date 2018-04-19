@@ -971,7 +971,6 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
   width: 18px;
   height: 18px;
   vertical-align: middle; }
@@ -983,7 +982,7 @@ p {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit;
+    cursor: pointer;
     margin: 0; }
     .eve-radio input[type='radio']:checked ~ .eve-radio-mark {
       background: #4caf50;
@@ -991,11 +990,12 @@ p {
       .eve-radio input[type='radio']:checked ~ .eve-radio-mark::after {
         display: block; }
     .eve-radio input[type='radio']:disabled {
-      pointer-events: none; }
+      cursor: default; }
       .eve-radio input[type='radio']:disabled ~ .eve-radio-mark {
-        background: #b0bec5;
-        border-color: #b0bec5; }
-        .eve-radio input[type='radio']:disabled ~ .eve-radio-mark::after {
+        border-color: #cfd8dc; }
+      .eve-radio input[type='radio']:disabled:checked ~ .eve-radio-mark {
+        background: #cfd8dc; }
+        .eve-radio input[type='radio']:disabled:checked ~ .eve-radio-mark::after {
           display: block; }
   .eve-radio .eve-radio-mark {
     background: #fff;

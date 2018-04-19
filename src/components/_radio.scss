@@ -7,7 +7,6 @@ $eve-radio-mark-border-radius: 50% !default;
     align-items: center;
     justify-content: center;
     position: relative;
-    cursor: pointer;
     width: $eve-radio-size;
     height: $eve-radio-size;
     vertical-align: middle;
@@ -21,7 +20,7 @@ $eve-radio-mark-border-radius: 50% !default;
             height: 100%;
             padding: 0;
             opacity: 0;
-            cursor: inherit;
+            cursor: pointer;
             margin: 0;
 
             &:checked ~ .eve-radio-mark {
@@ -33,16 +32,20 @@ $eve-radio-mark-border-radius: 50% !default;
                 }
             }
 
-            // TODO: Remove cursor: pointer;
             &:disabled {
-                pointer-events: none;
+                cursor: default;
 
                 & ~ .eve-radio-mark {
-                    background: $eve-color-darker-silver;
-                    border-color: $eve-color-darker-silver;
+                    border-color: $eve-color-dark-silver;
+                }
 
-                    &::after {
-                        display: block;
+                &:checked {
+                    & ~ .eve-radio-mark {
+                        background: $eve-color-dark-silver;
+
+                        &::after {
+                            display: block;
+                        }
                     }
                 }
             }
