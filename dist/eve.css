@@ -897,7 +897,6 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
   width: 18px;
   height: 18px;
   vertical-align: middle; }
@@ -909,7 +908,7 @@ p {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit;
+    cursor: pointer;
     margin: 0; }
     .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark {
       background: #4caf50;
@@ -917,11 +916,12 @@ p {
       .eve-checkbox input[type='checkbox']:checked ~ .eve-checkbox-mark::after {
         display: block; }
     .eve-checkbox input[type='checkbox']:disabled {
-      pointer-events: none; }
+      cursor: default; }
       .eve-checkbox input[type='checkbox']:disabled ~ .eve-checkbox-mark {
-        background: #b0bec5;
-        border-color: #b0bec5; }
-        .eve-checkbox input[type='checkbox']:disabled ~ .eve-checkbox-mark::after {
+        border-color: #cfd8dc; }
+      .eve-checkbox input[type='checkbox']:disabled:checked ~ .eve-checkbox-mark {
+        background: #cfd8dc; }
+        .eve-checkbox input[type='checkbox']:disabled:checked ~ .eve-checkbox-mark::after {
           display: block; }
   .eve-checkbox .eve-checkbox-mark {
     background: #fff;
