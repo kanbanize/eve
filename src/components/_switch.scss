@@ -7,7 +7,6 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     align-items: center;
     justify-content: center;
     position: relative;
-    cursor: pointer;
     width: $eve-switch-width;
     height: $eve-switch-height;
     vertical-align: middle;
@@ -21,7 +20,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             height: 100%;
             padding: 0;
             opacity: 0;
-            cursor: inherit;
+            cursor: pointer;
             margin: 0;
 
             &:checked ~ .eve-switch-mark {
@@ -32,10 +31,10 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
             }
 
             &:disabled {
-                pointer-events: none;
+                cursor: default;
 
                 & ~ .eve-switch-mark {
-                    background: $eve-color-darker-silver;
+                    background: $eve-color-dark-silver;
 
                     &::after {
                         background: $eve-color-white;

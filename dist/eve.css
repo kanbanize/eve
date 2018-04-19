@@ -1039,7 +1039,6 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  cursor: pointer;
   width: 32px;
   height: 18px;
   vertical-align: middle; }
@@ -1051,15 +1050,15 @@ p {
     height: 100%;
     padding: 0;
     opacity: 0;
-    cursor: inherit;
+    cursor: pointer;
     margin: 0; }
     .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
       background: #4caf50;
       left: 16px; }
     .eve-switch input[type='checkbox']:disabled {
-      pointer-events: none; }
+      cursor: default; }
       .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark {
-        background: #b0bec5; }
+        background: #cfd8dc; }
         .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark::after {
           background: #fff; }
   .eve-switch .eve-switch-mark {
