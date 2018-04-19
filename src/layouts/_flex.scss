@@ -1,3 +1,4 @@
+$eve-flex-cells-count: 12 !default;
 $eve-flex-margins: (
     x-tiny: $eve-spacing-x-tiny,
     tiny: $eve-spacing-tiny,
@@ -67,9 +68,9 @@ $eve-flex-justifies: (
         }
     }
 
-    @for $i from 1 through 12 {
+    @for $i from 1 through $eve-flex-cells-count {
         .eve-flex-cell-#{$i} {
-            flex: 1 percentage($i / 12);
+            flex: 1 percentage($i / $eve-flex-cells-count);
         }
     }
 
