@@ -33,7 +33,7 @@ $eve-flex-justifies: (
 
 .eve-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     .eve-flex-cell {
         flex: 1;
@@ -76,7 +76,7 @@ $eve-flex-justifies: (
 
     @media (max-width: 480px) {
         & {
-            flex-flow: column nowrap;
+            flex-direction: column;
 
             .eve-flex-cell {
                 flex: 1 100%;

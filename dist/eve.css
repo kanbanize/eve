@@ -1528,7 +1528,7 @@ p {
 
 .eve-flex {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap; }
   .eve-flex .eve-flex-cell {
     flex: 1;
     max-width: 100%; }
@@ -1604,7 +1604,7 @@ p {
     flex: 1 100%; }
   @media (max-width: 480px) {
     .eve-flex {
-      flex-flow: column nowrap; }
+      flex-direction: column; }
       .eve-flex .eve-flex-cell {
         flex: 1 100%; }
       .eve-flex.eve-flex-gutter-x-tiny .eve-flex-cell:not(:last-child) {
