@@ -1154,10 +1154,8 @@ p {
     margin: 0 16px;
     height: 48px;
     line-height: 48px;
-    color: #607d8b;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 600; }
+    color: #333;
+    cursor: pointer; }
     .eve-navigation .eve-navigation-tab a {
       text-decoration: none;
       color: inherit; }
@@ -1165,20 +1163,40 @@ p {
       color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
       color: #2196f3;
-      position: relative; }
+      position: relative;
+      font-weight: 600; }
       .eve-navigation .eve-navigation-tab.eve-navigation-tab-active::after {
         content: '';
         height: 4px;
         background: #2196f3;
         position: absolute;
         left: 0;
-        bottom: -1px;
+        bottom: 0;
         right: 0; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-disable {
       color: #b0bec5;
       pointer-events: none; }
       .eve-navigation .eve-navigation-tab.eve-navigation-tab-disable::after {
         background: #b0bec5; }
+  .eve-navigation.eve-navigation-vertical {
+    flex-direction: column;
+    border: 0; }
+    .eve-navigation.eve-navigation-vertical .eve-navigation-tab {
+      margin: 0;
+      padding: 0 24px; }
+      .eve-navigation.eve-navigation-vertical .eve-navigation-tab:hover {
+        background: rgba(236, 239, 241, 0.5);
+        color: inherit; }
+      .eve-navigation.eve-navigation-vertical .eve-navigation-tab.eve-navigation-tab-active {
+        background: #eceff1;
+        color: inherit; }
+        .eve-navigation.eve-navigation-vertical .eve-navigation-tab.eve-navigation-tab-active::after {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 4px;
+          height: auto;
+          right: auto; }
 
 .eve-chip {
   display: inline-flex;

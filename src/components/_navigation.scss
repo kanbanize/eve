@@ -14,10 +14,8 @@ $eve-navigation-tab-size: 48px !default;
         margin: 0 $eve-spacing-small;
         height: $eve-navigation-tab-size;
         line-height: $eve-navigation-tab-size;
-        color: $eve-color-darkest-silver;
-        text-transform: uppercase;
+        color: $eve-color-grey-black;
         cursor: pointer;
-        font-weight: 600;
 
         a {
             text-decoration: none;
@@ -31,6 +29,7 @@ $eve-navigation-tab-size: 48px !default;
         &.eve-navigation-tab-active {
             color: $eve-color-blue;
             position: relative;
+            font-weight: 600;
 
             &::after {
                 content: '';
@@ -38,7 +37,7 @@ $eve-navigation-tab-size: 48px !default;
                 background: $eve-color-blue;
                 position: absolute;
                 left: 0;
-                bottom: -1px;
+                bottom: 0;
                 right: 0;
             }
         }
@@ -49,6 +48,35 @@ $eve-navigation-tab-size: 48px !default;
 
             &::after {
                 background: $eve-color-darker-silver;
+            }
+        }
+    }
+
+    &.eve-navigation-vertical {
+        flex-direction: column;
+        border: 0;
+
+        .eve-navigation-tab {
+            margin: 0;
+            padding: 0 $eve-spacing-normal;
+
+            &:hover {
+                background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
+                color: inherit;
+            }
+
+            &.eve-navigation-tab-active {
+                background: $eve-color-bright-silver;
+                color: inherit;
+
+                &::after {
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 4px;
+                    height: auto;
+                    right: auto;
+                }
             }
         }
     }
