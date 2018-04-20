@@ -1163,8 +1163,7 @@ p {
       color: #2196f3; }
     .eve-navigation .eve-navigation-tab.eve-navigation-tab-active {
       color: #2196f3;
-      position: relative;
-      font-weight: 600; }
+      position: relative; }
       .eve-navigation .eve-navigation-tab.eve-navigation-tab-active::after {
         content: '';
         height: 4px;

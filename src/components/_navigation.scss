@@ -29,7 +29,6 @@ $eve-navigation-tab-size: 48px !default;
         &.eve-navigation-tab-active {
             color: $eve-color-blue;
             position: relative;
-            font-weight: 600;
 
             &::after {
                 content: '';
