@@ -1653,6 +1653,12 @@ p {
 .eve-color-mute {
   color: #607d8b; }
 
+.eve-cursor-default {
+  cursor: default; }
+
+.eve-cursor-pointer {
+  cursor: pointer; }
+
 .eve-display-none {
   display: none; }
 

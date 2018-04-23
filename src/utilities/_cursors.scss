@@ -1,0 +1,10 @@
+$eve-cursors: (
+    default,
+    pointer
+) !default;
+
+@each $eve-cursor in $eve-cursors {
+    .eve-cursor-#{$eve-cursor} {
+        cursor: $eve-cursor;
+    }
+}
