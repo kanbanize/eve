@@ -1757,3 +1757,27 @@ p {
 
 .eve-spacing-left-x-large {
   margin-left: 64px; }
+
+.eve-text-lowercase {
+  text-transform: lowercase; }
+
+.eve-text-uppercase {
+  text-transform: uppercase; }
+
+.eve-text-capitalize {
+  text-transform: capitalize; }
+
+.eve-text-left {
+  text-align: left; }
+
+.eve-text-center {
+  text-align: center; }
+
+.eve-text-right {
+  text-align: right; }
+
+.eve-text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal; }

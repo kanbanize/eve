@@ -1,0 +1,29 @@
+$eve-text-transforms: (
+    lowercase,
+    uppercase,
+    capitalize
+) !default;
+$eve-text-alignments: (
+    left,
+    center,
+    right
+) !default;
+
+@each $eve-text-transform in $eve-text-transforms {
+    .eve-text-#{$eve-text-transform} {
+        text-transform: $eve-text-transform;
+    }
+}
+
+@each $eve-text-alignment in $eve-text-alignments {
+    .eve-text-#{$eve-text-alignment} {
+        text-align: $eve-text-alignment;
+    }
+}
+
+.eve-text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+}
