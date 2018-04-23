@@ -1,6 +1,18 @@
 // sass-lint:disable no-color-literals,no-vendor-prefixes
 @charset 'utf-8';
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cfd8dc;
+}
+
 html,
 body {
     height: 100%;
