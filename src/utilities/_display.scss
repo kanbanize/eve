@@ -1,9 +1,7 @@
 $eve-displays: (
     none,
     inline-block,
-    block,
-    inline-flex,
-    flex
+    block
 ) !default;
 
 @each $eve-display in $eve-displays {

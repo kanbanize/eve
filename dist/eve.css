@@ -1662,12 +1662,6 @@ p {
 .eve-display-block {
   display: block; }
 
-.eve-display-inline-flex {
-  display: inline-flex; }
-
-.eve-display-flex {
-  display: flex; }
-
 .eve-spacing-x-tiny {
   margin: 4px; }
 
