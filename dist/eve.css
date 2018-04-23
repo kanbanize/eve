@@ -1121,7 +1121,8 @@ p {
   justify-content: space-between;
   padding: 8px;
   color: #333;
-  font-size: 12px; }
+  font-size: 12px;
+  line-height: 20px; }
   .eve-feedback.eve-feedback-success {
     background: rgba(76, 175, 80, 0.2); }
   .eve-feedback.eve-feedback-warning {
