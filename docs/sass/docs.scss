@@ -105,11 +105,20 @@ a {
 .eve-grid {
     background: #eceff1;
 
-    @for $i from 1 through 12 {
-        .eve-grid-cell-#{$i} {
-            background: #263238;
-            height: 100px;
-        }
+    .eve-grid-cell-1,
+    .eve-grid-cell-2,
+    .eve-grid-cell-3,
+    .eve-grid-cell-4,
+    .eve-grid-cell-5,
+    .eve-grid-cell-6,
+    .eve-grid-cell-7,
+    .eve-grid-cell-8,
+    .eve-grid-cell-9,
+    .eve-grid-cell-10,
+    .eve-grid-cell-11,
+    .eve-grid-cell-12 {
+        background: #263238;
+        height: 100px;
     }
 }
 
@@ -124,6 +133,45 @@ a {
         align-items: center;
         justify-content: center;
     }
+}
+
+.eve-spacing-x-tiny,
+.eve-spacing-top-x-tiny,
+.eve-spacing-right-x-tiny,
+.eve-spacing-bottom-x-tiny,
+.eve-spacing-left-x-tiny,
+.eve-spacing-tiny,
+.eve-spacing-top-tiny,
+.eve-spacing-right-tiny,
+.eve-spacing-bottom-tiny,
+.eve-spacing-left-tiny,
+.eve-spacing-small,
+.eve-spacing-top-small,
+.eve-spacing-right-small,
+.eve-spacing-bottom-small,
+.eve-spacing-left-small,
+.eve-spacing-normal,
+.eve-spacing-top-normal,
+.eve-spacing-right-normal,
+.eve-spacing-bottom-normal,
+.eve-spacing-left-normal,
+.eve-spacing-large,
+.eve-spacing-top-large,
+.eve-spacing-right-large,
+.eve-spacing-bottom-large,
+.eve-spacing-left-large,
+.eve-spacing-x-large,
+.eve-spacing-top-x-large,
+.eve-spacing-right-x-large,
+.eve-spacing-bottom-x-large,
+.eve-spacing-left-x-large {
+    background: #eceff1;
+    border: 1px dotted #2196f3;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 @import 'foundation-color';

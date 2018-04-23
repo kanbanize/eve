@@ -1652,3 +1652,93 @@ p {
 
 .eve-color-mute {
   color: #607d8b; }
+
+.eve-spacing-x-tiny {
+  margin: 4px; }
+
+.eve-spacing-top-x-tiny {
+  margin-top: 4px; }
+
+.eve-spacing-right-x-tiny {
+  margin-right: 4px; }
+
+.eve-spacing-bottom-x-tiny {
+  margin-bottom: 4px; }
+
+.eve-spacing-left-x-tiny {
+  margin-left: 4px; }
+
+.eve-spacing-tiny {
+  margin: 8px; }
+
+.eve-spacing-top-tiny {
+  margin-top: 8px; }
+
+.eve-spacing-right-tiny {
+  margin-right: 8px; }
+
+.eve-spacing-bottom-tiny {
+  margin-bottom: 8px; }
+
+.eve-spacing-left-tiny {
+  margin-left: 8px; }
+
+.eve-spacing-small {
+  margin: 16px; }
+
+.eve-spacing-top-small {
+  margin-top: 16px; }
+
+.eve-spacing-right-small {
+  margin-right: 16px; }
+
+.eve-spacing-bottom-small {
+  margin-bottom: 16px; }
+
+.eve-spacing-left-small {
+  margin-left: 16px; }
+
+.eve-spacing-normal {
+  margin: 24px; }
+
+.eve-spacing-top-normal {
+  margin-top: 24px; }
+
+.eve-spacing-right-normal {
+  margin-right: 24px; }
+
+.eve-spacing-bottom-normal {
+  margin-bottom: 24px; }
+
+.eve-spacing-left-normal {
+  margin-left: 24px; }
+
+.eve-spacing-large {
+  margin: 48px; }
+
+.eve-spacing-top-large {
+  margin-top: 48px; }
+
+.eve-spacing-right-large {
+  margin-right: 48px; }
+
+.eve-spacing-bottom-large {
+  margin-bottom: 48px; }
+
+.eve-spacing-left-large {
+  margin-left: 48px; }
+
+.eve-spacing-x-large {
+  margin: 64px; }
+
+.eve-spacing-top-x-large {
+  margin-top: 64px; }
+
+.eve-spacing-right-x-large {
+  margin-right: 64px; }
+
+.eve-spacing-bottom-x-large {
+  margin-bottom: 64px; }
+
+.eve-spacing-left-x-large {
+  margin-left: 64px; }
