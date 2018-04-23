@@ -1,0 +1,13 @@
+$eve-displays: (
+    none,
+    inline-block,
+    block,
+    inline-flex,
+    flex
+) !default;
+
+@each $eve-display in $eve-displays {
+    .eve-display-#{$eve-display} {
+        display: $eve-display;
+    }
+}

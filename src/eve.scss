@@ -4,37 +4,38 @@
 @import 'custom';
 
 // Foundations
-@import 'foundations/typography';
 @import 'foundations/colors';
 @import 'foundations/spacing';
+@import 'foundations/typography';
 
 // Components
-@import 'components/button';
-@import 'components/input';
-@import 'components/textarea';
-@import 'components/select';
 @import 'components/avatar';
-@import 'components/tooltip';
-@import 'components/progress';
-@import 'components/dialog';
-@import 'components/checkbox';
-@import 'components/radio';
-@import 'components/switch';
-@import 'components/list';
-@import 'components/feedback';
-@import 'components/navigation';
-@import 'components/chip';
-@import 'components/dropdown';
 @import 'components/badge';
 @import 'components/breadcrumb';
-@import 'components/table';
+@import 'components/button';
+@import 'components/checkbox';
+@import 'components/chip';
+@import 'components/dialog';
 @import 'components/divider';
+@import 'components/dropdown';
+@import 'components/feedback';
+@import 'components/input';
 @import 'components/label';
+@import 'components/list';
+@import 'components/navigation';
+@import 'components/progress';
+@import 'components/radio';
+@import 'components/select';
+@import 'components/switch';
+@import 'components/table';
+@import 'components/textarea';
+@import 'components/tooltip';
 
 // Layouts
-@import 'layouts/grid';
 @import 'layouts/flex';
+@import 'layouts/grid';
 
 // Utilities
 @import 'utilities/colors';
+@import 'utilities/display';
 @import 'utilities/spacing';

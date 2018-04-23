@@ -7,10 +7,10 @@ $eve-spacings: (
     x-large: $eve-spacing-x-large
 ) !default;
 $eve-sides: (
-    'top',
-    'right',
-    'bottom',
-    'left'
+    top,
+    right,
+    bottom,
+    left
 ) !default;
 
 @each $eve-spacing in map-keys($eve-spacings) {
