@@ -26,6 +26,29 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
+.eve-accordion {
+  font-size: 14px;
+  margin-bottom: 4px; }
+  .eve-accordion > input:checked ~ .eve-accordion-header {
+    background: #2196f3;
+    color: #fff; }
+  .eve-accordion > input:checked ~ .eve-accordion-body {
+    display: block; }
+  .eve-accordion .eve-accordion-header {
+    background: #eceff1;
+    color: #333;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    cursor: pointer; }
+  .eve-accordion .eve-accordion-body {
+    display: none;
+    padding: 8px 16px; }
+
+.eve-accordion-list .eve-accordion:not(:last-child) {
+  margin-bottom: 4px; }
+
 .eve-avatar {
   display: inline-flex;
   justify-content: center;

@@ -1,0 +1,40 @@
+.eve-accordion {
+    font-size: $eve-font-normal;
+    margin-bottom: 4px;
+
+    & > input {
+        &:checked {
+            & ~ .eve-accordion-header {
+                background: $eve-color-blue;
+                color: $eve-color-white;
+            }
+
+            & ~ .eve-accordion-body {
+                display: block;
+            }
+        }
+    }
+
+    .eve-accordion-header {
+        background: $eve-color-bright-silver;
+        color: $eve-color-grey-black;
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 $eve-spacing-small;
+        cursor: pointer;
+    }
+
+    .eve-accordion-body {
+        display: none;
+        padding: $eve-spacing-tiny $eve-spacing-small;
+    }
+}
+
+.eve-accordion-list {
+    .eve-accordion {
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-x-tiny;
+        }
+    }
+}
