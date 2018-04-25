@@ -1,3 +1,4 @@
+// sass-lint:disable no-important
 $eve-cursors: (
     default,
     pointer
@@ -5,6 +6,6 @@ $eve-cursors: (
 
 @each $eve-cursor in $eve-cursors {
     .eve-cursor-#{$eve-cursor} {
-        cursor: $eve-cursor;
+        cursor: $eve-cursor !important;
     }
 }

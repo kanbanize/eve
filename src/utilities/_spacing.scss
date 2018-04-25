@@ -1,3 +1,4 @@
+// sass-lint:disable no-important
 $eve-spacings: (
     x-tiny: $eve-spacing-x-tiny,
     tiny: $eve-spacing-tiny,
@@ -17,19 +18,19 @@ $eve-sides: (
     $spacing: map-get($eve-spacings, $eve-spacing);
 
     &.eve-spacing-#{$eve-spacing} {
-        margin: $spacing;
+        margin: $spacing !important;
     }
 
     @each $eve-side in $eve-sides {
         &.eve-spacing-#{$eve-side}-#{$eve-spacing} {
             @if $eve-side == 'top' {
-                margin-top: $spacing;
+                margin-top: $spacing !important;
             } @else if $eve-side == 'right' {
-                margin-right: $spacing;
+                margin-right: $spacing !important;
             } @else if $eve-side == 'bottom' {
-                margin-bottom: $spacing;
+                margin-bottom: $spacing !important;
             } @else if $eve-side == 'left' {
-                margin-left: $spacing;
+                margin-left: $spacing !important;
             }
         }
     }

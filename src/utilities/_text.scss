@@ -1,3 +1,4 @@
+// sass-lint:disable no-important
 $eve-text-transforms: (
     lowercase,
     uppercase,
@@ -11,13 +12,13 @@ $eve-text-alignments: (
 
 @each $eve-text-transform in $eve-text-transforms {
     .eve-text-#{$eve-text-transform} {
-        text-transform: $eve-text-transform;
+        text-transform: $eve-text-transform !important;
     }
 }
 
 @each $eve-text-alignment in $eve-text-alignments {
     .eve-text-#{$eve-text-alignment} {
-        text-align: $eve-text-alignment;
+        text-align: $eve-text-alignment !important;
     }
 }
 

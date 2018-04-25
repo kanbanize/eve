@@ -1,3 +1,4 @@
+// sass-lint:disable no-important
 $eve-displays: (
     none,
     inline-block,
@@ -6,6 +7,6 @@ $eve-displays: (
 
 @each $eve-display in $eve-displays {
     .eve-display-#{$eve-display} {
-        display: $eve-display;
+        display: $eve-display !important;
     }
 }

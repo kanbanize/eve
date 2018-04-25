@@ -1,3 +1,4 @@
+// sass-lint:disable no-important
 $eve-text-colors: (
     primary: $eve-color-blue,
     danger: $eve-color-red,
@@ -9,6 +10,6 @@ $eve-text-colors: (
 
 @each $eve-text-color in map-keys($eve-text-colors) {
     .eve-color-#{$eve-text-color} {
-        color: map-get($eve-text-colors, $eve-text-color);
+        color: map-get($eve-text-colors, $eve-text-color) !important;
     }
 }
