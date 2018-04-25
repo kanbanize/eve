@@ -1,3 +1,5 @@
+$eve-accordion-height: 32px !default;
+
 .eve-accordion {
     font-size: $eve-font-normal;
 
@@ -18,8 +20,8 @@
         background: $eve-color-bright-silver;
         color: $eve-color-grey-black;
         display: block;
-        height: 32px;
-        line-height: 32px;
+        height: $eve-accordion-height;
+        line-height: $eve-accordion-height;
         padding: 0 $eve-spacing-small;
         cursor: pointer;
     }
