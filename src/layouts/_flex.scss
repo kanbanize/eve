@@ -69,7 +69,10 @@ $eve-flex-justifies: (
 
     @for $i from 1 through $eve-flex-cells-count {
         .eve-flex-cell-#{$i} {
-            flex: 1 percentage($i / $eve-flex-cells-count);
+            $width: percentage($i / $eve-flex-cells-count);
+
+            flex: 1 $width;
+            max-width: $width;
         }
     }
 

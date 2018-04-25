@@ -1550,29 +1550,41 @@ p {
   .eve-flex.eve-flex-justify-around {
     justify-content: space-around; }
   .eve-flex .eve-flex-cell-1 {
-    flex: 1 8.33333%; }
+    flex: 1 8.33333%;
+    max-width: 8.33333%; }
   .eve-flex .eve-flex-cell-2 {
-    flex: 1 16.66667%; }
+    flex: 1 16.66667%;
+    max-width: 16.66667%; }
   .eve-flex .eve-flex-cell-3 {
-    flex: 1 25%; }
+    flex: 1 25%;
+    max-width: 25%; }
   .eve-flex .eve-flex-cell-4 {
-    flex: 1 33.33333%; }
+    flex: 1 33.33333%;
+    max-width: 33.33333%; }
   .eve-flex .eve-flex-cell-5 {
-    flex: 1 41.66667%; }
+    flex: 1 41.66667%;
+    max-width: 41.66667%; }
   .eve-flex .eve-flex-cell-6 {
-    flex: 1 50%; }
+    flex: 1 50%;
+    max-width: 50%; }
   .eve-flex .eve-flex-cell-7 {
-    flex: 1 58.33333%; }
+    flex: 1 58.33333%;
+    max-width: 58.33333%; }
   .eve-flex .eve-flex-cell-8 {
-    flex: 1 66.66667%; }
+    flex: 1 66.66667%;
+    max-width: 66.66667%; }
   .eve-flex .eve-flex-cell-9 {
-    flex: 1 75%; }
+    flex: 1 75%;
+    max-width: 75%; }
   .eve-flex .eve-flex-cell-10 {
-    flex: 1 83.33333%; }
+    flex: 1 83.33333%;
+    max-width: 83.33333%; }
   .eve-flex .eve-flex-cell-11 {
-    flex: 1 91.66667%; }
+    flex: 1 91.66667%;
+    max-width: 91.66667%; }
   .eve-flex .eve-flex-cell-12 {
-    flex: 1 100%; }
+    flex: 1 100%;
+    max-width: 100%; }
   @media (max-width: 480px) {
     .eve-flex {
       flex-direction: column; }
