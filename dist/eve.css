@@ -1463,24 +1463,18 @@ p {
     pointer-events: none;
     position: absolute;
     text-transform: none;
-    transition: opacity 150ms ease, visibility 150ms ease, -webkit-transform 150ms ease;
-    transition: opacity 150ms ease, visibility 150ms ease, transform 150ms ease;
-    transition: opacity 150ms ease, visibility 150ms ease, transform 150ms ease, -webkit-transform 150ms ease;
+    transition: opacity 150ms ease, visibility 150ms ease;
     visibility: hidden;
     white-space: pre;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 24px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
     font-family: sans-serif;
     font-weight: normal; }
   .eve-tooltip:hover::after {
     opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    visibility: visible; }
   .eve-tooltip.eve-tooltip-top::after {
     bottom: calc(100% + 8px);
     left: 50%;

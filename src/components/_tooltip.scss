@@ -16,14 +16,13 @@ $eve-tooltip-background-color: #263238 !default;
         pointer-events: none;
         position: absolute;
         text-transform: none;
-        transition: opacity 150ms ease, visibility 150ms ease, transform 150ms ease;
+        transition: opacity 150ms ease, visibility 150ms ease;
         visibility: hidden;
         white-space: pre;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         height: $eve-tooltip-height;
-        transform: scale(.9);
         font-family: sans-serif;
         font-weight: normal;
     }
@@ -32,7 +31,6 @@ $eve-tooltip-background-color: #263238 !default;
         &::after {
             opacity: 1;
             visibility: visible;
-            transform: scale(1);
         }
     }
 
