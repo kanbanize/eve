@@ -1,8 +1,8 @@
-# [Eve](https://hpivanov.github.io/eve)
+# [Eve](https://kanbanize.github.io/eve)
 
 **A minimalist CSS framework.**
 
-[![Build Status](https://travis-ci.org/hpivanov/eve.svg?branch=master)](https://travis-ci.org/hpivanov/eve)
+[![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 
 ## Installation
 
@@ -28,7 +28,7 @@ yarn add evecss
 
 ### Manually
 
-Download the compiled and minified [Eve](https://github.com/hpivanov/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
+Download the compiled and minified [Eve](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
 
 ```html
 <link rel="stylesheet" href="eve.min.css">

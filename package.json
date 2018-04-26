@@ -4,7 +4,7 @@
   "description": "A minimalist CSS framework.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hpivanov/eve.git"
+    "url": "git+https://github.com/Kanbanize/eve.git"
   },
   "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
   "license": "MIT",
@@ -17,9 +17,9 @@
     "grid"
   ],
   "bugs": {
-    "url": "https://github.com/hpivanov/eve/issues"
+    "url": "https://github.com/kanbanize/eve/issues"
   },
-  "homepage": "https://hpivanov.github.io/eve/",
+  "homepage": "https://kanbanize.github.io/eve/",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "gulp": "^3.9.1",
