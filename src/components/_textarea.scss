@@ -18,6 +18,7 @@ $eve-textarea-border-width: 1px !default;
     font-size: $eve-font-normal;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+    -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
     line-height: $eve-textarea-line-height;
     box-sizing: border-box;

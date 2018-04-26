@@ -29,6 +29,7 @@ $eve-select-arrow-border-width: 1px !default;
 
     select {
         -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+        -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
         outline: none;
         font-family: inherit;
         font-size: $eve-font-normal;

@@ -890,6 +890,7 @@ p {
   max-width: 100%;
   vertical-align: middle;
   -webkit-appearance: none;
+  -moz-appearance: none;
   font-family: inherit;
   box-sizing: border-box; }
   .eve-input.eve-input-small {
@@ -1276,6 +1277,7 @@ p {
     box-sizing: border-box; }
   .eve-select select {
     -webkit-appearance: none;
+    -moz-appearance: none;
     outline: none;
     font-family: inherit;
     font-size: 14px;
@@ -1426,6 +1428,7 @@ p {
   font-size: 14px;
   color: #333;
   -webkit-appearance: none;
+  -moz-appearance: none;
   font-family: inherit;
   line-height: 20px;
   box-sizing: border-box; }
