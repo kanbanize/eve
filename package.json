@@ -4,7 +4,7 @@
   "description": "A minimalist CSS framework.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kanbanize/eve.git"
+    "url": "git+https://github.com/kanbanize/eve.git"
   },
   "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
   "license": "MIT",
