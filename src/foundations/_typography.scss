@@ -4,38 +4,36 @@ $eve-font-normal: 14px !default;
 $eve-font-large: 16px !default;
 $eve-font-x-large: 20px !default;
 $eve-font-huge: 48px !default;
+$eve-heading-font-sizes: (
+    h1: 32px,
+    h2: 24px,
+    h3: 20px,
+    h4: 18px,
+    h5: 16px,
+    h6: 12px
+) !default;
+$eve-heading-line-heights: (
+    h1: 40px,
+    h2: 32px,
+    h3: 28px,
+    h4: 28px,
+    h5: 24px,
+    h6: 18px
+) !default;
 
-h1 {
-    font-size: 32px;
-    line-height: 40px;
+@for $i from 1 through 6 {
+    .eve-heading-#{$i} {
+        $heading: 'h#{$i}';
+
+        font-size: map-get($eve-heading-font-sizes, $heading);
+        line-height: map-get($eve-heading-line-heights, $heading);
+        margin: 0;
+        font-weight: normal;
+    }
 }
 
-h2 {
-    font-size: 24px;
-    line-height: 32px;
-}
-
-h3 {
-    font-size: 20px;
-    line-height: 28px;
-}
-
-h4 {
-    font-size: 18px;
-    line-height: 28px;
-}
-
-h5 {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-h6 {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-p {
+.eve-paragraph {
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
 }

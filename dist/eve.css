@@ -1,30 +1,43 @@
-h1 {
+.eve-heading-1 {
   font-size: 32px;
-  line-height: 40px; }
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal; }
 
-h2 {
+.eve-heading-2 {
   font-size: 24px;
-  line-height: 32px; }
+  line-height: 32px;
+  margin: 0;
+  font-weight: normal; }
 
-h3 {
+.eve-heading-3 {
   font-size: 20px;
-  line-height: 28px; }
+  line-height: 28px;
+  margin: 0;
+  font-weight: normal; }
 
-h4 {
+.eve-heading-4 {
   font-size: 18px;
-  line-height: 28px; }
+  line-height: 28px;
+  margin: 0;
+  font-weight: normal; }
 
-h5 {
+.eve-heading-5 {
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 0;
+  font-weight: normal; }
 
-h6 {
+.eve-heading-6 {
   font-size: 12px;
-  line-height: 18px; }
+  line-height: 18px;
+  margin: 0;
+  font-weight: normal; }
 
-p {
+.eve-paragraph {
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+  margin: 0; }
 
 .eve-accordion {
   font-size: 14px; }
