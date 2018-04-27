@@ -20,6 +20,12 @@ npm install evecss
 yarn add evecss
 ```
 
+### jsDelivr
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evecss/dist/eve.min.css">
+```
+
 ### Unpkg
 
 ```html
