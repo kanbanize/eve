@@ -17,7 +17,6 @@ $eve-table-filter-height: 56px !default;
 
             th {
                 height: $eve-table-th-height;
-                line-height: $eve-table-th-height;
                 font-weight: normal;
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
@@ -29,7 +28,6 @@ $eve-table-filter-height: 56px !default;
     tbody {
         tr {
             height: $eve-table-tr-height;
-            line-height: $eve-table-tr-height;
 
             &:not(:last-child) {
                 border-bottom: 1px solid $eve-color-dark-silver;
