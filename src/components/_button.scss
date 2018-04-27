@@ -136,20 +136,6 @@ $eve-button-font-sizes: (
                 }
             }
 
-            // Text Buttons
-            &.eve-button-text {
-                color: $color;
-                background: transparent;
-
-                &:hover {
-                    color: $hover-color;
-                }
-
-                &:active {
-                    color: $active-color;
-                }
-            }
-
             // Icon Buttons
             &.eve-button-icon {
                 i,
@@ -190,8 +176,7 @@ $eve-button-font-sizes: (
         background: transparent;
     }
 
-    &.eve-button-invert,
-    &.eve-button-text {
+    &.eve-button-invert {
         text-transform: uppercase;
         border: 0;
         font-weight: 600;
@@ -281,7 +266,6 @@ $eve-button-font-sizes: (
         }
 
         &.eve-button-invert,
-        &.eve-button-text,
         &.eve-button-icon {
             background: transparent;
             color: $eve-color-darker-silver;
