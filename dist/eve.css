@@ -1272,8 +1272,7 @@
   display: block;
   position: relative;
   max-width: 100%;
-  width: 100%;
-  background: #fff; }
+  width: 100%; }
   .eve-select::after {
     content: '';
     position: absolute;
@@ -1295,7 +1294,7 @@
     font-family: inherit;
     font-size: 14px;
     border-radius: 0;
-    background: transparent;
+    background: #fff;
     width: 100%;
     color: #333;
     cursor: pointer;

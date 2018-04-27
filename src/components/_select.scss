@@ -10,7 +10,6 @@ $eve-select-arrow-border-width: 1px !default;
     position: relative;
     max-width: $eve-select-max-width;
     width: $eve-select-width;
-    background: $eve-color-white;
 
     &::after {
         content: '';
@@ -34,7 +33,7 @@ $eve-select-arrow-border-width: 1px !default;
         font-family: inherit;
         font-size: $eve-font-normal;
         border-radius: 0;
-        background: transparent;
+        background: $eve-color-white;
         width: 100%;
         color: $eve-color-grey-black;
         cursor: pointer;
