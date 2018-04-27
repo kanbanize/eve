@@ -1438,28 +1438,23 @@
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
+    content: attr(data-tooltip);
+    opacity: 0;
+    visibility: hidden;
     background: #263238;
     color: #fff;
-    content: attr(data-tooltip);
     font-size: 12px;
-    opacity: 0;
-    padding: 0 16px;
+    padding: 0 8px;
     border-radius: 12px;
     pointer-events: none;
     position: absolute;
     text-transform: none;
     transition: opacity 150ms ease, visibility 150ms ease;
-    visibility: hidden;
     white-space: pre;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 24px;
-    font-family: sans-serif;
+    line-height: 24px;
+    font-family: inherit;
     font-weight: normal; }
-  .eve-tooltip:hover::after {
-    opacity: 1;
-    visibility: visible; }
   .eve-tooltip.eve-tooltip-top::after {
     bottom: calc(100% + 8px);
     left: 50%;
@@ -1476,6 +1471,9 @@
   .eve-tooltip.eve-tooltip-right::after {
     bottom: calc(50% - 12px);
     left: calc(100% + 8px); }
+  .eve-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible; }
 
 .eve-flex {
   display: flex;
