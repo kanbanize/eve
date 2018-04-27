@@ -45,6 +45,10 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
             align-items: center;
             cursor: pointer;
 
+            &:hover {
+                background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
+            }
+
             .eve-dropdown-list-item-icon {
                 margin-right: $eve-spacing-tiny;
                 display: flex;
@@ -68,11 +72,6 @@ $eve-dropdown-strip-list-item-color: rgba($eve-color-bright-silver, .5) !default
 
             &.eve-dropdown-list-item-active {
                 background: $eve-color-bright-silver;
-            }
-
-            &:hover {
-                // TODO: Remove !important;
-                background: $eve-color-bright-silver !important; // sass-lint:disable-line no-important
             }
         }
 
