@@ -1,7 +1,6 @@
-// sass-lint:disable no-color-literals
 .component {
     &:not(:last-child) {
-        margin-bottom: 64px;
+        margin-bottom: 56px;
     }
 
     .component-title {
@@ -17,7 +16,7 @@
 
     .component-content {
         &:not(:last-child) {
-            margin-bottom: 64px;
+            margin-bottom: 56px;
         }
 
         .component-header {
