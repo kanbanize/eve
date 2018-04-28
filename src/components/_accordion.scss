@@ -24,6 +24,9 @@ $eve-accordion-height: 32px !default;
         line-height: $eve-accordion-height;
         padding: 0 $eve-spacing-small;
         cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .eve-accordion-body {

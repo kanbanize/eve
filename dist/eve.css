@@ -158,7 +158,10 @@
     height: 32px;
     line-height: 32px;
     padding: 0 16px;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .eve-accordion .eve-accordion-body {
     display: none;
     padding: 8px 16px; }
