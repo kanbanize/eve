@@ -1010,21 +1010,6 @@
   .eve-input-control .eve-button {
     border-radius: 0;
     flex-shrink: 0; }
-  .eve-input-control.eve-input-control-icon {
-    position: relative;
-    align-items: center; }
-    .eve-input-control.eve-input-control-icon .eve-input {
-      padding-left: 42px; }
-      .eve-input-control.eve-input-control-icon .eve-input:focus ~ .eve-input-icon i {
-        color: #2196f3; }
-    .eve-input-control.eve-input-control-icon .eve-input-icon {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      left: 16px; }
-      .eve-input-control.eve-input-control-icon .eve-input-icon i {
-        font-size: 18px;
-        color: #cfd8dc; }
 
 .eve-input-group {
   display: flex; }
