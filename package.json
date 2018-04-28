@@ -21,7 +21,7 @@
   },
   "homepage": "https://kanbanize.github.io/eve/",
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^8.4.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
