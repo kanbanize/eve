@@ -14,6 +14,8 @@ $eve-badge-box-shadow-spread: 2px !default;
         border-radius: $eve-badge-border-radius;
         box-shadow: 0 0 0 $eve-badge-box-shadow-spread $eve-color-white;
         height: $eve-badge-height;
+        line-height: $eve-badge-height;
+        text-align: center;
         padding: 0 $eve-spacing-x-tiny;
         min-width: $eve-badge-height;
         color: $eve-color-white;
@@ -22,9 +24,6 @@ $eve-badge-box-shadow-spread: 2px !default;
         right: 0;
         transform: translate(50%, -50%);
         font-weight: normal;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
         font-size: $eve-font-normal;
         box-sizing: border-box;
     }
