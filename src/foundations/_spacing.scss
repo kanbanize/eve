@@ -1,6 +1,44 @@
+// sass-lint:disable no-important
 $eve-spacing-x-tiny: 4px !default;
 $eve-spacing-tiny: 8px !default;
 $eve-spacing-small: 16px !default;
 $eve-spacing-normal: 24px !default;
 $eve-spacing-large: 48px !default;
 $eve-spacing-x-large: 64px !default;
+
+$eve-spacings: (
+    x-tiny: $eve-spacing-x-tiny,
+    tiny: $eve-spacing-tiny,
+    small: $eve-spacing-small,
+    normal: $eve-spacing-normal,
+    large: $eve-spacing-large,
+    x-large: $eve-spacing-x-large
+) !default;
+$eve-sides: (
+    top,
+    right,
+    bottom,
+    left
+) !default;
+
+@each $eve-spacing in map-keys($eve-spacings) {
+    $spacing: map-get($eve-spacings, $eve-spacing);
+
+    &.eve-spacing-#{$eve-spacing} {
+        margin: $spacing !important;
+    }
+
+    @each $eve-side in $eve-sides {
+        &.eve-spacing-#{$eve-side}-#{$eve-spacing} {
+            @if $eve-side == 'top' {
+                margin-top: $spacing !important;
+            } @else if $eve-side == 'right' {
+                margin-right: $spacing !important;
+            } @else if $eve-side == 'bottom' {
+                margin-bottom: $spacing !important;
+            } @else if $eve-side == 'left' {
+                margin-left: $spacing !important;
+            }
+        }
+    }
+}

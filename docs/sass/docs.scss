@@ -73,16 +73,11 @@ a {
             text-transform: uppercase;
             font-size: 12px;
             font-weight: bold;
-            cursor: pointer;
         }
 
         .navigation-list {
             &:not(:last-child) {
                 margin-bottom: 24px;
-            }
-
-            &.navigation-list-collapse {
-                display: none;
             }
         }
 
@@ -111,26 +106,6 @@ a {
         height: 100%;
         padding: 48px;
         box-sizing: border-box;
-    }
-}
-
-.eve-grid {
-    background: #eceff1;
-
-    .eve-grid-cell-1,
-    .eve-grid-cell-2,
-    .eve-grid-cell-3,
-    .eve-grid-cell-4,
-    .eve-grid-cell-5,
-    .eve-grid-cell-6,
-    .eve-grid-cell-7,
-    .eve-grid-cell-8,
-    .eve-grid-cell-9,
-    .eve-grid-cell-10,
-    .eve-grid-cell-11,
-    .eve-grid-cell-12 {
-        background: #263238;
-        height: 100px;
     }
 }
 

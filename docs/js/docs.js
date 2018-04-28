@@ -9,10 +9,6 @@
         do {
             if (el === navigation) {
                 return false;
-            } else if (el.classList.contains('navigation-header')) {
-                el.nextElementSibling.classList.toggle('navigation-list-collapse');
-
-                return false;
             } else if (el.classList.contains('navigation-list-item')) {
                 var active = navigation.querySelector('.navigation-list-item.navigation-list-item-active');
 
@@ -37,10 +33,7 @@
 
     function loadTemplate(path) {
         if (templatesCache.hasOwnProperty(path)) {
-            if (
-                (path === 'getting-started' && ['installation', 'code-requirements', 'icons', 'starter-template', 'browser-support'].indexOf(location.hash) > -1) ||
-                (path === 'foundations' && ['typography', 'colors', 'spacing'].indexOf(location.hash) > -1)
-            ) {
+            if (path === 'getting-started' && /installation|browser-support/g.test(location.hash)) {
                 return;
             }
 

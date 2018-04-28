@@ -22,21 +22,7 @@ $eve-feedback-colors: (
         }
     }
 
-    .eve-feedback-action {
-        display: flex;
-        align-items: center;
+    .eve-button {
         margin-left: $eve-spacing-tiny;
-
-        .eve-button {
-            font-size: $eve-font-small;
-            padding: 0;
-            height: initial;
-            line-height: normal;
-            min-width: auto;
-
-            &:not(:first-child) {
-                margin-left: $eve-spacing-tiny;
-            }
-        }
     }
 }
