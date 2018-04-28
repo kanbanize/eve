@@ -46,14 +46,14 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
     .eve-dialog-header {
         font-weight: 600;
-        font-size: $eve-font-x-large;
+        font-size: $eve-font-large;
         margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-content {
         margin-bottom: $eve-spacing-small;
         line-height: 20px;
-        font-size: $eve-font-normal;
+        font-size: $eve-font-small;
     }
 
     .eve-dialog-footer {

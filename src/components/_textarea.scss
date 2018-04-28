@@ -15,7 +15,7 @@ $eve-textarea-border-width: 1px !default;
     width: $eve-textarea-width;
     max-width: $eve-textarea-min-width;
     min-width: $eve-textarea-max-width;
-    font-size: $eve-font-normal;
+    font-size: $eve-font-small;
     color: $eve-color-grey-black;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes

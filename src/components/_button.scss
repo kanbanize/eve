@@ -26,8 +26,8 @@ $eve-button-min-widths: (
     large: 144px
 ) !default;
 $eve-button-font-sizes: (
-    small: $eve-font-small,
-    large: $eve-font-large
+    small: $eve-font-tiny,
+    large: $eve-font-normal
 ) !default;
 
 .eve-button {
@@ -42,7 +42,7 @@ $eve-button-font-sizes: (
     color: $eve-color-white;
     cursor: pointer;
     border-radius: $eve-button-border-radius;
-    font-size: $eve-font-normal;
+    font-size: $eve-font-small;
     outline: none;
     user-select: none;
     vertical-align: middle;

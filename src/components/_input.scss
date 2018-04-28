@@ -12,8 +12,8 @@ $eve-input-paddings: (
     large: $eve-spacing-normal
 ) !default;
 $eve-input-font-sizes: (
-    small: $eve-font-small,
-    large: $eve-font-large
+    small: $eve-font-tiny,
+    large: $eve-font-normal
 ) !default;
 
 .eve-input {
@@ -23,7 +23,7 @@ $eve-input-font-sizes: (
     border: $eve-input-border-width solid $eve-color-dark-silver;
     outline: none;
     padding: 0 $eve-spacing-small;
-    font-size: $eve-font-normal;
+    font-size: $eve-font-small;
     color: $eve-color-grey-black;
     width: $eve-input-width;
     max-width: $eve-input-max-width;

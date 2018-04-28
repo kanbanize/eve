@@ -69,7 +69,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
 .eve-switch-control {
     display: flex;
     align-items: center;
-    font-size: $eve-font-normal;
+    font-size: $eve-font-small;
 
     .eve-switch {
         flex-shrink: 0;

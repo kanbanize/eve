@@ -51,13 +51,13 @@ $eve-avatar-state-border-radius: 50% !default;
             &[data-initial] {
                 &::before {
                     @if $eve-avatar-size == 'x-tiny' {
-                        font-size: $eve-font-tiny;
+                        font-size: $eve-font-x-tiny;
                     } @else if $eve-avatar-size == 'large' {
-                        font-size: $eve-font-large;
+                        font-size: $eve-font-normal;
                     } @else if $eve-avatar-size == 'x-large' {
-                        font-size: $eve-font-huge;
+                        font-size: $eve-font-x-large;
                     } @else {
-                        font-size: $eve-font-small;
+                        font-size: $eve-font-tiny;
                     }
                 }
             }

@@ -8,7 +8,7 @@ $eve-divider-height: 1px !default;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $eve-font-normal;
+    font-size: $eve-font-small;
 
     &::after {
         content: attr(data-content);

@@ -11,7 +11,7 @@ $eve-feedback-colors: (
     justify-content: space-between;
     padding: $eve-spacing-tiny;
     color: $eve-color-grey-black;
-    font-size: $eve-font-small;
+    font-size: $eve-font-tiny;
     line-height: 20px;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {

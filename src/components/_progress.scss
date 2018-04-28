@@ -60,7 +60,7 @@ $eve-progress-oval-size: 48px !default;
     &::after {
         content: attr(data-label);
         margin-left: $eve-spacing-small;
-        font-size: $eve-font-normal;
+        font-size: $eve-font-small;
     }
 
     @keyframes eveProgressOval {

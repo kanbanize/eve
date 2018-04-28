@@ -13,7 +13,7 @@ $eve-chip-padding: $eve-spacing-tiny !default;
     border-radius: $eve-chip-border-radius;
     background: $eve-color-bright-silver;
     padding: 0 $eve-chip-padding;
-    font-size: $eve-font-small;
+    font-size: $eve-font-tiny;
 
     .eve-avatar,
     .eve-chip-icon {
@@ -32,7 +32,7 @@ $eve-chip-padding: $eve-spacing-tiny !default;
         background: $eve-color-blue;
 
         i {
-            font-size: $eve-font-normal;
+            font-size: $eve-font-small;
             color: $eve-color-white;
         }
     }

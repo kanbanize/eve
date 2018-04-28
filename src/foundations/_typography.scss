@@ -1,10 +1,9 @@
-$eve-font-tiny: 10px !default;
-$eve-font-small: 12px !default;
-$eve-font-normal: 14px !default;
-$eve-font-large: 16px !default;
-$eve-font-x-large: 20px !default;
-$eve-font-huge: 48px !default;
-
+$eve-font-x-tiny: 10px !default;
+$eve-font-tiny: 12px !default;
+$eve-font-small: 14px !default;
+$eve-font-normal: 16px !default;
+$eve-font-large: 20px !default;
+$eve-font-x-large: 48px !default;
 $eve-heading-font-sizes: (
     h1: 32px,
     h2: 24px,
@@ -20,6 +19,14 @@ $eve-heading-line-heights: (
     h4: 28px,
     h5: 24px,
     h6: 18px
+) !default;
+$eve-font-sizes: (
+    x-tiny: $eve-font-x-tiny,
+    tiny: $eve-font-tiny,
+    small: $eve-font-small,
+    normal: $eve-font-normal,
+    large: $eve-font-large,
+    x-large: $eve-font-x-large
 ) !default;
 
 @for $i from 1 through 6 {
@@ -37,4 +44,10 @@ $eve-heading-line-heights: (
     font-size: 14px;
     line-height: 20px;
     margin: 0;
+}
+
+@each $eve-font-size in map-keys($eve-font-sizes) {
+    .eve-font-#{$eve-font-size} {
+        font-size: map-get($eve-font-sizes, $eve-font-size);
+    }
 }
