@@ -1,6 +1,6 @@
 # [Eve](https://kanbanize.github.io/eve)
 
-**A minimalist CSS framework.**
+**A simple, minimal css framework**
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 
