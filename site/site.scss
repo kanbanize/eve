@@ -251,7 +251,7 @@ $transition-default: all 300ms ease-in-out;
 .content__details {
     .details__actions {
         a {
-            .js-nightmode-button {
+            &.js-nightmode-button {
                 &:hover {
                     color: #161616;
                 }
