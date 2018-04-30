@@ -1,0 +1,88 @@
+$eve-grid-cells-count: 12 !default;
+$eve-grid-gaps: (
+    x-tiny: $eve-spacing-x-tiny,
+    tiny: $eve-spacing-tiny,
+    small: $eve-spacing-small,
+    normal: $eve-spacing-normal,
+    large: $eve-spacing-large,
+    x-large: $eve-spacing-x-large
+) !default;
+$eve-grid-aligns: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+    baseline: baseline
+) !default;
+$eve-grid-justifies: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around
+) !default;
+
+.eve-grid {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .eve-cell {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    @each $eve-grid-gap in map-keys($eve-grid-gaps) {
+        $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
+
+        &.eve-grid-gap-#{$eve-grid-gap} {
+            margin: -$gap;
+
+            .eve-cell,
+            .eve-cell-1,
+            .eve-cell-2,
+            .eve-cell-3,
+            .eve-cell-4,
+            .eve-cell-5,
+            .eve-cell-6,
+            .eve-cell-7,
+            .eve-cell-8,
+            .eve-cell-9,
+            .eve-cell-10,
+            .eve-cell-11,
+            .eve-cell-12 {
+                padding: $gap;
+            }
+        }
+    }
+
+    @each $eve-grid-align in map-keys($eve-grid-aligns) {
+        &.eve-grid-align-#{$eve-grid-align} {
+            align-items: map-get($eve-grid-aligns, $eve-grid-align);
+        }
+    }
+
+    @each $eve-grid-justify in map-keys($eve-grid-justifies) {
+        &.eve-grid-justify-#{$eve-grid-justify} {
+            justify-content: map-get($eve-grid-justifies, $eve-grid-justify);
+        }
+    }
+
+    @for $i from 1 through $eve-grid-cells-count {
+        .eve-cell-#{$i} {
+            $width: percentage($i / $eve-grid-cells-count);
+
+            flex: 1 $width;
+            max-width: $width;
+        }
+    }
+
+    @media (max-width: 480px) {
+        & {
+            flex-direction: cell;
+
+            .eve-cell {
+                flex: 1 100%;
+            }
+        }
+    }
+}

@@ -8,6 +8,9 @@
 @import 'foundations/spacing';
 @import 'foundations/typography';
 
+// Layouts
+@import 'layouts/grid';
+
 // Components
 @import 'components/accordion';
 @import 'components/avatar';
@@ -31,9 +34,6 @@
 @import 'components/table';
 @import 'components/textarea';
 @import 'components/tooltip';
-
-// Layouts
-@import 'layouts/flex';
 
 // Utilities
 @import 'utilities/cursor';
