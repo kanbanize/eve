@@ -36,6 +36,7 @@ a {
 
     .sidebar {
         background: #2196f3;
+        background-image: linear-gradient(#2196f3 0%, #2156ff 100%);
         width: 64px;
         display: flex;
         flex-direction: column;
@@ -109,16 +110,28 @@ a {
     }
 }
 
-.eve-flex {
-    background: #eceff1;
-
-    .eve-flex-cell {
-        background: #263238;
-        color: #fff;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.eve-grid {
+    .eve-cell,
+    .eve-cell-1,
+    .eve-cell-2,
+    .eve-cell-3,
+    .eve-cell-4,
+    .eve-cell-5,
+    .eve-cell-6,
+    .eve-cell-7,
+    .eve-cell-8,
+    .eve-cell-9,
+    .eve-cell-10,
+    .eve-cell-11,
+    .eve-cell-12 {
+        & > div {
+            background: #eceff1;
+            color: #333;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

@@ -34,5 +34,11 @@
             line-height: 24px;
             font-size: 14px;
         }
+
+        .snippet {
+            &:not(:last-child) {
+                margin-bottom: 56px;
+            }
+        }
     }
 }

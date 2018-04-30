@@ -52,7 +52,7 @@
             }
         };
 
-        xhr.open('GET', 'docs/templates/' + path + '.hbs', true);
+        xhr.open('GET', 'templates/' + path + '.hbs', true);
         xhr.send();
 
         function loadTemplateHtml(html) {

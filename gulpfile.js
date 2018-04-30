@@ -27,6 +27,18 @@ var config = {
             dest: 'docs/dist',
             out: 'docs'
         }
+    },
+    site: {
+        js: {
+            src: ['site/site.js'],
+            dest: 'site/dist',
+            out: 'site'
+        },
+        css: {
+            src: ['site/site.scss'],
+            dest: 'site/dist',
+            out: 'site'
+        }
     }
 };
 
@@ -89,15 +101,46 @@ gulp.task('build-docs-css', function() {
 
 gulp.task('build-docs', ['build-docs-js', 'build-docs-css']);
 
+// Site tasks
+gulp.task('build-site-js', function() {
+    return gulp.src(config.site.js.src)
+        .pipe(gulpif(!process.env.TRAVIS, plumber()))
+        .pipe(uglify())
+        .pipe(concat(config.site.js.out + '.min.js'))
+        .pipe(gulp.dest(config.site.js.dest))
+});
+
+gulp.task('build-site-css', function() {
+    return gulp.src(config.site.css.src)
+        .pipe(gulpif(!process.env.TRAVIS, plumber()))
+        .pipe(sass.sync({
+            outputStyle: 'compressed'
+        }))
+        .pipe(rename({
+            basename: config.site.css.out,
+            suffix: '.min'
+        }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest(config.site.css.dest));
+});
+
+gulp.task('build-site', ['build-site-js', 'build-site-css']);
+
 // Watchers
-gulp.task('watch', ['build', 'build-docs'], function() {
+gulp.task('watch', ['build', 'build-docs', 'build-site'], function() {
     // Eve watcher
     gulp.watch(config.eve.src, ['build']);
 
     // Docs watchers
     gulp.watch(config.docs.js.src, ['build-docs-js']);
     gulp.watch(config.docs.css.src, ['build-docs-css']);
+
+    // Site watchers
+    gulp.watch(config.site.js.src, ['build-site-js']);
+    gulp.watch(config.site.css.src, ['build-site-css']);
 });
 
-// All
-gulp.task('build-all', ['build', 'build-docs']);
+// Build all
+gulp.task('build-all', ['build', 'build-docs', 'build-site']);
