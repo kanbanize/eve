@@ -1,4 +1,3 @@
-// sass-lint:disable no-important
 $eve-color-blue: #2196f3 !default;
 $eve-color-red: #f44336 !default;
 $eve-color-orange: #ff9800 !default;
@@ -11,18 +10,3 @@ $eve-color-darkest-silver: #607d8b !default;
 $eve-color-darker-silver: #b0bec5 !default;
 $eve-color-dark-silver: #cfd8dc !default;
 $eve-color-bright-silver: #eceff1 !default;
-
-$eve-text-colors: (
-    primary: $eve-color-blue,
-    danger: $eve-color-red,
-    warning: $eve-color-orange,
-    success: $eve-color-green,
-    mute: $eve-color-darkest-silver
-) !default;
-
-@each $eve-text-color in map-keys($eve-text-colors) {
-    .eve-color-#{$eve-text-color} {
-        color: map-get($eve-text-colors, $eve-text-color) !important;
-    }
-}
-
