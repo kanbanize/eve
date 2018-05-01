@@ -1,0 +1,12 @@
+.eve-form-group {
+    margin-bottom: $eve-spacing-small;
+
+    .eve-form-label {
+        display: block;
+        margin-bottom: $eve-spacing-tiny;
+    }
+
+    .eve-textarea {
+        resize: none;
+    }
+}
