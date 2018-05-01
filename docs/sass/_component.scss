@@ -1,4 +1,9 @@
 .component {
+    animation-name: eveComponentFadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+
     &:not(:last-child) {
         margin-bottom: 56px;
     }
@@ -39,6 +44,16 @@
             &:not(:last-child) {
                 margin-bottom: 56px;
             }
+        }
+    }
+
+    @keyframes eveComponentFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
         }
     }
 }

@@ -42,20 +42,28 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 48px 0 24px;
+        padding: 48px 0 16px;
         box-sizing: border-box;
+        flex-shrink: 0;
 
-        .sidebar-eve {
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: bold;
-            text-decoration: none;
+        .sidebar-eve-link {
+            svg {
+                fill: #fff;
+            }
         }
 
         .sidebar-github-link {
             display: flex;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background 300ms ease-in-out;
+            background: rgba(255, 255, 255, 0);
 
-            .sidebar-github-icon {
+            &:hover {
+                background: rgba(255, 255, 255, .1);
+            }
+
+            svg {
                 fill: #fff;
             }
         }
@@ -67,6 +75,7 @@ a {
         padding: 48px 0 24px;
         overflow: auto;
         box-sizing: border-box;
+        flex-shrink: 0;
 
         .navigation-header {
             padding: 0 48px;
@@ -89,6 +98,7 @@ a {
             display: block;
             color: #333;
             margin-bottom: 16px;
+            transition: color 300ms ease;
 
             &:hover {
                 color: #2196f3;
