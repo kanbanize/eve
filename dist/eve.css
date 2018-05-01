@@ -39,24 +39,6 @@
   line-height: 20px;
   margin: 0; }
 
-.eve-font-x-tiny {
-  font-size: 10px; }
-
-.eve-font-tiny {
-  font-size: 12px; }
-
-.eve-font-small {
-  font-size: 14px; }
-
-.eve-font-normal {
-  font-size: 16px; }
-
-.eve-font-large {
-  font-size: 20px; }
-
-.eve-font-x-large {
-  font-size: 48px; }
-
 .eve-grid {
   display: flex;
   flex-wrap: nowrap; }
@@ -1762,6 +1744,24 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   word-wrap: normal; }
+
+.eve-text-x-tiny {
+  font-size: 10px; }
+
+.eve-text-tiny {
+  font-size: 12px; }
+
+.eve-text-small {
+  font-size: 14px; }
+
+.eve-text-normal {
+  font-size: 16px; }
+
+.eve-text-large {
+  font-size: 20px; }
+
+.eve-text-x-large {
+  font-size: 48px; }
 
 .eve-color-primary {
   color: #2196f3 !important; }

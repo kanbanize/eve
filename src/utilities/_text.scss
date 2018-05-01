@@ -9,6 +9,14 @@ $eve-text-alignments: (
     center,
     right
 ) !default;
+$eve-text-sizes: (
+    x-tiny: $eve-font-x-tiny,
+    tiny: $eve-font-tiny,
+    small: $eve-font-small,
+    normal: $eve-font-normal,
+    large: $eve-font-large,
+    x-large: $eve-font-x-large
+) !default;
 $eve-text-colors: (
     primary: $eve-color-blue,
     danger: $eve-color-red,
@@ -34,6 +42,12 @@ $eve-text-colors: (
     white-space: nowrap;
     text-overflow: ellipsis;
     word-wrap: normal;
+}
+
+@each $eve-text-size in map-keys($eve-text-sizes) {
+    .eve-text-#{$eve-text-size} {
+        font-size: map-get($eve-text-sizes, $eve-text-size);
+    }
 }
 
 @each $eve-text-color in map-keys($eve-text-colors) {
