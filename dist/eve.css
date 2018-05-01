@@ -1,93 +1,3 @@
-.eve-spacing-x-tiny {
-  margin: 4px !important; }
-
-.eve-spacing-top-x-tiny {
-  margin-top: 4px !important; }
-
-.eve-spacing-right-x-tiny {
-  margin-right: 4px !important; }
-
-.eve-spacing-bottom-x-tiny {
-  margin-bottom: 4px !important; }
-
-.eve-spacing-left-x-tiny {
-  margin-left: 4px !important; }
-
-.eve-spacing-tiny {
-  margin: 8px !important; }
-
-.eve-spacing-top-tiny {
-  margin-top: 8px !important; }
-
-.eve-spacing-right-tiny {
-  margin-right: 8px !important; }
-
-.eve-spacing-bottom-tiny {
-  margin-bottom: 8px !important; }
-
-.eve-spacing-left-tiny {
-  margin-left: 8px !important; }
-
-.eve-spacing-small {
-  margin: 16px !important; }
-
-.eve-spacing-top-small {
-  margin-top: 16px !important; }
-
-.eve-spacing-right-small {
-  margin-right: 16px !important; }
-
-.eve-spacing-bottom-small {
-  margin-bottom: 16px !important; }
-
-.eve-spacing-left-small {
-  margin-left: 16px !important; }
-
-.eve-spacing-normal {
-  margin: 24px !important; }
-
-.eve-spacing-top-normal {
-  margin-top: 24px !important; }
-
-.eve-spacing-right-normal {
-  margin-right: 24px !important; }
-
-.eve-spacing-bottom-normal {
-  margin-bottom: 24px !important; }
-
-.eve-spacing-left-normal {
-  margin-left: 24px !important; }
-
-.eve-spacing-large {
-  margin: 48px !important; }
-
-.eve-spacing-top-large {
-  margin-top: 48px !important; }
-
-.eve-spacing-right-large {
-  margin-right: 48px !important; }
-
-.eve-spacing-bottom-large {
-  margin-bottom: 48px !important; }
-
-.eve-spacing-left-large {
-  margin-left: 48px !important; }
-
-.eve-spacing-x-large {
-  margin: 64px !important; }
-
-.eve-spacing-top-x-large {
-  margin-top: 64px !important; }
-
-.eve-spacing-right-x-large {
-  margin-right: 64px !important; }
-
-.eve-spacing-bottom-x-large {
-  margin-bottom: 64px !important; }
-
-.eve-spacing-left-x-large {
-  margin-left: 64px !important; }
-
 .eve-heading-1 {
   font-size: 32px;
   line-height: 40px;
@@ -1738,6 +1648,96 @@
 
 .eve-display-block {
   display: block !important; }
+
+.eve-gap-x-tiny {
+  margin: 4px !important; }
+
+.eve-gap-top-x-tiny {
+  margin-top: 4px !important; }
+
+.eve-gap-right-x-tiny {
+  margin-right: 4px !important; }
+
+.eve-gap-bottom-x-tiny {
+  margin-bottom: 4px !important; }
+
+.eve-gap-left-x-tiny {
+  margin-left: 4px !important; }
+
+.eve-gap-tiny {
+  margin: 8px !important; }
+
+.eve-gap-top-tiny {
+  margin-top: 8px !important; }
+
+.eve-gap-right-tiny {
+  margin-right: 8px !important; }
+
+.eve-gap-bottom-tiny {
+  margin-bottom: 8px !important; }
+
+.eve-gap-left-tiny {
+  margin-left: 8px !important; }
+
+.eve-gap-small {
+  margin: 16px !important; }
+
+.eve-gap-top-small {
+  margin-top: 16px !important; }
+
+.eve-gap-right-small {
+  margin-right: 16px !important; }
+
+.eve-gap-bottom-small {
+  margin-bottom: 16px !important; }
+
+.eve-gap-left-small {
+  margin-left: 16px !important; }
+
+.eve-gap-normal {
+  margin: 24px !important; }
+
+.eve-gap-top-normal {
+  margin-top: 24px !important; }
+
+.eve-gap-right-normal {
+  margin-right: 24px !important; }
+
+.eve-gap-bottom-normal {
+  margin-bottom: 24px !important; }
+
+.eve-gap-left-normal {
+  margin-left: 24px !important; }
+
+.eve-gap-large {
+  margin: 48px !important; }
+
+.eve-gap-top-large {
+  margin-top: 48px !important; }
+
+.eve-gap-right-large {
+  margin-right: 48px !important; }
+
+.eve-gap-bottom-large {
+  margin-bottom: 48px !important; }
+
+.eve-gap-left-large {
+  margin-left: 48px !important; }
+
+.eve-gap-x-large {
+  margin: 64px !important; }
+
+.eve-gap-top-x-large {
+  margin-top: 64px !important; }
+
+.eve-gap-right-x-large {
+  margin-right: 64px !important; }
+
+.eve-gap-bottom-x-large {
+  margin-bottom: 64px !important; }
+
+.eve-gap-left-x-large {
+  margin-left: 64px !important; }
 
 .eve-text-lowercase {
   text-transform: lowercase !important; }
