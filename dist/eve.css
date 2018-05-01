@@ -1739,21 +1739,6 @@
 .eve-display-block {
   display: block !important; }
 
-.eve-color-primary {
-  color: #2196f3 !important; }
-
-.eve-color-danger {
-  color: #f44336 !important; }
-
-.eve-color-warning {
-  color: #ff9800 !important; }
-
-.eve-color-success {
-  color: #4caf50 !important; }
-
-.eve-color-mute {
-  color: #607d8b !important; }
-
 .eve-text-lowercase {
   text-transform: lowercase !important; }
 
@@ -1777,3 +1762,18 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   word-wrap: normal; }
+
+.eve-color-primary {
+  color: #2196f3 !important; }
+
+.eve-color-danger {
+  color: #f44336 !important; }
+
+.eve-color-warning {
+  color: #ff9800 !important; }
+
+.eve-color-success {
+  color: #4caf50 !important; }
+
+.eve-color-mute {
+  color: #607d8b !important; }

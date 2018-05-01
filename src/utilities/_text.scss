@@ -9,6 +9,13 @@ $eve-text-alignments: (
     center,
     right
 ) !default;
+$eve-text-colors: (
+    primary: $eve-color-blue,
+    danger: $eve-color-red,
+    warning: $eve-color-orange,
+    success: $eve-color-green,
+    mute: $eve-color-darkest-silver
+) !default;
 
 @each $eve-text-transform in $eve-text-transforms {
     .eve-text-#{$eve-text-transform} {
@@ -27,4 +34,10 @@ $eve-text-alignments: (
     white-space: nowrap;
     text-overflow: ellipsis;
     word-wrap: normal;
+}
+
+@each $eve-text-color in map-keys($eve-text-colors) {
+    .eve-color-#{$eve-text-color} {
+        color: map-get($eve-text-colors, $eve-text-color) !important;
+    }
 }
