@@ -51,7 +51,7 @@ $eve-text-colors: (
 }
 
 @each $eve-text-color in map-keys($eve-text-colors) {
-    .eve-color-#{$eve-text-color} {
+    .eve-text-#{$eve-text-color} {
         color: map-get($eve-text-colors, $eve-text-color) !important;
     }
 }

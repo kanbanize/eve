@@ -1763,17 +1763,17 @@
 .eve-text-x-large {
   font-size: 48px; }
 
-.eve-color-primary {
+.eve-text-primary {
   color: #2196f3 !important; }
 
-.eve-color-danger {
+.eve-text-danger {
   color: #f44336 !important; }
 
-.eve-color-warning {
+.eve-text-warning {
   color: #ff9800 !important; }
 
-.eve-color-success {
+.eve-text-success {
   color: #4caf50 !important; }
 
-.eve-color-mute {
+.eve-text-mute {
   color: #607d8b !important; }
