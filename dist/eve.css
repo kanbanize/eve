@@ -322,7 +322,7 @@
     max-width: 100%; }
   @media (max-width: 480px) {
     .eve-grid {
-      flex-direction: cell; }
+      flex-direction: column; }
       .eve-grid .eve-cell {
         flex: 1 100%; } }
 

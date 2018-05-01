@@ -78,7 +78,7 @@ $eve-grid-justifies: (
 
     @media (max-width: 480px) {
         & {
-            flex-direction: cell;
+            flex-direction: column;
 
             .eve-cell {
                 flex: 1 100%;
