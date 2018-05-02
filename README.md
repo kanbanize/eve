@@ -2,7 +2,7 @@
 
 **A simple, minimal css framework**
 
-[![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master&style=flat-square)](https://travis-ci.org/kanbanize/eve)
+[![Build Status](https://travis-ci.org/kanbanize/style-flat--square-eve.svg?branch=master&style=flat-square)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![npm](https://img.shields.io/npm/dm/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![](https://data.jsdelivr.com/v1/package/npm/evecss/badge)](https://www.jsdelivr.com/package/npm/evecss)
