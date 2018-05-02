@@ -3,6 +3,10 @@
 **A simple, minimal css framework**
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/evecss)
+[![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/evecss)
+[![](https://data.jsdelivr.com/v1/package/npm/evecss/badge)](https://www.jsdelivr.com/package/npm/evecss)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
