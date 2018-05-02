@@ -16,6 +16,9 @@ $eve-navigation-tab-size: 48px !default;
         line-height: $eve-navigation-tab-size;
         color: $eve-color-grey-black;
         cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
         a {
             text-decoration: none;

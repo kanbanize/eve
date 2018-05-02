@@ -1360,7 +1360,10 @@
     height: 48px;
     line-height: 48px;
     color: #333;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     .eve-navigation .eve-navigation-tab a {
       text-decoration: none;
       color: inherit; }
