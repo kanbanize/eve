@@ -1,4 +1,5 @@
 $eve-input-height: 36px !default;
+$eve-input-icon-size: 18px !default;
 $eve-input-border-radius: $eve-input-height / 2 !default;
 $eve-input-border-width: 1px !default;
 $eve-input-width: 100% !default;
@@ -74,6 +75,45 @@ $eve-input-font-sizes: (
     .eve-button {
         border-radius: 0;
         flex-shrink: 0;
+    }
+
+    &.eve-input-control-icon {
+        position: relative;
+        align-items: center;
+
+        .eve-input {
+            padding-left: $eve-input-icon-size + $eve-spacing-normal;
+
+            &:focus {
+                & ~ .eve-input-icon {
+                    i {
+                        color: $eve-color-blue;
+                    }
+
+                    svg {
+                        fill: $eve-color-blue;
+                    }
+                }
+            }
+        }
+
+        .eve-input-icon {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: $eve-spacing-small;
+
+            i {
+                font-size: $eve-input-icon-size;
+                color: $eve-color-dark-silver;
+            }
+
+            svg {
+                width: $eve-input-icon-size;
+                height: $eve-input-icon-size;
+                fill: $eve-color-dark-silver;
+            }
+        }
     }
 }
 
