@@ -77,9 +77,20 @@
         justify-content: center;
 
         .component-color-name {
-            font-weight: bold;
-            font-size: 16px;
+            display: flex;
+            align-items: center;
             margin-bottom: 16px;
+
+            .component-color-original-name {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .component-color-meta-name {
+                font-size: 12px;
+                color: #b0bec5;
+                margin-left: 4px;
+            }
         }
 
         .component-color-rgba,
