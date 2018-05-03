@@ -1,4 +1,4 @@
-# [Eve](http://evecss.io)
+# [Eve](https://kanbanize.github.io/eve)
 
 **A simple, minimal css framework**
 

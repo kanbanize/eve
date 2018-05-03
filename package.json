@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kanbanize/eve/issues"
   },
-  "homepage": "http://evecss.io/",
+  "homepage": "https://kanbanize.github.io/eve/",
   "main": "dist/eve.min.css",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
