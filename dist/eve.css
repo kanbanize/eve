@@ -881,14 +881,14 @@
       cursor: inherit;
       border-radius: inherit;
       display: block; }
-  .eve-button.eve-button-disable, .eve-button:disabled {
+  .eve-button:disabled {
     pointer-events: none;
     background: #b0bec5; }
-    .eve-button.eve-button-disable.eve-button-outline, .eve-button:disabled.eve-button-outline {
+    .eve-button:disabled.eve-button-outline {
       background: #b0bec5;
       color: #fff;
       box-shadow: none; }
-    .eve-button.eve-button-disable.eve-button-invert, .eve-button.eve-button-disable.eve-button-icon, .eve-button:disabled.eve-button-invert, .eve-button:disabled.eve-button-icon {
+    .eve-button:disabled.eve-button-invert, .eve-button:disabled.eve-button-icon {
       background: transparent;
       color: #b0bec5; }
 
@@ -1233,7 +1233,7 @@
     color: #b0bec5; }
   .eve-input:focus {
     border-color: #2196f3; }
-  .eve-input.eve-input-disable, .eve-input:disabled {
+  .eve-input:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
@@ -1805,7 +1805,11 @@
     color: #b0bec5; }
   .eve-textarea:focus {
     border-color: #2196f3; }
-  .eve-textarea.eve-textarea-disable, .eve-textarea:disabled {
+  .eve-textarea:-moz-read-only {
+    resize: none; }
+  .eve-textarea:read-only {
+    resize: none; }
+  .eve-textarea:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
