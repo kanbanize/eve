@@ -45,34 +45,6 @@
   .eve-grid .eve-cell {
     flex: 1;
     max-width: 100%; }
-  .eve-grid.eve-grid-gap-x-tiny {
-    margin: -2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-1 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-2 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-3 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-4 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-5 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-6 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-7 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-8 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-9 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-10 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-11 {
-      padding: 2px; }
-    .eve-grid.eve-grid-gap-x-tiny .eve-cell-12 {
-      padding: 2px; }
   .eve-grid.eve-grid-gap-tiny {
     margin: -4px; }
     .eve-grid.eve-grid-gap-tiny .eve-cell {
@@ -185,44 +157,12 @@
       padding: 24px; }
     .eve-grid.eve-grid-gap-large .eve-cell-12 {
       padding: 24px; }
-  .eve-grid.eve-grid-gap-x-large {
-    margin: -32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-1 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-2 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-3 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-4 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-5 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-6 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-7 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-8 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-9 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-10 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-11 {
-      padding: 32px; }
-    .eve-grid.eve-grid-gap-x-large .eve-cell-12 {
-      padding: 32px; }
   .eve-grid.eve-grid-align-start {
     align-items: flex-start; }
   .eve-grid.eve-grid-align-end {
     align-items: flex-end; }
   .eve-grid.eve-grid-align-center {
     align-items: center; }
-  .eve-grid.eve-grid-align-stretch {
-    align-items: stretch; }
-  .eve-grid.eve-grid-align-baseline {
-    align-items: baseline; }
   .eve-grid.eve-grid-justify-start {
     justify-content: flex-start; }
   .eve-grid.eve-grid-justify-end {

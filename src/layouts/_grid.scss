@@ -1,18 +1,14 @@
 $eve-grid-cells-count: 12 !default;
 $eve-grid-gaps: (
-    x-tiny: $eve-spacing-x-tiny,
     tiny: $eve-spacing-tiny,
     small: $eve-spacing-small,
     normal: $eve-spacing-normal,
     large: $eve-spacing-large,
-    x-large: $eve-spacing-x-large
 ) !default;
 $eve-grid-aligns: (
     start: flex-start,
     end: flex-end,
     center: center,
-    stretch: stretch,
-    baseline: baseline
 ) !default;
 $eve-grid-justifies: (
     start: flex-start,
