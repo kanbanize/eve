@@ -27,19 +27,28 @@ $eve-grid-justifies: (
         max-width: 100%;
     }
 
+    @for $i from 1 through $eve-grid-cells-count {
+        .eve-cell-#{$i} {
+            $width: percentage($i / $eve-grid-cells-count);
+
+            flex: 1 $width;
+            max-width: $width;
+        }
+    }
+
     @each $eve-grid-gap in map-keys($eve-grid-gaps) {
         $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
 
         &.eve-grid-gap-#{$eve-grid-gap} {
-            margin: -$gap;
+            margin: 0 (-$gap);
 
-            .eve-cell {
-                padding: $gap;
+            & > .eve-cell {
+                padding: 0 $gap;
             }
 
             @for $i from 1 through $eve-grid-cells-count {
-                .eve-cell-#{$i} {
-                    padding: $gap;
+                & > .eve-cell-#{$i} {
+                    padding: 0 $gap;
                 }
             }
         }
@@ -57,15 +66,6 @@ $eve-grid-justifies: (
         }
     }
 
-    @for $i from 1 through $eve-grid-cells-count {
-        .eve-cell-#{$i} {
-            $width: percentage($i / $eve-grid-cells-count);
-
-            flex: 1 $width;
-            max-width: $width;
-        }
-    }
-
     @media (max-width: 480px) {
         & {
             flex-direction: column;
@@ -78,6 +78,24 @@ $eve-grid-justifies: (
                 .eve-cell-#{$i} {
                     flex: 1 100%;
                     max-width: 100%;
+                }
+            }
+
+            @each $eve-grid-gap in map-keys($eve-grid-gaps) {
+                $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
+
+                &.eve-grid-gap-#{$eve-grid-gap} {
+                    margin: (-$gap) 0;
+
+                    & > .eve-cell {
+                        padding: $gap 0;
+                    }
+
+                    @for $i from 1 through $eve-grid-cells-count {
+                        & > .eve-cell-#{$i} {
+                            padding: $gap 0;
+                        }
+                    }
                 }
             }
         }
