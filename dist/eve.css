@@ -567,10 +567,10 @@
   .eve-profile .eve-avatar {
     margin-right: 8px; }
 
-.eve-profile-list {
+.eve-profiles {
   display: flex;
   flex-direction: column; }
-  .eve-profile-list .eve-profile:not(:last-child) {
+  .eve-profiles .eve-profile:not(:last-child) {
     margin-bottom: 8px; }
 
 .eve-badge {
