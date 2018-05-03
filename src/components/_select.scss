@@ -63,12 +63,18 @@ $eve-select-font-sizes: (
         $size: map-get($eve-select-sizes, $eve-select-size);
 
         &.eve-select-#{$eve-select-size} {
+            &::after {
+                right: map-get($eve-select-paddings, $eve-select-size);
+            }
+
             select {
                 height: $size;
                 line-height: $size;
 
                 @if map-has-key($eve-select-paddings, $eve-select-size) {
-                    padding: 0 map-get($eve-select-paddings, $eve-select-size);
+                    $padding: map-get($eve-select-paddings, $eve-select-size);
+
+                    padding: 0 ($padding * 2) 0 $padding;
                 }
 
                 @if map-has-key($eve-select-font-sizes, $eve-select-size) {
