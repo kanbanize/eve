@@ -1183,8 +1183,6 @@
     background: rgba(255, 152, 0, 0.2); }
   .eve-feedback.eve-feedback-danger {
     background: rgba(244, 67, 54, 0.2); }
-  .eve-feedback .eve-button {
-    margin-left: 8px; }
 
 .eve-form-group {
   margin-bottom: 16px; }
