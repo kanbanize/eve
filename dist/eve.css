@@ -385,7 +385,7 @@
     display: none;
     padding: 8px 16px; }
 
-.eve-accordion-list .eve-accordion:not(:last-child) {
+.eve-accordions .eve-accordion:not(:last-child) {
   margin-bottom: 4px; }
 
 .eve-avatar {

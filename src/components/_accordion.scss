@@ -35,7 +35,7 @@ $eve-accordion-height: 32px !default;
     }
 }
 
-.eve-accordion-list {
+.eve-accordions {
     .eve-accordion {
         &:not(:last-child) {
             margin-bottom: $eve-spacing-x-tiny;
