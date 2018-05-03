@@ -561,6 +561,18 @@
     .eve-avatar-group .eve-avatar:not(:first-child) {
       margin-left: -4px; }
 
+.eve-profile {
+  display: inline-flex;
+  align-items: center; }
+  .eve-profile .eve-avatar {
+    margin-right: 8px; }
+
+.eve-profile-list {
+  display: flex;
+  flex-direction: column; }
+  .eve-profile-list .eve-profile:not(:last-child) {
+    margin-bottom: 8px; }
+
 .eve-badge {
   position: relative; }
   .eve-badge::after {

@@ -122,3 +122,23 @@ $eve-avatar-state-border-radius: 50% !default;
         }
     }
 }
+
+.eve-profile {
+    display: inline-flex;
+    align-items: center;
+
+    .eve-avatar {
+        margin-right: $eve-spacing-tiny;
+    }
+}
+
+.eve-profile-list {
+    display: flex;
+    flex-direction: column;
+
+    .eve-profile {
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-tiny;
+        }
+    }
+}
