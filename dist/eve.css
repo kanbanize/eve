@@ -1587,6 +1587,16 @@
     padding: 0 32px 0 16px; }
     .eve-select select:focus {
       border-color: #2196f3; }
+  .eve-select.eve-select-small select {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    font-size: 12px; }
+  .eve-select.eve-select-large select {
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    font-size: 16px; }
   .eve-select.eve-select-disable::after {
     border-color: #607d8b; }
   .eve-select.eve-select-disable select {
@@ -1601,7 +1611,8 @@
     border-radius: 0; }
 
 .eve-select-group {
-  display: flex; }
+  display: flex;
+  align-items: flex-start; }
   .eve-select-group .eve-select:not(:last-child) {
     margin-right: 8px; }
 
