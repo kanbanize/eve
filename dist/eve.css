@@ -562,7 +562,7 @@
       margin-left: -4px; }
 
 .eve-profile {
-  display: inline-flex;
+  display: flex;
   align-items: center; }
   .eve-profile .eve-avatar {
     margin-right: 8px; }
@@ -1068,11 +1068,11 @@
     cursor: pointer; }
     .eve-dialog .eve-dialog-close i {
       font-size: 16px;
-      color: #b0bec5; }
+      color: #607d8b; }
     .eve-dialog .eve-dialog-close svg {
       width: 16px;
       height: 16px;
-      fill: #b0bec5; }
+      fill: #607d8b; }
   .eve-dialog .eve-dialog-header {
     font-weight: 600;
     font-size: 20px;
