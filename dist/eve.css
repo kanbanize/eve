@@ -1055,23 +1055,23 @@
   position: relative; }
   .eve-dialog .eve-dialog-close {
     position: absolute;
-    top: -18px;
-    right: -18px;
+    top: -16px;
+    right: -16px;
     background: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer; }
     .eve-dialog .eve-dialog-close i {
-      font-size: 18px;
+      font-size: 16px;
       color: #b0bec5; }
     .eve-dialog .eve-dialog-close svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       fill: #b0bec5; }
   .eve-dialog .eve-dialog-header {
     font-weight: 600;
