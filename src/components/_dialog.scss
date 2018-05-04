@@ -6,9 +6,9 @@ $eve-dialog-types: (
 ) !default;
 $eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
 $eve-dialog-width: 400px !default;
-$eve-dialog-close-size: 24px !default;
+$eve-dialog-close-size: 36px !default;
 $eve-dialog-close-border-radius: 50% !default;
-$eve-dialog-close-icon-size: 14px !default;
+$eve-dialog-close-icon-size: 18px !default;
 $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
 .eve-dialog {
@@ -34,13 +34,13 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
         i {
             font-size: $eve-dialog-close-icon-size;
-            color: $eve-color-darkest-silver;
+            color: $eve-color-darker-silver;
         }
 
         svg {
             width: $eve-dialog-close-icon-size;
             height: $eve-dialog-close-icon-size;
-            fill: $eve-color-darkest-silver;
+            fill: $eve-color-darker-silver;
         }
     }
 
