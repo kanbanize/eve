@@ -124,7 +124,7 @@ $eve-avatar-state-border-radius: 50% !default;
 }
 
 .eve-profile {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
     .eve-avatar {
