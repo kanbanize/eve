@@ -893,14 +893,14 @@
       cursor: inherit;
       border-radius: inherit;
       display: block; }
-  .eve-button:disabled {
+  .eve-button.eve-button-disable, .eve-button:disabled {
     pointer-events: none;
     background: #b0bec5; }
-    .eve-button:disabled.eve-button-outline {
+    .eve-button.eve-button-disable.eve-button-outline, .eve-button:disabled.eve-button-outline {
       background: #b0bec5;
       color: #fff;
       box-shadow: none; }
-    .eve-button:disabled.eve-button-invert, .eve-button:disabled.eve-button-icon {
+    .eve-button.eve-button-disable.eve-button-invert, .eve-button.eve-button-disable.eve-button-icon, .eve-button:disabled.eve-button-invert, .eve-button:disabled.eve-button-icon {
       background: transparent;
       color: #b0bec5; }
 
