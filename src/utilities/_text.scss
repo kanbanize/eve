@@ -55,3 +55,7 @@ $eve-text-colors: (
         color: map-get($eve-text-colors, $eve-text-color) !important;
     }
 }
+
+.eve-text-unselectable {
+    user-select: none;
+}

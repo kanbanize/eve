@@ -5,15 +5,13 @@ $eve-avatar-sizes: (
     normal: 32px,
     large: 40px,
     x-large: 96px
-) !default;
-$eve-avatar-border-radius: 50% !default;
-$eve-avatar-state-border-radius: 50% !default;
+);
 
 .eve-avatar {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: $eve-avatar-border-radius;
+    border-radius: 50%;
     vertical-align: middle;
     color: $eve-color-white;
     position: relative;
@@ -36,7 +34,7 @@ $eve-avatar-state-border-radius: 50% !default;
         position: absolute;
         left: 0;
         top: 0;
-        border-radius: $eve-avatar-border-radius;
+        border-radius: inherit;
         width: inherit;
         height: inherit;
     }
@@ -44,7 +42,7 @@ $eve-avatar-state-border-radius: 50% !default;
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
-        &.eve-avatar-#{$eve-avatar-size} {
+        &.is-#{$eve-avatar-size} {
             width: $size;
             height: $size;
 
@@ -62,16 +60,16 @@ $eve-avatar-state-border-radius: 50% !default;
                 }
             }
 
-            &.eve-avatar-online,
-            &.eve-avatar-busy,
-            &.eve-avatar-away,
-            &.eve-avatar-offline {
+            &.is-online,
+            &.is-busy,
+            &.is-away,
+            &.is-offline {
                 &::after {
                     content: '';
                     display: block;
                     height: $size / 4;
                     width: $size / 4;
-                    border-radius: $eve-avatar-state-border-radius;
+                    border-radius: 50%;
                     position: absolute;
                     bottom: 0;
                     right: 0;
@@ -84,25 +82,25 @@ $eve-avatar-state-border-radius: 50% !default;
                 }
             }
 
-            &.eve-avatar-online {
+            &.is-online {
                 &::after {
                     background: $eve-color-green;
                 }
             }
 
-            &.eve-avatar-busy {
+            &.is-busy {
                 &::after {
                     background: $eve-color-red;
                 }
             }
 
-            &.eve-avatar-away {
+            &.is-away {
                 &::after {
                     background: $eve-color-orange;
                 }
             }
 
-            &.eve-avatar-offline {
+            &.is-offline {
                 &::after {
                     background: $eve-color-dark-silver;
                 }
@@ -111,7 +109,7 @@ $eve-avatar-state-border-radius: 50% !default;
     }
 }
 
-.eve-avatar-group {
+.eve-avatars {
     display: flex;
 
     .eve-avatar {

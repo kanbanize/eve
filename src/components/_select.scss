@@ -1,27 +1,27 @@
-$eve-select-height: 36px !default;
-$eve-select-border-width: 1px !default;
-$eve-select-max-width: 100% !default;
-$eve-select-width: 100% !default;
-$eve-select-arrow-size: 6px !default;
-$eve-select-arrow-border-width: 1px !default;
+$eve-select-height: 36px;
+$eve-select-arrow-size: 6px;
+$eve-select-arrow-border-width: 1px;
 $eve-select-sizes: (
     small: 28px,
+    normal: 36px,
     large: 48px
 ) !default;
 $eve-select-paddings: (
     small: $eve-spacing-tiny,
+    normal: $eve-spacing-small,
     large: $eve-spacing-normal
 ) !default;
 $eve-select-font-sizes: (
     small: $eve-font-tiny,
+    normal: $eve-font-small,
     large: $eve-font-normal
 ) !default;
 
 .eve-select {
     display: block;
     position: relative;
-    max-width: $eve-select-max-width;
-    width: $eve-select-width;
+    max-width: 100%;
+    width: 100%;
 
     &::after {
         content: '';
@@ -32,7 +32,6 @@ $eve-select-font-sizes: (
         transform: rotate(-45deg);
         width: $eve-select-arrow-size;
         height: $eve-select-arrow-size;
-        right: $eve-spacing-small;
         top: calc(50% - #{$eve-select-arrow-size / 2 + $eve-select-arrow-border-width});
         pointer-events: none;
         box-sizing: border-box;
@@ -43,16 +42,12 @@ $eve-select-font-sizes: (
         -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
         outline: none;
         font-family: inherit;
-        font-size: $eve-font-small;
         border-radius: 0;
         background: $eve-color-white;
         width: 100%;
         color: $eve-color-grey-black;
         cursor: pointer;
-        border: $eve-select-border-width solid $eve-color-dark-silver;
-        height: $eve-select-height;
-        line-height: $eve-select-height;
-        padding: 0 ($eve-spacing-small * 2) 0 $eve-spacing-small;
+        border: 1px solid $eve-color-dark-silver;
 
         &:focus {
             border-color: $eve-color-blue;
@@ -61,30 +56,43 @@ $eve-select-font-sizes: (
 
     @each $eve-select-size in map-keys($eve-select-sizes) {
         $size: map-get($eve-select-sizes, $eve-select-size);
+        $padding: map-get($eve-select-paddings, $eve-select-size);
+        $font-size: map-get($eve-select-font-sizes, $eve-select-size);
 
-        &.eve-select-#{$eve-select-size} {
+        @if $eve-select-size == 'normal' {
             &::after {
-                right: map-get($eve-select-paddings, $eve-select-size);
+                right: $padding;
             }
 
             select {
                 height: $size;
                 line-height: $size;
+                padding: 0 ($padding * 2) 0 $padding;
+                font-size: $font-size;
+            }
+        } @else {
+            &.is-#{$eve-select-size} {
+                &::after {
+                    right: $padding;
+                }
 
-                @if map-has-key($eve-select-paddings, $eve-select-size) {
-                    $padding: map-get($eve-select-paddings, $eve-select-size);
-
+                select {
+                    height: $size;
+                    line-height: $size;
                     padding: 0 ($padding * 2) 0 $padding;
+                    font-size: $font-size;
                 }
+            }
+        }
 
-                @if map-has-key($eve-select-font-sizes, $eve-select-size) {
-                    font-size: map-get($eve-select-font-sizes, $eve-select-size);
-                }
+        &.is-rounded {
+            select {
+                border-radius: $size / 2;
             }
         }
     }
 
-    &.eve-select-disable {
+    &.is-disabled {
         &::after {
             border-color: $eve-color-darkest-silver;
         }
@@ -98,21 +106,76 @@ $eve-select-font-sizes: (
     }
 }
 
-.eve-select-control {
+.eve-select-field {
+    position: relative;
     display: flex;
+    align-items: center;
 
-    .eve-button {
-        border-radius: 0;
+    @each $eve-select-size in map-keys($eve-select-sizes) {
+        $size: map-get($eve-select-sizes, $eve-select-size);
+        $padding: map-get($eve-select-paddings, $eve-select-size);
+
+        @if $eve-select-size == 'normal' {
+            &.has-icon {
+                i,
+                svg {
+                    left: $padding;
+                }
+
+                i {
+                    font-size: $size / 2;
+                }
+
+                svg {
+                    width: $size / 2;
+                    height: $size / 2;
+                }
+
+                .eve-select {
+                    select {
+                        padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
+                    }
+                }
+            }
+        } @else {
+            &.is-#{$eve-select-size} {
+                &.has-icon {
+                    i,
+                    svg {
+                        left: $padding;
+                    }
+
+                    i {
+                        font-size: $size / 2;
+                    }
+
+                    svg {
+                        width: $size / 2;
+                        height: $size / 2;
+                    }
+
+                    .eve-select {
+                        select {
+                            padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
+                        }
+                    }
+                }
+            }
+        }
     }
-}
 
-.eve-select-group {
-    display: flex;
-    align-items: flex-start;
+    &.has-icon {
+        i,
+        svg {
+            position: absolute;
+        }
 
-    .eve-select {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-tiny;
+        i {
+            color: $eve-color-dark-silver;
+        }
+
+        svg {
+            fill: $eve-color-dark-silver;
         }
     }
 }

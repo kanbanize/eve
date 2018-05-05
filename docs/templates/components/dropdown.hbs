@@ -4,12 +4,38 @@
         <div class="component-header">Default dropdown</div>
         <div class="component-example">
             <div class="eve-dropdown">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">Item 01</div>
-                    <div class="eve-dropdown-list-item eve-dropdown-list-item-active">Item 02</div>
-                    <div class="eve-dropdown-list-item">Item 03</div>
-                    <div class="eve-dropdown-list-item">Item 04</div>
-                </div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item">Item 02</li>
+                    <li class="eve-dropdown-list-item">Item 03</li>
+                    <li class="eve-dropdown-list-item">Item 04</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Dropdown with active item</div>
+        <div class="component-example">
+            <div class="eve-dropdown">
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item is-active">Item 02</li>
+                    <li class="eve-dropdown-list-item">Item 03</li>
+                    <li class="eve-dropdown-list-item">Item 04</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Dropdown with disabled item</div>
+        <div class="component-example">
+            <div class="eve-dropdown">
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item is-disabled">Item 02</li>
+                    <li class="eve-dropdown-list-item">Item 03</li>
+                    <li class="eve-dropdown-list-item">Item 04</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -17,32 +43,32 @@
         <div class="component-header">Dropdown with icons</div>
         <div class="component-example">
             <div class="eve-dropdown">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">
                         <div class="eve-dropdown-list-item-icon">
                             <i class="material-icons">settings</i>
                         </div>
                         Item 01
-                    </div>
-                    <div class="eve-dropdown-list-item">
+                    </li>
+                    <li class="eve-dropdown-list-item">
                         <div class="eve-dropdown-list-item-icon">
                             <i class="material-icons">settings</i>
                         </div>
                         Item 02
-                    </div>
-                    <div class="eve-dropdown-list-item">
+                    </li>
+                    <li class="eve-dropdown-list-item">
                         <div class="eve-dropdown-list-item-icon">
                             <i class="material-icons">settings</i>
                         </div>
                         Item 03
-                    </div>
-                    <div class="eve-dropdown-list-item">
+                    </li>
+                    <li class="eve-dropdown-list-item">
                         <div class="eve-dropdown-list-item-icon">
                             <i class="material-icons">settings</i>
                         </div>
                         Item 04
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -50,24 +76,32 @@
         <div class="component-header">Dropdown with avatars</div>
         <div class="component-example">
             <div class="eve-dropdown">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">
-                        <div class="eve-avatar eve-avatar-tiny" data-initial="J"></div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">
+                        <div class="eve-avatar is-tiny">
+                            <img src="images/avatar-1.jpg">
+                        </div>
                         Item 01
-                    </div>
-                    <div class="eve-dropdown-list-item">
-                        <div class="eve-avatar eve-avatar-tiny" data-initial="J"></div>
+                    </li>
+                    <li class="eve-dropdown-list-item">
+                        <div class="eve-avatar is-tiny">
+                            <img src="images/avatar-1.jpg">
+                        </div>
                         Item 02
-                    </div>
-                    <div class="eve-dropdown-list-item">
-                        <div class="eve-avatar eve-avatar-tiny" data-initial="J"></div>
+                    </li>
+                    <li class="eve-dropdown-list-item">
+                        <div class="eve-avatar is-tiny">
+                            <img src="images/avatar-1.jpg">
+                        </div>
                         Item 03
-                    </div>
-                    <div class="eve-dropdown-list-item">
-                        <div class="eve-avatar eve-avatar-tiny" data-initial="J"></div>
+                    </li>
+                    <li class="eve-dropdown-list-item">
+                        <div class="eve-avatar is-tiny">
+                            <img src="images/avatar-1.jpg">
+                        </div>
                         Item 04
-                    </div>
-                </div>
+                    </li>
+                </li>
             </div>
         </div>
     </div>
@@ -76,19 +110,17 @@
         <div class="component-example">
             <div class="eve-dropdown">
                 <div class="eve-dropdown-filter">
-                    <div class="eve-input-control eve-input-control-icon">
+                    <div class="eve-input-field has-icon">
                         <input type="text" class="eve-input" placeholder="Filter">
-                        <div class="eve-input-icon">
-                            <i class="material-icons">filter_list</i>
-                        </div>
+                        <i class="material-icons">filter_list</i>
                     </div>
                 </div>
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">Item 01</div>
-                    <div class="eve-dropdown-list-item">Item 02</div>
-                    <div class="eve-dropdown-list-item">Item 03</div>
-                    <div class="eve-dropdown-list-item">Item 04</div>
-                </div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item">Item 02</li>
+                    <li class="eve-dropdown-list-item">Item 03</li>
+                    <li class="eve-dropdown-list-item">Item 04</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -96,15 +128,15 @@
         <div class="component-header">Stripped dropdown</div>
         <div class="component-example">
             <div class="eve-dropdown eve-dropdown-strip">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">Welcome</div>
-                    <div class="eve-dropdown-list-item">Inbox</div>
-                    <div class="eve-dropdown-list-item">Workflow</div>
-                    <div class="eve-dropdown-list-item">Timeline</div>
-                    <div class="eve-dropdown-list-item">Power-ups</div>
-                    <div class="eve-dropdown-list-item">Setup</div>
-                    <div class="eve-dropdown-list-item">Done</div>
-                </div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Welcome</li>
+                    <li class="eve-dropdown-list-item">Inbox</li>
+                    <li class="eve-dropdown-list-item">Workflow</li>
+                    <li class="eve-dropdown-list-item">Timeline</li>
+                    <li class="eve-dropdown-list-item">Power-ups</li>
+                    <li class="eve-dropdown-list-item">Setup</li>
+                    <li class="eve-dropdown-list-item">Done</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -112,36 +144,36 @@
         <div class="component-header">Dropdown with headers</div>
         <div class="component-example">
             <div class="eve-dropdown">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-header">Header 01</div>
-                    <div class="eve-dropdown-list-item">Item 01</div>
-                    <div class="eve-dropdown-list-item">Item 02</div>
-                    <div class="eve-dropdown-list-item">Item 03</div>
-                    <div class="eve-dropdown-list-item">Item 04</div>
-                </div>
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-header">Header 02</div>
-                    <div class="eve-dropdown-list-item">Item 01</div>
-                    <div class="eve-dropdown-list-item">Item 02</div>
-                </div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-header">Header 01</li>
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item">Item 02</li>
+                    <li class="eve-dropdown-list-item">Item 03</li>
+                    <li class="eve-dropdown-list-item">Item 04</li>
+                </ul>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-header">Header 02</li>
+                    <li class="eve-dropdown-list-item">Item 01</li>
+                    <li class="eve-dropdown-list-item">Item 02</li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Dropdown with separators</div>
+        <div class="component-header">Dropdown with divider</div>
         <div class="component-example">
             <div class="eve-dropdown">
-                <div class="eve-dropdown-list">
-                    <div class="eve-dropdown-list-item">Welcome</div>
-                    <div class="eve-dropdown-list-separator"></div>
-                    <div class="eve-dropdown-list-item">Inbox</div>
-                    <div class="eve-dropdown-list-item">Workflow</div>
-                    <div class="eve-dropdown-list-item">Timeline</div>
-                    <div class="eve-dropdown-list-separator"></div>
-                    <div class="eve-dropdown-list-item">Power-ups</div>
-                    <div class="eve-dropdown-list-item">Setup</div>
-                    <div class="eve-dropdown-list-item">Done</div>
-                </div>
+                <ul class="eve-dropdown-list">
+                    <li class="eve-dropdown-list-item">Welcome</li>
+                    <li class="eve-dropdown-list-divider"></li>
+                    <li class="eve-dropdown-list-item">Inbox</li>
+                    <li class="eve-dropdown-list-item">Workflow</li>
+                    <li class="eve-dropdown-list-item">Timeline</li>
+                    <li class="eve-dropdown-list-divider"></li>
+                    <li class="eve-dropdown-list-item">Power-ups</li>
+                    <li class="eve-dropdown-list-item">Setup</li>
+                    <li class="eve-dropdown-list-item">Done</li>
+                </ul>
             </div>
         </div>
     </div>

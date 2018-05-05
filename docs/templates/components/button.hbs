@@ -1,27 +1,32 @@
+<style>
+    .eve-buttons:not(:last-child) {
+        margin-bottom: 8px;
+    }
+</style>
 <div class="component">
     <div class="component-title">Button</div>
     <div class="component-content">
-        <div class="component-header">Default button</div>
+        <div class="component-header">Button colors</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary">Primary</button>
-            <button class="eve-button eve-button-success">Success</button>
-            <button class="eve-button eve-button-warning">Warning</button>
-            <button class="eve-button eve-button-danger">Danger</button>
+            <button class="eve-button is-primary">Primary</button>
+            <button class="eve-button is-success">Success</button>
+            <button class="eve-button is-warning">Warning</button>
+            <button class="eve-button is-danger">Danger</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Button with icon</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary">
+            <button class="eve-button is-primary">
                 <i class="material-icons">favorite</i>Primary
             </button>
-            <button class="eve-button eve-button-success">
+            <button class="eve-button is-success">
                 <i class="material-icons">favorite</i>Success
             </button>
-            <button class="eve-button eve-button-warning">
+            <button class="eve-button is-warning">
                 <i class="material-icons">favorite</i>Warning
             </button>
-            <button class="eve-button eve-button-danger">
+            <button class="eve-button is-danger">
                 <i class="material-icons">favorite</i>Danger
             </button>
         </div>
@@ -29,25 +34,25 @@
     <div class="component-content">
         <div class="component-header">Outlined button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-outline">Primary</button>
-            <button class="eve-button eve-button-success eve-button-outline">Success</button>
-            <button class="eve-button eve-button-warning eve-button-outline">Warning</button>
-            <button class="eve-button eve-button-danger eve-button-outline">Danger</button>
+            <button class="eve-button is-primary is-outlined">Primary</button>
+            <button class="eve-button is-success is-outlined">Success</button>
+            <button class="eve-button is-warning is-outlined">Warning</button>
+            <button class="eve-button is-danger is-outlined">Danger</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Outlined button with icon</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-outline">
+            <button class="eve-button is-primary is-outlined">
                 <i class="material-icons">favorite</i>Primary
             </button>
-            <button class="eve-button eve-button-success eve-button-outline">
+            <button class="eve-button is-success is-outlined">
                 <i class="material-icons">favorite</i>Success
             </button>
-            <button class="eve-button eve-button-warning eve-button-outline">
+            <button class="eve-button is-warning is-outlined">
                 <i class="material-icons">favorite</i>Warning
             </button>
-            <button class="eve-button eve-button-danger eve-button-outline">
+            <button class="eve-button is-danger is-outlined">
                 <i class="material-icons">favorite</i>Danger
             </button>
         </div>
@@ -55,25 +60,25 @@
     <div class="component-content">
         <div class="component-header">Inverted button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-invert">Primary</button>
-            <button class="eve-button eve-button-success eve-button-invert">Success</button>
-            <button class="eve-button eve-button-warning eve-button-invert">Warning</button>
-            <button class="eve-button eve-button-danger eve-button-invert">Danger</button>
+            <button class="eve-button is-primary is-inverted">Primary</button>
+            <button class="eve-button is-success is-inverted">Success</button>
+            <button class="eve-button is-warning is-inverted">Warning</button>
+            <button class="eve-button is-danger is-inverted">Danger</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Inverted button with icon</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-invert">
+            <button class="eve-button is-primary is-inverted">
                 <i class="material-icons">favorite</i>Primary
             </button>
-            <button class="eve-button eve-button-success eve-button-invert">
+            <button class="eve-button is-success is-inverted">
                 <i class="material-icons">favorite</i>Success
             </button>
-            <button class="eve-button eve-button-warning eve-button-invert">
+            <button class="eve-button is-warning is-inverted">
                 <i class="material-icons">favorite</i>Warning
             </button>
-            <button class="eve-button eve-button-danger eve-button-invert">
+            <button class="eve-button is-danger is-inverted">
                 <i class="material-icons">favorite</i>Danger
             </button>
         </div>
@@ -81,81 +86,74 @@
     <div class="component-content">
         <div class="component-header">Loading button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-load">Primary</button>
-            <button class="eve-button eve-button-success eve-button-load">Success</button>
-            <button class="eve-button eve-button-warning eve-button-load">Warning</button>
-            <button class="eve-button eve-button-danger eve-button-load">Danger</button>
+            <button class="eve-button is-primary is-loading">Primary</button>
+            <button class="eve-button is-success is-loading">Success</button>
+            <button class="eve-button is-warning is-loading">Warning</button>
+            <button class="eve-button is-danger is-loading">Danger</button>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon button</div>
+        <div class="component-header">Rounded button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-icon">
-                <i class="material-icons">favorite</i>
-            </button>
-            <button class="eve-button eve-button-success eve-button-icon">
-                <i class="material-icons">favorite</i>
-            </button>
-            <button class="eve-button eve-button-warning eve-button-icon">
-                <i class="material-icons">favorite</i>
-            </button>
-            <button class="eve-button eve-button-danger eve-button-icon">
-                <i class="material-icons">favorite</i>
-            </button>
+            <button class="eve-button is-primary is-rounded">Primary</button>
+            <button class="eve-button is-success is-rounded">Success</button>
+            <button class="eve-button is-warning is-rounded">Warning</button>
+            <button class="eve-button is-danger is-rounded">Danger</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Grouped buttons</div>
         <div class="component-example">
-            <div class="eve-button-group">
-                <button class="eve-button eve-button-primary eve-button-outline">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
             </div>
-            <div class="eve-button-group eve-button-group-center">
-                <button class="eve-button eve-button-primary eve-button-outline">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
+            <div class="eve-buttons is-center">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
             </div>
-            <div class="eve-button-group eve-button-group-right">
-                <button class="eve-button eve-button-primary eve-button-outline">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Button with addons</div>
-        <div class="component-example">
-            <div class="eve-button-addon">
-                <button class="eve-button eve-button-primary">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
-            </div>
-            <div class="eve-button-addon eve-button-addon-center">
-                <button class="eve-button eve-button-primary">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
-            </div>
-            <div class="eve-button-addon eve-button-addon-right">
-                <button class="eve-button eve-button-primary">Button 1</button>
-                <button class="eve-button eve-button-primary">Button 2</button>
+            <div class="eve-buttons is-right">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Block button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-block">Button Block</button>
+            <button class="eve-button is-primary is-block">Button Block</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Button sizes</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-small">Small size - 28px</button>
-            <button class="eve-button eve-button-primary">Normal size - 36px</button>
-            <button class="eve-button eve-button-primary eve-button-large">Large size - 48px</button>
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-large">Large size - 48px</button>
+                <button class="eve-button is-primary">Normal size - 36px</button>
+                <button class="eve-button is-primary is-small">Small size - 28px</button>
+            </div>
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-large">
+                    <i class="material-icons">favorite</i>Large size - 48px
+                </button>
+                <button class="eve-button is-primary">
+                    <i class="material-icons">favorite</i>Normal size - 36px
+                </button>
+                <button class="eve-button is-primary is-small">
+                    <i class="material-icons">favorite</i>Small size - 28px
+                </button>
+            </div>
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-large is-loading">Large size - 48px</button>
+                <button class="eve-button is-primary is-loading">Normal size - 36px</button>
+                <button class="eve-button is-primary is-small is-loading">Small size - 28px</button>
+            </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">File button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary eve-button-file">
+            <button class="eve-button is-primary is-file">
                 Upload file
                 <input type="file">
             </button>
@@ -164,23 +162,19 @@
     <div class="component-content">
         <div class="component-header">Disabled button</div>
         <div class="component-example">
-            <button class="eve-button eve-button-primary" disabled="disabled">Default</button>
-            <button class="eve-button eve-button-primary eve-button-outline" disabled="disabled">Disabled</button>
-            <button class="eve-button eve-button-primary eve-button-invert" disabled="disabled">Disabled</button>
-            <button class="eve-button eve-button-primary" disabled="disabled">
+            <button class="eve-button is-primary" disabled="disabled">Disabled</button>
+            <button class="eve-button is-primary" disabled="disabled">
                 <i class="material-icons">favorite</i>Disabled
             </button>
-            <button class="eve-button eve-button-primary eve-button-outline" disabled="disabled">
+            <button class="eve-button is-primary is-outlined" disabled="disabled">Disabled</button>
+            <button class="eve-button is-primary is-outlined" disabled="disabled">
                 <i class="material-icons">favorite</i>Disabled
             </button>
-            <button class="eve-button eve-button-primary eve-button-invert" disabled="disabled">
+            <button class="eve-button is-primary is-inverted" disabled="disabled">Disabled</button>
+            <button class="eve-button is-primary is-inverted" disabled="disabled">
                 <i class="material-icons">favorite</i>Disabled
             </button>
-            <button class="eve-button eve-button-primary eve-button-text" disabled="disabled">Disabled</button>
-            <button class="eve-button eve-button-primary eve-button-load" disabled="disabled">Disabled</button>
-            <button class="eve-button eve-button-primary eve-button-icon" disabled="disabled">
-                <i class="material-icons">favorite</i>
-            </button>
+            <button class="eve-button is-primary is-loading" disabled="disabled">Disabled</button>
         </div>
     </div>
 </div>

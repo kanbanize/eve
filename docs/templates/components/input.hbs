@@ -1,3 +1,13 @@
+<style>
+    .eve-input:not(:last-child),
+    .eve-input-field:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .eve-input-field .eve-input {
+        margin-bottom: 0;
+    }
+</style>
 <div class="component">
     <div class="component-title">Input</div>
     <div class="component-content">
@@ -9,53 +19,67 @@
     <div class="component-content">
         <div class="component-header">Input with placeholder</div>
         <div class="component-example">
-            <input type="text" placeholder="Placeholder" class="eve-input">
+            <input type="text" class="eve-input" placeholder="Placeholder">
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Disabled input</div>
+        <div class="component-header">Input colors</div>
         <div class="component-example">
-            <input type="text" value="Disabled" class="eve-input" disabled="disabled">
+            <input type="text" class="eve-input is-primary" placeholder="Primary">
+            <input type="text" class="eve-input is-success" placeholder="Success">
+            <input type="text" class="eve-input is-warning" placeholder="Warning">
+            <input type="text" class="eve-input is-danger" placeholder="Danger">
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Input with button</div>
+        <div class="component-header">Input sizes</div>
         <div class="component-example">
-            <div class="eve-input-control">
-                <input type="text" class="eve-input">
-                <button class="eve-button eve-button-primary">Search</button>
+            <input type="text" class="eve-input is-large" placeholder="Large size - 48px">
+            <input type="text" class="eve-input" placeholder="Normal size - 36px">
+            <input type="text" class="eve-input is-small" placeholder="Small size - 28px">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Rounded input</div>
+        <div class="component-example">
+            <input type="text" class="eve-input is-rounded" placeholder="Rounded">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Loading input</div>
+        <div class="component-example">
+            <div class="eve-input-field is-loading is-large">
+                <input type="text" class="eve-input is-large" placeholder="Large loading">
+            </div>
+            <div class="eve-input-field is-loading">
+                <input type="text" class="eve-input" placeholder="Normal loading">
+            </div>
+            <div class="eve-input-field is-loading is-small">
+                <input type="text" class="eve-input is-small" placeholder="Small loading">
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Input with icon</div>
         <div class="component-example">
-            <div class="eve-input-control eve-input-control-icon">
-                <input type="text" class="eve-input">
-                <div class="eve-input-icon">
-                    <i class="material-icons">search</i>
-                </div>
+            <div class="eve-input-field has-icon is-large">
+                <input type="text" class="eve-input is-large" placeholder="Large icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-input-field has-icon">
+                <input type="text" class="eve-input" placeholder="Normal icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-input-field has-icon is-small">
+                <input type="text" class="eve-input is-small" placeholder="Small icon">
+                <i class="material-icons">person</i>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Grouped inputs</div>
+        <div class="component-header">Disabled input</div>
         <div class="component-example">
-            <div class="eve-input-group">
-                <input type="text" class="eve-input">
-                <input type="text" class="eve-input">
-                <input type="text" class="eve-input">
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Input sizes</div>
-        <div class="component-example">
-            <div class="eve-input-group">
-                <input type="text" class="eve-input eve-input-small" placeholder="Small size - 28px">
-                <input type="text" class="eve-input" placeholder="Normal size - 36px">
-                <input type="text" class="eve-input eve-input-large" placeholder="Large size - 48px">
-            </div>
+            <input type="text" value="Disabled" class="eve-input" disabled="disabled">
         </div>
     </div>
 </div>

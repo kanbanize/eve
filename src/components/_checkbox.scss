@@ -1,6 +1,5 @@
-$eve-checkbox-size: 18px !default;
-$eve-checkbox-border-width: 2px !default;
-$eve-checkbox-mark-border-width: 2px !default;
+$eve-checkbox-size: 18px;
+$eve-checkbox-mark-border-width: 2px;
 
 .eve-checkbox {
     display: inline-flex;
@@ -54,7 +53,7 @@ $eve-checkbox-mark-border-width: 2px !default;
 
     .eve-checkbox-mark {
         background: $eve-color-white;
-        border: $eve-checkbox-border-width solid $eve-color-darker-silver;
+        border: 2px solid $eve-color-darker-silver;
         width: 100%;
         height: 100%;
         pointer-events: none;
@@ -88,19 +87,8 @@ $eve-checkbox-mark-border-width: 2px !default;
     }
 }
 
-.eve-checkbox-group {
-    display: flex;
-    align-items: center;
-
-    .eve-checkbox-control {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-normal;
-        }
-    }
-}
-
-.eve-checkbox-list {
-    & > .eve-checkbox-list {
+.eve-checkboxes {
+    & > .eve-checkboxes {
         padding-left: $eve-spacing-small;
 
         &:not(:last-child) {
@@ -110,7 +98,18 @@ $eve-checkbox-mark-border-width: 2px !default;
 
     .eve-checkbox-control {
         &:not(:last-child) {
-            margin-bottom: $eve-spacing-tiny;
+            margin: 0 0 $eve-spacing-tiny;
+        }
+    }
+
+    &.is-inline {
+        display: flex;
+        align-items: center;
+
+        .eve-checkbox-control {
+            &:not(:last-child) {
+                margin: 0 $eve-spacing-normal 0 0;
+            }
         }
     }
 }

@@ -3,19 +3,15 @@ $eve-label-colors: (
     success: $eve-color-green,
     warning: $eve-color-orange,
     danger: $eve-color-red
-) !default;
-$eve-label-height: 24px !default;
-$eve-label-border-radius: $eve-label-height / 2 !default;
-$eve-label-box-shadow-spread: 1px !default;
-$eve-label-action-border-radius: 50% !default;
-$eve-label-icon-size: 14px !default;
+);
+$eve-label-size: 28px;
 
 .eve-label {
     display: inline-flex;
     align-items: center;
-    height: $eve-label-height;
-    line-height: $eve-label-height;
-    border-radius: $eve-label-border-radius;
+    height: $eve-label-size;
+    line-height: $eve-label-size;
+    border-radius: $eve-label-size / 2;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
     color: $eve-color-white;
@@ -24,7 +20,7 @@ $eve-label-icon-size: 14px !default;
         $color: map-get($eve-label-colors, $eve-label-color);
         $hover-color: rgba($color, .2);
 
-        &.eve-label-#{$eve-label-color} {
+        &.is-#{$eve-label-color} {
             background: $color;
 
             &:hover {
@@ -44,8 +40,8 @@ $eve-label-icon-size: 14px !default;
                 }
             }
 
-            &.eve-label-outline {
-                box-shadow: inset 0 0 0 $eve-label-box-shadow-spread $color;
+            &.is-outlined {
+                box-shadow: inset 0 0 0 1px $color;
                 color: $color;
 
                 .eve-label-icon {
@@ -61,7 +57,7 @@ $eve-label-icon-size: 14px !default;
         }
     }
 
-    &.eve-label-outline {
+    &.is-outlined {
         background: transparent;
 
         &:hover {
@@ -76,12 +72,12 @@ $eve-label-icon-size: 14px !default;
         margin-right: $eve-spacing-x-tiny;
 
         i {
-            font-size: $eve-label-icon-size;
+            font-size: $eve-label-size / 2;
         }
 
         svg {
-            width: $eve-label-icon-size;
-            height: $eve-label-icon-size;
+            width: $eve-label-size / 2;
+            height: $eve-label-size / 2;
         }
     }
 
@@ -91,15 +87,15 @@ $eve-label-icon-size: 14px !default;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
         cursor: pointer;
-        border-radius: $eve-label-action-border-radius;
+        border-radius: 50%;
 
         i {
-            font-size: $eve-label-icon-size;
+            font-size: $eve-label-size / 2;
         }
 
         svg {
-            width: $eve-label-icon-size;
-            height: $eve-label-icon-size;
+            width: $eve-label-size / 2;
+            height: $eve-label-size / 2;
         }
     }
 }

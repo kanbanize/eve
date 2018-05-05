@@ -1,3 +1,13 @@
+<style>
+    .eve-select:not(:last-child),
+    .eve-select-field:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .eve-select-field .eve-select {
+        margin-bottom: 0;
+    }
+</style>
 <div class="component">
     <div class="component-title">Select</div>
     <div class="component-content">
@@ -14,9 +24,25 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Disabled select</div>
+        <div class="component-header">Select sizes</div>
         <div class="component-example">
-            <div class="eve-select eve-select-disable">
+            <div class="eve-select is-large">
+                <select>
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
+            </div>
+            <div class="eve-select">
+                <select>
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
+            </div>
+            <div class="eve-select is-small">
                 <select>
                     <option>Item 01</option>
                     <option>Item 02</option>
@@ -27,25 +53,33 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Select with button</div>
+        <div class="component-header">Rounded select</div>
         <div class="component-example">
-            <div class="eve-select-control">
-                <div class="eve-select">
-                    <select>
-                        <option>Item 01</option>
-                        <option>Item 02</option>
-                        <option>Item 03</option>
-                        <option>Item 04</option>
-                    </select>
-                </div>
-                <button class="eve-button eve-button-primary">Save</button>
+            <div class="eve-select is-rounded">
+                <select>
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Grouped selects</div>
+        <div class="component-header">Select with icon</div>
         <div class="component-example">
-            <div class="eve-select-group">
+            <div class="eve-select-field has-icon is-large">
+                <div class="eve-select is-large">
+                    <select>
+                        <option>Item 01</option>
+                        <option>Item 02</option>
+                        <option>Item 03</option>
+                        <option>Item 04</option>
+                    </select>
+                </div>
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-select-field has-icon">
                 <div class="eve-select">
                     <select>
                         <option>Item 01</option>
@@ -54,7 +88,10 @@
                         <option>Item 04</option>
                     </select>
                 </div>
-                <div class="eve-select">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-select-field has-icon is-small">
+                 <div class="eve-select is-small">
                     <select>
                         <option>Item 01</option>
                         <option>Item 02</option>
@@ -62,45 +99,20 @@
                         <option>Item 04</option>
                     </select>
                 </div>
-                <div class="eve-select">
-                    <select>
-                        <option>Item 01</option>
-                        <option>Item 02</option>
-                        <option>Item 03</option>
-                        <option>Item 04</option>
-                    </select>
-                </div>
+                <i class="material-icons">person</i>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Select sizes</div>
+        <div class="component-header">Disabled select</div>
         <div class="component-example">
-            <div class="eve-select-group">
-                <div class="eve-select eve-select-small">
-                    <select>
-                        <option>Item 01</option>
-                        <option>Item 02</option>
-                        <option>Item 03</option>
-                        <option>Item 04</option>
-                    </select>
-                </div>
-                <div class="eve-select">
-                    <select>
-                        <option>Item 01</option>
-                        <option>Item 02</option>
-                        <option>Item 03</option>
-                        <option>Item 04</option>
-                    </select>
-                </div>
-                <div class="eve-select eve-select-large">
-                    <select>
-                        <option>Item 01</option>
-                        <option>Item 02</option>
-                        <option>Item 03</option>
-                        <option>Item 04</option>
-                    </select>
-                </div>
+            <div class="eve-select is-disabled">
+                <select>
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
             </div>
         </div>
     </div>

@@ -1,31 +1,36 @@
-$eve-tooltip-height: 24px !default;
-$eve-tooltip-border-radius: $eve-tooltip-height / 2 !default;
-$eve-tooltip-background-color: #263238 !default;
+$eve-tooltip-size: 28px;
 
 .eve-tooltip {
     position: relative;
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 
     &::after {
         content: attr(data-tooltip);
         opacity: 0;
         visibility: hidden;
-        background: $eve-tooltip-background-color;
+        background: #263238;
         color: $eve-color-white;
         font-size: $eve-font-tiny;
-        padding: 0 $eve-spacing-tiny;
-        border-radius: $eve-tooltip-border-radius;
+        padding: 0 $eve-spacing-small;
+        border-radius: $eve-tooltip-size / 2;
         pointer-events: none;
         position: absolute;
         text-transform: none;
         transition: opacity 150ms ease, visibility 150ms ease;
         white-space: pre;
-        height: $eve-tooltip-height;
-        line-height: $eve-tooltip-height;
+        height: $eve-tooltip-size;
+        line-height: $eve-tooltip-size;
         font-family: inherit;
         font-weight: normal;
     }
 
-    &.eve-tooltip-top {
+    &.is-top {
         &::after {
             bottom: calc(100% + #{$eve-spacing-tiny});
             left: 50%;
@@ -33,14 +38,14 @@ $eve-tooltip-background-color: #263238 !default;
         }
     }
 
-    &.eve-tooltip-left {
+    &.is-left {
         &::after {
-            bottom: calc(50% - #{$eve-tooltip-height / 2});
+            bottom: calc(50% - #{$eve-tooltip-size / 2});
             right: calc(100% + #{$eve-spacing-tiny});
         }
     }
 
-    &.eve-tooltip-bottom {
+    &.is-bottom {
         &::after {
             top: calc(100% + #{$eve-spacing-tiny});
             left: 50%;
@@ -48,17 +53,10 @@ $eve-tooltip-background-color: #263238 !default;
         }
     }
 
-    &.eve-tooltip-right {
+    &.is-right {
         &::after {
-            bottom: calc(50% - #{$eve-tooltip-height / 2});
+            bottom: calc(50% - #{$eve-tooltip-size / 2});
             left: calc(100% + #{$eve-spacing-tiny});
-        }
-    }
-
-    &:hover {
-        &::after {
-            opacity: 1;
-            visibility: visible;
         }
     }
 }

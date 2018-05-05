@@ -1,55 +1,37 @@
-$eve-input-height: 36px !default;
-$eve-input-icon-size: 18px !default;
-$eve-input-border-radius: $eve-input-height / 2 !default;
-$eve-input-border-width: 1px !default;
-$eve-input-width: 100% !default;
-$eve-input-max-width: 100% !default;
+$eve-input-colors: (
+    primary: $eve-color-blue,
+    success: $eve-color-green,
+    warning: $eve-color-orange,
+    danger: $eve-color-red
+);
 $eve-input-sizes: (
     small: 28px,
+    normal: 36px,
     large: 48px
-) !default;
+);
 $eve-input-paddings: (
     small: $eve-spacing-tiny,
+    normal: $eve-spacing-small,
     large: $eve-spacing-normal
-) !default;
+);
 $eve-input-font-sizes: (
     small: $eve-font-tiny,
+    normal: $eve-font-small,
     large: $eve-font-normal
-) !default;
+);
 
 .eve-input {
-    height: $eve-input-height;
-    line-height: $eve-input-height;
     background: $eve-color-white;
-    border: $eve-input-border-width solid $eve-color-dark-silver;
+    border: 1px solid $eve-color-dark-silver;
     outline: none;
-    padding: 0 $eve-spacing-small;
-    font-size: $eve-font-small;
     color: $eve-color-grey-black;
-    width: $eve-input-width;
-    max-width: $eve-input-max-width;
+    width: 100%;
+    max-width: 100%;
     vertical-align: middle;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
     box-sizing: border-box;
-
-    @each $eve-input-size in map-keys($eve-input-sizes) {
-        $size: map-get($eve-input-sizes, $eve-input-size);
-
-        &.eve-input-#{$eve-input-size} {
-            height: $size;
-            line-height: $size;
-
-            @if map-has-key($eve-input-paddings, $eve-input-size) {
-                padding: 0 map-get($eve-input-paddings, $eve-input-size);
-            }
-
-            @if map-has-key($eve-input-font-sizes, $eve-input-size) {
-                font-size: map-get($eve-input-font-sizes, $eve-input-size);
-            }
-        }
-    }
 
     &::placeholder {
         font-family: inherit;
@@ -60,6 +42,36 @@ $eve-input-font-sizes: (
         border-color: $eve-color-blue;
     }
 
+    @each $eve-input-size in map-keys($eve-input-sizes) {
+        $size: map-get($eve-input-sizes, $eve-input-size);
+        $padding: map-get($eve-input-paddings, $eve-input-size);
+        $font-size: map-get($eve-input-font-sizes, $eve-input-size);
+
+        @if $eve-input-size == 'normal' {
+            height: $size;
+            line-height: $size;
+            padding: 0 $padding;
+            font-size: $font-size;
+        } @else {
+            &.is-#{$eve-input-size} {
+                height: $size;
+                line-height: $size;
+                padding: 0 $padding;
+                font-size: $font-size;
+            }
+        }
+
+        &.is-rounded {
+            border-radius: $size / 2;
+        }
+    }
+
+    @each $eve-input-color in map-keys($eve-input-colors) {
+        &.is-#{$eve-input-color} {
+            border-color: map-get($eve-input-colors, $eve-input-color);
+        }
+    }
+
     &:disabled {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
@@ -68,60 +80,123 @@ $eve-input-font-sizes: (
     }
 }
 
-.eve-input-control {
+.eve-input-field {
+    position: relative;
     display: flex;
+    align-items: center;
 
-    .eve-button {
-        border-radius: 0;
-        flex-shrink: 0;
-    }
+    @each $eve-input-size in map-keys($eve-input-sizes) {
+        $size: map-get($eve-input-sizes, $eve-input-size);
+        $padding: map-get($eve-input-paddings, $eve-input-size);
 
-    &.eve-input-control-icon {
-        position: relative;
-        align-items: center;
+        @if $eve-input-size == 'normal' {
+            &.is-loading {
+                &::after {
+                    right: $padding;
+                    width: $size / 2;
+                    height: $size / 2;
+                }
 
-        .eve-input {
-            padding-left: $eve-input-icon-size + $eve-spacing-normal;
+                .eve-input {
+                    padding-right: ($size / 2) + ($padding * 2) - ($padding / 2);
+                }
+            }
 
-            &:focus {
-                & ~ .eve-input-icon {
+            &.has-icon {
+                i,
+                svg {
+                    left: $padding;
+                }
+
+                i {
+                    font-size: $size / 2;
+                }
+
+                svg {
+                    width: $size / 2;
+                    height: $size / 2;
+                }
+
+                .eve-input {
+                    padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
+                }
+            }
+        } @else {
+            &.is-#{$eve-input-size} {
+                &.is-loading {
+                    &::after {
+                        right: $padding;
+                        width: $size / 2;
+                        height: $size / 2;
+                    }
+
+                    .eve-input {
+                        padding-right: ($size / 2) + ($padding * 2) - ($padding / 2);
+                    }
+                }
+
+                &.has-icon {
+                    i,
+                    svg {
+                        left: $padding;
+                    }
+
                     i {
-                        color: $eve-color-blue;
+                        font-size: $size / 2;
                     }
 
                     svg {
-                        fill: $eve-color-blue;
+                        width: $size / 2;
+                        height: $size / 2;
+                    }
+
+                    .eve-input {
+                        padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
                     }
                 }
             }
         }
+    }
 
-        .eve-input-icon {
-            display: flex;
-            align-items: center;
+    &.is-loading {
+        &::after {
+            content: '';
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: $eve-color-blue;
+            border-right-color: $eve-color-blue;
             position: absolute;
-            left: $eve-spacing-small;
+            animation-name: eveButtonProgress;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-duration: .5s;
+            animation-timing-function: linear;
+            box-sizing: border-box;
+        }
 
-            i {
-                font-size: $eve-input-icon-size;
-                color: $eve-color-dark-silver;
+        @keyframes eveButtonProgress {
+            from {
+                transform: rotate(0);
             }
 
-            svg {
-                width: $eve-input-icon-size;
-                height: $eve-input-icon-size;
-                fill: $eve-color-dark-silver;
+            to {
+                transform: rotate(360deg);
             }
         }
     }
-}
 
-.eve-input-group {
-    display: flex;
+    &.has-icon {
+        i,
+        svg {
+            position: absolute;
+        }
 
-    .eve-input {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-tiny;
+        i {
+            color: $eve-color-dark-silver;
+        }
+
+        svg {
+            fill: $eve-color-dark-silver;
         }
     }
 }

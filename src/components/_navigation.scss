@@ -1,4 +1,4 @@
-$eve-navigation-tab-size: 48px !default;
+$eve-navigation-tab-size: 48px;
 
 .eve-navigation {
     display: flex;
@@ -29,7 +29,7 @@ $eve-navigation-tab-size: 48px !default;
             color: $eve-color-blue;
         }
 
-        &.eve-navigation-tab-active {
+        &.is-active {
             color: $eve-color-blue;
             position: relative;
 
@@ -44,7 +44,7 @@ $eve-navigation-tab-size: 48px !default;
             }
         }
 
-        &.eve-navigation-tab-disable {
+        &.is-disabled {
             color: $eve-color-darker-silver;
             pointer-events: none;
 
@@ -63,7 +63,7 @@ $eve-navigation-tab-size: 48px !default;
             padding: 0 $eve-spacing-normal;
 
             &:hover {
-                background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
+                background: rgba($eve-color-bright-silver, .5);
                 color: inherit;
             }
 

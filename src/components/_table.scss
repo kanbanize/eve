@@ -1,6 +1,4 @@
-$eve-table-th-height: 56px !default;
-$eve-table-tr-height: 48px !default;
-$eve-table-filter-height: 56px !default;
+$eve-table-filter-height: 56px;
 
 .eve-table {
     border-spacing: 0;
@@ -16,7 +14,7 @@ $eve-table-filter-height: 56px !default;
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                height: $eve-table-th-height;
+                height: 56px;
                 font-weight: normal;
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
@@ -27,10 +25,14 @@ $eve-table-filter-height: 56px !default;
 
     tbody {
         tr {
-            height: $eve-table-tr-height;
+            height: 48px;
 
             &:not(:last-child) {
                 border-bottom: 1px solid $eve-color-dark-silver;
+            }
+
+            &:hover {
+                background: rgba($eve-color-blue, .1);
             }
 
             td {
@@ -43,21 +45,11 @@ $eve-table-filter-height: 56px !default;
         }
     }
 
-    &.eve-table-strip {
+    &.is-stripped {
         tbody {
             tr {
                 &:nth-child(even) {
-                    background: rgba($eve-color-bright-silver, .5); // sass-lint:disable-line no-color-literals
-                }
-            }
-        }
-    }
-
-    &.eve-table-select {
-        tbody {
-            tr {
-                &:hover {
-                    background: rgba($eve-color-blue, .1); // sass-lint:disable-line no-color-literals
+                    background: rgba($eve-color-bright-silver, .5);
                 }
             }
         }
@@ -65,19 +57,22 @@ $eve-table-filter-height: 56px !default;
 }
 
 .eve-table-filter {
-    .eve-input-control {
+    .eve-input-field {
         height: $eve-table-filter-height;
         line-height: $eve-table-filter-height;
-        border-left: 1px solid $eve-color-dark-silver;
-        border-top: 1px solid $eve-color-dark-silver;
-        border-right: 1px solid $eve-color-dark-silver;
-        padding: 0 $eve-spacing-tiny;
 
         .eve-input {
-            border: 0;
+            height: inherit;
+            line-height: inherit;
+            border-bottom: 0;
+
+            &:focus {
+                border-color: $eve-color-dark-silver;
+            }
         }
 
-        .eve-input-icon {
+        .i,
+        svg {
             left: 24px;
         }
     }

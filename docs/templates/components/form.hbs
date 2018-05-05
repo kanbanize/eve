@@ -1,3 +1,8 @@
+<style>
+    .eve-form-control:not(:last-child) {
+        margin-bottom: 8px;
+    }
+</style>
 <div class="component">
     <div class="component-title">Form</div>
     <div class="component-content">
@@ -5,6 +10,25 @@
             <div class="eve-form-group">
                 <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-form-control">
+                <input type="text" class="eve-input" placeholder="Name">
+                <button class="eve-button is-primary">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-form-group">
+                <label class="eve-form-label">Name</label>
+                <div class="eve-form-control">
+                    <input type="text" class="eve-input" placeholder="Name">
+                    <button class="eve-button is-primary">Save</button>
+                </div>
             </div>
         </div>
     </div>
@@ -20,7 +44,7 @@
                     <input type="email" class="eve-input">
                 </div>
                 <div class="eve-form-group">
-                    <div class="eve-radio-group">
+                    <div class="eve-radios is-inline">
                         <label class="eve-radio-control">
                             <div class="eve-radio">
                                 <input type="radio" name="eve-radio">
@@ -64,9 +88,9 @@
                     </label>
                 </div>
                 <div class="eve-form-group">
-                    <div class="eve-button-group">
-                        <button class="eve-button eve-button-primary">Send</button>
-                        <button class="eve-button eve-button-primary eve-button-outline">Discard</button>
+                    <div class="eve-buttons">
+                        <button class="eve-button is-primary">Send</button>
+                        <button class="eve-button is-primary is-outlined">Discard</button>
                     </div>
                 </div>
             </form>
@@ -76,7 +100,7 @@
         <div class="component-example">
             <form style="width: 400px;">
                 <div class="eve-form-group">
-                    <button class="eve-button eve-button-primary eve-button-block">Sign Up with Google</button>
+                    <button class="eve-button is-primary is-block">Sign Up with Google</button>
                 </div>
                 <div class="eve-divider" data-content="or"></div>
                 <div class="eve-form-group">
@@ -86,13 +110,13 @@
                     <input type="password" class="eve-input" placeholder="Password">
                 </div>
                 <div class="eve-form-group">
-                    <input type="password" class="eve-input" placeholder="Confir Password">
+                    <input type="password" class="eve-input" placeholder="Confirm Password">
                 </div>
                 <div class="eve-form-group">
                     <input type="text" class="eve-input" placeholder="Job Title">
                 </div>
                 <div class="eve-form-group">
-                    <div class="eve-radio-group">
+                    <div class="eve-radios is-inline">
                         <label class="eve-radio-control">
                             <div class="eve-radio">
                                 <input type="radio" name="eve-radio">
@@ -126,7 +150,7 @@
                     </label>
                 </div>
                 <div class="eve-form-group">
-                    <button class="eve-button eve-button-primary eve-button-block">Sign Up</button>
+                    <button class="eve-button is-primary is-block">Sign Up</button>
                 </div>
                 <p class="eve-paragraph eve-text-center">Already have an account?</p>
                 <p class="eve-paragraph eve-text-center">
@@ -139,7 +163,7 @@
         <div class="component-example">
             <form style="width: 400px;">
                 <div class="eve-form-group">
-                    <button class="eve-button eve-button-primary eve-button-block">Sign Up with Google</button>
+                    <button class="eve-button is-primary is-block">Sign Up with Google</button>
                 </div>
                 <div class="eve-divider" data-content="or"></div>
                 <div class="eve-form-group">
@@ -160,7 +184,7 @@
                             </label>
                         </div>
                         <div class="eve-grid-cell">
-                            <button class="eve-button eve-button-primary">Sign In</button>
+                            <button class="eve-button is-primary">Sign In</button>
                         </div>
                     </div>
                 </div>
@@ -177,7 +201,7 @@
                 </div>
                 <div class="eve-form-group">
                     <div class="eve-grid eve-grid-justify-end">
-                        <button class="eve-button eve-button-primary">Reset Password</button>
+                        <button class="eve-button is-primary">Reset Password</button>
                     </div>
                 </div>
             </form>
@@ -256,9 +280,9 @@
                     </label>
                 </div>
                 <div class="eve-form-group">
-                    <div class="eve-button-group eve-button-group-right">
-                        <button class="eve-button eve-button-primary eve-button-outline">Discard</button>
-                        <button class="eve-button eve-button-primary">Send</button>
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-primary is-outlined">Discard</button>
+                        <button class="eve-button is-primary">Send</button>
                     </div>
                 </div>
             </form>

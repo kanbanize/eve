@@ -1,6 +1,5 @@
-$eve-switch-width: 32px !default;
-$eve-switch-height: 18px !default;
-$eve-switch-radius: $eve-switch-height / 2 !default;
+$eve-switch-width: 32px;
+$eve-switch-height: 18px;
 
 .eve-switch {
     display: inline-flex;
@@ -49,7 +48,7 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
         width: 100%;
         height: 100%;
         pointer-events: none;
-        border-radius: $eve-switch-radius;
+        border-radius: $eve-switch-height / 2;
         padding: 2px;
         box-sizing: border-box;
 
@@ -77,21 +76,21 @@ $eve-switch-radius: $eve-switch-height / 2 !default;
     }
 }
 
-.eve-switch-group {
-    display: flex;
-    align-items: center;
-
+.eve-switches {
     .eve-switch-control {
         &:not(:last-child) {
-            margin-right: $eve-spacing-normal;
+            margin: 0 0 $eve-spacing-tiny;
         }
     }
-}
 
-.eve-switch-list {
-    .eve-switch-control {
-        &:not(:last-child) {
-            margin-bottom: $eve-spacing-tiny;
+    &.is-inline {
+        display: flex;
+        align-items: center;
+
+        .eve-switch-control {
+            &:not(:last-child) {
+                margin: 0 $eve-spacing-normal 0 0;
+            }
         }
     }
 }

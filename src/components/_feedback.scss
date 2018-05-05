@@ -2,23 +2,39 @@ $eve-feedback-colors: (
     success: $eve-color-green,
     warning: $eve-color-orange,
     danger: $eve-color-red,
-) !default;
+);
+$eve-feedback-icon-size: 18px;
 
 .eve-feedback {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: $eve-spacing-tiny;
+    padding: $eve-spacing-tiny $eve-spacing-small;
     color: $eve-color-grey-black;
     font-size: $eve-font-tiny;
     line-height: 20px;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
-        &.eve-feedback-#{$eve-feedback-color} {
-            $eve-feedback-color-rgb: rgba(map-get($eve-feedback-colors, $eve-feedback-color), .2);
+        $color: map-get($eve-feedback-colors, $eve-feedback-color);
 
-            background: $eve-feedback-color-rgb;
+        &.is-#{$eve-feedback-color} {
+            background: rgba($color, .2);
+
+            i {
+                color: $color;
+                font-size: $eve-feedback-icon-size;
+            }
+
+            svg {
+                fill: $color;
+                width: $eve-feedback-icon-size;
+                height: $eve-feedback-icon-size;
+            }
         }
+    }
+
+    i,
+    svg {
+        margin-right: $eve-spacing-tiny;
     }
 }

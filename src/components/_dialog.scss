@@ -4,17 +4,12 @@ $eve-dialog-types: (
     warning: $eve-color-orange,
     danger: $eve-color-red
 ) !default;
-$eve-dialog-box-shadow-color: rgba(0, 0, 0, .1) !default;
 $eve-dialog-width: 400px !default;
 $eve-dialog-close-size: 32px !default;
-$eve-dialog-close-border-radius: 50% !default;
-$eve-dialog-close-icon-size: 16px !default;
-$eve-dialog-close-icon-color: $eve-color-darkest-silver;
-$eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
 
 .eve-dialog {
     width: $eve-dialog-width;
-    box-shadow: 0 5px 10px 0 $eve-dialog-box-shadow-color;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
     padding: $eve-spacing-normal;
     background: $eve-color-white;
     position: relative;
@@ -24,8 +19,8 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
         top: -($eve-dialog-close-size / 2);
         right: -($eve-dialog-close-size / 2);
         background: $eve-color-white;
-        box-shadow: 0 5px 10px 0 $eve-dialog-close-box-shadow-color;
-        border-radius: $eve-dialog-close-border-radius;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+        border-radius: 50%;
         width: $eve-dialog-close-size;
         height: $eve-dialog-close-size;
         display: flex;
@@ -34,14 +29,14 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
         cursor: pointer;
 
         i {
-            font-size: $eve-dialog-close-icon-size;
-            color: $eve-dialog-close-icon-color;
+            font-size: $eve-dialog-close-size / 2;
+            color: $eve-color-darkest-silver;
         }
 
         svg {
-            width: $eve-dialog-close-icon-size;
-            height: $eve-dialog-close-icon-size;
-            fill: $eve-dialog-close-icon-color;
+            width: $eve-dialog-close-size / 2;
+            height: $eve-dialog-close-size / 2;
+            fill: $eve-color-darkest-silver;
         }
     }
 
@@ -72,7 +67,7 @@ $eve-dialog-close-box-shadow-color: rgba(0, 0, 0, .1) !default;
     @each $eve-dialog-type in map-keys($eve-dialog-types) {
         $color: map-get($eve-dialog-types, $eve-dialog-type);
 
-        &.eve-dialog-#{$eve-dialog-type} {
+        &.is-#{$eve-dialog-type} {
             .eve-dialog-close {
                 &:hover {
                     i {
