@@ -3,7 +3,7 @@ $eve-displays: (
     none,
     inline-block,
     block
-) !default;
+);
 
 @each $eve-display in $eve-displays {
     .eve-display-#{$eve-display} {

@@ -3,12 +3,12 @@ $eve-text-transforms: (
     lowercase,
     uppercase,
     capitalize
-) !default;
+);
 $eve-text-alignments: (
     left,
     center,
     right
-) !default;
+);
 $eve-text-sizes: (
     x-tiny: $eve-font-x-tiny,
     tiny: $eve-font-tiny,
@@ -16,14 +16,14 @@ $eve-text-sizes: (
     normal: $eve-font-normal,
     large: $eve-font-large,
     x-large: $eve-font-x-large
-) !default;
+);
 $eve-text-colors: (
     primary: $eve-color-blue,
     danger: $eve-color-red,
     warning: $eve-color-orange,
     success: $eve-color-green,
     mute: $eve-color-darkest-silver
-) !default;
+);
 
 @each $eve-text-transform in $eve-text-transforms {
     .eve-text-#{$eve-text-transform} {
