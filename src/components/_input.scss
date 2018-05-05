@@ -66,11 +66,11 @@ $eve-input-font-sizes: (
         }
     }
 
-    @each $eve-input-color in map-keys($eve-input-colors) {
-        &.is-#{$eve-input-color} {
-            border-color: map-get($eve-input-colors, $eve-input-color);
-        }
-    }
+    // @each $eve-input-color in map-keys($eve-input-colors) {
+    //     &.is-#{$eve-input-color} {
+    //         border-color: map-get($eve-input-colors, $eve-input-color);
+    //     }
+    // }
 
     &:disabled {
         background: $eve-color-dark-silver;
