@@ -1668,63 +1668,41 @@
   display: block;
   position: relative;
   max-width: 100%;
-  width: 100%; }
-  .eve-select::after {
-    content: '';
-    position: absolute;
-    border: 1px solid #333;
-    border-right: 0;
-    border-top: 0;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    width: 6px;
-    height: 6px;
-    top: calc(50% - 4px);
-    pointer-events: none;
-    box-sizing: border-box; }
-  .eve-select select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-    font-family: inherit;
-    border-radius: 0;
-    background: #fff;
-    width: 100%;
-    color: #333;
-    cursor: pointer;
-    border: 1px solid #cfd8dc; }
-    .eve-select select:focus {
-      border-color: #2196f3; }
-  .eve-select.is-small::after {
-    right: 8px; }
-  .eve-select.is-small select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  font-family: inherit;
+  border-radius: 0;
+  color: #333;
+  cursor: pointer;
+  border: 1px solid #cfd8dc;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 32px 0 16px;
+  font-size: 14px;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 16px center/9px 9px; }
+  .eve-select:focus {
+    border-color: #2196f3; }
+  .eve-select.is-small {
     height: 28px;
     line-height: 28px;
     padding: 0 16px 0 8px;
-    font-size: 12px; }
-  .eve-select.is-rounded select {
+    font-size: 12px;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 8px center/7px 7px; }
+  .eve-select.is-rounded {
     border-radius: 14px; }
-  .eve-select::after {
-    right: 16px; }
-  .eve-select select {
-    height: 36px;
-    line-height: 36px;
-    padding: 0 32px 0 16px;
-    font-size: 14px; }
-  .eve-select.is-rounded select {
+  .eve-select.is-rounded {
     border-radius: 18px; }
-  .eve-select.is-large::after {
-    right: 24px; }
-  .eve-select.is-large select {
+  .eve-select.is-large {
     height: 48px;
     line-height: 48px;
     padding: 0 48px 0 24px;
-    font-size: 16px; }
-  .eve-select.is-rounded select {
+    font-size: 16px;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 24px center/12px 12px; }
+  .eve-select.is-rounded {
     border-radius: 24px; }
-  .eve-select.is-disabled::after {
-    border-color: #607d8b; }
-  .eve-select.is-disabled select {
+  .eve-select:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
@@ -1742,7 +1720,7 @@
   .eve-select-field.is-small.has-icon svg {
     width: 14px;
     height: 14px; }
-  .eve-select-field.is-small.has-icon .eve-select select {
+  .eve-select-field.is-small.has-icon .eve-select {
     padding-left: 26px; }
   .eve-select-field.has-icon i,
   .eve-select-field.has-icon svg {
@@ -1752,7 +1730,7 @@
   .eve-select-field.has-icon svg {
     width: 18px;
     height: 18px; }
-  .eve-select-field.has-icon .eve-select select {
+  .eve-select-field.has-icon .eve-select {
     padding-left: 42px; }
   .eve-select-field.is-large.has-icon i,
   .eve-select-field.is-large.has-icon svg {
@@ -1762,7 +1740,7 @@
   .eve-select-field.is-large.has-icon svg {
     width: 24px;
     height: 24px; }
-  .eve-select-field.is-large.has-icon .eve-select select {
+  .eve-select-field.is-large.has-icon .eve-select {
     padding-left: 60px; }
   .eve-select-field.has-icon i,
   .eve-select-field.has-icon svg {

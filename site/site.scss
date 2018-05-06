@@ -143,7 +143,7 @@ $transition-default: all 300ms ease-in-out;
                 height: 1.5rem;
                 fill: #fff;
                 cursor: pointer;
-                transition: $transition-default;
+                // transition: $transition-default;
                 padding: 1rem;
                 border-radius: 2rem;
 
@@ -163,7 +163,7 @@ $transition-default: all 300ms ease-in-out;
                     position: relative;
                     bottom: 1.75rem;
                     opacity: 1;
-                    transition: $transition-default;
+                    // transition: $transition-default;
                 }
             }
         }
@@ -232,7 +232,7 @@ $transition-default: all 300ms ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    transition: $transition-default;
+    // transition: $transition-default;
 }
 
 // NightMode JS Modifie
@@ -245,7 +245,7 @@ $transition-default: all 300ms ease-in-out;
 .js-nightmode-on {
     background-color: #161616;
     background-image: none;
-    transition: $transition-default;
+    // transition: $transition-default;
 }
 
 .content__details {
