@@ -44,9 +44,9 @@ Download the compiled and minified [Eve](https://github.com/kanbanize/eve/releas
 <link rel="stylesheet" href="eve.min.css">
 ```
 
-## Browser Support
+## Compatibility
 
-Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. Eve is compatible with recent versions of:
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. Eve is compatible with latest versions of:
 
 - Chrome
 - Firefox
