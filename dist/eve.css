@@ -799,7 +799,7 @@
     background: transparent; }
   .eve-button.is-inverted {
     text-transform: uppercase;
-    border: 0;
+    box-shadow: none;
     font-weight: 600;
     background: transparent; }
   .eve-button.is-loading {
