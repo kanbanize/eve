@@ -1188,6 +1188,8 @@
     display: inline-block;
     margin-bottom: 8px;
     font-size: 14px; }
+  .eve-form-group .eve-form-help {
+    margin-top: 8px; }
   .eve-form-group .eve-textarea {
     resize: none; }
 
