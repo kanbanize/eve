@@ -1509,10 +1509,10 @@
       .eve-navigation.eve-navigation-vertical .eve-navigation-tab:hover {
         background: rgba(236, 239, 241, 0.5);
         color: inherit; }
-      .eve-navigation.eve-navigation-vertical .eve-navigation-tab.eve-navigation-tab-active {
+      .eve-navigation.eve-navigation-vertical .eve-navigation-tab.is-active {
         background: #eceff1;
         color: inherit; }
-        .eve-navigation.eve-navigation-vertical .eve-navigation-tab.eve-navigation-tab-active::after {
+        .eve-navigation.eve-navigation-vertical .eve-navigation-tab.is-active::after {
           top: 0;
           bottom: 0;
           left: 0;
