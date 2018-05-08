@@ -18,19 +18,19 @@ $eve-sides: (
     $gap: map-get($eve-gaps, $eve-gap);
 
     &.eve-gap-#{$eve-gap} {
-        padding: $gap !important;
+        margin: $gap !important;
     }
 
     @each $eve-side in $eve-sides {
         &.eve-gap-#{$eve-side}-#{$eve-gap} {
             @if $eve-side == 'top' {
-                padding-top: $gap !important;
+                margin-top: $gap !important;
             } @else if $eve-side == 'right' {
-                padding-right: $gap !important;
+                margin-right: $gap !important;
             } @else if $eve-side == 'bottom' {
-                padding-bottom: $gap !important;
+                margin-bottom: $gap !important;
             } @else if $eve-side == 'left' {
-                padding-left: $gap !important;
+                margin-left: $gap !important;
             }
         }
     }
