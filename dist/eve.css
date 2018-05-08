@@ -1189,7 +1189,8 @@
     margin-bottom: 8px;
     font-size: 14px; }
   .eve-form-group .eve-form-help {
-    margin-top: 8px; }
+    margin-top: 8px;
+    font-size: 12px; }
   .eve-form-group .eve-textarea {
     resize: none; }
 
@@ -1345,9 +1346,9 @@
   .eve-input-field.has-icon svg {
     position: absolute; }
   .eve-input-field.has-icon i {
-    color: #cfd8dc; }
+    color: #b0bec5; }
   .eve-input-field.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #b0bec5; }
   .eve-input-field .eve-input-addon {
     display: flex;
     align-items: center;
@@ -1784,9 +1785,9 @@
   .eve-select-field.has-icon svg {
     position: absolute; }
   .eve-select-field.has-icon i {
-    color: #cfd8dc; }
+    color: #b0bec5; }
   .eve-select-field.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #b0bec5; }
 
 .eve-switch {
   display: inline-flex;
