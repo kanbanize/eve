@@ -1965,94 +1965,94 @@
   display: block !important; }
 
 .eve-gap-x-tiny {
-  margin: 4px !important; }
+  padding: 4px !important; }
 
 .eve-gap-top-x-tiny {
-  margin-top: 4px !important; }
+  padding-top: 4px !important; }
 
 .eve-gap-right-x-tiny {
-  margin-right: 4px !important; }
+  padding-right: 4px !important; }
 
 .eve-gap-bottom-x-tiny {
-  margin-bottom: 4px !important; }
+  padding-bottom: 4px !important; }
 
 .eve-gap-left-x-tiny {
-  margin-left: 4px !important; }
+  padding-left: 4px !important; }
 
 .eve-gap-tiny {
-  margin: 8px !important; }
+  padding: 8px !important; }
 
 .eve-gap-top-tiny {
-  margin-top: 8px !important; }
+  padding-top: 8px !important; }
 
 .eve-gap-right-tiny {
-  margin-right: 8px !important; }
+  padding-right: 8px !important; }
 
 .eve-gap-bottom-tiny {
-  margin-bottom: 8px !important; }
+  padding-bottom: 8px !important; }
 
 .eve-gap-left-tiny {
-  margin-left: 8px !important; }
+  padding-left: 8px !important; }
 
 .eve-gap-small {
-  margin: 16px !important; }
+  padding: 16px !important; }
 
 .eve-gap-top-small {
-  margin-top: 16px !important; }
+  padding-top: 16px !important; }
 
 .eve-gap-right-small {
-  margin-right: 16px !important; }
+  padding-right: 16px !important; }
 
 .eve-gap-bottom-small {
-  margin-bottom: 16px !important; }
+  padding-bottom: 16px !important; }
 
 .eve-gap-left-small {
-  margin-left: 16px !important; }
+  padding-left: 16px !important; }
 
 .eve-gap-normal {
-  margin: 24px !important; }
+  padding: 24px !important; }
 
 .eve-gap-top-normal {
-  margin-top: 24px !important; }
+  padding-top: 24px !important; }
 
 .eve-gap-right-normal {
-  margin-right: 24px !important; }
+  padding-right: 24px !important; }
 
 .eve-gap-bottom-normal {
-  margin-bottom: 24px !important; }
+  padding-bottom: 24px !important; }
 
 .eve-gap-left-normal {
-  margin-left: 24px !important; }
+  padding-left: 24px !important; }
 
 .eve-gap-large {
-  margin: 48px !important; }
+  padding: 48px !important; }
 
 .eve-gap-top-large {
-  margin-top: 48px !important; }
+  padding-top: 48px !important; }
 
 .eve-gap-right-large {
-  margin-right: 48px !important; }
+  padding-right: 48px !important; }
 
 .eve-gap-bottom-large {
-  margin-bottom: 48px !important; }
+  padding-bottom: 48px !important; }
 
 .eve-gap-left-large {
-  margin-left: 48px !important; }
+  padding-left: 48px !important; }
 
 .eve-gap-x-large {
-  margin: 64px !important; }
+  padding: 64px !important; }
 
 .eve-gap-top-x-large {
-  margin-top: 64px !important; }
+  padding-top: 64px !important; }
 
 .eve-gap-right-x-large {
-  margin-right: 64px !important; }
+  padding-right: 64px !important; }
 
 .eve-gap-bottom-x-large {
-  margin-bottom: 64px !important; }
+  padding-bottom: 64px !important; }
 
 .eve-gap-left-x-large {
-  margin-left: 64px !important; }
+  padding-left: 64px !important; }
 
 .eve-text-lowercase {
   text-transform: lowercase !important; }
