@@ -1847,8 +1847,6 @@
     height: 48px; }
     .eve-table tbody tr:not(:last-child) {
       border-bottom: 1px solid #cfd8dc; }
-    .eve-table tbody tr:hover {
-      background: rgba(33, 150, 243, 0.1); }
     .eve-table tbody tr td {
       padding: 0 24px; }
       .eve-table tbody tr td .eve-checkbox {
