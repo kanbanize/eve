@@ -1268,6 +1268,11 @@
     height: 14px; }
   .eve-input-field.is-small.has-icon .eve-input {
     padding-left: 26px; }
+  .eve-input-field.is-small .eve-input-addon {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    padding: 0 8px; }
   .eve-input-field.is-loading::after {
     right: 16px;
     width: 18px;
@@ -1284,6 +1289,11 @@
     height: 18px; }
   .eve-input-field.has-icon .eve-input {
     padding-left: 42px; }
+  .eve-input-field .eve-input-addon {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding: 0 16px; }
   .eve-input-field.is-large.is-loading::after {
     right: 24px;
     width: 24px;
@@ -1300,6 +1310,11 @@
     height: 24px; }
   .eve-input-field.is-large.has-icon .eve-input {
     padding-left: 60px; }
+  .eve-input-field.is-large .eve-input-addon {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding: 0 24px; }
   .eve-input-field.is-loading::after {
     content: '';
     border-radius: 50%;
@@ -1333,6 +1348,14 @@
     color: #cfd8dc; }
   .eve-input-field.has-icon svg {
     fill: #cfd8dc; }
+  .eve-input-field .eve-input-addon {
+    display: flex;
+    align-items: center;
+    background: #eceff1;
+    border-top: 1px solid #cfd8dc;
+    border-right: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+    box-sizing: border-box; }
 
 .eve-label {
   display: inline-flex;

@@ -1,9 +1,3 @@
-$eve-input-colors: (
-    primary: $eve-color-blue,
-    success: $eve-color-green,
-    warning: $eve-color-orange,
-    danger: $eve-color-red
-);
 $eve-input-sizes: (
     small: 28px,
     normal: 36px,
@@ -66,12 +60,6 @@ $eve-input-font-sizes: (
         }
     }
 
-    // @each $eve-input-color in map-keys($eve-input-colors) {
-    //     &.is-#{$eve-input-color} {
-    //         border-color: map-get($eve-input-colors, $eve-input-color);
-    //     }
-    // }
-
     &:disabled {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
@@ -88,6 +76,7 @@ $eve-input-font-sizes: (
     @each $eve-input-size in map-keys($eve-input-sizes) {
         $size: map-get($eve-input-sizes, $eve-input-size);
         $padding: map-get($eve-input-paddings, $eve-input-size);
+        $font-size: map-get($eve-input-font-sizes, $eve-input-size);
 
         @if $eve-input-size == 'normal' {
             &.is-loading {
@@ -121,6 +110,13 @@ $eve-input-font-sizes: (
                     padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
                 }
             }
+
+            .eve-input-addon {
+                height: $size;
+                line-height: $size;
+                font-size: $font-size;
+                padding: 0 $padding;
+            }
         } @else {
             &.is-#{$eve-input-size} {
                 &.is-loading {
@@ -153,6 +149,13 @@ $eve-input-font-sizes: (
                     .eve-input {
                         padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
                     }
+                }
+
+                .eve-input-addon {
+                    height: $size;
+                    line-height: $size;
+                    font-size: $font-size;
+                    padding: 0 $padding;
                 }
             }
         }
@@ -198,5 +201,15 @@ $eve-input-font-sizes: (
         svg {
             fill: $eve-color-dark-silver;
         }
+    }
+
+    .eve-input-addon {
+        display: flex;
+        align-items: center;
+        background: $eve-color-bright-silver;
+        border-top: 1px solid $eve-color-dark-silver;
+        border-right: 1px solid $eve-color-dark-silver;
+        border-bottom: 1px solid $eve-color-dark-silver;
+        box-sizing: border-box;
     }
 }
