@@ -30,19 +30,38 @@
     .eve-gap-bottom-x-large,
     .eve-gap-left-x-large {
         background: #eceff1;
-        border: 1px dotted #2196f3;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
+        flex: 1;
+        border: 1px solid #cfd8dc;
+    }
+
+    .gap-example-1,
+    .gap-example-2,
+    .gap-example-3,
+    .gap-example-4,
+    .gap-example-5 {
+        border: 1px solid #f44336;
+    }
+
+    .gap-example-1,
+    .gap-example-2,
+    .gap-example-4 {
+        display: flex;
+    }
+
+    .gap-example-4 {
+        align-items: flex-end;
     }
 </style>
 <div class="component">
     <div class="component-title">Gap</div>
     <div class="component-content">
         <div class="component-header">Gap default</div>
-        <div class="component-example">
+        <div class="component-example gap-example-1">
             <div class="eve-gap-x-tiny">eve-gap-x-tiny</div>
             <div class="eve-gap-tiny">eve-gap-tiny</div>
             <div class="eve-gap-small">eve-gap-small</div>
@@ -53,7 +72,7 @@
     </div>
     <div class="component-content">
         <div class="component-header">Gap top</div>
-        <div class="component-example">
+        <div class="component-example gap-example-2">
             <div class="eve-gap-top-x-tiny">eve-gap-top-x-tiny</div>
             <div class="eve-gap-top-tiny">eve-gap-top-tiny</div>
             <div class="eve-gap-top-small">eve-gap-top-small</div>
@@ -64,7 +83,7 @@
     </div>
     <div class="component-content">
         <div class="component-header">Gap right</div>
-        <div class="component-example">
+        <div class="component-example gap-example-3">
             <div class="eve-gap-right-x-tiny">eve-gap-right-x-tiny</div>
             <div class="eve-gap-right-tiny">eve-gap-right-tiny</div>
             <div class="eve-gap-right-small">eve-gap-right-small</div>
@@ -75,7 +94,7 @@
     </div>
     <div class="component-content">
         <div class="component-header">Gap bottom</div>
-        <div class="component-example">
+        <div class="component-example gap-example-4">
             <div class="eve-gap-bottom-x-tiny">eve-gap-bottom-x-tiny</div>
             <div class="eve-gap-bottom-tiny">eve-gap-bottom-tiny</div>
             <div class="eve-gap-bottom-small">eve-gap-bottom-small</div>
@@ -86,7 +105,7 @@
     </div>
     <div class="component-content">
         <div class="component-header">Gap left</div>
-        <div class="component-example">
+        <div class="component-example gap-example-5">
             <div class="eve-gap-left-x-tiny">eve-gap-left-x-tiny</div>
             <div class="eve-gap-left-tiny">eve-gap-left-tiny</div>
             <div class="eve-gap-left-small">eve-gap-left-small</div>
