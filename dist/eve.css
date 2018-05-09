@@ -2078,6 +2078,12 @@
 .eve-gap-left-x-large {
   margin-left: 64px !important; }
 
+.eve-overflow-hidden {
+  overflow: hidden !important; }
+
+.eve-overflow-visible {
+  overflow: visible !important; }
+
 .eve-text-lowercase {
   text-transform: lowercase !important; }
 

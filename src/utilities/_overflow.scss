@@ -1,0 +1,11 @@
+// sass-lint:disable no-important
+$eve-overflows: (
+    hidden,
+    visible
+);
+
+@each $eve-overflow in $eve-overflows {
+    .eve-overflow-#{$eve-overflow} {
+        overflow: $eve-overflow !important;
+    }
+}
