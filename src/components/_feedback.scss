@@ -32,6 +32,16 @@ $eve-feedback-icon-size: 18px;
             }
         }
     }
+    
+    &.blink {
+        animation-name: blinker;
+        animation-duration: 1s;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes blinker {
+        50% { opacity: 0; }
+    }
 
     i,
     svg {
