@@ -78,7 +78,6 @@ $eve-checkbox-mark-border-width: 2px;
 
 .eve-checkbox-control {
     display: flex;
-    align-items: center;
     font-size: $eve-font-small;
 
     .eve-checkbox {
@@ -104,7 +103,6 @@ $eve-checkbox-mark-border-width: 2px;
 
     &.is-inline {
         display: flex;
-        align-items: center;
 
         .eve-checkbox-control {
             &:not(:last-child) {

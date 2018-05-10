@@ -67,7 +67,6 @@ $eve-switch-height: 18px;
 
 .eve-switch-control {
     display: flex;
-    align-items: center;
     font-size: $eve-font-small;
 
     .eve-switch {
@@ -85,7 +84,6 @@ $eve-switch-height: 18px;
 
     &.is-inline {
         display: flex;
-        align-items: center;
 
         .eve-switch-control {
             &:not(:last-child) {

@@ -935,7 +935,6 @@
 
 .eve-checkbox-control {
   display: flex;
-  align-items: center;
   font-size: 14px; }
   .eve-checkbox-control .eve-checkbox {
     flex-shrink: 0;
@@ -950,8 +949,7 @@
   margin: 0 0 8px; }
 
 .eve-checkboxes.is-inline {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .eve-checkboxes.is-inline .eve-checkbox-control:not(:last-child) {
     margin: 0 24px 0 0; }
 
@@ -1675,7 +1673,6 @@
 
 .eve-radio-control {
   display: flex;
-  align-items: center;
   font-size: 14px; }
   .eve-radio-control .eve-radio {
     flex-shrink: 0;
@@ -1685,8 +1682,7 @@
   margin: 0 0 8px; }
 
 .eve-radios.is-inline {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .eve-radios.is-inline .eve-radio-control:not(:last-child) {
     margin: 0 24px 0 0; }
 
@@ -1836,7 +1832,6 @@
 
 .eve-switch-control {
   display: flex;
-  align-items: center;
   font-size: 14px; }
   .eve-switch-control .eve-switch {
     flex-shrink: 0;
@@ -1846,8 +1841,7 @@
   margin: 0 0 8px; }
 
 .eve-switches.is-inline {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .eve-switches.is-inline .eve-switch-control:not(:last-child) {
     margin: 0 24px 0 0; }
 

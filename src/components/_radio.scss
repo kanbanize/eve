@@ -72,7 +72,6 @@ $eve-radio-size: 18px;
 
 .eve-radio-control {
     display: flex;
-    align-items: center;
     font-size: $eve-font-small;
 
     .eve-radio {
@@ -90,7 +89,6 @@ $eve-radio-size: 18px;
 
     &.is-inline {
         display: flex;
-        align-items: center;
 
         .eve-radio-control {
             &:not(:last-child) {
