@@ -80,6 +80,10 @@ $eve-button-font-sizes: (
                     height: $size / 2;
                 }
             }
+
+            &.is-rounded {
+                border-radius: $size / 2;
+            }
         } @else {
             &.is-#{$eve-button-size} {
                 height: $size;
@@ -104,11 +108,11 @@ $eve-button-font-sizes: (
                         height: $size / 2;
                     }
                 }
-            }
-        }
 
-        &.is-rounded {
-            border-radius: $size / 2;
+                &.is-rounded {
+                    border-radius: $size / 2;
+                }
+            }
         }
     }
 
@@ -266,5 +270,30 @@ $eve-button-font-sizes: (
 
     &.is-right {
         justify-content: flex-end;
+    }
+
+    &.has-addons {
+        .eve-button {
+            &.is-rounded {
+                &:first-of-type {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                &:last-of-type {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+
+            &:not(:first-of-type) {
+                margin-left: 1px;
+            }
+
+            i,
+            svg {
+                margin: 0;
+            }
+        }
     }
 }

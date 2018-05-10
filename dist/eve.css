@@ -664,8 +664,8 @@
       left: calc(50% - 7px);
       width: 14px;
       height: 14px; }
-  .eve-button.is-rounded {
-    border-radius: 14px; }
+    .eve-button.is-small.is-rounded {
+      border-radius: 14px; }
   .eve-button i {
     font-size: 18px; }
   .eve-button svg {
@@ -693,8 +693,8 @@
       left: calc(50% - 12px);
       width: 24px;
       height: 24px; }
-  .eve-button.is-rounded {
-    border-radius: 24px; }
+    .eve-button.is-large.is-rounded {
+      border-radius: 24px; }
   .eve-button.is-primary {
     background: #2196f3; }
     .eve-button.is-primary:hover {
@@ -879,6 +879,17 @@
     justify-content: center; }
   .eve-buttons.is-right {
     justify-content: flex-end; }
+  .eve-buttons.has-addons .eve-button.is-rounded:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .eve-buttons.has-addons .eve-button.is-rounded:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .eve-buttons.has-addons .eve-button:not(:first-of-type) {
+    margin-left: 1px; }
+  .eve-buttons.has-addons .eve-button i,
+  .eve-buttons.has-addons .eve-button svg {
+    margin: 0; }
 
 .eve-checkbox {
   display: inline-flex;
