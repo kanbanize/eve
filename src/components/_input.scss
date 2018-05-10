@@ -46,17 +46,21 @@ $eve-input-font-sizes: (
             line-height: $size;
             padding: 0 $padding;
             font-size: $font-size;
+
+            &.is-rounded {
+                border-radius: $size / 2;
+            }
         } @else {
             &.is-#{$eve-input-size} {
                 height: $size;
                 line-height: $size;
                 padding: 0 $padding;
                 font-size: $font-size;
-            }
-        }
 
-        &.is-rounded {
-            border-radius: $size / 2;
+                &.is-rounded {
+                    border-radius: $size / 2;
+                }
+            }
         }
     }
 

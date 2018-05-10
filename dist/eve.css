@@ -1241,8 +1241,8 @@
     line-height: 28px;
     padding: 0 8px;
     font-size: 12px; }
-  .eve-input.is-rounded {
-    border-radius: 14px; }
+    .eve-input.is-small.is-rounded {
+      border-radius: 14px; }
   .eve-input.is-rounded {
     border-radius: 18px; }
   .eve-input.is-large {
@@ -1250,8 +1250,8 @@
     line-height: 48px;
     padding: 0 24px;
     font-size: 16px; }
-  .eve-input.is-rounded {
-    border-radius: 24px; }
+    .eve-input.is-large.is-rounded {
+      border-radius: 24px; }
   .eve-input:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
@@ -1723,18 +1723,18 @@
     padding: 0 16px 0 8px;
     font-size: 12px;
     background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23333333'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 8px center/7px 7px; }
+    .eve-select.is-small.is-rounded {
+      border-radius: 14px; }
     .eve-select.is-small.disabled {
       background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 8px center/7px 7px; }
-  .eve-select.is-rounded {
-    border-radius: 14px; }
   .eve-select:disabled {
     border-color: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
-  .eve-select:disabled {
-    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 16px center/9px 9px; }
   .eve-select.is-rounded {
     border-radius: 18px; }
+  .eve-select:disabled {
+    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 16px center/9px 9px; }
   .eve-select:disabled {
     border-color: #cfd8dc;
     color: #607d8b;
@@ -1745,10 +1745,10 @@
     padding: 0 48px 0 24px;
     font-size: 16px;
     background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23333333'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 24px center/12px 12px; }
+    .eve-select.is-large.is-rounded {
+      border-radius: 24px; }
     .eve-select.is-large.disabled {
       background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 24px center/12px 12px; }
-  .eve-select.is-rounded {
-    border-radius: 24px; }
   .eve-select:disabled {
     border-color: #cfd8dc;
     color: #607d8b;
