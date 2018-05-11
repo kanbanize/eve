@@ -9,6 +9,7 @@ $eve-chip-size: 28px;
     background: $eve-color-bright-silver;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
+    cursor: pointer;
 
     .eve-avatar,
     .eve-chip-icon {
@@ -43,7 +44,6 @@ $eve-chip-size: 28px;
         align-items: center;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
-        cursor: pointer;
         border-radius: 50%;
 
         &:hover {

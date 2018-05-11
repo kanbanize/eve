@@ -972,7 +972,8 @@
   border-radius: 14px;
   background: #eceff1;
   padding: 0 8px;
-  font-size: 12px; }
+  font-size: 12px;
+  cursor: pointer; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
     box-shadow: 0 0 0 1px #fff;
@@ -998,7 +999,6 @@
     align-items: center;
     justify-content: center;
     margin-left: 4px;
-    cursor: pointer;
     border-radius: 50%; }
     .eve-chip .eve-chip-action:hover {
       background: #b0bec5; }
@@ -1374,7 +1374,8 @@
   line-height: 28px;
   padding: 0 8px;
   font-size: 12px;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
   .eve-label.is-primary {
     background: #2196f3; }
     .eve-label.is-primary:hover {
@@ -1468,7 +1469,6 @@
     align-items: center;
     justify-content: center;
     margin-left: 4px;
-    cursor: pointer;
     border-radius: 50%; }
     .eve-label .eve-label-action i {
       font-size: 14px; }

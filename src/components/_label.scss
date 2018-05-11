@@ -14,6 +14,7 @@ $eve-label-size: 28px;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
     color: $eve-color-white;
+    cursor: pointer;
 
     @each $eve-label-color in map-keys($eve-label-colors) {
         $color: map-get($eve-label-colors, $eve-label-color);
@@ -89,7 +90,6 @@ $eve-label-size: 28px;
         align-items: center;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
-        cursor: pointer;
         border-radius: 50%;
 
         i {
