@@ -13,7 +13,7 @@ $eve-chip-size: 28px;
 
     .eve-avatar,
     .eve-chip-icon {
-        box-shadow: 0 0 0 1px $eve-color-white;
+        box-shadow: 0 0 0 1px $eve-color-light;
         height: $eve-chip-size;
         width: $eve-chip-size;
         position: relative;
@@ -25,17 +25,17 @@ $eve-chip-size: 28px;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: $eve-color-blue;
+        background: $eve-color-primary;
 
         i {
             font-size: $eve-chip-size / 2;
-            color: $eve-color-white;
+            color: $eve-color-light;
         }
 
         svg {
             width: $eve-chip-size / 2;
             height: $eve-chip-size / 2;
-            fill: $eve-color-white;
+            fill: $eve-color-light;
         }
     }
 
@@ -50,11 +50,11 @@ $eve-chip-size: 28px;
             background: $eve-color-darker-silver;
 
             i {
-                color: $eve-color-white;
+                color: $eve-color-light;
             }
 
             svg {
-                color: $eve-color-white;
+                color: $eve-color-light;
             }
         }
 

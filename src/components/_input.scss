@@ -15,10 +15,10 @@ $eve-input-font-sizes: (
 );
 
 .eve-input {
-    background: $eve-color-white;
+    background: $eve-color-light;
     border: 1px solid $eve-color-dark-silver;
     outline: none;
-    color: $eve-color-grey-black;
+    color: $eve-color-dark;
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
@@ -33,7 +33,7 @@ $eve-input-font-sizes: (
     }
 
     &:focus {
-        border-color: $eve-color-blue;
+        border-color: $eve-color-primary;
     }
 
     @each $eve-input-size in map-keys($eve-input-sizes) {
@@ -169,9 +169,9 @@ $eve-input-font-sizes: (
         &::after {
             content: '';
             border-radius: 50%;
-            border: 2px solid transparent;
-            border-top-color: $eve-color-blue;
-            border-right-color: $eve-color-blue;
+            border: 1px solid transparent;
+            border-top-color: $eve-color-primary;
+            border-right-color: $eve-color-primary;
             position: absolute;
             animation-name: eveButtonProgress;
             animation-fill-mode: forwards;
@@ -199,11 +199,11 @@ $eve-input-font-sizes: (
         }
 
         i {
-            color: $eve-color-darker-silver;
+            color: $eve-color-dark-silver;
         }
 
         svg {
-            fill: $eve-color-darker-silver;
+            fill: $eve-color-dark-silver;
         }
     }
 

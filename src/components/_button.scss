@@ -1,8 +1,8 @@
 $eve-button-colors: (
-    primary: $eve-color-blue,
-    success: $eve-color-green,
-    warning: $eve-color-orange,
-    danger: $eve-color-red
+    primary: $eve-color-primary,
+    success: $eve-color-success,
+    warning: $eve-color-warning,
+    danger: $eve-color-danger
 );
 $eve-button-sizes: (
     small: 28px,
@@ -26,7 +26,7 @@ $eve-button-font-sizes: (
     justify-content: center;
     border: 0;
     text-decoration: none;
-    color: $eve-color-white;
+    color: $eve-color-light;
     cursor: pointer;
     outline: none;
     user-select: none;
@@ -36,7 +36,7 @@ $eve-button-font-sizes: (
     &:hover,
     &:active,
     &:focus {
-        color: $eve-color-white;
+        color: $eve-color-light;
     }
 
     &:focus {
@@ -49,7 +49,7 @@ $eve-button-font-sizes: (
 
     svg {
         margin-right: $eve-spacing-x-tiny;
-        fill: $eve-color-white;
+        fill: $eve-color-light;
     }
 
     @each $eve-button-size in map-keys($eve-button-sizes) {
@@ -189,8 +189,8 @@ $eve-button-font-sizes: (
             content: '';
             border-radius: 50%;
             border: 2px solid transparent;
-            border-top-color: $eve-color-white;
-            border-right-color: $eve-color-white;
+            border-top-color: $eve-color-light;
+            border-right-color: $eve-color-light;
             position: absolute;
             transform: translate(-50%, -50%);
             animation-name: eveButtonProgress;
@@ -244,7 +244,7 @@ $eve-button-font-sizes: (
 
         &.is-outlined {
             background: $eve-color-darker-silver;
-            color: $eve-color-white;
+            color: $eve-color-light;
             box-shadow: none;
         }
 

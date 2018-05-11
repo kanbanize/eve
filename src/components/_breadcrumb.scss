@@ -15,17 +15,17 @@
 
         a {
             text-decoration: none;
-            color: $eve-color-grey-black;
+            color: $eve-color-dark;
 
             &:hover {
                 text-decoration: underline;
-                color: $eve-color-blue;
+                color: $eve-color-primary;
             }
         }
 
         &:last-child {
             a {
-                color: $eve-color-blue;
+                color: $eve-color-primary;
                 pointer-events: none;
             }
         }

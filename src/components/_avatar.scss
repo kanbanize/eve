@@ -13,11 +13,11 @@ $eve-avatar-sizes: (
     align-items: center;
     border-radius: 50%;
     vertical-align: middle;
-    color: $eve-color-white;
+    color: $eve-color-light;
     position: relative;
 
     &[data-initial] {
-        background: $eve-color-blue;
+        background: $eve-color-primary;
 
         &::before {
             content: attr(data-initial);
@@ -75,28 +75,28 @@ $eve-avatar-sizes: (
                     right: 0;
 
                     @if $eve-avatar-size == 'x-tiny' or $eve-avatar-size == 'tiny' {
-                        box-shadow: 0 0 0 1px $eve-color-white;
+                        box-shadow: 0 0 0 1px $eve-color-light;
                     } @else {
-                        box-shadow: 0 0 0 2px $eve-color-white;
+                        box-shadow: 0 0 0 2px $eve-color-light;
                     }
                 }
             }
 
             &.is-online {
                 &::after {
-                    background: $eve-color-green;
+                    background: $eve-color-success;
                 }
             }
 
             &.is-busy {
                 &::after {
-                    background: $eve-color-red;
+                    background: $eve-color-danger;
                 }
             }
 
             &.is-away {
                 &::after {
-                    background: $eve-color-orange;
+                    background: $eve-color-warning;
                 }
             }
 
@@ -113,7 +113,7 @@ $eve-avatar-sizes: (
     display: flex;
 
     .eve-avatar {
-        box-shadow: 0 0 0 2px $eve-color-white;
+        box-shadow: 0 0 0 2px $eve-color-light;
 
         &:not(:first-child) {
             margin-left: -#{$eve-spacing-x-tiny};

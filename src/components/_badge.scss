@@ -5,15 +5,15 @@ $eve-badge-size: 18px;
 
     &::after {
         content: attr(data-badge);
-        background: $eve-color-red;
+        background: $eve-color-danger;
         border-radius: $eve-badge-size / 2;
-        box-shadow: 0 0 0 2px $eve-color-white;
+        box-shadow: 0 0 0 2px $eve-color-light;
         height: $eve-badge-size;
         line-height: $eve-badge-size;
         text-align: center;
         padding: 0 $eve-spacing-x-tiny;
         min-width: $eve-badge-size;
-        color: $eve-color-white;
+        color: $eve-color-light;
         position: absolute;
         top: 0;
         right: 0;

@@ -1,8 +1,8 @@
 $eve-label-colors: (
-    primary: $eve-color-blue,
-    success: $eve-color-green,
-    warning: $eve-color-orange,
-    danger: $eve-color-red
+    primary: $eve-color-primary,
+    success: $eve-color-success,
+    warning: $eve-color-warning,
+    danger: $eve-color-danger
 );
 $eve-label-size: 28px;
 
@@ -13,7 +13,7 @@ $eve-label-size: 28px;
     line-height: $eve-label-size;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
-    color: $eve-color-white;
+    color: $eve-color-light;
     cursor: pointer;
 
     @each $eve-label-color in map-keys($eve-label-colors) {
@@ -31,11 +31,11 @@ $eve-label-size: 28px;
                     background: $color;
 
                     i {
-                        color: $eve-color-white;
+                        color: $eve-color-light;
                     }
 
                     svg {
-                        fill: $eve-color-white;
+                        fill: $eve-color-light;
                     }
                 }
             }

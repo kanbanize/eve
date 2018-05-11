@@ -1,8 +1,8 @@
 $eve-dialog-types: (
-    primary: $eve-color-blue,
-    success: $eve-color-green,
-    warning: $eve-color-orange,
-    danger: $eve-color-red
+    primary: $eve-color-primary,
+    success: $eve-color-success,
+    warning: $eve-color-warning,
+    danger: $eve-color-danger
 ) !default;
 $eve-dialog-width: 400px !default;
 $eve-dialog-close-size: 32px !default;
@@ -11,14 +11,14 @@ $eve-dialog-close-size: 32px !default;
     width: $eve-dialog-width;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
     padding: $eve-spacing-normal;
-    background: $eve-color-white;
+    background: $eve-color-light;
     position: relative;
 
     .eve-dialog-close {
         position: absolute;
         top: -($eve-dialog-close-size / 2);
         right: -($eve-dialog-close-size / 2);
-        background: $eve-color-white;
+        background: $eve-color-light;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
         border-radius: 50%;
         width: $eve-dialog-close-size;

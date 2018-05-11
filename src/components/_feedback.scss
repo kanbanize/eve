@@ -1,7 +1,7 @@
 $eve-feedback-colors: (
-    success: $eve-color-green,
-    warning: $eve-color-orange,
-    danger: $eve-color-red,
+    success: $eve-color-success,
+    warning: $eve-color-warning,
+    danger: $eve-color-danger,
 );
 $eve-feedback-icon-size: 18px;
 
@@ -10,7 +10,7 @@ $eve-feedback-icon-size: 18px;
     align-items: center;
     flex-wrap: nowrap;
     padding: $eve-spacing-tiny $eve-spacing-small;
-    color: $eve-color-grey-black;
+    color: $eve-color-dark;
     font-size: $eve-font-tiny;
     line-height: 20px;
 

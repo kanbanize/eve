@@ -1,17 +1,17 @@
-// sass-lint:disable no-color-literals
 .component-colors {
     display: flex;
 
-    .component-colors-primary {
-        margin-right: 96px;
+    &:not(:last-child) {
+        margin-bottom: 48px;
     }
 }
 
 .component-color {
     display: flex;
+    width: 250px;
 
     &:not(:last-child) {
-        margin-bottom: 38px;
+        margin-right: 48px;
     }
 
     .component-color-square {
@@ -42,7 +42,7 @@
             box-sizing: border-box;
         }
 
-        &.component-color-square-grey-black {
+        &.component-color-square-black {
             background: #333;
         }
 
@@ -72,17 +72,8 @@
             display: flex;
             align-items: center;
             margin-bottom: 16px;
-
-            .component-color-original-name {
-                font-weight: bold;
-                font-size: 16px;
-            }
-
-            .component-color-meta-name {
-                font-size: 12px;
-                color: #b0bec5;
-                margin-left: 4px;
-            }
+            font-weight: bold;
+            font-size: 16px;
         }
 
         .component-color-rgba,

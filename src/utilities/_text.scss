@@ -18,10 +18,10 @@ $eve-text-sizes: (
     x-large: $eve-font-x-large
 );
 $eve-text-colors: (
-    primary: $eve-color-blue,
-    danger: $eve-color-red,
-    warning: $eve-color-orange,
-    success: $eve-color-green,
+    primary: $eve-color-primary,
+    danger: $eve-color-danger,
+    warning: $eve-color-warning,
+    success: $eve-color-success,
     mute: $eve-color-darkest-silver
 );
 

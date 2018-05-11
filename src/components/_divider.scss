@@ -2,7 +2,7 @@
     width: 100%;
     margin: $eve-spacing-normal 0;
     height: 1px;
-    background: $eve-color-blue;
+    background: $eve-color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +11,6 @@
     &::after {
         content: attr(data-content);
         padding: 0 $eve-spacing-tiny;
-        background: $eve-color-white;
+        background: $eve-color-light;
     }
 }

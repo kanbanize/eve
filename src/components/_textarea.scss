@@ -1,5 +1,5 @@
 .eve-textarea {
-    background: $eve-color-white;
+    background: $eve-color-light;
     padding: $eve-spacing-tiny $eve-spacing-small;
     vertical-align: middle;
     border: 1px solid $eve-color-dark-silver;
@@ -9,7 +9,7 @@
     min-width: 100%;
     max-width: 100%;
     font-size: $eve-font-small;
-    color: $eve-color-grey-black;
+    color: $eve-color-dark;
     -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
     font-family: inherit;
@@ -22,7 +22,7 @@
     }
 
     &:focus {
-        border-color: $eve-color-blue;
+        border-color: $eve-color-primary;
     }
 
     &:read-only {

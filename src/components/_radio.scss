@@ -22,8 +22,8 @@ $eve-radio-size: 18px;
             margin: 0;
 
             &:checked ~ .eve-radio-mark {
-                background: $eve-color-green;
-                border-color: $eve-color-green;
+                background: $eve-color-success;
+                border-color: $eve-color-success;
 
                 &::after {
                     display: block;
@@ -51,7 +51,7 @@ $eve-radio-size: 18px;
     }
 
     .eve-radio-mark {
-        background: $eve-color-white;
+        background: $eve-color-light;
         border: 2px solid $eve-color-darker-silver;
         width: 100%;
         height: 100%;
@@ -64,7 +64,7 @@ $eve-radio-size: 18px;
             display: none;
             height: 100%;
             border-radius: inherit;
-            border: 3px solid $eve-color-white;
+            border: 3px solid $eve-color-light;
             box-sizing: inherit;
         }
     }

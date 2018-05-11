@@ -7,14 +7,14 @@ $eve-navigation-tab-size: 48px;
     padding: 0;
     margin: 0;
     font-size: $eve-font-small;
-    background: $eve-color-white;
+    background: $eve-color-light;
 
     .eve-navigation-tab {
         padding: 0 $eve-spacing-tiny;
         margin: 0 $eve-spacing-small;
         height: $eve-navigation-tab-size;
         line-height: $eve-navigation-tab-size;
-        color: $eve-color-grey-black;
+        color: $eve-color-dark;
         cursor: pointer;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -26,17 +26,17 @@ $eve-navigation-tab-size: 48px;
         }
 
         &:hover {
-            color: $eve-color-blue;
+            color: $eve-color-primary;
         }
 
         &.is-active {
-            color: $eve-color-blue;
+            color: $eve-color-primary;
             position: relative;
 
             &::after {
                 content: '';
                 height: 4px;
-                background: $eve-color-blue;
+                background: $eve-color-primary;
                 position: absolute;
                 left: 0;
                 bottom: 0;
