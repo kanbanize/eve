@@ -1582,15 +1582,10 @@
     .eve-pagination .eve-pagination-item a {
       text-decoration: none;
       color: inherit; }
-  .eve-pagination.is-rounded .eve-pagination-item {
-    border-radius: 18px;
-    margin: 0; }
-    .eve-pagination.is-rounded .eve-pagination-item:not(:last-child) {
-      margin-right: 8px; }
-    .eve-pagination.is-rounded .eve-pagination-item:first-child {
-      margin-right: 24px; }
-    .eve-pagination.is-rounded .eve-pagination-item:last-child {
-      margin-left: 16px; }
+  .eve-pagination.is-rounded .eve-pagination-item:first-child {
+    border-radius: 18px 0 0 18px; }
+  .eve-pagination.is-rounded .eve-pagination-item:last-child {
+    border-radius: 0 18px 18px 0; }
 
 .eve-progress-line {
   width: 100%;

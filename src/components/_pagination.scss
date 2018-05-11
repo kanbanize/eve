@@ -44,19 +44,14 @@ $eve-pagination-item-size: 36px;
 
     &.is-rounded {
         .eve-pagination-item {
-            border-radius: $eve-pagination-item-size / 2;
-            margin: 0;
-
-            &:not(:last-child) {
-                margin-right: $eve-spacing-tiny;
-            }
+            $radius: $eve-pagination-item-size / 2;
 
             &:first-child {
-                margin-right: $eve-spacing-normal;
+                border-radius: $radius 0 0 $radius;
             }
 
             &:last-child {
-                margin-left: $eve-spacing-small;
+                border-radius: 0 $radius $radius 0;
             }
         }
     }
