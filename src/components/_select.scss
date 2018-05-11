@@ -45,14 +45,14 @@ $eve-select-font-sizes: (
             line-height: $size;
             padding: 0 ($padding * 2) 0 $padding;
             font-size: $font-size;
-            background: $eve-color-white url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23333333'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right $padding center / ($size / 4) ($size / 4); // sass-lint:disable-line quotes
+            background: $eve-color-white url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
 
             &.is-rounded {
                 border-radius: $size / 2;
             }
 
             &:disabled {
-                background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right $padding center / ($size / 4) ($size / 4); // sass-lint:disable-line quotes
+                background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#607d8b%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
             }
         } @else {
             &.is-#{$eve-select-size} {
@@ -60,14 +60,14 @@ $eve-select-font-sizes: (
                 line-height: $size;
                 padding: 0 ($padding * 2) 0 $padding;
                 font-size: $font-size;
-                background: $eve-color-white url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23333333'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right $padding center / ($size / 4) ($size / 4); // sass-lint:disable-line quotes
+                background: $eve-color-white url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
 
                 &.is-rounded {
                     border-radius: $size / 2;
                 }
 
                 &:disabled {
-                    background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23607d8b'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right $padding center / ($size / 4) ($size / 4); // sass-lint:disable-line quotes
+                    background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#607d8b%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
                 }
             }
         }
