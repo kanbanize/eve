@@ -1,4 +1,4 @@
-# [Eve](https://kanbanize.github.io/eve)
+# Eve
 
 **A simple, minimal css framework**
 
@@ -8,9 +8,7 @@
 [![](https://data.jsdelivr.com/v1/package/npm/evecss/badge?style=rounded)](https://www.jsdelivr.com/package/npm/evecss)
 [![npm](https://img.shields.io/npm/l/evecss.svg)]()
 
-## Installation
-
-There are 3 ways to install Eve. You can either install it via package managers, CDN, or manually.
+## Quick Install
 
 ### NPM
 
@@ -32,7 +30,7 @@ yarn add evecss
 
 ### Manually
 
-Download the compiled and minified [Eve](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
+Download the compiled and minified [EveCSS](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
 
 ```html
 <link rel="stylesheet" href="eve.min.css">
