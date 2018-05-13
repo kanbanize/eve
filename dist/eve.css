@@ -1261,63 +1261,63 @@
   display: flex;
   align-items: center; }
   .eve-input-field.is-small.is-loading::after {
-    right: 8px;
+    right: 7px;
     width: 14px;
     height: 14px; }
   .eve-input-field.is-small.is-loading .eve-input {
-    padding-right: 26px; }
+    padding-right: 28px; }
   .eve-input-field.is-small.has-icon i,
   .eve-input-field.is-small.has-icon svg {
-    left: 8px; }
+    left: 7px; }
   .eve-input-field.is-small.has-icon i {
     font-size: 14px; }
   .eve-input-field.is-small.has-icon svg {
     width: 14px;
     height: 14px; }
   .eve-input-field.is-small.has-icon .eve-input {
-    padding-left: 26px; }
+    padding-left: 28px; }
   .eve-input-field.is-small .eve-input-addon {
     height: 28px;
     line-height: 28px;
     font-size: 12px;
     padding: 0 8px; }
   .eve-input-field.is-loading::after {
-    right: 16px;
+    right: 9px;
     width: 18px;
     height: 18px; }
   .eve-input-field.is-loading .eve-input {
-    padding-right: 42px; }
+    padding-right: 36px; }
   .eve-input-field.has-icon i,
   .eve-input-field.has-icon svg {
-    left: 16px; }
+    left: 9px; }
   .eve-input-field.has-icon i {
     font-size: 18px; }
   .eve-input-field.has-icon svg {
     width: 18px;
     height: 18px; }
   .eve-input-field.has-icon .eve-input {
-    padding-left: 42px; }
+    padding-left: 36px; }
   .eve-input-field .eve-input-addon {
     height: 36px;
     line-height: 36px;
     font-size: 14px;
     padding: 0 16px; }
   .eve-input-field.is-large.is-loading::after {
-    right: 24px;
+    right: 12px;
     width: 24px;
     height: 24px; }
   .eve-input-field.is-large.is-loading .eve-input {
-    padding-right: 60px; }
+    padding-right: 48px; }
   .eve-input-field.is-large.has-icon i,
   .eve-input-field.is-large.has-icon svg {
-    left: 24px; }
+    left: 12px; }
   .eve-input-field.is-large.has-icon i {
     font-size: 24px; }
   .eve-input-field.is-large.has-icon svg {
     width: 24px;
     height: 24px; }
   .eve-input-field.is-large.has-icon .eve-input {
-    padding-left: 60px; }
+    padding-left: 48px; }
   .eve-input-field.is-large .eve-input-addon {
     height: 48px;
     line-height: 48px;
@@ -1746,7 +1746,7 @@
   line-height: 36px;
   padding: 0 32px 0 16px;
   font-size: 14px;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#cfd8dc%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 8px center/18px 18px; }
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 8px center/18px 18px; }
   .eve-select:focus {
     border-color: #2196f3; }
   .eve-select.is-small {
@@ -1754,7 +1754,7 @@
     line-height: 28px;
     padding: 0 16px 0 8px;
     font-size: 12px;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#cfd8dc%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 4px center/14px 14px; }
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 4px center/14px 14px; }
     .eve-select.is-small.is-rounded {
       border-radius: 14px; }
     .eve-select.is-small:disabled {
@@ -1776,7 +1776,7 @@
     line-height: 48px;
     padding: 0 48px 0 24px;
     font-size: 16px;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#cfd8dc%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 12px center/24px 24px; }
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 12px center/24px 24px; }
     .eve-select.is-large.is-rounded {
       border-radius: 24px; }
     .eve-select.is-large:disabled {
@@ -1792,34 +1792,34 @@
   align-items: center; }
   .eve-select-field.is-small.has-icon i,
   .eve-select-field.is-small.has-icon svg {
-    left: 8px; }
+    left: 7px; }
   .eve-select-field.is-small.has-icon i {
     font-size: 14px; }
   .eve-select-field.is-small.has-icon svg {
     width: 14px;
     height: 14px; }
   .eve-select-field.is-small.has-icon .eve-select {
-    padding-left: 26px; }
+    padding-left: 28px; }
   .eve-select-field.has-icon i,
   .eve-select-field.has-icon svg {
-    left: 16px; }
+    left: 9px; }
   .eve-select-field.has-icon i {
     font-size: 18px; }
   .eve-select-field.has-icon svg {
     width: 18px;
     height: 18px; }
   .eve-select-field.has-icon .eve-select {
-    padding-left: 42px; }
+    padding-left: 36px; }
   .eve-select-field.is-large.has-icon i,
   .eve-select-field.is-large.has-icon svg {
-    left: 24px; }
+    left: 12px; }
   .eve-select-field.is-large.has-icon i {
     font-size: 24px; }
   .eve-select-field.is-large.has-icon svg {
     width: 24px;
     height: 24px; }
   .eve-select-field.is-large.has-icon .eve-select {
-    padding-left: 60px; }
+    padding-left: 48px; }
   .eve-select-field.has-icon i,
   .eve-select-field.has-icon svg {
     position: absolute; }

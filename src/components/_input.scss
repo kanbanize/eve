@@ -85,20 +85,20 @@ $eve-input-font-sizes: (
         @if $eve-input-size == 'normal' {
             &.is-loading {
                 &::after {
-                    right: $padding;
+                    right: $size / 4;
                     width: $size / 2;
                     height: $size / 2;
                 }
 
                 .eve-input {
-                    padding-right: ($size / 2) + ($padding * 2) - ($padding / 2);
+                    padding-right: $size;
                 }
             }
 
             &.has-icon {
                 i,
                 svg {
-                    left: $padding;
+                    left: $size / 4;
                 }
 
                 i {
@@ -111,7 +111,7 @@ $eve-input-font-sizes: (
                 }
 
                 .eve-input {
-                    padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
+                    padding-left: $size;
                 }
             }
 
@@ -125,20 +125,20 @@ $eve-input-font-sizes: (
             &.is-#{$eve-input-size} {
                 &.is-loading {
                     &::after {
-                        right: $padding;
+                        right: $size / 4;
                         width: $size / 2;
                         height: $size / 2;
                     }
 
                     .eve-input {
-                        padding-right: ($size / 2) + ($padding * 2) - ($padding / 2);
+                        padding-right: $size;
                     }
                 }
 
                 &.has-icon {
                     i,
                     svg {
-                        left: $padding;
+                        left: $size / 4;
                     }
 
                     i {
@@ -151,7 +151,7 @@ $eve-input-font-sizes: (
                     }
 
                     .eve-input {
-                        padding-left: ($size / 2) + ($padding * 2) - ($padding / 2);
+                        padding-left: $size;
                     }
                 }
 
