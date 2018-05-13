@@ -1,23 +1,26 @@
 <style>
-    .eve-cell > div,
-    .eve-cell-1 > div,
-    .eve-cell-2 > div,
-    .eve-cell-3 > div,
-    .eve-cell-4 > div,
-    .eve-cell-5 > div,
-    .eve-cell-6 > div,
-    .eve-cell-7 > div,
-    .eve-cell-8 > div,
-    .eve-cell-9 > div,
-    .eve-cell-10 > div,
-    .eve-cell-11 > div,
-    .eve-cell-12 > div {
-        background: #eceff1;
-        color: #333;
+    .eve-cell > p,
+    .eve-cell-1 > p,
+    .eve-cell-2 > p,
+    .eve-cell-3 > p,
+    .eve-cell-4 > p,
+    .eve-cell-5 > p,
+    .eve-cell-6 > p,
+    .eve-cell-7 > p,
+    .eve-cell-8 > p,
+    .eve-cell-9 > p,
+    .eve-cell-10 > p,
+    .eve-cell-11 > p,
+    .eve-cell-12 > p {
+        background: #e91e63;
+        color: #fff;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 6px;
+        font-weight: 600;
+        margin: 0;
     }
 </style>
 <div class="component">
@@ -25,54 +28,80 @@
     <div class="component-description">Responsive grid system with 12 columns</div>
     <div class="component-content">
         <div class="eve-grid eve-grid-gap-normal">
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
-            <div class="eve-cell"><div></div></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
+            <div class="eve-cell"><p></p></div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-example">
             <div class="eve-grid eve-grid-gap-normal">
                 <div class="eve-cell">
-                    <div>.eve-cell</div>
+                    <p>.eve-cell</p>
                 </div>
                 <div class="eve-cell">
-                    <div>.eve-cell</div>
+                    <p>.eve-cell</p>
                 </div>
                 <div class="eve-cell">
-                    <div>.eve-cell</div>
+                    <p>.eve-cell</p>
                 </div>
             </div>
         </div>
         <div class="component-example">
             <div class="eve-grid eve-grid-gap-normal">
                 <div class="eve-cell-2">
-                    <div>.eve-cell-2</div>
+                    <p>.eve-cell-2</p>
                 </div>
                 <div class="eve-cell-8">
-                    <div>.eve-cell-8</div>
+                    <p>.eve-cell-8</p>
                 </div>
                 <div class="eve-cell-2">
-                    <div>.eve-cell-2</div>
+                    <p>.eve-cell-2</p>
                 </div>
             </div>
         </div>
         <div class="component-example">
             <div class="eve-grid eve-grid-gap-normal">
                 <div class="eve-cell-4">
-                    <div>.eve-cell-4</div>
+                    <p>.eve-cell-4</p>
                 </div>
                 <div class="eve-cell">
-                    <div>.eve-cell</div>
+                    <p>.eve-cell</p>
+                </div>
+            </div>
+        </div>
+        <div class="component-example">
+            <div class="eve-grid">
+                <div class="eve-cell-4">
+                    <p>.eve-cell-4</p>
+                </div>
+                <div class="eve-cell">
+                    <p>.eve-cell</p>
+                    <div class="eve-grid">
+                        <div class="eve-cell">
+                            <p>.eve-cell</p>
+                        </div>
+                        <div class="eve-cell">
+                            <p>.eve-cell</p>
+                            <div class="eve-grid">
+                                <div class="eve-cell-4">
+                                    <p>.eve-cell-4</p>
+                                </div>
+                                <div class="eve-cell-8">
+                                    <p>.eve-cell-8</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

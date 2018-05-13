@@ -207,8 +207,6 @@
     justify-content: center; }
   .eve-grid.eve-grid-justify-between {
     justify-content: space-between; }
-  .eve-grid.eve-grid-justify-around {
-    justify-content: space-around; }
   @media (max-width: 480px) {
     .eve-grid {
       flex-direction: column; }
