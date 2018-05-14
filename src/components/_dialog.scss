@@ -44,6 +44,9 @@ $eve-dialog-close-size: 32px !default;
         font-weight: 600;
         font-size: $eve-font-large;
         margin-bottom: $eve-spacing-small;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .eve-dialog-content {

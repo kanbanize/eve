@@ -1041,7 +1041,10 @@
   .eve-dialog .eve-dialog-header {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .eve-dialog .eve-dialog-content {
     margin-bottom: 16px;
     line-height: 20px;
