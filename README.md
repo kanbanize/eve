@@ -30,7 +30,7 @@ yarn add evecss
 
 ### Manually
 
-Download the compiled and minified [EveCSS](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
+Download the compiled and minified [Eve](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
 
 ```html
 <link rel="stylesheet" href="eve.min.css">
@@ -38,7 +38,7 @@ Download the compiled and minified [EveCSS](https://github.com/kanbanize/eve/rel
 
 ## Compatibility
 
-Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with earlier browsers. Eve is compatible with latest versions of:
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with latest versions of:
 
 - Chrome
 - Firefox
