@@ -22,6 +22,8 @@
 
                 el.classList.add('navigation-list-item-active');
 
+                document.title = 'EveCSS: ' + el.innerHTML;
+
                 loadTemplate(el.getAttribute('data-path'));
 
                 return false;
