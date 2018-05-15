@@ -3,17 +3,26 @@
 
     .eve-form-label {
         display: inline-block;
-        margin-bottom: $eve-spacing-tiny;
+        margin: 0 0 $eve-spacing-tiny;
         font-size: $eve-font-small;
     }
 
     .eve-form-help {
         margin-top: $eve-spacing-tiny;
-        font-size: $eve-font-tiny;
+        font-size: $eve-font-small;
     }
 
     .eve-textarea {
         resize: none;
+    }
+
+    &.is-inline {
+        display: flex;
+        align-items: center;
+
+        .eve-form-label {
+            margin: 0 $eve-spacing-tiny 0 0;
+        }
     }
 }
 

@@ -1196,13 +1196,18 @@
   margin-bottom: 16px; }
   .eve-form-group .eve-form-label {
     display: inline-block;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
     font-size: 14px; }
   .eve-form-group .eve-form-help {
     margin-top: 8px;
-    font-size: 12px; }
+    font-size: 14px; }
   .eve-form-group .eve-textarea {
     resize: none; }
+  .eve-form-group.is-inline {
+    display: flex;
+    align-items: center; }
+    .eve-form-group.is-inline .eve-form-label {
+      margin: 0 8px 0 0; }
 
 .eve-form-control {
   display: flex; }
@@ -1936,7 +1941,6 @@
   vertical-align: middle;
   border: 1px solid #cfd8dc;
   outline: none;
-  min-height: 100px;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
