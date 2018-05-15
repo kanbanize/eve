@@ -1,5 +1,5 @@
 .eve-form-group {
-    margin-bottom: $eve-spacing-small;
+    margin: 0 0 $eve-spacing-small;
 
     .eve-form-label {
         display: inline-block;
@@ -17,7 +17,8 @@
     }
 
     &.is-inline {
-        display: flex;
+        margin: 0 $eve-spacing-small 0 0;
+        display: inline-flex;
         align-items: center;
 
         .eve-form-label {

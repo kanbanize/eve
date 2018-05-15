@@ -1193,7 +1193,7 @@
     margin-right: 8px; }
 
 .eve-form-group {
-  margin-bottom: 16px; }
+  margin: 0 0 16px; }
   .eve-form-group .eve-form-label {
     display: inline-block;
     margin: 0 0 8px;
@@ -1204,7 +1204,8 @@
   .eve-form-group .eve-textarea {
     resize: none; }
   .eve-form-group.is-inline {
-    display: flex;
+    margin: 0 16px 0 0;
+    display: inline-flex;
     align-items: center; }
     .eve-form-group.is-inline .eve-form-label {
       margin: 0 8px 0 0; }
