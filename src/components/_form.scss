@@ -23,6 +23,7 @@
 
         .eve-form-label {
             margin: 0 $eve-spacing-tiny 0 0;
+            flex-shrink: 0;
         }
     }
 }

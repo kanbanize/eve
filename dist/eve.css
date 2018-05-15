@@ -1208,7 +1208,8 @@
     display: inline-flex;
     align-items: center; }
     .eve-form-group.is-inline .eve-form-label {
-      margin: 0 8px 0 0; }
+      margin: 0 8px 0 0;
+      flex-shrink: 0; }
 
 .eve-form-control {
   display: flex; }
