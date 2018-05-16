@@ -114,13 +114,6 @@ $eve-input-font-sizes: (
                     padding-left: $size;
                 }
             }
-
-            .eve-input-addon {
-                height: $size;
-                line-height: $size;
-                font-size: $font-size;
-                padding: 0 $padding;
-            }
         } @else {
             &.is-#{$eve-input-size} {
                 &.is-loading {
@@ -153,13 +146,6 @@ $eve-input-font-sizes: (
                     .eve-input {
                         padding-left: $size;
                     }
-                }
-
-                .eve-input-addon {
-                    height: $size;
-                    line-height: $size;
-                    font-size: $font-size;
-                    padding: 0 $padding;
                 }
             }
         }
@@ -205,15 +191,5 @@ $eve-input-font-sizes: (
         svg {
             fill: $eve-color-dark-silver;
         }
-    }
-
-    .eve-input-addon {
-        display: flex;
-        align-items: center;
-        background: $eve-color-bright-silver;
-        border-top: 1px solid $eve-color-dark-silver;
-        border-right: 1px solid $eve-color-dark-silver;
-        border-bottom: 1px solid $eve-color-dark-silver;
-        box-sizing: border-box;
     }
 }
