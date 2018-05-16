@@ -2,61 +2,56 @@ $eve-pagination-item-size: 36px;
 
 .eve-pagination {
     font-size: $eve-font-small;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    ul {
+    li {
+        box-shadow: inset 0 0 0 1px $eve-color-primary;
+        background: $eve-color-light;
+        height: $eve-pagination-item-size;
+        line-height: $eve-pagination-item-size;
+        min-width: $eve-pagination-item-size;
         display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 0 $eve-spacing-tiny;
+        color: $eve-color-primary;
 
-        li {
-            box-shadow: inset 0 0 0 1px $eve-color-primary;
-            background: $eve-color-light;
-            height: $eve-pagination-item-size;
-            line-height: $eve-pagination-item-size;
-            min-width: $eve-pagination-item-size;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            cursor: pointer;
-            padding: 0 $eve-spacing-tiny;
-            color: $eve-color-primary;
+        &:not(:last-child) {
+            margin-right: -1px;
+        }
 
-            &:not(:last-child) {
-                margin-right: -1px;
-            }
+        &:first-child,
+        &:last-child {
+            width: 96px;
+        }
 
-            &:first-child,
-            &:last-child {
-                width: 96px;
-            }
+        &:hover,
+        &.is-active {
+            background: $eve-color-primary;
+            color: $eve-color-light;
+        }
 
-            &:hover,
-            &.is-active {
-                background: $eve-color-primary;
-                color: $eve-color-light;
-            }
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     }
 
     &.is-rounded {
-        ul {
-            li {
-                $radius: $eve-pagination-item-size / 2;
+        li {
+            $radius: $eve-pagination-item-size / 2;
 
-                &:first-child {
-                    border-radius: $radius 0 0 $radius;
-                }
+            &:first-child {
+                border-radius: $radius 0 0 $radius;
+            }
 
-                &:last-child {
-                    border-radius: 0 $radius $radius 0;
-                }
+            &:last-child {
+                border-radius: 0 $radius $radius 0;
             }
         }
     }

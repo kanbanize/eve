@@ -601,24 +601,23 @@
             transform: none; }
 
 .eve-breadcrumb {
-  font-size: 14px; }
-  .eve-breadcrumb ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .eve-breadcrumb ul li:not(:last-child)::after {
-      content: '/';
-      padding: 0 8px 0 4px; }
-    .eve-breadcrumb ul li a {
-      text-decoration: none;
-      color: #333; }
-      .eve-breadcrumb ul li a:hover {
-        text-decoration: underline;
-        color: #2196f3; }
-    .eve-breadcrumb ul li.is-active a {
-      color: #2196f3;
-      pointer-events: none; }
+  font-size: 14px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .eve-breadcrumb li:not(:last-child)::after {
+    content: '/';
+    padding: 0 8px 0 4px; }
+  .eve-breadcrumb li a {
+    text-decoration: none;
+    color: #333; }
+    .eve-breadcrumb li a:hover {
+      text-decoration: underline;
+      color: #2196f3; }
+  .eve-breadcrumb li.is-active a {
+    color: #2196f3;
+    pointer-events: none; }
 
 .eve-button {
   display: inline-flex;
@@ -1552,38 +1551,37 @@
         right: auto; }
 
 .eve-pagination {
-  font-size: 14px; }
-  .eve-pagination ul {
+  font-size: 14px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .eve-pagination li {
+    box-shadow: inset 0 0 0 1px #2196f3;
+    background: #fff;
+    height: 36px;
+    line-height: 36px;
+    min-width: 36px;
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .eve-pagination ul li {
-      box-shadow: inset 0 0 0 1px #2196f3;
-      background: #fff;
-      height: 36px;
-      line-height: 36px;
-      min-width: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      cursor: pointer;
-      padding: 0 8px;
-      color: #2196f3; }
-      .eve-pagination ul li:not(:last-child) {
-        margin-right: -1px; }
-      .eve-pagination ul li:first-child, .eve-pagination ul li:last-child {
-        width: 96px; }
-      .eve-pagination ul li:hover, .eve-pagination ul li.is-active {
-        background: #2196f3;
-        color: #fff; }
-      .eve-pagination ul li a {
-        text-decoration: none;
-        color: inherit; }
-  .eve-pagination.is-rounded ul li:first-child {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 8px;
+    color: #2196f3; }
+    .eve-pagination li:not(:last-child) {
+      margin-right: -1px; }
+    .eve-pagination li:first-child, .eve-pagination li:last-child {
+      width: 96px; }
+    .eve-pagination li:hover, .eve-pagination li.is-active {
+      background: #2196f3;
+      color: #fff; }
+    .eve-pagination li a {
+      text-decoration: none;
+      color: inherit; }
+  .eve-pagination.is-rounded li:first-child {
     border-radius: 18px 0 0 18px; }
-  .eve-pagination.is-rounded ul li:last-child {
+  .eve-pagination.is-rounded li:last-child {
     border-radius: 0 18px 18px 0; }
 
 .eve-progress-line {
