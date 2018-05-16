@@ -1,4 +1,8 @@
 <style>
+    .eve-grid:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
     .eve-cell > p,
     .eve-cell-1 > p,
     .eve-cell-2 > p,
@@ -25,9 +29,8 @@
 </style>
 <div class="component">
     <div class="component-title">Grid</div>
-    <div class="component-description">Responsive grid system with 12 columns</div>
     <div class="component-content">
-        <div class="eve-grid eve-grid-gap-normal">
+        <div class="eve-grid has-gap-normal">
             <div class="eve-cell"><p></p></div>
             <div class="eve-cell"><p></p></div>
             <div class="eve-cell"><p></p></div>
@@ -44,7 +47,7 @@
     </div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-normal">
+            <div class="eve-grid">
                 <div class="eve-cell">
                     <p>.eve-cell</p>
                 </div>
@@ -57,7 +60,7 @@
             </div>
         </div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-normal">
+            <div class="eve-grid">
                 <div class="eve-cell-2">
                     <p>.eve-cell-2</p>
                 </div>
@@ -70,7 +73,7 @@
             </div>
         </div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-normal">
+            <div class="eve-grid">
                 <div class="eve-cell-4">
                     <p>.eve-cell-4</p>
                 </div>
@@ -108,11 +111,47 @@
     </div>
 </div>
 <div class="component">
+    <div class="component-title">Grid justify</div>
+    <div class="component-content">
+        <div class="component-header">Justify center</div>
+        <div class="component-example">
+            <div class="eve-grid">
+                <div class="eve-cell-4">
+                    <p>Grid justified left</p>
+                </div>
+            </div>
+            <div class="eve-grid is-justified-center">
+                <div class="eve-cell-4">
+                    <p>Grid justified center</p>
+                </div>
+            </div>
+            <div class="eve-grid is-justified-end">
+                <div class="eve-cell-4">
+                    <p>Grid justified right</p>
+                </div>
+            </div>
+            <div class="eve-grid is-justified-between">
+                <div class="eve-cell-4">
+                    <p>Cell 1</p>
+                </div>
+                <div class="eve-cell-4">
+                    <p>Cell 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="component">
+    <div class="component-title">Grid align</div>
+    <div class="component-content">
+        <h1>in progress</h1>
+    </div>
+</div>
+<div class="component">
     <div class="component-title">Grid gaps</div>
     <div class="component-content">
         <div class="component-header">Grid gap large - 48px</div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-large">
+            <div class="eve-grid has-gap-large">
                 <div class="eve-cell">
                     <p>.eve-cell</p>
                 </div>
@@ -125,7 +164,7 @@
     <div class="component-content">
         <div class="component-header">Grid gap normal - 24px</div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-normal">
+            <div class="eve-grid has-gap-normal">
                 <div class="eve-cell">
                     <p>.eve-cell</p>
                 </div>
@@ -138,7 +177,7 @@
     <div class="component-content">
         <div class="component-header">Grid gap small - 16px</div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-small">
+            <div class="eve-grid has-gap-small">
                 <div class="eve-cell">
                     <p>.eve-cell</p>
                 </div>
@@ -151,7 +190,7 @@
     <div class="component-content">
         <div class="component-header">Grid gap tiny - 8px</div>
         <div class="component-example">
-            <div class="eve-grid eve-grid-gap-tiny">
+            <div class="eve-grid has-gap-tiny">
                 <div class="eve-cell">
                     <p>.eve-cell</p>
                 </div>

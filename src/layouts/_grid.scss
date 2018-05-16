@@ -38,7 +38,7 @@ $eve-grid-justifies: (
     @each $eve-grid-gap in map-keys($eve-grid-gaps) {
         $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
 
-        &.eve-grid-gap-#{$eve-grid-gap} {
+        &.has-gap-#{$eve-grid-gap} {
             margin: 0 (-$gap);
 
             & > .eve-cell {
@@ -54,13 +54,13 @@ $eve-grid-justifies: (
     }
 
     @each $eve-grid-align in map-keys($eve-grid-aligns) {
-        &.eve-grid-align-#{$eve-grid-align} {
+        &.is-aligned-#{$eve-grid-align} {
             align-items: map-get($eve-grid-aligns, $eve-grid-align);
         }
     }
 
     @each $eve-grid-justify in map-keys($eve-grid-justifies) {
-        &.eve-grid-justify-#{$eve-grid-justify} {
+        &.is-justified-#{$eve-grid-justify} {
             justify-content: map-get($eve-grid-justifies, $eve-grid-justify);
         }
     }
@@ -83,7 +83,7 @@ $eve-grid-justifies: (
             @each $eve-grid-gap in map-keys($eve-grid-gaps) {
                 $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
 
-                &.eve-grid-gap-#{$eve-grid-gap} {
+                &.has-gap-#{$eve-grid-gap} {
                     margin: (-$gap) 0;
 
                     & > .eve-cell {
