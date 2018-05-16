@@ -1,8 +1,8 @@
-$eve-tab-size: 48px;
+$eve-navigation-tab-size: 48px;
 
-.eve-navigation {
+.eve-tabs {
     display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid $eve-color-dark-silver;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -10,8 +10,9 @@ $eve-tab-size: 48px;
     background: $eve-color-light;
 
     li {
-        height: $eve-tab-size;
-        line-height: $eve-tab-size;
+        margin: 0 $eve-spacing-small;
+        height: $eve-navigation-tab-size;
+        line-height: $eve-navigation-tab-size;
         color: $eve-color-dark;
         cursor: pointer;
         overflow: hidden;
@@ -21,28 +22,26 @@ $eve-tab-size: 48px;
         a {
             text-decoration: none;
             color: inherit;
-            padding: 0 $eve-spacing-normal;
+            padding: 0 $eve-spacing-tiny;
             display: block;
         }
 
         &:hover {
-            background: rgba($eve-color-bright-silver, .5);
-            color: inherit;
+            color: $eve-color-primary;
         }
 
         &.is-active {
-            background: $eve-color-bright-silver;
-            color: inherit;
+            color: $eve-color-primary;
             position: relative;
 
             &::after {
                 content: '';
-                width: 4px;
+                height: 4px;
                 background: $eve-color-primary;
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                top: 0;
+                right: 0;
             }
         }
 
@@ -52,14 +51,7 @@ $eve-tab-size: 48px;
 
             &::after {
                 background: $eve-color-darker-silver;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                width: 4px;
-                height: auto;
-                right: auto;
             }
         }
     }
 }
-
