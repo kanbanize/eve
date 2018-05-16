@@ -10,7 +10,6 @@ $eve-navigation-tab-size: 48px;
     background: $eve-color-light;
 
     .eve-navigation-tab {
-        padding: 0 $eve-spacing-tiny;
         margin: 0 $eve-spacing-small;
         height: $eve-navigation-tab-size;
         line-height: $eve-navigation-tab-size;
@@ -23,6 +22,8 @@ $eve-navigation-tab-size: 48px;
         a {
             text-decoration: none;
             color: inherit;
+            padding: 0 $eve-spacing-tiny;
+            display: block;
         }
 
         &:hover {
