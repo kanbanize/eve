@@ -55,25 +55,3 @@ $eve-table-filter-height: 56px;
         }
     }
 }
-
-.eve-table-filter {
-    .eve-input-field {
-        height: $eve-table-filter-height;
-        line-height: $eve-table-filter-height;
-
-        .eve-input {
-            height: inherit;
-            line-height: inherit;
-            border-bottom: 0;
-
-            &:focus {
-                border-color: $eve-color-dark-silver;
-            }
-        }
-
-        .i,
-        svg {
-            left: 24px;
-        }
-    }
-}

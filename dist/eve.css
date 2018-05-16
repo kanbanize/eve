@@ -1915,19 +1915,6 @@
   .eve-table.is-stripped tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 
-.eve-table-filter .eve-input-field {
-  height: 56px;
-  line-height: 56px; }
-  .eve-table-filter .eve-input-field .eve-input {
-    height: inherit;
-    line-height: inherit;
-    border-bottom: 0; }
-    .eve-table-filter .eve-input-field .eve-input:focus {
-      border-color: #cfd8dc; }
-  .eve-table-filter .eve-input-field .i,
-  .eve-table-filter .eve-input-field svg {
-    left: 24px; }
-
 .eve-tabs {
   display: flex;
   border-bottom: 1px solid #cfd8dc;
