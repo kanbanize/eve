@@ -1753,17 +1753,17 @@
   border: 1px solid #cfd8dc;
   height: 36px;
   line-height: 36px;
-  padding: 0 32px 0 16px;
+  padding: 0 36px 0 16px;
   font-size: 14px;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 8px center/18px 18px; }
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 9px center/18px 18px; }
   .eve-select:focus {
     border-color: #2196f3; }
   .eve-select.is-small {
     height: 28px;
     line-height: 28px;
-    padding: 0 16px 0 8px;
+    padding: 0 28px 0 8px;
     font-size: 12px;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 4px center/14px 14px; }
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#333333%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 7px center/14px 14px; }
     .eve-select.is-small.is-rounded {
       border-radius: 14px; }
     .eve-select.is-small:disabled {
@@ -1775,7 +1775,7 @@
   .eve-select.is-rounded {
     border-radius: 18px; }
   .eve-select:disabled {
-    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#607d8b%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 8px center/18px 18px; }
+    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22#607d8b%22%3E%3Cpath%20d=%22M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z%22/%3E%3Cpath%20fill=%22none%22%20d=%22M0%200h24v24H0V0z%22/%3E%3C/svg%3E") no-repeat right 9px center/18px 18px; }
   .eve-select:disabled {
     border-color: #cfd8dc;
     color: #607d8b;
