@@ -1493,11 +1493,11 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding: 0 24px; }
     .eve-navigation li a {
       text-decoration: none;
       color: inherit;
-      padding: 0 24px;
       display: block; }
     .eve-navigation li:hover {
       background: rgba(236, 239, 241, 0.5);
@@ -1905,11 +1905,11 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding: 0 8px; }
     .eve-tabs li a {
       text-decoration: none;
       color: inherit;
-      padding: 0 8px;
       display: block; }
     .eve-tabs li:hover {
       color: #2196f3; }

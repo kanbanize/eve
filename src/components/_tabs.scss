@@ -18,11 +18,11 @@ $eve-navigation-tab-size: 48px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        padding: 0 $eve-spacing-tiny;
 
         a {
             text-decoration: none;
             color: inherit;
-            padding: 0 $eve-spacing-tiny;
             display: block;
         }
 
