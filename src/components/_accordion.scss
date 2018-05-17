@@ -10,7 +10,7 @@ $eve-accordion-height: 32px;
                 color: $eve-color-light;
             }
 
-            & ~ .eve-accordion-body {
+            & ~ .eve-accordion-content {
                 display: block;
             }
         }
@@ -29,7 +29,7 @@ $eve-accordion-height: 32px;
         white-space: nowrap;
     }
 
-    .eve-accordion-body {
+    .eve-accordion-content {
         display: none;
         padding: $eve-spacing-tiny $eve-spacing-small;
     }
