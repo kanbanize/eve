@@ -3,9 +3,9 @@ $eve-dialog-types: (
     success: $eve-color-success,
     warning: $eve-color-warning,
     danger: $eve-color-danger
-) !default;
-$eve-dialog-width: 400px !default;
-$eve-dialog-close-size: 32px !default;
+);
+$eve-dialog-width: 400px;
+$eve-dialog-close-size: 32px;
 
 .eve-dialog {
     width: $eve-dialog-width;

@@ -1,0 +1,81 @@
+<style>
+    .eve-grid:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .eve-grid:not(.has-gap-tiny):not(.has-gap-small):not(.has-gap-normal):not(.has-gap-large) {
+        background: #eceff1;
+    }
+
+    .eve-grid.is-vertical-top,
+    .eve-grid.is-vertical-middle,
+    .eve-grid.is-vertical-bottom {
+        height: 144px;
+    }
+
+    .eve-cell > p,
+    .eve-cell-1 > p,
+    .eve-cell-2 > p,
+    .eve-cell-3 > p,
+    .eve-cell-4 > p,
+    .eve-cell-5 > p,
+    .eve-cell-6 > p,
+    .eve-cell-7 > p,
+    .eve-cell-8 > p,
+    .eve-cell-9 > p,
+    .eve-cell-10 > p,
+    .eve-cell-11 > p,
+    .eve-cell-12 > p {
+        background: #2196f3;
+        color: #fff;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+</style>
+<div class="component">
+    <div class="component-title">Grid horizontal alignment</div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-grid is-horizontal-left">
+                <div class="eve-cell-4">
+                    <p>.is-horizontal-left</p>
+                </div>
+            </div>
+            <div class="eve-grid is-horizontal-center">
+                <div class="eve-cell-4">
+                    <p>.is-horizontal-center</p>
+                </div>
+            </div>
+            <div class="eve-grid is-horizontal-right">
+                <div class="eve-cell-4">
+                    <p>.is-horizontal-right</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="component">
+    <div class="component-title">Grid vertical alignment</div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-grid is-vertical-top">
+                <div class="eve-cell">
+                    <p>.is-vertical-top</p>
+                </div>
+            </div>
+            <div class="eve-grid is-vertical-middle">
+                <div class="eve-cell">
+                    <p>.is-vertical-middle</p>
+                </div>
+            </div>
+            <div class="eve-grid is-vertical-bottom">
+                <div class="eve-cell">
+                    <p>.is-vertical-bottom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

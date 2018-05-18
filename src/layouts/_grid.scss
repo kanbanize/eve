@@ -5,21 +5,20 @@ $eve-grid-gaps: (
     normal: $eve-spacing-normal,
     large: $eve-spacing-large,
 );
-$eve-grid-aligns: (
-    start: flex-start,
-    end: flex-end,
+$eve-grid-horizontal-alignments: (
+    left: flex-start,
     center: center,
-);
-$eve-grid-justifies: (
-    start: flex-start,
-    end: flex-end,
-    center: center,
+    right: flex-end,
     between: space-between,
+);
+$eve-grid-vertical-alignments: (
+    top: flex-start,
+    middle: center,
+    bottom: flex-end
 );
 
 .eve-grid {
     display: flex;
-    flex-wrap: nowrap;
 
     .eve-cell {
         flex: 1;
@@ -53,15 +52,15 @@ $eve-grid-justifies: (
         }
     }
 
-    @each $eve-grid-align in map-keys($eve-grid-aligns) {
-        &.is-aligned-#{$eve-grid-align} {
-            align-items: map-get($eve-grid-aligns, $eve-grid-align);
+    @each $eve-grid-horizontal-align in map-keys($eve-grid-horizontal-alignments) {
+        &.is-horizontal-#{$eve-grid-horizontal-align} {
+            justify-content: map-get($eve-grid-horizontal-alignments, $eve-grid-horizontal-align);
         }
     }
 
-    @each $eve-grid-justify in map-keys($eve-grid-justifies) {
-        &.is-justified-#{$eve-grid-justify} {
-            justify-content: map-get($eve-grid-justifies, $eve-grid-justify);
+    @each $eve-grid-vertical-align in map-keys($eve-grid-vertical-alignments) {
+        &.is-vertical-#{$eve-grid-vertical-align} {
+            align-items: map-get($eve-grid-vertical-alignments, $eve-grid-vertical-align);
         }
     }
 

@@ -12,10 +12,6 @@
         font-size: $eve-font-small;
     }
 
-    .eve-textarea {
-        resize: none;
-    }
-
     &.is-inline {
         margin: 0 $eve-spacing-small 0 0;
         display: inline-flex;

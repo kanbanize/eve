@@ -40,8 +40,7 @@
   margin: 0; }
 
 .eve-grid {
-  display: flex;
-  flex-wrap: nowrap; }
+  display: flex; }
   .eve-grid .eve-cell {
     flex: 1;
     max-width: 100%; }
@@ -193,20 +192,20 @@
       padding: 0 24px; }
     .eve-grid.has-gap-large > .eve-cell-12 {
       padding: 0 24px; }
-  .eve-grid.is-aligned-start {
-    align-items: flex-start; }
-  .eve-grid.is-aligned-end {
-    align-items: flex-end; }
-  .eve-grid.is-aligned-center {
-    align-items: center; }
-  .eve-grid.is-justified-start {
+  .eve-grid.is-horizontal-left {
     justify-content: flex-start; }
-  .eve-grid.is-justified-end {
-    justify-content: flex-end; }
-  .eve-grid.is-justified-center {
+  .eve-grid.is-horizontal-center {
     justify-content: center; }
-  .eve-grid.is-justified-between {
+  .eve-grid.is-horizontal-right {
+    justify-content: flex-end; }
+  .eve-grid.is-horizontal-between {
     justify-content: space-between; }
+  .eve-grid.is-vertical-top {
+    align-items: flex-start; }
+  .eve-grid.is-vertical-middle {
+    align-items: center; }
+  .eve-grid.is-vertical-bottom {
+    align-items: flex-end; }
   @media (max-width: 480px) {
     .eve-grid {
       flex-direction: column; }
@@ -1101,10 +1100,6 @@
   min-width: 150px;
   background: #fff;
   font-size: 14px; }
-  .eve-dropdown .eve-dropdown-filter {
-    border-bottom: 1px solid #eceff1; }
-    .eve-dropdown .eve-dropdown-filter .eve-input {
-      border: 0; }
   .eve-dropdown ul {
     width: 100%;
     padding: 8px 0;
@@ -1200,8 +1195,6 @@
   .eve-form-group .eve-form-help {
     margin-top: 8px;
     font-size: 14px; }
-  .eve-form-group .eve-textarea {
-    resize: none; }
   .eve-form-group.is-inline {
     margin: 0 16px 0 0;
     display: inline-flex;
@@ -1347,9 +1340,9 @@
   .eve-input-field.has-icon svg {
     position: absolute; }
   .eve-input-field.has-icon i {
-    color: #cfd8dc; }
+    color: #b0bec5; }
   .eve-input-field.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #b0bec5; }
 
 .eve-label {
   display: inline-flex;
@@ -1798,9 +1791,9 @@
   .eve-select-field.has-icon svg {
     position: absolute; }
   .eve-select-field.has-icon i {
-    color: #cfd8dc; }
+    color: #b0bec5; }
   .eve-select-field.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #b0bec5; }
 
 .eve-switch {
   display: inline-flex;
@@ -2026,20 +2019,11 @@
 .eve-display-block {
   display: block !important; }
 
-.eve-gap-x-tiny {
-  margin: 4px !important; }
+.eve-display-inline-flex {
+  display: inline-flex !important; }
 
-.eve-gap-top-x-tiny {
-  margin-top: 4px !important; }
-
-.eve-gap-right-x-tiny {
-  margin-right: 4px !important; }
-
-.eve-gap-bottom-x-tiny {
-  margin-bottom: 4px !important; }
-
-.eve-gap-left-x-tiny {
-  margin-left: 4px !important; }
+.eve-display-flex {
+  display: flex !important; }
 
 .eve-gap-tiny {
   margin: 8px !important; }
@@ -2101,20 +2085,8 @@
 .eve-gap-left-large {
   margin-left: 48px !important; }
 
-.eve-gap-x-large {
-  margin: 64px !important; }
-
-.eve-gap-top-x-large {
-  margin-top: 64px !important; }
-
-.eve-gap-right-x-large {
-  margin-right: 64px !important; }
-
-.eve-gap-bottom-x-large {
-  margin-bottom: 64px !important; }
-
-.eve-gap-left-x-large {
-  margin-left: 64px !important; }
+.eve-overflow-auto {
+  overflow: auto !important; }
 
 .eve-overflow-hidden {
   overflow: hidden !important; }
@@ -2146,9 +2118,6 @@
   text-overflow: ellipsis;
   word-wrap: normal; }
 
-.eve-text-x-tiny {
-  font-size: 10px; }
-
 .eve-text-tiny {
   font-size: 12px; }
 
@@ -2160,9 +2129,6 @@
 
 .eve-text-large {
   font-size: 20px; }
-
-.eve-text-x-large {
-  font-size: 48px; }
 
 .eve-text-primary {
   color: #2196f3 !important; }

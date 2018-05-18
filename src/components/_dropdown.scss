@@ -1,4 +1,4 @@
-$eve-dropdown-list-item-height: 32px !default;
+$eve-dropdown-list-item-height: 32px;
 
 .eve-dropdown {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
@@ -7,14 +7,6 @@ $eve-dropdown-list-item-height: 32px !default;
     min-width: 150px;
     background: $eve-color-light;
     font-size: $eve-font-small;
-
-    .eve-dropdown-filter {
-        border-bottom: 1px solid $eve-color-bright-silver;
-
-        .eve-input {
-            border: 0;
-        }
-    }
 
     ul {
         width: 100%;

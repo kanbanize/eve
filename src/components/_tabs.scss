@@ -1,4 +1,4 @@
-$eve-navigation-tab-size: 48px;
+$eve-tab-size: 48px;
 
 .eve-tabs {
     display: flex;
@@ -11,8 +11,8 @@ $eve-navigation-tab-size: 48px;
 
     li {
         margin: 0 $eve-spacing-small;
-        height: $eve-navigation-tab-size;
-        line-height: $eve-navigation-tab-size;
+        height: $eve-tab-size;
+        line-height: $eve-tab-size;
         color: $eve-color-dark;
         cursor: pointer;
         overflow: hidden;
