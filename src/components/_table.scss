@@ -29,16 +29,8 @@
                 border-bottom: 1px solid $eve-color-dark-silver;
             }
 
-            // &:hover {
-            //     background: rgba($eve-color-primary, .1);
-            // }
-
             td {
                 padding: 0 $eve-spacing-normal;
-
-                .eve-checkbox {
-                    display: flex;
-                }
             }
         }
     }

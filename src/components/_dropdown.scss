@@ -40,7 +40,8 @@ $eve-dropdown-list-item-height: 32px;
             }
 
             i,
-            svg {
+            svg,
+            .eve-avatar {
                 margin-right: $eve-spacing-tiny;
             }
 
@@ -53,10 +54,6 @@ $eve-dropdown-list-item-height: 32px;
                 width: $eve-dropdown-list-item-height / 2;
                 height: $eve-dropdown-list-item-height / 2;
                 fill: $eve-color-darker-silver;
-            }
-
-            .eve-avatar {
-                margin-right: $eve-spacing-tiny;
             }
 
             &.is-active {

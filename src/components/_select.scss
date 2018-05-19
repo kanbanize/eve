@@ -5,17 +5,17 @@ $eve-select-sizes: (
     small: 28px,
     normal: 36px,
     large: 48px
-) !default;
+);
 $eve-select-paddings: (
     small: $eve-spacing-tiny,
     normal: $eve-spacing-small,
     large: $eve-spacing-normal
-) !default;
+);
 $eve-select-font-sizes: (
     small: $eve-font-tiny,
     normal: $eve-font-small,
     large: $eve-font-normal
-) !default;
+);
 
 .eve-select {
     display: block;

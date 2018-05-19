@@ -1124,7 +1124,8 @@
       .eve-dropdown ul li:hover {
         background: rgba(236, 239, 241, 0.5); }
       .eve-dropdown ul li i,
-      .eve-dropdown ul li svg {
+      .eve-dropdown ul li svg,
+      .eve-dropdown ul li .eve-avatar {
         margin-right: 8px; }
       .eve-dropdown ul li i {
         font-size: 16px;
@@ -1133,8 +1134,6 @@
         width: 16px;
         height: 16px;
         fill: #b0bec5; }
-      .eve-dropdown ul li .eve-avatar {
-        margin-right: 8px; }
       .eve-dropdown ul li.is-active {
         background: #eceff1; }
       .eve-dropdown ul li.is-disabled {
@@ -1155,6 +1154,9 @@
   color: #333;
   font-size: 12px;
   line-height: 20px; }
+  .eve-feedback i,
+  .eve-feedback svg {
+    margin-right: 8px; }
   .eve-feedback.is-success {
     background: rgba(76, 175, 80, 0.2); }
     .eve-feedback.is-success i {
@@ -1182,9 +1184,6 @@
       fill: #f44336;
       width: 18px;
       height: 18px; }
-  .eve-feedback i,
-  .eve-feedback svg {
-    margin-right: 8px; }
 
 .eve-form-group {
   margin: 0 0 16px; }
@@ -1877,8 +1876,6 @@
       border-bottom: 1px solid #cfd8dc; }
     .eve-table tbody tr td {
       padding: 0 24px; }
-      .eve-table tbody tr td .eve-checkbox {
-        display: flex; }
   .eve-table.is-stripped tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 
