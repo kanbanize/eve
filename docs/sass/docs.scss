@@ -109,9 +109,9 @@ a {
                 color: #2196f3;
             }
 
-            &.navigation-list-item-active {
+            &.is-active {
                 color: #2196f3;
-                font-weight: 600;
+                font-weight: bold;
             }
         }
     }

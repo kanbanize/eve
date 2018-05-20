@@ -10,19 +10,19 @@
             if (el === navigation) {
                 return false;
             } else if (el.classList.contains('navigation-list-item')) {
-                var active = navigation.querySelector('.navigation-list-item.navigation-list-item-active');
+                var active = navigation.querySelector('.navigation-list-item.is-active');
 
                 if (active) {
                     if (el === active) {
                         return false;
                     }
 
-                    active.classList.remove('navigation-list-item-active');
+                    active.classList.remove('is-active');
                 }
 
-                el.classList.add('navigation-list-item-active');
+                el.classList.add('is-active');
 
-                document.title = 'EveCSS | ' + el.innerHTML;
+                document.title = 'EveCSS | ' + getComponentName(el);
 
                 loadTemplate(el.getAttribute('data-path'));
 
@@ -63,6 +63,16 @@
 
             Snippet.load();
         }
+    }
+
+    function getComponentName(el) {
+        var componentName = el.innerHTML;
+
+        if (el.getAttribute('data-path').indexOf('grid') > -1) {
+            return 'Grid ' + componentName;
+        }
+
+        return componentName;
     }
 
     if (location.hash) {

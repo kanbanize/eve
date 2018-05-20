@@ -43,12 +43,12 @@ $eve-button-font-sizes: (
         text-decoration: none;
     }
 
-    i {
+    i,
+    svg {
         margin-right: $eve-spacing-x-tiny;
     }
 
     svg {
-        margin-right: $eve-spacing-x-tiny;
         fill: $eve-color-light;
     }
 
@@ -140,14 +140,17 @@ $eve-button-font-sizes: (
                     fill: $color;
                 }
 
+                &:hover,
+                &:active {
+                    box-shadow: none;
+                }
+
                 &:hover {
                     background: rgba($color, .1);
-                    box-shadow: none;
                 }
 
                 &:active {
                     background: rgba($color, .2);
-                    box-shadow: none;
                 }
             }
 
@@ -176,7 +179,7 @@ $eve-button-font-sizes: (
     &.is-inverted {
         text-transform: uppercase;
         box-shadow: none;
-        font-weight: 600;
+        font-weight: bold;
         background: transparent;
     }
 

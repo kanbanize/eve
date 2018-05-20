@@ -1,38 +1,32 @@
 .eve-heading-1 {
   font-size: 32px;
   line-height: 40px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-heading-2 {
   font-size: 24px;
   line-height: 32px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-heading-3 {
   font-size: 20px;
   line-height: 28px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-heading-4 {
   font-size: 18px;
   line-height: 28px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-heading-5 {
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-heading-6 {
   font-size: 12px;
   line-height: 18px;
-  margin: 0;
-  font-weight: 600; }
+  margin: 0; }
 
 .eve-paragraph {
   font-size: 14px;
@@ -397,7 +391,7 @@
     background: #2196f3; }
     .eve-avatar[data-initial]::before {
       content: attr(data-initial);
-      font-weight: 600; }
+      font-weight: bold; }
   .eve-avatar img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -641,10 +635,10 @@
     color: #fff; }
   .eve-button:focus {
     text-decoration: none; }
-  .eve-button i {
+  .eve-button i,
+  .eve-button svg {
     margin-right: 4px; }
   .eve-button svg {
-    margin-right: 4px;
     fill: #fff; }
   .eve-button.is-small {
     height: 28px;
@@ -703,12 +697,12 @@
       box-shadow: inset 0 0 0 1px #2196f3; }
       .eve-button.is-primary.is-outlined svg {
         fill: #2196f3; }
+      .eve-button.is-primary.is-outlined:hover, .eve-button.is-primary.is-outlined:active {
+        box-shadow: none; }
       .eve-button.is-primary.is-outlined:hover {
-        background: rgba(33, 150, 243, 0.1);
-        box-shadow: none; }
+        background: rgba(33, 150, 243, 0.1); }
       .eve-button.is-primary.is-outlined:active {
-        background: rgba(33, 150, 243, 0.2);
-        box-shadow: none; }
+        background: rgba(33, 150, 243, 0.2); }
     .eve-button.is-primary.is-inverted {
       color: #2196f3; }
       .eve-button.is-primary.is-inverted svg {
@@ -728,12 +722,12 @@
       box-shadow: inset 0 0 0 1px #4caf50; }
       .eve-button.is-success.is-outlined svg {
         fill: #4caf50; }
+      .eve-button.is-success.is-outlined:hover, .eve-button.is-success.is-outlined:active {
+        box-shadow: none; }
       .eve-button.is-success.is-outlined:hover {
-        background: rgba(76, 175, 80, 0.1);
-        box-shadow: none; }
+        background: rgba(76, 175, 80, 0.1); }
       .eve-button.is-success.is-outlined:active {
-        background: rgba(76, 175, 80, 0.2);
-        box-shadow: none; }
+        background: rgba(76, 175, 80, 0.2); }
     .eve-button.is-success.is-inverted {
       color: #4caf50; }
       .eve-button.is-success.is-inverted svg {
@@ -753,12 +747,12 @@
       box-shadow: inset 0 0 0 1px #ff9800; }
       .eve-button.is-warning.is-outlined svg {
         fill: #ff9800; }
+      .eve-button.is-warning.is-outlined:hover, .eve-button.is-warning.is-outlined:active {
+        box-shadow: none; }
       .eve-button.is-warning.is-outlined:hover {
-        background: rgba(255, 152, 0, 0.1);
-        box-shadow: none; }
+        background: rgba(255, 152, 0, 0.1); }
       .eve-button.is-warning.is-outlined:active {
-        background: rgba(255, 152, 0, 0.2);
-        box-shadow: none; }
+        background: rgba(255, 152, 0, 0.2); }
     .eve-button.is-warning.is-inverted {
       color: #ff9800; }
       .eve-button.is-warning.is-inverted svg {
@@ -778,12 +772,12 @@
       box-shadow: inset 0 0 0 1px #f44336; }
       .eve-button.is-danger.is-outlined svg {
         fill: #f44336; }
+      .eve-button.is-danger.is-outlined:hover, .eve-button.is-danger.is-outlined:active {
+        box-shadow: none; }
       .eve-button.is-danger.is-outlined:hover {
-        background: rgba(244, 67, 54, 0.1);
-        box-shadow: none; }
+        background: rgba(244, 67, 54, 0.1); }
       .eve-button.is-danger.is-outlined:active {
-        background: rgba(244, 67, 54, 0.2);
-        box-shadow: none; }
+        background: rgba(244, 67, 54, 0.2); }
     .eve-button.is-danger.is-inverted {
       color: #f44336; }
       .eve-button.is-danger.is-inverted svg {
@@ -797,7 +791,7 @@
   .eve-button.is-inverted {
     text-transform: uppercase;
     box-shadow: none;
-    font-weight: 600;
+    font-weight: bold;
     background: transparent; }
   .eve-button.is-loading {
     color: transparent;
@@ -1038,7 +1032,7 @@
       height: 16px;
       fill: #607d8b; }
   .eve-dialog .eve-dialog-header {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 20px;
     margin-bottom: 16px;
     overflow: hidden;
@@ -1108,7 +1102,7 @@
     .eve-dropdown ul:not(:last-child) {
       padding-bottom: 0; }
     .eve-dropdown ul .is-header {
-      font-weight: 600;
+      font-weight: bold;
       height: 32px;
       display: flex;
       align-items: center;
