@@ -960,11 +960,17 @@
   align-items: center;
   height: 28px;
   line-height: 28px;
-  border-radius: 14px;
   background: #eceff1;
   padding: 0 8px;
   font-size: 12px;
-  cursor: pointer; }
+  vertical-align: top; }
+  .eve-chip.is-rounded {
+    border-radius: 14px; }
+    .eve-chip.is-rounded .eve-avatar,
+    .eve-chip.is-rounded .eve-chip-icon {
+      border-radius: 50%; }
+  .eve-chip .eve-avatar {
+    border-radius: 0; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
     box-shadow: 0 0 0 1px #fff;
@@ -976,7 +982,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     background: #2196f3; }
     .eve-chip .eve-chip-icon i {
       font-size: 14px;
@@ -990,7 +995,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 4px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    cursor: pointer; }
     .eve-chip .eve-chip-action:hover {
       background: #b0bec5; }
       .eve-chip .eve-chip-action:hover i {
@@ -1004,6 +1010,13 @@
       width: 14px;
       height: 14px;
       fill: #b0bec5; }
+
+.eve-chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px; }
+  .eve-chips .eve-chip {
+    margin: 4px; }
 
 .eve-dialog {
   width: 400px;
@@ -1336,115 +1349,6 @@
     color: #b0bec5; }
   .eve-input-field.has-icon svg {
     fill: #b0bec5; }
-
-.eve-label {
-  display: inline-flex;
-  align-items: center;
-  height: 28px;
-  line-height: 28px;
-  padding: 0 8px;
-  font-size: 12px;
-  color: #fff;
-  cursor: pointer; }
-  .eve-label.is-primary {
-    background: #2196f3; }
-    .eve-label.is-primary:hover {
-      background: rgba(33, 150, 243, 0.2);
-      color: #2196f3; }
-      .eve-label.is-primary:hover .eve-label-action {
-        background: #2196f3; }
-        .eve-label.is-primary:hover .eve-label-action i {
-          color: #fff; }
-        .eve-label.is-primary:hover .eve-label-action svg {
-          fill: #fff; }
-    .eve-label.is-primary.is-outlined {
-      box-shadow: inset 0 0 0 1px #2196f3;
-      color: #2196f3; }
-      .eve-label.is-primary.is-outlined .eve-label-icon i {
-        color: #2196f3; }
-      .eve-label.is-primary.is-outlined .eve-label-icon svg {
-        fill: #2196f3; }
-  .eve-label.is-success {
-    background: #4caf50; }
-    .eve-label.is-success:hover {
-      background: rgba(76, 175, 80, 0.2);
-      color: #4caf50; }
-      .eve-label.is-success:hover .eve-label-action {
-        background: #4caf50; }
-        .eve-label.is-success:hover .eve-label-action i {
-          color: #fff; }
-        .eve-label.is-success:hover .eve-label-action svg {
-          fill: #fff; }
-    .eve-label.is-success.is-outlined {
-      box-shadow: inset 0 0 0 1px #4caf50;
-      color: #4caf50; }
-      .eve-label.is-success.is-outlined .eve-label-icon i {
-        color: #4caf50; }
-      .eve-label.is-success.is-outlined .eve-label-icon svg {
-        fill: #4caf50; }
-  .eve-label.is-warning {
-    background: #ff9800; }
-    .eve-label.is-warning:hover {
-      background: rgba(255, 152, 0, 0.2);
-      color: #ff9800; }
-      .eve-label.is-warning:hover .eve-label-action {
-        background: #ff9800; }
-        .eve-label.is-warning:hover .eve-label-action i {
-          color: #fff; }
-        .eve-label.is-warning:hover .eve-label-action svg {
-          fill: #fff; }
-    .eve-label.is-warning.is-outlined {
-      box-shadow: inset 0 0 0 1px #ff9800;
-      color: #ff9800; }
-      .eve-label.is-warning.is-outlined .eve-label-icon i {
-        color: #ff9800; }
-      .eve-label.is-warning.is-outlined .eve-label-icon svg {
-        fill: #ff9800; }
-  .eve-label.is-danger {
-    background: #f44336; }
-    .eve-label.is-danger:hover {
-      background: rgba(244, 67, 54, 0.2);
-      color: #f44336; }
-      .eve-label.is-danger:hover .eve-label-action {
-        background: #f44336; }
-        .eve-label.is-danger:hover .eve-label-action i {
-          color: #fff; }
-        .eve-label.is-danger:hover .eve-label-action svg {
-          fill: #fff; }
-    .eve-label.is-danger.is-outlined {
-      box-shadow: inset 0 0 0 1px #f44336;
-      color: #f44336; }
-      .eve-label.is-danger.is-outlined .eve-label-icon i {
-        color: #f44336; }
-      .eve-label.is-danger.is-outlined .eve-label-icon svg {
-        fill: #f44336; }
-  .eve-label.is-outlined {
-    background: transparent; }
-    .eve-label.is-outlined:hover {
-      box-shadow: none; }
-  .eve-label.is-rounded {
-    border-radius: 14px; }
-  .eve-label .eve-label-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 4px; }
-    .eve-label .eve-label-icon i {
-      font-size: 14px; }
-    .eve-label .eve-label-icon svg {
-      width: 14px;
-      height: 14px; }
-  .eve-label .eve-label-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 4px;
-    border-radius: 50%; }
-    .eve-label .eve-label-action i {
-      font-size: 14px; }
-    .eve-label .eve-label-action svg {
-      width: 14px;
-      height: 14px; }
 
 .eve-list .eve-list-item {
   display: flex; }

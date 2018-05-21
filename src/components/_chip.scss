@@ -5,11 +5,23 @@ $eve-chip-size: 28px;
     align-items: center;
     height: $eve-chip-size;
     line-height: $eve-chip-size;
-    border-radius: $eve-chip-size / 2;
     background: $eve-color-bright-silver;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
-    cursor: pointer;
+    vertical-align: top;
+
+    &.is-rounded {
+        border-radius: $eve-chip-size / 2;
+
+        .eve-avatar,
+        .eve-chip-icon {
+            border-radius: 50%;
+        }
+    }
+
+    .eve-avatar {
+        border-radius: 0;
+    }
 
     .eve-avatar,
     .eve-chip-icon {
@@ -24,7 +36,6 @@ $eve-chip-size: 28px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
         background: $eve-color-primary;
 
         i {
@@ -45,6 +56,7 @@ $eve-chip-size: 28px;
         justify-content: center;
         margin-left: $eve-spacing-x-tiny;
         border-radius: 50%;
+        cursor: pointer;
 
         &:hover {
             background: $eve-color-darker-silver;
@@ -68,5 +80,15 @@ $eve-chip-size: 28px;
             height: $eve-chip-size / 2;
             fill: $eve-color-darker-silver;
         }
+    }
+}
+
+.eve-chips {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -#{$eve-spacing-x-tiny};
+
+    .eve-chip {
+        margin: $eve-spacing-x-tiny;
     }
 }
