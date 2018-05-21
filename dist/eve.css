@@ -1260,7 +1260,6 @@
       border-radius: 24px; }
   .eve-input:disabled {
     background: #cfd8dc;
-    border-color: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
 
@@ -1319,7 +1318,7 @@
   .eve-input-field.is-loading::after {
     content: '';
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-top-color: #2196f3;
     border-right-color: #2196f3;
     position: absolute;
