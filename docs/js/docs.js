@@ -22,7 +22,7 @@
 
                 el.classList.add('is-active');
 
-                document.title = 'EveCSS | ' + getComponentName(el);
+                document.title = getComponentName(el) + ' | EveCSS';
 
                 loadTemplate(el.getAttribute('data-path'));
 

@@ -28,14 +28,6 @@ yarn add evecss
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evecss/dist/eve.min.css">
 ```
 
-### Manually
-
-Download the compiled and minified [Eve](https://github.com/kanbanize/eve/releases), and include `eve.css` or `eve.min.css` located in **/dist** inside your **&lt;head&gt;** tag.
-
-```html
-<link rel="stylesheet" href="eve.min.css">
-```
-
 ## Compatibility
 
 Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with latest versions of:
