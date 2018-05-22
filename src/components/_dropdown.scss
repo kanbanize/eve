@@ -14,20 +14,6 @@ $eve-dropdown-list-item-height: 32px;
         margin: 0;
         list-style: none;
 
-        &:not(:last-child) {
-            padding-bottom: 0;
-        }
-
-        .is-header {
-            font-weight: bold;
-            height: $eve-dropdown-list-item-height;
-            display: flex;
-            align-items: center;
-            padding: 0 $eve-spacing-small;
-            text-transform: uppercase;
-            font-size: $eve-font-tiny;
-        }
-
         li {
             height: $eve-dropdown-list-item-height;
             padding: 0 $eve-spacing-small;
@@ -60,16 +46,25 @@ $eve-dropdown-list-item-height: 32px;
                 background: $eve-color-bright-silver;
             }
 
+            &.is-header {
+                font-weight: bold;
+                height: $eve-dropdown-list-item-height;
+                text-transform: uppercase;
+                font-size: $eve-font-tiny;
+                pointer-events: none;
+            }
+
+            &.is-divider {
+                background: $eve-color-bright-silver;
+                height: 1px;
+                margin: $eve-spacing-tiny 0;
+                pointer-events: none;
+            }
+
             &.is-disabled {
                 color: $eve-color-darker-silver;
                 pointer-events: none;
             }
-        }
-
-        .is-divider {
-            background: $eve-color-bright-silver;
-            height: 1px;
-            margin: $eve-spacing-tiny 0;
         }
     }
 

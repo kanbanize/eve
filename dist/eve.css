@@ -1112,16 +1112,6 @@
     padding: 8px 0;
     margin: 0;
     list-style: none; }
-    .eve-dropdown ul:not(:last-child) {
-      padding-bottom: 0; }
-    .eve-dropdown ul .is-header {
-      font-weight: bold;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      padding: 0 16px;
-      text-transform: uppercase;
-      font-size: 12px; }
     .eve-dropdown ul li {
       height: 32px;
       padding: 0 16px;
@@ -1143,13 +1133,20 @@
         fill: #b0bec5; }
       .eve-dropdown ul li.is-active {
         background: #eceff1; }
+      .eve-dropdown ul li.is-header {
+        font-weight: bold;
+        height: 32px;
+        text-transform: uppercase;
+        font-size: 12px;
+        pointer-events: none; }
+      .eve-dropdown ul li.is-divider {
+        background: #eceff1;
+        height: 1px;
+        margin: 8px 0;
+        pointer-events: none; }
       .eve-dropdown ul li.is-disabled {
         color: #b0bec5;
         pointer-events: none; }
-    .eve-dropdown ul .is-divider {
-      background: #eceff1;
-      height: 1px;
-      margin: 8px 0; }
   .eve-dropdown.is-stripped ul li:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 
