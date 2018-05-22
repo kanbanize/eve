@@ -994,7 +994,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 4px;
+    margin-left: 8px;
     border-radius: 50%;
     cursor: pointer; }
     .eve-chip .eve-chip-action:hover {
@@ -1816,6 +1816,122 @@
       pointer-events: none; }
       .eve-tabs li.is-disabled::after {
         background: #b0bec5; }
+
+.eve-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #fff; }
+  .eve-tag.is-primary {
+    background: #2196f3; }
+    .eve-tag.is-primary:hover {
+      background: rgba(33, 150, 243, 0.2);
+      color: #2196f3; }
+      .eve-tag.is-primary:hover .eve-tag-action {
+        background: #2196f3; }
+        .eve-tag.is-primary:hover .eve-tag-action i {
+          color: #fff; }
+        .eve-tag.is-primary:hover .eve-tag-action svg {
+          fill: #fff; }
+    .eve-tag.is-primary.is-outlined {
+      box-shadow: inset 0 0 0 1px #2196f3;
+      color: #2196f3; }
+      .eve-tag.is-primary.is-outlined .eve-tag-icon i {
+        color: #2196f3; }
+      .eve-tag.is-primary.is-outlined .eve-tag-icon svg {
+        fill: #2196f3; }
+  .eve-tag.is-success {
+    background: #4caf50; }
+    .eve-tag.is-success:hover {
+      background: rgba(76, 175, 80, 0.2);
+      color: #4caf50; }
+      .eve-tag.is-success:hover .eve-tag-action {
+        background: #4caf50; }
+        .eve-tag.is-success:hover .eve-tag-action i {
+          color: #fff; }
+        .eve-tag.is-success:hover .eve-tag-action svg {
+          fill: #fff; }
+    .eve-tag.is-success.is-outlined {
+      box-shadow: inset 0 0 0 1px #4caf50;
+      color: #4caf50; }
+      .eve-tag.is-success.is-outlined .eve-tag-icon i {
+        color: #4caf50; }
+      .eve-tag.is-success.is-outlined .eve-tag-icon svg {
+        fill: #4caf50; }
+  .eve-tag.is-warning {
+    background: #ff9800; }
+    .eve-tag.is-warning:hover {
+      background: rgba(255, 152, 0, 0.2);
+      color: #ff9800; }
+      .eve-tag.is-warning:hover .eve-tag-action {
+        background: #ff9800; }
+        .eve-tag.is-warning:hover .eve-tag-action i {
+          color: #fff; }
+        .eve-tag.is-warning:hover .eve-tag-action svg {
+          fill: #fff; }
+    .eve-tag.is-warning.is-outlined {
+      box-shadow: inset 0 0 0 1px #ff9800;
+      color: #ff9800; }
+      .eve-tag.is-warning.is-outlined .eve-tag-icon i {
+        color: #ff9800; }
+      .eve-tag.is-warning.is-outlined .eve-tag-icon svg {
+        fill: #ff9800; }
+  .eve-tag.is-danger {
+    background: #f44336; }
+    .eve-tag.is-danger:hover {
+      background: rgba(244, 67, 54, 0.2);
+      color: #f44336; }
+      .eve-tag.is-danger:hover .eve-tag-action {
+        background: #f44336; }
+        .eve-tag.is-danger:hover .eve-tag-action i {
+          color: #fff; }
+        .eve-tag.is-danger:hover .eve-tag-action svg {
+          fill: #fff; }
+    .eve-tag.is-danger.is-outlined {
+      box-shadow: inset 0 0 0 1px #f44336;
+      color: #f44336; }
+      .eve-tag.is-danger.is-outlined .eve-tag-icon i {
+        color: #f44336; }
+      .eve-tag.is-danger.is-outlined .eve-tag-icon svg {
+        fill: #f44336; }
+  .eve-tag.is-outlined {
+    background: transparent; }
+    .eve-tag.is-outlined:hover {
+      box-shadow: none; }
+  .eve-tag.is-rounded {
+    border-radius: 14px; }
+  .eve-tag .eve-tag-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px; }
+    .eve-tag .eve-tag-icon i {
+      font-size: 14px; }
+    .eve-tag .eve-tag-icon svg {
+      width: 14px;
+      height: 14px; }
+  .eve-tag .eve-tag-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .eve-tag .eve-tag-action i {
+      font-size: 14px; }
+    .eve-tag .eve-tag-action svg {
+      width: 14px;
+      height: 14px; }
+
+.eve-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px; }
+  .eve-tags .eve-tag {
+    margin: 4px; }
 
 .eve-textarea {
   background: #fff;
