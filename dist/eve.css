@@ -1158,36 +1158,12 @@
   color: #333;
   font-size: 12px;
   line-height: 20px; }
-  .eve-feedback i,
-  .eve-feedback svg {
-    margin-right: 8px; }
   .eve-feedback.is-success {
     background: rgba(76, 175, 80, 0.2); }
-    .eve-feedback.is-success i {
-      color: #4caf50;
-      font-size: 18px; }
-    .eve-feedback.is-success svg {
-      fill: #4caf50;
-      width: 18px;
-      height: 18px; }
   .eve-feedback.is-warning {
     background: rgba(255, 152, 0, 0.2); }
-    .eve-feedback.is-warning i {
-      color: #ff9800;
-      font-size: 18px; }
-    .eve-feedback.is-warning svg {
-      fill: #ff9800;
-      width: 18px;
-      height: 18px; }
   .eve-feedback.is-danger {
     background: rgba(244, 67, 54, 0.2); }
-    .eve-feedback.is-danger i {
-      color: #f44336;
-      font-size: 18px; }
-    .eve-feedback.is-danger svg {
-      fill: #f44336;
-      width: 18px;
-      height: 18px; }
 
 .eve-form-group {
   margin: 0 0 16px; }

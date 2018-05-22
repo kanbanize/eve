@@ -14,27 +14,11 @@ $eve-feedback-icon-size: 18px;
     font-size: $eve-font-tiny;
     line-height: 20px;
 
-    i,
-    svg {
-        margin-right: $eve-spacing-tiny;
-    }
-
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
         $color: map-get($eve-feedback-colors, $eve-feedback-color);
 
         &.is-#{$eve-feedback-color} {
             background: rgba($color, .2);
-
-            i {
-                color: $color;
-                font-size: $eve-feedback-icon-size;
-            }
-
-            svg {
-                fill: $color;
-                width: $eve-feedback-icon-size;
-                height: $eve-feedback-icon-size;
-            }
         }
     }
 }
