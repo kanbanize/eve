@@ -1184,6 +1184,8 @@
 
 .eve-form-control {
   display: flex; }
+  .eve-form-control .eve-button {
+    flex-shrink: 0; }
 
 .eve-input {
   background: #fff;

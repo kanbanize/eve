@@ -26,4 +26,8 @@
 
 .eve-form-control {
     display: flex;
+
+    .eve-button {
+        flex-shrink: 0;
+    }
 }
