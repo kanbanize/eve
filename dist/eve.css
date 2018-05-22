@@ -1151,9 +1151,6 @@
     background: rgba(236, 239, 241, 0.5); }
 
 .eve-feedback {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
   padding: 8px 16px;
   color: #333;
   font-size: 12px;

@@ -6,9 +6,6 @@ $eve-feedback-colors: (
 $eve-feedback-icon-size: 18px;
 
 .eve-feedback {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
     padding: $eve-spacing-tiny $eve-spacing-small;
     color: $eve-color-dark;
     font-size: $eve-font-tiny;
