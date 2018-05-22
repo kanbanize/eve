@@ -22,13 +22,13 @@
   "homepage": "https://kanbanize.github.io/eve/",
   "main": "dist/eve.min.css",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.5.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.2.3",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "sass-lint": "^1.12.1"
