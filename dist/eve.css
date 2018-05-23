@@ -1755,12 +1755,11 @@
   padding: 0;
   margin: 0;
   font-size: 14px;
-  background: #fff;
-  height: 48px;
-  line-height: 48px;
-  box-sizing: border-box; }
+  background: #fff; }
   .eve-tabs li {
     margin: 0 16px;
+    height: 48px;
+    line-height: 48px;
     color: #333;
     cursor: pointer;
     overflow: hidden;
