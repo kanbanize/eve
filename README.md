@@ -1,6 +1,6 @@
 # [EveCSS](https://kanbanize.github.io/eve)
 
-A **simple**, minimal css framework
+> A **simple**, minimal css framework
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
