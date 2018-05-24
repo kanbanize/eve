@@ -64,10 +64,6 @@ $eve-tag-size: 28px;
         }
     }
 
-    &.is-rounded {
-        border-radius: $eve-tag-size / 2;
-    }
-
     .eve-tag-icon {
         display: flex;
         align-items: center;

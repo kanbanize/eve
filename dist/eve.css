@@ -1869,8 +1869,6 @@
     background: transparent; }
     .eve-tag.is-outlined:hover {
       box-shadow: none; }
-  .eve-tag.is-rounded {
-    border-radius: 14px; }
   .eve-tag .eve-tag-icon {
     display: flex;
     align-items: center;
