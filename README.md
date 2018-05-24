@@ -1,5 +1,9 @@
 # [EveCSS](https://kanbanize.github.io/eve)
 
+<a href="https://kanbanize.github.io/eve">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/site/logo.png" alt="EveCSS" width="150" height="150">
+</a>
+
 > A **simple**, minimal css framework
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
