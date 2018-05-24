@@ -12,7 +12,7 @@ $eve-tooltip-size: 28px;
 
         &.has-delay {
             &::after {
-                animation-delay: .85s;
+                animation-delay: .5s;
             }
         }
 
@@ -33,9 +33,7 @@ $eve-tooltip-size: 28px;
 
     &::after {
         content: attr(data-tooltip);
-        // opacity: 0;
         visibility: hidden;
-        // transition: opacity 150ms ease, visibility 150ms ease;
         background: #263238;
         color: $eve-color-light;
         font-size: $eve-font-tiny;
