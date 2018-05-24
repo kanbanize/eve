@@ -9,19 +9,7 @@ $eve-chip-size: 28px;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-tiny;
     vertical-align: top;
-
-    &.is-rounded {
-        border-radius: $eve-chip-size / 2;
-
-        .eve-avatar,
-        .eve-chip-icon {
-            border-radius: 50%;
-        }
-    }
-
-    .eve-avatar {
-        border-radius: 0;
-    }
+    border-radius: $eve-chip-size / 2;
 
     .eve-avatar,
     .eve-chip-icon {
@@ -30,6 +18,7 @@ $eve-chip-size: 28px;
         width: $eve-chip-size;
         position: relative;
         left: -#{$eve-spacing-tiny};
+        border-radius: 50%;
     }
 
     .eve-chip-icon {

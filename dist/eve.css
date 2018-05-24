@@ -963,21 +963,16 @@
   background: #eceff1;
   padding: 0 8px;
   font-size: 12px;
-  vertical-align: top; }
-  .eve-chip.is-rounded {
-    border-radius: 14px; }
-    .eve-chip.is-rounded .eve-avatar,
-    .eve-chip.is-rounded .eve-chip-icon {
-      border-radius: 50%; }
-  .eve-chip .eve-avatar {
-    border-radius: 0; }
+  vertical-align: top;
+  border-radius: 14px; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
     box-shadow: 0 0 0 1px #fff;
     height: 28px;
     width: 28px;
     position: relative;
-    left: -8px; }
+    left: -8px;
+    border-radius: 50%; }
   .eve-chip .eve-chip-icon {
     display: flex;
     align-items: center;
@@ -1983,17 +1978,13 @@
     font-weight: normal; }
   .eve-tooltip.is-top::after {
     bottom: calc(100% + 8px);
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    left: 50%; }
   .eve-tooltip.is-left::after {
     bottom: calc(50% - 14px);
     right: calc(100% + 8px); }
   .eve-tooltip.is-bottom::after {
     top: calc(100% + 8px);
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    left: 50%; }
   .eve-tooltip.is-right::after {
     bottom: calc(50% - 14px);
     left: calc(100% + 8px); }
