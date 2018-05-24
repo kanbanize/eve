@@ -1,4 +1,4 @@
-# Eve
+# [EveCSS](https://kanbanize.github.io/eve)
 
 **A simple, minimal css framework**
 
@@ -39,3 +39,12 @@ Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most cs
 - Edge
 
 Internet Explorer (10+) is partially supported.
+
+## Documentation
+
+<https://kanbanize.github.io/eve/docs>
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kanbanize/eve/blob/master/LICENSE) file for details
