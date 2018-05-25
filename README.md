@@ -15,8 +15,6 @@ A simple, minimal css framework
 
 Why Eve instead of all other big and well-known CSS Frameworks like Bootstrap, Foundation, Bulma, UIkit, Semantic UI?
 
-It's simple - **Eve does not overwrite any of your user agent or custom styles!**
-
 Most CSS Frameworks use global resets like:
 
 ```
@@ -41,7 +39,7 @@ This is not good for several reasons:
 * What if the project relies on box-sizing: content-box;?
 * What if the project relies on the fact that the headings and paragraphs have margins?
 
-Eva allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles.
+**Eve allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles!**
 
 ## Quick Install
 
