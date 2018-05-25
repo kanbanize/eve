@@ -15,6 +15,8 @@ A simple, minimal css framework
 
 Why Eve instead of all other big and well-known CSS Frameworks like Bootstrap, Foundation, Bulma, UIkit, Semantic UI?
 
+**Eve allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles!**
+
 Most CSS Frameworks use global resets like:
 
 ```
@@ -38,8 +40,6 @@ p {
 This is not good for several reasons:
 * What if the project relies on box-sizing: content-box;?
 * What if the project relies on the fact that the headings and paragraphs have margins?
-
-**Eve allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles!**
 
 ## Quick Install
 
