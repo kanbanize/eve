@@ -13,7 +13,7 @@ A simple, minimal css framework
 
 ## Why Eve?
 
-Why Eve instead of all other big and well-known CSS frameworks like Bootstrap, Foundation, Bulma, UIkit, Semantic UI?
+Why Eve instead of all other big and well-known CSS Frameworks like Bootstrap, Foundation, Bulma, UIkit, Semantic UI?
 
 It's simple - **Eve does not overwrite any of your user agent or custom styles!**
 
@@ -37,13 +37,11 @@ p {
 }
 ```
 
-That is not good for several reasons:
+This is not good for several reasons:
 * What if the project relies on box-sizing: content-box;?
 * What if the project relies on the fact that the headings and paragraphs have margins?
 
-This is a very common problem. That's why Eve was created.
-
-This advantage allows easy and seamless integration of Eve into every project regardless of its stage of development.
+Eva allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles.
 
 ## Quick Install
 
@@ -68,16 +66,19 @@ yarn add evecss
 ## Documentation
 
 #### Foundations
+
 * [Colors](https://kanbanize.github.io/eve/docs/#foundations/colors)
 * [Typography](https://kanbanize.github.io/eve/docs/#foundations/typography)
 
 #### Grid
+
 * [Base](https://kanbanize.github.io/eve/docs/#grid/base)
 * [Alignment](https://kanbanize.github.io/eve/docs/#grid/alignment)
 * [Gaps](https://kanbanize.github.io/eve/docs/#grid/gaps)
 * [Nesting](https://kanbanize.github.io/eve/docs/#grid/nesting)
 
 #### Components
+
 * [Accordion](https://kanbanize.github.io/eve/docs/#components/accordion)
 * [Avatar](https://kanbanize.github.io/eve/docs/#components/avatar)
 * [Badge](https://kanbanize.github.io/eve/docs/#components/badge)
@@ -105,6 +106,7 @@ yarn add evecss
 * [Tooltip](https://kanbanize.github.io/eve/docs/#components/tooltip)
 
 #### Utilities
+
 * [Cursor](https://kanbanize.github.io/eve/docs/#utilities/cursor)
 * [Display](https://kanbanize.github.io/eve/docs/#utilities/display)
 * [Gap](https://kanbanize.github.io/eve/docs/#utilities/gap)
@@ -112,8 +114,6 @@ yarn add evecss
 * [Text](https://kanbanize.github.io/eve/docs/#utilities/text)
 
 ## Browser Support
-
-Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most css styles compatible with latest versions of:
 
 - Chrome
 - Firefox
