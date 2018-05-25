@@ -1,6 +1,8 @@
-# [EveCSS](https://kanbanize.github.io/eve)
+# [Eve](https://kanbanize.github.io/eve)
 
 A simple, minimal css framework
+
+> Easy and seamless integration with any project, regardless of its stage of development, **without overwriting any styles!**
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
@@ -11,39 +13,9 @@ A simple, minimal css framework
     <img src="https://raw.githubusercontent.com/kanbanize/eve/master/site/logo.png" alt="EveCSS" width="350" height="350">
 </a>
 
-## Why Eve?
-
-Why Eve instead of all other big and well-known CSS Frameworks like Bootstrap, Foundation, Bulma, UIkit, Semantic UI?
-
-**Eve allows you easy and seamless integration with any project, regardless of its stage of development, without overwriting any styles!**
-
-Most CSS Frameworks use global resets like:
-
-```
-* {
-     box-sizing: border-box;
-}
-```
-
-```
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-     margin: 0;
-}
-```
-
-This is not good for several reasons:
-* What if the project relies on box-sizing: content-box;?
-* What if the project relies on the fact that the headings and paragraphs have margins?
-
 ## Quick Install
 
-### NPM
+### npm
 
 ```sh
 npm install evecss
@@ -59,6 +31,12 @@ yarn add evecss
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evecss/dist/eve.min.css">
+```
+
+### unpkg
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/evecs/dist/eve.min.css">
 ```
 
 ## Documentation
