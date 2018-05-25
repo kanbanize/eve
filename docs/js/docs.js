@@ -35,10 +35,6 @@
 
     function loadTemplate(path) {
         if (templatesCache.hasOwnProperty(path)) {
-            if (path === 'getting-started' && /installation|browser-support/g.test(location.hash)) {
-                return;
-            }
-
             loadTemplateHtml(templatesCache[path]);
 
             return;
