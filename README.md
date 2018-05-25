@@ -1,8 +1,8 @@
 # [Eve](https://kanbanize.github.io/eve)
 
-A simple, minimal css framework
+A simple, minimal CSS Framework
 
-> Easy and seamless integration with any project, regardless of its stage of development, **without overwriting any styles!**
+> A library of front-end components that helps designers and developers build great experiences.
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
