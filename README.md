@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/kanbanize/eve/master/site/logo.png" alt="EveCSS" width="250" height="250">
 </a>
 
-# [Eve](https://kanbanize.github.io/eve)
+# Eve
 
 A simple, minimal CSS Framework
 
