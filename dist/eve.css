@@ -1188,7 +1188,8 @@
   max-width: 100%;
   vertical-align: middle;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: inherit;
   box-sizing: border-box;
   height: 36px;
@@ -1565,7 +1566,8 @@
   max-width: 100%;
   width: 100%;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   font-family: inherit;
   border-radius: 0;
@@ -1911,7 +1913,8 @@
   font-size: 14px;
   color: #333;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: inherit;
   line-height: 20px;
   box-sizing: border-box; }

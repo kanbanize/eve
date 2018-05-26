@@ -3,14 +3,14 @@ $eve-accordion-height: 32px;
 .eve-accordion {
     font-size: $eve-font-small;
 
-    & > input {
+    > input {
         &:checked {
-            & ~ .eve-accordion-header {
+            ~ .eve-accordion-header {
                 background: $eve-color-primary;
                 color: $eve-color-light;
             }
 
-            & ~ .eve-accordion-content {
+            ~ .eve-accordion-content {
                 display: block;
             }
         }

@@ -32,7 +32,7 @@ $eve-switch-height: 18px;
             &:disabled {
                 cursor: default;
 
-                & ~ .eve-switch-mark {
+                ~ .eve-switch-mark {
                     background: $eve-color-dark-silver;
 
                     &::after {

@@ -34,12 +34,12 @@ $eve-checkbox-mark-border-width: 2px;
             &:disabled {
                 cursor: default;
 
-                & ~ .eve-checkbox-mark {
+                ~ .eve-checkbox-mark {
                     border-color: $eve-color-dark-silver;
                 }
 
                 &:checked {
-                    & ~ .eve-checkbox-mark {
+                    ~ .eve-checkbox-mark {
                         background: $eve-color-dark-silver;
 
                         &::after {
@@ -87,7 +87,7 @@ $eve-checkbox-mark-border-width: 2px;
 }
 
 .eve-checkboxes {
-    & > .eve-checkboxes {
+    > .eve-checkboxes {
         padding-left: $eve-spacing-small;
 
         &:not(:last-child) {

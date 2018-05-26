@@ -9,8 +9,7 @@
     max-width: 100%;
     font-size: $eve-font-small;
     color: $eve-color-dark;
-    -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
-    -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+    appearance: none;
     font-family: inherit;
     line-height: 20px;
     box-sizing: border-box;

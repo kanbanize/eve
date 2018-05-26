@@ -22,8 +22,7 @@ $eve-input-font-sizes: (
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
-    -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
-    -moz-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+    appearance: none;
     font-family: inherit;
     box-sizing: border-box;
 

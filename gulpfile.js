@@ -23,7 +23,7 @@ var config = {
             out: 'docs'
         },
         css: {
-            src: ['docs/sass/**/*.scss'],
+            src: ['docs/scss/**/*.scss'],
             dest: 'docs/dist',
             out: 'docs'
         }

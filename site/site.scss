@@ -1,4 +1,4 @@
-// sass-lint:disable class-name-format
+// scss-lint:disable SelectorFormat, IdSelector
 
 // Global Styles
 
@@ -223,7 +223,7 @@ $transition-default: all 300ms ease-in-out;
 
 // Particles.js Container Styles
 
-#particles-js { // sass-lint:disable-line no-ids
+#particles-js {
     grid-area: 1 / 1 / 4 / 4;
     background-repeat: no-repeat;
     background-size: cover;
