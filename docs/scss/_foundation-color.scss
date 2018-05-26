@@ -18,6 +18,7 @@
         width: 80px;
         height: 80px;
         margin-right: 16px;
+        border-radius: 50%;
 
         &.component-color-square-blue {
             background: #2196f3;
@@ -70,7 +71,7 @@
         .component-color-name {
             display: flex;
             align-items: center;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             font-weight: 600;
             font-size: 16px;
         }

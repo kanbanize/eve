@@ -28,6 +28,7 @@ $eve-heading-line-heights: (
         font-size: map-get($eve-heading-font-sizes, $heading);
         line-height: map-get($eve-heading-line-heights, $heading);
         margin: 0;
+        font-weight: normal;
     }
 }
 
