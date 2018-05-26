@@ -50,7 +50,7 @@ yarn add evecss
 
 * [Base](https://kanbanize.github.io/eve/docs/#grid/base)
 * [Alignment](https://kanbanize.github.io/eve/docs/#grid/alignment)
-* [Gaps](https://kanbanize.github.io/eve/docs/#grid/gaps)
+* [Gap](https://kanbanize.github.io/eve/docs/#grid/gap)
 * [Nesting](https://kanbanize.github.io/eve/docs/#grid/nesting)
 
 #### Components

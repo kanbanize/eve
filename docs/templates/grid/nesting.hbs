@@ -1,10 +1,6 @@
 <style>
-    .eve-grid:not(:last-child) {
-        margin-bottom: 16px;
-    }
-
-    .eve-grid:not(.has-gap-tiny):not(.has-gap-small):not(.has-gap-normal):not(.has-gap-large) {
-        background: #eceff1;
+    .eve-grid:first-child > div:first-child p {
+        height: 96px;
     }
 
     .eve-cell > p,
@@ -33,7 +29,7 @@
     <div class="component-title">Nested grids</div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-grid">
+            <div class="eve-grid has-gap-tiny">
                 <div class="eve-cell-4">
                     <p>.eve-cell-4</p>
                 </div>

@@ -45,7 +45,7 @@ $eve-grid-vertical-alignments: (
             }
 
             @for $i from 1 through $eve-grid-cells-count {
-                & > .eve-cell-#{$i} {
+                > .eve-cell-#{$i} {
                     padding: 0 $gap;
                 }
             }
@@ -89,7 +89,7 @@ $eve-grid-vertical-alignments: (
                 }
 
                 @for $i from 1 through $eve-grid-cells-count {
-                    & > .eve-cell-#{$i} {
+                    > .eve-cell-#{$i} {
                         padding: $gap 0;
                     }
                 }
