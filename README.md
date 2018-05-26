@@ -89,15 +89,15 @@ yarn add evecss
 * [Overflow](https://kanbanize.github.io/eve/docs/#utilities/overflow)
 * [Text](https://kanbanize.github.io/eve/docs/#utilities/text)
 
+## Versioning
+
+Eve use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kanbanize/eve/tags).
+
 ## Browser Support
 
-- Chrome
-- Firefox
-- Safari
-- Opera
-- MS Edge
-
-Internet Explorer (10+) is partially supported.
+![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png)
+--- | --- | --- | --- | --- | --- |
+Latest | Latest | Latest | Latest | Latest | Partially |
 
 ## License
 
