@@ -33,12 +33,6 @@ yarn add evecss
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evecss/dist/eve.min.css">
 ```
 
-### unpkg
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/evecs/dist/eve.min.css">
-```
-
 ## Documentation
 
 #### Foundations
