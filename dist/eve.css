@@ -394,8 +394,7 @@
   color: #fff;
   position: relative; }
   .eve-avatar[data-initial] {
-    background: #2196f3;
-    overflow: hidden; }
+    background: #2196f3; }
     .eve-avatar[data-initial]::before {
       content: attr(data-initial);
       font-weight: bold; }

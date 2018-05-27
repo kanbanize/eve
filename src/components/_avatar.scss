@@ -18,7 +18,6 @@ $eve-avatar-sizes: (
 
     &[data-initial] {
         background: $eve-color-primary;
-        overflow: hidden;
 
         &::before {
             content: attr(data-initial);
