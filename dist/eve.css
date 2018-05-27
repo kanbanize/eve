@@ -506,15 +506,15 @@
     .eve-avatar.is-normal.is-offline::after {
       background: #cfd8dc; }
   .eve-avatar.is-large {
-    width: 40px;
-    height: 40px; }
+    width: 48px;
+    height: 48px; }
     .eve-avatar.is-large[data-initial]::before {
       font-size: 16px; }
     .eve-avatar.is-large.is-online::after, .eve-avatar.is-large.is-busy::after, .eve-avatar.is-large.is-away::after, .eve-avatar.is-large.is-offline::after {
       content: '';
       display: block;
-      height: 10px;
-      width: 10px;
+      height: 12px;
+      width: 12px;
       border-radius: 50%;
       position: absolute;
       bottom: 0;
