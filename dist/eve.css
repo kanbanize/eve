@@ -1959,8 +1959,8 @@
     -webkit-animation-timing-function: ease;
             animation-timing-function: ease; }
   .eve-tooltip:hover.has-delay::after {
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s; }
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s; }
   .eve-tooltip:hover.is-left::after, .eve-tooltip:hover.is-right::after {
     -webkit-animation-name: fadeInHorizontal;
             animation-name: fadeInHorizontal; }
