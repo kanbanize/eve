@@ -1119,8 +1119,8 @@
       display: flex;
       align-items: center;
       cursor: pointer; }
-      .eve-dropdown ul li:hover {
-        background: rgba(236, 239, 241, 0.5); }
+      .eve-dropdown ul li:hover, .eve-dropdown ul li.is-acitive {
+        background: #eceff1; }
       .eve-dropdown ul li i,
       .eve-dropdown ul li svg,
       .eve-dropdown ul li .eve-avatar {
@@ -1132,8 +1132,6 @@
         width: 16px;
         height: 16px;
         fill: #b0bec5; }
-      .eve-dropdown ul li.is-active {
-        background: #eceff1; }
       .eve-dropdown ul li.is-header {
         font-weight: bold;
         height: 32px;
@@ -1362,12 +1360,10 @@
       text-decoration: none;
       color: inherit;
       display: block; }
-    .eve-navigation li:hover {
-      background: rgba(236, 239, 241, 0.5);
+    .eve-navigation li:hover, .eve-navigation li.is-active {
+      background: #eceff1;
       color: inherit; }
     .eve-navigation li.is-active {
-      background: #eceff1;
-      color: inherit;
       position: relative; }
       .eve-navigation li.is-active::after {
         content: '';

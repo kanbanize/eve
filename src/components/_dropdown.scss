@@ -21,8 +21,9 @@ $eve-dropdown-list-item-height: 32px;
             align-items: center;
             cursor: pointer;
 
-            &:hover {
-                background: rgba($eve-color-bright-silver, .5);
+            &:hover,
+            &.is-acitive {
+                background: $eve-color-bright-silver;
             }
 
             i,
@@ -40,10 +41,6 @@ $eve-dropdown-list-item-height: 32px;
                 width: $eve-dropdown-list-item-height / 2;
                 height: $eve-dropdown-list-item-height / 2;
                 fill: $eve-color-darker-silver;
-            }
-
-            &.is-active {
-                background: $eve-color-bright-silver;
             }
 
             &.is-header {
