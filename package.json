@@ -10,11 +10,10 @@
   "license": "MIT",
   "keywords": [
     "css",
-    "sass",
-    "responsive",
-    "css-framework",
+    "html",
     "flexbox",
-    "grid"
+    "css-framework",
+    "design"
   ],
   "bugs": {
     "url": "https://github.com/kanbanize/eve/issues"
