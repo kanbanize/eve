@@ -19,6 +19,7 @@
                 color: $eve-color-darkest-silver;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
                 word-break: break-word;
+                box-sizing: border-box;
             }
         }
     }

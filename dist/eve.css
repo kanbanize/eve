@@ -1739,7 +1739,8 @@
         background: #eceff1;
         color: #607d8b;
         padding: 8px 24px;
-        word-break: break-word; }
+        word-break: break-word;
+        box-sizing: border-box; }
   .eve-table tbody tr {
     height: 48px; }
     .eve-table tbody tr:not(:last-child) {
