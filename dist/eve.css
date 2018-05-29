@@ -1727,7 +1727,8 @@
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   width: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  table-layout: fixed; }
   .eve-table thead {
     text-align: left; }
     .eve-table thead tr {
@@ -1737,13 +1738,15 @@
         font-weight: normal;
         background: #eceff1;
         color: #607d8b;
-        padding: 0 24px; }
+        padding: 8px 24px;
+        word-break: break-word; }
   .eve-table tbody tr {
     height: 48px; }
     .eve-table tbody tr:not(:last-child) {
       border-bottom: 1px solid #cfd8dc; }
     .eve-table tbody tr td {
-      padding: 0 24px; }
+      padding: 8px 24px;
+      word-break: break-word; }
   .eve-table.is-stripped tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 

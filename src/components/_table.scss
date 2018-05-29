@@ -4,6 +4,7 @@
     border-collapse: collapse;
     width: 100%;
     font-size: $eve-font-small;
+    table-layout: fixed;
 
     thead {
         text-align: left;
@@ -16,7 +17,8 @@
                 font-weight: normal;
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
-                padding: 0 $eve-spacing-normal;
+                padding: $eve-spacing-tiny $eve-spacing-normal;
+                word-break: break-word;
             }
         }
     }
@@ -30,7 +32,8 @@
             }
 
             td {
-                padding: 0 $eve-spacing-normal;
+                padding: $eve-spacing-tiny $eve-spacing-normal;
+                word-break: break-word;
             }
         }
     }
