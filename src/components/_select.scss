@@ -69,12 +69,11 @@ $eve-select-font-sizes: (
                 }
             }
         }
+    }
 
-        &:disabled {
-            border-color: $eve-color-dark-silver;
-            color: $eve-color-darkest-silver;
-            pointer-events: none;
-        }
+    &:disabled {
+        color: $eve-color-darkest-silver;
+        pointer-events: none;
     }
 }
 
