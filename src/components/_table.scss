@@ -18,7 +18,7 @@
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
-                word-break: break-word;
+                word-break: break-all;
                 box-sizing: border-box;
             }
         }
@@ -34,7 +34,7 @@
 
             td {
                 padding: $eve-spacing-tiny $eve-spacing-normal;
-                word-break: break-word;
+                word-break: break-all;
             }
         }
     }

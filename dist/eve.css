@@ -1730,7 +1730,7 @@
         background: #eceff1;
         color: #607d8b;
         padding: 8px 24px;
-        word-break: break-word;
+        word-break: break-all;
         box-sizing: border-box; }
   .eve-table tbody tr {
     height: 48px; }
@@ -1738,7 +1738,7 @@
       border-bottom: 1px solid #cfd8dc; }
     .eve-table tbody tr td {
       padding: 8px 24px;
-      word-break: break-word; }
+      word-break: break-all; }
   .eve-table.is-stripped tbody tr:nth-child(even) {
     background: rgba(236, 239, 241, 0.5); }
 
