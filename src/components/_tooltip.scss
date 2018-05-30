@@ -3,37 +3,9 @@ $eve-tooltip-size: 28px;
 .eve-tooltip {
     position: relative;
 
-    &:hover {
-        &::after {
-            animation-fill-mode: forwards;
-            animation-duration: 150ms;
-            animation-timing-function: ease;
-        }
-
-        &.has-delay {
-            &::after {
-                animation-delay: .3s;
-            }
-        }
-
-        &.is-left,
-        &.is-right {
-            &::after {
-                animation-name: fadeInHorizontal;
-            }
-        }
-
-        &.is-bottom,
-        &.is-top {
-            &::after {
-                animation-name: fadeInVertical;
-            }
-        }
-    }
-
     &::after {
         content: attr(data-tooltip);
-        visibility: hidden;
+        pointer-events: none;
         background: #263238;
         color: $eve-color-light;
         font-size: $eve-font-tiny;
@@ -47,61 +19,75 @@ $eve-tooltip-size: 28px;
         border-radius: $eve-tooltip-size / 2;
         font-family: inherit;
         font-weight: normal;
+        transition: all .2s ease;
+        opacity: 0;
     }
 
-    &.is-top {
+    &.has-delay {
         &::after {
-            bottom: calc(100% + #{$eve-spacing-tiny});
-            left: 50%;
+            transition-delay: .3s;
         }
     }
 
     &.is-left {
         &::after {
-            bottom: calc(50% - #{$eve-tooltip-size / 2});
-            right: calc(100% + #{$eve-spacing-tiny});
+            bottom: 50%;
+            right: 100%;
+            transform: translate($eve-spacing-tiny, 50%);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(-$eve-spacing-tiny, 50%);
+            }
         }
     }
 
-    &.is-bottom {
+    &.is-top {
         &::after {
-            top: calc(100% + #{$eve-spacing-tiny});
+            bottom: 100%;
             left: 50%;
+            transform: translate(-50%, $eve-spacing-tiny);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(-50%, -$eve-spacing-tiny);
+            }
         }
     }
 
     &.is-right {
         &::after {
-            bottom: calc(50% - #{$eve-tooltip-size / 2});
-            left: calc(100% + #{$eve-spacing-tiny});
+            left: 100%;
+            bottom: 50%;
+            transform: translate(-$eve-spacing-tiny, 50%);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate($eve-spacing-tiny, 50%);
+            }
         }
     }
 
-    @keyframes fadeInHorizontal {
-        from {
-            opacity: 0;
-            transform: scale(.8);
-            visibility: hidden;
+    &.is-bottom {
+        &::after {
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -$eve-spacing-tiny);
         }
 
-        to {
-            opacity: 1;
-            transform: scale(1);
-            visibility: visible;
+        &:hover {
+            &::after {
+                transform: translate(-50%, $eve-spacing-tiny);
+            }
         }
     }
 
-    @keyframes fadeInVertical {
-        from {
-            opacity: 0;
-            transform: translateX(-50%) scale(.8);
-            visibility: hidden;
-        }
-
-        to {
+    &:hover {
+        &::after {
             opacity: 1;
-            transform: translateX(-50%) scale(1);
-            visibility: visible;
         }
     }
 }

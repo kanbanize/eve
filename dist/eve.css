@@ -1942,25 +1942,9 @@
 
 .eve-tooltip {
   position: relative; }
-  .eve-tooltip:hover::after {
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: 150ms;
-            animation-duration: 150ms;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease; }
-  .eve-tooltip:hover.has-delay::after {
-    -webkit-animation-delay: .3s;
-            animation-delay: .3s; }
-  .eve-tooltip:hover.is-left::after, .eve-tooltip:hover.is-right::after {
-    -webkit-animation-name: fadeInHorizontal;
-            animation-name: fadeInHorizontal; }
-  .eve-tooltip:hover.is-bottom::after, .eve-tooltip:hover.is-top::after {
-    -webkit-animation-name: fadeInVertical;
-            animation-name: fadeInVertical; }
   .eve-tooltip::after {
     content: attr(data-tooltip);
-    visibility: hidden;
+    pointer-events: none;
     background: #263238;
     color: #fff;
     font-size: 12px;
@@ -1973,67 +1957,45 @@
     line-height: 28px;
     border-radius: 14px;
     font-family: inherit;
-    font-weight: normal; }
-  .eve-tooltip.is-top::after {
-    bottom: calc(100% + 8px);
-    left: 50%; }
+    font-weight: normal;
+    transition: all .2s ease;
+    opacity: 0; }
+  .eve-tooltip.has-delay::after {
+    transition-delay: .3s; }
   .eve-tooltip.is-left::after {
-    bottom: calc(50% - 14px);
-    right: calc(100% + 8px); }
-  .eve-tooltip.is-bottom::after {
-    top: calc(100% + 8px);
-    left: 50%; }
+    bottom: 50%;
+    right: 100%;
+    -webkit-transform: translate(8px, 50%);
+            transform: translate(8px, 50%); }
+  .eve-tooltip.is-left:hover::after {
+    -webkit-transform: translate(-8px, 50%);
+            transform: translate(-8px, 50%); }
+  .eve-tooltip.is-top::after {
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px); }
+  .eve-tooltip.is-top:hover::after {
+    -webkit-transform: translate(-50%, -8px);
+            transform: translate(-50%, -8px); }
   .eve-tooltip.is-right::after {
-    bottom: calc(50% - 14px);
-    left: calc(100% + 8px); }
-
-@-webkit-keyframes fadeInHorizontal {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    visibility: hidden; }
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    visibility: visible; } }
-
-@keyframes fadeInHorizontal {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    visibility: hidden; }
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    visibility: visible; } }
-
-@-webkit-keyframes fadeInVertical {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-50%) scale(0.8);
-            transform: translateX(-50%) scale(0.8);
-    visibility: hidden; }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
-    visibility: visible; } }
-
-@keyframes fadeInVertical {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-50%) scale(0.8);
-            transform: translateX(-50%) scale(0.8);
-    visibility: hidden; }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
-    visibility: visible; } }
+    left: 100%;
+    bottom: 50%;
+    -webkit-transform: translate(-8px, 50%);
+            transform: translate(-8px, 50%); }
+  .eve-tooltip.is-right:hover::after {
+    -webkit-transform: translate(8px, 50%);
+            transform: translate(8px, 50%); }
+  .eve-tooltip.is-bottom::after {
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -8px);
+            transform: translate(-50%, -8px); }
+  .eve-tooltip.is-bottom:hover::after {
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px); }
+  .eve-tooltip:hover::after {
+    opacity: 1; }
 
 .eve-cursor-default {
   cursor: default !important; }
