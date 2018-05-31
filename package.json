@@ -7,7 +7,7 @@
     "url": "git+https://github.com/kanbanize/eve.git"
   },
   "scripts": {
-    "start": "http-server",
+    "start": "http-server -p 8000 -o -a localhost",
     "build": "gulp build",
     "build-docs": "gulp build-docs",
     "build-site": "gulp build-site",
