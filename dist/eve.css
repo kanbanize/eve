@@ -943,7 +943,8 @@
 
 .eve-checkbox-control {
   display: flex;
-  font-size: 14px; }
+  font-size: 14px;
+  word-break: break-all; }
   .eve-checkbox-control .eve-checkbox {
     flex-shrink: 0;
     margin-right: 8px; }
