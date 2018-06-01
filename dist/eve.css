@@ -1050,10 +1050,7 @@
   .eve-dialog .eve-dialog-header {
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    margin-bottom: 16px; }
   .eve-dialog .eve-dialog-content {
     margin-bottom: 16px;
     line-height: 20px;
@@ -1149,7 +1146,7 @@
         color: #b0bec5;
         pointer-events: none; }
   .eve-dropdown.is-stripped ul li:nth-child(even) {
-    background: rgba(236, 239, 241, 0.5); }
+    background: #eceff1; }
 
 .eve-feedback {
   padding: 8px 16px;
