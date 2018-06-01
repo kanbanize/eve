@@ -23,12 +23,6 @@ $eve-tooltip-size: 28px;
         opacity: 0;
     }
 
-    &.has-delay {
-        &::after {
-            transition-delay: .3s;
-        }
-    }
-
     &.is-left {
         &::after {
             bottom: 50%;
@@ -86,6 +80,12 @@ $eve-tooltip-size: 28px;
     }
 
     &:hover {
+        &.has-delay {
+            &::after {
+                transition-delay: .3s;
+            }
+        }
+
         &::after {
             opacity: 1;
         }
