@@ -20,8 +20,10 @@
     "css",
     "html",
     "flexbox",
-    "css-framework",
-    "design"
+    "design",
+    "framework",
+    "responsive",
+    "sass"
   ],
   "bugs": {
     "url": "https://github.com/kanbanize/eve/issues"
