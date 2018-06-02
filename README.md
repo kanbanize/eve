@@ -37,7 +37,7 @@ yarn add evecss
 
 Eve's documentation, included in this repo in the **documentation** directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve/documentation. The docs may also be run locally.
 
-## Browser Support
+## Compatibility
 
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_24x24.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_24x24.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_24x24.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_24x24.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_24x24.png)
 --- | --- | --- | --- | --- | --- |
