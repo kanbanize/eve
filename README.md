@@ -1,5 +1,5 @@
 <a href="https://kanbanize.github.io/eve">
-    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
 </a>
 
 # Eve
@@ -35,7 +35,7 @@ yarn add evecss
 
 ## Documentation
 
-Eve's documentation, included in this repo in the ```docs``` directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve/. The docs may also be run locally.
+Eve's documentation, included in this repo in the ```documentation``` directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve/documentation. The docs may also be run locally.
 
 ## Browser Support
 
