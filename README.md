@@ -13,7 +13,7 @@ A simple, minimal CSS Framework.
 [![npm](https://img.shields.io/npm/dm/evecss.svg)](https://www.npmjs.com/package/evecss)
 [![](https://data.jsdelivr.com/v1/package/npm/evecss/badge?style=rounded)](https://www.jsdelivr.com/package/npm/evecss)
 
-## Quick Install
+## Installation
 
 ### npm
 
