@@ -1,10 +1,10 @@
 <a href="https://kanbanize.github.io/eve">
-    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/site/logo.png" alt="EveCSS" width="250" height="250">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
 </a>
 
 # Eve
 
-A simple, minimal CSS Framework
+A simple, minimal CSS Framework.
 
 > A library of front-end components that helps designers and developers build great experiences.
 
@@ -35,53 +35,7 @@ yarn add evecss
 
 ## Documentation
 
-#### Foundations
-
-* [Colors](https://kanbanize.github.io/eve/docs/#foundations/colors)
-* [Typography](https://kanbanize.github.io/eve/docs/#foundations/typography)
-
-#### Grid
-
-* [Base](https://kanbanize.github.io/eve/docs/#grid/base)
-* [Alignment](https://kanbanize.github.io/eve/docs/#grid/alignment)
-* [Gap](https://kanbanize.github.io/eve/docs/#grid/gap)
-* [Nesting](https://kanbanize.github.io/eve/docs/#grid/nesting)
-
-#### Components
-
-* [Accordion](https://kanbanize.github.io/eve/docs/#components/accordion)
-* [Avatar](https://kanbanize.github.io/eve/docs/#components/avatar)
-* [Badge](https://kanbanize.github.io/eve/docs/#components/badge)
-* [Breadcrumb](https://kanbanize.github.io/eve/docs/#components/breadcrumb)
-* [Button](https://kanbanize.github.io/eve/docs/#components/button)
-* [Checkbox](https://kanbanize.github.io/eve/docs/#components/checkbox)
-* [Chip](https://kanbanize.github.io/eve/docs/#components/chip)
-* [Dialog](https://kanbanize.github.io/eve/docs/#components/dialog)
-* [Divider](https://kanbanize.github.io/eve/docs/#components/divider)
-* [Dropdown](https://kanbanize.github.io/eve/docs/#components/dropdown)
-* [Feedback](https://kanbanize.github.io/eve/docs/#components/feedback)
-* [Form](https://kanbanize.github.io/eve/docs/#components/form)
-* [Input](https://kanbanize.github.io/eve/docs/#components/input)
-* [List](https://kanbanize.github.io/eve/docs/#components/list)
-* [Navigation](https://kanbanize.github.io/eve/docs/#components/navigation)
-* [Pagination](https://kanbanize.github.io/eve/docs/#components/pagination)
-* [Progress](https://kanbanize.github.io/eve/docs/#components/progress)
-* [Radio](https://kanbanize.github.io/eve/docs/#components/radio)
-* [Select](https://kanbanize.github.io/eve/docs/#components/select)
-* [Switch](https://kanbanize.github.io/eve/docs/#components/switch)
-* [Table](https://kanbanize.github.io/eve/docs/#components/table)
-* [Tabs](https://kanbanize.github.io/eve/docs/#components/tabs)
-* [Tag](https://kanbanize.github.io/eve/docs/#components/tag)
-* [Textarea](https://kanbanize.github.io/eve/docs/#components/textarea)
-* [Tooltip](https://kanbanize.github.io/eve/docs/#components/tooltip)
-
-#### Utilities
-
-* [Cursor](https://kanbanize.github.io/eve/docs/#utilities/cursor)
-* [Display](https://kanbanize.github.io/eve/docs/#utilities/display)
-* [Gap](https://kanbanize.github.io/eve/docs/#utilities/gap)
-* [Overflow](https://kanbanize.github.io/eve/docs/#utilities/overflow)
-* [Text](https://kanbanize.github.io/eve/docs/#utilities/text)
+Eve's documentation, included in this repo in the ```docs``` directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve/. The docs may also be run locally.
 
 ## Browser Support
 
@@ -89,6 +43,10 @@ yarn add evecss
 --- | --- | --- | --- | --- | --- |
 Latest | Latest | Latest | Latest | Latest | Partially |
 
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kanbanize/eve/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kanbanize/eve/blob/master/LICENSE) file for details.

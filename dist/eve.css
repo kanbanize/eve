@@ -1959,8 +1959,6 @@
     font-weight: normal;
     transition: all .2s ease;
     opacity: 0; }
-  .eve-tooltip.has-delay::after {
-    transition-delay: .3s; }
   .eve-tooltip.is-left::after {
     bottom: 50%;
     right: 100%;
@@ -1993,6 +1991,8 @@
   .eve-tooltip.is-bottom:hover::after {
     -webkit-transform: translate(-50%, 8px);
             transform: translate(-50%, 8px); }
+  .eve-tooltip:hover.has-delay::after {
+    transition-delay: .3s; }
   .eve-tooltip:hover::after {
     opacity: 1; }
 

@@ -50,7 +50,7 @@
             }
         };
 
-        xhr.open('GET', 'templates/' + path + '.hbs', true);
+        xhr.open('GET', 'partials/' + path + '.hbs', true);
         xhr.send();
 
         function loadTemplateHtml(html) {
@@ -74,6 +74,6 @@
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
     } else {
-        loadTemplate('getting-started');
+        loadTemplate('getting-started/installation');
     }
 })();

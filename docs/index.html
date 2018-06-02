@@ -4,81 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Documentation | Eve</title>
-    <link rel="shortcut icon" type="image/png" href="../favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="dist/docs.min.css">
-    <link rel="stylesheet" href="../dist/eve.min.css">
+    <meta name="description" content="A simple, minimal CSS Framework that helps designers and developers build great experiences.">
+    <meta property="og:url" content="https://kanbanize.github.io/eve">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eve">
+    <meta property="og:description" content="A simple, minimal CSS Framework">
+    <meta property="og:image" content="https://kanbanize.github.io/eve/website/assets/images/logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://kanbanize.github.io/eve">
+    <meta name="twitter:title" content="Eve">
+    <meta name="twitter:description" content="A simple, minimal CSS Framework">
+    <meta name="twitter:image" content="https://kanbanize.github.io/eve/website/assets/images/logo.png">
+    <meta itemprop="name" content="Eve">
+    <meta itemprop="description" content="A simple, minimal CSS Framework">
+    <meta itemprop="image" content="https://kanbanize.github.io/eve/website/assets/images/logo.png">
+    <title>A simple, minimal CSS Framework | Eve</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://kanbanize.github.io/eve">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:200,400" rel="stylesheet">
+    <link rel="stylesheet" href="website/dist/eve-website.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <a href="https://kanbanize.github.io/eve" class="sidebar-eve-link">
-                <svg width="24" height="27" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M0 3.077A3.077 3.077 0 0 1 3.077 0h7.384a8.615 8.615 0 0 1 8.616 8.615v6.77a6.154 6.154 0 0 1-6.154 6.153H3.077A3.077 3.077 0 0 1 0 18.462V3.077z" fill="url(#paint0_linear)"/><path d="M0 3.077A3.077 3.077 0 0 1 3.077 0h7.384a8.615 8.615 0 0 1 8.616 8.615v9.847A3.077 3.077 0 0 1 16 21.538H3.077A3.077 3.077 0 0 1 0 18.462V3.077z" transform="rotate(180 12 13.23)" fill="url(#paint1_linear)"/></g><defs><linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(17.2308 -16 14.1714 15.2615 -8.325 19.508)"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".2"/></linearGradient><linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(17.2308 -16 14.1714 15.2615 -13.556 4.738)"><stop stop-color="#fff" stop-opacity=".2"/><stop offset=".613" stop-color="#fff"/></linearGradient></defs></svg>
-            </a>
-            <a class="sidebar-github-link" href="https://github.com/kanbanize/eve" target="_blank" title="Github">
-                <svg height="24" width="24" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-            </a>
+    <section class="main">
+        <div class="main__content">
+            <div class="content__header">
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="161" height="43">
+                        <g fill="none">
+                            <g fill="#fff">
+                            <path d="M59.764 19.069c.107-1.552 1.458-3.345 3.911-3.345 2.702 0 3.84 1.655 3.911 3.345h-7.822zm8.284 4.414c-.569 1.517-1.777 2.586-3.982 2.586-2.346 0-4.302-1.62-4.408-3.862h12.514c0-.07.072-.759.072-1.414 0-5.448-3.236-8.793-8.64-8.793C59.124 12 55 15.517 55 20.931 55 26.655 59.23 30 64.03 30c4.303 0 7.076-2.448 7.965-5.38l-3.947-1.137zM92.117 12.517h-4.978l-4.16 11.38-4.337-11.38h-5.19l7.146 16.966h4.728l6.791-16.966zM97.922 19.069c.107-1.552 1.458-3.345 3.91-3.345 2.703 0 3.84 1.655 3.912 3.345h-7.822zm8.284 4.414c-.569 1.517-1.778 2.586-3.982 2.586-2.347 0-4.302-1.62-4.409-3.862h12.515c0-.07.071-.759.071-1.414 0-5.448-3.235-8.793-8.64-8.793-4.479 0-8.603 3.517-8.603 8.931 0 5.724 4.23 9.069 9.03 9.069 4.302 0 7.076-2.448 7.964-5.38l-3.946-1.137zM121.627 15.38c2.915 0 4.16 1.896 4.586 3.517l3.023-1.242c-.712-2.517-3.058-5.276-7.609-5.276-4.87 0-8.604 3.621-8.604 8.793 0 5.035 3.662 8.828 8.64 8.828 4.444 0 6.897-2.793 7.715-5.172l-2.951-1.242c-.391 1.31-1.565 3.414-4.765 3.414-2.773 0-5.226-2.034-5.226-5.828 0-3.862 2.489-5.793 5.191-5.793zM131.698 25.172c.285 1.897 2.276 4.828 6.969 4.828 4.23 0 6.257-2.793 6.257-5.138 0-2.448-1.635-4.276-4.728-4.931l-2.773-.586c-1.316-.276-1.956-1-1.956-2 0-1.138 1.138-2.207 2.844-2.207 2.702 0 3.414 1.896 3.556 2.759l2.95-1.07c-.355-1.482-1.813-4.448-6.506-4.448-3.342 0-6.08 2.414-6.08 5.242 0 2.345 1.6 4.103 4.267 4.655l2.916.62c1.422.31 2.204 1.104 2.204 2.138 0 1.173-1.031 2.207-2.915 2.207-2.418 0-3.77-1.379-3.982-3.103l-3.023 1.034zM147.774 25.172c.284 1.897 2.275 4.828 6.969 4.828 4.23 0 6.257-2.793 6.257-5.138 0-2.448-1.635-4.276-4.729-4.931l-2.773-.586c-1.315-.276-1.955-1-1.955-2 0-1.138 1.137-2.207 2.844-2.207 2.702 0 3.413 1.896 3.555 2.759l2.951-1.07c-.355-1.482-1.813-4.448-6.506-4.448-3.342 0-6.08 2.414-6.08 5.242 0 2.345 1.6 4.103 4.267 4.655l2.915.62c1.422.31 2.204 1.104 2.204 2.138 0 1.173-1.031 2.207-2.915 2.207-2.418 0-3.769-1.379-3.982-3.103l-3.022 1.034z"/>
+                            </g>
+                            <path d="M0 5a5 5 0 0 1 5-5h12c7.732 0 14 6.268 14 14v11c0 5.523-4.477 10-10 10H5a5 5 0 0 1-5-5V5z" fill="url(#paint0_linear)"/>
+                            <path d="M0 5a5 5 0 0 1 5-5h12c7.732 0 14 6.268 14 14v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5z" transform="rotate(180 19.5 21.5)" fill="url(#paint1_linear)"/>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(28 -26 23.0286 24.8 -2.014 44.1)">
+                            <stop stop-color="#fff"/>
+                            <stop offset="1" stop-color="#fff" stop-opacity=".2"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(28 -26 23.0286 24.8 -10.514 20.1)">
+                            <stop stop-color="#fff" stop-opacity=".2"/>
+                            <stop offset=".613" stop-color="#fff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="content__details">
+                <h1 class="details__title">A SIMPLE, Minimal  CSS Framework</h1>
+                <h2 class="details__description">A library of front-end components that helps designers and developers build great experiences.</h2>
+                <div class="details__actions">
+                    <a class="actions__documentation" href="https://kanbanize.github.io/eve/docs">Documentation</a>
+                    <a class="actions__github" href="https://github.com/kanbanize/eve">Github</a>
+                </div>
+            </div>
+            <div class="content__footer">
+               <div class="footer__container">Made with
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    by <a href="http://khatib.work" target="_blank">Mo</a> + <a href="https://github.com/hpivanov" target="_blank">Itso</a>, Inside <a href="https://kanbanize.com" target="_blank">Kanbanize</a> &amp; Outside.
+                </div>
+            </div>
+            <div class="content__nightmode">
+                <div class="nightmode__switch js-nightmode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <path d="M507.681,209.011c-1.297-6.991-7.323-12.112-14.433-12.262c-7.145-0.155-13.346,4.712-14.936,11.642    c-15.26,66.498-73.643,112.941-141.978,112.941c-80.321,0-145.667-65.346-145.667-145.666    c0-68.335,46.443-126.718,112.942-141.976c6.93-1.59,11.791-7.827,11.643-14.934c-0.149-7.108-5.269-13.136-12.259-14.434    C287.545,1.454,271.735,0,256,0C187.62,0,123.333,26.629,74.98,74.981C26.629,123.333,0,187.62,0,256    s26.629,132.667,74.98,181.019C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.981    C485.371,388.667,512,324.38,512,256C512,240.278,510.547,224.469,507.681,209.011z M256,482C131.383,482,30,380.617,30,256    c0-118.227,91.264-215.544,207.036-225.212c-14.041,9.63-26.724,21.303-37.513,34.681    c-25.058,31.071-38.857,70.207-38.857,110.197c0,96.863,78.804,175.666,175.667,175.666c39.99,0,79.126-13.8,110.197-38.857    c13.378-10.789,25.051-23.471,34.682-37.511C471.544,390.736,374.228,482,256,482z"/>
+                        </g>
+                    </svg>
+                    <svg class="js-switch-off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <path d="M507.681,209.011c-1.297-6.991-7.324-12.111-14.433-12.262c-7.104-0.122-13.347,4.711-14.936,11.643    c-15.26,66.497-73.643,112.94-141.978,112.94c-80.321,0-145.667-65.346-145.667-145.666c0-68.335,46.443-126.718,112.942-141.976    c6.93-1.59,11.791-7.826,11.643-14.934c-0.149-7.108-5.269-13.136-12.259-14.434C287.546,1.454,271.735,0,256,0    C187.62,0,123.333,26.629,74.98,74.981C26.628,123.333,0,187.62,0,256s26.628,132.667,74.98,181.019    C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.981C485.372,388.667,512,324.38,512,256    C512,240.278,510.546,224.469,507.681,209.011z"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div id="particles-js" class="js-particles-bg js-nightmode-off"></div>
         </div>
-        <div class="navigation">
-            <div class="navigation-header">Getting Started</div>
-            <div class="navigation-list">
-                <a href="#getting-started/installation" class="navigation-list-item" data-path="getting-started">Installation</a>
-            </div>
-            <div class="navigation-header">Foundations</div>
-            <div class="navigation-list">
-                <a href="#foundations/colors" class="navigation-list-item" data-path="foundations/colors">Colors</a>
-                <a href="#foundations/typography" class="navigation-list-item" data-path="foundations/typography">Typography</a>
-            </div>
-            <div class="navigation-header">Grid</div>
-            <div class="navigation-list">
-                <a href="#grid/base" class="navigation-list-item" data-path="grid/base">Base</a>
-                <a href="#grid/alignment" class="navigation-list-item" data-path="grid/alignment">Alignment</a>
-                <a href="#grid/gap" class="navigation-list-item" data-path="grid/gap">Gap</a>
-                <a href="#grid/nesting" class="navigation-list-item" data-path="grid/nesting">Nesting</a>
-            </div>
-            <div class="navigation-header">Components</div>
-            <div class="navigation-list">
-                <a href="#components/accordion" class="navigation-list-item" data-path="components/accordion">Accordion</a>
-                <a href="#components/avatar" class="navigation-list-item" data-path="components/avatar">Avatar</a>
-                <a href="#components/badge" class="navigation-list-item" data-path="components/badge">Badge</a>
-                <a href="#components/breadcrumb" class="navigation-list-item" data-path="components/breadcrumb">Breadcrumb</a>
-                <a href="#components/button" class="navigation-list-item" data-path="components/button">Button</a>
-                <a href="#components/checkbox" class="navigation-list-item" data-path="components/checkbox">Checkbox</a>
-                <a href="#components/chip" class="navigation-list-item" data-path="components/chip">Chip</a>
-                <a href="#components/dialog" class="navigation-list-item" data-path="components/dialog">Dialog</a>
-                <a href="#components/divider" class="navigation-list-item" data-path="components/divider">Divider</a>
-                <a href="#components/dropdown" class="navigation-list-item" data-path="components/dropdown">Dropdown</a>
-                <a href="#components/feedback" class="navigation-list-item" data-path="components/feedback">Feedback</a>
-                <a href="#components/form" class="navigation-list-item" data-path="components/form">Form</a>
-                <a href="#components/input" class="navigation-list-item" data-path="components/input">Input</a>
-                <a href="#components/list" class="navigation-list-item" data-path="components/list">List</a>
-                <a href="#components/navigation" class="navigation-list-item" data-path="components/navigation">Navigation</a>
-                <a href="#components/pagination" class="navigation-list-item" data-path="components/pagination">Pagination</a>
-                <a href="#components/progress" class="navigation-list-item" data-path="components/progress">Progress</a>
-                <a href="#components/radio" class="navigation-list-item" data-path="components/radio">Radio</a>
-                <a href="#components/select" class="navigation-list-item" data-path="components/select">Select</a>
-                <a href="#components/switch" class="navigation-list-item" data-path="components/switch">Switch</a>
-                <a href="#components/table" class="navigation-list-item" data-path="components/table">Table</a>
-                <a href="#components/tabs" class="navigation-list-item" data-path="components/tabs">Tabs</a>
-                <a href="#components/tag" class="navigation-list-item" data-path="components/tag">Tag</a>
-                <a href="#components/textarea" class="navigation-list-item" data-path="components/textarea">Textarea</a>
-                <a href="#components/tooltip" class="navigation-list-item" data-path="components/tooltip">Tooltip</a>
-            </div>
-            <div class="navigation-header">Utilities</div>
-            <div class="navigation-list">
-                <a href="#utilities/cursor" class="navigation-list-item" data-path="utilities/cursor">Cursor</a>
-                <a href="#utilities/display" class="navigation-list-item" data-path="utilities/display">Display</a>
-                <a href="#utilities/gap" class="navigation-list-item" data-path="utilities/gap">Gap</a>
-                <a href="#utilities/overflow" class="navigation-list-item" data-path="utilities/overflow">Overflow</a>
-                <a href="#utilities/text" class="navigation-list-item" data-path="utilities/text">Text</a>
-            </div>
-        </div>
-        <div class="content"></div>
-    </div>
-    <script src="dist/docs.min.js"></script>
+    </section>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="website/dist/eve-website.min.js"></script>
 </body>
 </html>

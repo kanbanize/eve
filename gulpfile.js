@@ -18,26 +18,26 @@ var config = {
     },
     docs: {
         js: {
-            src: ['docs/js/**/*.js'],
-            dest: 'docs/dist',
-            out: 'docs'
+            src: ['docs/documentation/scripts/**/*.js'],
+            dest: 'docs/documentation/dist',
+            out: 'eve-docs'
         },
         css: {
-            src: ['docs/scss/**/*.scss'],
-            dest: 'docs/dist',
-            out: 'docs'
+            src: ['docs/documentation/styles/**/*.scss'],
+            dest: 'docs/documentation/dist',
+            out: 'eve-docs'
         }
     },
     site: {
         js: {
-            src: ['site/site.js'],
-            dest: 'site/dist',
-            out: 'site'
+            src: ['docs/website/scripts/**/*.js'],
+            dest: 'docs/website/dist',
+            out: 'eve-website'
         },
         css: {
-            src: ['site/site.scss'],
-            dest: 'site/dist',
-            out: 'site'
+            src: ['docs/website/styles/**/*.scss'],
+            dest: 'docs/website/dist',
+            out: 'eve-website'
         }
     }
 };
