@@ -43,6 +43,10 @@ Eve's documentation, included in this repo in the **documentation** directory, i
 --- | --- | --- | --- | --- | --- |
 Latest | Latest | Latest | Latest | Latest | Partially |
 
+## Versioning
+
+Eve is maintained by using the [Semantic Versioning Specification (SemVer)](http://semver.org).
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
