@@ -13,7 +13,7 @@ var uglify = require('gulp-uglify');
 var config = {
     eve: {
         src: ['src/**/*.scss'],
-        dest: 'dist',
+        dest: ['dist', 'docs/dist'],
         out: 'eve'
     },
     docs: {
@@ -53,7 +53,8 @@ gulp.task('build-eve', function() {
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(gulp.dest(config.eve.dest));
+        .pipe(gulp.dest(config.eve.dest[0]))
+        .pipe(gulp.dest(config.eve.dest[1]));
 });
 
 gulp.task('build-eve-min', function() {
@@ -69,7 +70,8 @@ gulp.task('build-eve-min', function() {
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(gulp.dest(config.eve.dest));
+        .pipe(gulp.dest(config.eve.dest[0]))
+        .pipe(gulp.dest(config.eve.dest[1]));
 });
 
 gulp.task('build', ['build-eve', 'build-eve-min']);
