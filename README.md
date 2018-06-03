@@ -39,6 +39,8 @@ Eve's documentation, included in this repo in the **docs** directory, is publicl
 
 ## Compatibility
 
+Eve uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make modern css features compatible with earlier browser versions.
+
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_24x24.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_24x24.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_24x24.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_24x24.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_24x24.png)
 --- | --- | --- | --- | --- | --- |
 Latest | Latest | Latest | Latest | Latest | Partially |
