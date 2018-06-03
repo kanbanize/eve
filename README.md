@@ -1,5 +1,5 @@
 <a href="https://kanbanize.github.io/eve">
-    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
 </a>
 
 # Eve
