@@ -1,4 +1,4 @@
-$eve-tab-size: 48px;
+$eve-tab-size: 36px;
 
 .eve-navigation {
     display: flex;
@@ -23,6 +23,9 @@ $eve-tab-size: 48px;
             text-decoration: none;
             color: inherit;
             display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         &:hover,
