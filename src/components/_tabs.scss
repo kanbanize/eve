@@ -5,7 +5,7 @@ $eve-tabs-size: 48px;
     border-bottom: 1px solid $eve-color-dark-silver;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 $eve-spacing-small;
     font-size: $eve-font-small;
     background: $eve-color-light;
     height: $eve-tabs-size;
@@ -13,7 +13,7 @@ $eve-tabs-size: 48px;
     box-sizing: border-box;
 
     li {
-        margin: 0 $eve-spacing-small;
+        margin: 0 $eve-spacing-tiny;
         color: $eve-color-dark;
         cursor: pointer;
         overflow: hidden;
