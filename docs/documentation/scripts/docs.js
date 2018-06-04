@@ -55,7 +55,10 @@
 
         function loadTemplateHtml(html) {
             content.innerHTML = html;
-            content.scroll(0, 0);
+
+            try {
+                content.scroll(0, 0);
+            } catch (ex) { }
 
             Snippet.load();
         }
