@@ -33,6 +33,10 @@ $eve-select-font-sizes: (
         border-color: $eve-color-primary;
     }
 
+    &::-ms-expand {
+      display: none;
+    }
+
     @each $eve-select-size in map-keys($eve-select-sizes) {
         $size: map-get($eve-select-sizes, $eve-select-size);
         $padding: map-get($eve-select-paddings, $eve-select-size);
@@ -43,14 +47,14 @@ $eve-select-font-sizes: (
             line-height: $size;
             padding: 0 $size 0 $padding;
             font-size: $font-size;
-            background: $eve-color-light url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333333"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>') no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
+            background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
 
             &.is-rounded {
                 border-radius: $size / 2;
             }
 
             &:disabled {
-                background: $eve-color-dark-silver url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23607d8b"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>') no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
+                background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
             }
         } @else {
             &.is-#{$eve-select-size} {
@@ -58,14 +62,14 @@ $eve-select-font-sizes: (
                 line-height: $size;
                 padding: 0 $size 0 $padding;
                 font-size: $font-size;
-                background: $eve-color-light url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333333"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>') no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
+                background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2);
 
                 &.is-rounded {
                     border-radius: $size / 2;
                 }
 
                 &:disabled {
-                    background: $eve-color-dark-silver url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23607d8b"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>') no-repeat right ($padding / 2) center / ($size / 2) ($size / 2);
+                    background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2);
                 }
             }
         }
