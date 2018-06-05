@@ -7,8 +7,6 @@
     table-layout: fixed;
 
     thead {
-        text-align: left;
-
         tr {
             border-bottom: 1px solid $eve-color-dark-silver;
 
@@ -18,8 +16,9 @@
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
-                word-break: break-all;
                 box-sizing: border-box;
+                word-break: break-word;
+                text-align: left;
             }
         }
     }
@@ -34,7 +33,8 @@
 
             td {
                 padding: $eve-spacing-tiny $eve-spacing-normal;
-                word-break: break-all;
+                word-wrap: break-word;
+                text-align: left;
             }
         }
     }
@@ -43,7 +43,7 @@
         tbody {
             tr {
                 &:nth-child(even) {
-                    background: rgba($eve-color-bright-silver, .5);
+                    background: $eve-color-bright-silver;
                 }
             }
         }
