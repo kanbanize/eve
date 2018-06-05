@@ -377,7 +377,8 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    font-size: 14px; }
   .eve-accordion .eve-accordion-content {
     display: none;
     padding: 8px 16px; }
@@ -1344,8 +1345,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  background: #fff; }
+  font-size: 14px; }
   .eve-navigation li {
     height: 36px;
     line-height: 36px;
@@ -1753,7 +1753,6 @@
   padding: 0;
   padding: 0 16px;
   font-size: 14px;
-  background: #fff;
   height: 48px;
   line-height: 48px;
   box-sizing: border-box; }
