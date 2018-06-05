@@ -27,6 +27,7 @@ $eve-accordion-height: 32px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        font-size: $eve-font-small;
     }
 
     .eve-accordion-content {
