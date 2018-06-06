@@ -77,6 +77,6 @@
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
     } else {
-        loadTemplate('getting-started/installation');
+        document.querySelector('a[href="#getting-started/installation"]').click();
     }
 })();
