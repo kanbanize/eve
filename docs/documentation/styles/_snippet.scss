@@ -1,27 +1,27 @@
 .snippet {
     white-space: pre-wrap;
-    padding: 24px;
-    background: #263238;
+    padding: 16px 24px;
+    background: #eceff1;
     line-height: 20px;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    color: #fff;
+    color: #333;
     font-size: 12px;
     margin: 0;
     position: relative;
 
     .snippet-tag {
-        color: #ff6188;
+        color: #3f51b5;
     }
 
     .snippet-attr {
-        color: #a9dc76;
+        color: #455a64;
     }
 
     .snippet-val {
-        color: #ffd866;
+        color: #c2185B;
     }
 
-    .snippet-sign {
-        color: #fff;
-    }
+    // .snippet-sign {
+    //     color: #fff;
+    // }
 }

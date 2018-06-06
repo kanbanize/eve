@@ -103,7 +103,8 @@ a {
             display: block;
             color: #333;
             margin-bottom: 16px;
-            font-size: 14px;
+            font-size: 12px;
+            text-transform: uppercase;
 
             &:hover {
                 color: #2196f3;
@@ -111,7 +112,7 @@ a {
 
             &.is-active {
                 color: #2196f3;
-                font-weight: bold;
+                font-weight: 600;
             }
         }
     }
@@ -120,7 +121,7 @@ a {
         flex: 1;
         overflow: auto;
         height: 100%;
-        padding: 48px;
+        padding: 48px 96px;
         box-sizing: border-box;
     }
 }
