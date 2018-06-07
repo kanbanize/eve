@@ -1,8 +1,7 @@
 // scss-lint:disable ImportantRule
 $eve-overflows: (
     auto,
-    hidden,
-    visible
+    hidden
 );
 
 @each $eve-overflow in $eve-overflows {
