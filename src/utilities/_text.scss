@@ -56,5 +56,5 @@ $eve-text-colors: (
 }
 
 .eve-text-unselectable {
-    user-select: none;
+    user-select: none !important;
 }
