@@ -1,21 +1,9 @@
 <style>
-    .eve-grid:first-child > div:first-child p {
+    .eve-row:first-child > div:first-child p {
         height: 96px;
     }
 
-    .eve-cell > p,
-    .eve-cell-1 > p,
-    .eve-cell-2 > p,
-    .eve-cell-3 > p,
-    .eve-cell-4 > p,
-    .eve-cell-5 > p,
-    .eve-cell-6 > p,
-    .eve-cell-7 > p,
-    .eve-cell-8 > p,
-    .eve-cell-9 > p,
-    .eve-cell-10 > p,
-    .eve-cell-11 > p,
-    .eve-cell-12 > p {
+    .eve-column > p {
         background: #2196f3;
         color: #fff;
         height: 48px;
@@ -29,21 +17,21 @@
     <div class="component-title">Nested grids</div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-grid has-gap-tiny">
-                <div class="eve-cell-4">
-                    <p>.eve-cell-4</p>
+            <div class="eve-row has-gap-tiny">
+                <div class="eve-column is-4">
+                    <p>4</p>
                 </div>
-                <div class="eve-cell">
-                    <p>.eve-cell (auto)</p>
-                    <div class="eve-grid">
-                        <div class="eve-cell-2">
-                            <p>.eve-cell-2</p>
+                <div class="eve-column">
+                    <p>Auto</p>
+                    <div class="eve-row">
+                        <div class="eve-column is-2">
+                            <p>2</p>
                         </div>
-                        <div class="eve-cell-8">
-                            <p>.eve-cell-8</p>
+                        <div class="eve-column is-8">
+                            <p>8</p>
                         </div>
-                        <div class="eve-cell-2">
-                            <p>.eve-cell-2</p>
+                        <div class="eve-column is-2">
+                            <p>2</p>
                         </div>
                     </div>
                 </div>

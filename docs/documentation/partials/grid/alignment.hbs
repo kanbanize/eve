@@ -1,31 +1,19 @@
 <style>
-    .eve-grid {
+    .eve-row {
         background: #eceff1;
     }
 
-    .eve-grid:not(:last-child) {
+    .eve-row:not(:last-child) {
         margin-bottom: 48px;
     }
 
-    .eve-grid.is-vertical-top,
-    .eve-grid.is-vertical-middle,
-    .eve-grid.is-vertical-bottom {
+    .eve-row.is-vertical-top,
+    .eve-row.is-vertical-middle,
+    .eve-row.is-vertical-bottom {
         height: 96px;
     }
 
-    .eve-cell > p,
-    .eve-cell-1 > p,
-    .eve-cell-2 > p,
-    .eve-cell-3 > p,
-    .eve-cell-4 > p,
-    .eve-cell-5 > p,
-    .eve-cell-6 > p,
-    .eve-cell-7 > p,
-    .eve-cell-8 > p,
-    .eve-cell-9 > p,
-    .eve-cell-10 > p,
-    .eve-cell-11 > p,
-    .eve-cell-12 > p {
+    .eve-column > p {
         background: #2196f3;
         color: #fff;
         height: 48px;
@@ -40,19 +28,19 @@
     <div class="component-content">
         <div class="component-header">Horizontal alignment</div>
         <div class="component-example">
-            <div class="eve-grid is-horizontal-left">
-                <div class="eve-cell-4">
-                    <p>.is-horizontal-left</p>
+            <div class="eve-row is-horizontal-left">
+                <div class="eve-column is-4">
+                    <p>Left</p>
                 </div>
             </div>
-            <div class="eve-grid is-horizontal-center">
-                <div class="eve-cell-4">
-                    <p>.is-horizontal-center</p>
+            <div class="eve-row is-horizontal-center">
+                <div class="eve-column is-4">
+                    <p>Center</p>
                 </div>
             </div>
-            <div class="eve-grid is-horizontal-right">
-                <div class="eve-cell-4">
-                    <p>.is-horizontal-right</p>
+            <div class="eve-row is-horizontal-right">
+                <div class="eve-column is-4">
+                    <p>Right</p>
                 </div>
             </div>
         </div>
@@ -60,19 +48,19 @@
     <div class="component-content">
         <div class="component-header">Vertical alignment</div>
         <div class="component-example">
-            <div class="eve-grid is-vertical-top">
-                <div class="eve-cell">
-                    <p>.is-vertical-top</p>
+            <div class="eve-row is-vertical-top">
+                <div class="eve-column">
+                    <p>Top</p>
                 </div>
             </div>
-            <div class="eve-grid is-vertical-middle">
-                <div class="eve-cell">
-                    <p>.is-vertical-middle</p>
+            <div class="eve-row is-vertical-middle">
+                <div class="eve-column">
+                    <p>Middle</p>
                 </div>
             </div>
-            <div class="eve-grid is-vertical-bottom">
-                <div class="eve-cell">
-                    <p>.is-vertical-bottom</p>
+            <div class="eve-row is-vertical-bottom">
+                <div class="eve-column">
+                    <p>Bottom</p>
                 </div>
             </div>
         </div>

@@ -17,20 +17,20 @@ $eve-grid-vertical-alignments: (
     bottom: flex-end
 );
 
-.eve-grid {
+.eve-row {
     display: flex;
 
-    .eve-cell {
+    .eve-column {
         flex: 1;
         max-width: 100%;
-    }
 
-    @for $i from 1 through $eve-grid-cells-count {
-        .eve-cell-#{$i} {
-            $width: percentage($i / $eve-grid-cells-count);
+        @for $i from 1 through $eve-grid-cells-count {
+            &.is-#{$i} {
+                $width: percentage($i / $eve-grid-cells-count);
 
-            flex: 1 $width;
-            max-width: $width;
+                flex: 1 $width;
+                max-width: $width;
+            }
         }
     }
 
@@ -40,14 +40,8 @@ $eve-grid-vertical-alignments: (
         &.has-gap-#{$eve-grid-gap} {
             margin: 0 (-$gap);
 
-            > .eve-cell {
+            > .eve-column {
                 padding: 0 $gap;
-            }
-
-            @for $i from 1 through $eve-grid-cells-count {
-                > .eve-cell-#{$i} {
-                    padding: 0 $gap;
-                }
             }
         }
     }
@@ -67,15 +61,9 @@ $eve-grid-vertical-alignments: (
     @media (max-width: 480px) {
         flex-direction: column;
 
-        .eve-cell {
+        .eve-column {
             flex: 1 100%;
-        }
-
-        @for $i from 1 through $eve-grid-cells-count {
-            .eve-cell-#{$i} {
-                flex: 1 100%;
-                max-width: 100%;
-            }
+            max-width: 100%;
         }
 
         @each $eve-grid-gap in map-keys($eve-grid-gaps) {
@@ -84,14 +72,8 @@ $eve-grid-vertical-alignments: (
             &.has-gap-#{$eve-grid-gap} {
                 margin: (-$gap) 0;
 
-                > .eve-cell {
+                > .eve-column {
                     padding: $gap 0;
-                }
-
-                @for $i from 1 through $eve-grid-cells-count {
-                    > .eve-cell-#{$i} {
-                        padding: $gap 0;
-                    }
                 }
             }
         }
