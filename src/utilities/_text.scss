@@ -7,7 +7,8 @@ $eve-text-transforms: (
 $eve-text-alignments: (
     left,
     center,
-    right
+    right,
+    justify
 );
 $eve-text-sizes: (
     tiny: $eve-font-tiny,
@@ -20,7 +21,7 @@ $eve-text-colors: (
     danger: $eve-color-danger,
     warning: $eve-color-warning,
     success: $eve-color-success,
-    mute: $eve-color-darkest-silver
+    muted: $eve-color-darkest-silver
 );
 
 @each $eve-text-transform in $eve-text-transforms {
