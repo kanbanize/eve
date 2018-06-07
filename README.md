@@ -35,7 +35,7 @@ yarn add evecss
 
 ## Documentation
 
-Eve's documentation, included in this repo in the **docs** directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve. The docs may also be run locally.
+Eve's documentation, included in this repo in the ```docs``` directory, is publicly hosted on GitHub Pages at https://kanbanize.github.io/eve. The docs may also be run locally.
 
 ## Compatibility
 
@@ -51,7 +51,7 @@ Eve is maintained by using the [Semantic Versioning Specification (SemVer)](http
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+[Pull requests](https://github.com/kanbanize/eve/blob/master/.github/PULL_REQUEST_TEMPLATE.md) are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
