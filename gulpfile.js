@@ -47,12 +47,12 @@ gulp.task('build-eve', function() {
     return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync())
-        .pipe(rename({
-            basename: config.eve.out
-        }))
         .pipe(postcss([
             autoprefixer()
         ]))
+        .pipe(rename({
+            basename: config.eve.out
+        }))
         .pipe(gulp.dest(config.eve.dest[0]))
         .pipe(gulp.dest(config.eve.dest[1]));
 });
@@ -63,13 +63,13 @@ gulp.task('build-eve-min', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
         .pipe(rename({
             basename: config.eve.out,
             suffix: '.min'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
         .pipe(gulp.dest(config.eve.dest[0]))
         .pipe(gulp.dest(config.eve.dest[1]));
 });
@@ -91,13 +91,13 @@ gulp.task('build-docs-css', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
         .pipe(rename({
             basename: config.docs.css.out,
             suffix: '.min'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
         .pipe(gulp.dest(config.docs.css.dest));
 });
 
@@ -118,13 +118,13 @@ gulp.task('build-site-css', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
         .pipe(rename({
             basename: config.site.css.out,
             suffix: '.min'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
         .pipe(gulp.dest(config.site.css.dest));
 });
 
