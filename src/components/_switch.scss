@@ -67,7 +67,9 @@ $eve-switch-height: 1.125rem;
 
 .eve-switch-control {
     display: flex;
-    font-size: $eve-font-small;
+    align-items: center;
+    font-size: $eve-font-normal;
+    word-break: break-all;
 
     .eve-switch {
         flex-shrink: 0;

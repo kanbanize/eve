@@ -12,7 +12,7 @@ $eve-tag-size: 1.75rem;
     height: $eve-tag-size;
     line-height: $eve-tag-size;
     padding: 0 $eve-spacing-tiny;
-    font-size: $eve-font-tiny;
+    font-size: $eve-font-small;
     color: $eve-color-light;
 
     @each $eve-tag-color in map-keys($eve-tag-colors) {

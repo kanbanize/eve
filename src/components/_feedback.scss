@@ -7,7 +7,7 @@ $eve-feedback-colors: (
 .eve-feedback {
     padding: .375rem $eve-spacing-small;
     color: $eve-color-dark;
-    font-size: $eve-font-tiny;
+    font-size: $eve-font-small;
     line-height: 1.25rem;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {

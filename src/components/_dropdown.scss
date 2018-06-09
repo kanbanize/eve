@@ -6,7 +6,7 @@ $eve-dropdown-list-item-size: 2rem;
     flex-direction: column;
     min-width: 10rem;
     background: $eve-color-light;
-    font-size: $eve-font-small;
+    font-size: $eve-font-normal;
 
     ul {
         width: 100%;
@@ -47,7 +47,7 @@ $eve-dropdown-list-item-size: 2rem;
                 font-weight: bold;
                 height: $eve-dropdown-list-item-size;
                 text-transform: uppercase;
-                font-size: $eve-font-tiny;
+                font-size: $eve-font-normal;
                 pointer-events: none;
             }
 

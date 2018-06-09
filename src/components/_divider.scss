@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $eve-font-small;
+    font-size: $eve-font-normal;
 
     &::after {
         content: attr(data-content);
