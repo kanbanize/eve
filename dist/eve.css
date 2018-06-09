@@ -654,7 +654,6 @@
 
 .eve-checkbox-control {
   display: flex;
-  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-checkbox-control .eve-checkbox {
@@ -1261,7 +1260,6 @@
 
 .eve-radio-control {
   display: flex;
-  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-radio-control .eve-radio {
@@ -1415,7 +1413,6 @@
 
 .eve-switch-control {
   display: flex;
-  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-switch-control .eve-switch {
@@ -1834,6 +1831,15 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   word-wrap: normal; }
+
+.eve-text-small {
+  font-size: 0.75rem; }
+
+.eve-text-normal {
+  font-size: 0.875rem; }
+
+.eve-text-large {
+  font-size: 1rem; }
 
 .eve-text-primary {
   color: #2196f3 !important; }

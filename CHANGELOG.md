@@ -11,7 +11,7 @@ px to rem
 
 ## Removed
 avatar x-tiny x-large
-text sizes
+text-size-tiny
 
 ## 1.5.0 (8 June 2018)
 

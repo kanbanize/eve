@@ -10,6 +10,11 @@ $eve-text-alignments: (
     right,
     justify
 );
+$eve-text-sizes: (
+    small: $eve-font-small,
+    normal: $eve-font-normal,
+    large: $eve-font-large,
+);
 $eve-text-colors: (
     primary: $eve-color-primary,
     danger: $eve-color-danger,
@@ -37,11 +42,11 @@ $eve-text-colors: (
     word-wrap: normal;
 }
 
-// @each $eve-text-size in map-keys($eve-text-sizes) {
-//     .eve-text-#{$eve-text-size} {
-//         font-size: map-get($eve-text-sizes, $eve-text-size);
-//     }
-// }
+@each $eve-text-size in map-keys($eve-text-sizes) {
+    .eve-text-#{$eve-text-size} {
+        font-size: map-get($eve-text-sizes, $eve-text-size);
+    }
+}
 
 @each $eve-text-color in map-keys($eve-text-colors) {
     .eve-text-#{$eve-text-color} {
