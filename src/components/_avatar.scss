@@ -123,6 +123,7 @@ $eve-avatar-font-sizes: (
 .eve-profile {
     display: flex;
     align-items: center;
+    font-size: $eve-font-normal;
 
     .eve-avatar {
         margin-right: $eve-spacing-tiny;
