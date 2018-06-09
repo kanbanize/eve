@@ -1,20 +1,23 @@
 $eve-avatar-sizes: (
-    x-tiny: 16px,
-    tiny: 24px,
-    small: 28px,
-    normal: 32px,
-    large: 48px,
-    x-large: 96px
+    tiny: 2rem,
+    small: 3rem,
+    normal: 4rem,
+    large: 6rem
+);
+$eve-avatar-font-sizes: (
+    tiny: 1rem,
+    small: 1.5rem,
+    normal: 2rem,
+    large: 3rem
 );
 
 .eve-avatar {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     border-radius: 50%;
     vertical-align: middle;
     color: $eve-color-light;
     position: relative;
+    text-align: center;
 
     &[data-initial] {
         background: $eve-color-primary;
@@ -39,24 +42,32 @@ $eve-avatar-sizes: (
         height: inherit;
     }
 
+    &.is-online,
+    &.is-busy,
+    &.is-away,
+    &.is-offline {
+        &::after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            box-shadow: 0 0 0 .125rem $eve-color-light;
+        }
+    }
+
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
         &.is-#{$eve-avatar-size} {
             width: $size;
             height: $size;
+            line-height: $size;
 
             &[data-initial] {
                 &::before {
-                    @if $eve-avatar-size == 'x-tiny' {
-                        font-size: $eve-font-x-tiny;
-                    } @else if $eve-avatar-size == 'large' {
-                        font-size: $eve-font-normal;
-                    } @else if $eve-avatar-size == 'x-large' {
-                        font-size: $eve-font-x-large;
-                    } @else {
-                        font-size: $eve-font-tiny;
-                    }
+                    font-size: map-get($eve-avatar-font-sizes, $eve-avatar-size);
                 }
             }
 
@@ -65,20 +76,8 @@ $eve-avatar-sizes: (
             &.is-away,
             &.is-offline {
                 &::after {
-                    content: '';
-                    display: block;
                     height: $size / 4;
                     width: $size / 4;
-                    border-radius: 50%;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-
-                    @if $eve-avatar-size == 'x-tiny' or $eve-avatar-size == 'tiny' {
-                        box-shadow: 0 0 0 1px $eve-color-light;
-                    } @else {
-                        box-shadow: 0 0 0 2px $eve-color-light;
-                    }
                 }
             }
 
@@ -113,10 +112,10 @@ $eve-avatar-sizes: (
     display: flex;
 
     .eve-avatar {
-        box-shadow: 0 0 0 2px $eve-color-light;
+        box-shadow: 0 0 0 .125rem $eve-color-light;
 
         &:not(:first-child) {
-            margin-left: -#{$eve-spacing-x-tiny};
+            margin-left: -#{.25rem};
         }
     }
 }

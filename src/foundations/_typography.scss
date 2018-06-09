@@ -1,24 +1,21 @@
-$eve-font-x-tiny: 10px !default;
-$eve-font-tiny: 12px !default;
-$eve-font-small: 14px !default;
-$eve-font-normal: 16px !default;
-$eve-font-large: 20px !default;
-$eve-font-x-large: 48px !default;
+$eve-font-tiny: .75rem !default;
+$eve-font-small: .875rem !default;
+$eve-font-normal: 1rem !default;
 $eve-heading-font-sizes: (
-    h1: 32px,
-    h2: 24px,
-    h3: 20px,
-    h4: 18px,
-    h5: 16px,
-    h6: 12px
+    h1: 2rem,
+    h2: 1.5rem,
+    h3: 1.25rem,
+    h4: 1.125rem,
+    h5: 1rem,
+    h6: .75rem
 ) !default;
 $eve-heading-line-heights: (
-    h1: 40px,
-    h2: 32px,
-    h3: 28px,
-    h4: 28px,
-    h5: 24px,
-    h6: 18px
+    h1: 2.5rem,
+    h2: 2rem,
+    h3: 1.75rem,
+    h4: 1.75rem,
+    h5: 1.5rem,
+    h6: 1.125rem
 ) !default;
 
 @for $i from 1 through 6 {
@@ -33,7 +30,7 @@ $eve-heading-line-heights: (
 }
 
 .eve-paragraph {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: .875rem;
+    line-height: 1.25rem;
     margin: 0;
 }

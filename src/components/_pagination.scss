@@ -1,4 +1,4 @@
-$eve-pagination-item-size: 36px;
+$eve-pagination-item-size: 2.25rem;
 
 .eve-pagination {
     font-size: $eve-font-small;
@@ -27,7 +27,7 @@ $eve-pagination-item-size: 36px;
 
         &:first-child,
         &:last-child {
-            width: 96px;
+            min-width: 6rem;
         }
 
         &:hover,

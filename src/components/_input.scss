@@ -1,7 +1,7 @@
 $eve-input-sizes: (
-    small: 28px,
-    normal: 36px,
-    large: 48px
+    small: 1.75rem,
+    normal: 2.25rem,
+    large: 3rem
 );
 $eve-input-paddings: (
     small: $eve-spacing-tiny,
@@ -153,7 +153,7 @@ $eve-input-font-sizes: (
         &::after {
             content: '';
             border-radius: 50%;
-            border: 2px solid transparent;
+            border: .125rem solid transparent;
             border-top-color: $eve-color-primary;
             border-right-color: $eve-color-primary;
             position: absolute;

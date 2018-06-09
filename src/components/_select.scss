@@ -1,10 +1,7 @@
-$eve-select-height: 36px;
-$eve-select-arrow-size: 6px;
-$eve-select-arrow-border-width: 1px;
 $eve-select-sizes: (
-    small: 28px,
-    normal: 36px,
-    large: 48px
+    small: 1.75rem,
+    normal: 2.25rem,
+    large: 3rem
 );
 $eve-select-paddings: (
     small: $eve-spacing-tiny,
@@ -34,7 +31,7 @@ $eve-select-font-sizes: (
     }
 
     &::-ms-expand {
-      display: none;
+        display: none;
     }
 
     @each $eve-select-size in map-keys($eve-select-sizes) {

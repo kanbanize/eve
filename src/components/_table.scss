@@ -11,7 +11,7 @@
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                height: 56px;
+                height: 3.5rem;
                 font-weight: normal;
                 background: $eve-color-bright-silver;
                 color: $eve-color-darkest-silver;
@@ -25,7 +25,7 @@
 
     tbody {
         tr {
-            height: 48px;
+            height: 3rem;
 
             &:not(:last-child) {
                 border-bottom: 1px solid $eve-color-dark-silver;

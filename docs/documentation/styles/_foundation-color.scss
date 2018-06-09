@@ -2,23 +2,24 @@
     display: flex;
 
     &:not(:last-child) {
-        margin-bottom: 48px;
+        margin-bottom: 3rem;
     }
 }
 
 .component-color {
     display: flex;
-    width: 250px;
+    width: 16rem;
 
     &:not(:last-child) {
-        margin-right: 48px;
+        margin-right: 3rem;
     }
 
     .component-color-square {
-        width: 80px;
-        height: 80px;
-        margin-right: 16px;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
         border-radius: 50%;
+        flex-shrink: 0;
 
         &.component-color-square-blue {
             background: #2196f3;
@@ -71,14 +72,14 @@
         .component-color-name {
             display: flex;
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: .5rem;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         .component-color-rgba,
         .component-color-hex {
-            font-size: 12px;
+            font-size: .75rem;
             color: #b0bec5;
         }
     }

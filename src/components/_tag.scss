@@ -4,7 +4,7 @@ $eve-tag-colors: (
     warning: $eve-color-warning,
     danger: $eve-color-danger
 );
-$eve-tag-size: 28px;
+$eve-tag-size: 1.75rem;
 
 .eve-tag {
     display: inline-flex;
@@ -102,9 +102,9 @@ $eve-tag-size: 28px;
 .eve-tags {
     display: flex;
     flex-wrap: wrap;
-    margin: -#{$eve-spacing-x-tiny};
+    margin: -#{.25rem};
 
     .eve-tag {
-        margin: $eve-spacing-x-tiny;
+        margin: .25rem;
     }
 }

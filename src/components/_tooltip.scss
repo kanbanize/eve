@@ -1,4 +1,4 @@
-$eve-tooltip-size: 28px;
+$eve-tooltip-size: 1.75rem;
 
 .eve-tooltip {
     position: relative;
@@ -10,7 +10,6 @@ $eve-tooltip-size: 28px;
         color: $eve-color-light;
         font-size: $eve-font-tiny;
         padding: 0 $eve-spacing-small;
-        pointer-events: none;
         position: absolute;
         text-transform: none;
         white-space: pre;

@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: .5rem;
+    height: .5rem;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -30,8 +30,8 @@ body {
     background: #fff;
     color: #333;
     margin: 0;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 a {
@@ -45,24 +45,26 @@ a {
     .sidebar {
         background: #2196f3;
         background-image: linear-gradient(#2196f3 0%, #2156ff 100%);
-        width: 64px;
+        width: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 48px 0 16px;
+        padding: 3rem 0 1rem;
         box-sizing: border-box;
         flex-shrink: 0;
 
         .sidebar-eve-link {
             svg {
+                width: 1.5rem;
+                height: 1.6875rem;
                 fill: #fff;
             }
         }
 
         .sidebar-github-link {
             display: flex;
-            padding: 8px;
+            padding: .5rem;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0);
 
@@ -71,41 +73,43 @@ a {
             }
 
             svg {
+                width: 1.5rem;
+                height: 1.5rem;
                 fill: #fff;
             }
         }
     }
 
     .navigation {
-        width: 240px;
+        width: 15rem;
         background: #eceff1;
-        padding: 48px 0 24px;
+        padding: 3rem 0 1.5rem;
         overflow: auto;
         box-sizing: border-box;
         flex-shrink: 0;
 
         .navigation-header {
-            padding: 0 48px;
-            margin-bottom: 16px;
+            padding: 0 3rem;
+            margin-bottom: 1rem;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: .75rem;
             font-weight: bold;
         }
 
         .navigation-list {
             &:not(:last-child) {
-                margin-bottom: 24px;
+                margin-bottom: 1.5rem;
             }
         }
 
         .navigation-list-item {
-            padding-left: 64px;
+            padding-left: 4rem;
             cursor: pointer;
             text-decoration: none;
             display: block;
             color: #333;
-            margin-bottom: 16px;
-            font-size: 12px;
+            margin-bottom: 1rem;
+            font-size: .75rem;
             text-transform: uppercase;
 
             &:hover {
@@ -123,7 +127,7 @@ a {
         flex: 1;
         overflow: auto;
         height: 100%;
-        padding: 48px 96px;
+        padding: 3rem 6rem;
         box-sizing: border-box;
     }
 }

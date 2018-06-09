@@ -1,5 +1,5 @@
-$eve-switch-width: 32px;
-$eve-switch-height: 18px;
+$eve-switch-width: 2rem;
+$eve-switch-height: 1.125rem;
 
 .eve-switch {
     display: inline-flex;
@@ -49,17 +49,17 @@ $eve-switch-height: 18px;
         height: 100%;
         pointer-events: none;
         border-radius: $eve-switch-height / 2;
-        padding: 2px;
+        padding: .125rem;
         box-sizing: border-box;
 
         &::after {
             content: '';
-            width: $eve-switch-height - 4;
-            height: $eve-switch-height - 4;
+            width: $eve-switch-height - .25rem;
+            height: $eve-switch-height - .25rem;
             background: $eve-color-darker-silver;
             border-radius: 50%;
             position: absolute;
-            left: 2px;
+            left: .125rem;
             transition: left 150ms ease, background 150ms ease;
         }
     }

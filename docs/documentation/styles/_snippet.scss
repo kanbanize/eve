@@ -1,19 +1,21 @@
 .snippet {
     white-space: pre-wrap;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     background: #eceff1;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    color: #333;
+    color: #37474f;
     margin: 0;
     position: relative;
-    font-size: 12px;
+    font-size: .75rem;
+    // max-height: 100vh;
+    // overflow: auto;
 
     .snippet-tag {
         color: #3f51b5;
     }
 
     .snippet-attr {
-        color: #455a64;
+        color: #37474f;
     }
 
     .snippet-val {

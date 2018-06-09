@@ -1,4 +1,4 @@
-$eve-accordion-height: 32px;
+$eve-accordion-header-height: 2rem;
 
 .eve-accordion {
     font-size: $eve-font-small;
@@ -20,14 +20,13 @@ $eve-accordion-height: 32px;
         background: $eve-color-bright-silver;
         color: $eve-color-primary;
         display: block;
-        height: $eve-accordion-height;
-        line-height: $eve-accordion-height;
         padding: 0 $eve-spacing-small;
+        height: $eve-accordion-header-height;
+        line-height: $eve-accordion-header-height;
         cursor: pointer;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        font-size: $eve-font-small;
     }
 
     .eve-accordion-content {
@@ -39,7 +38,7 @@ $eve-accordion-height: 32px;
 .eve-accordions {
     .eve-accordion {
         &:not(:last-child) {
-            margin-bottom: $eve-spacing-x-tiny;
+            margin-bottom: .25rem;
         }
     }
 }

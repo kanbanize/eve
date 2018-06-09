@@ -1,4 +1,4 @@
-$eve-tab-size: 36px;
+$eve-tab-size: 2.25rem;
 
 .eve-navigation {
     display: flex;
@@ -16,7 +16,7 @@ $eve-tab-size: 36px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        padding: 0 $eve-spacing-normal;
+        padding: 0 $eve-spacing-small;
 
         a {
             text-decoration: none;
@@ -38,7 +38,7 @@ $eve-tab-size: 36px;
 
             &::after {
                 content: '';
-                width: 4px;
+                width: .25rem;
                 background: $eve-color-primary;
                 position: absolute;
                 left: 0;
@@ -56,7 +56,7 @@ $eve-tab-size: 36px;
                 top: 0;
                 bottom: 0;
                 left: 0;
-                width: 4px;
+                width: .25rem;
                 height: auto;
                 right: auto;
             }

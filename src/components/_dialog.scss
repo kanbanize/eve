@@ -4,8 +4,8 @@ $eve-dialog-types: (
     warning: $eve-color-warning,
     danger: $eve-color-danger
 );
-$eve-dialog-width: 400px;
-$eve-dialog-close-size: 32px;
+$eve-dialog-width: 25rem;
+$eve-dialog-close-size: 2rem;
 
 .eve-dialog {
     width: $eve-dialog-width;
@@ -42,13 +42,12 @@ $eve-dialog-close-size: 32px;
 
     .eve-dialog-header {
         font-weight: bold;
-        font-size: $eve-font-large;
+        font-size: 1.25rem;
         margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-content {
         margin-bottom: $eve-spacing-small;
-        line-height: 20px;
         font-size: $eve-font-small;
     }
 

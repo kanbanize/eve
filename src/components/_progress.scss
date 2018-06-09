@@ -1,9 +1,9 @@
-$eve-progress-oval-size: 48px;
+$eve-progress-oval-size: 3rem;
 
 .eve-progress-line {
     width: 100%;
     background: $eve-color-bright-silver;
-    height: 2px;
+    height: .125rem;
     position: relative;
     overflow: hidden;
 
@@ -41,7 +41,7 @@ $eve-progress-oval-size: 48px;
         content: '';
         background: transparent;
         border-radius: 50%;
-        border: 2px solid $eve-color-bright-silver;
+        border: .125rem solid $eve-color-bright-silver;
         border-top-color: $eve-color-primary;
         border-right-color: $eve-color-primary;
         display: inline-block;

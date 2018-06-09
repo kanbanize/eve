@@ -12,15 +12,15 @@
         }
 
         .eve-list-item-content {
+            font-size: $eve-font-small;
+
             .eve-list-item-title {
-                font-size: $eve-font-normal;
-                margin-bottom: $eve-spacing-x-tiny;
+                margin-bottom: .25rem;
             }
 
             .eve-list-item-description {
-                line-height: 20px;
                 color: $eve-color-darkest-silver;
-                font-size: $eve-font-small;
+                line-height: 1.125rem;
             }
         }
 

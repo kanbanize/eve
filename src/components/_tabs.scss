@@ -1,10 +1,11 @@
-$eve-tabs-size: 48px;
+$eve-tabs-size: 3rem;
 
 .eve-tabs {
     display: flex;
     border-bottom: 1px solid $eve-color-dark-silver;
     list-style: none;
-    padding: 0 $eve-spacing-small;
+    padding: 0 $eve-spacing-tiny;
+    margin: 0;
     font-size: $eve-font-small;
     height: $eve-tabs-size;
     line-height: $eve-tabs-size;
@@ -35,7 +36,7 @@ $eve-tabs-size: 48px;
 
             &::after {
                 content: '';
-                height: 4px;
+                height: .25rem;
                 background: $eve-color-primary;
                 position: absolute;
                 left: 0;

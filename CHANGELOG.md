@@ -1,5 +1,17 @@
 # Eve Changelog
 
+## 1.6.0 ()
+
+## Added
+
+## Changed
+px to rem
+
+## Fixed
+
+## Removed
+avatar x-tiny x-large
+
 ## 1.5.0 (8 June 2018)
 
 ### Added

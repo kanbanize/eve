@@ -1,45 +1,38 @@
 .component {
     &:not(:last-child) {
-        margin-bottom: 56px;
+        margin-bottom: 3.5rem;
     }
 
     .component-title {
-        margin-bottom: 24px;
-        font-size: 24px;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
         font-weight: 600;
         color: #2196f3;
         text-transform: uppercase;
     }
 
     .component-description {
-        line-height: 20px;
-        margin-bottom: 56px;
+        margin-bottom: 3.5rem;
     }
 
     .component-content {
         &:not(:last-child) {
-            margin-bottom: 56px;
+            margin-bottom: 3.5rem;
         }
 
         .component-header {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 600;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .component-example {
-            margin-bottom: 24px;
-        }
-
-        .component-list {
-            list-style-type: circle;
-            line-height: 24px;
-            font-size: 14px;
+            margin-bottom: 1.5rem;
         }
 
         .snippet {
             &:not(:last-child) {
-                margin-bottom: 56px;
+                margin-bottom: 3.5rem;
             }
         }
     }

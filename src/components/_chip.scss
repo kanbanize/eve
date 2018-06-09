@@ -1,4 +1,4 @@
-$eve-chip-size: 28px;
+$eve-chip-size: 1.75rem;
 
 .eve-chip {
     display: inline-flex;
@@ -75,9 +75,9 @@ $eve-chip-size: 28px;
 .eve-chips {
     display: flex;
     flex-wrap: wrap;
-    margin: -#{$eve-spacing-x-tiny};
+    margin: -#{.25rem};
 
     .eve-chip {
-        margin: $eve-spacing-x-tiny;
+        margin: .25rem;
     }
 }

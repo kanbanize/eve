@@ -5,9 +5,9 @@ $eve-button-colors: (
     danger: $eve-color-danger
 );
 $eve-button-sizes: (
-    small: 28px,
-    normal: 36px,
-    large: 48px
+    small: 1.75rem,
+    normal: 2.25rem,
+    large: 3rem
 );
 $eve-button-paddings: (
     small: $eve-spacing-tiny,
@@ -45,7 +45,7 @@ $eve-button-font-sizes: (
 
     i,
     svg {
-        margin-right: $eve-spacing-x-tiny;
+        margin-right: .25rem;
     }
 
     svg {
@@ -191,7 +191,7 @@ $eve-button-font-sizes: (
         &::after {
             content: '';
             border-radius: 50%;
-            border: 2px solid transparent;
+            border: .125rem solid transparent;
             border-top-color: $eve-color-light;
             border-right-color: $eve-color-light;
             position: absolute;
