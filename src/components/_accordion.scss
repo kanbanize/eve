@@ -1,13 +1,20 @@
-$eve-accordion-header-height: 2rem;
+$eve-accordion-font-size: $eve-font-normal !default;
+$eve-accordion-header-height: 2rem !default;
+$eve-accordion-header-background-color: $eve-color-bright-silver !default;
+$eve-accordion-header-color: $eve-color-primary !default;
+$eve-accordion-header-active-background-color: $eve-color-primary !default;
+$eve-accordion-header-active-color: $eve-color-light !default;
+$eve-accordion-header-padding: 0 $eve-spacing-small !default;
+$eve-accordion-content-padding: $eve-spacing-tiny $eve-spacing-small !default;
 
 .eve-accordion {
-    font-size: $eve-font-normal;
+    font-size: $eve-accordion-font-size;
 
     > input {
         &:checked {
             ~ .eve-accordion-header {
-                background: $eve-color-primary;
-                color: $eve-color-light;
+                background: $eve-accordion-header-active-background-color;
+                color: $eve-accordion-header-active-color;
             }
 
             ~ .eve-accordion-content {
@@ -17,12 +24,12 @@ $eve-accordion-header-height: 2rem;
     }
 
     .eve-accordion-header {
-        background: $eve-color-bright-silver;
-        color: $eve-color-primary;
-        display: block;
-        padding: 0 $eve-spacing-small;
+        background: $eve-accordion-header-background-color;
+        color: $eve-accordion-header-color;
+        padding: $eve-accordion-header-padding;
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
+        display: block;
         cursor: pointer;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -30,8 +37,8 @@ $eve-accordion-header-height: 2rem;
     }
 
     .eve-accordion-content {
+        padding: $eve-accordion-content-padding;
         display: none;
-        padding: $eve-spacing-tiny $eve-spacing-small;
     }
 }
 

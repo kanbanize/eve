@@ -1,35 +1,31 @@
-$eve-badge-size: 1.125rem;
+$eve-badge-height: 1.125rem !default;
+$eve-badge-border-radius: $eve-badge-height / 2 !default;
+$eve-badge-background-color: $eve-color-danger !default;
+$eve-badge-color: $eve-color-light !default;
+$eve-badge-padding: 0 .25rem !default;
+$eve-badge-font-size: $eve-font-normal !default;
 
 .eve-badge {
     position: relative;
 
     &::after {
-        content: attr(data-badge);
-        background: $eve-color-danger;
-        border-radius: $eve-badge-size / 2;
+        background: $eve-badge-background-color;
+        border-radius: $eve-badge-border-radius;
+        height: $eve-badge-height;
+        line-height: $eve-badge-height;
+        padding: $eve-badge-padding;
+        min-width: $eve-badge-height;
+        color: $eve-badge-color;
+        font-size: $eve-badge-font-size;
         box-shadow: 0 0 0 .125rem $eve-color-light;
-        height: $eve-badge-size;
-        line-height: $eve-badge-size;
+        content: attr(data-badge);
         text-align: center;
-        padding: 0 .25rem;
-        min-width: $eve-badge-size;
-        color: $eve-color-light;
         position: absolute;
         top: 0;
         right: 0;
         transform: translate(50%, -50%);
         font-weight: normal;
-        font-size: $eve-font-normal;
         box-sizing: border-box;
-    }
-
-    &:not([data-badge]) {
-        &::after {
-            width: $eve-badge-size / 2;
-            height: $eve-badge-size / 2;
-            min-width: $eve-badge-size / 2;
-            padding: 0;
-            transform: none;
-        }
+        pointer-events: none;
     }
 }

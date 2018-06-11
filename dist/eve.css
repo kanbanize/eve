@@ -143,17 +143,17 @@
   .eve-accordion .eve-accordion-header {
     background: #eceff1;
     color: #2196f3;
-    display: block;
     padding: 0 1rem;
     height: 2rem;
     line-height: 2rem;
+    display: block;
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
   .eve-accordion .eve-accordion-content {
-    display: none;
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 1rem;
+    display: none; }
 
 .eve-accordions .eve-accordion:not(:last-child) {
   margin-bottom: .25rem; }
@@ -285,47 +285,41 @@
 .eve-badge {
   position: relative; }
   .eve-badge::after {
-    content: attr(data-badge);
     background: #f44336;
     border-radius: 0.5625rem;
-    box-shadow: 0 0 0 0.125rem #fff;
     height: 1.125rem;
     line-height: 1.125rem;
-    text-align: center;
-    padding: 0 .25rem;
+    padding: 0 0.25rem;
     min-width: 1.125rem;
     color: #fff;
+    font-size: 0.875rem;
+    box-shadow: 0 0 0 0.125rem #fff;
+    content: attr(data-badge);
+    text-align: center;
     position: absolute;
     top: 0;
     right: 0;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
     font-weight: normal;
-    font-size: 0.875rem;
-    box-sizing: border-box; }
-  .eve-badge:not([data-badge])::after {
-    width: 0.5625rem;
-    height: 0.5625rem;
-    min-width: 0.5625rem;
-    padding: 0;
-    -webkit-transform: none;
-            transform: none; }
+    box-sizing: border-box;
+    pointer-events: none; }
 
 .eve-breadcrumb {
+  font-size: 0.875rem;
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  font-size: 0.875rem; }
+  padding: 0; }
   .eve-breadcrumb li:not(:last-child)::after {
-    content: '/';
-    padding: 0 0.5rem 0 0.25rem; }
+    padding: 0 0.5rem 0.25rem;
+    content: '/'; }
   .eve-breadcrumb li a {
-    text-decoration: none;
-    color: #333; }
+    color: #333;
+    text-decoration: none; }
     .eve-breadcrumb li a:hover {
-      text-decoration: underline;
-      color: #2196f3; }
+      color: #2196f3;
+      text-decoration: underline; }
   .eve-breadcrumb li.is-active a {
     color: #2196f3;
     pointer-events: none; }
