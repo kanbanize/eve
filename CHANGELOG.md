@@ -1,17 +1,16 @@
 # Eve Changelog
 
-## 1.6.0 ()
-
-## Added
+## 1.6.0 (11 June 2018)
 
 ## Changed
-px to rem
-
-## Fixed
+- Change ```px``` to ```rem```
 
 ## Removed
-avatar x-tiny x-large
-text-size-tiny
+- Remove .eve-avatar-x-tiny from avatars
+- Remove .eve-avatar-x-large from avatars
+- Remove .eve-text-tiny from text utilities
+
+---
 
 ## 1.5.0 (8 June 2018)
 
