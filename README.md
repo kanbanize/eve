@@ -10,8 +10,6 @@ A simple, minimal CSS Framework.
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
-[![npm](https://img.shields.io/npm/dm/evecss.svg)](https://www.npmjs.com/package/evecss)
-[![](https://data.jsdelivr.com/v1/package/npm/evecss/badge?style=rounded)](https://www.jsdelivr.com/package/npm/evecss)
 
 ## Installation
 
