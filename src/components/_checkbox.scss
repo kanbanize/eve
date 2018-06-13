@@ -2,11 +2,13 @@ $eve-checkbox-size: 1.125rem;
 $eve-checkbox-mark-border-width: .125rem;
 
 .eve-checkbox {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: $eve-checkbox-size;
     height: $eve-checkbox-size;
-    vertical-align: top;
+    vertical-align: middle;
 
     input {
         &[type='checkbox'] {
@@ -75,12 +77,13 @@ $eve-checkbox-mark-border-width: .125rem;
 }
 
 .eve-checkbox-control {
-    display: block;
+    display: flex;
     font-size: $eve-font-normal;
     word-break: break-all;
 
     .eve-checkbox {
-        margin-right: .25rem;
+        flex-shrink: 0;
+        margin-right: $eve-spacing-tiny;
     }
 }
 
