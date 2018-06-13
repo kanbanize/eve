@@ -591,11 +591,13 @@
     margin: 0; }
 
 .eve-checkbox {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 1.125rem;
   height: 1.125rem;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-checkbox input[type='checkbox'] {
     position: absolute;
     top: 0;
@@ -642,11 +644,12 @@
       box-sizing: content-box; }
 
 .eve-checkbox-control {
-  display: block;
+  display: flex;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-checkbox-control .eve-checkbox {
-    margin-right: .25rem; }
+    flex-shrink: 0;
+    margin-right: 0.5rem; }
 
 .eve-checkboxes > .eve-checkboxes {
   padding-left: 1rem; }
