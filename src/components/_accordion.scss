@@ -6,17 +6,26 @@ $eve-accordion-header-active-background-color: $eve-color-primary !default;
 $eve-accordion-header-active-color: $eve-color-light !default;
 $eve-accordion-header-padding: 0 $eve-spacing-small !default;
 $eve-accordion-content-padding: $eve-spacing-tiny $eve-spacing-small !default;
+$eve-accordion-line-width: .125rem !default;
+$eve-accordion-line-color: $eve-color-primary !default;
 
 .eve-accordion {
     font-size: $eve-accordion-font-size;
+    position: relative;
+    padding-left: $eve-spacing-tiny + $eve-accordion-line-width;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: $eve-accordion-line-width;
+        background: $eve-accordion-line-color;
+    }
 
     > input {
         &:checked {
-            ~ .eve-accordion-header {
-                background: $eve-accordion-header-active-background-color;
-                color: $eve-accordion-header-active-color;
-            }
-
             ~ .eve-accordion-content {
                 display: block;
             }
