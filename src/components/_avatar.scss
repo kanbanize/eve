@@ -2,13 +2,15 @@ $eve-avatar-sizes: (
     tiny: 1.5rem,
     small: 2rem,
     normal: 3rem,
-    large: 4rem
+    large: 4rem,
+    huge: 6rem
 );
 $eve-avatar-font-sizes: (
     tiny: .75rem,
     small: 1rem,
     normal: 1.5rem,
-    large: 2rem
+    large: 2rem,
+    huge: 3rem
 );
 
 .eve-avatar {
@@ -18,6 +20,9 @@ $eve-avatar-font-sizes: (
     color: $eve-color-light;
     position: relative;
     text-align: center;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
 
     &[data-initial] {
         background: $eve-color-primary;
@@ -25,6 +30,7 @@ $eve-avatar-font-sizes: (
         &::before {
             content: attr(data-initial);
             font-weight: bold;
+            font-size: 1.5rem;
         }
     }
 
@@ -80,30 +86,30 @@ $eve-avatar-font-sizes: (
                     width: $size / 4;
                 }
             }
+        }
+    }
 
-            &.is-online {
-                &::after {
-                    background: $eve-color-success;
-                }
-            }
+    &.is-online {
+        &::after {
+            background: $eve-color-success;
+        }
+    }
 
-            &.is-busy {
-                &::after {
-                    background: $eve-color-danger;
-                }
-            }
+    &.is-busy {
+        &::after {
+            background: $eve-color-danger;
+        }
+    }
 
-            &.is-away {
-                &::after {
-                    background: $eve-color-warning;
-                }
-            }
+    &.is-away {
+        &::after {
+            background: $eve-color-warning;
+        }
+    }
 
-            &.is-offline {
-                &::after {
-                    background: $eve-color-dark-silver;
-                }
-            }
+    &.is-offline {
+        &::after {
+            background: $eve-color-dark-silver;
         }
     }
 }

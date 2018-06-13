@@ -134,10 +134,17 @@
           padding: 1.5rem 0; } }
 
 .eve-accordion {
-  font-size: 0.875rem; }
-  .eve-accordion > input:checked ~ .eve-accordion-header {
-    background: #2196f3;
-    color: #fff; }
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 0.625rem; }
+  .eve-accordion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0.125rem;
+    background: #2196f3; }
   .eve-accordion > input:checked ~ .eve-accordion-content {
     display: block; }
   .eve-accordion .eve-accordion-header {
@@ -164,12 +171,16 @@
   vertical-align: middle;
   color: #fff;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem; }
   .eve-avatar[data-initial] {
     background: #2196f3; }
     .eve-avatar[data-initial]::before {
       content: attr(data-initial);
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.5rem; }
   .eve-avatar img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -201,14 +212,6 @@
     .eve-avatar.is-tiny.is-online::after, .eve-avatar.is-tiny.is-busy::after, .eve-avatar.is-tiny.is-away::after, .eve-avatar.is-tiny.is-offline::after {
       height: 0.375rem;
       width: 0.375rem; }
-    .eve-avatar.is-tiny.is-online::after {
-      background: #4caf50; }
-    .eve-avatar.is-tiny.is-busy::after {
-      background: #f44336; }
-    .eve-avatar.is-tiny.is-away::after {
-      background: #ff9800; }
-    .eve-avatar.is-tiny.is-offline::after {
-      background: #cfd8dc; }
   .eve-avatar.is-small {
     width: 2rem;
     height: 2rem;
@@ -218,14 +221,6 @@
     .eve-avatar.is-small.is-online::after, .eve-avatar.is-small.is-busy::after, .eve-avatar.is-small.is-away::after, .eve-avatar.is-small.is-offline::after {
       height: 0.5rem;
       width: 0.5rem; }
-    .eve-avatar.is-small.is-online::after {
-      background: #4caf50; }
-    .eve-avatar.is-small.is-busy::after {
-      background: #f44336; }
-    .eve-avatar.is-small.is-away::after {
-      background: #ff9800; }
-    .eve-avatar.is-small.is-offline::after {
-      background: #cfd8dc; }
   .eve-avatar.is-normal {
     width: 3rem;
     height: 3rem;
@@ -235,14 +230,6 @@
     .eve-avatar.is-normal.is-online::after, .eve-avatar.is-normal.is-busy::after, .eve-avatar.is-normal.is-away::after, .eve-avatar.is-normal.is-offline::after {
       height: 0.75rem;
       width: 0.75rem; }
-    .eve-avatar.is-normal.is-online::after {
-      background: #4caf50; }
-    .eve-avatar.is-normal.is-busy::after {
-      background: #f44336; }
-    .eve-avatar.is-normal.is-away::after {
-      background: #ff9800; }
-    .eve-avatar.is-normal.is-offline::after {
-      background: #cfd8dc; }
   .eve-avatar.is-large {
     width: 4rem;
     height: 4rem;
@@ -252,14 +239,23 @@
     .eve-avatar.is-large.is-online::after, .eve-avatar.is-large.is-busy::after, .eve-avatar.is-large.is-away::after, .eve-avatar.is-large.is-offline::after {
       height: 1rem;
       width: 1rem; }
-    .eve-avatar.is-large.is-online::after {
-      background: #4caf50; }
-    .eve-avatar.is-large.is-busy::after {
-      background: #f44336; }
-    .eve-avatar.is-large.is-away::after {
-      background: #ff9800; }
-    .eve-avatar.is-large.is-offline::after {
-      background: #cfd8dc; }
+  .eve-avatar.is-huge {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem; }
+    .eve-avatar.is-huge[data-initial]::before {
+      font-size: 3rem; }
+    .eve-avatar.is-huge.is-online::after, .eve-avatar.is-huge.is-busy::after, .eve-avatar.is-huge.is-away::after, .eve-avatar.is-huge.is-offline::after {
+      height: 1.5rem;
+      width: 1.5rem; }
+  .eve-avatar.is-online::after {
+    background: #4caf50; }
+  .eve-avatar.is-busy::after {
+    background: #f44336; }
+  .eve-avatar.is-away::after {
+    background: #ff9800; }
+  .eve-avatar.is-offline::after {
+    background: #cfd8dc; }
 
 .eve-avatars {
   display: flex; }
