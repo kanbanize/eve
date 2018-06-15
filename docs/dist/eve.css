@@ -114,8 +114,8 @@
     .eve-row {
       flex-direction: column; }
       .eve-row .eve-column {
-        flex: 1 100%;
-        max-width: 100%; }
+        flex: 1 100% !important;
+        max-width: 100% !important; }
       .eve-row.has-gap-tiny {
         margin: -0.25rem 0; }
         .eve-row.has-gap-tiny > .eve-column {

@@ -62,8 +62,8 @@ $eve-grid-vertical-alignments: (
         flex-direction: column;
 
         .eve-column {
-            flex: 1 100%;
-            max-width: 100%;
+            flex: 1 100% !important;
+            max-width: 100% !important;
         }
 
         @each $eve-grid-gap in map-keys($eve-grid-gaps) {
