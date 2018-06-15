@@ -153,17 +153,39 @@
     padding: 0 1rem;
     height: 2rem;
     line-height: 2rem;
-    display: block;
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    display: block; }
   .eve-accordion .eve-accordion-content {
     padding: 0.5rem 1rem;
     display: none; }
+  .eve-accordion.has-icon {
+    position: relative; }
+    .eve-accordion.has-icon .eve-accordion-header {
+      padding-right: 3rem; }
+      .eve-accordion.has-icon .eve-accordion-header i,
+      .eve-accordion.has-icon .eve-accordion-header svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #2196f3;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .eve-accordion.has-icon .eve-accordion-header i {
+        color: #fff;
+        font-size: 1rem; }
+      .eve-accordion.has-icon .eve-accordion-header svg {
+        fill: #fff;
+        width: 1rem;
+        height: 1rem; }
 
 .eve-accordions .eve-accordion:not(:last-child) {
-  margin-bottom: .25rem; }
+  margin-bottom: .5rem; }
 
 .eve-avatar {
   display: inline-block;

@@ -4,7 +4,10 @@ $eve-accordion-header-background-color: $eve-color-bright-silver !default;
 $eve-accordion-header-color: $eve-color-primary !default;
 $eve-accordion-header-active-background-color: $eve-color-primary !default;
 $eve-accordion-header-active-color: $eve-color-light !default;
-$eve-accordion-header-padding: 0 $eve-spacing-small !default;
+$eve-accordion-header-padding: $eve-spacing-small !default;
+$eve-accordion-header-icon-background: $eve-color-primary !default;
+$eve-accordion-header-icon-color: $eve-color-light !default;
+$eve-accordion-header-icon-size: $eve-accordion-header-height / 2 !default;
 $eve-accordion-content-padding: $eve-spacing-tiny $eve-spacing-small !default;
 $eve-accordion-line-width: .125rem !default;
 $eve-accordion-line-color: $eve-color-primary !default;
@@ -35,26 +38,58 @@ $eve-accordion-line-color: $eve-color-primary !default;
     .eve-accordion-header {
         background: $eve-accordion-header-background-color;
         color: $eve-accordion-header-color;
-        padding: $eve-accordion-header-padding;
+        padding: 0 $eve-accordion-header-padding;
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
-        display: block;
         cursor: pointer;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        display: block;
     }
 
     .eve-accordion-content {
         padding: $eve-accordion-content-padding;
         display: none;
     }
+
+    &.has-icon {
+        position: relative;
+
+        .eve-accordion-header {
+            padding-right: $eve-accordion-header-height + $eve-accordion-header-padding;
+
+            i,
+            svg {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: $eve-accordion-header-icon-background;
+                height: $eve-accordion-header-height;
+                width: $eve-accordion-header-height;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            i {
+                color: $eve-accordion-header-icon-color;
+                font-size: $eve-accordion-header-icon-size;
+            }
+
+            svg {
+                fill: $eve-accordion-header-icon-color;
+                width: $eve-accordion-header-icon-size;
+                height: $eve-accordion-header-icon-size;
+            }
+        }
+    }
 }
 
 .eve-accordions {
     .eve-accordion {
         &:not(:last-child) {
-            margin-bottom: .25rem;
+            margin-bottom: .5rem;
         }
     }
 }
