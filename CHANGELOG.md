@@ -1,11 +1,27 @@
 # Eve Changelog
 
+## 1.7.0 (15 June 2018)
+
+### Added
+- Add accordion with icon
+- Add button with icon
+- Add profile with icon
+- Add ```.is-huge``` avatar
+
+### Changed
+- Change accordion visualization
+
+### Fixed
+- Fix grid columns responsiveness on small screens
+
+---
+
 ## 1.6.0 (11 June 2018)
 
-## Changed
+### Changed
 - Change ```px``` to ```rem```
 
-## Removed
+### Removed
 - Remove .eve-avatar-x-tiny from avatars
 - Remove .eve-avatar-x-large from avatars
 - Remove .eve-text-tiny from text utilities
