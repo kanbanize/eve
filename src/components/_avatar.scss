@@ -135,6 +135,22 @@ $eve-avatar-font-sizes: (
         margin-right: $eve-spacing-tiny;
         flex-shrink: 0;
     }
+
+    i,
+    svg {
+        margin-left: $eve-spacing-tiny;
+    }
+
+    i {
+        font-size: 1rem;
+        color: $eve-color-darker-silver;
+    }
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        fill: $eve-color-darker-silver;
+    }
 }
 
 .eve-profiles {

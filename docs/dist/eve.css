@@ -293,6 +293,16 @@
   .eve-profile .eve-avatar {
     margin-right: 0.5rem;
     flex-shrink: 0; }
+  .eve-profile i,
+  .eve-profile svg {
+    margin-left: 0.5rem; }
+  .eve-profile i {
+    font-size: 1rem;
+    color: #b0bec5; }
+  .eve-profile svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #b0bec5; }
 
 .eve-profiles {
   display: flex;
