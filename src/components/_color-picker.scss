@@ -3,37 +3,91 @@ $eve-color-picker-color-size: 2rem !default;
 .eve-color-picker {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
     display: inline-flex;
-    padding: .25rem;
+    flex-direction: column;
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    input {
+        &:checked {
+            ~ .eve-color-picker-controls {
+                .eve-color-picker-dropdown {
+                    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right .5rem center / 1rem 1rem;
+                }
+            }
+
+            ~ .eve-color-picker-colors {
+                ul {
+                    li {
+                        &:not(:first-child) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .eve-color-picker-controls {
+        padding: .5rem;
+        border-bottom: 1px solid $eve-color-bright-silver;
+
+        .eve-color-picker-color {
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
+            margin-right: .5rem;
+        }
+
+        .eve-input {
+            height: 2rem;
+            line-height: 2rem;
+            padding: 0 .5rem;
+        }
+
+        .eve-color-picker-dropdown {
+            margin-left: .5rem;
+            box-sizing: border-box;
+            border: 1px solid $eve-color-dark-silver;
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
+            cursor: pointer;
+            background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%2015.41L12%2010.83l4.59%204.58L18%2014l-6-6-6%206z'/%3E%3Cpath%20d='M0%200h24v24H0z'%20fill='none'/%3E%3C/svg%3E") no-repeat right (2rem / 4) center / (2rem / 2) (2rem / 2);
+        }
+    }
+
+    .eve-color-picker-colors {
         display: flex;
-        flex-direction: column;
+        padding: .25rem;
 
-        li {
-            width: $eve-color-picker-color-size;
-            height: $eve-color-picker-color-size;
-            margin: .25rem;
-            background: $eve-color-primary;
-            position: relative;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
 
-            &.is-selected {
-                &::after {
-                    content: '';
-                    width: $eve-color-picker-color-size / 2;
-                    height: $eve-color-picker-color-size / 4;
-                    border-left: .125rem solid #fff;
-                    border-bottom: .125rem solid #fff;
-                    position: absolute;
-                    transform: rotate(-45deg) translate(-50%, -50%);
-                    top: $eve-color-picker-color-size / 4;
-                    left: 50%;
-                    box-sizing: border-box;
+            li {
+                width: $eve-color-picker-color-size;
+                height: $eve-color-picker-color-size;
+                margin: .25rem;
+                background: $eve-color-primary;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.is-selected {
+                    &::after {
+                        content: '';
+                        width: $eve-color-picker-color-size / 2;
+                        height: $eve-color-picker-color-size / 4;
+                        border-left: .125rem solid #fff;
+                        border-bottom: .125rem solid #fff;
+                        position: absolute;
+                        transform: rotate(-45deg) translate(-50%, -50%);
+                        top: $eve-color-picker-color-size / 4;
+                        left: 50%;
+                        box-sizing: border-box;
+                    }
                 }
             }
         }
