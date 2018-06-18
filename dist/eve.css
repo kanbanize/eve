@@ -201,7 +201,6 @@
     background: #2196f3; }
     .eve-avatar[data-initial]::before {
       content: attr(data-initial);
-      font-weight: bold;
       font-size: 1.5rem; }
   .eve-avatar img {
     background-size: cover;
@@ -710,10 +709,13 @@
   .eve-chip .eve-chip-icon {
     box-shadow: 0 0 0 1px #fff;
     height: 1.75rem;
+    line-height: 1.75rem;
     width: 1.75rem;
     position: relative;
     left: -0.5rem;
     border-radius: 50%; }
+  .eve-chip .eve-avatar::before {
+    font-size: 1em; }
   .eve-chip .eve-chip-icon {
     display: flex;
     align-items: center;

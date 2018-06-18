@@ -29,7 +29,6 @@ $eve-avatar-font-sizes: (
 
         &::before {
             content: attr(data-initial);
-            font-weight: bold;
             font-size: 1.5rem;
         }
     }

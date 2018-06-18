@@ -15,10 +15,17 @@ $eve-chip-size: 1.75rem;
     .eve-chip-icon {
         box-shadow: 0 0 0 1px $eve-color-light;
         height: $eve-chip-size;
+        line-height: $eve-chip-size;
         width: $eve-chip-size;
         position: relative;
         left: -#{$eve-spacing-tiny};
         border-radius: 50%;
+    }
+
+    .eve-avatar {
+        &::before {
+            font-size: 1em;
+        }
     }
 
     .eve-chip-icon {
