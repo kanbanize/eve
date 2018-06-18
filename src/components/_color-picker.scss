@@ -4,12 +4,13 @@ $eve-color-picker-color-size: 2rem !default;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
     display: inline-flex;
     flex-direction: column;
+    background: $eve-color-light;
 
     input {
         &:checked {
             ~ .eve-color-picker-controls {
                 .eve-color-picker-dropdown {
-                    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right .5rem center / 1rem 1rem;
+                    background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right .5rem center / 1rem 1rem;
                 }
             }
 
@@ -50,7 +51,7 @@ $eve-color-picker-color-size: 2rem !default;
             height: 2rem;
             flex-shrink: 0;
             cursor: pointer;
-            background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%2015.41L12%2010.83l4.59%204.58L18%2014l-6-6-6%206z'/%3E%3Cpath%20d='M0%200h24v24H0z'%20fill='none'/%3E%3C/svg%3E") no-repeat right (2rem / 4) center / (2rem / 2) (2rem / 2);
+            background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%2015.41L12%2010.83l4.59%204.58L18%2014l-6-6-6%206z'/%3E%3Cpath%20d='M0%200h24v24H0z'%20fill='none'/%3E%3C/svg%3E") no-repeat right (2rem / 4) center / (2rem / 2) (2rem / 2);
         }
     }
 
@@ -68,12 +69,13 @@ $eve-color-picker-color-size: 2rem !default;
             li {
                 width: $eve-color-picker-color-size;
                 height: $eve-color-picker-color-size;
-                margin: .25rem;
                 background: $eve-color-primary;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: .25rem;
+                cursor: pointer;
 
                 &.is-selected {
                     &::after {
