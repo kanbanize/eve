@@ -16,10 +16,8 @@ $eve-color-picker-color-size: 2rem !default;
 
             ~ .eve-color-picker-colors {
                 ul {
-                    li {
-                        &:not(:first-child) {
-                            display: none;
-                        }
+                    &:not(:first-child) {
+                        display: none;
                     }
                 }
             }
@@ -57,6 +55,7 @@ $eve-color-picker-color-size: 2rem !default;
 
     .eve-color-picker-colors {
         display: flex;
+        flex-direction: column;
         padding: .25rem;
 
         ul {
@@ -64,7 +63,6 @@ $eve-color-picker-color-size: 2rem !default;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
 
             li {
                 width: $eve-color-picker-color-size;
