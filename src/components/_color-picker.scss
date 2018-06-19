@@ -25,6 +25,7 @@ $eve-color-picker-color-size: 2rem !default;
     }
 
     .eve-color-picker-controls {
+        display: flex;
         padding: .5rem;
         border-bottom: 1px solid $eve-color-bright-silver;
 

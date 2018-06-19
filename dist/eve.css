@@ -766,6 +766,7 @@
   .eve-color-picker input:checked ~ .eve-color-picker-colors ul:not(:first-child) {
     display: none; }
   .eve-color-picker .eve-color-picker-controls {
+    display: flex;
     padding: .5rem;
     border-bottom: 1px solid #eceff1; }
     .eve-color-picker .eve-color-picker-controls .eve-color-picker-color {
