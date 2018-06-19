@@ -806,9 +806,9 @@
         justify-content: center;
         margin: .25rem;
         cursor: pointer;
-        transition: -webkit-transform 75ms ease;
-        transition: transform 75ms ease;
-        transition: transform 75ms ease, -webkit-transform 75ms ease; }
+        transition: -webkit-transform .1s ease;
+        transition: transform .1s ease;
+        transition: transform .1s ease, -webkit-transform .1s ease; }
         .eve-color-picker .eve-color-picker-colors ul li:hover {
           -webkit-transform: scale(1.2);
                   transform: scale(1.2); }

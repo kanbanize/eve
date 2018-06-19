@@ -75,7 +75,7 @@ $eve-color-picker-color-size: 2rem !default;
                 justify-content: center;
                 margin: .25rem;
                 cursor: pointer;
-                transition: transform 75ms ease;
+                transition: transform .1s ease;
 
                 &:hover {
                     transform: scale(1.2);
