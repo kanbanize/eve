@@ -804,7 +804,13 @@
         align-items: center;
         justify-content: center;
         margin: .25rem;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: -webkit-transform 75ms ease;
+        transition: transform 75ms ease;
+        transition: transform 75ms ease, -webkit-transform 75ms ease; }
+        .eve-color-picker .eve-color-picker-colors ul li:hover {
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2); }
         .eve-color-picker .eve-color-picker-colors ul li.is-selected::after {
           content: '';
           width: 1rem;
