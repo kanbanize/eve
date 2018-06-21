@@ -761,8 +761,11 @@
   display: inline-flex;
   flex-direction: column;
   background: #fff; }
-  .eve-color-picker input:checked ~ .eve-color-picker-controls .eve-color-picker-dropdown {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5rem center/1rem 1rem; }
+  .eve-color-picker input:checked ~ .eve-color-picker-controls .eve-color-picker-dropdown::after {
+    top: -.125rem;
+    border: 0;
+    border-bottom: 1px solid #b0bec5;
+    border-right: 1px solid #b0bec5; }
   .eve-color-picker input:checked ~ .eve-color-picker-colors ul:not(:first-child) {
     display: none; }
   .eve-color-picker .eve-color-picker-controls {
@@ -786,7 +789,20 @@
       height: 2rem;
       flex-shrink: 0;
       cursor: pointer;
-      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%2015.41L12%2010.83l4.59%204.58L18%2014l-6-6-6%206z'/%3E%3Cpath%20d='M0%200h24v24H0z'%20fill='none'/%3E%3C/svg%3E") no-repeat right 0.5rem center/1rem 1rem; }
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .eve-color-picker .eve-color-picker-controls .eve-color-picker-dropdown::after {
+        content: '';
+        border-top: 1px solid #b0bec5;
+        border-left: 1px solid #b0bec5;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        width: .5rem;
+        height: .5rem;
+        box-sizing: border-box;
+        position: relative;
+        top: .125rem; }
   .eve-color-picker .eve-color-picker-colors {
     display: flex;
     flex-direction: column;
