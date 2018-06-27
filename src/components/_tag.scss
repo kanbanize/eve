@@ -17,13 +17,12 @@ $eve-tag-size: 1.75rem;
 
     @each $eve-tag-color in map-keys($eve-tag-colors) {
         $color: map-get($eve-tag-colors, $eve-tag-color);
-        $hover-color: rgba($color, .2);
 
         &.is-#{$eve-tag-color} {
             background: $color;
 
             &:hover {
-                background: $hover-color;
+                background: lighten($color, 40);
                 color: $color;
 
                 .eve-tag-action {

@@ -434,17 +434,17 @@
       .eve-button.is-primary.is-outlined:hover, .eve-button.is-primary.is-outlined:active {
         box-shadow: none; }
       .eve-button.is-primary.is-outlined:hover {
-        background: rgba(33, 150, 243, 0.1); }
+        background: #e3f2fd; }
       .eve-button.is-primary.is-outlined:active {
-        background: rgba(33, 150, 243, 0.2); }
+        background: #cae6fc; }
     .eve-button.is-primary.is-inverted {
       color: #2196f3; }
       .eve-button.is-primary.is-inverted.has-icon svg {
         fill: #2196f3; }
       .eve-button.is-primary.is-inverted:hover {
-        background: rgba(33, 150, 243, 0.1); }
+        background: #e3f2fd; }
       .eve-button.is-primary.is-inverted:active {
-        background: rgba(33, 150, 243, 0.2); }
+        background: #cae6fc; }
   .eve-button.is-success {
     background: #4caf50; }
     .eve-button.is-success:hover {
@@ -459,17 +459,17 @@
       .eve-button.is-success.is-outlined:hover, .eve-button.is-success.is-outlined:active {
         box-shadow: none; }
       .eve-button.is-success.is-outlined:hover {
-        background: rgba(76, 175, 80, 0.1); }
+        background: #d9eeda; }
       .eve-button.is-success.is-outlined:active {
-        background: rgba(76, 175, 80, 0.2); }
+        background: #c7e7c8; }
     .eve-button.is-success.is-inverted {
       color: #4caf50; }
       .eve-button.is-success.is-inverted.has-icon svg {
         fill: #4caf50; }
       .eve-button.is-success.is-inverted:hover {
-        background: rgba(76, 175, 80, 0.1); }
+        background: #d9eeda; }
       .eve-button.is-success.is-inverted:active {
-        background: rgba(76, 175, 80, 0.2); }
+        background: #c7e7c8; }
   .eve-button.is-warning {
     background: #ff9800; }
     .eve-button.is-warning:hover {
@@ -484,17 +484,17 @@
       .eve-button.is-warning.is-outlined:hover, .eve-button.is-warning.is-outlined:active {
         box-shadow: none; }
       .eve-button.is-warning.is-outlined:hover {
-        background: rgba(255, 152, 0, 0.1); }
+        background: #ffeacc; }
       .eve-button.is-warning.is-outlined:active {
-        background: rgba(255, 152, 0, 0.2); }
+        background: #ffe0b3; }
     .eve-button.is-warning.is-inverted {
       color: #ff9800; }
       .eve-button.is-warning.is-inverted.has-icon svg {
         fill: #ff9800; }
       .eve-button.is-warning.is-inverted:hover {
-        background: rgba(255, 152, 0, 0.1); }
+        background: #ffeacc; }
       .eve-button.is-warning.is-inverted:active {
-        background: rgba(255, 152, 0, 0.2); }
+        background: #ffe0b3; }
   .eve-button.is-danger {
     background: #f44336; }
     .eve-button.is-danger:hover {
@@ -509,17 +509,17 @@
       .eve-button.is-danger.is-outlined:hover, .eve-button.is-danger.is-outlined:active {
         box-shadow: none; }
       .eve-button.is-danger.is-outlined:hover {
-        background: rgba(244, 67, 54, 0.1); }
+        background: #fff8f7; }
       .eve-button.is-danger.is-outlined:active {
-        background: rgba(244, 67, 54, 0.2); }
+        background: #fde1df; }
     .eve-button.is-danger.is-inverted {
       color: #f44336; }
       .eve-button.is-danger.is-inverted.has-icon svg {
         fill: #f44336; }
       .eve-button.is-danger.is-inverted:hover {
-        background: rgba(244, 67, 54, 0.1); }
+        background: #fff8f7; }
       .eve-button.is-danger.is-inverted:active {
-        background: rgba(244, 67, 54, 0.2); }
+        background: #fde1df; }
   .eve-button.is-outlined {
     background: transparent; }
   .eve-button.is-inverted {
@@ -973,11 +973,11 @@
   font-size: 0.75rem;
   line-height: 1.125rem; }
   .eve-feedback.is-success {
-    background: rgba(76, 175, 80, 0.2); }
+    background: #b5dfb7; }
   .eve-feedback.is-warning {
-    background: rgba(255, 152, 0, 0.2); }
+    background: #ffd699; }
   .eve-feedback.is-danger {
-    background: rgba(244, 67, 54, 0.2); }
+    background: #fccbc7; }
 
 .eve-form-group {
   margin: 0 0 1rem; }
@@ -1618,7 +1618,7 @@
   .eve-tag.is-primary {
     background: #2196f3; }
     .eve-tag.is-primary:hover {
-      background: rgba(33, 150, 243, 0.2);
+      background: #e3f2fd;
       color: #2196f3; }
       .eve-tag.is-primary:hover .eve-tag-action {
         background: #2196f3; }
@@ -1636,7 +1636,7 @@
   .eve-tag.is-success {
     background: #4caf50; }
     .eve-tag.is-success:hover {
-      background: rgba(76, 175, 80, 0.2);
+      background: #d9eeda;
       color: #4caf50; }
       .eve-tag.is-success:hover .eve-tag-action {
         background: #4caf50; }
@@ -1654,7 +1654,7 @@
   .eve-tag.is-warning {
     background: #ff9800; }
     .eve-tag.is-warning:hover {
-      background: rgba(255, 152, 0, 0.2);
+      background: #ffeacc;
       color: #ff9800; }
       .eve-tag.is-warning:hover .eve-tag-action {
         background: #ff9800; }
@@ -1672,7 +1672,7 @@
   .eve-tag.is-danger {
     background: #f44336; }
     .eve-tag.is-danger:hover {
-      background: rgba(244, 67, 54, 0.2);
+      background: #fff8f7;
       color: #f44336; }
       .eve-tag.is-danger:hover .eve-tag-action {
         background: #f44336; }

@@ -113,18 +113,16 @@ $eve-button-font-sizes: (
 
     @each $eve-button-color in map-keys($eve-button-colors) {
         $color: map-get($eve-button-colors, $eve-button-color);
-        $hover-color: darken($color, 5);
-        $active-color: darken($color, 10);
 
         &.is-#{$eve-button-color} {
             background: $color;
 
             &:hover {
-                background: $hover-color;
+                background: darken($color, 5);
             }
 
             &:active {
-                background: $active-color;
+                background: darken($color, 10);
             }
 
             &.is-outlined {
@@ -143,11 +141,11 @@ $eve-button-font-sizes: (
                 }
 
                 &:hover {
-                    background: rgba($color, .1);
+                    background: lighten($color, 40);
                 }
 
                 &:active {
-                    background: rgba($color, .2);
+                    background: lighten($color, 35);
                 }
             }
 
@@ -161,11 +159,11 @@ $eve-button-font-sizes: (
                 }
 
                 &:hover {
-                    background: rgba($color, .1);
+                    background: lighten($color, 40);
                 }
 
                 &:active {
-                    background: rgba($color, .2);
+                    background: lighten($color, 35);
                 }
             }
         }
