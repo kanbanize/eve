@@ -8,7 +8,7 @@ $eve-switch-height: 1.125rem;
     position: relative;
     width: $eve-switch-width;
     height: $eve-switch-height;
-    vertical-align: middle;
+    vertical-align: top;
 
     input {
         &[type='checkbox'] {

@@ -7,7 +7,7 @@ $eve-radio-size: 1.125rem;
     position: relative;
     width: $eve-radio-size;
     height: $eve-radio-size;
-    vertical-align: middle;
+    vertical-align: top;
 
     input {
         &[type='radio'] {
