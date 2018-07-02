@@ -628,7 +628,7 @@
   position: relative;
   width: 1.125rem;
   height: 1.125rem;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-checkbox input[type='checkbox'] {
     position: absolute;
     top: 0;
@@ -1328,7 +1328,7 @@
   position: relative;
   width: 1.125rem;
   height: 1.125rem;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-radio input[type='radio'] {
     position: absolute;
     top: 0;
@@ -1483,7 +1483,7 @@
   position: relative;
   width: 2rem;
   height: 1.125rem;
-  vertical-align: top; }
+  vertical-align: middle; }
   .eve-switch input[type='checkbox'] {
     position: absolute;
     top: 0;
