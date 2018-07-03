@@ -1,30 +1,27 @@
 $eve-avatar-sizes: (
     tiny: 1.5rem,
     small: 2rem,
-    normal: 3rem,
     large: 4rem,
     huge: 6rem
 );
 
 .eve-avatar {
-    $size: map-get($eve-avatar-sizes, 'normal');
-
     display: inline-block;
     border-radius: 50%;
     vertical-align: middle;
     color: $eve-color-light;
     position: relative;
     text-align: center;
-    width: $size;
-    height: $size;
-    line-height: $size;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
 
     &[data-initial] {
         background: $eve-color-primary;
 
         &::before {
             content: attr(data-initial);
-            font-size: $size / 2;
+            font-size: 1.5rem;
         }
     }
 

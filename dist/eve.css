@@ -242,15 +242,6 @@
     .eve-avatar.is-small.is-online::after, .eve-avatar.is-small.is-busy::after, .eve-avatar.is-small.is-away::after, .eve-avatar.is-small.is-offline::after {
       height: 0.5rem;
       width: 0.5rem; }
-  .eve-avatar.is-normal {
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem; }
-    .eve-avatar.is-normal[data-initial]::before {
-      font-size: 1.5rem; }
-    .eve-avatar.is-normal.is-online::after, .eve-avatar.is-normal.is-busy::after, .eve-avatar.is-normal.is-away::after, .eve-avatar.is-normal.is-offline::after {
-      height: 0.75rem;
-      width: 0.75rem; }
   .eve-avatar.is-large {
     width: 4rem;
     height: 4rem;
