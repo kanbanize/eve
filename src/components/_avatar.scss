@@ -1,27 +1,29 @@
 $eve-avatar-sizes: (
     tiny: 1.5rem,
     small: 2rem,
+    normal: 3rem,
     large: 4rem,
     huge: 6rem
-);
+) !default;
+$eve-avatar-border-radius: 50% !default;
 
 .eve-avatar {
     display: inline-block;
-    border-radius: 50%;
+    border-radius: $eve-avatar-border-radius;
     vertical-align: middle;
     color: $eve-color-light;
     position: relative;
     text-align: center;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+    width: map-get($eve-avatar-sizes, 'normal');
+    height: map-get($eve-avatar-sizes, 'normal');
+    line-height: map-get($eve-avatar-sizes, 'normal');
 
     &[data-initial] {
         background: $eve-color-primary;
 
         &::before {
             content: attr(data-initial);
-            font-size: 1.5rem;
+            font-size: map-get($eve-avatar-sizes, 'normal') / 2;
         }
     }
 
@@ -55,26 +57,28 @@ $eve-avatar-sizes: (
     }
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
-        $size: map-get($eve-avatar-sizes, $eve-avatar-size);
+        @if $eve-avatar-size != 'normal' {
+            $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
-        &.is-#{$eve-avatar-size} {
-            width: $size;
-            height: $size;
-            line-height: $size;
+            &.is-#{$eve-avatar-size} {
+                width: $size;
+                height: $size;
+                line-height: $size;
 
-            &[data-initial] {
-                &::before {
-                    font-size: $size / 2;
+                &[data-initial] {
+                    &::before {
+                        font-size: $size / 2;
+                    }
                 }
-            }
 
-            &.is-online,
-            &.is-busy,
-            &.is-away,
-            &.is-offline {
-                &::after {
-                    height: $size / 4;
-                    width: $size / 4;
+                &.is-online,
+                &.is-busy,
+                &.is-away,
+                &.is-offline {
+                    &::after {
+                        height: $size / 4;
+                        width: $size / 4;
+                    }
                 }
             }
         }

@@ -1765,14 +1765,18 @@
     padding: 0 1rem;
     position: absolute;
     text-transform: none;
-    white-space: pre;
     height: 1.75rem;
     line-height: 1.75rem;
     border-radius: 0.875rem;
     font-family: inherit;
     font-weight: normal;
     transition: all .2s ease;
-    opacity: 0; }
+    opacity: 0;
+    max-width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal; }
   .eve-tooltip.is-left::after {
     bottom: 50%;
     right: 100%;
