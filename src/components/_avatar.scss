@@ -5,31 +5,26 @@ $eve-avatar-sizes: (
     large: 4rem,
     huge: 6rem
 );
-$eve-avatar-font-sizes: (
-    tiny: .75rem,
-    small: 1rem,
-    normal: 1.5rem,
-    large: 2rem,
-    huge: 3rem
-);
 
 .eve-avatar {
+    $size: map-get($eve-avatar-sizes, 'normal');
+
     display: inline-block;
     border-radius: 50%;
     vertical-align: middle;
     color: $eve-color-light;
     position: relative;
     text-align: center;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+    width: $size;
+    height: $size;
+    line-height: $size;
 
     &[data-initial] {
         background: $eve-color-primary;
 
         &::before {
             content: attr(data-initial);
-            font-size: 1.5rem;
+            font-size: $size / 2;
         }
     }
 
@@ -72,7 +67,7 @@ $eve-avatar-font-sizes: (
 
             &[data-initial] {
                 &::before {
-                    font-size: map-get($eve-avatar-font-sizes, $eve-avatar-size);
+                    font-size: $size / 2;
                 }
             }
 
