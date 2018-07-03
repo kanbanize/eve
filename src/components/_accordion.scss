@@ -11,6 +11,7 @@ $eve-accordion-header-icon-size: $eve-accordion-header-height / 2 !default;
 $eve-accordion-content-padding: $eve-spacing-tiny $eve-spacing-small !default;
 $eve-accordion-line-width: .125rem !default;
 $eve-accordion-line-color: $eve-color-primary !default;
+$eve-accordion-margin-bottom: .5rem !default;
 
 .eve-accordion {
     font-size: $eve-accordion-font-size;
@@ -89,7 +90,7 @@ $eve-accordion-line-color: $eve-color-primary !default;
 .eve-accordions {
     .eve-accordion {
         &:not(:last-child) {
-            margin-bottom: .5rem;
+            margin-bottom: $eve-accordion-margin-bottom;
         }
     }
 }

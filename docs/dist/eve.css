@@ -185,7 +185,7 @@
         height: 1rem; }
 
 .eve-accordions .eve-accordion:not(:last-child) {
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem; }
 
 .eve-avatar {
   display: inline-block;
