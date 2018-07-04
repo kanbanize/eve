@@ -1,5 +1,21 @@
 # Eve Changelog
 
+## 1.8.0 (04 July 2018)
+
+### Added
+- Add new component [Color Picker](https://kanbanize.github.io/eve/documentation/#components/color-picker)
+
+### Changed
+- Change tooltip font-size from .875rem to .75rem
+
+### Fixed
+- Fix tooltip overflow
+
+### Removed
+- Remove ```.is-normal``` avatar
+
+---
+
 ## 1.7.0 (15 June 2018)
 
 ### Added
@@ -22,9 +38,9 @@
 - Change ```px``` to ```rem```
 
 ### Removed
-- Remove .eve-avatar-x-tiny from avatars
-- Remove .eve-avatar-x-large from avatars
-- Remove .eve-text-tiny from text utilities
+- Remove ```.eve-avatar-x-tiny``` from avatars
+- Remove ```.eve-avatar-x-large``` from avatars
+- Remove ```.eve-text-tiny``` from text utilities
 
 ---
 
