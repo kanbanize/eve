@@ -9,7 +9,9 @@ $eve-sides: (
     top,
     right,
     bottom,
-    left
+    left,
+    horizontal,
+    vertical
 );
 
 @each $eve-gap in map-keys($eve-gaps) {
@@ -29,6 +31,12 @@ $eve-sides: (
                 margin-bottom: $gap !important;
             } @else if $eve-side == 'left' {
                 margin-left: $gap !important;
+            } @else if $eve-side == 'horizontal' {
+                margin-left: $gap !important;
+                margin-right: $gap !important;
+            } @else if $eve-side == 'vertical' {
+                margin-bottom: $gap !important;
+                margin-top: $gap !important;
             }
         }
     }

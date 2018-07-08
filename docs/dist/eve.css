@@ -1859,6 +1859,14 @@
 .eve-gap-left-tiny {
   margin-left: 0.5rem !important; }
 
+.eve-gap-horizontal-tiny {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important; }
+
+.eve-gap-vertical-tiny {
+  margin-bottom: 0.5rem !important;
+  margin-top: 0.5rem !important; }
+
 .eve-gap-small {
   margin: 1rem !important; }
 
@@ -1873,6 +1881,14 @@
 
 .eve-gap-left-small {
   margin-left: 1rem !important; }
+
+.eve-gap-horizontal-small {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important; }
+
+.eve-gap-vertical-small {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important; }
 
 .eve-gap-normal {
   margin: 1.5rem !important; }
@@ -1889,6 +1905,14 @@
 .eve-gap-left-normal {
   margin-left: 1.5rem !important; }
 
+.eve-gap-horizontal-normal {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important; }
+
+.eve-gap-vertical-normal {
+  margin-bottom: 1.5rem !important;
+  margin-top: 1.5rem !important; }
+
 .eve-gap-large {
   margin: 3rem !important; }
 
@@ -1903,6 +1927,14 @@
 
 .eve-gap-left-large {
   margin-left: 3rem !important; }
+
+.eve-gap-horizontal-large {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important; }
+
+.eve-gap-vertical-large {
+  margin-bottom: 3rem !important;
+  margin-top: 3rem !important; }
 
 .eve-overflow-auto {
   overflow: auto !important; }
@@ -1966,3 +1998,15 @@
      -moz-user-select: none !important;
       -ms-user-select: none !important;
           user-select: none !important; }
+
+.eve-text-light {
+  font-weight: 300; }
+
+.eve-text-normal {
+  font-weight: 400; }
+
+.eve-text-semibold {
+  font-weight: 600; }
+
+.eve-text-bold {
+  font-weight: 700; }

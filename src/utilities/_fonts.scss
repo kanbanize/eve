@@ -1,0 +1,12 @@
+$eve-font-weights: (
+    light: 300,
+    normal: 400,
+    semibold: 600,
+    bold: 700
+);
+
+@each $eve-font-weight in map-keys($eve-font-weights) {
+    .eve-text-#{$eve-font-weight} {
+        font-weight: map-get($eve-font-weights, $eve-font-weight);
+    }
+}
