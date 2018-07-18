@@ -82,6 +82,7 @@ $eve-accordion-margin-bottom: .5rem !default;
                 fill: $eve-accordion-header-icon-color;
                 width: $eve-accordion-header-icon-size;
                 height: $eve-accordion-header-icon-size;
+                padding: $eve-accordion-header-icon-size / 2;
             }
         }
     }
