@@ -1776,7 +1776,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    word-wrap: normal; }
+    word-wrap: normal;
+    will-change: transform; }
   .eve-tooltip.is-left::after {
     bottom: 50%;
     right: 100%;
