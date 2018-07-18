@@ -1,0 +1,150 @@
+<div class="component">
+    <div class="component-title">Chip</div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-chip">thisisachip.png</div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon</div>
+        <div class="component-example">
+            <div class="eve-chip">
+                <div class="eve-chip-icon">
+                    <i class="material-icons">person</i>
+                </div>
+                thisisachip.png
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Action</div>
+        <div class="component-example">
+            <div class="eve-chip">
+                thisisachip.png
+                <div class="eve-chip-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon and Action</div>
+        <div class="component-example">
+            <div class="eve-chip">
+                <div class="eve-chip-icon">
+                    <i class="material-icons">person</i>
+                </div>
+                thisisachip.png
+                <div class="eve-chip-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Avatar</div>
+        <div class="component-example">
+            <div class="eve-chip">
+                <div class="eve-avatar">
+                    <img src="assets/images/avatar-1.jpg">
+                </div>
+                John Doe
+                <div class="eve-chip-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+            <div class="eve-chip">
+                <div class="eve-avatar" data-initial="A"></div>
+                John Doe
+                <div class="eve-chip-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Grouped</div>
+        <div class="component-example">
+            <div class="eve-chips">
+                <div class="eve-chip">
+                    <div class="eve-avatar">
+                        <img src="assets/images/avatar-1.jpg">
+                    </div>
+                    Cristopher Ivanov
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="J"></div>
+                    John Doe
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="A"></div>
+                    Adam Spencer
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar">
+                        <img src="assets/images/avatar-2.jpg">
+                    </div>
+                    Miyah Myles
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="P"></div>
+                    Patrick Johnson
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar">
+                        <img src="assets/images/avatar-3.jpg">
+                    </div>
+                    Brantlee Adair
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="J"></div>
+                    Jesiah Neely
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar">
+                        <img src="assets/images/avatar-4.jpg">
+                    </div>
+                    Vivianna Kiser
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="L"></div>
+                    Lorenz Vercauteren-Seghers
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-chip">
+                    <div class="eve-avatar" data-initial="R"></div>
+                    Renee Sims
+                    <div class="eve-chip-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

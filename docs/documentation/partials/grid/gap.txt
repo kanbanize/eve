@@ -1,0 +1,66 @@
+<style>
+    .eve-column > p {
+        background: #2196f3;
+        color: #fff;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+</style>
+<div class="component">
+    <div class="component-title">Grid Gaps</div>
+    <div class="component-content">
+        <div class="component-header">Large</div>
+        <div class="component-example">
+            <div class="eve-row has-gap-large">
+                <div class="eve-column">
+                    <p></p>
+                </div>
+                <div class="eve-column">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Normal</div>
+        <div class="component-example">
+            <div class="eve-row has-gap-normal">
+                <div class="eve-column">
+                    <p></p>
+                </div>
+                <div class="eve-column">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Small</div>
+        <div class="component-example">
+            <div class="eve-row has-gap-small">
+                <div class="eve-column">
+                    <p></p>
+                </div>
+                <div class="eve-column">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Tiny</div>
+        <div class="component-example">
+            <div class="eve-row has-gap-tiny">
+                <div class="eve-column">
+                    <p></p>
+                </div>
+                <div class="eve-column">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

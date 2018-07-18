@@ -1,0 +1,20 @@
+<div class="component">
+    <div class="component-title">Textarea</div>
+    <div class="component-content">
+        <div class="component-example">
+            <textarea class="eve-textarea" placeholder="Placeholder"></textarea>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Read Only</div>
+        <div class="component-example">
+            <textarea class="eve-textarea" readonly="readonly">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates consequatur explicabo labore voluptatibus totam iure incidunt ea, facilis dolore nobis sunt voluptas, excepturi vitae reiciendis dignissimos iste esse magni quis.</textarea>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <textarea class="eve-textarea" disabled="disabled"></textarea>
+        </div>
+    </div>
+</div>

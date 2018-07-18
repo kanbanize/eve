@@ -1,0 +1,205 @@
+<div class="component">
+    <div class="component-title">Tag</div>
+    <div class="component-content">
+        <div class="component-header">Colors</div>
+        <div class="component-example">
+            <div class="eve-tag is-primary">Primary</div>
+            <div class="eve-tag is-success">Success</div>
+            <div class="eve-tag is-warning">Warning</div>
+            <div class="eve-tag is-danger">Danger</div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Outlined</div>
+        <div class="component-example">
+            <div class="eve-tag is-primary is-outlined">Primary</div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon</div>
+        <div class="component-example">
+            <div class="eve-tag is-primary">
+                <div class="eve-tag-icon">
+                    <i class="material-icons">favorite</i>
+                </div>
+                Primary
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Action</div>
+        <div class="component-example">
+            <div class="eve-tag is-primary">
+                Primary
+                <div class="eve-tag-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon and Action</div>
+        <div class="component-example">
+            <div class="eve-tag is-primary">
+                <div class="eve-tag-icon">
+                    <i class="material-icons">favorite</i>
+                </div>
+                Primary
+                <div class="eve-tag-action">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Grouped</div>
+        <div class="component-example">
+            <div class="eve-tags">
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">inbox</i>
+                    </div>
+                    Inbox
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-warning">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">schedule</i>
+                    </div>
+                    Snoozed
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-success">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">check</i>
+                    </div>
+                    Done
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">drafts</i>
+                    </div>
+                    Drafts
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">send</i>
+                    </div>
+                    Sent
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-warning">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">alarm_on</i>
+                    </div>
+                    Reminders
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-danger">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">delete</i>
+                    </div>
+                    Trash
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-warning">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">report</i>
+                    </div>
+                    Spam
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">airplanemode_active</i>
+                    </div>
+                    Trips
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">loyalty</i>
+                    </div>
+                    Saved
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">shopping_cart</i>
+                    </div>
+                    Purchases
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-success">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">bar_chart</i>
+                    </div>
+                    Finance
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-warning">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">people</i>
+                    </div>
+                    Social
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-warning">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">flag</i>
+                    </div>
+                    Updates
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">forum</i>
+                    </div>
+                    Forums
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="eve-tag is-primary">
+                    <div class="eve-tag-icon">
+                        <i class="material-icons">local_offer</i>
+                    </div>
+                    Promos
+                    <div class="eve-tag-action">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

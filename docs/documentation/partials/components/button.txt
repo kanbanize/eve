@@ -1,0 +1,130 @@
+<style>
+    .eve-buttons:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+</style>
+<div class="component">
+    <div class="component-title">Button</div>
+    <div class="component-content">
+        <div class="component-header">Colors</div>
+        <div class="component-example">
+            <button class="eve-button is-primary">Primary</button>
+            <button class="eve-button is-success">Success</button>
+            <button class="eve-button is-warning">Warning</button>
+            <button class="eve-button is-danger">Danger</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Outlined</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-outlined">Primary</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Inverted</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-inverted">Primary</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Sizes</div>
+        <div class="component-example">
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-small">Small</button>
+                <button class="eve-button is-primary">Normal</button>
+                <button class="eve-button is-primary is-large">Large</button>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Block</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-block">Button Block</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon</div>
+        <div class="component-example">
+            <button class="eve-button is-primary has-icon">
+                <i class="material-icons">favorite</i>Primary
+            </button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Loading</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-loading">Loading</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">File</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-file">
+                Upload...
+                <input type="file">
+            </button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Rounded</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-rounded">Rounded</button>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Grouped</div>
+        <div class="component-example">
+            <div class="eve-buttons">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+            </div>
+            <div class="eve-buttons is-center">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+            </div>
+            <div class="eve-buttons is-right">
+                <button class="eve-button is-primary is-outlined">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+            </div>
+            <div class="eve-buttons has-addons">
+                <button class="eve-button is-primary">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+                <button class="eve-button is-primary">Button 3</button>
+            </div>
+            <div class="eve-buttons is-center has-addons">
+                <button class="eve-button is-primary">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+                <button class="eve-button is-primary">Button 3</button>
+            </div>
+            <div class="eve-buttons is-right has-addons">
+                <button class="eve-button is-primary">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+                <button class="eve-button is-primary">Button 3</button>
+            </div>
+            <div class="eve-buttons has-addons">
+                <button class="eve-button is-primary">Button</button>
+                <button class="eve-button is-primary has-icon">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+            </div>
+            <div class="eve-buttons is-center has-addons">
+                <button class="eve-button is-primary">Button</button>
+                <button class="eve-button is-primary has-icon">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+            </div>
+            <div class="eve-buttons is-right has-addons">
+                <button class="eve-button is-primary">Button</button>
+                <button class="eve-button is-primary has-icon">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <button class="eve-button is-primary" disabled="disabled">Disabled</button>
+        </div>
+    </div>
+</div>
