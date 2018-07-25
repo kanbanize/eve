@@ -1,7 +1,7 @@
 {
   "name": "evecss",
   "version": "1.8.0",
-  "description": "A simple, minimal CSS Framework.",
+  "description": "A kickass CSS Framework",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kanbanize/eve.git"
@@ -40,7 +40,8 @@
     "gulp-rename": "^1.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "sass-lint": "^1.12.1"
   },
   "files": [
     "dist",

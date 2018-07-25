@@ -1,0 +1,69 @@
+<style>
+    .eve-input:not(:last-child),
+    .eve-input-field:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    .eve-input-field .eve-input {
+        margin-bottom: 0;
+    }
+</style>
+<div class="component">
+    <div class="component-title">Input</div>
+    <div class="component-content">
+        <div class="component-example">
+            <input type="text" class="eve-input" placeholder="Placeholder">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Sizes</div>
+        <div class="component-example">
+            <input type="text" class="eve-input is-small" placeholder="Small">
+            <input type="text" class="eve-input" placeholder="Normal">
+            <input type="text" class="eve-input is-large" placeholder="Large">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Loading</div>
+        <div class="component-example">
+            <div class="eve-input-field is-loading is-small">
+                <input type="text" class="eve-input is-small" placeholder="Small loading">
+            </div>
+            <div class="eve-input-field is-loading">
+                <input type="text" class="eve-input" placeholder="Normal loading">
+            </div>
+            <div class="eve-input-field is-loading is-large">
+                <input type="text" class="eve-input is-large" placeholder="Large loading">
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Icon</div>
+        <div class="component-example">
+            <div class="eve-input-field has-icon is-small">
+                <input type="text" class="eve-input is-small" placeholder="Small icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-input-field has-icon">
+                <input type="text" class="eve-input" placeholder="Normal icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="eve-input-field has-icon is-large">
+                <input type="text" class="eve-input is-large" placeholder="Large icon">
+                <i class="material-icons">person</i>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Rounded</div>
+        <div class="component-example">
+            <input type="text" class="eve-input is-rounded" placeholder="Rounded">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <input type="text" value="Disabled" class="eve-input" disabled="disabled">
+        </div>
+    </div>
+</div>

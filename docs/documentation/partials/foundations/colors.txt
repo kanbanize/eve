@@ -1,0 +1,102 @@
+<div class="component">
+    <div class="component-title">Colors</div>
+    <div class="component-content">
+        <div class="component-header">Base</div>
+        <div class="component-colors">
+            <div class="component-color">
+                <div class="component-color-square component-color-square-white"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Light</div>
+                    <div class="component-color-rgba">rgba(255, 255, 255, 1)</div>
+                    <div class="component-color-hex">#FFF</div>
+                </div>
+            </div>
+            <div class="component-color">
+                <div class="component-color-square component-color-square-black"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Dark</div>
+                    <div class="component-color-rgba">rgba(51, 51, 51, 1)</div>
+                    <div class="component-color-hex">#333</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Primary</div>
+        <div class="component-colors">
+            <div class="component-color">
+                <div class="component-color-square component-color-square-blue"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Primary</div>
+                    <div class="component-color-rgba">rgba(33, 150, 243, 1)</div>
+                    <div class="component-color-hex">#2196F3</div>
+                </div>
+            </div>
+            <div class="component-color">
+                <div class="component-color-square component-color-square-green"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Success</div>
+                    <div class="component-color-rgba">rgba(76, 175, 80, 1)</div>
+                    <div class="component-color-hex">#4CAF50</div>
+                </div>
+            </div>
+        </div>
+        <div class="component-colors">
+            <div class="component-color">
+                <div class="component-color-square component-color-square-warning"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Warning</div>
+                    <div class="component-color-rgba">rgba(255, 152, 0, 1)</div>
+                    <div class="component-color-hex">#FF9800</div>
+                </div>
+            </div>
+            <div class="component-color">
+                <div class="component-color-square component-color-square-red"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Danger</div>
+                    <div class="component-color-rgba">rgba(244, 67, 54, 1)</div>
+                    <div class="component-color-hex">#F44336</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Secondary</div>
+        <div class="component-colors">
+            <div class="component-color">
+                <div class="component-color-square component-color-square-bright-silver"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Bright Silver</div>
+                    <div class="component-color-rgba">rgba(236, 239, 241, 1)</div>
+                    <div class="component-color-hex">#ECEFF1</div>
+                </div>
+            </div>
+            <div class="component-color">
+                <div class="component-color-square component-color-square-dark-silver"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Dark Silver</div>
+                    <div class="component-color-rgba">rgba(207, 216, 220, 1)</div>
+                    <div class="component-color-hex">#CFD8DC</div>
+                </div>
+            </div>
+        </div>
+        <div class="component-colors">
+            <div class="component-color">
+                <div class="component-color-square component-color-square-darker-silver"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Darker Silver</div>
+                    <div class="component-color-rgba">rgba(173, 190, 198, 1)</div>
+                    <div class="component-color-hex">#B0BEC5</div>
+                </div>
+            </div>
+            <div class="component-color">
+                <div class="component-color-square component-color-square-darkest-silver"></div>
+                <div class="component-color-data">
+                    <div class="component-color-name">Darkest Silver</div>
+                    <div class="component-color-rgba">rgba(96, 125, 139, 1)</div>
+                    <div class="component-color-hex">#607D8B</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

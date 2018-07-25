@@ -182,7 +182,8 @@
       .eve-accordion.has-icon .eve-accordion-header svg {
         fill: #fff;
         width: 1rem;
-        height: 1rem; }
+        height: 1rem;
+        padding: 0.5rem; }
 
 .eve-accordions .eve-accordion:not(:last-child) {
   margin-bottom: 0.5rem; }
@@ -1776,7 +1777,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    word-wrap: normal; }
+    word-wrap: normal;
+    will-change: transform; }
   .eve-tooltip.is-left::after {
     bottom: 50%;
     right: 100%;

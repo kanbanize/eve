@@ -7,9 +7,7 @@
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 
-A simple, minimal CSS Framework.
-
-> A library of front-end components that helps designers and developers build great experiences.
+A kickass CSS Framework
 
 ## Installation
 
@@ -29,6 +27,11 @@ yarn add evecss
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evecss/dist/eve.min.css">
+```
+
+### unpkg
+```html
+<link rel="stylesheet" href="https://unpkg.com/evecss/dist/eve.min.css">
 ```
 
 ## Documentation
