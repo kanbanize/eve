@@ -69,11 +69,11 @@ $eve-input-font-sizes: (
         pointer-events: none;
     }
 
-    &.danger {
+    &.is-danger {
         border: 1px solid $eve-color-danger;
     }
 
-    &.success {
+    &.is-success {
         border: 1px solid $eve-color-success;
     }
 }
