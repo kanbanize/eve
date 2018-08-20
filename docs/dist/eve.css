@@ -899,7 +899,7 @@
 
 .eve-divider {
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 1rem 0 0.5rem;
   height: 1px;
   background: #2196f3;
   display: flex;
