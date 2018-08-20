@@ -1,16 +1,24 @@
 .eve-divider {
-    width: 100%;
-    margin: $eve-spacing-normal 0;
-    height: 1px;
-    background: $eve-color-primary;
+    margin: $eve-spacing-small 0 $eve-spacing-tiny;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $eve-font-normal;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: $eve-color-primary;
+    }
 
     &::after {
         content: attr(data-content);
         padding: 0 $eve-spacing-tiny;
         background: $eve-color-light;
+        font-size: $eve-font-normal;
+        z-index: 1;
     }
 }
