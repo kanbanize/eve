@@ -898,18 +898,24 @@
     color: #f44336; }
 
 .eve-divider {
-  width: 100%;
   margin: 1rem 0 0.5rem;
-  height: 1px;
-  background: #2196f3;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.875rem; }
+  position: relative; }
+  .eve-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #2196f3; }
   .eve-divider::after {
     content: attr(data-content);
     padding: 0 0.5rem;
-    background: #fff; }
+    background: #fff;
+    font-size: 0.875rem;
+    z-index: 1; }
 
 .eve-dropdown {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
