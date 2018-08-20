@@ -1044,9 +1044,9 @@
     background: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
-  .eve-input.danger {
+  .eve-input.is-danger {
     border: 1px solid #f44336; }
-  .eve-input.success {
+  .eve-input.is-success {
     border: 1px solid #4caf50; }
 
 .eve-input-field {
