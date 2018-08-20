@@ -22,6 +22,12 @@ $eve-text-colors: (
     success: $eve-color-success,
     muted: $eve-color-darkest-silver
 );
+$eve-font-weights: (
+    light: 300,
+    normal: 400,
+    semibold: 600,
+    bold: 700
+);
 
 @each $eve-text-transform in $eve-text-transforms {
     .eve-text-#{$eve-text-transform} {
@@ -51,6 +57,12 @@ $eve-text-colors: (
 @each $eve-text-color in map-keys($eve-text-colors) {
     .eve-text-#{$eve-text-color} {
         color: map-get($eve-text-colors, $eve-text-color) !important;
+    }
+}
+
+@each $eve-font-weight in map-keys($eve-font-weights) {
+    .eve-text-#{$eve-font-weight} {
+        font-weight: map-get($eve-font-weights, $eve-font-weight);
     }
 }
 

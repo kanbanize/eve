@@ -68,6 +68,14 @@ $eve-input-font-sizes: (
         color: $eve-color-darkest-silver;
         pointer-events: none;
     }
+
+    &.is-danger {
+        border: 1px solid $eve-color-danger;
+    }
+
+    &.is-success {
+        border: 1px solid $eve-color-success;
+    }
 }
 
 .eve-input-field {
