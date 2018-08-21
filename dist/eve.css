@@ -993,6 +993,8 @@
     .eve-form-group.is-inline .eve-form-label {
       margin: 0 0.5rem 0 0;
       flex-shrink: 0; }
+  .eve-form-group .eve-input {
+    min-width: 0; }
 
 .eve-form-control {
   display: flex; }

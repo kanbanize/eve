@@ -22,6 +22,11 @@
             flex-shrink: 0;
         }
     }
+
+    // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
+    .eve-input {
+        min-width: 0;
+    }
 }
 
 .eve-form-control {
