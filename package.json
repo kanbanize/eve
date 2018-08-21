@@ -1,7 +1,7 @@
 {
   "name": "evecss",
   "version": "1.8.0",
-  "description": "A kickass CSS Framework",
+  "description": "A simple, minimal CSS Framework",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kanbanize/eve.git"
