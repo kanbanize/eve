@@ -171,14 +171,20 @@
         top: 0;
         right: 0;
         background: #2196f3;
-        width: 1rem;
-        height: 1rem;
-        padding: 0.5rem; }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box; }
       .eve-accordion.has-icon .eve-accordion-header i {
         color: #fff;
-        font-size: 1rem; }
+        font-size: 1rem;
+        height: 2rem;
+        width: 2rem; }
       .eve-accordion.has-icon .eve-accordion-header svg {
-        fill: #fff; }
+        fill: #fff;
+        padding: 0.5rem;
+        width: 1rem;
+        height: 1rem; }
 
 .eve-accordions .eve-accordion:not(:last-child) {
   margin-bottom: 0.5rem; }

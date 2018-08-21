@@ -66,18 +66,24 @@ $eve-accordion-margin-bottom: .5rem !default;
                 top: 0;
                 right: 0;
                 background: $eve-accordion-header-icon-background;
-                width: $eve-accordion-header-icon-size;
-                height: $eve-accordion-header-icon-size;
-                padding: $eve-accordion-header-icon-size / 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
             }
 
             i {
                 color: $eve-accordion-header-icon-color;
                 font-size: $eve-accordion-header-icon-size;
+                height: $eve-accordion-header-height;
+                width: $eve-accordion-header-height;
             }
 
             svg {
                 fill: $eve-accordion-header-icon-color;
+                padding: $eve-accordion-header-icon-size / 2;
+                width: $eve-accordion-header-icon-size;
+                height: $eve-accordion-header-icon-size;
             }
         }
     }
