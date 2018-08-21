@@ -78,4 +78,8 @@ $eve-grid-vertical-alignments: (
             }
         }
     }
+
+    &.is-multiline {
+        flex-wrap: wrap;
+    }
 }
