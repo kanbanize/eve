@@ -1,4 +1,4 @@
-// scss-lint:disable ImportantRule
+// sass-lint:disable no-important
 $eve-text-transforms: (
     lowercase,
     uppercase,
@@ -22,9 +22,9 @@ $eve-text-colors: (
     success: $eve-color-success,
     muted: $eve-color-darkest-silver
 );
-$eve-font-weights: (
+$eve-text-weights: (
     light: 300,
-    normal: 400,
+    // normal: 400,
     semibold: 600,
     bold: 700
 );
@@ -60,9 +60,9 @@ $eve-font-weights: (
     }
 }
 
-@each $eve-font-weight in map-keys($eve-font-weights) {
-    .eve-text-#{$eve-font-weight} {
-        font-weight: map-get($eve-font-weights, $eve-font-weight);
+@each $eve-text-weight in map-keys($eve-text-weights) {
+    .eve-text-#{$eve-text-weight} {
+        font-weight: map-get($eve-text-weights, $eve-text-weight);
     }
 }
 

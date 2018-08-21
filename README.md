@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
 
-A kickass CSS Framework
+A simple, minimal CSS Framework
 
 ## Installation
 

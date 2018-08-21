@@ -1,3 +1,8 @@
+$eve-input-colors: (
+    success: $eve-color-success,
+    warning: $eve-color-warning,
+    danger: $eve-color-danger
+);
 $eve-input-sizes: (
     small: 1.75rem,
     normal: 2.25rem,
@@ -25,6 +30,7 @@ $eve-input-font-sizes: (
     appearance: none;
     font-family: inherit;
     box-sizing: border-box;
+    min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
 
     &::placeholder {
         font-family: inherit;
@@ -63,18 +69,18 @@ $eve-input-font-sizes: (
         }
     }
 
+    @each $eve-button-color in map-keys($eve-button-colors) {
+        $color: map-get($eve-button-colors, $eve-button-color);
+
+        &.is-#{$eve-button-color} {
+            border: 1px solid $color;
+        }
+    }
+
     &:disabled {
         background: $eve-color-dark-silver;
         color: $eve-color-darkest-silver;
         pointer-events: none;
-    }
-
-    &.is-danger {
-        border: 1px solid $eve-color-danger;
-    }
-
-    &.is-success {
-        border: 1px solid $eve-color-success;
     }
 }
 

@@ -66,11 +66,10 @@ $eve-accordion-margin-bottom: .5rem !default;
                 top: 0;
                 right: 0;
                 background: $eve-accordion-header-icon-background;
+                box-sizing: border-box;
                 height: $eve-accordion-header-height;
                 width: $eve-accordion-header-height;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                padding: $eve-accordion-header-icon-size / 2;
             }
 
             i {
@@ -80,9 +79,6 @@ $eve-accordion-margin-bottom: .5rem !default;
 
             svg {
                 fill: $eve-accordion-header-icon-color;
-                width: $eve-accordion-header-icon-size;
-                height: $eve-accordion-header-icon-size;
-                padding: $eve-accordion-header-icon-size / 2;
             }
         }
     }
