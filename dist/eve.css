@@ -1046,14 +1046,18 @@
     font-size: 1rem; }
     .eve-input.is-large.is-rounded {
       border-radius: 1.5rem; }
+  .eve-input.is-primary {
+    border: 1px solid #2196f3; }
+  .eve-input.is-success {
+    border: 1px solid #4caf50; }
+  .eve-input.is-warning {
+    border: 1px solid #ff9800; }
+  .eve-input.is-danger {
+    border: 1px solid #f44336; }
   .eve-input:disabled {
     background: #cfd8dc;
     color: #607d8b;
     pointer-events: none; }
-  .eve-input.is-danger {
-    border: 1px solid #f44336; }
-  .eve-input.is-success {
-    border: 1px solid #4caf50; }
 
 .eve-input-field {
   position: relative;
@@ -2007,9 +2011,6 @@
 
 .eve-text-light {
   font-weight: 300; }
-
-.eve-text-normal {
-  font-weight: 400; }
 
 .eve-text-semibold {
   font-weight: 600; }

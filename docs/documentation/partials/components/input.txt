@@ -66,4 +66,12 @@
             <input type="text" value="Disabled" class="eve-input" disabled="disabled">
         </div>
     </div>
+    <div class="component-content">
+        <div class="component-header">Colors</div>
+        <div class="component-example">
+            <input type="text" class="eve-input is-success" placeholder="Success">
+            <input type="text" class="eve-input is-warning" placeholder="Warning">
+            <input type="text" class="eve-input is-danger" placeholder="Danger">
+        </div>
+    </div>
 </div>
