@@ -30,6 +30,7 @@ $eve-input-font-sizes: (
     appearance: none;
     font-family: inherit;
     box-sizing: border-box;
+    min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
 
     &::placeholder {
         font-family: inherit;
