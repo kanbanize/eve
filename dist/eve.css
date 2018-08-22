@@ -132,6 +132,8 @@
         margin: -1.5rem 0; }
         .eve-row.has-gap-large > .eve-column {
           padding: 1.5rem 0; } }
+  .eve-row.is-multiline {
+    flex-wrap: wrap; }
 
 .eve-accordion {
   font-size: 0.875rem;
