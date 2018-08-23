@@ -12,7 +12,6 @@ $eve-text-alignments: (
 );
 $eve-text-sizes: (
     small: $eve-font-small,
-    normal: $eve-font-normal,
     large: $eve-font-large,
 );
 $eve-text-colors: (
@@ -24,7 +23,7 @@ $eve-text-colors: (
 );
 $eve-text-weights: (
     light: 300,
-    // normal: 400,
+    normal: 400,
     semibold: 600,
     bold: 700
 );
