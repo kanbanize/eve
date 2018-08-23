@@ -896,11 +896,13 @@
     color: #f44336; }
 
 .eve-divider {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative; }
+  .eve-divider[data-content] {
+    margin: 1rem 0 0.5rem; }
   .eve-divider::before {
     content: '';
     position: absolute;

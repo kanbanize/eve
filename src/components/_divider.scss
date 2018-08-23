@@ -1,9 +1,13 @@
 .eve-divider {
-    margin: $eve-spacing-small 0 $eve-spacing-tiny;
+    margin: $eve-spacing-small 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    &[data-content] {
+        margin: $eve-spacing-small 0 $eve-spacing-tiny;
+    }
 
     &::before {
         content: '';
