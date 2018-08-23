@@ -1985,13 +1985,13 @@
   word-wrap: normal; }
 
 .eve-text-small {
-  font-size: 0.75rem; }
+  font-size: 0.75rem !important; }
 
 .eve-text-normal {
-  font-size: 0.875rem; }
+  font-size: 0.875rem !important; }
 
 .eve-text-large {
-  font-size: 1rem; }
+  font-size: 1rem !important; }
 
 .eve-text-primary {
   color: #2196f3 !important; }
@@ -2009,13 +2009,13 @@
   color: #607d8b !important; }
 
 .eve-text-light {
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
 .eve-text-semibold {
-  font-weight: 600; }
+  font-weight: 600 !important; }
 
 .eve-text-bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .eve-text-unselectable {
   -webkit-user-select: none !important;

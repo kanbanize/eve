@@ -50,7 +50,7 @@ $eve-text-weights: (
 
 @each $eve-text-size in map-keys($eve-text-sizes) {
     .eve-text-#{$eve-text-size} {
-        font-size: map-get($eve-text-sizes, $eve-text-size);
+        font-size: map-get($eve-text-sizes, $eve-text-size) !important;
     }
 }
 
@@ -62,7 +62,7 @@ $eve-text-weights: (
 
 @each $eve-text-weight in map-keys($eve-text-weights) {
     .eve-text-#{$eve-text-weight} {
-        font-weight: map-get($eve-text-weights, $eve-text-weight);
+        font-weight: map-get($eve-text-weights, $eve-text-weight) !important;
     }
 }
 
