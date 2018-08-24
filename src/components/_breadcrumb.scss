@@ -32,7 +32,6 @@ $eve-breadcrumb-item-active-color: $eve-color-primary !default;
         &.is-active {
             a {
                 color: $eve-breadcrumb-item-active-color;
-                pointer-events: none;
             }
         }
     }

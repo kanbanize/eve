@@ -338,8 +338,7 @@
       color: #2196f3;
       text-decoration: underline; }
   .eve-breadcrumb li.is-active a {
-    color: #2196f3;
-    pointer-events: none; }
+    color: #2196f3; }
 
 .eve-button {
   display: inline-flex;
@@ -1989,9 +1988,6 @@
 .eve-text-small {
   font-size: 0.75rem !important; }
 
-.eve-text-normal {
-  font-size: 0.875rem !important; }
-
 .eve-text-large {
   font-size: 1rem !important; }
 
@@ -2012,6 +2008,9 @@
 
 .eve-text-light {
   font-weight: 300 !important; }
+
+.eve-text-normal {
+  font-weight: 400 !important; }
 
 .eve-text-semibold {
   font-weight: 600 !important; }
