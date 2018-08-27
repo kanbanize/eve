@@ -1,5 +1,25 @@
 # Eve Changelog
 
+## 1.9.0 (27 August 2018)
+
+### Added
+- Add horizontal and vertical gaps | ([See Gap Utilities](https://kanbanize.github.io/eve/documentation/#utilities/gap))
+- Add font-weight classes | ([See Text Utilities](https://kanbanize.github.io/eve/documentation/#utilities/text))
+- Add input validation classes | ([See Input Component](https://kanbanize.github.io/eve/documentation/#components/input))
+- Add multiline grid | ([See Grid Multiline](https://kanbanize.github.io/eve/documentation/#grid/multiline))
+
+### Changed
+- Change divider spacing from 1.5rem to 1rem
+
+### Fixed
+- Fix size of the ```svg``` icon in accordion header
+- Fix input width under Firefox
+
+### Removed
+- Remove ```.eve-text-normal``` size
+
+---
+
 ## 1.8.0 (04 July 2018)
 
 ### Added
