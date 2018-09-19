@@ -138,14 +138,14 @@
 .eve-accordion {
   font-size: 0.875rem;
   position: relative;
-  padding-left: 0.625rem; }
+  padding-left: 0.5rem; }
   .eve-accordion::after {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 0.125rem;
+    width: 1px;
     background: #2196f3; }
   .eve-accordion > input:checked ~ .eve-accordion-content {
     display: block; }
