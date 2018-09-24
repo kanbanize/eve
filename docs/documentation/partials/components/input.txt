@@ -26,30 +26,16 @@
     <div class="component-content">
         <div class="component-header">Loading</div>
         <div class="component-example">
-            <div class="eve-input-field is-loading is-small">
-                <input type="text" class="eve-input is-small" placeholder="Small loading">
-            </div>
             <div class="eve-input-field is-loading">
                 <input type="text" class="eve-input" placeholder="Normal loading">
-            </div>
-            <div class="eve-input-field is-loading is-large">
-                <input type="text" class="eve-input is-large" placeholder="Large loading">
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Icon</div>
         <div class="component-example">
-            <div class="eve-input-field has-icon is-small">
-                <input type="text" class="eve-input is-small" placeholder="Small icon">
-                <i class="material-icons">person</i>
-            </div>
             <div class="eve-input-field has-icon">
                 <input type="text" class="eve-input" placeholder="Normal icon">
-                <i class="material-icons">person</i>
-            </div>
-            <div class="eve-input-field has-icon is-large">
-                <input type="text" class="eve-input is-large" placeholder="Large icon">
                 <i class="material-icons">person</i>
             </div>
         </div>
