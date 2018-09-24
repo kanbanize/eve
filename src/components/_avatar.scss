@@ -53,6 +53,8 @@ $eve-avatar-border-radius: 50% !default;
             bottom: 0;
             right: 0;
             box-shadow: 0 0 0 .125rem $eve-color-light;
+            height: map-get($eve-avatar-sizes, 'normal') / 4;
+            width: map-get($eve-avatar-sizes, 'normal') / 4;
         }
     }
 
