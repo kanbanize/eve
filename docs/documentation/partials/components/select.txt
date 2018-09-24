@@ -46,26 +46,8 @@
     <div class="component-content">
         <div class="component-header">Icon</div>
         <div class="component-example">
-            <div class="eve-select-field has-icon is-small">
-                <select class="eve-select is-small">
-                    <option>Item 01</option>
-                    <option>Item 02</option>
-                    <option>Item 03</option>
-                    <option>Item 04</option>
-                </select>
-                <i class="material-icons">person</i>
-            </div>
             <div class="eve-select-field has-icon">
                 <select class="eve-select">
-                    <option>Item 01</option>
-                    <option>Item 02</option>
-                    <option>Item 03</option>
-                    <option>Item 04</option>
-                </select>
-                <i class="material-icons">person</i>
-            </div>
-            <div class="eve-select-field has-icon is-large">
-                <select class="eve-select is-large">
                     <option>Item 01</option>
                     <option>Item 02</option>
                     <option>Item 03</option>
