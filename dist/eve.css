@@ -667,6 +667,7 @@
 
 .eve-checkbox-control {
   display: flex;
+  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-checkbox-control .eve-checkbox {
@@ -1378,6 +1379,7 @@
 
 .eve-radio-control {
   display: flex;
+  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-radio-control .eve-radio {
@@ -1532,6 +1534,7 @@
 
 .eve-switch-control {
   display: flex;
+  align-items: center;
   font-size: 0.875rem;
   word-break: break-all; }
   .eve-switch-control .eve-switch {
