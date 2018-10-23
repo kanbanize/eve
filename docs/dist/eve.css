@@ -1964,6 +1964,22 @@
 .eve-overflow-hidden {
   overflow: hidden !important; }
 
+.eve-position-static {
+  position: static !important; }
+
+.eve-position-absolute {
+  position: absolute !important; }
+
+.eve-position-fixed {
+  position: fixed !important; }
+
+.eve-position-relative {
+  position: relative !important; }
+
+.eve-position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important; }
+
 .eve-text-lowercase {
   text-transform: lowercase !important; }
 
