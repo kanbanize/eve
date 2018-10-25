@@ -137,16 +137,16 @@
 
 .eve-accordion {
   font-size: 0.875rem;
-  position: relative;
-  padding-left: 0.5rem; }
+  padding-left: 0.5rem;
+  position: relative; }
   .eve-accordion::after {
+    width: 1px;
+    background: #2196f3;
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    width: 1px;
-    background: #2196f3; }
+    left: 0; }
   .eve-accordion > input:checked ~ .eve-accordion-content {
     display: block; }
   .eve-accordion .eve-accordion-header {
@@ -169,14 +169,14 @@
       padding-right: 3rem; }
       .eve-accordion.has-icon .eve-accordion-header i,
       .eve-accordion.has-icon .eve-accordion-header svg {
+        height: 2rem;
+        width: 2rem;
+        padding: 0.5rem;
+        background: #2196f3;
         position: absolute;
         top: 0;
         right: 0;
-        background: #2196f3;
-        box-sizing: border-box;
-        height: 2rem;
-        width: 2rem;
-        padding: 0.5rem; }
+        box-sizing: border-box; }
       .eve-accordion.has-icon .eve-accordion-header i {
         color: #fff;
         font-size: 1rem; }
