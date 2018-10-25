@@ -1,13 +1,11 @@
 <a href="https://kanbanize.github.io/eve">
-    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/logo.png" alt="EveCSS" width="250" height="250">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/cover.png" alt="EveCSS">
 </a>
 
 # Eve
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
-
-A simple, minimal CSS Framework
 
 ## Installation
 

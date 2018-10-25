@@ -1,0 +1,6 @@
+# https://github.com/browserslist/browserslist
+
+>= 1%
+last 1 major version
+not dead
+not ie <= 10

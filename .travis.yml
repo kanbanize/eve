@@ -7,4 +7,4 @@ dist: trusty
 before_script:
   - npm install
 
-script: gulp build
+script: npm run build
