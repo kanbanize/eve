@@ -1958,11 +1958,17 @@
   margin-bottom: 3rem !important;
   margin-top: 3rem !important; }
 
-.eve-overflow-auto {
-  overflow: auto !important; }
+.eve-overflow-visible {
+  overflow: visible !important; }
 
 .eve-overflow-hidden {
   overflow: hidden !important; }
+
+.eve-overflow-scroll {
+  overflow: scroll !important; }
+
+.eve-overflow-auto {
+  overflow: auto !important; }
 
 .eve-position-static {
   position: static !important; }
