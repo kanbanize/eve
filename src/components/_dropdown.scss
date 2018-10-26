@@ -69,7 +69,7 @@ $eve-dropdown-list-item-size: 2rem;
         ul {
             li {
                 &:nth-child(even) {
-                    background: #eceff1;
+                    background: $eve-color-bright-silver;
                 }
             }
         }

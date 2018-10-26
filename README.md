@@ -1,11 +1,13 @@
-<a href="https://kanbanize.github.io/eve">
-    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/cover.png" alt="EveCSS">
-</a>
-
 # Eve
 
 [![Build Status](https://travis-ci.org/kanbanize/eve.svg?branch=master)](https://travis-ci.org/kanbanize/eve)
 [![npm version](https://img.shields.io/npm/v/evecss.svg)](https://www.npmjs.com/package/evecss)
+
+<a href="https://kanbanize.github.io/eve">
+    <img src="https://raw.githubusercontent.com/kanbanize/eve/master/docs/website/assets/images/cover.png" alt="EveCSS">
+</a>
+
+---
 
 ## Installation
 
