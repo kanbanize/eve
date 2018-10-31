@@ -17,7 +17,7 @@
     <div class="component-content">
         <div class="component-example">
             <div class="eve-form-control">
-                <input type="text" class="eve-input" placeholder="Name">
+                <input type="text" class="eve-input">
                 <button class="eve-button is-primary">Save</button>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="eve-form-group">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
-                    <input type="text" class="eve-input" placeholder="Name">
+                    <input type="text" class="eve-input">
                     <button class="eve-button is-primary">Save</button>
                 </div>
                 <div class="eve-form-help">Name must contains only letters.</div>
@@ -47,7 +47,7 @@
             <div class="eve-form-group is-inline">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
-                    <input type="text" class="eve-input" placeholder="Name">
+                    <input type="text" class="eve-input">
                     <button class="eve-button is-primary">Save</button>
                 </div>
             </div>
@@ -58,14 +58,14 @@
             <div class="eve-form-group is-inline">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
-                    <input type="text" class="eve-input" placeholder="Name">
+                    <input type="text" class="eve-input">
                     <button class="eve-button is-primary">Save</button>
                 </div>
             </div>
             <div class="eve-form-group is-inline">
                 <label class="eve-form-label">Password</label>
                 <div class="eve-form-control">
-                    <input type="password" class="eve-input" placeholder="Password">
+                    <input type="password" class="eve-input">
                     <button class="eve-button is-primary">Save</button>
                 </div>
             </div>
@@ -245,13 +245,13 @@
                     <div class="eve-column">
                         <div class="eve-form-group">
                             <label class="eve-form-label">First Name</label>
-                            <input type="text" class="eve-input" placeholder="Add your first name">
+                            <input type="text" class="eve-input">
                         </div>
                     </div>
                     <div class="eve-column">
                         <div class="eve-form-group">
                             <label class="eve-form-label">Last Name</label>
-                            <input type="text" class="eve-input" placeholder="Add your last name name">
+                            <input type="text" class="eve-input">
                         </div>
                     </div>
                 </div>
@@ -259,13 +259,13 @@
                     <div class="eve-column">
                         <div class="eve-form-group">
                             <label class="eve-form-label">Email</label>
-                            <input type="email" class="eve-input" placeholder="Add your email address">
+                            <input type="email" class="eve-input">
                         </div>
                     </div>
                     <div class="eve-column">
                         <div class="eve-form-group">
                             <label class="eve-form-label">Mobile</label>
-                            <input type="text" class="eve-input" placeholder="Add your mobile number">
+                            <input type="text" class="eve-input">
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@
                 </div>
                 <div class="eve-form-group">
                     <label class="eve-form-label">Bio</label>
-                    <textarea class="eve-textarea" placeholder="Tell us more about yourself"></textarea>
+                    <textarea class="eve-textarea"></textarea>
                 </div>
                 <div class="eve-form-group">
                     <label class="eve-checkbox-control">

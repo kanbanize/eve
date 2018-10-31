@@ -9,7 +9,8 @@
 
     .eve-form-help {
         margin-top: $eve-spacing-tiny;
-        font-size: $eve-font-normal;
+        font-size: $eve-font-small;
+        color: $eve-color-darkest-silver;
     }
 
     &.is-inline {
