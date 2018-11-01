@@ -24,7 +24,7 @@ $eve-tooltip-size: 1.75rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         word-wrap: normal;
-        will-change: transform;
+        z-index: 2147483648;
     }
 
     &.is-left {
