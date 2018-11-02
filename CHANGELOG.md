@@ -1,5 +1,33 @@
 # Eve Changelog
 
+## 1.10.0 (2 November 2018)
+
+### Added
+- Add utility [Position](https://kanbanize.github.io/eve/documentation/#utilities/position)
+- Add overflow utility classes:
+    - ```.eve-overflow-auto```
+    - ```.eve-overflow-scroll```
+- Add text utility decorations:
+    - ```.eve-text-line-through```
+    - ```.eve-text-overline```
+    - ```.eve-text-underline```
+
+### Changed
+- Change accordion line width
+- Change table header height
+- Change pagination box-shadow with border
+- Change form help color and font size
+
+### Fixed
+- Fix normal avatar width and height
+- Fix select width under Firefox
+- Fix alignment checkbox, radio, and switch components
+- Fix z-index of tooltip
+
+### Removed
+
+---
+
 ## 1.9.0 (27 August 2018)
 
 ### Added
@@ -23,7 +51,7 @@
 ## 1.8.0 (04 July 2018)
 
 ### Added
-- Add new component [Color Picker](https://kanbanize.github.io/eve/documentation/#components/color-picker)
+- Add [Color Picker](https://kanbanize.github.io/eve/documentation/#components/color-picker) component
 
 ### Changed
 - Change tooltip font-size from .875rem to .75rem
@@ -68,7 +96,7 @@
 
 ### Added
 - Add text utility ```.eve-text-justify```
-- Add new utility [Float](https://kanbanize.github.io/eve/documentation/#utilities/float)
+- Add [Float](https://kanbanize.github.io/eve/documentation/#utilities/float) utility
 
 ### Changed
 - Change accordion header color
