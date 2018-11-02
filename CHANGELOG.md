@@ -24,8 +24,6 @@
 - Fix alignment checkbox, radio, and switch components
 - Fix z-index of tooltip
 
-### Removed
-
 ---
 
 ## 1.9.0 (27 August 2018)
