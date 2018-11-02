@@ -1974,6 +1974,15 @@
 .eve-text-capitalize {
   text-transform: capitalize !important; }
 
+.eve-text-line-through {
+  text-decoration: line-through !important; }
+
+.eve-text-overline {
+  text-decoration: overline !important; }
+
+.eve-text-underline {
+  text-decoration: underline !important; }
+
 .eve-text-left {
   text-align: left !important; }
 
@@ -1985,12 +1994,6 @@
 
 .eve-text-justify {
   text-align: justify !important; }
-
-.eve-text-truncate {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-wrap: normal; }
 
 .eve-text-small {
   font-size: 0.75rem !important; }
@@ -2024,6 +2027,12 @@
 
 .eve-text-bold {
   font-weight: 700 !important; }
+
+.eve-text-truncate {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  word-wrap: normal !important; }
 
 .eve-text-unselectable {
   -webkit-user-select: none !important;

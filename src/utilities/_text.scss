@@ -4,6 +4,11 @@ $eve-text-transforms: (
     uppercase,
     capitalize
 );
+$eve-text-decorations: (
+    line-through,
+    overline,
+    underline
+);
 $eve-text-alignments: (
     left,
     center,
@@ -34,17 +39,16 @@ $eve-text-weights: (
     }
 }
 
+@each $eve-text-decoration in $eve-text-decorations {
+    .eve-text-#{$eve-text-decoration} {
+        text-decoration: $eve-text-decoration !important;
+    }
+}
+
 @each $eve-text-alignment in $eve-text-alignments {
     .eve-text-#{$eve-text-alignment} {
         text-align: $eve-text-alignment !important;
     }
-}
-
-.eve-text-truncate {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-wrap: normal;
 }
 
 @each $eve-text-size in map-keys($eve-text-sizes) {
@@ -63,6 +67,13 @@ $eve-text-weights: (
     .eve-text-#{$eve-text-weight} {
         font-weight: map-get($eve-text-weights, $eve-text-weight) !important;
     }
+}
+
+.eve-text-truncate {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    word-wrap: normal !important;
 }
 
 .eve-text-unselectable {
