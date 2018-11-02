@@ -108,16 +108,11 @@ a {
             display: block;
             color: #333;
             margin-bottom: 1rem;
-            font-size: .75rem;
-            text-transform: uppercase;
+            font-size: .875rem;
 
-            &:hover {
-                color: #2196f3;
-            }
-
+            &:hover,
             &.is-active {
                 color: #2196f3;
-                font-weight: 600;
             }
         }
     }

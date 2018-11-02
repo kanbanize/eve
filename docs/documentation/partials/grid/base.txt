@@ -7,16 +7,14 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-    }
-
-    .eve-row > div:not(:last-child) p {
-        margin-right: 1px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
     }
 </style>
 <div class="component">
     <div class="component-title">Grid</div>
     <div class="component-content">
-        <div class="eve-row has-gap-tiny">
+        <div class="eve-row">
             <div class="eve-column">
                 <p>1</p>
             </div>
