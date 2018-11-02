@@ -11,13 +11,15 @@
         align-items: center;
         justify-content: center;
         margin: 0;
+        border: 1px solid #fff;
+        box-sizing: border-box;
     }
 </style>
 <div class="component">
     <div class="component-title">Nested Grids</div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-row has-gap-tiny">
+            <div class="eve-row">
                 <div class="eve-column is-4">
                     <p>4</p>
                 </div>

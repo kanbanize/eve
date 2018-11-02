@@ -9,18 +9,20 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Alignment</div>
+        <div class="component-header">Decorations</div>
+        <div class="component-example">
+            <p class="eve-text-line-through">Line through text</p>
+            <p class="eve-text-overline">Overline text</p>
+            <p class="eve-text-underline">Underline text</p>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Alignments</div>
         <div class="component-example">
             <p class="eve-text-left">Left aligned text</p>
             <p class="eve-text-center">Center aligned text</p>
             <p class="eve-text-right">Right aligned text</p>
             <p class="eve-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Truncate</div>
-        <div class="component-example">
-            <p class="eve-text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque fugiat corporis accusantium similique fuga quae suscipit numquam minus culpa doloremque voluptatum pariatur dolorem ex eligendi nam, dolor deleniti consequuntur atque?</p>
         </div>
     </div>
     <div class="component-content">
@@ -47,6 +49,12 @@
             <p class="eve-text-normal">Normal</p>
             <p class="eve-text-semibold">Semibold</p>
             <p class="eve-text-bold">Bold</p>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Truncate</div>
+        <div class="component-example">
+            <p class="eve-text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque fugiat corporis accusantium similique fuga quae suscipit numquam minus culpa doloremque voluptatum pariatur dolorem ex eligendi nam, dolor deleniti consequuntur atque?</p>
         </div>
     </div>
     <div class="component-content">

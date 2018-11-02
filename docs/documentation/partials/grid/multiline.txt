@@ -7,7 +7,8 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        margin: 2px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
     }
 </style>
 <div class="component">
