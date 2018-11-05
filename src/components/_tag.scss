@@ -25,6 +25,16 @@ $eve-tag-size: 1.75rem;
                 background: lighten($color, 40);
                 color: $color;
 
+                .eve-tag-icon {
+                    i {
+                        color: $color;
+                    }
+
+                    svg {
+                        fill: $color;
+                    }
+                }
+
                 .eve-tag-action {
                     background: $color;
 
@@ -71,11 +81,13 @@ $eve-tag-size: 1.75rem;
 
         i {
             font-size: $eve-tag-size / 2;
+            color: $eve-color-light;
         }
 
         svg {
             width: $eve-tag-size / 2;
             height: $eve-tag-size / 2;
+            fill: $eve-color-light;
         }
     }
 
@@ -89,11 +101,13 @@ $eve-tag-size: 1.75rem;
 
         i {
             font-size: $eve-tag-size / 2;
+            color: $eve-color-light;
         }
 
         svg {
             width: $eve-tag-size / 2;
             height: $eve-tag-size / 2;
+            fill: $eve-color-light;
         }
     }
 }

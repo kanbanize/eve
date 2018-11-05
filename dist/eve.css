@@ -732,7 +732,7 @@
       .eve-chip .eve-chip-action:hover i {
         color: #fff; }
       .eve-chip .eve-chip-action:hover svg {
-        color: #fff; }
+        fill: #fff; }
     .eve-chip .eve-chip-action i {
       font-size: 0.875rem;
       color: #b0bec5; }
@@ -1633,6 +1633,10 @@
     .eve-tag.is-primary:hover {
       background: #e3f2fd;
       color: #2196f3; }
+      .eve-tag.is-primary:hover .eve-tag-icon i {
+        color: #2196f3; }
+      .eve-tag.is-primary:hover .eve-tag-icon svg {
+        fill: #2196f3; }
       .eve-tag.is-primary:hover .eve-tag-action {
         background: #2196f3; }
         .eve-tag.is-primary:hover .eve-tag-action i {
@@ -1651,6 +1655,10 @@
     .eve-tag.is-success:hover {
       background: #d9eeda;
       color: #4caf50; }
+      .eve-tag.is-success:hover .eve-tag-icon i {
+        color: #4caf50; }
+      .eve-tag.is-success:hover .eve-tag-icon svg {
+        fill: #4caf50; }
       .eve-tag.is-success:hover .eve-tag-action {
         background: #4caf50; }
         .eve-tag.is-success:hover .eve-tag-action i {
@@ -1669,6 +1677,10 @@
     .eve-tag.is-warning:hover {
       background: #ffeacc;
       color: #ff9800; }
+      .eve-tag.is-warning:hover .eve-tag-icon i {
+        color: #ff9800; }
+      .eve-tag.is-warning:hover .eve-tag-icon svg {
+        fill: #ff9800; }
       .eve-tag.is-warning:hover .eve-tag-action {
         background: #ff9800; }
         .eve-tag.is-warning:hover .eve-tag-action i {
@@ -1687,6 +1699,10 @@
     .eve-tag.is-danger:hover {
       background: #fff8f7;
       color: #f44336; }
+      .eve-tag.is-danger:hover .eve-tag-icon i {
+        color: #f44336; }
+      .eve-tag.is-danger:hover .eve-tag-icon svg {
+        fill: #f44336; }
       .eve-tag.is-danger:hover .eve-tag-action {
         background: #f44336; }
         .eve-tag.is-danger:hover .eve-tag-action i {
@@ -1710,10 +1726,12 @@
     justify-content: center;
     margin-right: 0.5rem; }
     .eve-tag .eve-tag-icon i {
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      color: #fff; }
     .eve-tag .eve-tag-icon svg {
       width: 0.875rem;
-      height: 0.875rem; }
+      height: 0.875rem;
+      fill: #fff; }
   .eve-tag .eve-tag-action {
     display: flex;
     align-items: center;
@@ -1722,10 +1740,12 @@
     border-radius: 50%;
     cursor: pointer; }
     .eve-tag .eve-tag-action i {
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      color: #fff; }
     .eve-tag .eve-tag-action svg {
       width: 0.875rem;
-      height: 0.875rem; }
+      height: 0.875rem;
+      fill: #fff; }
 
 .eve-tags {
   display: flex;
@@ -2061,3 +2081,9 @@
      -moz-user-select: none !important;
       -ms-user-select: none !important;
           user-select: none !important; }
+
+.eve-visibility-visible {
+  visibility: visible !important; }
+
+.eve-visibility-hidden {
+  visibility: hidden !important; }
