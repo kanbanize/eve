@@ -1,46 +1,45 @@
 {
-  "name": "evecss",
-  "version": "1.10.0",
-  "description": "A simple, minimal CSS Framework",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kanbanize/eve.git"
-  },
-  "scripts": {
-    "start": "node node_modules/http-server/bin/http-server -p 8000 -o -a localhost",
-    "build": "gulp build",
-    "build-docs": "gulp build-docs",
-    "build-site": "gulp build-site",
-    "build-all": "gulp build-all",
-    "watch": "gulp watch"
-  },
-  "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "css",
-    "html",
-    "flexbox",
-    "design",
-    "framework",
-    "responsive",
-    "sass"
-  ],
-  "bugs": {
-    "url": "https://github.com/kanbanize/eve/issues"
-  },
-  "homepage": "https://kanbanize.github.io/eve/",
-  "main": "dist/eve.min.css",
-  "devDependencies": {
-    "autoprefixer": "^8.6.5",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-if": "^2.0.2",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.1",
-    "http-server": "^0.11.1",
-    "sass-lint": "^1.12.1"
-  }
+    "name": "evecss",
+    "version": "1.10.0",
+    "description": "A simple, minimal CSS Framework",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kanbanize/eve.git"
+    },
+    "scripts": {
+        "start": "node node_modules/http-server/bin/http-server -p 8000 -o -a localhost",
+        "build": "gulp build",
+        "build-docs": "gulp build-docs",
+        "build-site": "gulp build-site",
+        "build-all": "gulp build-all",
+        "watch": "gulp watch"
+    },
+    "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "css",
+        "html",
+        "flexbox",
+        "design",
+        "framework",
+        "responsive",
+        "sass"
+    ],
+    "bugs": {
+        "url": "https://github.com/kanbanize/eve/issues"
+    },
+    "homepage": "https://kanbanize.github.io/eve/",
+    "main": "dist/eve.min.css",
+    "devDependencies": {
+        "autoprefixer": "^8.6.5",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-if": "^2.0.2",
+        "gulp-plumber": "^1.2.0",
+        "gulp-postcss": "^7.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.1",
+        "http-server": "^0.11.1"
+    }
 }

@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
-var autoprefixer = require('autoprefixer');
 var plumber = require('gulp-plumber');
 var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
@@ -47,9 +46,7 @@ gulp.task('build-eve', function() {
     return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync())
-        .pipe(postcss([
-            autoprefixer()
-        ]))
+        .pipe(postcss())
         .pipe(rename({
             basename: config.eve.out
         }))
@@ -63,9 +60,7 @@ gulp.task('build-eve-min', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
+        .pipe(postcss())
         .pipe(rename({
             basename: config.eve.out,
             suffix: '.min'
@@ -91,9 +86,7 @@ gulp.task('build-docs-css', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
+        .pipe(postcss())
         .pipe(rename({
             basename: config.docs.css.out,
             suffix: '.min'
@@ -118,9 +111,7 @@ gulp.task('build-site-css', function() {
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
+        .pipe(postcss())
         .pipe(rename({
             basename: config.site.css.out,
             suffix: '.min'
