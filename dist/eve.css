@@ -968,10 +968,10 @@
     background: #eceff1; }
 
 .eve-feedback {
-  padding: 0.438rem 1rem;
+  padding: 0.5rem 1rem;
   color: #333;
   font-size: 0.75rem;
-  line-height: 1.125rem; }
+  line-height: 1.25rem; }
   .eve-feedback.is-success {
     background: #b5dfb7; }
   .eve-feedback.is-warning {
@@ -1799,22 +1799,22 @@
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
-    content: attr(data-tooltip);
-    pointer-events: none;
     background: #263238;
     color: #fff;
     font-size: 0.75rem;
     padding: 0 1rem;
-    position: absolute;
-    text-transform: none;
     height: 1.75rem;
     line-height: 1.75rem;
     border-radius: 0.875rem;
+    max-width: 20rem;
+    transition: all .2s ease;
+    content: attr(data-tooltip);
+    pointer-events: none;
+    position: absolute;
+    text-transform: none;
     font-family: inherit;
     font-weight: normal;
-    transition: all .2s ease;
     opacity: 0;
-    max-width: 20rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
