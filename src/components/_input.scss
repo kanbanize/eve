@@ -69,10 +69,10 @@ $eve-input-font-sizes: (
         }
     }
 
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        $color: map-get($eve-button-colors, $eve-button-color);
+    @each $eve-input-color in map-keys($eve-input-colors) {
+        $color: map-get($eve-input-colors, $eve-input-color);
 
-        &.is-#{$eve-button-color} {
+        &.is-#{$eve-input-color} {
             border: 1px solid $color;
         }
     }
