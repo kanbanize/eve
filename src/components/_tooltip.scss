@@ -1,25 +1,27 @@
-$eve-tooltip-size: 1.75rem;
+$eve-tooltip-size: 1.75rem !default;
+$eve-tooltip-color: #263238 !default;
+$eve-tooltip-max-width: 20rem !default;
 
 .eve-tooltip {
     position: relative;
 
     &::after {
-        content: attr(data-tooltip);
-        pointer-events: none;
-        background: #263238;
+        background: $eve-tooltip-color;
         color: $eve-color-light;
         font-size: $eve-font-small;
         padding: 0 $eve-spacing-small;
-        position: absolute;
-        text-transform: none;
         height: $eve-tooltip-size;
         line-height: $eve-tooltip-size;
         border-radius: $eve-tooltip-size / 2;
+        max-width: $eve-tooltip-max-width;
+        transition: all .2s ease; // sass-lint:disable-line no-transition-all
+        content: attr(data-tooltip);
+        pointer-events: none;
+        position: absolute;
+        text-transform: none;
         font-family: inherit;
         font-weight: normal;
-        transition: all .2s ease;
         opacity: 0;
-        max-width: 20rem;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
