@@ -1,5 +1,17 @@
 # Eve Changelog
 
+## 1.11.0 (7 November 2018)
+
+### Added
+- Add utility [Visibility](https://kanbanize.github.io/eve/documentation/#utilities/visibility)
+- Add textarea colors [See Textarea](https://kanbanize.github.io/eve/documentation/#components/textarea)
+- Add select colors [See Select](https://kanbanize.github.io/eve/documentation/#components/select)
+
+### Fixed
+- Fix feedback height
+
+---
+
 ## 1.10.0 (2 November 2018)
 
 ### Added
