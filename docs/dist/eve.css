@@ -1050,8 +1050,6 @@
     font-size: 1rem; }
     .eve-input.is-large.is-rounded {
       border-radius: 1.5rem; }
-  .eve-input.is-primary {
-    border: 1px solid #2196f3; }
   .eve-input.is-success {
     border: 1px solid #4caf50; }
   .eve-input.is-warning {
@@ -1442,6 +1440,12 @@
       border-radius: 1.5rem; }
     .eve-select.is-large:disabled {
       background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem; }
+  .eve-select.is-success {
+    border: 1px solid #4caf50; }
+  .eve-select.is-warning {
+    border: 1px solid #ff9800; }
+  .eve-select.is-danger {
+    border: 1px solid #f44336; }
   .eve-select:disabled {
     color: #607d8b;
     pointer-events: none; }
@@ -1763,13 +1767,14 @@
   width: 100%;
   min-width: 100%;
   max-width: 100%;
+  min-height: 2.25rem;
   font-size: 0.875rem;
   color: #333;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-family: inherit;
-  line-height: 1.25rem;
+  line-height: 1.125rem;
   box-sizing: border-box; }
   .eve-textarea::-webkit-input-placeholder {
     font-family: inherit;
@@ -1789,6 +1794,12 @@
     resize: none; }
   .eve-textarea:read-only {
     resize: none; }
+  .eve-textarea.is-success {
+    border: 1px solid #4caf50; }
+  .eve-textarea.is-warning {
+    border: 1px solid #ff9800; }
+  .eve-textarea.is-danger {
+    border: 1px solid #f44336; }
   .eve-textarea:disabled {
     background: #cfd8dc;
     border-color: #cfd8dc;
