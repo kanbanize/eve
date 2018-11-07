@@ -1,3 +1,8 @@
+<style>
+    .eve-textarea:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+</style>
 <div class="component">
     <div class="component-title">Textarea</div>
     <div class="component-content">
@@ -15,6 +20,14 @@
         <div class="component-header">Disabled</div>
         <div class="component-example">
             <textarea class="eve-textarea" disabled="disabled"></textarea>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Read Only</div>
+        <div class="component-example">
+            <textarea class="eve-textarea is-success" placeholder="Success"></textarea>
+            <textarea class="eve-textarea is-warning" placeholder="Warning"></textarea>
+            <textarea class="eve-textarea is-danger" placeholder="Danger"></textarea>
         </div>
     </div>
 </div>
