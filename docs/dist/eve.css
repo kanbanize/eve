@@ -669,7 +669,7 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
-  word-break: break-all; }
+  word-break: break-word; }
   .eve-checkbox-control .eve-checkbox {
     flex-shrink: 0;
     margin-right: 0.5rem; }
@@ -1380,7 +1380,7 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
-  word-break: break-all; }
+  word-break: break-word; }
   .eve-radio-control .eve-radio {
     flex-shrink: 0;
     margin-right: 0.5rem; }
@@ -1541,7 +1541,7 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
-  word-break: break-all; }
+  word-break: break-word; }
   .eve-switch-control .eve-switch {
     flex-shrink: 0;
     margin-right: 0.5rem; }
@@ -1882,6 +1882,12 @@
 
 .eve-display-block {
   display: block !important; }
+
+.eve-display-inline-flex {
+  display: inline-flex !important; }
+
+.eve-display-flex {
+  display: flex !important; }
 
 .eve-float-left {
   float: left !important; }

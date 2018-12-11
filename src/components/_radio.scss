@@ -74,7 +74,7 @@ $eve-radio-size: 1.125rem;
     display: flex;
     align-items: center;
     font-size: $eve-font-normal;
-    word-break: break-all;
+    word-break: break-word;
 
     .eve-radio {
         flex-shrink: 0;

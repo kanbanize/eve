@@ -80,7 +80,7 @@ $eve-checkbox-mark-border-width: .125rem;
     display: flex;
     align-items: center;
     font-size: $eve-font-normal;
-    word-break: break-all;
+    word-break: break-word;
 
     .eve-checkbox {
         flex-shrink: 0;
