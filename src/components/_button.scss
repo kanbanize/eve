@@ -24,7 +24,7 @@ $eve-button-font-sizes: (
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 0;
+    border: 1px solid transparent;
     text-decoration: none;
     color: $eve-color-light;
     cursor: pointer;
@@ -121,13 +121,9 @@ $eve-button-font-sizes: (
                 background: darken($color, 5);
             }
 
-            &:active {
-                background: darken($color, 10);
-            }
-
             &.is-outlined {
                 color: $color;
-                box-shadow: inset 0 0 0 1px $color;
+                border-color: $color;
 
                 &.has-icon {
                     svg {
@@ -135,17 +131,9 @@ $eve-button-font-sizes: (
                     }
                 }
 
-                &:hover,
-                &:active {
-                    box-shadow: none;
-                }
-
                 &:hover {
-                    background: lighten($color, 40);
-                }
-
-                &:active {
-                    background: lighten($color, 35);
+                    background: $color;
+                    color: $eve-color-light;
                 }
             }
 
@@ -161,10 +149,6 @@ $eve-button-font-sizes: (
                 &:hover {
                     background: lighten($color, 40);
                 }
-
-                &:active {
-                    background: lighten($color, 35);
-                }
             }
         }
     }
@@ -175,7 +159,6 @@ $eve-button-font-sizes: (
 
     &.is-inverted {
         text-transform: uppercase;
-        box-shadow: none;
         font-weight: bold;
         background: transparent;
     }
@@ -256,7 +239,6 @@ $eve-button-font-sizes: (
         &.is-outlined {
             background: $eve-color-darker-silver;
             color: $eve-color-light;
-            box-shadow: none;
         }
 
         &.is-inverted {
@@ -305,7 +287,7 @@ $eve-button-font-sizes: (
             }
 
             &:not(:first-of-type) {
-                margin-left: 1px;
+                margin-left: 0;
             }
         }
     }
