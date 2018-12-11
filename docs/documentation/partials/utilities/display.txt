@@ -5,6 +5,8 @@
             <div class="eve-display-none">none</div>
             <div class="eve-display-inline-block">inline-block</div>
             <div class="eve-display-block">block</div>
+            <div class="eve-display-inline-flex">inline-flex</div>
+            <div class="eve-display-flex">flex</div>
         </div>
     </div>
 </div>
