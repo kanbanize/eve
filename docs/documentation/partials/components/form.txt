@@ -10,15 +10,15 @@
             <div class="eve-form-group">
                 <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
-                <div class="eve-form-help">Name must contains only letters.</div>
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-form-control">
+            <div class="eve-form-group">
+                <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
-                <button class="eve-button is-primary">Save</button>
+                <div class="eve-form-help">Name must contains only letters.</div>
             </div>
         </div>
     </div>
@@ -31,6 +31,14 @@
                     <button class="eve-button is-primary">Save</button>
                 </div>
                 <div class="eve-form-help">Name must contains only letters.</div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-form-control">
+                <input type="text" class="eve-input">
+                <button class="eve-button is-primary">Save</button>
             </div>
         </div>
     </div>
