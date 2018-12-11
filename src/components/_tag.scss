@@ -14,6 +14,8 @@ $eve-tag-size: 1.75rem;
     padding: 0 $eve-spacing-tiny;
     font-size: $eve-font-small;
     color: $eve-color-light;
+    border: 1px solid transparent;
+    box-sizing: border-box;
 
     @each $eve-tag-color in map-keys($eve-tag-colors) {
         $color: map-get($eve-tag-colors, $eve-tag-color);
@@ -49,7 +51,7 @@ $eve-tag-size: 1.75rem;
             }
 
             &.is-outlined {
-                box-shadow: inset 0 0 0 1px $color;
+                border-color: $color;
                 color: $color;
 
                 .eve-tag-icon {
@@ -69,7 +71,7 @@ $eve-tag-size: 1.75rem;
         background: transparent;
 
         &:hover {
-            box-shadow: none;
+            border-color: transparent;
         }
     }
 

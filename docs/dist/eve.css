@@ -1601,7 +1601,9 @@
   line-height: 1.75rem;
   padding: 0 0.5rem;
   font-size: 0.75rem;
-  color: #fff; }
+  color: #fff;
+  border: 1px solid transparent;
+  box-sizing: border-box; }
   .eve-tag.is-primary {
     background: #2196f3; }
     .eve-tag.is-primary:hover {
@@ -1618,7 +1620,7 @@
         .eve-tag.is-primary:hover .eve-tag-action svg {
           fill: #fff; }
     .eve-tag.is-primary.is-outlined {
-      box-shadow: inset 0 0 0 1px #2196f3;
+      border-color: #2196f3;
       color: #2196f3; }
       .eve-tag.is-primary.is-outlined .eve-tag-icon i {
         color: #2196f3; }
@@ -1640,7 +1642,7 @@
         .eve-tag.is-success:hover .eve-tag-action svg {
           fill: #fff; }
     .eve-tag.is-success.is-outlined {
-      box-shadow: inset 0 0 0 1px #4caf50;
+      border-color: #4caf50;
       color: #4caf50; }
       .eve-tag.is-success.is-outlined .eve-tag-icon i {
         color: #4caf50; }
@@ -1662,7 +1664,7 @@
         .eve-tag.is-warning:hover .eve-tag-action svg {
           fill: #fff; }
     .eve-tag.is-warning.is-outlined {
-      box-shadow: inset 0 0 0 1px #ff9800;
+      border-color: #ff9800;
       color: #ff9800; }
       .eve-tag.is-warning.is-outlined .eve-tag-icon i {
         color: #ff9800; }
@@ -1684,7 +1686,7 @@
         .eve-tag.is-danger:hover .eve-tag-action svg {
           fill: #fff; }
     .eve-tag.is-danger.is-outlined {
-      box-shadow: inset 0 0 0 1px #f44336;
+      border-color: #f44336;
       color: #f44336; }
       .eve-tag.is-danger.is-outlined .eve-tag-icon i {
         color: #f44336; }
@@ -1693,7 +1695,7 @@
   .eve-tag.is-outlined {
     background: transparent; }
     .eve-tag.is-outlined:hover {
-      box-shadow: none; }
+      border-color: transparent; }
   .eve-tag .eve-tag-icon {
     display: flex;
     align-items: center;
