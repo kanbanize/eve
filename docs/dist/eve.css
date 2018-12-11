@@ -669,7 +669,6 @@
   border-radius: 0.875rem; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
-    box-shadow: 0 0 0 1px #fff;
     height: 1.75rem;
     line-height: 1.75rem;
     width: 1.75rem;
