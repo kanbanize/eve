@@ -1,5 +1,17 @@
 # Eve Changelog
 
+## 1.11.1 (11 December 2018)
+
+### Added
+- Add gap utility class ```.eve-gap-none``` (removes margin).
+- Add display utility classes:
+    - ```.eve-display-inline-flex```
+    - ```.eve-display-flex```
+
+### Fixed
+- Fix issue with blurred borders in button, tag, and chip components.
+- Fix issue with breaking words in checkbox, radio, and switch components.
+
 ## 1.11.0 (7 November 2018)
 
 ### Added
