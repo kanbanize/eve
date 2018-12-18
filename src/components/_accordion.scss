@@ -29,6 +29,8 @@ $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
     }
 
     > input {
+        display: none;
+
         &:checked {
             ~ .eve-accordion-content {
                 display: block;
