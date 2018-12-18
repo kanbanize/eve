@@ -147,8 +147,10 @@
     top: 0;
     bottom: 0;
     left: 0; }
-  .eve-accordion > input:checked ~ .eve-accordion-content {
-    display: block; }
+  .eve-accordion > input {
+    display: none; }
+    .eve-accordion > input:checked ~ .eve-accordion-content {
+      display: block; }
   .eve-accordion .eve-accordion-header {
     background: #eceff1;
     color: #2196f3;
@@ -357,6 +359,7 @@
           user-select: none;
   vertical-align: middle;
   font-family: inherit;
+  box-sizing: border-box;
   height: 2.25rem;
   line-height: 2.25rem;
   padding: 0 1rem;
@@ -722,13 +725,15 @@
   display: inline-flex;
   flex-direction: column;
   background: #fff; }
-  .eve-color-picker input:checked ~ .eve-color-picker-controls .eve-color-picker-dropdown::after {
-    top: -.125rem;
-    border: 0;
-    border-bottom: 1px solid #b0bec5;
-    border-right: 1px solid #b0bec5; }
-  .eve-color-picker input:checked ~ .eve-color-picker-colors ul:not(:first-child) {
+  .eve-color-picker > input {
     display: none; }
+    .eve-color-picker > input:checked ~ .eve-color-picker-controls .eve-color-picker-dropdown::after {
+      top: .125rem;
+      border: 0;
+      border-top: 1px solid #b0bec5;
+      border-left: 1px solid #b0bec5; }
+    .eve-color-picker > input:checked ~ .eve-color-picker-colors ul {
+      display: flex; }
   .eve-color-picker .eve-color-picker-controls {
     display: flex;
     padding: .5rem;
@@ -755,15 +760,15 @@
       justify-content: center; }
       .eve-color-picker .eve-color-picker-controls .eve-color-picker-dropdown::after {
         content: '';
-        border-top: 1px solid #b0bec5;
-        border-left: 1px solid #b0bec5;
+        border-bottom: 1px solid #b0bec5;
+        border-right: 1px solid #b0bec5;
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
         width: .5rem;
         height: .5rem;
         box-sizing: border-box;
         position: relative;
-        top: .125rem; }
+        top: -.125rem; }
   .eve-color-picker .eve-color-picker-colors {
     display: flex;
     flex-direction: column;
@@ -772,7 +777,9 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      display: flex; }
+      display: none; }
+      .eve-color-picker .eve-color-picker-colors ul:first-child {
+        display: flex; }
       .eve-color-picker .eve-color-picker-colors ul li {
         width: 2rem;
         height: 2rem;

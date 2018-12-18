@@ -1,44 +1,44 @@
 $eve-color-picker-color-size: 2rem !default;
 
 .eve-color-picker {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    background: $eve-color-light;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-flex;
     flex-direction: column;
-    background: $eve-color-light;
 
-    input {
+    > input {
+        display: none;
+
         &:checked {
             ~ .eve-color-picker-controls {
                 .eve-color-picker-dropdown {
                     &::after {
-                        top: -.125rem;
                         border: 0;
-                        border-bottom: 1px solid $eve-color-darker-silver;
-                        border-right: 1px solid $eve-color-darker-silver;
+                        border-left: 1px solid $eve-color-darker-silver;
+                        border-top: 1px solid $eve-color-darker-silver;
+                        top: .125rem;
                     }
                 }
             }
 
             ~ .eve-color-picker-colors {
                 ul {
-                    &:not(:first-child) {
-                        display: none;
-                    }
+                    display: flex;
                 }
             }
         }
     }
 
     .eve-color-picker-controls {
+        border-bottom: 1px solid $eve-color-bright-silver;
         display: flex;
         padding: .5rem;
-        border-bottom: 1px solid $eve-color-bright-silver;
 
         .eve-color-picker-color {
-            width: 2rem;
-            height: 2rem;
             flex-shrink: 0;
+            height: 2rem;
             margin-right: .5rem;
+            width: 2rem;
         }
 
         .eve-input {
@@ -48,27 +48,27 @@ $eve-color-picker-color-size: 2rem !default;
         }
 
         .eve-color-picker-dropdown {
-            margin-left: .5rem;
-            box-sizing: border-box;
+            align-items: center;
             border: 1px solid $eve-color-dark-silver;
-            width: 2rem;
-            height: 2rem;
-            flex-shrink: 0;
+            box-sizing: border-box;
             cursor: pointer;
             display: flex;
-            align-items: center;
+            flex-shrink: 0;
+            height: 2rem;
             justify-content: center;
+            margin-left: .5rem;
+            width: 2rem;
 
             &::after {
+                border-bottom: 1px solid $eve-color-darker-silver;
+                border-right: 1px solid $eve-color-darker-silver;
+                box-sizing: border-box;
                 content: '';
-                border-top: 1px solid $eve-color-darker-silver;
-                border-left: 1px solid $eve-color-darker-silver;
+                height: .5rem;
+                position: relative;
+                top: -.125rem;
                 transform: rotate(45deg);
                 width: .5rem;
-                height: .5rem;
-                box-sizing: border-box;
-                position: relative;
-                top: .125rem;
             }
         }
     }
@@ -79,22 +79,26 @@ $eve-color-picker-color-size: 2rem !default;
         padding: .25rem;
 
         ul {
+            display: none;
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
+
+            &:first-child {
+                display: flex;
+            }
 
             li {
-                width: $eve-color-picker-color-size;
-                height: $eve-color-picker-color-size;
-                background: $eve-color-primary;
-                position: relative;
-                display: flex;
                 align-items: center;
+                background: $eve-color-primary;
+                cursor: pointer;
+                display: flex;
+                height: $eve-color-picker-color-size;
                 justify-content: center;
                 margin: .25rem;
-                cursor: pointer;
+                position: relative;
                 transition: transform .1s ease;
+                width: $eve-color-picker-color-size;
 
                 &:hover {
                     transform: scale(1.2);
@@ -102,16 +106,16 @@ $eve-color-picker-color-size: 2rem !default;
 
                 &.is-selected {
                     &::after {
-                        content: '';
-                        width: $eve-color-picker-color-size / 2;
-                        height: $eve-color-picker-color-size / 4;
-                        border-left: .125rem solid #fff;
-                        border-bottom: .125rem solid #fff;
-                        position: absolute;
-                        transform: rotate(-45deg) translate(-50%, -50%);
-                        top: $eve-color-picker-color-size / 4;
-                        left: 50%;
+                        border-bottom: .125rem solid $eve-color-light;
+                        border-left: .125rem solid $eve-color-light;
                         box-sizing: border-box;
+                        content: '';
+                        height: $eve-color-picker-color-size / 4;
+                        left: 50%;
+                        position: absolute;
+                        top: $eve-color-picker-color-size / 4;
+                        transform: rotate(-45deg) translate(-50%, -50%);
+                        width: $eve-color-picker-color-size / 2;
                     }
                 }
             }

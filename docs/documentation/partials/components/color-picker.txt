@@ -47,7 +47,7 @@
         <div class="component-header">Controls</div>
         <div class="component-example">
             <div class="eve-color-picker">
-                <input type="checkbox" id="color-picker" hidden="true" checked="checked">
+                <input type="checkbox" id="color-picker">
                 <div class="eve-color-picker-controls">
                     <div class="eve-color-picker-color" style="background: #2196F3;"></div>
                     <input type="text" value="#2196F3" class="eve-input">
