@@ -32,6 +32,7 @@ $eve-button-font-sizes: (
     user-select: none;
     vertical-align: middle;
     font-family: inherit;
+    box-sizing: border-box;
 
     &:hover,
     &:active,
