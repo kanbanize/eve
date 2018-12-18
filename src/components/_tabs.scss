@@ -1,29 +1,29 @@
 $eve-tabs-size: 3rem;
 
 .eve-tabs {
-    display: flex;
     border-bottom: 1px solid $eve-color-dark-silver;
-    list-style: none;
-    padding: 0 $eve-spacing-tiny;
-    margin: 0;
+    box-sizing: border-box;
+    display: flex;
     font-size: $eve-font-normal;
     height: $eve-tabs-size;
     line-height: $eve-tabs-size;
-    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0 $eve-spacing-tiny;
 
     li {
-        margin: 0 $eve-spacing-tiny;
         color: $eve-color-dark;
         cursor: pointer;
+        margin: 0 $eve-spacing-tiny;
         overflow: hidden;
+        padding: 0 $eve-spacing-tiny;
         text-overflow: ellipsis;
         white-space: nowrap;
-        padding: 0 $eve-spacing-tiny;
 
         a {
-            text-decoration: none;
             color: inherit;
             display: block;
+            text-decoration: none;
         }
 
         &:hover {
@@ -35,12 +35,12 @@ $eve-tabs-size: 3rem;
             position: relative;
 
             &::after {
+                background: $eve-color-primary;
+                bottom: 0;
                 content: '';
                 height: .25rem;
-                background: $eve-color-primary;
-                position: absolute;
                 left: 0;
-                bottom: 0;
+                position: absolute;
                 right: 0;
             }
         }

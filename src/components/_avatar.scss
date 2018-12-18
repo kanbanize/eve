@@ -8,15 +8,15 @@ $eve-avatar-sizes: (
 $eve-avatar-border-radius: 50% !default;
 
 .eve-avatar {
-    display: inline-block;
     border-radius: $eve-avatar-border-radius;
-    vertical-align: middle;
     color: $eve-color-light;
-    position: relative;
-    text-align: center;
-    width: map-get($eve-avatar-sizes, 'normal');
+    display: inline-block;
     height: map-get($eve-avatar-sizes, 'normal');
     line-height: map-get($eve-avatar-sizes, 'normal');
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: map-get($eve-avatar-sizes, 'normal');
 
     &[data-initial] {
         background: $eve-color-primary;
@@ -28,17 +28,17 @@ $eve-avatar-border-radius: 50% !default;
     }
 
     img {
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: inherit;
+        height: inherit;
+        left: 0;
         object-fit: cover;
         object-position: center;
         position: absolute;
-        left: 0;
         top: 0;
-        border-radius: inherit;
         width: inherit;
-        height: inherit;
     }
 
     &.is-online,
@@ -46,14 +46,14 @@ $eve-avatar-border-radius: 50% !default;
     &.is-away,
     &.is-offline {
         &::after {
+            border-radius: 50%;
+            bottom: 0;
+            box-shadow: 0 0 0 .125rem $eve-color-light;
             content: '';
             display: block;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            box-shadow: 0 0 0 .125rem $eve-color-light;
             height: map-get($eve-avatar-sizes, 'normal') / 4;
+            position: absolute;
+            right: 0;
             width: map-get($eve-avatar-sizes, 'normal') / 4;
         }
     }
@@ -63,9 +63,9 @@ $eve-avatar-border-radius: 50% !default;
             $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
             &.is-#{$eve-avatar-size} {
-                width: $size;
                 height: $size;
                 line-height: $size;
+                width: $size;
 
                 &[data-initial] {
                     &::before {
@@ -124,13 +124,13 @@ $eve-avatar-border-radius: 50% !default;
 }
 
 .eve-profile {
-    display: flex;
     align-items: center;
+    display: flex;
     font-size: $eve-font-normal;
 
     .eve-avatar {
-        margin-right: $eve-spacing-tiny;
         flex-shrink: 0;
+        margin-right: $eve-spacing-tiny;
     }
 
     i,
@@ -139,14 +139,14 @@ $eve-avatar-border-radius: 50% !default;
     }
 
     i {
-        font-size: 1rem;
         color: $eve-color-darker-silver;
+        font-size: 1rem;
     }
 
     svg {
-        width: 1rem;
-        height: 1rem;
         fill: $eve-color-darker-silver;
+        height: 1rem;
+        width: 1rem;
     }
 }
 

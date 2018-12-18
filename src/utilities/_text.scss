@@ -71,8 +71,8 @@ $eve-text-weights: (
 
 .eve-text-truncate {
     overflow: hidden !important;
-    white-space: nowrap !important;
     text-overflow: ellipsis !important;
+    white-space: nowrap !important;
     word-wrap: normal !important;
 }
 

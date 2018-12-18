@@ -8,52 +8,52 @@ $eve-dialog-width: 25rem;
 $eve-dialog-close-size: 2rem;
 
 .eve-dialog {
-    width: $eve-dialog-width;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
-    padding: $eve-spacing-normal;
     background: $eve-color-light;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    padding: $eve-spacing-normal;
     position: relative;
+    width: $eve-dialog-width;
 
     .eve-dialog-close {
-        position: absolute;
-        top: -($eve-dialog-close-size / 2);
-        right: -($eve-dialog-close-size / 2);
-        background: $eve-color-light;
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
-        border-radius: 50%;
-        width: $eve-dialog-close-size;
-        height: $eve-dialog-close-size;
-        display: flex;
         align-items: center;
-        justify-content: center;
+        background: $eve-color-light;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
         cursor: pointer;
+        display: flex;
+        height: $eve-dialog-close-size;
+        justify-content: center;
+        position: absolute;
+        right: -($eve-dialog-close-size / 2);
+        top: -($eve-dialog-close-size / 2);
+        width: $eve-dialog-close-size;
 
         i {
-            font-size: $eve-dialog-close-size / 2;
             color: $eve-color-darkest-silver;
+            font-size: $eve-dialog-close-size / 2;
         }
 
         svg {
-            width: $eve-dialog-close-size / 2;
-            height: $eve-dialog-close-size / 2;
             fill: $eve-color-darkest-silver;
+            height: $eve-dialog-close-size / 2;
+            width: $eve-dialog-close-size / 2;
         }
     }
 
     .eve-dialog-header {
-        font-weight: bold;
         font-size: 1.25rem;
+        font-weight: bold;
         margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-content {
-        margin-bottom: $eve-spacing-small;
         font-size: $eve-font-normal;
+        margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-footer {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: flex-end;
 
         .eve-button {

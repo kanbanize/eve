@@ -7,15 +7,15 @@ $eve-tag-colors: (
 $eve-tag-size: 1.75rem;
 
 .eve-tag {
-    display: inline-flex;
     align-items: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    color: $eve-color-light;
+    display: inline-flex;
+    font-size: $eve-font-small;
     height: $eve-tag-size;
     line-height: $eve-tag-size;
     padding: 0 $eve-spacing-tiny;
-    font-size: $eve-font-small;
-    color: $eve-color-light;
-    border: 1px solid transparent;
-    box-sizing: border-box;
 
     @each $eve-tag-color in map-keys($eve-tag-colors) {
         $color: map-get($eve-tag-colors, $eve-tag-color);
@@ -76,40 +76,40 @@ $eve-tag-size: 1.75rem;
     }
 
     .eve-tag-icon {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
         margin-right: $eve-spacing-tiny;
 
         i {
-            font-size: $eve-tag-size / 2;
             color: $eve-color-light;
+            font-size: $eve-tag-size / 2;
         }
 
         svg {
-            width: $eve-tag-size / 2;
-            height: $eve-tag-size / 2;
             fill: $eve-color-light;
+            height: $eve-tag-size / 2;
+            width: $eve-tag-size / 2;
         }
     }
 
     .eve-tag-action {
-        display: flex;
         align-items: center;
-        justify-content: center;
-        margin-left: $eve-spacing-tiny;
         border-radius: 50%;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-left: $eve-spacing-tiny;
 
         i {
-            font-size: $eve-tag-size / 2;
             color: $eve-color-light;
+            font-size: $eve-tag-size / 2;
         }
 
         svg {
-            width: $eve-tag-size / 2;
-            height: $eve-tag-size / 2;
             fill: $eve-color-light;
+            height: $eve-tag-size / 2;
+            width: $eve-tag-size / 2;
         }
     }
 }

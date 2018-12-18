@@ -21,18 +21,18 @@ $eve-button-font-sizes: (
 );
 
 .eve-button {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
     border: 1px solid transparent;
-    text-decoration: none;
+    box-sizing: border-box;
     color: $eve-color-light;
     cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    justify-content: center;
     outline: none;
+    text-decoration: none;
     user-select: none;
     vertical-align: middle;
-    font-family: inherit;
-    box-sizing: border-box;
 
     &:hover,
     &:active,
@@ -50,17 +50,17 @@ $eve-button-font-sizes: (
         $font-size: map-get($eve-button-font-sizes, $eve-button-size);
 
         @if $eve-button-size == 'normal' {
+            font-size: $font-size;
             height: $size;
             line-height: $size;
             padding: 0 $padding;
-            font-size: $font-size;
 
             &.is-loading {
                 &::after {
-                    top: calc(50% - #{$size / 4});
-                    left: calc(50% - #{$size / 4});
-                    width: $size / 2;
                     height: $size / 2;
+                    left: calc(50% - #{$size / 4});
+                    top: calc(50% - #{$size / 4});
+                    width: $size / 2;
                 }
             }
 
@@ -74,23 +74,23 @@ $eve-button-font-sizes: (
                 }
 
                 svg {
-                    width: $size / 2;
                     height: $size / 2;
+                    width: $size / 2;
                 }
             }
         } @else {
             &.is-#{$eve-button-size} {
+                font-size: $font-size;
                 height: $size;
                 line-height: $size;
                 padding: 0 $padding;
-                font-size: $font-size;
 
                 &.is-loading {
                     &::after {
-                        top: calc(50% - #{$size / 4});
-                        left: calc(50% - #{$size / 4});
-                        width: $size / 2;
                         height: $size / 2;
+                        left: calc(50% - #{$size / 4});
+                        top: calc(50% - #{$size / 4});
+                        width: $size / 2;
                     }
                 }
 
@@ -104,8 +104,8 @@ $eve-button-font-sizes: (
                     }
 
                     svg {
-                        width: $size / 2;
                         height: $size / 2;
+                        width: $size / 2;
                     }
                 }
             }
@@ -123,8 +123,8 @@ $eve-button-font-sizes: (
             }
 
             &.is-outlined {
-                color: $color;
                 border-color: $color;
+                color: $color;
 
                 &.has-icon {
                     svg {
@@ -159,30 +159,30 @@ $eve-button-font-sizes: (
     }
 
     &.is-inverted {
-        text-transform: uppercase;
-        font-weight: bold;
         background: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     &.is-loading {
         color: transparent;
-        position: relative;
         pointer-events: none;
+        position: relative;
 
         &::after {
-            content: '';
-            border-radius: 50%;
-            border: .125rem solid transparent;
-            border-top-color: $eve-color-light;
-            border-right-color: $eve-color-light;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            animation-name: eveButtonProgress;
+            animation-duration: .5s;
             animation-fill-mode: forwards;
             animation-iteration-count: infinite;
-            animation-duration: .5s;
+            animation-name: eveButtonProgress;
             animation-timing-function: linear;
+            border: .125rem solid transparent;
+            border-radius: 50%;
+            border-right-color: $eve-color-light;
+            border-top-color: $eve-color-light;
             box-sizing: border-box;
+            content: '';
+            position: absolute;
+            transform: translate(-50%, -50%);
         }
 
         @keyframes eveButtonProgress {
@@ -202,22 +202,22 @@ $eve-button-font-sizes: (
     }
 
     &.is-file {
-        position: relative;
         overflow: hidden;
+        position: relative;
 
         input {
             &[type='file'] {
-                position: absolute;
-                top: 0;
-                right: 0;
+                border-radius: inherit;
                 bottom: 0;
+                cursor: inherit;
+                display: block;
+                height: 100%;
                 left: 0;
                 opacity: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
                 width: 100%;
-                height: 100%;
-                cursor: inherit;
-                border-radius: inherit;
-                display: block;
             }
         }
     }
@@ -234,8 +234,8 @@ $eve-button-font-sizes: (
     }
 
     &:disabled {
-        pointer-events: none;
         background: $eve-color-darker-silver;
+        pointer-events: none;
 
         &.is-outlined {
             background: $eve-color-darker-silver;
@@ -270,13 +270,13 @@ $eve-button-font-sizes: (
         .eve-button {
             &.is-rounded {
                 &:first-of-type {
-                    border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
+                    border-top-right-radius: 0;
                 }
 
                 &:last-of-type {
-                    border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
+                    border-top-left-radius: 0;
                 }
             }
 

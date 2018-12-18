@@ -1,24 +1,24 @@
 $eve-chip-size: 1.75rem;
 
 .eve-chip {
-    display: inline-flex;
     align-items: center;
+    background: $eve-color-bright-silver;
+    border-radius: $eve-chip-size / 2;
+    display: inline-flex;
+    font-size: $eve-font-small;
     height: $eve-chip-size;
     line-height: $eve-chip-size;
-    background: $eve-color-bright-silver;
     padding: 0 $eve-spacing-tiny;
-    font-size: $eve-font-small;
     vertical-align: top;
-    border-radius: $eve-chip-size / 2;
 
     .eve-avatar,
     .eve-chip-icon {
-        height: $eve-chip-size;
-        line-height: $eve-chip-size;
-        width: $eve-chip-size;
-        position: relative;
-        left: -#{$eve-spacing-tiny};
         border-radius: 50%;
+        height: $eve-chip-size;
+        left: -#{$eve-spacing-tiny};
+        line-height: $eve-chip-size;
+        position: relative;
+        width: $eve-chip-size;
     }
 
     .eve-avatar {
@@ -28,30 +28,30 @@ $eve-chip-size: 1.75rem;
     }
 
     .eve-chip-icon {
-        display: flex;
         align-items: center;
-        justify-content: center;
         background: $eve-color-primary;
+        display: flex;
+        justify-content: center;
 
         i {
-            font-size: $eve-chip-size / 2;
             color: $eve-color-light;
+            font-size: $eve-chip-size / 2;
         }
 
         svg {
-            width: $eve-chip-size / 2;
-            height: $eve-chip-size / 2;
             fill: $eve-color-light;
+            height: $eve-chip-size / 2;
+            width: $eve-chip-size / 2;
         }
     }
 
     .eve-chip-action {
-        display: flex;
         align-items: center;
-        justify-content: center;
-        margin-left: $eve-spacing-tiny;
         border-radius: 50%;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-left: $eve-spacing-tiny;
 
         &:hover {
             background: $eve-color-darker-silver;
@@ -66,14 +66,14 @@ $eve-chip-size: 1.75rem;
         }
 
         i {
-            font-size: $eve-chip-size / 2;
             color: $eve-color-darker-silver;
+            font-size: $eve-chip-size / 2;
         }
 
         svg {
-            width: $eve-chip-size / 2;
-            height: $eve-chip-size / 2;
             fill: $eve-color-darker-silver;
+            height: $eve-chip-size / 2;
+            width: $eve-chip-size / 2;
         }
     }
 }

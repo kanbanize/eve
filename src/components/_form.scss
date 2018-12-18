@@ -3,24 +3,24 @@
 
     .eve-form-label {
         display: inline-block;
-        margin: 0 0 $eve-spacing-tiny;
         font-size: $eve-font-normal;
+        margin: 0 0 $eve-spacing-tiny;
     }
 
     .eve-form-help {
-        margin-top: $eve-spacing-tiny;
-        font-size: $eve-font-small;
         color: $eve-color-darkest-silver;
+        font-size: $eve-font-small;
+        margin-top: $eve-spacing-tiny;
     }
 
     &.is-inline {
-        margin: 0 $eve-spacing-small 0 0;
-        display: inline-flex;
         align-items: center;
+        display: inline-flex;
+        margin: 0 $eve-spacing-small 0 0;
 
         .eve-form-label {
-            margin: 0 $eve-spacing-tiny 0 0;
             flex-shrink: 0;
+            margin: 0 $eve-spacing-tiny 0 0;
         }
     }
 }

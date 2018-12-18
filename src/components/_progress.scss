@@ -1,24 +1,24 @@
 $eve-progress-oval-size: 3rem;
 
 .eve-progress-line {
-    width: 100%;
     background: $eve-color-bright-silver;
     height: .125rem;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 
     &::after {
-        content: '';
-        width: 20%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        background: $eve-color-primary;
-        animation-name: eveProgressLine;
+        animation-duration: .75s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-duration: .75s;
+        animation-name: eveProgressLine;
         animation-timing-function: linear;
+        background: $eve-color-primary;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 20%;
     }
 
     @keyframes eveProgressLine {
@@ -33,32 +33,32 @@ $eve-progress-oval-size: 3rem;
 }
 
 .eve-progress-oval {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 
     &::before {
-        content: '';
-        background: transparent;
-        border-radius: 50%;
-        border: .125rem solid $eve-color-bright-silver;
-        border-top-color: $eve-color-primary;
-        border-right-color: $eve-color-primary;
-        display: inline-block;
-        animation-name: eveProgressOval;
+        animation-duration: .5s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-duration: .5s;
+        animation-name: eveProgressOval;
         animation-timing-function: linear;
+        background: transparent;
+        border: .125rem solid $eve-color-bright-silver;
+        border-radius: 50%;
+        border-right-color: $eve-color-primary;
+        border-top-color: $eve-color-primary;
+        box-sizing: border-box;
+        content: '';
+        display: inline-block;
         height: $eve-progress-oval-size;
         width: $eve-progress-oval-size;
-        box-sizing: border-box;
     }
 
     &::after {
         content: attr(data-label);
-        margin-left: $eve-spacing-small;
         font-size: $eve-font-normal;
+        margin-left: $eve-spacing-small;
     }
 
     @keyframes eveProgressOval {

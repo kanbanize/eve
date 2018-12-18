@@ -1,25 +1,25 @@
 $eve-pagination-item-size: 2.25rem;
 
 .eve-pagination {
-    font-size: $eve-font-normal;
     display: flex;
+    font-size: $eve-font-normal;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-        border: 1px solid $eve-color-primary;
+        align-items: center;
         background: $eve-color-light;
+        border: 1px solid $eve-color-primary;
+        box-sizing: border-box;
+        color: $eve-color-primary;
+        cursor: pointer;
+        display: flex;
         height: $eve-pagination-item-size;
+        justify-content: center;
         line-height: $eve-pagination-item-size;
         min-width: $eve-pagination-item-size;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        cursor: pointer;
         padding: 0 $eve-spacing-tiny;
-        color: $eve-color-primary;
 
         &:not(:last-child) {
             margin-right: -1px;
@@ -37,8 +37,8 @@ $eve-pagination-item-size: 2.25rem;
         }
 
         a {
-            text-decoration: none;
             color: inherit;
+            text-decoration: none;
         }
     }
 

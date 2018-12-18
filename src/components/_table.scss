@@ -1,24 +1,24 @@
 .eve-table {
-    border-spacing: 0;
     border: 1px solid $eve-color-dark-silver;
     border-collapse: collapse;
-    width: 100%;
+    border-spacing: 0;
     font-size: $eve-font-normal;
     table-layout: fixed;
+    width: 100%;
 
     thead {
         tr {
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                height: 3rem;
-                font-weight: normal;
                 background: $eve-color-bright-silver;
-                color: $eve-color-darkest-silver;
-                padding: $eve-spacing-tiny $eve-spacing-normal;
                 box-sizing: border-box;
-                word-break: break-word;
+                color: $eve-color-darkest-silver;
+                font-weight: normal;
+                height: 3rem;
+                padding: $eve-spacing-tiny $eve-spacing-normal;
                 text-align: left;
+                word-break: break-word;
             }
         }
     }
@@ -33,8 +33,8 @@
 
             td {
                 padding: $eve-spacing-tiny $eve-spacing-normal;
-                word-wrap: break-word;
                 text-align: left;
+                word-wrap: break-word;
             }
         }
     }

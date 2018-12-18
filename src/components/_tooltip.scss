@@ -7,24 +7,24 @@ $eve-tooltip-max-width: 20rem !default;
 
     &::after {
         background: $eve-tooltip-color;
+        border-radius: $eve-tooltip-size / 2;
         color: $eve-color-light;
+        content: attr(data-tooltip);
+        font-family: inherit;
         font-size: $eve-font-small;
-        padding: 0 $eve-spacing-small;
+        font-weight: normal;
         height: $eve-tooltip-size;
         line-height: $eve-tooltip-size;
-        border-radius: $eve-tooltip-size / 2;
         max-width: $eve-tooltip-max-width;
-        transition: all .2s ease; // sass-lint:disable-line no-transition-all
-        content: attr(data-tooltip);
-        pointer-events: none;
-        position: absolute;
-        text-transform: none;
-        font-family: inherit;
-        font-weight: normal;
         opacity: 0;
         overflow: hidden;
-        white-space: nowrap;
+        padding: 0 $eve-spacing-small;
+        pointer-events: none;
+        position: absolute;
         text-overflow: ellipsis;
+        text-transform: none;
+        transition: all .2s ease; // sass-lint:disable-line no-transition-all
+        white-space: nowrap;
         word-wrap: normal;
         z-index: 2147483648;
     }
@@ -59,8 +59,8 @@ $eve-tooltip-max-width: 20rem !default;
 
     &.is-right {
         &::after {
-            left: 100%;
             bottom: 50%;
+            left: 100%;
             transform: translate(-$eve-spacing-tiny, 50%);
         }
 
@@ -73,8 +73,8 @@ $eve-tooltip-max-width: 20rem !default;
 
     &.is-bottom {
         &::after {
-            top: 100%;
             left: 50%;
+            top: 100%;
             transform: translate(-50%, -$eve-spacing-tiny);
         }
 

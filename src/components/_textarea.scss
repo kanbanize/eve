@@ -5,25 +5,25 @@ $eve-textarea-colors: (
 );
 
 .eve-textarea {
+    appearance: none;
     background: $eve-color-light;
-    padding: $eve-spacing-tiny $eve-spacing-small;
-    vertical-align: middle;
     border: 1px solid $eve-color-dark-silver;
-    outline: none;
-    width: 100%;
-    min-width: 100%;
+    box-sizing: border-box;
+    color: $eve-color-dark;
+    font-family: inherit;
+    font-size: $eve-font-normal;
+    line-height: 1.125rem;
     max-width: 100%;
     min-height: 2.25rem;
-    font-size: $eve-font-normal;
-    color: $eve-color-dark;
-    appearance: none;
-    font-family: inherit;
-    line-height: 1.125rem;
-    box-sizing: border-box;
+    min-width: 100%;
+    outline: none;
+    padding: $eve-spacing-tiny $eve-spacing-small;
+    vertical-align: middle;
+    width: 100%;
 
     &::placeholder {
-        font-family: inherit;
         color: $eve-color-darker-silver;
+        font-family: inherit;
     }
 
     &:focus {

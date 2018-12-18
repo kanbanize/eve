@@ -1,25 +1,25 @@
 $eve-dropdown-list-item-size: 2rem;
 
 .eve-dropdown {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+    background: $eve-color-light;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-flex;
     flex-direction: column;
-    min-width: 10rem;
-    background: $eve-color-light;
     font-size: $eve-font-normal;
+    min-width: 10rem;
 
     ul {
-        width: 100%;
-        padding: $eve-spacing-tiny 0;
-        margin: 0;
         list-style: none;
+        margin: 0;
+        padding: $eve-spacing-tiny 0;
+        width: 100%;
 
         li {
-            height: $eve-dropdown-list-item-size;
-            padding: 0 $eve-spacing-small;
-            display: flex;
             align-items: center;
             cursor: pointer;
+            display: flex;
+            height: $eve-dropdown-list-item-size;
+            padding: 0 $eve-spacing-small;
 
             &:hover,
             &.is-active {
@@ -33,22 +33,22 @@ $eve-dropdown-list-item-size: 2rem;
             }
 
             i {
-                font-size: $eve-dropdown-list-item-size / 2;
                 color: $eve-color-darker-silver;
+                font-size: $eve-dropdown-list-item-size / 2;
             }
 
             svg {
-                width: $eve-dropdown-list-item-size / 2;
-                height: $eve-dropdown-list-item-size / 2;
                 fill: $eve-color-darker-silver;
+                height: $eve-dropdown-list-item-size / 2;
+                width: $eve-dropdown-list-item-size / 2;
             }
 
             &.is-header {
+                font-size: $eve-font-small;
                 font-weight: bold;
                 height: $eve-dropdown-list-item-size;
-                text-transform: uppercase;
-                font-size: $eve-font-small;
                 pointer-events: none;
+                text-transform: uppercase;
             }
 
             &.is-divider {

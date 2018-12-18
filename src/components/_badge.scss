@@ -11,21 +11,21 @@ $eve-badge-font-size: $eve-font-normal !default;
     &::after {
         background: $eve-badge-background-color;
         border-radius: $eve-badge-border-radius;
+        box-shadow: 0 0 0 .125rem $eve-color-light;
+        box-sizing: border-box;
+        color: $eve-badge-color;
+        content: attr(data-badge);
+        font-size: $eve-badge-font-size;
+        font-weight: normal;
         height: $eve-badge-height;
         line-height: $eve-badge-height;
-        padding: $eve-badge-padding;
         min-width: $eve-badge-height;
-        color: $eve-badge-color;
-        font-size: $eve-badge-font-size;
-        box-shadow: 0 0 0 .125rem $eve-color-light;
-        content: attr(data-badge);
-        text-align: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(50%, -50%);
-        font-weight: normal;
-        box-sizing: border-box;
+        padding: $eve-badge-padding;
         pointer-events: none;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        transform: translate(50%, -50%);
     }
 }
