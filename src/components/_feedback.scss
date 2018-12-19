@@ -5,9 +5,13 @@ $eve-feedback-colors: (
 );
 
 .eve-feedback {
+    align-items: center;
+    box-sizing: border-box;
     color: $eve-color-dark;
+    display: flex;
     font-size: $eve-font-small;
-    line-height: 1.25rem;
+    line-height: 1.125rem;
+    min-height: 2.25rem;
     padding: $eve-spacing-tiny $eve-spacing-small;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
