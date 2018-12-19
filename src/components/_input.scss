@@ -29,7 +29,6 @@ $eve-input-font-sizes: (
     max-width: 100%;
     min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
     outline: none;
-    vertical-align: middle;
     width: 100%;
 
     &::placeholder {

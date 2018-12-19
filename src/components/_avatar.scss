@@ -15,7 +15,6 @@ $eve-avatar-border-radius: 50% !default;
     line-height: map-get($eve-avatar-sizes, 'normal');
     position: relative;
     text-align: center;
-    vertical-align: middle;
     width: map-get($eve-avatar-sizes, 'normal');
 
     &[data-initial] {

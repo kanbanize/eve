@@ -196,7 +196,6 @@
   line-height: 3rem;
   position: relative;
   text-align: center;
-  vertical-align: middle;
   width: 3rem; }
   .eve-avatar[data-initial] {
     background: #2196f3; }
@@ -359,7 +358,6 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  vertical-align: middle;
   font-size: 0.875rem;
   height: 2.25rem;
   line-height: 2.25rem;
@@ -592,7 +590,6 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
-  vertical-align: middle;
   width: 1.125rem; }
   .eve-checkbox input[type='checkbox'] {
     cursor: pointer;
@@ -669,8 +666,7 @@
   font-size: 0.75rem;
   height: 1.75rem;
   line-height: 1.75rem;
-  padding: 0 0.5rem;
-  vertical-align: top; }
+  padding: 0 0.5rem; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
     border-radius: 50%;
@@ -995,7 +991,6 @@
   max-width: 100%;
   min-width: 0;
   outline: none;
-  vertical-align: middle;
   width: 100%;
   font-size: 0.875rem;
   height: 2.25rem;
@@ -1313,7 +1308,6 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
-  vertical-align: middle;
   width: 1.125rem; }
   .eve-radio input[type='radio'] {
     cursor: pointer;
@@ -1476,7 +1470,6 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
-  vertical-align: middle;
   width: 2rem; }
   .eve-switch input[type='checkbox'] {
     cursor: pointer;
@@ -1754,7 +1747,6 @@
   min-width: 100%;
   outline: none;
   padding: 0.5rem 1rem;
-  vertical-align: middle;
   width: 100%; }
   .eve-textarea::-webkit-input-placeholder {
     color: #b0bec5;
