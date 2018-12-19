@@ -1,20 +1,28 @@
+<style>
+    .component-example {
+        text-align: center;
+        margin: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
 <div class="component">
     <div class="component-title">Tooltip</div>
     <div class="component-content">
-        <div class="component-example" style="text-align: center; margin: 4rem; display: flex; justify-content: space-between;">
-            <button class="eve-button is-primary eve-tooltip is-left" data-tooltip="Tooltip Left">Tooltip Left</button>
-            <button class="eve-button is-primary eve-tooltip is-top" data-tooltip="Tooltip Top">Tooltip Top</button>
-            <button class="eve-button is-primary eve-tooltip is-right" data-tooltip="Tooltip Right">Tooltip Right</button>
-            <button class="eve-button is-primary eve-tooltip is-bottom" data-tooltip="Tooltip Bottom">Tooltip Bottom</button>
+        <div class="component-example">
+            <button class="eve-button is-primary is-inverted eve-tooltip is-left" data-tooltip="Tooltip Left">LEFT</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-top" data-tooltip="Tooltip Top">TOP</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-right" data-tooltip="Tooltip Right">RIGHT</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-bottom" data-tooltip="Tooltip Bottom">BOTTOM</button>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Delayed</div>
-        <div class="component-example" style="text-align: center; margin: 4rem; display: flex; justify-content: space-between;">
-            <button class="eve-button is-primary eve-tooltip is-left has-delay" data-tooltip="Tooltip Left">Tooltip Left</button>
-            <button class="eve-button is-primary eve-tooltip is-top has-delay" data-tooltip="Tooltip Top">Tooltip Top</button>
-            <button class="eve-button is-primary eve-tooltip is-right has-delay" data-tooltip="Tooltip Right">Tooltip Right</button>
-            <button class="eve-button is-primary eve-tooltip is-bottom has-delay" data-tooltip="Tooltip Bottom">Tooltip Bottom</button>
+        <div class="component-example">
+            <button class="eve-button is-primary is-inverted eve-tooltip is-left has-delay" data-tooltip="Tooltip Left">LEFT</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-top has-delay" data-tooltip="Tooltip Top">TOP</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-right has-delay" data-tooltip="Tooltip Right">RIGHT</button>
+            <button class="eve-button is-primary is-inverted eve-tooltip is-bottom has-delay" data-tooltip="Tooltip Bottom">BOTTOM</button>
         </div>
     </div>
 </div>
