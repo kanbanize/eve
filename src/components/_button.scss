@@ -239,6 +239,7 @@ $eve-button-font-sizes: (
 
         &.is-outlined {
             background: $eve-color-darker-silver;
+            border-color: transparent;
             color: $eve-color-light;
         }
 

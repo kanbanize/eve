@@ -560,6 +560,7 @@
     pointer-events: none; }
     .eve-button:disabled.is-outlined {
       background: #b0bec5;
+      border-color: transparent;
       color: #fff; }
     .eve-button:disabled.is-inverted {
       background: transparent;
