@@ -1,6 +1,6 @@
 <style>
     .eve-column > p {
-        background: #2196f3;
+        background: #263238;
         height: 3rem;
         margin: 0;
     }

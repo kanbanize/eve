@@ -1,6 +1,6 @@
 <style>
     .eve-column > p {
-        background: #2196f3;
+        background: #263238;
         color: #fff;
         height: 3rem;
         display: flex;
@@ -45,6 +45,9 @@
                 </div>
                 <div class="eve-column is-6">
                     <p>6</p>
+                </div>
+                <div class="eve-column">
+                    <p>Auto</p>
                 </div>
             </div>
         </div>

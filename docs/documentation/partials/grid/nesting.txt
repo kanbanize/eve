@@ -4,7 +4,7 @@
     }
 
     .eve-column > p {
-        background: #2196f3;
+        background: #263238;
         color: #fff;
         height: 3rem;
         display: flex;
