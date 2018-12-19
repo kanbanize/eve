@@ -1,14 +1,8 @@
 <style>
     .eve-column > p {
         background: #2196f3;
-        color: #fff;
         height: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: 0;
-        border: 1px solid #fff;
-        box-sizing: border-box;
     }
 </style>
 <div class="component">
