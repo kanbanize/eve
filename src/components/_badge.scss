@@ -11,7 +11,7 @@ $eve-badge-font-size: $eve-font-normal !default;
     &::after {
         background: $eve-badge-background-color;
         border-radius: $eve-badge-border-radius;
-        box-shadow: 0 0 0 .125rem $eve-color-light;
+        box-shadow: 0 0 0 1px $eve-color-light;
         box-sizing: border-box;
         color: $eve-badge-color;
         content: attr(data-badge);

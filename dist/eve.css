@@ -219,7 +219,7 @@
   .eve-avatar.is-online::after, .eve-avatar.is-busy::after, .eve-avatar.is-away::after, .eve-avatar.is-offline::after {
     border-radius: 50%;
     bottom: 0;
-    box-shadow: 0 0 0 0.125rem #fff;
+    box-shadow: 0 0 0 1px #fff;
     content: '';
     display: block;
     height: 0.75rem;
@@ -274,7 +274,7 @@
 .eve-avatars {
   display: flex; }
   .eve-avatars .eve-avatar {
-    box-shadow: 0 0 0 0.125rem #fff; }
+    box-shadow: 0 0 0 1px #fff; }
     .eve-avatars .eve-avatar:not(:first-child) {
       margin-left: -0.25rem; }
 
@@ -307,7 +307,7 @@
   .eve-badge::after {
     background: #f44336;
     border-radius: 0.5625rem;
-    box-shadow: 0 0 0 0.125rem #fff;
+    box-shadow: 0 0 0 1px #fff;
     box-sizing: border-box;
     color: #fff;
     content: attr(data-badge);
