@@ -1,3 +1,91 @@
+<style>
+    .component-colors {
+        display: flex;
+    }
+
+    .component-colors:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    .component-color {
+        display: flex;
+        width: 16rem;
+    }
+
+    .component-color:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    .component-color-square {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        flex-shrink: 0;
+    }
+
+    .component-color-square.component-color-square-blue {
+        background: #2196f3;
+    }
+
+    .component-color-square.component-color-square-red {
+        background: #f44336;
+    }
+
+    .component-color-square.component-color-square-warning {
+        background: #ff9800;
+    }
+
+    .component-color-square.component-color-square-green {
+        background: #4caf50;
+    }
+
+    .component-color-square.component-color-square-white {
+        background: #fff;
+        border: 1px solid #dfe1e6;
+        box-sizing: border-box;
+    }
+
+    .component-color-square.component-color-square-black {
+        background: #333;
+    }
+
+    .component-color-square.component-color-square-darkest-silver {
+        background: #607d8b;
+    }
+
+    .component-color-square.component-color-square-darker-silver {
+        background: #b0bec5;
+    }
+
+    .component-color-square.component-color-square-dark-silver {
+        background: #cfd8dc;
+    }
+
+    .component-color-square.component-color-square-bright-silver {
+        background: #eceff1;
+    }
+
+    .component-color-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .component-color-data .component-color-name {
+        display: flex;
+        align-items: center;
+        margin-bottom: .5rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .component-color-data .component-color-rgba,
+    .component-color-data .component-color-hex {
+        font-size: .75rem;
+        color: #b0bec5;
+    }
+</style>
 <div class="component">
     <div class="component-title">Colors</div>
     <div class="component-content">
