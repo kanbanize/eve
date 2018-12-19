@@ -112,7 +112,7 @@
                     <tr>
                         <td>
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                         </td>
@@ -125,7 +125,7 @@
                     <tr>
                         <td>
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                         </td>
@@ -138,7 +138,7 @@
                     <tr>
                         <td>
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                         </td>
@@ -151,7 +151,7 @@
                     <tr>
                         <td>
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                         </td>
@@ -164,7 +164,7 @@
                     <tr>
                         <td>
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                         </td>

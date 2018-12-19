@@ -31,7 +31,7 @@
                         <div class="eve-list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla, corrupti ullam ut ad placeat explicabo hic cum deserunt est dignissimos vero consequuntur porro. Nam ad earum odit explicabo? Repellat?</div>
                     </div>
                     <div class="eve-switch">
-                        <input class="eve-switch-native" type="checkbox">
+                        <input type="checkbox">
                         <div class="eve-switch-mark"></div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         <div class="eve-list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla, corrupti ullam ut ad placeat explicabo hic cum deserunt est dignissimos vero consequuntur porro. Nam ad earum odit explicabo? Repellat?</div>
                     </div>
                     <div class="eve-switch">
-                        <input class="eve-switch-native" type="checkbox" checked="checked">
+                        <input type="checkbox" checked="checked">
                         <div class="eve-switch-mark"></div>
                     </div>
                 </div>

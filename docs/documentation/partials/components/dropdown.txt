@@ -169,7 +169,7 @@
                     <li>
                         <label class="eve-checkbox-control">
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                             Item 01
@@ -178,7 +178,7 @@
                     <li>
                         <label class="eve-checkbox-control">
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                             Item 02
@@ -187,7 +187,7 @@
                     <li>
                         <label class="eve-checkbox-control">
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                             Item 03
@@ -196,7 +196,7 @@
                     <li>
                         <label class="eve-checkbox-control">
                             <div class="eve-checkbox">
-                                <input class="eve-checkbox-native" type="checkbox">
+                                <input type="checkbox">
                                 <div class="eve-checkbox-mark"></div>
                             </div>
                             Item 04
