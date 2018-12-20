@@ -999,9 +999,6 @@
   .eve-input::-webkit-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
-  .eve-input:-ms-input-placeholder {
-    color: #b0bec5;
-    font-family: inherit; }
   .eve-input::-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
@@ -1752,9 +1749,6 @@
   padding: 0.5rem 1rem;
   width: 100%; }
   .eve-textarea::-webkit-input-placeholder {
-    color: #b0bec5;
-    font-family: inherit; }
-  .eve-textarea:-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
   .eve-textarea::-ms-input-placeholder {
