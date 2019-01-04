@@ -637,7 +637,6 @@
       width: calc(100% - 0.5625rem); }
 
 .eve-checkbox-control {
-  align-items: center;
   display: flex;
   font-size: 0.875rem;
   word-break: break-word; }
@@ -1349,7 +1348,6 @@
       height: 100%; }
 
 .eve-radio-control {
-  align-items: center;
   display: flex;
   font-size: 0.875rem;
   word-break: break-word; }
@@ -1509,7 +1507,6 @@
       width: 0.875rem; }
 
 .eve-switch-control {
-  align-items: center;
   display: flex;
   font-size: 0.875rem;
   word-break: break-word; }
