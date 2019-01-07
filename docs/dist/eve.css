@@ -940,13 +940,10 @@
     background: #eceff1; }
 
 .eve-feedback {
-  align-items: center;
   box-sizing: border-box;
   color: #333;
-  display: flex;
   font-size: 0.75rem;
   line-height: 1.125rem;
-  min-height: 2.25rem;
   padding: 0.5rem 1rem; }
   .eve-feedback.is-success {
     background: #b5dfb7; }
