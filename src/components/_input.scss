@@ -98,6 +98,7 @@ $eve-input-font-sizes: (
                 &::after {
                     height: $size / 2;
                     right: $size / 4;
+                    top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
                 }
 
@@ -118,6 +119,7 @@ $eve-input-font-sizes: (
 
                 svg {
                     height: $size / 2;
+                    top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
                 }
 
@@ -131,6 +133,7 @@ $eve-input-font-sizes: (
                     &::after {
                         height: $size / 2;
                         right: $size / 4;
+                        top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
                     }
 
@@ -151,6 +154,7 @@ $eve-input-font-sizes: (
 
                     svg {
                         height: $size / 2;
+                        top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
                     }
 

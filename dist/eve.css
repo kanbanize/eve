@@ -488,7 +488,6 @@
     background: transparent; }
   .eve-button.is-inverted {
     background: transparent;
-    font-weight: bold;
     text-transform: uppercase; }
   .eve-button.is-loading {
     color: transparent;
@@ -1037,6 +1036,7 @@
   .eve-input-field.is-small.is-loading::after {
     height: 0.875rem;
     right: 0.4375rem;
+    top: 0.4375rem;
     width: 0.875rem; }
   .eve-input-field.is-small.is-loading .eve-input {
     padding-right: 1.75rem; }
@@ -1047,12 +1047,14 @@
     font-size: 0.875rem; }
   .eve-input-field.is-small.has-icon svg {
     height: 0.875rem;
+    top: 0.4375rem;
     width: 0.875rem; }
   .eve-input-field.is-small.has-icon .eve-input {
     padding-left: 1.75rem; }
   .eve-input-field.is-loading::after {
     height: 1.125rem;
     right: 0.5625rem;
+    top: 0.5625rem;
     width: 1.125rem; }
   .eve-input-field.is-loading .eve-input {
     padding-right: 2.25rem; }
@@ -1063,12 +1065,14 @@
     font-size: 1.125rem; }
   .eve-input-field.has-icon svg {
     height: 1.125rem;
+    top: 0.5625rem;
     width: 1.125rem; }
   .eve-input-field.has-icon .eve-input {
     padding-left: 2.25rem; }
   .eve-input-field.is-large.is-loading::after {
     height: 1.5rem;
     right: 0.75rem;
+    top: 0.75rem;
     width: 1.5rem; }
   .eve-input-field.is-large.is-loading .eve-input {
     padding-right: 3rem; }
@@ -1079,6 +1083,7 @@
     font-size: 1.5rem; }
   .eve-input-field.is-large.has-icon svg {
     height: 1.5rem;
+    top: 0.75rem;
     width: 1.5rem; }
   .eve-input-field.is-large.has-icon .eve-input {
     padding-left: 3rem; }
@@ -1428,6 +1433,7 @@
     font-size: 0.875rem; }
   .eve-select-field.is-small.has-icon svg {
     height: 0.875rem;
+    top: 0.4375rem;
     width: 0.875rem; }
   .eve-select-field.is-small.has-icon .eve-select {
     padding-left: 1.75rem; }
@@ -1438,6 +1444,7 @@
     font-size: 1.125rem; }
   .eve-select-field.has-icon svg {
     height: 1.125rem;
+    top: 0.5625rem;
     width: 1.125rem; }
   .eve-select-field.has-icon .eve-select {
     padding-left: 2.25rem; }
@@ -1448,6 +1455,7 @@
     font-size: 1.5rem; }
   .eve-select-field.is-large.has-icon svg {
     height: 1.5rem;
+    top: 0.75rem;
     width: 1.5rem; }
   .eve-select-field.is-large.has-icon .eve-select {
     padding-left: 3rem; }

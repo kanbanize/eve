@@ -114,6 +114,7 @@ $eve-select-font-sizes: (
 
                 svg {
                     height: $size / 2;
+                    top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
                 }
 
@@ -135,6 +136,7 @@ $eve-select-font-sizes: (
 
                     svg {
                         height: $size / 2;
+                        top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
                     }
 
