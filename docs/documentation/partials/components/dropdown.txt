@@ -149,11 +149,11 @@
             <div class="eve-dropdown">
                 <ul>
                     <li>Welcome</li>
-                    <li class="is-divider"></li>
+                    <hr>
                     <li>Inbox</li>
                     <li>Workflow</li>
                     <li>Timeline</li>
-                    <li class="is-divider"></li>
+                    <hr>
                     <li>Power-ups</li>
                     <li>Setup</li>
                     <li>Done</li>
