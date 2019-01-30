@@ -10,12 +10,11 @@
     }
 
     &::before {
-        background: $eve-color-primary;
         content: '';
-        height: 1px;
         left: 0;
         position: absolute;
         right: 0;
+        border-top: 1px solid $eve-color-primary;
     }
 
     &::after {
