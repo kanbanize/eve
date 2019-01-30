@@ -22,8 +22,9 @@ $eve-switch-height: 1.125rem;
             width: 100%;
 
             &:checked ~ .eve-switch-mark {
+                background: $eve-color-success;
+
                 &::after {
-                    background: $eve-color-success;
                     left: $eve-switch-width / 2;
                 }
             }
@@ -32,10 +33,10 @@ $eve-switch-height: 1.125rem;
                 cursor: default;
 
                 ~ .eve-switch-mark {
-                    background: $eve-color-dark-silver;
+                    background: $eve-color-bright-silver;
 
                     &::after {
-                        background: $eve-color-light;
+                        background: $eve-color-dark-silver;
                     }
                 }
             }
@@ -43,22 +44,24 @@ $eve-switch-height: 1.125rem;
     }
 
     .eve-switch-mark {
-        background: $eve-color-bright-silver;
+        align-items: center;
+        background: $eve-color-dark-silver;
         border-radius: $eve-switch-height / 2;
         box-sizing: border-box;
+        display: flex;
         height: 100%;
-        padding: .125rem;
         pointer-events: none;
+        transition: background 150ms ease;
         width: 100%;
 
         &::after {
-            background: $eve-color-darker-silver;
+            background: $eve-color-light;
             border-radius: 50%;
             content: '';
             height: $eve-switch-height - .25rem;
             left: .125rem;
             position: absolute;
-            transition: left 150ms ease, background 150ms ease;
+            transition: left 150ms ease;
             width: $eve-switch-height - .25rem;
         }
     }
