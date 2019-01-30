@@ -51,17 +51,16 @@ $eve-dropdown-list-item-size: 2rem;
                 text-transform: uppercase;
             }
 
-            &.is-divider {
-                background: $eve-color-bright-silver;
-                height: 1px;
-                margin: $eve-spacing-tiny 0;
-                pointer-events: none;
-            }
-
             &.is-disabled {
                 color: $eve-color-darker-silver;
                 pointer-events: none;
             }
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid $eve-color-bright-silver;
+            margin: $eve-spacing-tiny 0;
         }
     }
 
