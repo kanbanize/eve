@@ -12,7 +12,45 @@
                 <li>
                     <a href="#">Components</a>
                 </li>
+                <li>
+                    <a href="#">Breadcrumb</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Active</div>
+        <div class="component-example">
+            <ul class="eve-breadcrumb">
+                <li>
+                    <a href="#">Eve</a>
+                </li>
+                <li>
+                    <a href="#">Documentation</a>
+                </li>
+                <li>
+                    <a href="#">Components</a>
+                </li>
                 <li class="is-active">
+                    <a href="#">Breadcrumb</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <ul class="eve-breadcrumb">
+                <li>
+                    <a href="#">Eve</a>
+                </li>
+                <li>
+                    <a href="#">Documentation</a>
+                </li>
+                <li>
+                    <a href="#">Components</a>
+                </li>
+                <li class="is-disabled">
                     <a href="#">Breadcrumb</a>
                 </li>
             </ul>

@@ -34,5 +34,13 @@ $eve-breadcrumb-item-active-color: $eve-color-primary !default;
                 color: $eve-breadcrumb-item-active-color;
             }
         }
+
+        &.is-disabled {
+            pointer-events: none;
+
+            a {
+                color: $eve-color-darker-silver;
+            }
+        }
     }
 }
