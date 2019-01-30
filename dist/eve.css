@@ -342,6 +342,10 @@
       text-decoration: underline; }
   .eve-breadcrumb li.is-active a {
     color: #2196f3; }
+  .eve-breadcrumb li.is-disabled {
+    pointer-events: none; }
+    .eve-breadcrumb li.is-disabled a {
+      color: #b0bec5; }
 
 .eve-button {
   align-items: center;
@@ -877,12 +881,11 @@
   .eve-divider[data-content] {
     margin: 1rem 0 0.5rem; }
   .eve-divider::before {
-    background: #2196f3;
     content: '';
-    height: 1px;
     left: 0;
     position: absolute;
-    right: 0; }
+    right: 0;
+    border-top: 1px solid #2196f3; }
   .eve-divider::after {
     background: #fff;
     content: attr(data-content);
@@ -927,14 +930,13 @@
         height: 2rem;
         pointer-events: none;
         text-transform: uppercase; }
-      .eve-dropdown ul li.is-divider {
-        background: #eceff1;
-        height: 1px;
-        margin: 0.5rem 0;
-        pointer-events: none; }
       .eve-dropdown ul li.is-disabled {
         color: #b0bec5;
         pointer-events: none; }
+    .eve-dropdown ul hr {
+      border: 0;
+      border-top: 1px solid #eceff1;
+      margin: 0.5rem 0; }
   .eve-dropdown.is-stripped ul li:nth-child(even) {
     background: #eceff1; }
 
@@ -992,6 +994,9 @@
   line-height: 2.25rem;
   padding: 0 1rem; }
   .eve-input::-webkit-input-placeholder {
+    color: #b0bec5;
+    font-family: inherit; }
+  .eve-input:-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
   .eve-input::-ms-input-placeholder {
@@ -1379,7 +1384,7 @@
   min-width: 0;
   outline: none;
   width: 100%;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem;
   font-size: 0.875rem;
   height: 2.25rem;
   line-height: 2.25rem;
@@ -1389,7 +1394,7 @@
   .eve-select::-ms-expand {
     display: none; }
   .eve-select.is-small {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.4375rem center/0.875rem 0.875rem;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.4375rem center/0.875rem 0.875rem;
     font-size: 0.75rem;
     height: 1.75rem;
     line-height: 1.75rem;
@@ -1403,7 +1408,7 @@
   .eve-select:disabled {
     background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem; }
   .eve-select.is-large {
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23b0bec5'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem;
     font-size: 1rem;
     height: 3rem;
     line-height: 3rem;
@@ -1484,31 +1489,34 @@
     position: absolute;
     top: 0;
     width: 100%; }
-    .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
-      background: #4caf50;
-      left: 1rem; }
+    .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark {
+      background: #4caf50; }
+      .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
+        left: 1rem; }
     .eve-switch input[type='checkbox']:disabled {
       cursor: default; }
       .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark {
-        background: #cfd8dc; }
+        background: #eceff1; }
         .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark::after {
-          background: #fff; }
+          background: #cfd8dc; }
   .eve-switch .eve-switch-mark {
-    background: #eceff1;
+    align-items: center;
+    background: #cfd8dc;
     border-radius: 0.5625rem;
     box-sizing: border-box;
+    display: flex;
     height: 100%;
-    padding: .125rem;
     pointer-events: none;
+    transition: background 150ms ease;
     width: 100%; }
     .eve-switch .eve-switch-mark::after {
-      background: #b0bec5;
+      background: #fff;
       border-radius: 50%;
       content: '';
       height: 0.875rem;
       left: .125rem;
       position: absolute;
-      transition: left 150ms ease, background 150ms ease;
+      transition: left 150ms ease;
       width: 0.875rem; }
 
 .eve-switch-control {
@@ -1751,6 +1759,9 @@
   padding: 0.5rem 1rem;
   width: 100%; }
   .eve-textarea::-webkit-input-placeholder {
+    color: #b0bec5;
+    font-family: inherit; }
+  .eve-textarea:-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
   .eve-textarea::-ms-input-placeholder {
