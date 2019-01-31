@@ -1487,8 +1487,6 @@
       cursor: default; }
       .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark {
         background: #eceff1; }
-        .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark::after {
-          background: #cfd8dc; }
   .eve-switch .eve-switch-mark {
     align-items: center;
     background: #cfd8dc;

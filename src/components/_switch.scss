@@ -34,10 +34,6 @@ $eve-switch-height: 1.125rem;
 
                 ~ .eve-switch-mark {
                     background: $eve-color-bright-silver;
-
-                    &::after {
-                        background: $eve-color-dark-silver;
-                    }
                 }
             }
         }
