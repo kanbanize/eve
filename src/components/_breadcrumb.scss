@@ -36,8 +36,6 @@ $eve-breadcrumb-item-active-color: $eve-color-primary !default;
         }
 
         &.is-disabled {
-            pointer-events: none;
-
             a {
                 color: $eve-color-darker-silver;
             }

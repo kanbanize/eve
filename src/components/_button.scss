@@ -233,7 +233,6 @@ $eve-button-font-sizes: (
 
     &:disabled {
         background: $eve-color-darker-silver;
-        pointer-events: none;
 
         &.is-outlined {
             background: $eve-color-darker-silver;

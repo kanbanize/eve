@@ -342,10 +342,8 @@
       text-decoration: underline; }
   .eve-breadcrumb li.is-active a {
     color: #2196f3; }
-  .eve-breadcrumb li.is-disabled {
-    pointer-events: none; }
-    .eve-breadcrumb li.is-disabled a {
-      color: #b0bec5; }
+  .eve-breadcrumb li.is-disabled a {
+    color: #b0bec5; }
 
 .eve-button {
   align-items: center;
@@ -557,8 +555,7 @@
   .eve-button.has-icon svg {
     fill: #fff; }
   .eve-button:disabled {
-    background: #b0bec5;
-    pointer-events: none; }
+    background: #b0bec5; }
     .eve-button:disabled.is-outlined {
       background: #b0bec5;
       border-color: transparent;
@@ -931,8 +928,7 @@
         pointer-events: none;
         text-transform: uppercase; }
       .eve-dropdown ul li.is-disabled {
-        color: #b0bec5;
-        pointer-events: none; }
+        color: #b0bec5; }
     .eve-dropdown ul hr {
       border: 0;
       border-top: 1px solid #eceff1;
@@ -996,9 +992,6 @@
   .eve-input::-webkit-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
-  .eve-input:-ms-input-placeholder {
-    color: #b0bec5;
-    font-family: inherit; }
   .eve-input::-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
@@ -1031,8 +1024,7 @@
     border: 1px solid #f44336; }
   .eve-input:disabled {
     background: #cfd8dc;
-    color: #607d8b;
-    pointer-events: none; }
+    color: #607d8b; }
 
 .eve-input-field {
   align-items: center;
@@ -1181,8 +1173,7 @@
         top: 0;
         width: .25rem; }
     .eve-navigation li.is-disabled {
-      color: #b0bec5;
-      pointer-events: none; }
+      color: #b0bec5; }
       .eve-navigation li.is-disabled::after {
         background: #b0bec5;
         bottom: 0;
@@ -1424,8 +1415,7 @@
   .eve-select.is-danger {
     border: 1px solid #f44336; }
   .eve-select:disabled {
-    color: #607d8b;
-    pointer-events: none; }
+    color: #607d8b; }
 
 .eve-select-field {
   align-items: center;
@@ -1600,8 +1590,7 @@
         position: absolute;
         right: 0; }
     .eve-tabs li.is-disabled {
-      color: #b0bec5;
-      pointer-events: none; }
+      color: #b0bec5; }
       .eve-tabs li.is-disabled::after {
         background: #b0bec5; }
 
@@ -1761,9 +1750,6 @@
   .eve-textarea::-webkit-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
-  .eve-textarea:-ms-input-placeholder {
-    color: #b0bec5;
-    font-family: inherit; }
   .eve-textarea::-ms-input-placeholder {
     color: #b0bec5;
     font-family: inherit; }
@@ -1786,7 +1772,6 @@
     background: #cfd8dc;
     border-color: #cfd8dc;
     color: #607d8b;
-    pointer-events: none;
     resize: none; }
 
 .eve-tooltip {

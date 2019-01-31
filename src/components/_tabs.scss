@@ -47,7 +47,6 @@ $eve-tabs-size: 3rem;
 
         &.is-disabled {
             color: $eve-color-darker-silver;
-            pointer-events: none;
 
             &::after {
                 background: $eve-color-darker-silver;
