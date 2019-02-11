@@ -234,6 +234,10 @@ $eve-button-font-sizes: (
     &:disabled {
         background: $eve-color-darker-silver;
 
+        &:hover {
+            background: $eve-color-darker-silver;
+        }
+
         &.is-outlined {
             background: $eve-color-darker-silver;
             border-color: transparent;

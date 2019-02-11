@@ -556,6 +556,8 @@
     fill: #fff; }
   .eve-button:disabled {
     background: #b0bec5; }
+    .eve-button:disabled:hover {
+      background: #b0bec5; }
     .eve-button:disabled.is-outlined {
       background: #b0bec5;
       border-color: transparent;
