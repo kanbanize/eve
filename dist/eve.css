@@ -1823,23 +1823,24 @@
   .eve-form-control .eve-button {
     flex-shrink: 0; }
 
-.eve-list .eve-list-item {
+.eve-tile {
   display: flex; }
-  .eve-list .eve-list-item:not(:last-child) {
-    margin-bottom: 1rem; }
-  .eve-list .eve-list-item .eve-avatar {
+  .eve-tile .eve-avatar {
     flex-shrink: 0;
     margin-right: 1.5rem; }
-  .eve-list .eve-list-item .eve-list-item-content {
+  .eve-tile .eve-tile-content {
     font-size: 0.875rem; }
-    .eve-list .eve-list-item .eve-list-item-content .eve-list-item-title {
+    .eve-tile .eve-tile-content .eve-tile-title {
       margin-bottom: .25rem; }
-    .eve-list .eve-list-item .eve-list-item-content .eve-list-item-description {
+    .eve-tile .eve-tile-content .eve-tile-description {
       color: #607d8b;
       line-height: 1.125rem; }
-  .eve-list .eve-list-item .eve-switch {
+  .eve-tile .eve-switch {
     flex-shrink: 0;
     margin-left: 1.5rem; }
+
+.eve-tiles .eve-tile:not(:last-child) {
+  margin-bottom: 1rem; }
 
 .eve-cursor-default {
   cursor: default !important; }

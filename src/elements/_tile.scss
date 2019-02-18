@@ -1,0 +1,34 @@
+.eve-tile {
+    display: flex;
+
+    .eve-avatar {
+        flex-shrink: 0;
+        margin-right: $eve-spacing-normal;
+    }
+
+    .eve-tile-content {
+        font-size: $eve-font-normal;
+
+        .eve-tile-title {
+            margin-bottom: .25rem;
+        }
+
+        .eve-tile-description {
+            color: $eve-color-darkest-silver;
+            line-height: 1.125rem;
+        }
+    }
+
+    .eve-switch {
+        flex-shrink: 0;
+        margin-left: $eve-spacing-normal;
+    }
+}
+
+.eve-tiles {
+    .eve-tile {
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-small;
+        }
+    }
+}
