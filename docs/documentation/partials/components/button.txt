@@ -61,18 +61,12 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">File</div>
+        <div class="component-header">Upload</div>
         <div class="component-example">
             <button class="eve-button is-primary is-file">
                 Upload...
                 <input type="file">
             </button>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Rounded</div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-rounded">Rounded</button>
         </div>
     </div>
     <div class="component-content">

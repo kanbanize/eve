@@ -63,10 +63,6 @@ $eve-button-font-sizes: (
                 }
             }
 
-            &.is-rounded {
-                border-radius: $size / 2;
-            }
-
             &.has-icon {
                 i {
                     font-size: $size / 2;
@@ -91,10 +87,6 @@ $eve-button-font-sizes: (
                         top: calc(50% - #{$size / 4});
                         width: $size / 2;
                     }
-                }
-
-                &.is-rounded {
-                    border-radius: $size / 2;
                 }
 
                 &.has-icon {
@@ -273,18 +265,6 @@ $eve-button-font-sizes: (
 
     &.has-addons {
         .eve-button {
-            &.is-rounded {
-                &:first-of-type {
-                    border-bottom-right-radius: 0;
-                    border-top-right-radius: 0;
-                }
-
-                &:last-of-type {
-                    border-bottom-left-radius: 0;
-                    border-top-left-radius: 0;
-                }
-            }
-
             &.has-icon {
                 i,
                 svg {

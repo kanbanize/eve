@@ -41,18 +41,4 @@ $eve-pagination-item-size: 2.25rem;
             text-decoration: none;
         }
     }
-
-    &.is-rounded {
-        li {
-            $radius: $eve-pagination-item-size / 2;
-
-            &:first-child {
-                border-radius: $radius 0 0 $radius;
-            }
-
-            &:last-child {
-                border-radius: 0 $radius $radius 0;
-            }
-        }
-    }
 }

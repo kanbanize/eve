@@ -52,12 +52,9 @@ $eve-select-font-sizes: (
             line-height: $size;
             padding: 0 $size 0 $padding;
 
-            &.is-rounded {
-                border-radius: $size / 2;
-            }
-
             &:disabled {
                 background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
+                color: $eve-color-darkest-silver;
             }
         } @else {
             &.is-#{$eve-select-size} {
@@ -67,12 +64,9 @@ $eve-select-font-sizes: (
                 line-height: $size;
                 padding: 0 $size 0 $padding;
 
-                &.is-rounded {
-                    border-radius: $size / 2;
-                }
-
                 &:disabled {
                     background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
+                    color: $eve-color-darkest-silver;
                 }
             }
         }
@@ -84,10 +78,6 @@ $eve-select-font-sizes: (
         &.is-#{$eve-select-color} {
             border: 1px solid $color;
         }
-    }
-
-    &:disabled {
-        color: $eve-color-darkest-silver;
     }
 }
 

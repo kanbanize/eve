@@ -44,12 +44,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Rounded</div>
-        <div class="component-example">
-            <input type="text" class="eve-input is-rounded" placeholder="Rounded">
-        </div>
-    </div>
-    <div class="component-content">
         <div class="component-header">Disabled</div>
         <div class="component-example">
             <input type="text" value="Disabled" class="eve-input" disabled="disabled">

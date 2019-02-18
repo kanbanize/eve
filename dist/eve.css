@@ -378,8 +378,6 @@
       left: calc(50% - 0.4375rem);
       top: calc(50% - 0.4375rem);
       width: 0.875rem; }
-    .eve-button.is-small.is-rounded {
-      border-radius: 0.875rem; }
     .eve-button.is-small.has-icon i {
       font-size: 0.875rem; }
     .eve-button.is-small.has-icon svg {
@@ -390,8 +388,6 @@
     left: calc(50% - 0.5625rem);
     top: calc(50% - 0.5625rem);
     width: 1.125rem; }
-  .eve-button.is-rounded {
-    border-radius: 1.125rem; }
   .eve-button.has-icon i {
     font-size: 1.125rem; }
   .eve-button.has-icon svg {
@@ -407,8 +403,6 @@
       left: calc(50% - 0.75rem);
       top: calc(50% - 0.75rem);
       width: 1.5rem; }
-    .eve-button.is-large.is-rounded {
-      border-radius: 1.5rem; }
     .eve-button.is-large.has-icon i {
       font-size: 1.5rem; }
     .eve-button.is-large.has-icon svg {
@@ -603,12 +597,6 @@
     justify-content: center; }
   .eve-buttons.is-right {
     justify-content: flex-end; }
-  .eve-buttons.has-addons .eve-button.is-rounded:first-of-type {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0; }
-  .eve-buttons.has-addons .eve-button.is-rounded:last-of-type {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0; }
   .eve-buttons.has-addons .eve-button.has-icon i,
   .eve-buttons.has-addons .eve-button.has-icon svg {
     margin: 0; }
@@ -1016,17 +1004,11 @@
     height: 1.75rem;
     line-height: 1.75rem;
     padding: 0 0.5rem; }
-    .eve-input.is-small.is-rounded {
-      border-radius: 0.875rem; }
-  .eve-input.is-rounded {
-    border-radius: 1.125rem; }
   .eve-input.is-large {
     font-size: 1rem;
     height: 3rem;
     line-height: 3rem;
     padding: 0 1.5rem; }
-    .eve-input.is-large.is-rounded {
-      border-radius: 1.5rem; }
   .eve-input.is-success {
     border: 1px solid #4caf50; }
   .eve-input.is-warning {
@@ -1205,10 +1187,6 @@
     .eve-pagination li a {
       color: inherit;
       text-decoration: none; }
-  .eve-pagination.is-rounded li:first-child {
-    border-radius: 1.125rem 0 0 1.125rem; }
-  .eve-pagination.is-rounded li:last-child {
-    border-radius: 0 1.125rem 1.125rem 0; }
 
 .eve-progress-line {
   background: #eceff1;
@@ -1383,32 +1361,27 @@
     height: 1.75rem;
     line-height: 1.75rem;
     padding: 0 1.75rem 0 0.5rem; }
-    .eve-select.is-small.is-rounded {
-      border-radius: 0.875rem; }
     .eve-select.is-small:disabled {
-      background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.25rem center/0.875rem 0.875rem; }
-  .eve-select.is-rounded {
-    border-radius: 1.125rem; }
+      background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.25rem center/0.875rem 0.875rem;
+      color: #607d8b; }
   .eve-select:disabled {
-    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem; }
+    background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem;
+    color: #607d8b; }
   .eve-select.is-large {
     background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem;
     font-size: 1rem;
     height: 3rem;
     line-height: 3rem;
     padding: 0 3rem 0 1.5rem; }
-    .eve-select.is-large.is-rounded {
-      border-radius: 1.5rem; }
     .eve-select.is-large:disabled {
-      background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem; }
+      background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23607d8b'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem;
+      color: #607d8b; }
   .eve-select.is-success {
     border: 1px solid #4caf50; }
   .eve-select.is-warning {
     border: 1px solid #ff9800; }
   .eve-select.is-danger {
     border: 1px solid #f44336; }
-  .eve-select:disabled {
-    color: #607d8b; }
 
 .eve-select-field {
   align-items: center;
