@@ -21,9 +21,7 @@
 @import 'components/divider';
 @import 'components/dropdown';
 @import 'components/feedback';
-@import 'components/form';
 @import 'components/input';
-@import 'components/list';
 @import 'components/navigation';
 @import 'components/pagination';
 @import 'components/progress';
@@ -35,6 +33,10 @@
 @import 'components/tag';
 @import 'components/textarea';
 @import 'components/tooltip';
+
+// Elements
+@import 'elements/form';
+@import 'elements/list';
 
 // Utilities
 @import 'utilities/cursor';
