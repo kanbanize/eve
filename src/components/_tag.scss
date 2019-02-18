@@ -23,33 +23,6 @@ $eve-tag-size: 1.75rem;
         &.is-#{$eve-tag-color} {
             background: $color;
 
-            &:hover {
-                background: lighten($color, 40);
-                color: $color;
-
-                .eve-tag-icon {
-                    i {
-                        color: $color;
-                    }
-
-                    svg {
-                        fill: $color;
-                    }
-                }
-
-                .eve-tag-action {
-                    background: $color;
-
-                    i {
-                        color: $eve-color-light;
-                    }
-
-                    svg {
-                        fill: $eve-color-light;
-                    }
-                }
-            }
-
             &.is-outlined {
                 border-color: $color;
                 color: $color;
@@ -69,10 +42,6 @@ $eve-tag-size: 1.75rem;
 
     &.is-outlined {
         background: transparent;
-
-        &:hover {
-            border-color: transparent;
-        }
     }
 
     .eve-tag-icon {
@@ -110,6 +79,22 @@ $eve-tag-size: 1.75rem;
             fill: $eve-color-light;
             height: $eve-tag-size / 2;
             width: $eve-tag-size / 2;
+        }
+    }
+
+    &.is-disabled {
+        @each $eve-tag-color in map-keys($eve-tag-colors) {
+            $color: map-get($eve-tag-colors, $eve-tag-color);
+
+            &.is-#{$eve-tag-color} {
+                background: $eve-color-darker-silver;
+
+                &.is-outlined {
+                    background: transparent;
+                    border-color: $eve-color-darker-silver;
+                    color: $eve-color-darker-silver;
+                }
+            }
         }
     }
 }

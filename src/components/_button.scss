@@ -238,21 +238,18 @@ $eve-button-font-sizes: (
             &.is-#{$eve-button-color} {
                 background: $eve-color-darker-silver;
 
-                &.is-outlined,
+                &.is-outlined {
+                    background: transparent;
+                    border-color: $eve-color-darker-silver;
+                    color: $eve-color-darker-silver;
+                }
+
                 &.is-inverted {
                     background: transparent;
+                    border-color: transparent;
                     color: $eve-color-darker-silver;
                 }
             }
-        }
-
-        &.is-outlined {
-            border-color: $eve-color-darker-silver;
-        }
-
-        &.is-inverted {
-            border-color: transparent;
-            color: $eve-color-darker-silver;
         }
     }
 }
