@@ -1820,6 +1820,22 @@
 .eve-cursor-pointer {
   cursor: pointer !important; }
 
+.eve-cursor-help {
+  cursor: help !important; }
+
+.eve-cursor-move {
+  cursor: move !important; }
+
+.eve-cursor-grab {
+  cursor: -webkit-grab !important;
+  cursor: grab !important; }
+
+.eve-cursor-zoom-in {
+  cursor: zoom-in !important; }
+
+.eve-cursor-zoom-out {
+  cursor: zoom-out !important; }
+
 .eve-display-none {
   display: none !important; }
 

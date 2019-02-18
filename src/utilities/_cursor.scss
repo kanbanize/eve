@@ -1,7 +1,12 @@
 // sass-lint:disable no-important
 $eve-cursors: (
     default,
-    pointer
+    pointer,
+    help,
+    move,
+    grab,
+    zoom-in,
+    zoom-out
 );
 
 @each $eve-cursor in $eve-cursors {

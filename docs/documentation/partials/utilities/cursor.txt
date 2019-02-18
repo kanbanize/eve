@@ -2,8 +2,13 @@
     <div class="component-title">Cursor</div>
     <div class="component-content">
         <div class="component-example">
-            <p class="eve-cursor-default">cursor default</p>
-            <p class="eve-cursor-pointer">cursor pointer</p>
+            <p class="eve-cursor-default">Cursor Default</p>
+            <p class="eve-cursor-pointer">Cursor Pointer</p>
+            <p class="eve-cursor-help">Cursor Help</p>
+            <p class="eve-cursor-move">Cursor Move</p>
+            <p class="eve-cursor-grab">Cursor Grab</p>
+            <p class="eve-cursor-zoom-in">Cursor Zoom In</p>
+            <p class="eve-cursor-zoom-out">Cursor Zoom Out</p>
         </div>
     </div>
 </div>
