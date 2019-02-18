@@ -111,6 +111,8 @@
         <div class="component-header">Disabled</div>
         <div class="component-example">
             <button class="eve-button is-primary" disabled="disabled">Disabled</button>
+            <button class="eve-button is-primary is-outlined" disabled="disabled">Disabled</button>
+            <button class="eve-button is-primary is-inverted" disabled="disabled">Disabled</button>
         </div>
     </div>
 </div>

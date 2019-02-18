@@ -232,20 +232,26 @@ $eve-button-font-sizes: (
     }
 
     &:disabled {
-        background: $eve-color-darker-silver;
+        @each $eve-button-color in map-keys($eve-button-colors) {
+            $color: map-get($eve-button-colors, $eve-button-color);
 
-        &:hover {
-            background: $eve-color-darker-silver;
+            &.is-#{$eve-button-color} {
+                background: $eve-color-darker-silver;
+
+                &.is-outlined,
+                &.is-inverted {
+                    background: transparent;
+                    color: $eve-color-darker-silver;
+                }
+            }
         }
 
         &.is-outlined {
-            background: $eve-color-darker-silver;
-            border-color: transparent;
-            color: $eve-color-light;
+            border-color: $eve-color-darker-silver;
         }
 
         &.is-inverted {
-            background: transparent;
+            border-color: transparent;
             color: $eve-color-darker-silver;
         }
     }
