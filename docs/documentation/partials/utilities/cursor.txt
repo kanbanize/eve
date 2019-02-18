@@ -7,8 +7,6 @@
             <p class="eve-cursor-help">Cursor Help</p>
             <p class="eve-cursor-move">Cursor Move</p>
             <p class="eve-cursor-grab">Cursor Grab</p>
-            <p class="eve-cursor-zoom-in">Cursor Zoom In</p>
-            <p class="eve-cursor-zoom-out">Cursor Zoom Out</p>
         </div>
     </div>
 </div>

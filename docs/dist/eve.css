@@ -1830,12 +1830,6 @@
   cursor: -webkit-grab !important;
   cursor: grab !important; }
 
-.eve-cursor-zoom-in {
-  cursor: zoom-in !important; }
-
-.eve-cursor-zoom-out {
-  cursor: zoom-out !important; }
-
 .eve-display-none {
   display: none !important; }
 

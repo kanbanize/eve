@@ -4,9 +4,7 @@ $eve-cursors: (
     pointer,
     help,
     move,
-    grab,
-    zoom-in,
-    zoom-out
+    grab
 );
 
 @each $eve-cursor in $eve-cursors {
