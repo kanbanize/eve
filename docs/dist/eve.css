@@ -164,7 +164,7 @@
     white-space: nowrap; }
   .eve-accordion .eve-accordion-content {
     display: none;
-    padding: 1rem; }
+    padding: 0.5rem 1rem; }
   .eve-accordion.has-icon {
     position: relative; }
     .eve-accordion.has-icon .eve-accordion-header {
