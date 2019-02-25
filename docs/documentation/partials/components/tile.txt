@@ -2,6 +2,17 @@
     <div class="component-title">Tile</div>
     <div class="component-content">
         <div class="component-example">
+            <div class="eve-tile">
+                <div class="eve-tile-content">
+                    <div class="eve-tile-title">Tile item 2</div>
+                    <div class="eve-tile-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nulla, corrupti ullam ut ad placeat explicabo hic cum deserunt est dignissimos vero consequuntur porro. Nam ad earum odit explicabo? Repellat?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Tiles</div>
+        <div class="component-example">
             <div class="eve-tiles">
                 <div class="eve-tile">
                     <div class="eve-tile-content">
