@@ -702,7 +702,8 @@
   font-size: 0.75rem;
   height: 1.75rem;
   line-height: 1.75rem;
-  padding: 0 0.5rem; }
+  padding: 0 0.5rem;
+  vertical-align: top; }
   .eve-chip .eve-avatar,
   .eve-chip .eve-chip-icon {
     border-radius: 50%;
@@ -874,8 +875,6 @@
     align-items: center;
     display: flex;
     justify-content: flex-end; }
-    .eve-dialog .eve-dialog-footer .eve-button:not(:first-child) {
-      margin-left: 1rem; }
   .eve-dialog.is-primary .eve-dialog-close:hover i {
     color: #2196f3; }
   .eve-dialog.is-primary .eve-dialog-close:hover svg {

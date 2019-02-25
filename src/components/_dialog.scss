@@ -55,12 +55,6 @@ $eve-dialog-close-size: 2rem;
         align-items: center;
         display: flex;
         justify-content: flex-end;
-
-        .eve-button {
-            &:not(:first-child) {
-                margin-left: $eve-spacing-small;
-            }
-        }
     }
 
     @each $eve-dialog-type in map-keys($eve-dialog-types) {
