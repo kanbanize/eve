@@ -14,8 +14,8 @@ $eve-color-picker-color-size: 2rem !default;
                 .eve-color-picker-dropdown {
                     &::after {
                         border: 0;
-                        border-left: 1px solid $eve-color-darker-silver;
-                        border-top: 1px solid $eve-color-darker-silver;
+                        border-left: 1px solid $eve-color-dark;
+                        border-top: 1px solid $eve-color-dark;
                         top: .125rem;
                     }
                 }
@@ -53,8 +53,8 @@ $eve-color-picker-color-size: 2rem !default;
             width: 2rem;
 
             &::after {
-                border-bottom: 1px solid $eve-color-darker-silver;
-                border-right: 1px solid $eve-color-darker-silver;
+                border-bottom: 1px solid $eve-color-dark;
+                border-right: 1px solid $eve-color-dark;
                 box-sizing: border-box;
                 content: '';
                 height: .5rem;
@@ -90,26 +90,12 @@ $eve-color-picker-color-size: 2rem !default;
                 justify-content: center;
                 margin: .25rem;
                 position: relative;
-                transition: transform .1s ease;
                 width: $eve-color-picker-color-size;
+                box-sizing: border-box;
 
-                &:hover {
-                    transform: scale(1.2);
-                }
-
+                &:hover,
                 &.is-selected {
-                    &::after {
-                        border-bottom: .125rem solid $eve-color-light;
-                        border-left: .125rem solid $eve-color-light;
-                        box-sizing: border-box;
-                        content: '';
-                        height: $eve-color-picker-color-size / 4;
-                        left: 50%;
-                        position: absolute;
-                        top: $eve-color-picker-color-size / 4;
-                        transform: rotate(-45deg) translate(-50%, -50%);
-                        width: $eve-color-picker-color-size / 2;
-                    }
+                    border: 2px solid $eve-color-dark;
                 }
             }
         }

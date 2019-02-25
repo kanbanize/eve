@@ -307,10 +307,10 @@
   .eve-profile svg {
     margin-left: 0.5rem; }
   .eve-profile i {
-    color: #b0bec5;
+    color: #333;
     font-size: 1rem; }
   .eve-profile svg {
-    fill: #b0bec5;
+    fill: #333;
     height: 1rem;
     width: 1rem; }
 
@@ -763,8 +763,8 @@
     display: none; }
     .eve-color-picker > input:checked ~ .eve-color-picker-control .eve-color-picker-dropdown::after {
       border: 0;
-      border-left: 1px solid #b0bec5;
-      border-top: 1px solid #b0bec5;
+      border-left: 1px solid #333;
+      border-top: 1px solid #333;
       top: .125rem; }
     .eve-color-picker > input:checked ~ .eve-color-picker-palette ul {
       display: flex; }
@@ -788,8 +788,8 @@
       margin-left: .5rem;
       width: 2rem; }
       .eve-color-picker .eve-color-picker-control .eve-color-picker-dropdown::after {
-        border-bottom: 1px solid #b0bec5;
-        border-right: 1px solid #b0bec5;
+        border-bottom: 1px solid #333;
+        border-right: 1px solid #333;
         box-sizing: border-box;
         content: '';
         height: .5rem;
@@ -818,25 +818,10 @@
         justify-content: center;
         margin: .25rem;
         position: relative;
-        transition: -webkit-transform .1s ease;
-        transition: transform .1s ease;
-        transition: transform .1s ease, -webkit-transform .1s ease;
-        width: 2rem; }
-        .eve-color-picker .eve-color-picker-palette ul li:hover {
-          -webkit-transform: scale(1.2);
-                  transform: scale(1.2); }
-        .eve-color-picker .eve-color-picker-palette ul li.is-selected::after {
-          border-bottom: 0.125rem solid #fff;
-          border-left: 0.125rem solid #fff;
-          box-sizing: border-box;
-          content: '';
-          height: 0.5rem;
-          left: 50%;
-          position: absolute;
-          top: 0.5rem;
-          -webkit-transform: rotate(-45deg) translate(-50%, -50%);
-                  transform: rotate(-45deg) translate(-50%, -50%);
-          width: 1rem; }
+        width: 2rem;
+        box-sizing: border-box; }
+        .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
+          border: 2px solid #333; }
 
 .eve-dialog {
   background: #fff;
