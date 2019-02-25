@@ -1166,9 +1166,11 @@
       text-decoration: none;
       text-overflow: ellipsis;
       white-space: nowrap; }
-    .eve-navigation li:hover, .eve-navigation li.is-active {
+    .eve-navigation li:hover {
+      background: #eceff1; }
+    .eve-navigation li.is-active {
       background: #eceff1;
-      color: inherit; }
+      color: #2196f3; }
     .eve-navigation li.is-active {
       position: relative; }
       .eve-navigation li.is-active::after {

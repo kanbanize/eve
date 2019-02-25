@@ -27,10 +27,13 @@ $eve-tab-size: 2.25rem;
             white-space: nowrap;
         }
 
-        &:hover,
+        &:hover {
+            background: $eve-color-bright-silver;
+        }
+
         &.is-active {
             background: $eve-color-bright-silver;
-            color: inherit;
+            color: $eve-color-primary;
         }
 
         &.is-active {
