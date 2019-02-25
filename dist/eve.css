@@ -1180,6 +1180,7 @@
         top: 0;
         width: .25rem; }
     .eve-navigation li.is-disabled {
+      background: transparent;
       color: #b0bec5; }
       .eve-navigation li.is-disabled::after {
         background: #b0bec5;
