@@ -149,19 +149,37 @@
     width: 1px; }
   .eve-accordion > input {
     display: none; }
+    .eve-accordion > input:checked ~ .eve-accordion-header::before {
+      border: 0;
+      border-bottom: 1px solid #2196f3;
+      border-right: 1px solid #2196f3;
+      position: relative;
+      top: -.125rem; }
     .eve-accordion > input:checked ~ .eve-accordion-content {
       display: block; }
   .eve-accordion .eve-accordion-header {
     background: #eceff1;
     color: #2196f3;
     cursor: pointer;
-    display: block;
+    display: flex;
     height: 2rem;
     line-height: 2rem;
     overflow: hidden;
     padding: 0 1rem;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    align-items: center; }
+    .eve-accordion .eve-accordion-header::before {
+      content: '';
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-top: 1px solid #2196f3;
+      border-right: 1px solid #2196f3;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      margin-right: 1rem;
+      box-sizing: border-box; }
   .eve-accordion .eve-accordion-content {
     display: none;
     padding: 0.5rem 1rem; }

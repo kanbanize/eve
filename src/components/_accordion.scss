@@ -32,6 +32,16 @@ $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
         display: none;
 
         &:checked {
+            ~ .eve-accordion-header {
+                &::before {
+                    border: 0;
+                    border-bottom: 1px solid $eve-color-primary;
+                    border-right: 1px solid $eve-color-primary;
+                    position: relative;
+                    top: -.125rem;
+                }
+            }
+
             ~ .eve-accordion-content {
                 display: block;
             }
@@ -42,13 +52,26 @@ $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
         background: $eve-accordion-header-background-color;
         color: $eve-accordion-header-color;
         cursor: pointer;
-        display: block;
+        display: flex;
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
         overflow: hidden;
         padding: 0 $eve-accordion-header-padding;
         text-overflow: ellipsis;
         white-space: nowrap;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: $eve-accordion-header-height / 4;
+            height: $eve-accordion-header-height / 4;
+            border-top: 1px solid $eve-color-primary;
+            border-right: 1px solid $eve-color-primary;
+            transform: rotate(45deg);
+            margin-right: $eve-spacing-small;
+            box-sizing: border-box;
+        }
     }
 
     .eve-accordion-content {
