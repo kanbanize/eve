@@ -10,7 +10,7 @@ $eve-color-picker-color-size: 2rem !default;
         display: none;
 
         &:checked {
-            ~ .eve-color-picker-controls {
+            ~ .eve-color-picker-control {
                 .eve-color-picker-dropdown {
                     &::after {
                         border: 0;
@@ -21,7 +21,7 @@ $eve-color-picker-color-size: 2rem !default;
                 }
             }
 
-            ~ .eve-color-picker-colors {
+            ~ .eve-color-picker-palette {
                 ul {
                     display: flex;
                 }
@@ -29,17 +29,10 @@ $eve-color-picker-color-size: 2rem !default;
         }
     }
 
-    .eve-color-picker-controls {
-        border-bottom: 1px solid $eve-color-bright-silver;
+    .eve-color-picker-control {
+        border-bottom: 1px solid $eve-color-dark-silver;
         display: flex;
         padding: .5rem;
-
-        .eve-color-picker-color {
-            flex-shrink: 0;
-            height: 2rem;
-            margin-right: .5rem;
-            width: 2rem;
-        }
 
         .eve-input {
             height: 2rem;
@@ -73,7 +66,7 @@ $eve-color-picker-color-size: 2rem !default;
         }
     }
 
-    .eve-color-picker-colors {
+    .eve-color-picker-palette {
         display: flex;
         flex-direction: column;
         padding: .25rem;
