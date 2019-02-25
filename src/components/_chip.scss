@@ -9,6 +9,7 @@ $eve-chip-size: 1.75rem;
     height: $eve-chip-size;
     line-height: $eve-chip-size;
     padding: 0 $eve-spacing-tiny;
+    vertical-align: top;
 
     .eve-avatar,
     .eve-chip-icon {
