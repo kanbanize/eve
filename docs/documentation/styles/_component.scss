@@ -1,13 +1,15 @@
+$component-title-color: #2196f3;
+
 .component {
     &:not(:last-child) {
         margin-bottom: 3.5rem;
     }
 
     .component-title {
-        margin-bottom: 1.5rem;
+        color: $component-title-color;
         font-size: 1.5rem;
         font-weight: 600;
-        color: #2196f3;
+        margin-bottom: 1.5rem;
     }
 
     .component-description {

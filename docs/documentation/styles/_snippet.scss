@@ -1,26 +1,34 @@
+$snippet-background-color: #eceff1;
+$snippet-color: #37474f;
+$snippet-tag-color: #3f51b5;
+$snippet-attribute-color: #37474f;
+$snippet-value-color: #c2185b;
+$snippet-sign-color: #3f51b5;
+
 .snippet {
-    white-space: pre-wrap;
-    padding: 1rem 1.5rem;
-    background: #eceff1;
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    color: #37474f;
-    margin: 0;
-    position: relative;
+    background: $snippet-background-color;
+    color: $snippet-color;
+    font-family: monospace;
     font-size: .75rem;
+    line-height: 1.125rem;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    position: relative;
+    white-space: pre-wrap;
 
     .snippet-tag {
-        color: #3f51b5;
+        color: $snippet-tag-color;
     }
 
     .snippet-attr {
-        color: #37474f;
+        color: $snippet-attribute-color;
     }
 
     .snippet-val {
-        color: #c2185b;
+        color: $snippet-value-color;
     }
 
     .snippet-sign {
-        color: #3f51b5;
+        color: $snippet-sign-color;
     }
 }
