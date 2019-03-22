@@ -80,25 +80,25 @@
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>
-                    <li>
+                    <li class="eve-profile">
                         <div class="eve-avatar is-tiny">
                             <img src="assets/images/avatar-1.jpg">
                         </div>
                         Cristopher Ivanov
                     </li>
-                    <li>
+                    <li class="eve-profile">
                         <div class="eve-avatar is-tiny">
                             <img src="assets/images/avatar-2.jpg">
                         </div>
                         Miyah Myles
                     </li>
-                    <li>
+                    <li class="eve-profile">
                         <div class="eve-avatar is-tiny">
                             <img src="assets/images/avatar-3.jpg">
                         </div>
                         Brantlee Adair
                     </li>
-                    <li>
+                    <li class="eve-profile">
                         <div class="eve-avatar is-tiny">
                             <img src="assets/images/avatar-4.jpg">
                         </div>

@@ -53,6 +53,12 @@ $eve-dropdown-list-item-size: 2rem;
 
             &.is-disabled {
                 color: $eve-color-darker-silver;
+                cursor: default;
+
+                &:hover,
+                &.is-active {
+                    background: transparent;
+                }
             }
         }
 

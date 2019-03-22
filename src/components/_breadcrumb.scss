@@ -36,8 +36,15 @@ $eve-breadcrumb-item-active-color: $eve-color-primary !default;
         }
 
         &.is-disabled {
+            cursor: default;
+
             a {
                 color: $eve-color-darker-silver;
+                cursor: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

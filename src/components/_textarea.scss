@@ -1,9 +1,3 @@
-$eve-textarea-colors: (
-    success: $eve-color-success,
-    warning: $eve-color-warning,
-    danger: $eve-color-danger
-);
-
 .eve-textarea {
     appearance: none;
     background: $eve-color-light;
@@ -33,18 +27,11 @@ $eve-textarea-colors: (
         resize: none;
     }
 
-    @each $eve-textarea-color in map-keys($eve-textarea-colors) {
-        $color: map-get($eve-textarea-colors, $eve-textarea-color);
-
-        &.is-#{$eve-textarea-color} {
-            border: 1px solid $color;
-        }
-    }
-
     &:disabled {
         background: $eve-color-dark-silver;
         border-color: $eve-color-dark-silver;
         color: $eve-color-darkest-silver;
+        cursor: default;
         resize: none;
     }
 }

@@ -20,7 +20,7 @@
         width: 5rem;
         height: 5rem;
         margin-right: 1rem;
-        border-radius: .5rem;
+        border-radius: 100%;
         flex-shrink: 0;
     }
 

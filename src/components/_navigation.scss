@@ -20,6 +20,7 @@ $eve-tab-size: 2.25rem;
 
         a {
             color: inherit;
+            cursor: inherit;
             display: block;
             overflow: hidden;
             text-decoration: none;
@@ -34,9 +35,6 @@ $eve-tab-size: 2.25rem;
         &.is-active {
             background: $eve-color-bright-silver;
             color: $eve-color-primary;
-        }
-
-        &.is-active {
             position: relative;
 
             &::after {
@@ -53,6 +51,7 @@ $eve-tab-size: 2.25rem;
         &.is-disabled {
             background: transparent;
             color: $eve-color-darker-silver;
+            cursor: default;
 
             &::after {
                 background: $eve-color-darker-silver;

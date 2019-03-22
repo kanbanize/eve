@@ -22,12 +22,4 @@
             <textarea class="eve-textarea" disabled="disabled"></textarea>
         </div>
     </div>
-    <div class="component-content">
-        <div class="component-header">Colors</div>
-        <div class="component-example">
-            <textarea class="eve-textarea is-success" placeholder="Success"></textarea>
-            <textarea class="eve-textarea is-warning" placeholder="Warning"></textarea>
-            <textarea class="eve-textarea is-danger" placeholder="Danger"></textarea>
-        </div>
-    </div>
 </div>

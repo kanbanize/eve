@@ -32,6 +32,7 @@ $eve-button-font-sizes: (
     outline: none;
     text-decoration: none;
     user-select: none;
+    vertical-align: top;
 
     &:hover,
     &:active,
@@ -63,6 +64,11 @@ $eve-button-font-sizes: (
                 }
             }
 
+            &.is-icon {
+                width: $size;
+            }
+
+            &.is-icon,
             &.has-icon {
                 i {
                     font-size: $size / 2;
@@ -89,6 +95,11 @@ $eve-button-font-sizes: (
                     }
                 }
 
+                &.is-icon {
+                    width: $size;
+                }
+
+                &.is-icon,
                 &.has-icon {
                     i {
                         font-size: $size / 2;
@@ -145,18 +156,13 @@ $eve-button-font-sizes: (
         }
     }
 
-    &.is-outlined {
-        background: transparent;
-    }
-
+    &.is-outlined,
     &.is-inverted {
         background: transparent;
-        text-transform: uppercase;
     }
 
     &.is-loading {
         color: transparent;
-        pointer-events: none;
         position: relative;
 
         &::after {
@@ -212,6 +218,14 @@ $eve-button-font-sizes: (
         }
     }
 
+    &.is-icon {
+        padding: 0;
+
+        svg {
+            fill: $eve-color-light;
+        }
+    }
+
     &.has-icon {
         i,
         svg {
@@ -224,6 +238,8 @@ $eve-button-font-sizes: (
     }
 
     &:disabled {
+        cursor: default;
+
         @each $eve-button-color in map-keys($eve-button-colors) {
             $color: map-get($eve-button-colors, $eve-button-color);
 
@@ -249,11 +265,6 @@ $eve-button-font-sizes: (
 .eve-buttons {
     display: flex;
 
-    .eve-button {
-        &:not(:first-of-type) {
-            margin-left: $eve-spacing-small;
-        }
-    }
 
     &.is-center {
         justify-content: center;
@@ -263,18 +274,7 @@ $eve-button-font-sizes: (
         justify-content: flex-end;
     }
 
-    &.has-addons {
-        .eve-button {
-            &.has-icon {
-                i,
-                svg {
-                    margin: 0;
-                }
-            }
-
-            &:not(:first-of-type) {
-                margin-left: 0;
-            }
-        }
+    .eve-button {
+        box-shadow:  0 0 0 1px $eve-color-light;
     }
 }

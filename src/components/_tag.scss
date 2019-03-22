@@ -83,6 +83,8 @@ $eve-tag-size: 1.75rem;
     }
 
     &.is-disabled {
+        cursor: default;
+
         @each $eve-tag-color in map-keys($eve-tag-colors) {
             $color: map-get($eve-tag-colors, $eve-tag-color);
 

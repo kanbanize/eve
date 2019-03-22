@@ -1,8 +1,3 @@
-<style>
-    .eve-form-control:not(:last-child) {
-        margin-bottom: .5rem;
-    }
-</style>
 <div class="component">
     <div class="component-title">Form</div>
     <div class="component-content">
@@ -134,11 +129,9 @@
                         Remember me
                     </label>
                 </div>
-                <div class="eve-form-group">
-                    <div class="eve-buttons">
-                        <button class="eve-button is-primary">Send</button>
-                        <button class="eve-button is-primary is-outlined">Discard</button>
-                    </div>
+                <div class="eve-buttons">
+                    <button class="eve-button is-primary">Send</button>
+                    <button class="eve-button is-primary is-outlined eve-gap-left-small">Discard</button>
                 </div>
             </form>
         </div>
@@ -316,7 +309,7 @@
                 </div>
                 <div class="eve-buttons is-right">
                     <button class="eve-button is-primary is-outlined">Discard</button>
-                    <button class="eve-button is-primary">Send</button>
+                    <button class="eve-button is-primary eve-gap-left-small">Send</button>
                 </div>
             </form>
         </div>
