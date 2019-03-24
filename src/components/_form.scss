@@ -1,4 +1,4 @@
-.eve-form-group {
+.eve-form {
     margin: 0 0 $eve-spacing-small;
 
     .eve-form-label {
@@ -24,10 +24,14 @@
     }
 }
 
+.eve-forms {
+    .eve-form {
+        &:not(:last-child) {
+            margin: 0 0 $eve-spacing-small;
+        }
+    }
+}
+
 .eve-form-control {
     display: flex;
-
-    .eve-button {
-        flex-shrink: 0;
-    }
 }

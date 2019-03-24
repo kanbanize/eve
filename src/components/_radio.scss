@@ -7,6 +7,7 @@ $eve-radio-size: 1.125rem;
     justify-content: center;
     position: relative;
     width: $eve-radio-size;
+    flex-shrink: 0;
 
     input {
         &[type='radio'] {
@@ -75,7 +76,6 @@ $eve-radio-size: 1.125rem;
     word-break: break-word;
 
     .eve-radio {
-        flex-shrink: 0;
         margin-right: $eve-spacing-tiny;
     }
 }

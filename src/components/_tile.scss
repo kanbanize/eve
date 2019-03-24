@@ -2,7 +2,6 @@
     display: flex;
 
     .eve-avatar {
-        flex-shrink: 0;
         margin-right: $eve-spacing-normal;
     }
 
@@ -20,7 +19,6 @@
     }
 
     .eve-switch {
-        flex-shrink: 0;
         margin-left: $eve-spacing-normal;
     }
 }

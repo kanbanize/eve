@@ -76,7 +76,7 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Buttons</div>
+        <div class="component-header">Grouped</div>
         <div class="component-example">
             <div class="eve-buttons">
                 <button class="eve-button is-primary">Button 1</button>

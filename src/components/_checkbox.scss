@@ -8,6 +8,7 @@ $eve-checkbox-mark-border-width: .125rem;
     justify-content: center;
     position: relative;
     width: $eve-checkbox-size;
+    flex-shrink: 0;
 
     input {
         &[type='checkbox'] {
@@ -81,7 +82,6 @@ $eve-checkbox-mark-border-width: .125rem;
     word-break: break-word;
 
     .eve-checkbox {
-        flex-shrink: 0;
         margin-right: $eve-spacing-tiny;
     }
 }
