@@ -27,11 +27,26 @@ $eve-tag-size: 1.75rem;
                 border-color: $color;
                 color: $color;
 
-                .eve-tag-icon {
-                    i {
-                        color: $color;
+                .eve-tag-icon,
+                .eve-tag-action {
+                    svg {
+                        fill: $color;
                     }
+                }
 
+                .eve-tag-action {
+                    &:hover {
+                        background: $color;
+
+                        svg {
+                            fill: $eve-color-light;
+                        }
+                    }
+                }
+            }
+
+            .eve-tag-action {
+                &:hover {
                     svg {
                         fill: $color;
                     }
@@ -40,20 +55,11 @@ $eve-tag-size: 1.75rem;
         }
     }
 
-    &.is-outlined {
-        background: transparent;
-    }
-
     .eve-tag-icon {
         align-items: center;
         display: flex;
         justify-content: center;
         margin-right: $eve-spacing-tiny;
-
-        i {
-            color: $eve-color-light;
-            font-size: $eve-tag-size / 2;
-        }
 
         svg {
             fill: $eve-color-light;
@@ -70,16 +76,19 @@ $eve-tag-size: 1.75rem;
         justify-content: center;
         margin-left: $eve-spacing-tiny;
 
-        i {
-            color: $eve-color-light;
-            font-size: $eve-tag-size / 2;
-        }
-
         svg {
             fill: $eve-color-light;
             height: $eve-tag-size / 2;
             width: $eve-tag-size / 2;
         }
+
+        &:hover {
+            background: $eve-color-light;
+        }
+    }
+
+    &.is-outlined {
+        background: transparent;
     }
 
     &.is-disabled {

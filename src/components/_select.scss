@@ -83,16 +83,8 @@ $eve-select-font-sizes: (
 
         @if $eve-select-size == 'normal' {
             &.has-icon {
-                i,
                 svg {
                     left: $size / 4;
-                }
-
-                i {
-                    font-size: $size / 2;
-                }
-
-                svg {
                     height: $size / 2;
                     top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
@@ -105,16 +97,8 @@ $eve-select-font-sizes: (
         } @else {
             &.is-#{$eve-select-size} {
                 &.has-icon {
-                    i,
                     svg {
                         left: $size / 4;
-                    }
-
-                    i {
-                        font-size: $size / 2;
-                    }
-
-                    svg {
                         height: $size / 2;
                         top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
@@ -129,16 +113,8 @@ $eve-select-font-sizes: (
     }
 
     &.has-icon {
-        i,
         svg {
             position: absolute;
-        }
-
-        i {
-            color: $eve-color-darker-silver;
-        }
-
-        svg {
             fill: $eve-color-darker-silver;
         }
     }

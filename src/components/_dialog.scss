@@ -28,11 +28,6 @@ $eve-dialog-close-size: 2rem;
         top: -($eve-dialog-close-size / 2);
         width: $eve-dialog-close-size;
 
-        i {
-            color: $eve-color-darkest-silver;
-            font-size: $eve-dialog-close-size / 2;
-        }
-
         svg {
             fill: $eve-color-darkest-silver;
             height: $eve-dialog-close-size / 2;
@@ -63,10 +58,6 @@ $eve-dialog-close-size: 2rem;
         &.is-#{$eve-dialog-type} {
             .eve-dialog-close {
                 &:hover {
-                    i {
-                        color: $color;
-                    }
-
                     svg {
                         fill: $color;
                     }

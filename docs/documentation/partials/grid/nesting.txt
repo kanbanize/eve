@@ -1,8 +1,4 @@
 <style>
-    .eve-row:first-child > div:first-child p {
-        height: 6rem;
-    }
-
     .eve-column > p {
         background: #263238;
         color: #fff;
@@ -23,7 +19,6 @@
                     <p>4</p>
                 </div>
                 <div class="eve-column">
-                    <p>Auto</p>
                     <div class="eve-row">
                         <div class="eve-column is-2">
                             <p>2</p>

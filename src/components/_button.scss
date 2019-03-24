@@ -70,10 +70,6 @@ $eve-button-font-sizes: (
 
             &.is-icon,
             &.has-icon {
-                i {
-                    font-size: $size / 2;
-                }
-
                 svg {
                     height: $size / 2;
                     width: $size / 2;
@@ -101,10 +97,6 @@ $eve-button-font-sizes: (
 
                 &.is-icon,
                 &.has-icon {
-                    i {
-                        font-size: $size / 2;
-                    }
-
                     svg {
                         height: $size / 2;
                         width: $size / 2;

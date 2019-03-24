@@ -33,11 +33,6 @@ $eve-chip-size: 1.75rem;
         display: flex;
         justify-content: center;
 
-        i {
-            color: $eve-color-light;
-            font-size: $eve-chip-size / 2;
-        }
-
         svg {
             fill: $eve-color-light;
             height: $eve-chip-size / 2;
@@ -56,18 +51,9 @@ $eve-chip-size: 1.75rem;
         &:hover {
             background: $eve-color-darker-silver;
 
-            i {
-                color: $eve-color-light;
-            }
-
             svg {
                 fill: $eve-color-light;
             }
-        }
-
-        i {
-            color: $eve-color-darker-silver;
-            font-size: $eve-chip-size / 2;
         }
 
         svg {
