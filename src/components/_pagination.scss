@@ -4,15 +4,15 @@ $eve-pagination-item-size: 2.25rem;
     display: flex;
     font-size: $eve-font-normal;
     list-style: none;
-    margin: 0;
+    margin: 0 -#{$eve-spacing-xx-tiny};
     padding: 0;
 
     li {
         align-items: center;
         background: $eve-color-light;
-        border: 1px solid $eve-color-primary;
+        border: 1px solid $eve-color-dark-silver;
         box-sizing: border-box;
-        color: $eve-color-primary;
+        color: $eve-color-dark;
         cursor: pointer;
         display: flex;
         height: $eve-pagination-item-size;
@@ -20,25 +20,57 @@ $eve-pagination-item-size: 2.25rem;
         line-height: $eve-pagination-item-size;
         min-width: $eve-pagination-item-size;
         padding: 0 $eve-spacing-tiny;
+        margin: 0 $eve-spacing-xx-tiny;
 
-        &:not(:last-child) {
-            margin-right: -1px;
-        }
-
-        &:first-child,
-        &:last-child {
+        &.is-prev,
+        &.is-next {
             min-width: 6rem;
         }
 
-        &:hover,
+        &:hover {
+            border-color: $eve-color-primary;
+            color: $eve-color-primary;
+        }
+
         &.is-active {
             background: $eve-color-primary;
             color: $eve-color-light;
+            border-color: $eve-color-primary;
+        }
+
+        &.is-disabled {
+            cursor: default;
+            border-color: $eve-color-dark-silver;
+            color: $eve-color-dark-silver;
+
+            &.is-active {
+                background: $eve-color-dark-silver;
+                color: $eve-color-light;
+            }
         }
 
         a {
             color: inherit;
             text-decoration: none;
+            cursor: inherit;
         }
+    }
+
+    &.is-rounded {
+        li {
+            border-radius: $eve-pagination-item-size / 2;
+        }
+    }
+
+    &.is-left {
+        justify-content: flex-start;
+    }
+
+    &.is-centered {
+        justify-content: center;
+    }
+
+    &.is-right {
+        justify-content: flex-end;
     }
 }

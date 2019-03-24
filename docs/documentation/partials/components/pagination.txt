@@ -1,14 +1,9 @@
-<style>
-    .eve-pagination:not(:last-child) {
-        margin-bottom: .5rem;
-    }
-</style>
 <div class="component">
     <div class="component-title">Pagination</div>
     <div class="component-content">
         <div class="component-example">
             <ul class="eve-pagination">
-                <li>
+                <li class="is-prev">
                     <a href="#">Previous</a>
                 </li>
                 <li>
@@ -20,13 +15,7 @@
                 <li>
                     <a href="#">3</a>
                 </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
+                <li class="is-next">
                     <a href="#">Next</a>
                 </li>
             </ul>
@@ -36,7 +25,7 @@
         <div class="component-header">Active</div>
         <div class="component-example">
             <ul class="eve-pagination">
-                <li>
+                <li class="is-prev">
                     <a href="#">Previous</a>
                 </li>
                 <li>
@@ -48,14 +37,90 @@
                 <li>
                     <a href="#">3</a>
                 </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
+                <li class="is-next">
                     <a href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <ul class="eve-pagination">
+                <li class="is-prev">
+                    <a href="#">Previous</a>
+                </li>
+                <li class="is-disabled">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li class="is-next">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Rounded</div>
+        <div class="component-example">
+            <ul class="eve-pagination is-rounded">
+                <li class="is-prev">
+                    <a href="#">Previous</a>
+                </li>
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li class="is-active">
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li class="is-next">
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Position</div>
+        <div class="component-example">
+            <ul class="eve-pagination is-left">
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+            </ul>
+            <ul class="eve-pagination is-centered">
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+            </ul>
+            <ul class="eve-pagination is-right">
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
                 </li>
             </ul>
         </div>

@@ -83,7 +83,17 @@
                 <button class="eve-button is-primary">Button 2</button>
                 <button class="eve-button is-primary">Button 3</button>
             </div>
-            <div class="eve-buttons is-center">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Position</div>
+        <div class="component-example">
+            <div class="eve-buttons is-left">
+                <button class="eve-button is-primary">Button 1</button>
+                <button class="eve-button is-primary">Button 2</button>
+                <button class="eve-button is-primary">Button 3</button>
+            </div>
+            <div class="eve-buttons is-centered">
                 <button class="eve-button is-primary">Button 1</button>
                 <button class="eve-button is-primary">Button 2</button>
                 <button class="eve-button is-primary">Button 3</button>

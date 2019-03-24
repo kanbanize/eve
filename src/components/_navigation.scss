@@ -50,17 +50,13 @@ $eve-tab-size: 2.25rem;
 
         &.is-disabled {
             background: transparent;
-            color: $eve-color-darker-silver;
+            color: $eve-color-dark-silver;
             cursor: default;
 
-            &::after {
-                background: $eve-color-darker-silver;
-                bottom: 0;
-                height: auto;
-                left: 0;
-                right: auto;
-                top: 0;
-                width: .25rem;
+            &.is-active {
+                &::after {
+                    background: $eve-color-dark-silver;
+                }
             }
         }
     }

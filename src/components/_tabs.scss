@@ -47,11 +47,13 @@ $eve-tabs-size: 3rem;
         }
 
         &.is-disabled {
-            color: $eve-color-darker-silver;
+            color: $eve-color-dark-silver;
             cursor: default;
 
-            &::after {
-                background: $eve-color-darker-silver;
+            &.is-active {
+                &::after {
+                    background: $eve-color-dark-silver;
+                }
             }
         }
     }

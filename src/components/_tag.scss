@@ -98,12 +98,12 @@ $eve-tag-size: 1.75rem;
             $color: map-get($eve-tag-colors, $eve-tag-color);
 
             &.is-#{$eve-tag-color} {
-                background: $eve-color-darker-silver;
+                background: $eve-color-dark-silver;
 
                 &.is-outlined {
                     background: transparent;
-                    border-color: $eve-color-darker-silver;
-                    color: $eve-color-darker-silver;
+                    border-color: $eve-color-dark-silver;
+                    color: $eve-color-dark-silver;
                 }
             }
         }

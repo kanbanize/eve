@@ -26,7 +26,6 @@ $eve-dropdown-list-item-size: 2rem;
                 background: $eve-color-bright-silver;
             }
 
-            i,
             svg,
             .eve-avatar {
                 margin-right: $eve-spacing-tiny;
@@ -47,8 +46,12 @@ $eve-dropdown-list-item-size: 2rem;
             }
 
             &.is-disabled {
-                color: $eve-color-darker-silver;
+                color: $eve-color-dark-silver;
                 cursor: default;
+
+                svg {
+                    fill: $eve-color-dark-silver;
+                }
 
                 &:hover,
                 &.is-active {

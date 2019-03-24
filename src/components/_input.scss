@@ -57,7 +57,7 @@ $eve-input-font-sizes: (
 
     &:disabled {
         background: $eve-color-dark-silver;
-        color: $eve-color-darkest-silver;
+        color: $eve-color-light;
         cursor: default;
     }
 }

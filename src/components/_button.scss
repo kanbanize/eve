@@ -236,18 +236,18 @@ $eve-button-font-sizes: (
             $color: map-get($eve-button-colors, $eve-button-color);
 
             &.is-#{$eve-button-color} {
-                background: $eve-color-darker-silver;
+                background: $eve-color-dark-silver;
 
                 &.is-outlined {
                     background: transparent;
-                    border-color: $eve-color-darker-silver;
-                    color: $eve-color-darker-silver;
+                    border-color: $eve-color-dark-silver;
+                    color: $eve-color-dark-silver;
                 }
 
                 &.is-inverted {
                     background: transparent;
                     border-color: transparent;
-                    color: $eve-color-darker-silver;
+                    color: $eve-color-dark-silver;
                 }
             }
         }
@@ -257,8 +257,11 @@ $eve-button-font-sizes: (
 .eve-buttons {
     display: flex;
 
+    &.is-left {
+        justify-content: flex-start;
+    }
 
-    &.is-center {
+    &.is-centered {
         justify-content: center;
     }
 
