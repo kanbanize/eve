@@ -643,6 +643,8 @@
   .eve-button.is-loading {
     color: transparent;
     position: relative; }
+    .eve-button.is-loading.is-icon svg, .eve-button.is-loading.has-icon svg {
+      display: none; }
     .eve-button.is-loading::after {
       -webkit-animation-duration: .5s;
               animation-duration: .5s;
@@ -1144,6 +1146,12 @@
     background: #cfd8dc;
     color: #fff;
     cursor: default; }
+    .eve-input:disabled::-webkit-input-placeholder {
+      color: #fff; }
+    .eve-input:disabled::-ms-input-placeholder {
+      color: #fff; }
+    .eve-input:disabled::placeholder {
+      color: #fff; }
 
 .eve-input-field {
   align-items: center;
@@ -1221,7 +1229,7 @@
     fill: #b0bec5;
     position: absolute; }
   .eve-input-field.is-disabled.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #fff; }
 
 .eve-navigation {
   display: flex;
@@ -1290,6 +1298,10 @@
     margin: 0 0.125rem; }
     .eve-pagination li.is-prev, .eve-pagination li.is-next {
       min-width: 6rem; }
+    .eve-pagination li.is-prev {
+      margin-right: 0.5rem; }
+    .eve-pagination li.is-next {
+      margin-left: 0.5rem; }
     .eve-pagination li:hover {
       border-color: #2196f3;
       color: #2196f3; }
@@ -1535,7 +1547,7 @@
     position: absolute;
     fill: #b0bec5; }
   .eve-select-field.is-disabled.has-icon svg {
-    fill: #cfd8dc; }
+    fill: #fff; }
 
 .eve-switch {
   align-items: center;

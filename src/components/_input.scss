@@ -59,6 +59,10 @@ $eve-input-font-sizes: (
         background: $eve-color-dark-silver;
         color: $eve-color-light;
         cursor: default;
+
+        &::placeholder {
+            color: $eve-color-light;
+        }
     }
 }
 
@@ -166,7 +170,7 @@ $eve-input-font-sizes: (
     &.is-disabled {
         &.has-icon {
             svg {
-                fill: $eve-color-dark-silver;
+                fill: $eve-color-light;
             }
         }
     }

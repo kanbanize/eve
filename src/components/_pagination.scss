@@ -27,6 +27,14 @@ $eve-pagination-item-size: 2.25rem;
             min-width: 6rem;
         }
 
+        &.is-prev {
+            margin-right: $eve-spacing-tiny;
+        }
+
+        &.is-next {
+            margin-left: $eve-spacing-tiny;
+        }
+
         &:hover {
             border-color: $eve-color-primary;
             color: $eve-color-primary;

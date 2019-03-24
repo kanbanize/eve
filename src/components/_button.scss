@@ -157,6 +157,13 @@ $eve-button-font-sizes: (
         color: transparent;
         position: relative;
 
+        &.is-icon,
+        &.has-icon {
+            svg {
+                display: none;
+            }
+        }
+
         &::after {
             animation-duration: .5s;
             animation-fill-mode: forwards;

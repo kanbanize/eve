@@ -21,6 +21,23 @@
         </div>
     </div>
     <div class="component-content">
+        <div class="component-header">Icon</div>
+        <div class="component-example">
+            <div class="eve-select-field has-icon">
+                <select class="eve-select">
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
         <div class="component-header">Sizes</div>
         <div class="component-example">
             <select class="eve-select is-small">
@@ -36,12 +53,21 @@
                 <option>Item 04</option>
             </select>
         </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
-            <div class="eve-select-field has-icon">
-                <select class="eve-select">
+            <div class="eve-select-field has-icon is-small">
+                <select class="eve-select is-small">
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+            </div>
+            <div class="eve-select-field has-icon is-large">
+                <select class="eve-select is-large">
                     <option>Item 01</option>
                     <option>Item 02</option>
                     <option>Item 03</option>
@@ -63,6 +89,20 @@
                 <option>Item 03</option>
                 <option>Item 04</option>
             </select>
+        </div>
+        <div class="component-example">
+            <div class="eve-select-field has-icon is-disabled">
+                <select class="eve-select" disabled="disabled">
+                    <option>Item 01</option>
+                    <option>Item 02</option>
+                    <option>Item 03</option>
+                    <option>Item 04</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+            </div>
         </div>
     </div>
 </div>
