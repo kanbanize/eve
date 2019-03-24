@@ -84,18 +84,162 @@
     margin: 0 -0.25rem; }
     .eve-row.has-gap-tiny > .eve-column {
       padding: 0 0.25rem; }
+      .eve-row.has-gap-tiny > .eve-column.is-1 {
+        flex: 1 calc(8.33333% - (0.25rem * 2));
+        max-width: calc(8.33333% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-2 {
+        flex: 1 calc(16.66667% - (0.25rem * 2));
+        max-width: calc(16.66667% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-3 {
+        flex: 1 calc(25% - (0.25rem * 2));
+        max-width: calc(25% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-4 {
+        flex: 1 calc(33.33333% - (0.25rem * 2));
+        max-width: calc(33.33333% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-5 {
+        flex: 1 calc(41.66667% - (0.25rem * 2));
+        max-width: calc(41.66667% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-6 {
+        flex: 1 calc(50% - (0.25rem * 2));
+        max-width: calc(50% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-7 {
+        flex: 1 calc(58.33333% - (0.25rem * 2));
+        max-width: calc(58.33333% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-8 {
+        flex: 1 calc(66.66667% - (0.25rem * 2));
+        max-width: calc(66.66667% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-9 {
+        flex: 1 calc(75% - (0.25rem * 2));
+        max-width: calc(75% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-10 {
+        flex: 1 calc(83.33333% - (0.25rem * 2));
+        max-width: calc(83.33333% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-11 {
+        flex: 1 calc(91.66667% - (0.25rem * 2));
+        max-width: calc(91.66667% - (0.25rem * 2)); }
+      .eve-row.has-gap-tiny > .eve-column.is-12 {
+        flex: 1 calc(100% - (0.25rem * 2));
+        max-width: calc(100% - (0.25rem * 2)); }
   .eve-row.has-gap-small {
     margin: 0 -0.5rem; }
     .eve-row.has-gap-small > .eve-column {
       padding: 0 0.5rem; }
+      .eve-row.has-gap-small > .eve-column.is-1 {
+        flex: 1 calc(8.33333% - (0.5rem * 2));
+        max-width: calc(8.33333% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-2 {
+        flex: 1 calc(16.66667% - (0.5rem * 2));
+        max-width: calc(16.66667% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-3 {
+        flex: 1 calc(25% - (0.5rem * 2));
+        max-width: calc(25% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-4 {
+        flex: 1 calc(33.33333% - (0.5rem * 2));
+        max-width: calc(33.33333% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-5 {
+        flex: 1 calc(41.66667% - (0.5rem * 2));
+        max-width: calc(41.66667% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-6 {
+        flex: 1 calc(50% - (0.5rem * 2));
+        max-width: calc(50% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-7 {
+        flex: 1 calc(58.33333% - (0.5rem * 2));
+        max-width: calc(58.33333% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-8 {
+        flex: 1 calc(66.66667% - (0.5rem * 2));
+        max-width: calc(66.66667% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-9 {
+        flex: 1 calc(75% - (0.5rem * 2));
+        max-width: calc(75% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-10 {
+        flex: 1 calc(83.33333% - (0.5rem * 2));
+        max-width: calc(83.33333% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-11 {
+        flex: 1 calc(91.66667% - (0.5rem * 2));
+        max-width: calc(91.66667% - (0.5rem * 2)); }
+      .eve-row.has-gap-small > .eve-column.is-12 {
+        flex: 1 calc(100% - (0.5rem * 2));
+        max-width: calc(100% - (0.5rem * 2)); }
   .eve-row.has-gap-normal {
     margin: 0 -0.75rem; }
     .eve-row.has-gap-normal > .eve-column {
       padding: 0 0.75rem; }
+      .eve-row.has-gap-normal > .eve-column.is-1 {
+        flex: 1 calc(8.33333% - (0.75rem * 2));
+        max-width: calc(8.33333% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-2 {
+        flex: 1 calc(16.66667% - (0.75rem * 2));
+        max-width: calc(16.66667% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-3 {
+        flex: 1 calc(25% - (0.75rem * 2));
+        max-width: calc(25% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-4 {
+        flex: 1 calc(33.33333% - (0.75rem * 2));
+        max-width: calc(33.33333% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-5 {
+        flex: 1 calc(41.66667% - (0.75rem * 2));
+        max-width: calc(41.66667% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-6 {
+        flex: 1 calc(50% - (0.75rem * 2));
+        max-width: calc(50% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-7 {
+        flex: 1 calc(58.33333% - (0.75rem * 2));
+        max-width: calc(58.33333% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-8 {
+        flex: 1 calc(66.66667% - (0.75rem * 2));
+        max-width: calc(66.66667% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-9 {
+        flex: 1 calc(75% - (0.75rem * 2));
+        max-width: calc(75% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-10 {
+        flex: 1 calc(83.33333% - (0.75rem * 2));
+        max-width: calc(83.33333% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-11 {
+        flex: 1 calc(91.66667% - (0.75rem * 2));
+        max-width: calc(91.66667% - (0.75rem * 2)); }
+      .eve-row.has-gap-normal > .eve-column.is-12 {
+        flex: 1 calc(100% - (0.75rem * 2));
+        max-width: calc(100% - (0.75rem * 2)); }
   .eve-row.has-gap-large {
     margin: 0 -1.5rem; }
     .eve-row.has-gap-large > .eve-column {
       padding: 0 1.5rem; }
+      .eve-row.has-gap-large > .eve-column.is-1 {
+        flex: 1 calc(8.33333% - (1.5rem * 2));
+        max-width: calc(8.33333% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-2 {
+        flex: 1 calc(16.66667% - (1.5rem * 2));
+        max-width: calc(16.66667% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-3 {
+        flex: 1 calc(25% - (1.5rem * 2));
+        max-width: calc(25% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-4 {
+        flex: 1 calc(33.33333% - (1.5rem * 2));
+        max-width: calc(33.33333% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-5 {
+        flex: 1 calc(41.66667% - (1.5rem * 2));
+        max-width: calc(41.66667% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-6 {
+        flex: 1 calc(50% - (1.5rem * 2));
+        max-width: calc(50% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-7 {
+        flex: 1 calc(58.33333% - (1.5rem * 2));
+        max-width: calc(58.33333% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-8 {
+        flex: 1 calc(66.66667% - (1.5rem * 2));
+        max-width: calc(66.66667% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-9 {
+        flex: 1 calc(75% - (1.5rem * 2));
+        max-width: calc(75% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-10 {
+        flex: 1 calc(83.33333% - (1.5rem * 2));
+        max-width: calc(83.33333% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-11 {
+        flex: 1 calc(91.66667% - (1.5rem * 2));
+        max-width: calc(91.66667% - (1.5rem * 2)); }
+      .eve-row.has-gap-large > .eve-column.is-12 {
+        flex: 1 calc(100% - (1.5rem * 2));
+        max-width: calc(100% - (1.5rem * 2)); }
   .eve-row.is-horizontal-left {
     justify-content: flex-start; }
   .eve-row.is-horizontal-center {
@@ -944,28 +1088,24 @@
   .eve-feedback.is-danger {
     background: #fccbc7; }
 
-.eve-form {
+.eve-form-group {
   margin: 0 0 1rem; }
-  .eve-form .eve-form-label {
+  .eve-form-group .eve-form-label {
     display: inline-block;
     font-size: 0.875rem;
     margin: 0 0 0.5rem; }
-  .eve-form .eve-form-help {
-    color: #607d8b;
-    margin-top: 0.5rem; }
-  .eve-form.is-inline {
+  .eve-form-group.is-inline {
     align-items: center;
     display: inline-flex;
     margin: 0 1rem 0 0; }
-    .eve-form.is-inline .eve-form-label {
+    .eve-form-group.is-inline .eve-form-label {
       flex-shrink: 0;
       margin: 0 0.5rem 0 0; }
 
-.eve-forms .eve-form:not(:last-child) {
-  margin: 0 0 1rem; }
-
 .eve-form-control {
   display: flex; }
+  .eve-form-control *:not(:last-child) {
+    margin-right: 0.5rem; }
 
 .eve-input {
   -webkit-appearance: none;

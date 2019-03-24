@@ -43,6 +43,15 @@ $eve-grid-vertical-alignments: (
 
             > .eve-column {
                 padding: 0 $gap;
+
+                @for $i from 1 through $eve-grid-cells-count {
+                    &.is-#{$i} {
+                        $width: calc(#{percentage($i / $eve-grid-cells-count)} - (#{$gap} * 2));
+
+                        flex: 1 $width;
+                        max-width: $width;
+                    }
+                }
             }
         }
     }

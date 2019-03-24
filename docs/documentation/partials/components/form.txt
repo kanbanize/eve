@@ -2,30 +2,9 @@
     <div class="component-title">Form</div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-form">
+            <div class="eve-form-group">
                 <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <div class="eve-form">
-                <label class="eve-form-label">Name</label>
-                <input type="text" class="eve-input">
-                <div class="eve-form-help">Name must contains only letters.</div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <div class="eve-form">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input">
-                    <button class="eve-button is-primary">Save</button>
-                </div>
-                <div class="eve-form-help">Name must contains only letters.</div>
             </div>
         </div>
     </div>
@@ -39,7 +18,18 @@
     </div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-form is-inline">
+            <div class="eve-form-group">
+                <label class="eve-form-label">Name</label>
+                <div class="eve-form-control">
+                    <input type="text" class="eve-input">
+                    <button class="eve-button is-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-form-group is-inline">
                 <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
             </div>
@@ -47,28 +37,10 @@
     </div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-form is-inline">
+            <div class="eve-form-group is-inline">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
                     <input type="text" class="eve-input">
-                    <button class="eve-button is-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <div class="eve-form is-inline">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input">
-                    <button class="eve-button is-primary">Save</button>
-                </div>
-            </div>
-            <div class="eve-form is-inline">
-                <label class="eve-form-label">Password</label>
-                <div class="eve-form-control">
-                    <input type="password" class="eve-input">
                     <button class="eve-button is-primary">Save</button>
                 </div>
             </div>
@@ -77,150 +49,18 @@
     <div class="component-content">
         <div class="component-example">
             <form style="width: 25rem;">
-                <div class="eve-form">
-                    <label class="eve-form-label">Name</label>
-                    <input type="text" class="eve-input">
-                </div>
-                <div class="eve-form">
+                <div class="eve-form-group">
                     <label class="eve-form-label">Email</label>
                     <input type="email" class="eve-input">
                 </div>
-                <div class="eve-form">
-                    <div class="eve-radios is-inline">
-                        <label class="eve-radio-control">
-                            <div class="eve-radio">
-                                <input type="radio" name="eve-radio">
-                                <div class="eve-radio-mark"></div>
-                            </div>
-                            Male
-                        </label>
-                        <label class="eve-radio-control">
-                            <div class="eve-radio">
-                                <input type="radio" name="eve-radio">
-                                <div class="eve-radio-mark"></div>
-                            </div>
-                            Female
-                        </label>
+                <div class="eve-form-group">
+                    <label class="eve-form-label">Password</label>
+                    <input type="password" class="eve-input">
+                </div>
+                <div class="eve-form-group">
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-primary">Sign In</button>
                     </div>
-                </div>
-                <div class="eve-form">
-                    <label class="eve-form-label">Bio</label>
-                    <textarea class="eve-textarea"></textarea>
-                </div>
-                <div class="eve-form">
-                    <label class="eve-switch-control">
-                        <div class="eve-switch">
-                            <input type="checkbox">
-                            <div class="eve-switch-mark"></div>
-                        </div>
-                        Sign up to the weekly newsletter
-                    </label>
-                </div>
-                <div class="eve-form">
-                    <label class="eve-form-label">Message</label>
-                    <textarea class="eve-textarea"></textarea>
-                </div>
-                <div class="eve-form">
-                    <label class="eve-checkbox-control">
-                        <div class="eve-checkbox">
-                            <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
-                        </div>
-                        Remember me
-                    </label>
-                </div>
-                <div class="eve-buttons">
-                    <button class="eve-button is-primary">Send</button>
-                    <button class="eve-button is-primary is-outlined eve-gap-left-small">Discard</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <form style="width: 25rem;">
-                <div class="eve-form">
-                    <button class="eve-button is-primary is-block">Sign Up with Google</button>
-                </div>
-                <div class="eve-divider" data-content="or"></div>
-                <div class="eve-form">
-                    <input type="email" class="eve-input" placeholder="Email">
-                </div>
-                <div class="eve-form">
-                    <input type="password" class="eve-input" placeholder="Password">
-                </div>
-                <div class="eve-form">
-                    <input type="password" class="eve-input" placeholder="Confirm Password">
-                </div>
-                <div class="eve-form">
-                    <input type="text" class="eve-input" placeholder="Job Title">
-                </div>
-                <div class="eve-form">
-                    <div class="eve-radios is-inline">
-                        <label class="eve-radio-control">
-                            <div class="eve-radio">
-                                <input type="radio" name="eve-radio">
-                                <div class="eve-radio-mark"></div>
-                            </div>
-                            Male
-                        </label>
-                        <label class="eve-radio-control">
-                            <div class="eve-radio">
-                                <input type="radio" name="eve-radio">
-                                <div class="eve-radio-mark"></div>
-                            </div>
-                            Female
-                        </label>
-                        <label class="eve-radio-control">
-                            <div class="eve-radio">
-                                <input type="radio" name="eve-radio">
-                                <div class="eve-radio-mark"></div>
-                            </div>
-                            Non-Binary
-                        </label>
-                    </div>
-                </div>
-                <div class="eve-form">
-                    <label class="eve-checkbox-control">
-                        <div class="eve-checkbox">
-                            <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
-                        </div>
-                        I agree to Eve terms &amp; conditions and Privacy Policy.
-                    </label>
-                </div>
-                <div class="eve-form">
-                    <button class="eve-button is-primary is-block">Sign Up</button>
-                </div>
-                <p class="eve-paragraph eve-text-center">Already have an account?</p>
-                <p class="eve-paragraph eve-text-center">
-                    <a href="#">Sign In</a>
-                </p>
-            </form>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
-            <form style="width: 25rem;">
-                <div class="eve-form">
-                    <button class="eve-button is-primary is-block">Sign Up with Google</button>
-                </div>
-                <div class="eve-divider" data-content="or"></div>
-                <div class="eve-form">
-                    <input type="email" class="eve-input" placeholder="Email">
-                </div>
-                <div class="eve-form">
-                    <input type="password" class="eve-input" placeholder="Password">
-                </div>
-                <div class="eve-row is-vertical-middle is-horizontal-between">
-                    <label class="eve-checkbox-control">
-                        <div class="eve-checkbox">
-                            <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
-                        </div>
-                        Remember me
-                    </label>
-                    <button class="eve-button is-primary">Sign In</button>
                 </div>
             </form>
         </div>
@@ -230,11 +70,13 @@
             <form style="width: 25rem;">
                 <h5 class="eve-heading-5 eve-gap-bottom-tiny">Forgot you password?</h5>
                 <p class="eve-paragraph eve-gap-bottom-small">Enter your email address to reset your password. You may need to check your spam folder.</p>
-                <div class="eve-form">
+                <div class="eve-form-group">
                     <input type="email" class="eve-input" placeholder="Email">
                 </div>
-                <div class="eve-row is-horizontal-right">
-                    <button class="eve-button is-primary">Reset Password</button>
+                <div class="eve-form-group">
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-primary">Reset Password</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -242,37 +84,33 @@
     <div class="component-content">
         <div class="component-example">
             <form style="width: 41rem;">
-                <div class="eve-row has-gap-small">
-                    <div class="eve-column">
-                        <div class="eve-form">
+                <div class="eve-row has-gap-small is-multiline">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">First Name</label>
                             <input type="text" class="eve-input">
                         </div>
                     </div>
-                    <div class="eve-column">
-                        <div class="eve-form">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">Last Name</label>
                             <input type="text" class="eve-input">
                         </div>
                     </div>
-                </div>
-                <div class="eve-row has-gap-small">
-                    <div class="eve-column">
-                        <div class="eve-form">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">Email</label>
                             <input type="email" class="eve-input">
                         </div>
                     </div>
-                    <div class="eve-column">
-                        <div class="eve-form">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">Mobile</label>
                             <input type="text" class="eve-input">
                         </div>
                     </div>
-                </div>
-                <div class="eve-row has-gap-small">
-                    <div class="eve-column">
-                        <div class="eve-form">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">Country</label>
                             <select class="eve-select">
                                 <option>Bulgaria</option>
@@ -282,8 +120,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="eve-column">
-                        <div class="eve-form">
+                    <div class="eve-column is-6">
+                        <div class="eve-form-group">
                             <label class="eve-form-label">Industry</label>
                             <select class="eve-select">
                                 <option>Consumer Electronics, Parts and Repair</option>
@@ -294,11 +132,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="eve-form">
+                <div class="eve-form-group">
                     <label class="eve-form-label">Bio</label>
                     <textarea class="eve-textarea"></textarea>
                 </div>
-                <div class="eve-form">
+                <div class="eve-form-group">
                     <label class="eve-checkbox-control">
                         <div class="eve-checkbox">
                             <input type="checkbox">
@@ -307,9 +145,11 @@
                         I want to recieve the weekly newsletter from eve and all the news that are related to it.
                     </label>
                 </div>
-                <div class="eve-buttons is-right">
-                    <button class="eve-button is-primary is-outlined">Discard</button>
-                    <button class="eve-button is-primary eve-gap-left-small">Send</button>
+                <div class="eve-form-group">
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-primary is-outlined">Discard</button>
+                        <button class="eve-button is-primary eve-gap-left-small">Save</button>
+                    </div>
                 </div>
             </form>
         </div>

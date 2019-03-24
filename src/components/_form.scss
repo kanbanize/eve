@@ -1,15 +1,10 @@
-.eve-form {
+.eve-form-group {
     margin: 0 0 $eve-spacing-small;
 
     .eve-form-label {
         display: inline-block;
         font-size: $eve-font-normal;
         margin: 0 0 $eve-spacing-tiny;
-    }
-
-    .eve-form-help {
-        color: $eve-color-darkest-silver;
-        margin-top: $eve-spacing-tiny;
     }
 
     &.is-inline {
@@ -24,14 +19,12 @@
     }
 }
 
-.eve-forms {
-    .eve-form {
-        &:not(:last-child) {
-            margin: 0 0 $eve-spacing-small;
-        }
-    }
-}
-
 .eve-form-control {
     display: flex;
+
+    * {
+        &:not(:last-child) {
+            margin-right: $eve-spacing-tiny;
+        }
+    }
 }
