@@ -1,5 +1,4 @@
 $eve-color-picker-color-size: 2rem !default;
-$eve-color-picker-input-size: 2rem !default;
 
 .eve-color-picker {
     background: $eve-color-light;
@@ -36,8 +35,8 @@ $eve-color-picker-input-size: 2rem !default;
         padding: .5rem;
 
         .eve-input {
-            height: $eve-color-picker-input-size;
-            line-height: $eve-color-picker-input-size;
+            height: 2rem;
+            line-height: 2rem;
             padding: 0 .5rem;
         }
 
@@ -48,15 +47,21 @@ $eve-color-picker-input-size: 2rem !default;
             cursor: pointer;
             display: flex;
             flex-shrink: 0;
-            height: $eve-color-picker-input-size;
+            height: 2rem;
             justify-content: center;
             margin-left: .5rem;
-            width: $eve-color-picker-input-size;
+            width: 2rem;
 
-            svg {
-                fill: $eve-color-dark;
-                height: $eve-color-picker-color-size / 2;
-                width: $eve-color-picker-color-size / 2;
+            &::after {
+                border-bottom: 1px solid $eve-color-dark;
+                border-right: 1px solid $eve-color-dark;
+                box-sizing: border-box;
+                content: '';
+                height: .5rem;
+                position: relative;
+                top: -.125rem;
+                transform: rotate(45deg);
+                width: .5rem;
             }
         }
     }
@@ -79,15 +84,15 @@ $eve-color-picker-input-size: 2rem !default;
             li {
                 align-items: center;
                 background: $eve-color-primary;
-                box-sizing: border-box;
                 cursor: pointer;
                 display: flex;
                 height: $eve-color-picker-color-size;
                 justify-content: center;
                 margin: .25rem;
                 position: relative;
-                transition: border-radius 150ms ease;
                 width: $eve-color-picker-color-size;
+                box-sizing: border-box;
+                transition: border-radius 150ms ease;
 
                 &:hover,
                 &.is-selected {

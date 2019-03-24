@@ -796,10 +796,17 @@
       justify-content: center;
       margin-left: .5rem;
       width: 2rem; }
-      .eve-color-picker .eve-color-picker-control .eve-color-picker-dropdown svg {
-        fill: #333;
-        height: 1rem;
-        width: 1rem; }
+      .eve-color-picker .eve-color-picker-control .eve-color-picker-dropdown::after {
+        border-bottom: 1px solid #333;
+        border-right: 1px solid #333;
+        box-sizing: border-box;
+        content: '';
+        height: .5rem;
+        position: relative;
+        top: -.125rem;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        width: .5rem; }
   .eve-color-picker .eve-color-picker-palette {
     display: flex;
     flex-direction: column;
@@ -814,15 +821,15 @@
       .eve-color-picker .eve-color-picker-palette ul li {
         align-items: center;
         background: #2196f3;
-        box-sizing: border-box;
         cursor: pointer;
         display: flex;
         height: 2rem;
         justify-content: center;
         margin: .25rem;
         position: relative;
-        transition: border-radius 150ms ease;
-        width: 2rem; }
+        width: 2rem;
+        box-sizing: border-box;
+        transition: border-radius 150ms ease; }
         .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
           border-radius: 100%; }
 
