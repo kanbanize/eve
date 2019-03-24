@@ -76,39 +76,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Avatars</div>
-        <div class="component-example">
-            <div class="eve-dropdown">
-                <ul>
-                    <li class="eve-profile">
-                        <div class="eve-avatar is-tiny">
-                            <img src="assets/images/avatar-1.jpg">
-                        </div>
-                        Cristopher Ivanov
-                    </li>
-                    <li class="eve-profile">
-                        <div class="eve-avatar is-tiny">
-                            <img src="assets/images/avatar-2.jpg">
-                        </div>
-                        Miyah Myles
-                    </li>
-                    <li class="eve-profile">
-                        <div class="eve-avatar is-tiny">
-                            <img src="assets/images/avatar-3.jpg">
-                        </div>
-                        Brantlee Adair
-                    </li>
-                    <li class="eve-profile">
-                        <div class="eve-avatar is-tiny">
-                            <img src="assets/images/avatar-4.jpg">
-                        </div>
-                        Vivianna Kiser
-                    </li>
-                </li>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
         <div class="component-header">Stripped</div>
         <div class="component-example">
             <div class="eve-dropdown is-stripped">
@@ -157,51 +124,6 @@
                     <li>Power-ups</li>
                     <li>Setup</li>
                     <li>Done</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Checkboxes</div>
-        <div class="component-example">
-            <div class="eve-dropdown">
-                <ul>
-                    <li>
-                        <label class="eve-checkbox-control">
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                            Item 01
-                        </label>
-                    </li>
-                    <li>
-                        <label class="eve-checkbox-control">
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                            Item 02
-                        </label>
-                    </li>
-                    <li>
-                        <label class="eve-checkbox-control">
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                            Item 03
-                        </label>
-                    </li>
-                    <li>
-                        <label class="eve-checkbox-control">
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                            Item 04
-                        </label>
-                    </li>
                 </ul>
             </div>
         </div>

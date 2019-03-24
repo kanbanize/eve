@@ -26,15 +26,11 @@ $eve-dropdown-list-item-size: 2rem;
                 background: $eve-color-bright-silver;
             }
 
-            svg,
-            .eve-avatar {
-                margin-right: $eve-spacing-tiny;
-            }
-
             svg {
                 fill: $eve-color-darker-silver;
                 height: $eve-dropdown-list-item-size / 2;
                 width: $eve-dropdown-list-item-size / 2;
+                margin-right: $eve-spacing-tiny;
             }
 
             &.is-header {

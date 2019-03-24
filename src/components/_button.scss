@@ -219,13 +219,9 @@ $eve-button-font-sizes: (
     }
 
     &.has-icon {
-        i,
-        svg {
-            margin-right: .5rem;
-        }
-
         svg {
             fill: $eve-color-light;
+            margin-right: $eve-spacing-tiny;
         }
     }
 

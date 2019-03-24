@@ -87,15 +87,11 @@ $eve-input-font-sizes: (
             }
 
             &.has-icon {
-                i,
-                svg {
-                    left: $size / 4;
-                }
-
                 svg {
                     height: $size / 2;
                     top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
+                    left: $size / 4;
                 }
 
                 .eve-input {
@@ -118,15 +114,11 @@ $eve-input-font-sizes: (
                 }
 
                 &.has-icon {
-                    i,
-                    svg {
-                        left: $size / 4;
-                    }
-
                     svg {
                         height: $size / 2;
                         top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
+                        left: $size / 4;
                     }
 
                     .eve-input {
@@ -165,13 +157,17 @@ $eve-input-font-sizes: (
     }
 
     &.has-icon {
-        i,
-        svg {
-            position: absolute;
-        }
-
         svg {
             fill: $eve-color-darker-silver;
+            position: absolute;
+        }
+    }
+
+    &.is-disabled {
+        &.has-icon {
+            svg {
+                fill: $eve-color-dark-silver;
+            }
         }
     }
 }

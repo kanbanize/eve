@@ -132,15 +132,11 @@ $eve-avatar-border-radius: 50% !default;
         margin-right: $eve-spacing-tiny;
     }
 
-    i,
-    svg {
-        margin-left: $eve-spacing-tiny;
-    }
-
     svg {
         fill: $eve-color-dark;
         height: 1rem;
         width: 1rem;
+        margin-left: $eve-spacing-tiny;
     }
 }
 

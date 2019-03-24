@@ -85,7 +85,6 @@ $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
         .eve-accordion-header {
             padding-right: $eve-accordion-header-height + $eve-accordion-header-padding;
 
-            i,
             svg {
                 background: $eve-accordion-header-icon-background;
                 box-sizing: border-box;
@@ -95,9 +94,6 @@ $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
                 right: 0;
                 top: 0;
                 width: $eve-accordion-header-height;
-            }
-
-            svg {
                 fill: $eve-accordion-header-icon-color;
             }
         }
