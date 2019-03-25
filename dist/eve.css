@@ -584,14 +584,16 @@
     .eve-button.is-primary.is-outlined {
       border-color: #2196f3;
       color: #2196f3; }
-      .eve-button.is-primary.is-outlined.has-icon svg {
+      .eve-button.is-primary.is-outlined.has-icon svg, .eve-button.is-primary.is-outlined.is-icon svg {
         fill: #2196f3; }
       .eve-button.is-primary.is-outlined:hover {
         background: #2196f3;
         color: #fff; }
+        .eve-button.is-primary.is-outlined:hover.has-icon svg, .eve-button.is-primary.is-outlined:hover.is-icon svg {
+          fill: #fff; }
     .eve-button.is-primary.is-inverted {
       color: #2196f3; }
-      .eve-button.is-primary.is-inverted.has-icon svg {
+      .eve-button.is-primary.is-inverted.is-icon svg, .eve-button.is-primary.is-inverted.has-icon svg {
         fill: #2196f3; }
       .eve-button.is-primary.is-inverted:hover {
         background: #e3f2fd; }
@@ -602,14 +604,16 @@
     .eve-button.is-success.is-outlined {
       border-color: #4caf50;
       color: #4caf50; }
-      .eve-button.is-success.is-outlined.has-icon svg {
+      .eve-button.is-success.is-outlined.has-icon svg, .eve-button.is-success.is-outlined.is-icon svg {
         fill: #4caf50; }
       .eve-button.is-success.is-outlined:hover {
         background: #4caf50;
         color: #fff; }
+        .eve-button.is-success.is-outlined:hover.has-icon svg, .eve-button.is-success.is-outlined:hover.is-icon svg {
+          fill: #fff; }
     .eve-button.is-success.is-inverted {
       color: #4caf50; }
-      .eve-button.is-success.is-inverted.has-icon svg {
+      .eve-button.is-success.is-inverted.is-icon svg, .eve-button.is-success.is-inverted.has-icon svg {
         fill: #4caf50; }
       .eve-button.is-success.is-inverted:hover {
         background: #d9eeda; }
@@ -620,14 +624,16 @@
     .eve-button.is-warning.is-outlined {
       border-color: #ff9800;
       color: #ff9800; }
-      .eve-button.is-warning.is-outlined.has-icon svg {
+      .eve-button.is-warning.is-outlined.has-icon svg, .eve-button.is-warning.is-outlined.is-icon svg {
         fill: #ff9800; }
       .eve-button.is-warning.is-outlined:hover {
         background: #ff9800;
         color: #fff; }
+        .eve-button.is-warning.is-outlined:hover.has-icon svg, .eve-button.is-warning.is-outlined:hover.is-icon svg {
+          fill: #fff; }
     .eve-button.is-warning.is-inverted {
       color: #ff9800; }
-      .eve-button.is-warning.is-inverted.has-icon svg {
+      .eve-button.is-warning.is-inverted.is-icon svg, .eve-button.is-warning.is-inverted.has-icon svg {
         fill: #ff9800; }
       .eve-button.is-warning.is-inverted:hover {
         background: #ffeacc; }
@@ -638,14 +644,16 @@
     .eve-button.is-danger.is-outlined {
       border-color: #f44336;
       color: #f44336; }
-      .eve-button.is-danger.is-outlined.has-icon svg {
+      .eve-button.is-danger.is-outlined.has-icon svg, .eve-button.is-danger.is-outlined.is-icon svg {
         fill: #f44336; }
       .eve-button.is-danger.is-outlined:hover {
         background: #f44336;
         color: #fff; }
+        .eve-button.is-danger.is-outlined:hover.has-icon svg, .eve-button.is-danger.is-outlined:hover.is-icon svg {
+          fill: #fff; }
     .eve-button.is-danger.is-inverted {
       color: #f44336; }
-      .eve-button.is-danger.is-inverted.has-icon svg {
+      .eve-button.is-danger.is-inverted.is-icon svg, .eve-button.is-danger.is-inverted.has-icon svg {
         fill: #f44336; }
       .eve-button.is-danger.is-inverted:hover {
         background: #fff8f7; }

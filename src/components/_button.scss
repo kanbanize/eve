@@ -128,7 +128,8 @@ $eve-button-font-sizes: (
                 border-color: $color;
                 color: $color;
 
-                &.has-icon {
+                &.has-icon,
+                &.is-icon {
                     svg {
                         fill: $color;
                     }
@@ -137,12 +138,20 @@ $eve-button-font-sizes: (
                 &:hover {
                     background: $color;
                     color: $eve-color-light;
+
+                    &.has-icon,
+                    &.is-icon {
+                        svg {
+                            fill: $eve-color-light;
+                        }
+                    }
                 }
             }
 
             &.is-inverted {
                 color: $color;
 
+                &.is-icon,
                 &.has-icon {
                     svg {
                         fill: $color;
