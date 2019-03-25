@@ -67,9 +67,9 @@ $eve-chip-size: 1.75rem;
 .eve-chips {
     display: flex;
     flex-wrap: wrap;
-    margin: -#{.25rem};
+    margin: -#{$eve-spacing-x-tiny};
 
     .eve-chip {
-        margin: .25rem;
+        margin: $eve-spacing-x-tiny;
     }
 }

@@ -2,7 +2,7 @@ $eve-badge-height: 1.125rem !default;
 $eve-badge-border-radius: $eve-badge-height / 2 !default;
 $eve-badge-background-color: $eve-color-danger !default;
 $eve-badge-color: $eve-color-light !default;
-$eve-badge-padding: 0 .25rem !default;
+$eve-badge-padding: 0 $eve-spacing-x-tiny !default;
 $eve-badge-font-size: $eve-font-normal !default;
 
 .eve-badge {

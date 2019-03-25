@@ -113,9 +113,9 @@ $eve-tag-size: 1.75rem;
 .eve-tags {
     display: flex;
     flex-wrap: wrap;
-    margin: -#{.25rem};
+    margin: -#{$eve-spacing-x-tiny};
 
     .eve-tag {
-        margin: .25rem;
+        margin: $eve-spacing-x-tiny;
     }
 }

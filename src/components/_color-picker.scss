@@ -69,7 +69,7 @@ $eve-color-picker-color-size: 2rem !default;
     .eve-color-picker-palette {
         display: flex;
         flex-direction: column;
-        padding: .25rem;
+        padding: $eve-spacing-x-tiny;
 
         ul {
             display: none;
@@ -89,14 +89,14 @@ $eve-color-picker-color-size: 2rem !default;
                 display: flex;
                 height: $eve-color-picker-color-size;
                 justify-content: center;
-                margin: .25rem;
+                margin: $eve-spacing-x-tiny;
                 position: relative;
                 transition: border-radius 150ms ease;
                 width: $eve-color-picker-color-size;
 
                 &:hover,
                 &.is-selected {
-                    border-radius: 100%;
+                    border-radius: 50%;
                 }
             }
         }

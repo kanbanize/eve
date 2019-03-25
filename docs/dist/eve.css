@@ -350,16 +350,16 @@
   color: #fff;
   display: inline-block;
   flex-shrink: 0;
-  height: 3rem;
-  line-height: 3rem;
   position: relative;
   text-align: center;
+  vertical-align: top;
+  height: 3rem;
+  line-height: 3rem;
   width: 3rem; }
   .eve-avatar[data-initial] {
     background: #2196f3; }
     .eve-avatar[data-initial]::before {
-      content: attr(data-initial);
-      font-size: 1.5rem; }
+      content: attr(data-initial); }
   .eve-avatar img {
     background-position: center;
     background-repeat: no-repeat;
@@ -380,10 +380,8 @@
     box-shadow: 0 0 0 1px #fff;
     content: '';
     display: block;
-    height: 0.75rem;
     position: absolute;
-    right: 0;
-    width: 0.75rem; }
+    right: 0; }
   .eve-avatar.is-tiny {
     height: 1.5rem;
     line-height: 1.5rem;
@@ -402,6 +400,11 @@
     .eve-avatar.is-small.is-online::after, .eve-avatar.is-small.is-busy::after, .eve-avatar.is-small.is-away::after, .eve-avatar.is-small.is-offline::after {
       height: 0.5rem;
       width: 0.5rem; }
+  .eve-avatar[data-initial]::before {
+    font-size: 1.5rem; }
+  .eve-avatar.is-online::after, .eve-avatar.is-busy::after, .eve-avatar.is-away::after, .eve-avatar.is-offline::after {
+    height: 0.75rem;
+    width: 0.75rem; }
   .eve-avatar.is-large {
     height: 4rem;
     line-height: 4rem;
@@ -428,13 +431,15 @@
     background: #ff9800; }
   .eve-avatar.is-offline::after {
     background: #cfd8dc; }
+  .eve-avatar.is-disabled {
+    opacity: .5; }
 
 .eve-avatars {
   display: flex; }
   .eve-avatars .eve-avatar {
     box-shadow: 0 0 0 1px #fff; }
-    .eve-avatars .eve-avatar:not(:first-child) {
-      margin-left: -0.25rem; }
+    .eve-avatars .eve-avatar:not(:last-child) {
+      margin-right: -0.25rem; }
 
 .eve-profile {
   align-items: center;
@@ -889,7 +894,7 @@
   flex-wrap: wrap;
   margin: -0.25rem; }
   .eve-chips .eve-chip {
-    margin: .25rem; }
+    margin: 0.25rem; }
 
 .eve-color-picker {
   background: #fff;
@@ -938,7 +943,7 @@
   .eve-color-picker .eve-color-picker-palette {
     display: flex;
     flex-direction: column;
-    padding: .25rem; }
+    padding: 0.25rem; }
     .eve-color-picker .eve-color-picker-palette ul {
       display: none;
       list-style: none;
@@ -954,12 +959,12 @@
         display: flex;
         height: 2rem;
         justify-content: center;
-        margin: .25rem;
+        margin: 0.25rem;
         position: relative;
         transition: border-radius 150ms ease;
         width: 2rem; }
         .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
-          border-radius: 100%; }
+          border-radius: 50%; }
 
 .eve-dialog {
   background: #fff;
@@ -1809,7 +1814,7 @@
   flex-wrap: wrap;
   margin: -0.25rem; }
   .eve-tags .eve-tag {
-    margin: .25rem; }
+    margin: 0.25rem; }
 
 .eve-textarea {
   -webkit-appearance: none;
@@ -1857,7 +1862,7 @@
   .eve-tile .eve-tile-content {
     font-size: 0.875rem; }
     .eve-tile .eve-tile-content .eve-tile-title {
-      margin-bottom: .25rem; }
+      margin-bottom: 0.25rem; }
     .eve-tile .eve-tile-content .eve-tile-description {
       color: #607d8b;
       line-height: 1.125rem; }
