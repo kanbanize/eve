@@ -75,6 +75,10 @@ $eve-button-font-sizes: (
                     width: $size / 2;
                 }
             }
+
+            &.has-icon {
+                padding-left: $size / 4;
+            }
         } @else {
             &.is-#{$eve-button-size} {
                 font-size: $font-size;
@@ -101,6 +105,10 @@ $eve-button-font-sizes: (
                         height: $size / 2;
                         width: $size / 2;
                     }
+                }
+
+                &.has-icon {
+                    padding-left: $size / 4;
                 }
             }
         }
