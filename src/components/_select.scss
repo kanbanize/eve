@@ -66,8 +66,8 @@ $eve-select-font-sizes: (
     }
 
     &:disabled {
-        cursor: default;
         color: $eve-color-light;
+        cursor: default;
     }
 }
 
@@ -83,8 +83,8 @@ $eve-select-font-sizes: (
         @if $eve-select-size == 'normal' {
             &.has-icon {
                 svg {
-                    left: $size / 4;
                     height: $size / 2;
+                    left: $size / 4;
                     top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
                 }
@@ -97,8 +97,8 @@ $eve-select-font-sizes: (
             &.is-#{$eve-select-size} {
                 &.has-icon {
                     svg {
-                        left: $size / 4;
                         height: $size / 2;
+                        left: $size / 4;
                         top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
                     }
@@ -113,8 +113,8 @@ $eve-select-font-sizes: (
 
     &.has-icon {
         svg {
-            position: absolute;
             fill: $eve-color-darker-silver;
+            position: absolute;
         }
     }
 

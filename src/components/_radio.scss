@@ -3,11 +3,11 @@ $eve-radio-size: 1.125rem;
 .eve-radio {
     align-items: center;
     display: inline-flex;
+    flex-shrink: 0;
     height: $eve-radio-size;
     justify-content: center;
     position: relative;
     width: $eve-radio-size;
-    flex-shrink: 0;
 
     input {
         &[type='radio'] {

@@ -4,11 +4,11 @@ $eve-switch-height: 1.125rem;
 .eve-switch {
     align-items: center;
     display: inline-flex;
+    flex-shrink: 0;
     height: $eve-switch-height;
     justify-content: center;
     position: relative;
     width: $eve-switch-width;
-    flex-shrink: 0;
 
     input {
         &[type='checkbox'] {

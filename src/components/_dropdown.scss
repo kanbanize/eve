@@ -29,8 +29,8 @@ $eve-dropdown-list-item-size: 2rem;
             svg {
                 fill: $eve-color-darker-silver;
                 height: $eve-dropdown-list-item-size / 2;
-                width: $eve-dropdown-list-item-size / 2;
                 margin-right: $eve-spacing-tiny;
+                width: $eve-dropdown-list-item-size / 2;
             }
 
             &.is-header {

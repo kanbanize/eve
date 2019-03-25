@@ -84,15 +84,15 @@ $eve-color-picker-color-size: 2rem !default;
             li {
                 align-items: center;
                 background: $eve-color-primary;
+                box-sizing: border-box;
                 cursor: pointer;
                 display: flex;
                 height: $eve-color-picker-color-size;
                 justify-content: center;
                 margin: .25rem;
                 position: relative;
-                width: $eve-color-picker-color-size;
-                box-sizing: border-box;
                 transition: border-radius 150ms ease;
+                width: $eve-color-picker-color-size;
 
                 &:hover,
                 &.is-selected {

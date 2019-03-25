@@ -93,9 +93,9 @@ $eve-input-font-sizes: (
             &.has-icon {
                 svg {
                     height: $size / 2;
+                    left: $size / 4;
                     top: ($size - ($size / 2)) / 2;
                     width: $size / 2;
-                    left: $size / 4;
                 }
 
                 .eve-input {
@@ -120,9 +120,9 @@ $eve-input-font-sizes: (
                 &.has-icon {
                     svg {
                         height: $size / 2;
+                        left: $size / 4;
                         top: ($size - ($size / 2)) / 2;
                         width: $size / 2;
-                        left: $size / 4;
                     }
 
                     .eve-input {

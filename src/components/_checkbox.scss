@@ -4,11 +4,11 @@ $eve-checkbox-mark-border-width: .125rem;
 .eve-checkbox {
     align-items: center;
     display: inline-flex;
+    flex-shrink: 0;
     height: $eve-checkbox-size;
     justify-content: center;
     position: relative;
     width: $eve-checkbox-size;
-    flex-shrink: 0;
 
     input {
         &[type='checkbox'] {

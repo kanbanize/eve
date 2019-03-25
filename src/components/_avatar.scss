@@ -11,12 +11,12 @@ $eve-avatar-border-radius: 50% !default;
     border-radius: $eve-avatar-border-radius;
     color: $eve-color-light;
     display: inline-block;
+    flex-shrink: 0;
     height: map-get($eve-avatar-sizes, 'normal');
     line-height: map-get($eve-avatar-sizes, 'normal');
     position: relative;
     text-align: center;
     width: map-get($eve-avatar-sizes, 'normal');
-    flex-shrink: 0;
 
     &[data-initial] {
         background: $eve-color-primary;
@@ -135,8 +135,8 @@ $eve-avatar-border-radius: 50% !default;
     svg {
         fill: $eve-color-dark;
         height: 1rem;
-        width: 1rem;
         margin-left: $eve-spacing-tiny;
+        width: 1rem;
     }
 }
 
