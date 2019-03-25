@@ -12,18 +12,15 @@ $eve-avatar-border-radius: 50% !default;
     color: $eve-color-light;
     display: inline-block;
     flex-shrink: 0;
-    height: map-get($eve-avatar-sizes, 'normal');
-    line-height: map-get($eve-avatar-sizes, 'normal');
     position: relative;
     text-align: center;
-    width: map-get($eve-avatar-sizes, 'normal');
+    vertical-align: top;
 
     &[data-initial] {
         background: $eve-color-primary;
 
         &::before {
             content: attr(data-initial);
-            font-size: map-get($eve-avatar-sizes, 'normal') / 2;
         }
     }
 
@@ -51,17 +48,35 @@ $eve-avatar-border-radius: 50% !default;
             box-shadow: 0 0 0 1px $eve-color-light;
             content: '';
             display: block;
-            height: map-get($eve-avatar-sizes, 'normal') / 4;
             position: absolute;
             right: 0;
-            width: map-get($eve-avatar-sizes, 'normal') / 4;
         }
     }
 
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
-        @if $eve-avatar-size != 'normal' {
-            $size: map-get($eve-avatar-sizes, $eve-avatar-size);
+        $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
+        @if $eve-avatar-size == 'normal' {
+            height: $size;
+            line-height: $size;
+            width: $size;
+
+            &[data-initial] {
+                &::before {
+                    font-size: $size / 2;
+                }
+            }
+
+            &.is-online,
+            &.is-busy,
+            &.is-away,
+            &.is-offline {
+                &::after {
+                    height: $size / 4;
+                    width: $size / 4;
+                }
+            }
+        } @else {
             &.is-#{$eve-avatar-size} {
                 height: $size;
                 line-height: $size;
@@ -109,6 +124,10 @@ $eve-avatar-border-radius: 50% !default;
             background: $eve-color-dark-silver;
         }
     }
+
+    &.is-disabled {
+        opacity: .5;
+    }
 }
 
 .eve-avatars {
@@ -117,8 +136,8 @@ $eve-avatar-border-radius: 50% !default;
     .eve-avatar {
         box-shadow: 0 0 0 1px $eve-color-light;
 
-        &:not(:first-child) {
-            margin-left: -#{.25rem};
+        &:not(:last-child) {
+            margin-right: -#{$eve-spacing-x-tiny};
         }
     }
 }

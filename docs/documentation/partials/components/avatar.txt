@@ -165,4 +165,13 @@
             </div>
         </div>
     </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <div class="eve-avatar is-disabled">
+                <img src="assets/images/avatar-1.jpg">
+            </div>
+            <div class="eve-avatar is-disabled" data-initial="N"></div>
+        </div>
+    </div>
 </div>
