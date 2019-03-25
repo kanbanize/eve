@@ -74,7 +74,6 @@ $eve-input-font-sizes: (
     @each $eve-input-size in map-keys($eve-input-sizes) {
         $size: map-get($eve-input-sizes, $eve-input-size);
         $padding: map-get($eve-input-paddings, $eve-input-size);
-        $font-size: map-get($eve-input-font-sizes, $eve-input-size);
 
         @if $eve-input-size == 'normal' {
             &.is-loading {

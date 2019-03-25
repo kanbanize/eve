@@ -1096,19 +1096,40 @@
   .eve-feedback.is-danger {
     background: #fccbc7; }
 
-.eve-form-group {
+.eve-form-field {
   margin: 0 0 1rem; }
-  .eve-form-group .eve-form-label {
-    display: inline-block;
+  .eve-form-field.is-small {
+    margin: 0 0 0.5rem; }
+    .eve-form-field.is-small .eve-form-label {
+      font-size: 0.75rem;
+      margin: 0 0 0.25rem; }
+    .eve-form-field.is-small.is-inline {
+      margin: 0 0.5rem 0 0; }
+      .eve-form-field.is-small.is-inline .eve-form-label {
+        margin: 0 0.25rem 0 0; }
+  .eve-form-field .eve-form-label {
     font-size: 0.875rem;
     margin: 0 0 0.5rem; }
-  .eve-form-group.is-inline {
-    align-items: center;
-    display: inline-flex;
+  .eve-form-field.is-inline {
     margin: 0 1rem 0 0; }
-    .eve-form-group.is-inline .eve-form-label {
-      flex-shrink: 0;
+    .eve-form-field.is-inline .eve-form-label {
       margin: 0 0.5rem 0 0; }
+  .eve-form-field.is-large {
+    margin: 0 0 1rem; }
+    .eve-form-field.is-large .eve-form-label {
+      font-size: 1rem;
+      margin: 0 0 0.5rem; }
+    .eve-form-field.is-large.is-inline {
+      margin: 0 1rem 0 0; }
+      .eve-form-field.is-large.is-inline .eve-form-label {
+        margin: 0 0.5rem 0 0; }
+  .eve-form-field .eve-form-label {
+    display: inline-block; }
+  .eve-form-field.is-inline {
+    align-items: center;
+    display: inline-flex; }
+    .eve-form-field.is-inline .eve-form-label {
+      flex-shrink: 0; }
 
 .eve-form-control {
   display: flex; }
