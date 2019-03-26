@@ -546,6 +546,8 @@
       width: 0.875rem; }
     .eve-button.is-small.has-icon {
       padding-left: 0.4375rem; }
+    .eve-button.is-small.is-rounded {
+      border-radius: 0.875rem; }
   .eve-button.is-loading::after {
     height: 1.125rem;
     left: calc(50% - 0.5625rem);
@@ -558,6 +560,8 @@
     width: 1.125rem; }
   .eve-button.has-icon {
     padding-left: 0.5625rem; }
+  .eve-button.is-rounded {
+    border-radius: 1.125rem; }
   .eve-button.is-large {
     font-size: 1rem;
     height: 3rem;
@@ -575,6 +579,8 @@
       width: 1.5rem; }
     .eve-button.is-large.has-icon {
       padding-left: 0.75rem; }
+    .eve-button.is-large.is-rounded {
+      border-radius: 1.5rem; }
   .eve-button.is-primary {
     background: #2196f3; }
     .eve-button.is-primary:hover {
@@ -1139,8 +1145,6 @@
 
 .eve-form-control {
   display: flex; }
-  .eve-form-control *:not(:last-child) {
-    margin-right: 0.5rem; }
 
 .eve-input {
   -webkit-appearance: none;

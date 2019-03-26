@@ -72,10 +72,4 @@ $eve-form-field-label-font-sizes: (
 
 .eve-form-control {
     display: flex;
-
-    * {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-tiny;
-        }
-    }
 }
