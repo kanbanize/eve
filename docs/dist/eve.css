@@ -722,6 +722,8 @@
       right: 0;
       top: 0;
       width: 100%; }
+      .eve-button.is-file input[type='file']::-webkit-file-upload-button {
+        cursor: inherit; }
   .eve-button.is-icon {
     padding: 0; }
     .eve-button.is-icon svg {

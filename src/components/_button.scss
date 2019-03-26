@@ -238,6 +238,10 @@ $eve-button-font-sizes: (
                 right: 0;
                 top: 0;
                 width: 100%;
+
+                &::-webkit-file-upload-button {
+                    cursor: inherit;
+                }
             }
         }
     }
