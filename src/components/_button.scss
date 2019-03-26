@@ -79,6 +79,10 @@ $eve-button-font-sizes: (
             &.has-icon {
                 padding-left: $size / 4;
             }
+
+            &.is-rounded {
+                border-radius: $size / 2;
+            }
         } @else {
             &.is-#{$eve-button-size} {
                 font-size: $font-size;
@@ -109,6 +113,10 @@ $eve-button-font-sizes: (
 
                 &.has-icon {
                     padding-left: $size / 4;
+                }
+
+                &.is-rounded {
+                    border-radius: $size / 2;
                 }
             }
         }
