@@ -1550,8 +1550,12 @@
     height: 1.75rem;
     line-height: 1.75rem;
     padding: 0 1.75rem 0 0.5rem; }
+    .eve-select.is-small.is-rounded {
+      border-radius: 0.875rem; }
     .eve-select.is-small:disabled {
       background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23ffffff'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.25rem center/0.875rem 0.875rem; }
+  .eve-select.is-rounded {
+    border-radius: 1.125rem; }
   .eve-select:disabled {
     background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23ffffff'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.5625rem center/1.125rem 1.125rem; }
   .eve-select.is-large {
@@ -1560,6 +1564,8 @@
     height: 3rem;
     line-height: 3rem;
     padding: 0 3rem 0 1.5rem; }
+    .eve-select.is-large.is-rounded {
+      border-radius: 1.5rem; }
     .eve-select.is-large:disabled {
       background: #cfd8dc url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23ffffff'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/1.5rem 1.5rem; }
   .eve-select:disabled {

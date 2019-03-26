@@ -38,6 +38,17 @@
         </div>
     </div>
     <div class="component-content">
+        <div class="component-header">Rounded</div>
+        <div class="component-example">
+            <select class="eve-select is-rounded">
+                <option>Item 01</option>
+                <option>Item 02</option>
+                <option>Item 03</option>
+                <option>Item 04</option>
+            </select>
+        </div>
+    </div>
+    <div class="component-content">
         <div class="component-header">Sizes</div>
         <div class="component-example">
             <select class="eve-select is-small">
