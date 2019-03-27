@@ -780,8 +780,19 @@
     justify-content: center; }
   .eve-buttons.is-right {
     justify-content: flex-end; }
-  .eve-buttons .eve-button {
-    box-shadow: 0 0 0 1px #fff; }
+  .eve-buttons .eve-button:not(:last-child) {
+    margin-right: 1rem; }
+  .eve-buttons.has-addons .eve-button {
+    box-shadow: 0 0 0 1px #fff;
+    margin: 0; }
+    .eve-buttons.has-addons .eve-button.is-rounded:not(:first-child):not(:last-child) {
+      border-radius: 0; }
+    .eve-buttons.has-addons .eve-button.is-rounded:first-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+    .eve-buttons.has-addons .eve-button.is-rounded:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0; }
 
 .eve-checkbox {
   align-items: center;

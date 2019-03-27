@@ -298,6 +298,33 @@ $eve-button-font-sizes: (
     }
 
     .eve-button {
-        box-shadow:  0 0 0 1px $eve-color-light;
+        &:not(:last-child) {
+            margin-right: $eve-spacing-small;
+        }
+    }
+
+    &.has-addons {
+        .eve-button {
+            box-shadow: 0 0 0 1px $eve-color-light;
+            margin: 0;
+
+            &.is-rounded {
+                &:not(:first-child) {
+                    &:not(:last-child) {
+                        border-radius: 0;
+                    }
+                }
+
+                &:first-child {
+                    border-bottom-right-radius: 0;
+                    border-top-right-radius: 0;
+                }
+
+                &:last-child {
+                    border-bottom-left-radius: 0;
+                    border-top-left-radius: 0;
+                }
+            }
+        }
     }
 }
