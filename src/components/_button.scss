@@ -27,6 +27,7 @@ $eve-button-font-sizes: (
     color: $eve-color-light;
     cursor: pointer;
     display: inline-flex;
+    flex-shrink: 0;
     font-family: inherit;
     justify-content: center;
     outline: none;

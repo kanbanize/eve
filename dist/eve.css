@@ -512,6 +512,7 @@
   color: #fff;
   cursor: pointer;
   display: inline-flex;
+  flex-shrink: 0;
   font-family: inherit;
   justify-content: center;
   outline: none;
