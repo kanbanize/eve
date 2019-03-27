@@ -239,7 +239,7 @@ $eve-button-font-sizes: (
                 top: 0;
                 width: 100%;
 
-                &::-webkit-file-upload-button {
+                &::-webkit-file-upload-button { // sass-lint:disable-line no-vendor-prefixes
                     cursor: inherit;
                 }
             }
