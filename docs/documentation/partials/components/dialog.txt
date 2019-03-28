@@ -13,8 +13,10 @@
                 <div class="eve-dialog-header">Header</div>
                 <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
                 <div class="eve-dialog-footer">
-                    <button class="eve-button is-primary is-outlined">Secondary</button>
-                    <button class="eve-button is-primary eve-gap-left-small">Primary</button>
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-primary is-outlined">Secondary</button>
+                        <button class="eve-button is-primary">Primary</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,8 +34,10 @@
                 <div class="eve-dialog-header">Header</div>
                 <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
                 <div class="eve-dialog-footer">
-                    <button class="eve-button is-success is-outlined">Secondary</button>
-                    <button class="eve-button is-success eve-gap-left-small">Primary</button>
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-success is-outlined">Secondary</button>
+                        <button class="eve-button is-success">Primary</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,8 +55,10 @@
                 <div class="eve-dialog-header">Header</div>
                 <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
                 <div class="eve-dialog-footer">
-                    <button class="eve-button is-warning is-outlined">Secondary</button>
-                    <button class="eve-button is-warning eve-gap-left-small">Primary</button>
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-warning is-outlined">Secondary</button>
+                        <button class="eve-button is-warning">Primary</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,8 +76,10 @@
                 <div class="eve-dialog-header">Header</div>
                 <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
                 <div class="eve-dialog-footer">
-                    <button class="eve-button is-danger is-outlined">Secondary</button>
-                    <button class="eve-button is-danger eve-gap-left-small">Primary</button>
+                    <div class="eve-buttons is-right">
+                        <button class="eve-button is-danger is-outlined">Secondary</button>
+                        <button class="eve-button is-danger">Primary</button>
+                    </div>
                 </div>
             </div>
         </div>

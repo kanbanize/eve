@@ -271,16 +271,37 @@ $eve-button-font-sizes: (
             &.is-#{$eve-button-color} {
                 background: $eve-color-dark-silver;
 
+                &.is-icon,
+                &.has-icon {
+                    svg {
+                        fill: $eve-color-light;
+                    }
+                }
+
                 &.is-outlined {
                     background: transparent;
                     border-color: $eve-color-dark-silver;
                     color: $eve-color-dark-silver;
+
+                    &.is-icon,
+                    &.has-icon {
+                        svg {
+                            fill: $eve-color-dark-silver;
+                        }
+                    }
                 }
 
                 &.is-inverted {
                     background: transparent;
                     border-color: transparent;
                     color: $eve-color-dark-silver;
+
+                    &.is-icon,
+                    &.has-icon {
+                        svg {
+                            fill: $eve-color-dark-silver;
+                        }
+                    }
                 }
             }
         }

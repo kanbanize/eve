@@ -736,44 +736,68 @@
     cursor: default; }
     .eve-button:disabled.is-primary {
       background: #cfd8dc; }
+      .eve-button:disabled.is-primary.is-icon svg, .eve-button:disabled.is-primary.has-icon svg {
+        fill: #fff; }
       .eve-button:disabled.is-primary.is-outlined {
         background: transparent;
         border-color: #cfd8dc;
         color: #cfd8dc; }
+        .eve-button:disabled.is-primary.is-outlined.is-icon svg, .eve-button:disabled.is-primary.is-outlined.has-icon svg {
+          fill: #cfd8dc; }
       .eve-button:disabled.is-primary.is-inverted {
         background: transparent;
         border-color: transparent;
         color: #cfd8dc; }
+        .eve-button:disabled.is-primary.is-inverted.is-icon svg, .eve-button:disabled.is-primary.is-inverted.has-icon svg {
+          fill: #cfd8dc; }
     .eve-button:disabled.is-success {
       background: #cfd8dc; }
+      .eve-button:disabled.is-success.is-icon svg, .eve-button:disabled.is-success.has-icon svg {
+        fill: #fff; }
       .eve-button:disabled.is-success.is-outlined {
         background: transparent;
         border-color: #cfd8dc;
         color: #cfd8dc; }
+        .eve-button:disabled.is-success.is-outlined.is-icon svg, .eve-button:disabled.is-success.is-outlined.has-icon svg {
+          fill: #cfd8dc; }
       .eve-button:disabled.is-success.is-inverted {
         background: transparent;
         border-color: transparent;
         color: #cfd8dc; }
+        .eve-button:disabled.is-success.is-inverted.is-icon svg, .eve-button:disabled.is-success.is-inverted.has-icon svg {
+          fill: #cfd8dc; }
     .eve-button:disabled.is-warning {
       background: #cfd8dc; }
+      .eve-button:disabled.is-warning.is-icon svg, .eve-button:disabled.is-warning.has-icon svg {
+        fill: #fff; }
       .eve-button:disabled.is-warning.is-outlined {
         background: transparent;
         border-color: #cfd8dc;
         color: #cfd8dc; }
+        .eve-button:disabled.is-warning.is-outlined.is-icon svg, .eve-button:disabled.is-warning.is-outlined.has-icon svg {
+          fill: #cfd8dc; }
       .eve-button:disabled.is-warning.is-inverted {
         background: transparent;
         border-color: transparent;
         color: #cfd8dc; }
+        .eve-button:disabled.is-warning.is-inverted.is-icon svg, .eve-button:disabled.is-warning.is-inverted.has-icon svg {
+          fill: #cfd8dc; }
     .eve-button:disabled.is-danger {
       background: #cfd8dc; }
+      .eve-button:disabled.is-danger.is-icon svg, .eve-button:disabled.is-danger.has-icon svg {
+        fill: #fff; }
       .eve-button:disabled.is-danger.is-outlined {
         background: transparent;
         border-color: #cfd8dc;
         color: #cfd8dc; }
+        .eve-button:disabled.is-danger.is-outlined.is-icon svg, .eve-button:disabled.is-danger.is-outlined.has-icon svg {
+          fill: #cfd8dc; }
       .eve-button:disabled.is-danger.is-inverted {
         background: transparent;
         border-color: transparent;
         color: #cfd8dc; }
+        .eve-button:disabled.is-danger.is-inverted.is-icon svg, .eve-button:disabled.is-danger.is-inverted.has-icon svg {
+          fill: #cfd8dc; }
 
 .eve-buttons {
   display: flex; }
