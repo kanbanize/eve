@@ -14,7 +14,7 @@
     <div class="component-title">Multiline Grids</div>
     <div class="component-content">
         <div class="component-example">
-            <div class="eve-row is-multiline">
+            <div class="eve-row has-gap-small is-multiline">
                 <div class="eve-column is-2">
                     <p>2</p>
                 </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="component-example">
-            <div class="eve-row is-multiline">
+            <div class="eve-row has-gap-small is-multiline">
                 <div class="eve-column">
                     <p>Auto</p>
                 </div>
