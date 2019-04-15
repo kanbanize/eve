@@ -264,17 +264,10 @@
         max-width: 100% !important; } }
 
 .eve-accordion {
+  border-left: 1px solid #2196f3;
   font-size: 0.875rem;
   padding-left: 0.5rem;
   position: relative; }
-  .eve-accordion::after {
-    background: #2196f3;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1px; }
   .eve-accordion > input {
     display: none; }
     .eve-accordion > input:checked ~ .eve-accordion-header::before {
@@ -350,13 +343,10 @@
     background-size: cover;
     border-radius: inherit;
     height: inherit;
-    left: 0;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    position: absolute;
-    top: 0;
     width: inherit; }
   .eve-avatar.is-online::after, .eve-avatar.is-busy::after, .eve-avatar.is-away::after, .eve-avatar.is-offline::after {
     border-radius: 50%;
@@ -812,6 +802,7 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
+  vertical-align: top;
   width: 1.125rem; }
   .eve-checkbox input[type='checkbox'] {
     cursor: pointer;
@@ -1488,6 +1479,7 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
+  vertical-align: top;
   width: 1.125rem; }
   .eve-radio input[type='radio'] {
     cursor: pointer;
@@ -1632,6 +1624,7 @@
   height: 1.125rem;
   justify-content: center;
   position: relative;
+  vertical-align: top;
   width: 2rem; }
   .eve-switch input[type='checkbox'] {
     cursor: pointer;
