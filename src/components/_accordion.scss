@@ -14,19 +14,10 @@ $eve-accordion-line-color: $eve-color-primary !default;
 $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
 
 .eve-accordion {
+    border-left: 1px solid $eve-accordion-line-color;
     font-size: $eve-accordion-font-size;
     padding-left: $eve-spacing-tiny;
     position: relative;
-
-    &::after {
-        background: $eve-accordion-line-color;
-        bottom: 0;
-        content: '';
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: $eve-accordion-line-width;
-    }
 
     > input {
         display: none;
