@@ -1,0 +1,14 @@
+<div class="component">
+    <div class="component-title">Slider</div>
+    <div class="component-content">
+        <div class="component-example">
+            <input class="eve-slider" type="range" min="0" max="100" value="30">
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-header">Disabled</div>
+        <div class="component-example">
+            <input class="eve-slider" disabled="disabled" type="range" min="0" max="100" value="30">
+        </div>
+    </div>
+</div>

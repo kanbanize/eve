@@ -1617,6 +1617,72 @@
   .eve-select-field.is-disabled.has-icon svg {
     fill: #fff; }
 
+.eve-slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  display: block;
+  height: 1rem;
+  margin: 0;
+  width: 100%; }
+  .eve-slider:focus {
+    outline: 0; }
+  .eve-slider::-webkit-slider-runnable-track {
+    cursor: default;
+    height: 0.125rem;
+    width: 100%;
+    background: #eceff1; }
+  .eve-slider::-webkit-slider-thumb {
+    background: #2196f3;
+    border: 0;
+    border-radius: 50%;
+    cursor: default;
+    height: 1rem;
+    width: 1rem;
+    -webkit-appearance: none;
+            appearance: none;
+    margin-top: -0.4375rem; }
+  .eve-slider::-moz-range-track {
+    cursor: default;
+    height: 0.125rem;
+    width: 100%;
+    background: #eceff1;
+    height: 0.0625rem; }
+  .eve-slider::-moz-range-thumb {
+    background: #2196f3;
+    border: 0;
+    border-radius: 50%;
+    cursor: default;
+    height: -3rem;
+    width: -3rem; }
+  .eve-slider::-ms-track {
+    cursor: default;
+    height: 0.125rem;
+    width: 100%;
+    background: transparent;
+    border-color: transparent;
+    border-width: 0.5rem 0;
+    color: transparent; }
+  .eve-slider::-ms-fill-lower {
+    background: #eceff1; }
+  .eve-slider::-ms-fill-upper {
+    background: #eceff1; }
+  .eve-slider::-ms-thumb {
+    background: #2196f3;
+    border: 0;
+    border-radius: 50%;
+    cursor: default;
+    height: -3rem;
+    width: -3rem;
+    margin-top: 0.03125rem; }
+  .eve-slider:disabled::-webkit-slider-thumb {
+    background: #cfd8dc; }
+  .eve-slider:disabled::-moz-range-thumb {
+    background: #cfd8dc; }
+  .eve-slider:disabled::-ms-thumb {
+    background: #cfd8dc; }
+
 .eve-switch {
   align-items: center;
   display: inline-flex;
