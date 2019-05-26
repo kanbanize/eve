@@ -1,0 +1,67 @@
+$eve-tree-arrow-right-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-tree-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-tree-arrow-right-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+
+.eve-tree {
+    font-size: $eve-font-normal;
+    list-style: none;
+    margin: 0;
+    padding-left: $eve-spacing-normal;
+
+    li {
+        color: $eve-color-dark;
+        font-size: $eve-font-normal;
+        line-height: $eve-line-height-normal;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-tiny;
+        }
+
+        & > input {
+            &[type='checkbox'] {
+                display: none;
+
+                &:checked {
+                    & ~ .eve-node {
+                        background-image: url(svg-encode($eve-tree-arrow-down-icon));
+
+                        &:hover {
+                            background-image: url(svg-encode($eve-tree-arrow-down-hover-icon));
+                        }
+                    }
+
+                    & ~ ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        & > .eve-node {
+            background-image: url(svg-encode($eve-tree-arrow-right-icon));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1rem 1rem;
+            content: '';
+            cursor: pointer;
+            display: block;
+            height: 1.25rem;
+            left: -$eve-spacing-normal;
+            position: absolute;
+            width: 1.25rem;
+
+            &:hover {
+                background-image: url(svg-encode($eve-tree-arrow-right-hover-icon));
+            }
+        }
+    }
+
+    ul {
+        display: none;
+        list-style: none;
+        margin-top: $eve-spacing-tiny;
+        padding-left: $eve-spacing-normal;
+    }
+}
