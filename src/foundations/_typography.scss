@@ -1,6 +1,9 @@
 $eve-font-small: .75rem !default;
 $eve-font-normal: .875rem !default;
 $eve-font-large: 1rem !default;
+$eve-line-height-small: 1.125rem !default;
+$eve-line-height-normal: 1.25rem !default;
+$eve-line-height-large: 1.5rem !default;
 $eve-heading-font-sizes: (
     h1: 2rem,
     h2: 1.5rem,
@@ -30,7 +33,7 @@ $eve-heading-line-heights: (
 }
 
 .eve-paragraph {
-    font-size: .875rem;
-    line-height: 1.25rem;
+    font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
     margin: 0;
 }

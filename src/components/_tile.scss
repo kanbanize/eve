@@ -7,14 +7,15 @@
 
     .eve-tile-content {
         font-size: $eve-font-normal;
+        line-height: $eve-line-height-normal;
 
         .eve-tile-title {
+            color: $eve-color-dark;
             margin-bottom: $eve-spacing-x-tiny;
         }
 
         .eve-tile-description {
             color: $eve-color-darkest-silver;
-            line-height: 1.125rem;
         }
     }
 

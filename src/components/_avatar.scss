@@ -8,21 +8,14 @@ $eve-avatar-sizes: (
 $eve-avatar-border-radius: 50% !default;
 
 .eve-avatar {
+    background: $eve-color-bright-silver;
     border-radius: $eve-avatar-border-radius;
-    color: $eve-color-light;
+    color: $eve-color-dark;
     display: inline-block;
     flex-shrink: 0;
     position: relative;
     text-align: center;
     vertical-align: top;
-
-    &[data-initial] {
-        background: $eve-color-primary;
-
-        &::before {
-            content: attr(data-initial);
-        }
-    }
 
     img {
         background-position: center;
@@ -32,6 +25,7 @@ $eve-avatar-border-radius: 50% !default;
         height: inherit;
         object-fit: cover;
         object-position: center;
+        vertical-align: top;
         width: inherit;
     }
 
@@ -42,7 +36,6 @@ $eve-avatar-border-radius: 50% !default;
         &::after {
             border-radius: 50%;
             bottom: 0;
-            box-shadow: 0 0 0 1px $eve-color-light;
             content: '';
             display: block;
             position: absolute;
@@ -54,15 +47,10 @@ $eve-avatar-border-radius: 50% !default;
         $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
         @if $eve-avatar-size == 'normal' {
+            font-size: $size / 2;
             height: $size;
             line-height: $size;
             width: $size;
-
-            &[data-initial] {
-                &::before {
-                    font-size: $size / 2;
-                }
-            }
 
             &.is-online,
             &.is-busy,
@@ -75,15 +63,10 @@ $eve-avatar-border-radius: 50% !default;
             }
         } @else {
             &.is-#{$eve-avatar-size} {
+                font-size: $size / 2;
                 height: $size;
                 line-height: $size;
                 width: $size;
-
-                &[data-initial] {
-                    &::before {
-                        font-size: $size / 2;
-                    }
-                }
 
                 &.is-online,
                 &.is-busy,
@@ -125,20 +108,19 @@ $eve-avatar-border-radius: 50% !default;
 
 .eve-avatars {
     display: flex;
+    margin: -$eve-spacing-x-tiny;
 
     .eve-avatar {
-        box-shadow: 0 0 0 1px $eve-color-light;
-
-        &:not(:last-child) {
-            margin-right: -#{$eve-spacing-x-tiny};
-        }
+        margin: $eve-spacing-x-tiny;
     }
 }
 
 .eve-profile {
     align-items: center;
+    color: $eve-color-dark;
     display: flex;
     font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
 
     .eve-avatar {
         margin-right: $eve-spacing-tiny;

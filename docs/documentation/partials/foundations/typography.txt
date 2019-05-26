@@ -1,7 +1,6 @@
 <div class="component">
     <div class="component-title">Typography</div>
     <div class="component-content">
-        <div class="component-header">Headings</div>
         <div class="component-example">
             <h1 class="eve-heading-1">H1 - Oversized Screen Titles</h1>
             <h2 class="eve-heading-2">H2 - Top Level Headers</h2>
@@ -12,7 +11,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Paragraph</div>
         <div class="component-example">
             <p class="eve-paragraph">Paragraph</p>
         </div>

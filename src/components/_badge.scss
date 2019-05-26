@@ -3,7 +3,7 @@ $eve-badge-border-radius: $eve-badge-height / 2 !default;
 $eve-badge-background-color: $eve-color-danger !default;
 $eve-badge-color: $eve-color-light !default;
 $eve-badge-padding: 0 $eve-spacing-x-tiny !default;
-$eve-badge-font-size: $eve-font-normal !default;
+$eve-badge-font-size: $eve-font-small !default;
 
 .eve-badge {
     position: relative;
@@ -11,7 +11,6 @@ $eve-badge-font-size: $eve-font-normal !default;
     &::after {
         background: $eve-badge-background-color;
         border-radius: $eve-badge-border-radius;
-        box-shadow: 0 0 0 1px $eve-color-light;
         box-sizing: border-box;
         color: $eve-badge-color;
         content: attr(data-badge);

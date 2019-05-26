@@ -25,7 +25,9 @@ $eve-form-field-label-font-sizes: (
             margin: 0 0 $field-margin;
 
             .eve-form-label {
+                color: $eve-color-dark;
                 font-size: $field-label-font-size;
+                line-height: $eve-line-height-normal;
                 margin: 0 0 $field-label-margin;
             }
 

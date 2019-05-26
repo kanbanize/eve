@@ -72,8 +72,11 @@ $eve-radio-size: 1.125rem;
 }
 
 .eve-radio-control {
+    align-items: center;
+    color: $eve-color-dark;
     display: flex;
     font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
     word-break: break-word;
 
     .eve-radio {

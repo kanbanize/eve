@@ -13,6 +13,8 @@ $eve-select-font-sizes: (
     normal: $eve-font-normal,
     large: $eve-font-large
 );
+$eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-light}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-select {
     appearance: none;
@@ -41,7 +43,10 @@ $eve-select-font-sizes: (
         $font-size: map-get($eve-select-font-sizes, $eve-select-size);
 
         @if $eve-select-size == 'normal' {
-            background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
+            background-image: url(svg-encode($eve-select-arrow-down-icon));
+            background-position: right ($size / 4) center;
+            background-repeat: no-repeat;
+            background-size: ($size / 2) ($size / 2);
             font-size: $font-size;
             height: $size;
             line-height: $size;
@@ -50,13 +55,12 @@ $eve-select-font-sizes: (
             &.is-rounded {
                 border-radius: $size / 2;
             }
-
-            &:disabled {
-                background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23ffffff'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
-            }
         } @else {
             &.is-#{$eve-select-size} {
-                background: $eve-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23333333'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($size / 4) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
+                background-image: url(svg-encode($eve-select-arrow-down-icon));
+                background-position: right ($size / 4) center;
+                background-repeat: no-repeat;
+                background-size: ($size / 2) ($size / 2);
                 font-size: $font-size;
                 height: $size;
                 line-height: $size;
@@ -65,15 +69,12 @@ $eve-select-font-sizes: (
                 &.is-rounded {
                     border-radius: $size / 2;
                 }
-
-                &:disabled {
-                    background: $eve-color-dark-silver url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23ffffff'%3E%3Cpath%20d='M7.41%208.59L12%2013.17l4.59-4.58L18%2010l-6%206-6-6%201.41-1.41z'/%3E%3Cpath%20fill='none'%20d='M0%200h24v24H0V0z'/%3E%3C/svg%3E") no-repeat right ($padding / 2) center / ($size / 2) ($size / 2); // sass-lint:disable-line quotes
-                }
             }
         }
     }
 
     &:disabled {
+        background-image: url(svg-encode($eve-select-arrow-down-disabled-icon));
         color: $eve-color-light;
         cursor: default;
     }

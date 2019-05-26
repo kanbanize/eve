@@ -3,6 +3,7 @@
     border-collapse: collapse;
     border-spacing: 0;
     font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
     table-layout: fixed;
     width: 100%;
 
@@ -25,6 +26,7 @@
 
     tbody {
         tr {
+            background: $eve-color-light;
             height: 3rem;
 
             &:not(:last-child) {
@@ -32,6 +34,7 @@
             }
 
             td {
+                color: $eve-color-dark;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
                 text-align: left;
                 word-wrap: break-word;

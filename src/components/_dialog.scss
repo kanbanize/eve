@@ -29,7 +29,7 @@ $eve-dialog-close-size: 2rem;
         width: $eve-dialog-close-size;
 
         svg {
-            fill: $eve-color-darkest-silver;
+            fill: $eve-color-darker-silver;
             height: $eve-dialog-close-size / 2;
             width: $eve-dialog-close-size / 2;
         }
@@ -38,18 +38,21 @@ $eve-dialog-close-size: 2rem;
     .eve-dialog-header {
         font-size: 1.25rem;
         font-weight: bold;
+        line-height: 1.75rem;
         margin-bottom: $eve-spacing-small;
     }
 
     .eve-dialog-content {
+        color: $eve-color-dark;
         font-size: $eve-font-normal;
-        margin-bottom: $eve-spacing-small;
+        line-height: $eve-line-height-normal;
     }
 
     .eve-dialog-footer {
         align-items: center;
         display: flex;
         justify-content: flex-end;
+        margin-top: $eve-spacing-small;
     }
 
     @each $eve-dialog-type in map-keys($eve-dialog-types) {

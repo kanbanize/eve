@@ -78,8 +78,11 @@ $eve-checkbox-mark-border-width: .125rem;
 }
 
 .eve-checkbox-control {
+    align-items: center;
+    color: $eve-color-dark;
     display: flex;
     font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
     word-break: break-word;
 
     .eve-checkbox {
@@ -88,14 +91,6 @@ $eve-checkbox-mark-border-width: .125rem;
 }
 
 .eve-checkboxes {
-    > .eve-checkboxes {
-        padding-left: $eve-spacing-small;
-
-        &:not(:last-child) {
-            margin-bottom: $eve-spacing-tiny;
-        }
-    }
-
     .eve-checkbox-control {
         &:not(:last-child) {
             margin: 0 0 $eve-spacing-tiny;

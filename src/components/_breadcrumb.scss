@@ -1,5 +1,5 @@
 $eve-breadcrumb-font-size: $eve-font-normal !default;
-$eve-breadcrumb-separator-padding: 0 $eve-spacing-tiny $eve-spacing-x-tiny !default;
+$eve-breadcrumb-separator-padding: 0 $eve-spacing-tiny !default;
 $eve-breadcrumb-item-color: $eve-color-dark !default;
 $eve-breadcrumb-item-hover-color: $eve-color-primary !default;
 $eve-breadcrumb-item-active-color: $eve-color-primary !default;
@@ -7,11 +7,14 @@ $eve-breadcrumb-item-active-color: $eve-color-primary !default;
 .eve-breadcrumb {
     display: flex;
     font-size: $eve-breadcrumb-font-size;
+    line-height: $eve-line-height-normal;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
+        display: flex;
+
         &:not(:last-child) {
             &::after {
                 content: '/';

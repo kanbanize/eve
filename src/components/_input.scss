@@ -29,6 +29,7 @@ $eve-input-font-sizes: (
     &::placeholder {
         color: $eve-color-darker-silver;
         font-family: inherit;
+        font-size: inherit;
     }
 
     &:focus {
@@ -147,7 +148,7 @@ $eve-input-font-sizes: (
             animation-iteration-count: infinite;
             animation-name: eveButtonProgress;
             animation-timing-function: linear;
-            border: .125rem solid transparent;
+            border: 1px solid transparent;
             border-radius: 50%;
             border-right-color: $eve-color-primary;
             border-top-color: $eve-color-primary;

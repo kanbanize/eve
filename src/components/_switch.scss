@@ -66,8 +66,11 @@ $eve-switch-height: 1.125rem;
 }
 
 .eve-switch-control {
+    align-items: center;
+    color: $eve-color-dark;
     display: flex;
     font-size: $eve-font-normal;
+    line-height: $eve-line-height-normal;
     word-break: break-word;
 
     .eve-switch {

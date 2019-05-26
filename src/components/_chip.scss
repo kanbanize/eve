@@ -4,6 +4,7 @@ $eve-chip-size: 1.75rem;
     align-items: center;
     background: $eve-color-bright-silver;
     border-radius: $eve-chip-size / 2;
+    color: $eve-color-dark;
     display: inline-flex;
     font-size: $eve-font-small;
     height: $eve-chip-size;
@@ -22,9 +23,7 @@ $eve-chip-size: 1.75rem;
     }
 
     .eve-avatar {
-        &::before {
-            font-size: 1em;
-        }
+        font-size: 1em;
     }
 
     .eve-chip-icon {

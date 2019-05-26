@@ -1,4 +1,6 @@
 $eve-color-picker-color-size: 2rem !default;
+$eve-color-picker-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-color-picker {
     background: $eve-color-light;
@@ -11,13 +13,8 @@ $eve-color-picker-color-size: 2rem !default;
 
         &:checked {
             ~ .eve-color-picker-control {
-                .eve-color-picker-dropdown {
-                    &::after {
-                        border: 0;
-                        border-left: 1px solid $eve-color-dark;
-                        border-top: 1px solid $eve-color-dark;
-                        top: .125rem;
-                    }
+                label {
+                    background: $eve-color-light url(svg-encode($eve-color-picker-arrow-up-icon)) no-repeat center / ($eve-color-picker-color-size / 2) ($eve-color-picker-color-size / 2);
                 }
             }
 
@@ -34,35 +31,18 @@ $eve-color-picker-color-size: 2rem !default;
         display: flex;
         padding: .5rem;
 
-        .eve-input {
-            height: 2rem;
-            line-height: 2rem;
-            padding: 0 .5rem;
-        }
-
-        .eve-color-picker-dropdown {
+        label {
             align-items: center;
+            background: $eve-color-light url(svg-encode($eve-color-picker-arrow-down-icon)) no-repeat center / (2.25rem / 2) (2.25rem / 2);
             border: 1px solid $eve-color-dark-silver;
             box-sizing: border-box;
             cursor: pointer;
             display: flex;
             flex-shrink: 0;
-            height: 2rem;
+            height: 2.25rem;
             justify-content: center;
             margin-left: .5rem;
-            width: 2rem;
-
-            &::after {
-                border-bottom: 1px solid $eve-color-dark;
-                border-right: 1px solid $eve-color-dark;
-                box-sizing: border-box;
-                content: '';
-                height: .5rem;
-                position: relative;
-                top: -.125rem;
-                transform: rotate(45deg);
-                width: .5rem;
-            }
+            width: 2.25rem;
         }
     }
 

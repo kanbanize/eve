@@ -26,13 +26,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Sizes</div>
-        <div class="component-example">
-            <div class="eve-text-small">Small</div>
-            <div class="eve-text-large">Large</div>
-        </div>
-    </div>
-    <div class="component-content">
         <div class="component-header">Colors</div>
         <div class="component-example">
             <p class="eve-text-primary">Primary color</p>
@@ -40,15 +33,6 @@
             <p class="eve-text-warning">Warning color</p>
             <p class="eve-text-success">Success color</p>
             <p class="eve-text-muted">Muted color</p>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Weights</div>
-        <div class="component-example">
-            <p class="eve-text-light">Light</p>
-            <p class="eve-text-normal">Normal</p>
-            <p class="eve-text-semibold">Semibold</p>
-            <p class="eve-text-bold">Bold</p>
         </div>
     </div>
     <div class="component-content">

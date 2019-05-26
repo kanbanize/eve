@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="eve-chip">
-                <div class="eve-avatar" data-initial="A"></div>
+                <div class="eve-avatar">A</div>
                 John Doe
                 <div class="eve-chip-action">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="J"></div>
+                    <div class="eve-avatar">J</div>
                     John Doe
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="A"></div>
+                    <div class="eve-avatar">A</div>
                     Adam Spencer
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="P"></div>
+                    <div class="eve-avatar">P</div>
                     Patrick Johnson
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="J"></div>
+                    <div class="eve-avatar">J</div>
                     Jesiah Neely
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="L"></div>
+                    <div class="eve-avatar">L</div>
                     Lorenz Vercauteren-Seghers
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
                 <div class="eve-chip">
-                    <div class="eve-avatar" data-initial="R"></div>
+                    <div class="eve-avatar">R</div>
                     Renee Sims
                     <div class="eve-chip-action">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

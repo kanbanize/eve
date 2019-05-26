@@ -15,22 +15,12 @@ $eve-text-alignments: (
     right,
     justify
 );
-$eve-text-sizes: (
-    small: $eve-font-small,
-    large: $eve-font-large,
-);
 $eve-text-colors: (
     primary: $eve-color-primary,
     danger: $eve-color-danger,
     warning: $eve-color-warning,
     success: $eve-color-success,
     muted: $eve-color-darkest-silver
-);
-$eve-text-weights: (
-    light: 300,
-    normal: 400,
-    semibold: 600,
-    bold: 700
 );
 
 @each $eve-text-transform in $eve-text-transforms {
@@ -51,21 +41,9 @@ $eve-text-weights: (
     }
 }
 
-@each $eve-text-size in map-keys($eve-text-sizes) {
-    .eve-text-#{$eve-text-size} {
-        font-size: map-get($eve-text-sizes, $eve-text-size) !important;
-    }
-}
-
 @each $eve-text-color in map-keys($eve-text-colors) {
     .eve-text-#{$eve-text-color} {
         color: map-get($eve-text-colors, $eve-text-color) !important;
-    }
-}
-
-@each $eve-text-weight in map-keys($eve-text-weights) {
-    .eve-text-#{$eve-text-weight} {
-        font-weight: map-get($eve-text-weights, $eve-text-weight) !important;
     }
 }
 

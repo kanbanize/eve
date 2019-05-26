@@ -23,7 +23,7 @@
                 <input type="checkbox" id="color-picker">
                 <div class="eve-color-picker-control">
                     <input type="text" value="#2196F3" class="eve-input">
-                    <label class="eve-color-picker-dropdown" for="color-picker"></label>
+                    <label for="color-picker"></label>
                 </div>
                 <div class="eve-color-picker-palette">
                     <ul>

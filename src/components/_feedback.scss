@@ -8,7 +8,7 @@ $eve-feedback-colors: (
     box-sizing: border-box;
     color: $eve-color-dark;
     font-size: $eve-font-small;
-    line-height: 1.125rem;
+    line-height: $eve-line-height-small;
     padding: $eve-spacing-tiny $eve-spacing-small;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {

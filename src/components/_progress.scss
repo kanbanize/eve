@@ -1,8 +1,6 @@
-$eve-progress-oval-size: 3rem;
-
 .eve-progress-line {
     background: $eve-color-bright-silver;
-    height: .125rem;
+    height: 1px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -44,20 +42,22 @@ $eve-progress-oval-size: 3rem;
         animation-name: eveProgressOval;
         animation-timing-function: linear;
         background: transparent;
-        border: .125rem solid $eve-color-bright-silver;
+        border: 1px solid $eve-color-bright-silver;
         border-radius: 50%;
         border-right-color: $eve-color-primary;
         border-top-color: $eve-color-primary;
         box-sizing: border-box;
         content: '';
         display: inline-block;
-        height: $eve-progress-oval-size;
-        width: $eve-progress-oval-size;
+        height: 2rem;
+        width: 2rem;
     }
 
     &::after {
+        color: $eve-color-dark;
         content: attr(data-label);
         font-size: $eve-font-normal;
+        line-height: $eve-line-height-normal;
         margin-left: $eve-spacing-small;
     }
 

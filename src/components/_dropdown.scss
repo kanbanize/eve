@@ -3,10 +3,9 @@ $eve-dropdown-list-item-size: 2rem;
 .eve-dropdown {
     background: $eve-color-light;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
-    display: inline-flex;
-    flex-direction: column;
     font-size: $eve-font-normal;
-    min-width: 10rem;
+    max-width: 16rem;
+    min-width: 8rem;
 
     ul {
         list-style: none;
@@ -16,6 +15,7 @@ $eve-dropdown-list-item-size: 2rem;
 
         li {
             align-items: center;
+            color: $eve-color-dark;
             cursor: pointer;
             display: flex;
             height: $eve-dropdown-list-item-size;
@@ -58,7 +58,7 @@ $eve-dropdown-list-item-size: 2rem;
 
         hr {
             border: 0;
-            border-top: 1px solid $eve-color-bright-silver;
+            border-top: 1px solid $eve-color-dark-silver;
             margin: $eve-spacing-tiny 0;
         }
     }
