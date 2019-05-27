@@ -23,7 +23,7 @@ $eve-switch-height: 1.125rem;
             top: 0;
             width: 100%;
 
-            &:checked ~ .eve-switch-mark {
+            &:checked ~ i {
                 background: $eve-color-success;
 
                 &::after {
@@ -34,14 +34,14 @@ $eve-switch-height: 1.125rem;
             &:disabled {
                 cursor: default;
 
-                ~ .eve-switch-mark {
+                ~ i {
                     background: $eve-color-bright-silver;
                 }
             }
         }
     }
 
-    .eve-switch-mark {
+    i {
         align-items: center;
         background: $eve-color-darker-silver;
         border-radius: $eve-switch-height / 2;

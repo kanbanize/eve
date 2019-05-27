@@ -4,7 +4,7 @@
         <div class="component-example">
             <div class="eve-switch">
                 <input type="checkbox">
-                <div class="eve-switch-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
             <label class="eve-switch-control">
                 <div class="eve-switch">
                     <input type="checkbox">
-                    <div class="eve-switch-mark"></div>
+                    <i></i>
                 </div>
                 Switch control
             </label>
@@ -27,14 +27,14 @@
                 <label class="eve-switch-control">
                     <div class="eve-switch">
                         <input type="checkbox">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                     Switch control 1
                 </label>
                 <label class="eve-switch-control">
                     <div class="eve-switch">
                         <input type="checkbox">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                     Switch control 2
                 </label>
@@ -48,14 +48,14 @@
                 <label class="eve-switch-control">
                     <div class="eve-switch">
                         <input type="checkbox">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                     Switch control 1
                 </label>
                 <label class="eve-switch-control">
                     <div class="eve-switch">
                         <input type="checkbox">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                     Switch control 2
                 </label>
@@ -67,11 +67,11 @@
         <div class="component-example">
             <div class="eve-switch">
                 <input type="checkbox" disabled="disabled">
-                <div class="eve-switch-mark"></div>
+                <i></i>
             </div>
             <div class="eve-switch">
                 <input type="checkbox" disabled="disabled" checked="checked">
-                <div class="eve-switch-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>

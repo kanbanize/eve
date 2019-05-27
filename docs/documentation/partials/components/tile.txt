@@ -43,7 +43,7 @@
                     </div>
                     <div class="eve-switch">
                         <input type="checkbox">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                 </div>
                 <div class="eve-tile">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="eve-switch">
                         <input type="checkbox" checked="checked">
-                        <div class="eve-switch-mark"></div>
+                        <i></i>
                     </div>
                 </div>
             </div>

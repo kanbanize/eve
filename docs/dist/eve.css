@@ -1693,15 +1693,15 @@
     position: absolute;
     top: 0;
     width: 100%; }
-    .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark {
+    .eve-switch input[type='checkbox']:checked ~ i {
       background: #4caf50; }
-      .eve-switch input[type='checkbox']:checked ~ .eve-switch-mark::after {
+      .eve-switch input[type='checkbox']:checked ~ i::after {
         left: 1rem; }
     .eve-switch input[type='checkbox']:disabled {
       cursor: default; }
-      .eve-switch input[type='checkbox']:disabled ~ .eve-switch-mark {
+      .eve-switch input[type='checkbox']:disabled ~ i {
         background: #eceff1; }
-  .eve-switch .eve-switch-mark {
+  .eve-switch i {
     align-items: center;
     background: #b0bec5;
     border-radius: 0.5625rem;
@@ -1711,7 +1711,7 @@
     pointer-events: none;
     transition: background 150ms ease;
     width: 100%; }
-    .eve-switch .eve-switch-mark::after {
+    .eve-switch i::after {
       background: #fff;
       border-radius: 50%;
       content: '';
