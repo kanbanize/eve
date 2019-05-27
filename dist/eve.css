@@ -314,9 +314,7 @@
   margin-bottom: 0.5rem; }
 
 .eve-avatar {
-  background: #eceff1;
   border-radius: 50%;
-  color: #333;
   display: inline-block;
   flex-shrink: 0;
   position: relative;
@@ -326,6 +324,12 @@
   height: 3rem;
   line-height: 3rem;
   width: 3rem; }
+  .eve-avatar[data-initial] {
+    background: #2196f3;
+    color: #fff; }
+    .eve-avatar[data-initial]::before {
+      content: attr(data-initial);
+      font-size: inherit; }
   .eve-avatar img {
     background-position: center;
     background-repeat: no-repeat;
@@ -873,7 +877,7 @@
     position: relative;
     width: 1.75rem; }
   .eve-chip .eve-avatar {
-    font-size: 1em; }
+    font-size: 0.875rem; }
   .eve-chip .eve-chip-icon {
     align-items: center;
     background: #2196f3;
@@ -1078,8 +1082,6 @@
       border: 0;
       border-top: 1px solid #cfd8dc;
       margin: 0.5rem 0; }
-  .eve-dropdown.is-stripped ul li:nth-child(even) {
-    background: #eceff1; }
 
 .eve-feedback {
   box-sizing: border-box;
@@ -1739,6 +1741,7 @@
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   border-spacing: 0;
+  color: #333;
   font-size: 0.875rem;
   line-height: 1.25rem;
   table-layout: fixed;
@@ -1748,7 +1751,6 @@
     .eve-table thead tr th {
       background: #eceff1;
       box-sizing: border-box;
-      color: #607d8b;
       font-weight: normal;
       height: 3rem;
       padding: 0.5rem 1.5rem;
@@ -1760,12 +1762,9 @@
     .eve-table tbody tr:not(:last-child) {
       border-bottom: 1px solid #cfd8dc; }
     .eve-table tbody tr td {
-      color: #333;
       padding: 0.5rem 1.5rem;
       text-align: left;
       word-wrap: break-word; }
-  .eve-table.is-stripped tbody tr:nth-child(even) {
-    background: #eceff1; }
 
 .eve-tabs {
   border-bottom: 1px solid #cfd8dc;

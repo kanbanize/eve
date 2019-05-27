@@ -23,11 +23,11 @@
     <div class="component-content">
         <div class="component-header">Initials</div>
         <div class="component-example">
-            <div class="eve-avatar is-tiny">T</div>
-            <div class="eve-avatar is-small">S</div>
-            <div class="eve-avatar">N</div>
-            <div class="eve-avatar is-large">L</div>
-            <div class="eve-avatar is-huge">H</div>
+            <div class="eve-avatar is-tiny" data-initial="T"></div>
+            <div class="eve-avatar is-small" data-initial="S"></div>
+            <div class="eve-avatar" data-initial="N"></div>
+            <div class="eve-avatar is-large" data-initial="L"></div>
+            <div class="eve-avatar is-huge" data-initial="H"></div>
         </div>
     </div>
     <div class="component-content">
