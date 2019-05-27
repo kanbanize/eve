@@ -1168,8 +1168,6 @@
     color: #b0bec5;
     font-family: inherit;
     font-size: inherit; }
-  .eve-input:focus {
-    border-color: #2196f3; }
   .eve-input.is-small {
     font-size: 0.75rem;
     height: 1.75rem;
@@ -1544,8 +1542,6 @@
   height: 2.25rem;
   line-height: 2.25rem;
   padding: 0 2.25rem 0 1rem; }
-  .eve-select:focus {
-    border-color: #2196f3; }
   .eve-select::-ms-expand {
     display: none; }
   .eve-select.is-small {
@@ -1953,15 +1949,16 @@
   width: 100%; }
   .eve-textarea::-webkit-input-placeholder {
     color: #b0bec5;
-    font-family: inherit; }
+    font-family: inherit;
+    font-size: inherit; }
   .eve-textarea::-ms-input-placeholder {
     color: #b0bec5;
-    font-family: inherit; }
+    font-family: inherit;
+    font-size: inherit; }
   .eve-textarea::placeholder {
     color: #b0bec5;
-    font-family: inherit; }
-  .eve-textarea:focus {
-    border-color: #2196f3; }
+    font-family: inherit;
+    font-size: inherit; }
   .eve-textarea:-moz-read-only {
     resize: none; }
   .eve-textarea:read-only {

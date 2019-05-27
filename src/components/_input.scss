@@ -32,10 +32,6 @@ $eve-input-font-sizes: (
         font-size: inherit;
     }
 
-    &:focus {
-        border-color: $eve-color-primary;
-    }
-
     @each $eve-input-size in map-keys($eve-input-sizes) {
         $size: map-get($eve-input-sizes, $eve-input-size);
         $padding: map-get($eve-input-paddings, $eve-input-size);

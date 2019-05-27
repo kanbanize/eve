@@ -17,10 +17,7 @@
     &::placeholder {
         color: $eve-color-darker-silver;
         font-family: inherit;
-    }
-
-    &:focus {
-        border-color: $eve-color-primary;
+        font-size: inherit;
     }
 
     &:read-only {
