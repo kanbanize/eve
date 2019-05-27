@@ -23,7 +23,7 @@ $eve-checkbox-mark-border-width: .125rem;
             top: 0;
             width: 100%;
 
-            &:checked ~ .eve-checkbox-mark {
+            &:checked ~ i {
                 background: $eve-color-success;
                 border-color: $eve-color-success;
 
@@ -35,12 +35,12 @@ $eve-checkbox-mark-border-width: .125rem;
             &:disabled {
                 cursor: default;
 
-                ~ .eve-checkbox-mark {
+                ~ i {
                     border-color: $eve-color-dark-silver;
                 }
 
                 &:checked {
-                    ~ .eve-checkbox-mark {
+                    ~ i {
                         background: $eve-color-dark-silver;
 
                         &::after {
@@ -52,7 +52,7 @@ $eve-checkbox-mark-border-width: .125rem;
         }
     }
 
-    .eve-checkbox-mark {
+    i {
         background: $eve-color-light;
         border: .125rem solid $eve-color-darker-silver;
         box-sizing: border-box;

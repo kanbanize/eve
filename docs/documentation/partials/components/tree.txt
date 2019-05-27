@@ -40,7 +40,7 @@
                     <label class="eve-checkbox-control">
                         <div class="eve-checkbox">
                             <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
+                            <i></i>
                         </div>
                         Backlog
                     </label>
@@ -51,7 +51,7 @@
                     <label class="eve-checkbox-control">
                         <div class="eve-checkbox">
                             <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
+                            <i></i>
                         </div>
                         Requested
                     </label>
@@ -60,7 +60,7 @@
                             <label class="eve-checkbox-control">
                                 <div class="eve-checkbox">
                                     <input type="checkbox">
-                                    <div class="eve-checkbox-mark"></div>
+                                    <i></i>
                                 </div>
                                 Planning
                             </label>
@@ -69,7 +69,7 @@
                             <label class="eve-checkbox-control">
                                 <div class="eve-checkbox">
                                     <input type="checkbox">
-                                    <div class="eve-checkbox-mark"></div>
+                                    <i></i>
                                 </div>
                                 Ready
                             </label>
@@ -82,7 +82,7 @@
                     <label class="eve-checkbox-control">
                         <div class="eve-checkbox">
                             <input type="checkbox">
-                            <div class="eve-checkbox-mark"></div>
+                            <i></i>
                         </div>
                         In Progress
                     </label>
@@ -91,7 +91,7 @@
                             <label class="eve-checkbox-control">
                                 <div class="eve-checkbox">
                                     <input type="checkbox">
-                                    <div class="eve-checkbox-mark"></div>
+                                    <i></i>
                                 </div>
                                 Tech Design
                             </label>
@@ -102,7 +102,7 @@
                             <label class="eve-checkbox-control">
                                 <div class="eve-checkbox">
                                     <input type="checkbox">
-                                    <div class="eve-checkbox-mark"></div>
+                                    <i></i>
                                 </div>
                                 Development
                             </label>
@@ -111,7 +111,7 @@
                                     <label class="eve-checkbox-control">
                                         <div class="eve-checkbox">
                                             <input type="checkbox">
-                                            <div class="eve-checkbox-mark"></div>
+                                            <i></i>
                                         </div>
                                         Coding
                                     </label>
@@ -120,7 +120,7 @@
                                     <label class="eve-checkbox-control">
                                         <div class="eve-checkbox">
                                             <input type="checkbox">
-                                            <div class="eve-checkbox-mark"></div>
+                                            <i></i>
                                         </div>
                                         Testing
                                     </label>

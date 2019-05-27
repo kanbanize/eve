@@ -59,7 +59,7 @@
                         <td>
                             <div class="eve-checkbox">
                                 <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
+                                <i></i>
                             </div>
                         </td>
                         <td>Fruits</td>
@@ -72,7 +72,7 @@
                         <td>
                             <div class="eve-checkbox">
                                 <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
+                                <i></i>
                             </div>
                         </td>
                         <td>Veggies</td>
@@ -85,7 +85,7 @@
                         <td>
                             <div class="eve-checkbox">
                                 <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
+                                <i></i>
                             </div>
                         </td>
                         <td>Rice</td>

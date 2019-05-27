@@ -9,6 +9,24 @@ $eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
     margin: 0;
     padding-left: $eve-spacing-normal;
 
+    .eve-node {
+        background-image: url(svg-encode($eve-tree-arrow-right-icon));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1rem 1rem;
+        content: '';
+        cursor: pointer;
+        display: block;
+        height: 1.25rem;
+        left: -$eve-spacing-normal;
+        position: absolute;
+        width: 1.25rem;
+
+        &:hover {
+            background-image: url(svg-encode($eve-tree-arrow-right-hover-icon));
+        }
+    }
+
     li {
         color: $eve-color-dark;
         font-size: $eve-font-normal;
@@ -19,7 +37,7 @@ $eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
             margin-bottom: $eve-spacing-tiny;
         }
 
-        & > input {
+        input {
             &[type='checkbox'] {
                 display: none;
 
@@ -36,24 +54,6 @@ $eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
                         display: block;
                     }
                 }
-            }
-        }
-
-        & > .eve-node {
-            background-image: url(svg-encode($eve-tree-arrow-right-icon));
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 1rem 1rem;
-            content: '';
-            cursor: pointer;
-            display: block;
-            height: 1.25rem;
-            left: -$eve-spacing-normal;
-            position: absolute;
-            width: 1.25rem;
-
-            &:hover {
-                background-image: url(svg-encode($eve-tree-arrow-right-hover-icon));
             }
         }
     }

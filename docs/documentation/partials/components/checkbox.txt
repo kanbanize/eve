@@ -4,7 +4,7 @@
         <div class="component-example">
             <div class="eve-checkbox">
                 <input type="checkbox">
-                <div class="eve-checkbox-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
             <label class="eve-checkbox-control">
                 <div class="eve-checkbox">
                     <input type="checkbox">
-                    <div class="eve-checkbox-mark"></div>
+                    <i></i>
                 </div>
                 Checkbox control 1
             </label>
@@ -27,14 +27,14 @@
                 <label class="eve-checkbox-control">
                     <div class="eve-checkbox">
                         <input type="checkbox">
-                        <div class="eve-checkbox-mark"></div>
+                        <i></i>
                     </div>
                     Checkbox control 1
                 </label>
                 <label class="eve-checkbox-control">
                     <div class="eve-checkbox">
                         <input type="checkbox">
-                        <div class="eve-checkbox-mark"></div>
+                        <i></i>
                     </div>
                     Checkbox control 2
                 </label>
@@ -48,14 +48,14 @@
                 <label class="eve-checkbox-control">
                     <div class="eve-checkbox">
                         <input type="checkbox">
-                        <div class="eve-checkbox-mark"></div>
+                        <i></i>
                     </div>
                     Checkbox control 1
                 </label>
                 <label class="eve-checkbox-control">
                     <div class="eve-checkbox">
                         <input type="checkbox">
-                        <div class="eve-checkbox-mark"></div>
+                        <i></i>
                     </div>
                     Checkbox control 2
                 </label>
@@ -67,11 +67,11 @@
         <div class="component-example">
             <div class="eve-checkbox">
                 <input type="checkbox" disabled="disabled">
-                <div class="eve-checkbox-mark"></div>
+                <i></i>
             </div>
             <div class="eve-checkbox">
                 <input type="checkbox" disabled="disabled" checked="checked">
-                <div class="eve-checkbox-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>
