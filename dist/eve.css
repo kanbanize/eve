@@ -1475,20 +1475,20 @@
     position: absolute;
     top: 0;
     width: 100%; }
-    .eve-radio input[type='radio']:checked ~ .eve-radio-mark {
+    .eve-radio input[type='radio']:checked ~ i {
       background: #4caf50;
       border-color: #4caf50; }
-      .eve-radio input[type='radio']:checked ~ .eve-radio-mark::after {
+      .eve-radio input[type='radio']:checked ~ i::after {
         display: block; }
     .eve-radio input[type='radio']:disabled {
       cursor: default; }
-      .eve-radio input[type='radio']:disabled ~ .eve-radio-mark {
+      .eve-radio input[type='radio']:disabled ~ i {
         border-color: #cfd8dc; }
-      .eve-radio input[type='radio']:disabled:checked ~ .eve-radio-mark {
+      .eve-radio input[type='radio']:disabled:checked ~ i {
         background: #cfd8dc; }
-        .eve-radio input[type='radio']:disabled:checked ~ .eve-radio-mark::after {
+        .eve-radio input[type='radio']:disabled:checked ~ i::after {
           display: block; }
-  .eve-radio .eve-radio-mark {
+  .eve-radio i {
     background: #fff;
     border: 0.125rem solid #b0bec5;
     border-radius: 50%;
@@ -1496,7 +1496,7 @@
     height: 100%;
     pointer-events: none;
     width: 100%; }
-    .eve-radio .eve-radio-mark::after {
+    .eve-radio i::after {
       border: 0.1875rem solid #fff;
       border-radius: inherit;
       box-sizing: inherit;

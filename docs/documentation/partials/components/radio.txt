@@ -4,7 +4,7 @@
         <div class="component-example">
             <div class="eve-radio">
                 <input type="radio">
-                <div class="eve-radio-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
             <label class="eve-radio-control">
                 <div class="eve-radio">
                     <input type="radio">
-                    <div class="eve-radio-mark"></div>
+                    <i></i>
                 </div>
                 Radio control
             </label>
@@ -27,14 +27,14 @@
                 <label class="eve-radio-control">
                     <div class="eve-radio">
                         <input type="radio" name="eve-radio2">
-                        <div class="eve-radio-mark"></div>
+                        <i></i>
                     </div>
                     Radio control 1
                 </label>
                 <label class="eve-radio-control">
                     <div class="eve-radio">
                         <input type="radio" name="eve-radio2">
-                        <div class="eve-radio-mark"></div>
+                        <i></i>
                     </div>
                     Radio control 2
                 </label>
@@ -48,14 +48,14 @@
                 <label class="eve-radio-control">
                     <div class="eve-radio">
                         <input type="radio" name="eve-radio">
-                        <div class="eve-radio-mark"></div>
+                        <i></i>
                     </div>
                     Radio control 1
                 </label>
                 <label class="eve-radio-control">
                     <div class="eve-radio">
                         <input type="radio" name="eve-radio">
-                        <div class="eve-radio-mark"></div>
+                        <i></i>
                     </div>
                     Radio control 2
                 </label>
@@ -67,11 +67,11 @@
         <div class="component-example">
             <div class="eve-radio">
                 <input type="radio" disabled="disabled">
-                <div class="eve-radio-mark"></div>
+                <i></i>
             </div>
             <div class="eve-radio">
                 <input type="radio" disabled="disabled" checked="checked">
-                <div class="eve-radio-mark"></div>
+                <i></i>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@ $eve-radio-size: 1.125rem;
             top: 0;
             width: 100%;
 
-            &:checked ~ .eve-radio-mark {
+            &:checked ~ i {
                 background: $eve-color-success;
                 border-color: $eve-color-success;
 
@@ -34,12 +34,12 @@ $eve-radio-size: 1.125rem;
             &:disabled {
                 cursor: default;
 
-                ~ .eve-radio-mark {
+                ~ i {
                     border-color: $eve-color-dark-silver;
                 }
 
                 &:checked {
-                    ~ .eve-radio-mark {
+                    ~ i {
                         background: $eve-color-dark-silver;
 
                         &::after {
@@ -51,7 +51,7 @@ $eve-radio-size: 1.125rem;
         }
     }
 
-    .eve-radio-mark {
+    i {
         background: $eve-color-light;
         border: .125rem solid $eve-color-darker-silver;
         border-radius: 50%;
