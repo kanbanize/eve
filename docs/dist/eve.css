@@ -1089,8 +1089,8 @@
 .eve-feedback {
   box-sizing: border-box;
   color: #333;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   padding: 0.5rem 1rem; }
   .eve-feedback.is-success {
     background: #b5dfb7; }
@@ -2330,6 +2330,11 @@
      -moz-user-select: none !important;
       -ms-user-select: none !important;
           user-select: none !important; }
+
+.eve-text-link {
+  color: #2196f3 !important;
+  cursor: pointer !important;
+  text-decoration: underline !important; }
 
 .eve-visibility-visible {
   visibility: visible !important; }

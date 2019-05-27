@@ -78,3 +78,9 @@ $eve-text-colors: (
 .eve-text-unselectable {
     user-select: none !important;
 }
+
+.eve-text-link {
+    color: $eve-color-primary !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
