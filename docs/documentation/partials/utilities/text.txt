@@ -39,7 +39,7 @@
         <div class="component-header">Weights</div>
         <div class="component-example">
             <div class="eve-text-light">Light</div>
-            <div class="eve-text-light">Light</div>
+            <div class="eve-text-medium">Medium</div>
             <div class="eve-text-semibold">Semibold</div>
             <div class="eve-text-bold">Bold</div>
         </div>
