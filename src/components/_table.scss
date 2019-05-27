@@ -2,6 +2,7 @@
     border: 1px solid $eve-color-dark-silver;
     border-collapse: collapse;
     border-spacing: 0;
+    color: $eve-color-dark;
     font-size: $eve-font-normal;
     line-height: $eve-line-height-normal;
     table-layout: fixed;
@@ -14,7 +15,6 @@
             th {
                 background: $eve-color-bright-silver;
                 box-sizing: border-box;
-                color: $eve-color-darkest-silver;
                 font-weight: normal;
                 height: 3rem;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
@@ -34,20 +34,9 @@
             }
 
             td {
-                color: $eve-color-dark;
                 padding: $eve-spacing-tiny $eve-spacing-normal;
                 text-align: left;
                 word-wrap: break-word;
-            }
-        }
-    }
-
-    &.is-stripped {
-        tbody {
-            tr {
-                &:nth-child(even) {
-                    background: $eve-color-bright-silver;
-                }
             }
         }
     }

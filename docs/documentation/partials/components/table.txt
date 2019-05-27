@@ -39,60 +39,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Stripped</div>
-        <div class="component-example">
-            <table class="eve-table is-stripped">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Protein</th>
-                        <th>Sodium</th>
-                        <th>Calcium</th>
-                        <th>Fibers</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fruits</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>Veggies</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>Rice</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>Fruits</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>Veggies</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Checkboxes</div>
         <div class="component-example">
             <table class="eve-table">
                 <colgroup>
@@ -143,32 +89,6 @@
                             </div>
                         </td>
                         <td>Rice</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                        </td>
-                        <td>Fruits</td>
-                        <td>36</td>
-                        <td>87</td>
-                        <td>45</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="eve-checkbox">
-                                <input type="checkbox">
-                                <div class="eve-checkbox-mark"></div>
-                            </div>
-                        </td>
-                        <td>Veggies</td>
                         <td>36</td>
                         <td>87</td>
                         <td>45</td>

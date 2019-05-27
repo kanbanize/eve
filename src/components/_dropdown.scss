@@ -62,14 +62,4 @@ $eve-dropdown-list-item-size: 2rem;
             margin: $eve-spacing-tiny 0;
         }
     }
-
-    &.is-stripped {
-        ul {
-            li {
-                &:nth-child(even) {
-                    background: $eve-color-bright-silver;
-                }
-            }
-        }
-    }
 }

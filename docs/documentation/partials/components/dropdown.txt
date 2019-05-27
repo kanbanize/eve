@@ -76,22 +76,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Stripped</div>
-        <div class="component-example">
-            <div class="eve-dropdown is-stripped">
-                <ul>
-                    <li>Welcome</li>
-                    <li>Inbox</li>
-                    <li>Workflow</li>
-                    <li>Timeline</li>
-                    <li>Power-ups</li>
-                    <li>Setup</li>
-                    <li>Done</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
         <div class="component-header">Headers</div>
         <div class="component-example">
             <div class="eve-dropdown">
