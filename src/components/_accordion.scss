@@ -68,8 +68,9 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
             padding-right: $eve-accordion-header-height;
 
             svg {
+                background: $eve-accordion-header-icon-background;
                 box-sizing: border-box;
-                fill: $eve-accordion-header-icon-background;
+                fill: $eve-accordion-header-icon-color;
                 height: $eve-accordion-header-height;
                 padding: $eve-accordion-header-icon-size / 2;
                 position: absolute;

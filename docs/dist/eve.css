@@ -300,8 +300,9 @@
     .eve-accordion.has-icon .eve-accordion-header {
       padding-right: 2rem; }
       .eve-accordion.has-icon .eve-accordion-header svg {
+        background: #2196f3;
         box-sizing: border-box;
-        fill: #2196f3;
+        fill: #fff;
         height: 2rem;
         padding: 0.5rem;
         position: absolute;
