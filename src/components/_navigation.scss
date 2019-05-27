@@ -29,11 +29,10 @@ $eve-tab-size: 2.25rem;
         }
 
         &:hover {
-            background: $eve-color-bright-silver;
+            color: $eve-color-primary;
         }
 
         &.is-active {
-            background: $eve-color-bright-silver;
             color: $eve-color-primary;
             position: relative;
 

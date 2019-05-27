@@ -1300,9 +1300,8 @@
       text-overflow: ellipsis;
       white-space: nowrap; }
     .eve-navigation li:hover {
-      background: #eceff1; }
+      color: #2196f3; }
     .eve-navigation li.is-active {
-      background: #eceff1;
       color: #2196f3;
       position: relative; }
       .eve-navigation li.is-active::after {
@@ -2306,6 +2305,9 @@
 
 .eve-text-light {
   font-weight: 300 !important; }
+
+.eve-text-medium {
+  font-weight: 400 !important; }
 
 .eve-text-semibold {
   font-weight: 600 !important; }
