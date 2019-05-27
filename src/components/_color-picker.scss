@@ -14,7 +14,7 @@ $eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
         &:checked {
             ~ .eve-color-picker-control {
                 label {
-                    background: $eve-color-light url(svg-encode($eve-color-picker-arrow-up-icon)) no-repeat center / ($eve-color-picker-color-size / 2) ($eve-color-picker-color-size / 2);
+                    background-image: url(svg-encode($eve-color-picker-arrow-up-icon));
                 }
             }
 
@@ -33,7 +33,10 @@ $eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
 
         label {
             align-items: center;
-            background: $eve-color-light url(svg-encode($eve-color-picker-arrow-down-icon)) no-repeat center / (2.25rem / 2) (2.25rem / 2);
+            background-image: url(svg-encode($eve-color-picker-arrow-down-icon));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1.125rem 1.125rem;
             border: 1px solid $eve-color-dark-silver;
             box-sizing: border-box;
             cursor: pointer;
