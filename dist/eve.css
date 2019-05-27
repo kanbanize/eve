@@ -2301,6 +2301,21 @@
 .eve-text-muted {
   color: #607d8b !important; }
 
+.eve-text-light {
+  font-weight: 300 !important; }
+
+.eve-text-semibold {
+  font-weight: 600 !important; }
+
+.eve-text-bold {
+  font-weight: 700 !important; }
+
+.eve-text-small {
+  font-size: 0.75rem !important; }
+
+.eve-text-large {
+  font-size: 1rem !important; }
+
 .eve-text-truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
