@@ -33,16 +33,16 @@
     <div class="component-content">
         <div class="component-header">States</div>
         <div class="component-example">
-            <div class="eve-avatar is-tiny is-offline">
+            <div class="eve-avatar is-offline">
                 <img src="assets/images/avatar-1.jpg">
             </div>
-            <div class="eve-avatar is-small is-away">
+            <div class="eve-avatar is-away">
                 <img src="assets/images/avatar-1.jpg">
             </div>
             <div class="eve-avatar is-busy">
                 <img src="assets/images/avatar-1.jpg">
             </div>
-            <div class="eve-avatar is-large is-online">
+            <div class="eve-avatar is-online">
                 <img src="assets/images/avatar-1.jpg">
             </div>
         </div>
