@@ -298,7 +298,7 @@
   .eve-accordion.has-icon {
     position: relative; }
     .eve-accordion.has-icon .eve-accordion-header {
-      padding-right: 2rem; }
+      padding-right: 3rem; }
       .eve-accordion.has-icon .eve-accordion-header svg {
         background: #2196f3;
         box-sizing: border-box;
