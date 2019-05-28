@@ -20,6 +20,10 @@
         font-size: inherit;
     }
 
+    &:focus {
+        border-color: $eve-color-primary;
+    }
+
     &:read-only {
         resize: none;
     }

@@ -29,6 +29,10 @@ $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" v
     outline: none;
     width: 100%;
 
+    &:focus {
+        border-color: $eve-color-primary;
+    }
+
     &::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
         display: none;
     }
