@@ -1573,6 +1573,7 @@
     .eve-select.is-large.is-rounded {
       border-radius: 1.5rem; }
   .eve-select:disabled {
+    background-color: #cfd8dc;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
     color: #fff;
     cursor: default; }

@@ -74,6 +74,7 @@ $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" v
     }
 
     &:disabled {
+        background-color: $eve-color-dark-silver;
         background-image: url(svg-encode($eve-select-arrow-down-disabled-icon));
         color: $eve-color-light;
         cursor: default;
