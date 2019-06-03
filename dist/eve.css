@@ -106,7 +106,7 @@
     justify-content: space-between; }
   .eve-row.is-vertical-top {
     align-items: flex-start; }
-  .eve-row.is-vertical-middle {
+  .eve-row.is-vertical-center {
     align-items: center; }
   .eve-row.is-vertical-bottom {
     align-items: flex-end; }
@@ -1068,11 +1068,9 @@
         margin-right: 0.5rem;
         width: 1rem; }
       .eve-dropdown ul li.is-header {
-        font-size: 0.75rem;
         font-weight: 600;
         height: 2rem;
-        pointer-events: none;
-        text-transform: uppercase; }
+        pointer-events: none; }
       .eve-dropdown ul li.is-disabled {
         color: #cfd8dc;
         cursor: default; }

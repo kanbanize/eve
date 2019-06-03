@@ -34,11 +34,9 @@ $eve-dropdown-list-item-size: 2rem;
             }
 
             &.is-header {
-                font-size: $eve-font-small;
                 font-weight: 600;
                 height: $eve-dropdown-list-item-size;
                 pointer-events: none;
-                text-transform: uppercase;
             }
 
             &.is-disabled {
