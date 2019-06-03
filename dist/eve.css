@@ -972,28 +972,35 @@
   padding: 1.5rem;
   position: relative;
   width: 25rem; }
-  .eve-dialog .eve-dialog-close {
+  .eve-dialog::before {
     align-items: center;
-    background: #fff;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
     border-radius: 50%;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    content: '';
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     height: 2rem;
     justify-content: center;
     position: absolute;
     right: -1rem;
     top: -1rem;
     width: 2rem; }
-    .eve-dialog .eve-dialog-close svg {
-      fill: #b0bec5;
-      height: 1rem;
-      width: 1rem; }
   .eve-dialog .eve-dialog-header {
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.75rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal; }
   .eve-dialog .eve-dialog-content {
     color: #333;
     font-size: 0.875rem;
@@ -1003,20 +1010,12 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem; }
-  .eve-dialog.is-primary .eve-dialog-close:hover svg {
-    fill: #2196f3; }
   .eve-dialog.is-primary .eve-dialog-header {
     color: #2196f3; }
-  .eve-dialog.is-success .eve-dialog-close:hover svg {
-    fill: #4caf50; }
   .eve-dialog.is-success .eve-dialog-header {
     color: #4caf50; }
-  .eve-dialog.is-warning .eve-dialog-close:hover svg {
-    fill: #ff9800; }
   .eve-dialog.is-warning .eve-dialog-header {
     color: #ff9800; }
-  .eve-dialog.is-danger .eve-dialog-close:hover svg {
-    fill: #f44336; }
   .eve-dialog.is-danger .eve-dialog-header {
     color: #f44336; }
 
@@ -1070,7 +1069,7 @@
         width: 1rem; }
       .eve-dropdown ul li.is-header {
         font-size: 0.75rem;
-        font-weight: bold;
+        font-weight: 600;
         height: 2rem;
         pointer-events: none;
         text-transform: uppercase; }

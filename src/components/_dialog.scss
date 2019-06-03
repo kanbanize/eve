@@ -6,6 +6,8 @@ $eve-dialog-types: (
 );
 $eve-dialog-width: 25rem;
 $eve-dialog-close-size: 2rem;
+$eve-dialog-close-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-darker-silver}"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+
 
 .eve-dialog {
     background: $eve-color-light;
@@ -14,32 +16,37 @@ $eve-dialog-close-size: 2rem;
     position: relative;
     width: $eve-dialog-width;
 
-    .eve-dialog-close {
+    &::before {
         align-items: center;
-        background: $eve-color-light;
+        background-color: $eve-color-light;
+        background-image: url(svg-encode($eve-dialog-close-icon));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: $eve-dialog-close-size / 2 $eve-dialog-close-size / 2;
         border-radius: 50%;
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+        box-sizing: border-box;
+        content: '';
         cursor: pointer;
         display: flex;
+        flex-shrink: 0;
         height: $eve-dialog-close-size;
         justify-content: center;
         position: absolute;
-        right: -($eve-dialog-close-size / 2);
-        top: -($eve-dialog-close-size / 2);
+        right: -$eve-dialog-close-size / 2;
+        top: -$eve-dialog-close-size / 2;
         width: $eve-dialog-close-size;
-
-        svg {
-            fill: $eve-color-darker-silver;
-            height: $eve-dialog-close-size / 2;
-            width: $eve-dialog-close-size / 2;
-        }
     }
 
     .eve-dialog-header {
         font-size: 1.25rem;
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1.75rem;
         margin-bottom: $eve-spacing-small;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
     }
 
     .eve-dialog-content {
@@ -59,14 +66,6 @@ $eve-dialog-close-size: 2rem;
         $color: map-get($eve-dialog-types, $eve-dialog-type);
 
         &.is-#{$eve-dialog-type} {
-            .eve-dialog-close {
-                &:hover {
-                    svg {
-                        fill: $color;
-                    }
-                }
-            }
-
             .eve-dialog-header {
                 color: $color;
             }
