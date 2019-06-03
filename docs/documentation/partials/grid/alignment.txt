@@ -53,9 +53,9 @@
                     <p>Top</p>
                 </div>
             </div>
-            <div class="eve-row is-vertical-middle">
+            <div class="eve-row is-vertical-center">
                 <div class="eve-column">
-                    <p>Middle</p>
+                    <p>Center</p>
                 </div>
             </div>
             <div class="eve-row is-vertical-bottom">
