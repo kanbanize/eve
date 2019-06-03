@@ -644,7 +644,7 @@
               animation-name: eveButtonProgress;
       -webkit-animation-timing-function: linear;
               animation-timing-function: linear;
-      border: .125rem solid transparent;
+      border: 1px solid transparent;
       border-radius: 50%;
       border-right-color: #fff;
       border-top-color: #fff;
