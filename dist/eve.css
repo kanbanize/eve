@@ -1168,8 +1168,6 @@
     color: #b0bec5;
     font-family: inherit;
     font-size: inherit; }
-  .eve-input:focus {
-    border-color: #2196f3; }
   .eve-input.is-small {
     font-size: 0.75rem;
     height: 1.75rem;
@@ -1964,8 +1962,6 @@
     color: #b0bec5;
     font-family: inherit;
     font-size: inherit; }
-  .eve-textarea:focus {
-    border-color: #2196f3; }
   .eve-textarea:-moz-read-only {
     resize: none; }
   .eve-textarea:read-only {
