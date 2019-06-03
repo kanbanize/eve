@@ -3,15 +3,15 @@ $eve-dropdown-list-item-size: 2rem;
 .eve-dropdown {
     background: $eve-color-light;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    display: inline-block;
     font-size: $eve-font-normal;
-    max-width: 16rem;
-    min-width: 8rem;
+    max-width: 20rem;
+    min-width: 10rem;
 
     ul {
         list-style: none;
         margin: 0;
         padding: $eve-spacing-tiny 0;
-        width: 100%;
 
         li {
             align-items: center;

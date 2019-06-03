@@ -1046,14 +1046,14 @@
 .eve-dropdown {
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
   font-size: 0.875rem;
-  max-width: 16rem;
-  min-width: 8rem; }
+  max-width: 20rem;
+  min-width: 10rem; }
   .eve-dropdown ul {
     list-style: none;
     margin: 0;
-    padding: 0.5rem 0;
-    width: 100%; }
+    padding: 0.5rem 0; }
     .eve-dropdown ul li {
       align-items: center;
       color: #333;
