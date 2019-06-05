@@ -116,6 +116,7 @@ $eve-avatar-border-radius: 50% !default;
 
 .eve-avatars {
     display: flex;
+    flex-wrap: wrap;
     margin: -$eve-spacing-x-tiny;
 
     .eve-avatar {
