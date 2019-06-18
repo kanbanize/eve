@@ -53,7 +53,6 @@ $eve-button-font-sizes: (
         @if $eve-button-size == 'normal' {
             font-size: $font-size;
             height: $size;
-            line-height: $size;
             padding: 0 $padding;
 
             &.is-loading {
@@ -79,6 +78,10 @@ $eve-button-font-sizes: (
 
             &.has-icon {
                 padding-left: $size / 4;
+
+                svg {
+                    margin-right: $size / 4;
+                }
             }
 
             &.is-rounded {
@@ -88,7 +91,6 @@ $eve-button-font-sizes: (
             &.is-#{$eve-button-size} {
                 font-size: $font-size;
                 height: $size;
-                line-height: $size;
                 padding: 0 $padding;
 
                 &.is-loading {
@@ -114,6 +116,10 @@ $eve-button-font-sizes: (
 
                 &.has-icon {
                     padding-left: $size / 4;
+
+                    svg {
+                        margin-right: $size / 4;
+                    }
                 }
 
                 &.is-rounded {
@@ -258,7 +264,6 @@ $eve-button-font-sizes: (
     &.has-icon {
         svg {
             fill: $eve-color-light;
-            margin-right: $eve-spacing-tiny;
         }
     }
 
