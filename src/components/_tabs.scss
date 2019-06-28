@@ -9,14 +9,13 @@ $eve-tabs-size: 3rem;
     line-height: $eve-tabs-size;
     list-style: none;
     margin: 0;
-    padding: 0 $eve-spacing-tiny;
+    padding: 0;
 
     li {
         color: $eve-color-dark;
         cursor: pointer;
-        margin: 0 $eve-spacing-tiny;
         overflow: hidden;
-        padding: 0 $eve-spacing-tiny;
+        padding: 0 $eve-spacing-small;
         text-overflow: ellipsis;
         white-space: nowrap;
 

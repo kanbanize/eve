@@ -34,7 +34,7 @@
         <div class="component-example">
             <div class="eve-tiles">
                 <div class="eve-tile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-1.jpg">
                     </div>
                     <div class="eve-tile-content">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="eve-tile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-2.jpg">
                     </div>
                     <div class="eve-tile-content">

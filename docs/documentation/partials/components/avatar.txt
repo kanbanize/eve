@@ -3,9 +3,6 @@
     <div class="component-content">
         <div class="component-header">Picture</div>
         <div class="component-example">
-            <div class="eve-avatar is-tiny">
-                <img src="assets/images/avatar-1.jpg">
-            </div>
             <div class="eve-avatar is-small">
                 <img src="assets/images/avatar-1.jpg">
             </div>
@@ -15,35 +12,30 @@
             <div class="eve-avatar is-large">
                 <img src="assets/images/avatar-1.jpg">
             </div>
-            <div class="eve-avatar is-huge">
-                <img src="assets/images/avatar-1.jpg">
-            </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Initials</div>
         <div class="component-example">
-            <div class="eve-avatar is-tiny" data-initial="T"></div>
             <div class="eve-avatar is-small" data-initial="S"></div>
             <div class="eve-avatar" data-initial="N"></div>
             <div class="eve-avatar is-large" data-initial="L"></div>
-            <div class="eve-avatar is-huge" data-initial="H"></div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-header">Grouped</div>
         <div class="component-example">
             <div class="eve-avatars">
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-1.jpg">
                 </div>
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-2.jpg">
                 </div>
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-3.jpg">
                 </div>
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-4.jpg">
                 </div>
             </div>
@@ -53,7 +45,7 @@
         <div class="component-header">Profile</div>
         <div class="component-example">
             <div class="eve-profile">
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-1.jpg">
                 </div>
                 Cristopher Ivanov
@@ -64,7 +56,7 @@
         <div class="component-header">Profile with Icon</div>
         <div class="component-example">
             <div class="eve-profile">
-                <div class="eve-avatar is-small">
+                <div class="eve-avatar">
                     <img src="assets/images/avatar-1.jpg">
                 </div>
                 Cristopher Ivanov
@@ -80,25 +72,25 @@
         <div class="component-example">
             <div class="eve-profiles">
                 <div class="eve-profile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-1.jpg">
                     </div>
                     Cristopher Ivanov
                 </div>
                 <div class="eve-profile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-2.jpg">
                     </div>
                     Miyah Myles
                 </div>
                 <div class="eve-profile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-3.jpg">
                     </div>
                     Brantlee Adair
                 </div>
                 <div class="eve-profile">
-                    <div class="eve-avatar is-small">
+                    <div class="eve-avatar">
                         <img src="assets/images/avatar-4.jpg">
                     </div>
                     Vivianna Kiser

@@ -320,10 +320,10 @@
   position: relative;
   text-align: center;
   vertical-align: top;
-  font-size: 1.5rem;
-  height: 3rem;
-  line-height: 3rem;
-  width: 3rem; }
+  font-size: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2rem; }
   .eve-avatar[data-initial] {
     background: #2196f3;
     color: #fff; }
@@ -342,26 +342,16 @@
        object-position: center;
     vertical-align: top;
     width: inherit; }
-  .eve-avatar.is-tiny {
+  .eve-avatar.is-small {
     font-size: 0.75rem;
     height: 1.5rem;
     line-height: 1.5rem;
     width: 1.5rem; }
-  .eve-avatar.is-small {
-    font-size: 1rem;
-    height: 2rem;
-    line-height: 2rem;
-    width: 2rem; }
   .eve-avatar.is-large {
-    font-size: 2rem;
-    height: 4rem;
-    line-height: 4rem;
-    width: 4rem; }
-  .eve-avatar.is-huge {
-    font-size: 3rem;
-    height: 6rem;
-    line-height: 6rem;
-    width: 6rem; }
+    font-size: 1.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 2.5rem; }
 
 .eve-avatars {
   display: flex;
@@ -412,34 +402,6 @@
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%); }
 
-.eve-breadcrumb {
-  display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .eve-breadcrumb li {
-    display: flex; }
-    .eve-breadcrumb li:not(:last-child)::after {
-      content: '/';
-      padding: 0 0.5rem; }
-    .eve-breadcrumb li a {
-      color: #333;
-      text-decoration: none; }
-      .eve-breadcrumb li a:hover {
-        color: #2196f3;
-        text-decoration: underline; }
-    .eve-breadcrumb li.is-active a {
-      color: #2196f3; }
-    .eve-breadcrumb li.is-disabled {
-      cursor: default; }
-      .eve-breadcrumb li.is-disabled a {
-        color: #cfd8dc;
-        cursor: inherit; }
-        .eve-breadcrumb li.is-disabled a:hover {
-          text-decoration: none; }
-
 .eve-button {
   align-items: center;
   border: 1px solid transparent;
@@ -449,6 +411,7 @@
   display: inline-flex;
   flex-shrink: 0;
   font-family: inherit;
+  font-weight: normal;
   justify-content: center;
   outline: none;
   text-decoration: none;
@@ -459,6 +422,7 @@
   vertical-align: top;
   font-size: 0.875rem;
   height: 2.25rem;
+  line-height: 2.25rem;
   padding: 0 1rem; }
   .eve-button:hover, .eve-button:active, .eve-button:focus {
     color: #fff; }
@@ -467,6 +431,7 @@
   .eve-button.is-small {
     font-size: 0.75rem;
     height: 1.75rem;
+    line-height: 1.75rem;
     padding: 0 0.5rem; }
     .eve-button.is-small.is-loading::after {
       height: 0.875rem;
@@ -479,7 +444,7 @@
       height: 0.875rem;
       width: 0.875rem; }
     .eve-button.is-small.has-icon {
-      padding-left: 0.4375rem; }
+      padding-left: 0.58333rem; }
       .eve-button.is-small.has-icon svg {
         margin-right: 0.4375rem; }
     .eve-button.is-small.is-rounded {
@@ -495,14 +460,15 @@
     height: 1.125rem;
     width: 1.125rem; }
   .eve-button.has-icon {
-    padding-left: 0.5625rem; }
+    padding-left: 0.75rem; }
     .eve-button.has-icon svg {
-      margin-right: 0.5625rem; }
+      margin-right: 0.28125rem; }
   .eve-button.is-rounded {
     border-radius: 1.125rem; }
   .eve-button.is-large {
     font-size: 1rem;
     height: 3rem;
+    line-height: 3rem;
     padding: 0 1.5rem; }
     .eve-button.is-large.is-loading::after {
       height: 1.5rem;
@@ -515,7 +481,7 @@
       height: 1.5rem;
       width: 1.5rem; }
     .eve-button.is-large.has-icon {
-      padding-left: 0.75rem; }
+      padding-left: 1rem; }
       .eve-button.is-large.has-icon svg {
         margin-right: 0.75rem; }
     .eve-button.is-large.is-rounded {
@@ -1287,59 +1253,6 @@
       .eve-navigation li.is-disabled.is-active::after {
         background: #cfd8dc; }
 
-.eve-pagination {
-  display: flex;
-  font-size: 0.875rem;
-  list-style: none;
-  margin: 0 -0.125rem;
-  padding: 0; }
-  .eve-pagination li {
-    align-items: center;
-    background: #fff;
-    border: 1px solid #cfd8dc;
-    box-sizing: border-box;
-    color: #333;
-    cursor: pointer;
-    display: flex;
-    height: 2.25rem;
-    justify-content: center;
-    line-height: 2.25rem;
-    margin: 0 0.125rem;
-    min-width: 2.25rem;
-    padding: 0 0.5rem; }
-    .eve-pagination li.is-prev, .eve-pagination li.is-next {
-      min-width: 6rem; }
-    .eve-pagination li.is-prev {
-      margin-right: 0.5rem; }
-    .eve-pagination li.is-next {
-      margin-left: 0.5rem; }
-    .eve-pagination li:hover {
-      border-color: #2196f3;
-      color: #2196f3; }
-    .eve-pagination li.is-active {
-      background: #2196f3;
-      border-color: #2196f3;
-      color: #fff; }
-    .eve-pagination li.is-disabled {
-      border-color: #cfd8dc;
-      color: #cfd8dc;
-      cursor: default; }
-      .eve-pagination li.is-disabled.is-active {
-        background: #cfd8dc;
-        color: #fff; }
-    .eve-pagination li a {
-      color: inherit;
-      cursor: inherit;
-      text-decoration: none; }
-  .eve-pagination.is-rounded li {
-    border-radius: 1.125rem; }
-  .eve-pagination.is-left {
-    justify-content: flex-start; }
-  .eve-pagination.is-centered {
-    justify-content: center; }
-  .eve-pagination.is-right {
-    justify-content: flex-end; }
-
 .eve-progress-line {
   background: #eceff1;
   height: 1px;
@@ -1744,13 +1657,12 @@
   line-height: 3rem;
   list-style: none;
   margin: 0;
-  padding: 0 0.5rem; }
+  padding: 0; }
   .eve-tabs li {
     color: #333;
     cursor: pointer;
-    margin: 0 0.5rem;
     overflow: hidden;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     text-overflow: ellipsis;
     white-space: nowrap; }
     .eve-tabs li a {

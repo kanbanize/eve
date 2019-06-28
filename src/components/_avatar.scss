@@ -1,14 +1,11 @@
 $eve-avatar-sizes: (
-    tiny: 1.5rem,
-    small: 2rem,
-    normal: 3rem,
-    large: 4rem,
-    huge: 6rem
+    small: 1.5rem,
+    normal: 2rem,
+    large: 2.5rem,
 ) !default;
-$eve-avatar-border-radius: 50% !default;
 
 .eve-avatar {
-    border-radius: $eve-avatar-border-radius;
+    border-radius: 50%;
     display: inline-block;
     flex-shrink: 0;
     position: relative;
