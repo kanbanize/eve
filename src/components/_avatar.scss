@@ -1,18 +1,24 @@
+$eve-avatar-size: 2rem !default;
+$eve-avatar-border-radius: 50% !default;
+$eve-avatar-font-size: $eve-avatar-size / 2 !default;
+$eve-avatar-background-color: $eve-color-primary !default;
+$eve-avatar-color: $eve-color-light !default;
+
 .eve-avatar {
     align-items: center;
-    border-radius: 50%;
+    border-radius: $eve-avatar-border-radius;
     display: inline-flex;
     flex-shrink: 0;
-    height: 2rem;
+    height: $eve-avatar-size;
     justify-content: center;
     position: relative;
     vertical-align: top;
-    width: 2rem;
+    width: $eve-avatar-size;
 
     &[data-initial] {
-        background: $eve-color-primary;
-        color: $eve-color-light;
-        font-size: .875rem;
+        background: $eve-avatar-background-color;
+        color: $eve-avatar-color;
+        font-size: $eve-avatar-font-size;
 
          &::before {
             content: attr(data-initial);

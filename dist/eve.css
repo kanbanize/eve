@@ -285,7 +285,7 @@
   .eve-avatar[data-initial] {
     background: #2196f3;
     color: #fff;
-    font-size: .875rem; }
+    font-size: 1rem; }
     .eve-avatar[data-initial]::before {
       content: attr(data-initial);
       font-size: inherit; }
