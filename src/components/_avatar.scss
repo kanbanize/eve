@@ -1,11 +1,14 @@
 $eve-avatar-sizes: (
-    small: 1.5rem,
-    normal: 2rem,
-    large: 2.5rem,
+    tiny: 1.5rem,
+    small: 2rem,
+    normal: 3rem,
+    large: 4rem,
+    huge: 6rem
 ) !default;
+$eve-avatar-border-radius: 50% !default;
 
 .eve-avatar {
-    border-radius: 50%;
+    border-radius: $eve-avatar-border-radius;
     display: inline-block;
     flex-shrink: 0;
     position: relative;
@@ -34,6 +37,20 @@ $eve-avatar-sizes: (
         width: inherit;
     }
 
+    &.is-online,
+    &.is-busy,
+    &.is-away,
+    &.is-offline {
+        &::after {
+            border-radius: 50%;
+            bottom: 0;
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+        }
+    }
+
     @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
         $size: map-get($eve-avatar-sizes, $eve-avatar-size);
 
@@ -42,13 +59,57 @@ $eve-avatar-sizes: (
             height: $size;
             line-height: $size;
             width: $size;
+
+            &.is-online,
+            &.is-busy,
+            &.is-away,
+            &.is-offline {
+                &::after {
+                    height: $size / 4;
+                    width: $size / 4;
+                }
+            }
         } @else {
             &.is-#{$eve-avatar-size} {
                 font-size: $size / 2;
                 height: $size;
                 line-height: $size;
                 width: $size;
+
+                &.is-online,
+                &.is-busy,
+                &.is-away,
+                &.is-offline {
+                    &::after {
+                        height: $size / 4;
+                        width: $size / 4;
+                    }
+                }
             }
+        }
+    }
+
+    &.is-online {
+        &::after {
+            background: $eve-color-success;
+        }
+    }
+
+    &.is-busy {
+        &::after {
+            background: $eve-color-danger;
+        }
+    }
+
+    &.is-away {
+        &::after {
+            background: $eve-color-warning;
+        }
+    }
+
+    &.is-offline {
+        &::after {
+            background: $eve-color-dark-silver;
         }
     }
 }

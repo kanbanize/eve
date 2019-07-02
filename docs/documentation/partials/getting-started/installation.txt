@@ -2,10 +2,10 @@
     <div class="component-title">Installation</div>
     <div class="component-content">
         <h3>NPM</h3>
-        <pre class="component-snippet">npm install evecss</pre>
+        <pre class="snippet">npm install evecss</pre>
     </div>
     <div class="component-content">
         <h3>Yarn</h3>
-        <pre class="component-snippet">yarn add evecss</pre>
+        <pre class="snippet">yarn add evecss</pre>
     </div>
 </div>

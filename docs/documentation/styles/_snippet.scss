@@ -1,13 +1,13 @@
-$background-color: #eceff1;
-$color: #37474f;
-$tag-color: #3f51b5;
-$attribute-color: #37474f;
-$value-color: #c2185b;
-$sign-color: #3f51b5;
+$snippet-background-color: #eceff1;
+$snippet-color: #37474f;
+$snippet-tag-color: #3f51b5;
+$snippet-attribute-color: #37474f;
+$snippet-value-color: #c2185b;
+$snippet-sign-color: #3f51b5;
 
-.component-snippet {
-    background: $background-color;
-    color: $color;
+.snippet {
+    background: $snippet-background-color;
+    color: $snippet-color;
     font-family: monospace;
     font-size: .75rem;
     line-height: 1.125rem;
@@ -16,19 +16,19 @@ $sign-color: #3f51b5;
     position: relative;
     white-space: pre-wrap;
 
-    .tag {
-        color: $tag-color;
+    .snippet-tag {
+        color: $snippet-tag-color;
     }
 
-    .attr {
-        color: $attribute-color;
+    .snippet-attr {
+        color: $snippet-attribute-color;
     }
 
-    .val {
-        color: $value-color;
+    .snippet-val {
+        color: $snippet-value-color;
     }
 
-    .sign {
-        color: $sign-color;
+    .snippet-sign {
+        color: $snippet-sign-color;
     }
 }

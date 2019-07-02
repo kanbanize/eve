@@ -101,6 +101,12 @@
         </div>
     </div>
     <div class="component-content">
+        <div class="component-header">Block</div>
+        <div class="component-example">
+            <button class="eve-button is-primary is-block">Block</button>
+        </div>
+    </div>
+    <div class="component-content">
         <div class="component-header">Sizes</div>
         <div class="component-example">
             <button class="eve-button is-primary is-small">Small</button>

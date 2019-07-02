@@ -1,25 +1,25 @@
 var Snippet = (function() {
     var map = {
         tag: function(tag) {
-            return '<span class="tag">' + tag.replace(/\/|<|>/g, function(char) {
+            return '<span class="snippet-tag">' + tag.replace(/\/|<|>/g, function(char) {
                 switch (char) {
                     case '<': {
-                        return '<span class="sign">&lt;</span>';
+                        return '<span class="snippet-sign">&lt;</span>';
                     }
                     case '>': {
-                        return '<span class="sign">&gt;</span>';
+                        return '<span class="snippet-sign">&gt;</span>';
                     }
                     default: {
-                        return '<span class="sign">' + char + '</span>';
+                        return '<span class="snippet-sign">' + char + '</span>';
                     }
                 }
             }) + '</span>';
         },
         attr: function(attr) {
-            return '<span class="attr">' + attr + '</span>';
+            return '<span class="snippet-attr">' + attr + '</span>';
         },
         val: function(val) {
-            return '<span class="val">' + val + '</span>';
+            return '<span class="snippet-val">' + val + '</span>';
         }
     };
 
@@ -29,7 +29,7 @@ var Snippet = (function() {
         for (var i = 0; i < examples.length; i++) {
             var example = examples[i];
 
-            example.insertAdjacentHTML('afterend', '<pre class="component-snippet">' + generateSnippet(example.innerHTML) + '</pre>');
+            example.insertAdjacentHTML('afterend', '<pre class="snippet">' + generateSnippet(example.innerHTML) + '</pre>');
         }
     }
 

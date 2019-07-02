@@ -29,7 +29,6 @@ $eve-button-font-sizes: (
     display: inline-flex;
     flex-shrink: 0;
     font-family: inherit;
-    font-weight: normal;
     justify-content: center;
     outline: none;
     text-decoration: none;
@@ -54,7 +53,6 @@ $eve-button-font-sizes: (
         @if $eve-button-size == 'normal' {
             font-size: $font-size;
             height: $size;
-            line-height: $size;
             padding: 0 $padding;
 
             &.is-loading {
@@ -79,10 +77,10 @@ $eve-button-font-sizes: (
             }
 
             &.has-icon {
-                padding-left: $size / 3;
+                padding-left: $size / 4;
 
                 svg {
-                    margin-right: $size / 8;
+                    margin-right: $size / 4;
                 }
             }
 
@@ -93,7 +91,6 @@ $eve-button-font-sizes: (
             &.is-#{$eve-button-size} {
                 font-size: $font-size;
                 height: $size;
-                line-height: $size;
                 padding: 0 $padding;
 
                 &.is-loading {
@@ -118,7 +115,7 @@ $eve-button-font-sizes: (
                 }
 
                 &.has-icon {
-                    padding-left: $size / 3;
+                    padding-left: $size / 4;
 
                     svg {
                         margin-right: $size / 4;

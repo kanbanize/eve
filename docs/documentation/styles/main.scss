@@ -35,6 +35,10 @@ body {
     line-height: 1.25rem;
 }
 
+a {
+    color: #2196f3;
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -107,8 +111,7 @@ body {
             display: block;
             color: #333;
             margin-bottom: 1rem;
-            font-size: .75rem;
-            text-transform: uppercase;
+            font-size: .875rem;
 
             &:hover,
             &.is-active {
