@@ -24,7 +24,7 @@
 
                 document.title = getComponentName(el) + ' | Eve';
 
-                loadTemplate(el.getAttribute('data-path'));
+                loadTemplate(el.hash.substr(1, el.hash.length));
 
                 return false;
             }
@@ -67,7 +67,7 @@
     function getComponentName(el) {
         var componentName = el.innerHTML;
 
-        if (el.getAttribute('data-path').indexOf('grid') > -1) {
+        if (el.hash.indexOf('grid') > -1) {
             return 'Grid ' + componentName;
         }
 
