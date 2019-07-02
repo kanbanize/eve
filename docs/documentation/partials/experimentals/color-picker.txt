@@ -17,7 +17,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Controls</div>
         <div class="component-example">
             <div class="eve-color-picker">
                 <input type="checkbox" id="color-picker">

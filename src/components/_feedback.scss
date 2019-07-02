@@ -7,15 +7,15 @@ $eve-feedback-colors: (
 .eve-feedback {
     box-sizing: border-box;
     color: $eve-color-dark;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
+    font-size: .875rem;
+    line-height: 1.25rem;
     padding: $eve-spacing-tiny $eve-spacing-small;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
         $color: map-get($eve-feedback-colors, $eve-feedback-color);
 
         &.is-#{$eve-feedback-color} {
-            background: lighten($color, 30);
+            background: lighten($color, 40);
         }
     }
 }

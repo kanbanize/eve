@@ -78,7 +78,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Top</div>
         <div class="component-example gap-example-2">
             <div class="eve-gap-top-tiny">eve-gap-top-tiny</div>
             <div class="eve-gap-top-small">eve-gap-top-small</div>
@@ -87,7 +86,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Right</div>
         <div class="component-example gap-example-3">
             <div class="eve-gap-right-tiny">eve-gap-right-tiny</div>
             <div class="eve-gap-right-small">eve-gap-right-small</div>
@@ -96,7 +94,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Bottom</div>
         <div class="component-example gap-example-4">
             <div class="eve-gap-bottom-tiny">eve-gap-bottom-tiny</div>
             <div class="eve-gap-bottom-small">eve-gap-bottom-small</div>
@@ -105,7 +102,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Left</div>
         <div class="component-example gap-example-5">
             <div class="eve-gap-left-tiny">eve-gap-left-tiny</div>
             <div class="eve-gap-left-small">eve-gap-left-small</div>
@@ -114,7 +110,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Horizontal</div>
         <div class="component-example gap-example-6">
             <div class="eve-gap-horizontal-tiny">eve-gap-horizontal-tiny</div>
             <div class="eve-gap-horizontal-small">eve-gap-horizontal-small</div>
@@ -123,7 +118,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Vertical</div>
         <div class="component-example gap-example-7">
             <div class="eve-gap-vertical-tiny">eve-gap-vertical-tiny</div>
             <div class="eve-gap-vertical-small">eve-gap-vertical-small</div>

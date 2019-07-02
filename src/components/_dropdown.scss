@@ -1,10 +1,8 @@
-$eve-dropdown-list-item-size: 2rem;
-
 .eve-dropdown {
     background: $eve-color-light;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-block;
-    font-size: $eve-font-normal;
+    font-size: .875rem;
     max-width: 20rem;
     min-width: 10rem;
 
@@ -18,7 +16,7 @@ $eve-dropdown-list-item-size: 2rem;
             color: $eve-color-dark;
             cursor: pointer;
             display: flex;
-            height: $eve-dropdown-list-item-size;
+            height: 2rem;
             padding: 0 $eve-spacing-small;
 
             &:hover,
@@ -26,17 +24,20 @@ $eve-dropdown-list-item-size: 2rem;
                 background: $eve-color-bright-silver;
             }
 
-            svg {
-                fill: $eve-color-darker-silver;
-                height: $eve-dropdown-list-item-size / 2;
+            svg,
+            .eve-avatar {
                 margin-right: $eve-spacing-tiny;
-                width: $eve-dropdown-list-item-size / 2;
             }
 
-            &.is-header {
-                font-weight: 600;
-                height: $eve-dropdown-list-item-size;
-                pointer-events: none;
+            svg {
+                fill: $eve-color-darker-silver;
+                height: 1.125rem;
+                width: 1.125rem;
+            }
+
+            .eve-avatar {
+                height: 1.5rem;
+                width: 1.5rem;
             }
 
             &.is-disabled {

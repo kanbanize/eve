@@ -1,73 +1,22 @@
-$eve-form-field-sizes: ('small', 'normal', 'large');
-$eve-form-field-margins: (
-    small: $eve-spacing-tiny,
-    normal: $eve-spacing-small,
-    large: $eve-spacing-small
-);
-$eve-form-field-label-margins: (
-    small: $eve-spacing-x-tiny,
-    normal: $eve-spacing-tiny,
-    large: $eve-spacing-tiny
-);
-$eve-form-field-label-font-sizes: (
-    small: $eve-font-small,
-    normal: $eve-font-normal,
-    large: $eve-font-large
-);
-
 .eve-form-field {
-    @each $eve-form-field-size in $eve-form-field-sizes {
-        $field-margin: map-get($eve-form-field-margins, $eve-form-field-size);
-        $field-label-margin: map-get($eve-form-field-label-margins, $eve-form-field-size);
-        $field-label-font-size: map-get($eve-form-field-label-font-sizes, $eve-form-field-size);
-
-        @if $eve-form-field-size == 'normal' {
-            margin: 0 0 $field-margin;
-
-            .eve-form-label {
-                color: $eve-color-dark;
-                font-size: $field-label-font-size;
-                line-height: $eve-line-height-normal;
-                margin: 0 0 $field-label-margin;
-            }
-
-            &.is-inline {
-                margin: 0 $field-margin 0 0;
-
-                .eve-form-label {
-                    margin: 0 $field-label-margin 0 0;
-                }
-            }
-        } @else {
-            &.is-#{$eve-form-field-size} {
-                margin: 0 0 $field-margin;
-
-                .eve-form-label {
-                    font-size: $field-label-font-size;
-                    margin: 0 0 $field-label-margin;
-                }
-
-                &.is-inline {
-                    margin: 0 $field-margin 0 0;
-
-                    .eve-form-label {
-                        margin: 0 $field-label-margin 0 0;
-                    }
-                }
-            }
-        }
-    }
+    margin: 0 0 $eve-spacing-small;
 
     .eve-form-label {
+        color: $eve-color-dark;
         display: inline-block;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        margin: 0 0 $eve-spacing-tiny;
     }
 
     &.is-inline {
         align-items: center;
         display: inline-flex;
+        margin: 0 $eve-spacing-small 0 0;
 
         .eve-form-label {
             flex-shrink: 0;
+            margin: 0 $eve-spacing-tiny 0 0;
         }
     }
 }

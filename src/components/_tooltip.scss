@@ -11,7 +11,7 @@ $eve-tooltip-max-width: 20rem !default;
         color: $eve-color-light;
         content: attr(data-tooltip);
         font-family: inherit;
-        font-size: $eve-font-small;
+        font-size: .75rem;
         font-weight: normal;
         height: $eve-tooltip-size;
         line-height: $eve-tooltip-size;
@@ -88,7 +88,7 @@ $eve-tooltip-max-width: 20rem !default;
     &:hover {
         &.has-delay {
             &::after {
-                transition-delay: .3s;
+                transition-delay: .25s;
             }
         }
 

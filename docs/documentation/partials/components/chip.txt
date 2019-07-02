@@ -6,7 +6,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
             <div class="eve-chip">
                 <div class="eve-chip-icon">
@@ -20,7 +19,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Action</div>
         <div class="component-example">
             <div class="eve-chip">
                 thisisachip.png
@@ -34,7 +32,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon and Action</div>
         <div class="component-example">
             <div class="eve-chip">
                 <div class="eve-chip-icon">
@@ -54,7 +51,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Avatar</div>
         <div class="component-example">
             <div class="eve-chip">
                 <div class="eve-avatar">
@@ -81,7 +77,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Grouped</div>
         <div class="component-example">
             <div class="eve-chips">
                 <div class="eve-chip">

@@ -1,18 +1,4 @@
-$eve-input-sizes: (
-    small: 1.75rem,
-    normal: 2.25rem,
-    large: 3rem
-);
-$eve-input-paddings: (
-    small: $eve-spacing-tiny,
-    normal: $eve-spacing-small,
-    large: $eve-spacing-normal
-);
-$eve-input-font-sizes: (
-    small: $eve-font-small,
-    normal: $eve-font-normal,
-    large: $eve-font-large
-);
+$eve-input-size: 2.25rem;
 
 .eve-input {
     appearance: none;
@@ -21,43 +7,19 @@ $eve-input-font-sizes: (
     box-sizing: border-box;
     color: $eve-color-dark;
     font-family: inherit;
+    font-size: .875rem;
+    height: $eve-input-size;
+    line-height: $eve-input-size;
     max-width: 100%;
     min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
     outline: none;
+    padding: 0 $eve-spacing-small;
     width: 100%;
 
     &::placeholder {
         color: $eve-color-darker-silver;
         font-family: inherit;
         font-size: inherit;
-    }
-
-    @each $eve-input-size in map-keys($eve-input-sizes) {
-        $size: map-get($eve-input-sizes, $eve-input-size);
-        $padding: map-get($eve-input-paddings, $eve-input-size);
-        $font-size: map-get($eve-input-font-sizes, $eve-input-size);
-
-        @if $eve-input-size == 'normal' {
-            font-size: $font-size;
-            height: $size;
-            line-height: $size;
-            padding: 0 $padding;
-
-            &.is-rounded {
-                border-radius: $size / 2;
-            }
-        } @else {
-            &.is-#{$eve-input-size} {
-                font-size: $font-size;
-                height: $size;
-                line-height: $size;
-                padding: 0 $padding;
-
-                &.is-rounded {
-                    border-radius: $size / 2;
-                }
-            }
-        }
     }
 
     &:disabled {
@@ -76,98 +38,19 @@ $eve-input-font-sizes: (
     display: flex;
     position: relative;
 
-    @each $eve-input-size in map-keys($eve-input-sizes) {
-        $size: map-get($eve-input-sizes, $eve-input-size);
-        $padding: map-get($eve-input-paddings, $eve-input-size);
-
-        @if $eve-input-size == 'normal' {
-            &.is-loading {
-                &::after {
-                    height: $size / 2;
-                    right: $size / 4;
-                    top: ($size - ($size / 2)) / 2;
-                    width: $size / 2;
-                }
-
-                .eve-input {
-                    padding-right: $size;
-                }
-            }
-
-            &.has-icon {
-                svg {
-                    height: $size / 2;
-                    left: $size / 4;
-                    top: ($size - ($size / 2)) / 2;
-                    width: $size / 2;
-                }
-
-                .eve-input {
-                    padding-left: $size;
-                }
-            }
-        } @else {
-            &.is-#{$eve-input-size} {
-                &.is-loading {
-                    &::after {
-                        height: $size / 2;
-                        right: $size / 4;
-                        top: ($size - ($size / 2)) / 2;
-                        width: $size / 2;
-                    }
-
-                    .eve-input {
-                        padding-right: $size;
-                    }
-                }
-
-                &.has-icon {
-                    svg {
-                        height: $size / 2;
-                        left: $size / 4;
-                        top: ($size - ($size / 2)) / 2;
-                        width: $size / 2;
-                    }
-
-                    .eve-input {
-                        padding-left: $size;
-                    }
-                }
-            }
-        }
-    }
-
-    &.is-loading {
-        &::after {
-            animation-duration: .5s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-name: eveButtonProgress;
-            animation-timing-function: linear;
-            border: 1px solid transparent;
-            border-radius: 50%;
-            border-right-color: $eve-color-primary;
-            border-top-color: $eve-color-primary;
-            box-sizing: border-box;
-            content: '';
-            position: absolute;
-        }
-
-        @keyframes eveButtonProgress {
-            from {
-                transform: rotate(0);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    }
 
     &.has-icon {
         svg {
             fill: $eve-color-darker-silver;
+            height: $eve-input-size / 2;
+            left: $eve-input-size / 3;
             position: absolute;
+            top: ($eve-input-size - ($eve-input-size / 2)) / 2;
+            width: $eve-input-size / 2;
+        }
+
+        .eve-input {
+            padding-left: ($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny;
         }
     }
 

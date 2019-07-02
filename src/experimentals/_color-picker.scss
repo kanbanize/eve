@@ -1,0 +1,87 @@
+$eve-color-picker-color-size: 2rem !default;
+$eve-color-picker-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+
+.eve-color-picker {
+    background: $eve-color-light;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    display: inline-flex;
+    flex-direction: column;
+
+    > input {
+        display: none;
+
+        &:checked {
+            ~ .eve-color-picker-control {
+                label {
+                    background-image: url(svg-encode($eve-color-picker-arrow-up-icon));
+                }
+            }
+
+            ~ .eve-color-picker-palette {
+                ul {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .eve-color-picker-control {
+        border-bottom: 1px solid $eve-color-dark-silver;
+        display: flex;
+        padding: .5rem;
+
+        label {
+            align-items: center;
+            background-image: url(svg-encode($eve-color-picker-arrow-down-icon));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1.125rem 1.125rem;
+            border: 1px solid $eve-color-dark-silver;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            flex-shrink: 0;
+            height: 2.25rem;
+            justify-content: center;
+            margin-left: .5rem;
+            width: 2.25rem;
+        }
+    }
+
+    .eve-color-picker-palette {
+        display: flex;
+        flex-direction: column;
+        padding: $eve-spacing-x-tiny;
+
+        ul {
+            display: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &:first-child {
+                display: flex;
+            }
+
+            li {
+                align-items: center;
+                background: $eve-color-primary;
+                box-sizing: border-box;
+                cursor: pointer;
+                display: flex;
+                height: $eve-color-picker-color-size;
+                justify-content: center;
+                margin: $eve-spacing-x-tiny;
+                position: relative;
+                transition: border-radius 150ms ease;
+                width: $eve-color-picker-color-size;
+
+                &:hover,
+                &.is-selected {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

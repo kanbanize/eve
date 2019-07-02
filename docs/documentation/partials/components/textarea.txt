@@ -6,7 +6,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <textarea class="eve-textarea" disabled="disabled">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nisi rem enim autem doloremque sequi aliquam omnis veritatis quisquam natus officiis architecto voluptates iste placeat non. Nisi provident blanditiis optio!</textarea>
         </div>

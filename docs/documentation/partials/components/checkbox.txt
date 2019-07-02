@@ -3,67 +3,20 @@
     <div class="component-content">
         <div class="component-example">
             <div class="eve-checkbox">
+                <input type="checkbox" checked="checked">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-checkbox">
                 <input type="checkbox">
                 <i></i>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Labeled</div>
-        <div class="component-example">
-            <label class="eve-checkbox-control">
-                <div class="eve-checkbox">
-                    <input type="checkbox">
-                    <i></i>
-                </div>
-                Checkbox control 1
-            </label>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">List</div>
-        <div class="component-example">
-            <div class="eve-checkboxes">
-                <label class="eve-checkbox-control">
-                    <div class="eve-checkbox">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Checkbox control 1
-                </label>
-                <label class="eve-checkbox-control">
-                    <div class="eve-checkbox">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Checkbox control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Grouped</div>
-        <div class="component-example">
-            <div class="eve-checkboxes is-inline">
-                <label class="eve-checkbox-control">
-                    <div class="eve-checkbox">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Checkbox control 1
-                </label>
-                <label class="eve-checkbox-control">
-                    <div class="eve-checkbox">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Checkbox control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <div class="eve-checkbox">
                 <input type="checkbox" disabled="disabled">

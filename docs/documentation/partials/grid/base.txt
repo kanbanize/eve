@@ -1,60 +1,19 @@
 <style>
     .eve-column > p {
-        background: #9e9e9e;
+        background: #2196f3;
         color: #fff;
         height: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0;
-        box-shadow: 0 0 0 1px #fff;
     }
 </style>
 <div class="component">
     <div class="component-title">Grid</div>
     <div class="component-content">
-        <div class="eve-row has-gap-small">
-            <div class="eve-column">
-                <p>1</p>
-            </div>
-            <div class="eve-column">
-                <p>2</p>
-            </div>
-            <div class="eve-column">
-                <p>3</p>
-            </div>
-            <div class="eve-column">
-                <p>4</p>
-            </div>
-            <div class="eve-column">
-                <p>5</p>
-            </div>
-            <div class="eve-column">
-                <p>6</p>
-            </div>
-            <div class="eve-column">
-                <p>7</p>
-            </div>
-            <div class="eve-column">
-                <p>8</p>
-            </div>
-            <div class="eve-column">
-                <p>9</p>
-            </div>
-            <div class="eve-column">
-                <p>10</p>
-            </div>
-            <div class="eve-column">
-                <p>11</p>
-            </div>
-            <div class="eve-column">
-                <p>12</p>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
         <div class="component-example">
-            <div class="eve-row">
+            <div class="eve-row has-gap-small">
                 <div class="eve-column">
                     <p>Auto</p>
                 </div>
@@ -66,8 +25,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="component-content">
         <div class="component-example">
-            <div class="eve-row">
+            <div class="eve-row has-gap-small">
                 <div class="eve-column is-4">
                     <p>4</p>
                 </div>
@@ -76,8 +37,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="component-content">
         <div class="component-example">
-            <div class="eve-row">
+            <div class="eve-row has-gap-small">
                 <div class="eve-column is-2">
                     <p>2</p>
                 </div>

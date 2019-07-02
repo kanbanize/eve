@@ -3,8 +3,8 @@
     border-collapse: collapse;
     border-spacing: 0;
     color: $eve-color-dark;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
+    font-size: .875rem;
+    line-height: 1.25rem;
     table-layout: fixed;
     width: 100%;
 
@@ -13,8 +13,8 @@
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                background: $eve-color-bright-silver;
                 box-sizing: border-box;
+                color: $eve-color-darkest-silver;
                 font-weight: normal;
                 height: 3rem;
                 padding: $eve-spacing-tiny $eve-spacing-normal;

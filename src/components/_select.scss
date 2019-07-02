@@ -1,72 +1,30 @@
-$eve-select-sizes: (
-    small: 1.75rem,
-    normal: 2.25rem,
-    large: 3rem
-);
-$eve-select-paddings: (
-    small: $eve-spacing-tiny,
-    normal: $eve-spacing-small,
-    large: $eve-spacing-normal
-);
-$eve-select-font-sizes: (
-    small: $eve-font-small,
-    normal: $eve-font-normal,
-    large: $eve-font-large
-);
+$eve-select-size: 2.25rem;
 $eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-light}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-select {
     appearance: none;
+    background-image: url(svg-encode($eve-select-arrow-down-icon));
+    background-position: right ($eve-select-size / 3) center;
+    background-repeat: no-repeat;
+    background-size: ($eve-select-size / 2) ($eve-select-size / 2);
     border: 1px solid $eve-color-dark-silver;
     border-radius: 0;
     color: $eve-color-dark;
     cursor: pointer;
     display: block;
     font-family: inherit;
+    font-size: .875rem;
+    height: $eve-select-size;
+    line-height: $eve-select-size;
     max-width: 100%;
     min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
     outline: none;
+    padding: 0 (($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny) 0 $eve-spacing-small;
     width: 100%;
 
     &::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
         display: none;
-    }
-
-    @each $eve-select-size in map-keys($eve-select-sizes) {
-        $size: map-get($eve-select-sizes, $eve-select-size);
-        $padding: map-get($eve-select-paddings, $eve-select-size);
-        $font-size: map-get($eve-select-font-sizes, $eve-select-size);
-
-        @if $eve-select-size == 'normal' {
-            background-image: url(svg-encode($eve-select-arrow-down-icon));
-            background-position: right ($size / 4) center;
-            background-repeat: no-repeat;
-            background-size: ($size / 2) ($size / 2);
-            font-size: $font-size;
-            height: $size;
-            line-height: $size;
-            padding: 0 $size 0 $padding;
-
-            &.is-rounded {
-                border-radius: $size / 2;
-            }
-        } @else {
-            &.is-#{$eve-select-size} {
-                background-image: url(svg-encode($eve-select-arrow-down-icon));
-                background-position: right ($size / 4) center;
-                background-repeat: no-repeat;
-                background-size: ($size / 2) ($size / 2);
-                font-size: $font-size;
-                height: $size;
-                line-height: $size;
-                padding: 0 $size 0 $padding;
-
-                &.is-rounded {
-                    border-radius: $size / 2;
-                }
-            }
-        }
     }
 
     &:disabled {
@@ -82,45 +40,18 @@ $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" v
     display: flex;
     position: relative;
 
-    @each $eve-select-size in map-keys($eve-select-sizes) {
-        $size: map-get($eve-select-sizes, $eve-select-size);
-        $padding: map-get($eve-select-paddings, $eve-select-size);
-
-        @if $eve-select-size == 'normal' {
-            &.has-icon {
-                svg {
-                    height: $size / 2;
-                    left: $size / 4;
-                    top: ($size - ($size / 2)) / 2;
-                    width: $size / 2;
-                }
-
-                .eve-select {
-                    padding-left: $size;
-                }
-            }
-        } @else {
-            &.is-#{$eve-select-size} {
-                &.has-icon {
-                    svg {
-                        height: $size / 2;
-                        left: $size / 4;
-                        top: ($size - ($size / 2)) / 2;
-                        width: $size / 2;
-                    }
-
-                    .eve-select {
-                        padding-left: $size;
-                    }
-                }
-            }
-        }
-    }
-
     &.has-icon {
         svg {
             fill: $eve-color-darker-silver;
+            height: $eve-select-size / 2;
+            left: $eve-select-size / 3;
             position: absolute;
+            top: ($eve-select-size - ($eve-select-size / 2)) / 2;
+            width: $eve-select-size / 2;
+        }
+
+        .eve-select {
+            padding-left: ($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny;
         }
     }
 

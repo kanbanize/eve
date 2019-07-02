@@ -1,10 +1,9 @@
 $eve-tabs-size: 3rem;
 
 .eve-tabs {
-    border-bottom: 1px solid $eve-color-dark-silver;
     box-sizing: border-box;
     display: flex;
-    font-size: $eve-font-normal;
+    font-size: .875rem;
     height: $eve-tabs-size;
     line-height: $eve-tabs-size;
     list-style: none;
@@ -14,8 +13,10 @@ $eve-tabs-size: 3rem;
     li {
         color: $eve-color-dark;
         cursor: pointer;
+        flex: 1;
         overflow: hidden;
         padding: 0 $eve-spacing-small;
+        text-align: center;
         text-overflow: ellipsis;
         white-space: nowrap;
 
@@ -38,7 +39,7 @@ $eve-tabs-size: 3rem;
                 background: $eve-color-primary;
                 bottom: 0;
                 content: '';
-                height: .25rem;
+                height: .125rem;
                 left: 0;
                 position: absolute;
                 right: 0;

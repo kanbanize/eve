@@ -1,5 +1,5 @@
-$eve-accordion-font-size: $eve-font-normal !default;
-$eve-accordion-header-height: 2rem !default;
+$eve-accordion-font-size: .875rem !default;
+$eve-accordion-header-height: 2.25rem !default;
 $eve-accordion-header-background-color: $eve-color-bright-silver !default;
 $eve-accordion-header-color: $eve-color-primary !default;
 $eve-accordion-header-active-background-color: $eve-color-primary !default;
@@ -13,13 +13,13 @@ $eve-accordion-line-width: 1px !default;
 $eve-accordion-line-color: $eve-color-primary !default;
 $eve-accordion-margin-bottom: $eve-spacing-tiny !default;
 
-$eve-accordion-header-arrow-right-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-accordion-header-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-accordion {
     border-left: 1px solid $eve-accordion-line-color;
     font-size: $eve-accordion-font-size;
-    line-height: $eve-line-height-normal;
+    line-height: 1.25rem;
     padding-left: $eve-spacing-tiny;
     position: relative;
 
@@ -28,7 +28,7 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
 
         &:checked {
             ~ .eve-accordion-header {
-                background-image: url(svg-encode($eve-accordion-header-arrow-down-icon));
+                background-image: url(svg-encode($eve-accordion-header-arrow-up-icon));
             }
 
             ~ .eve-accordion-content {
@@ -40,17 +40,17 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
     .eve-accordion-header {
         align-items: center;
         background-color: $eve-accordion-header-background-color;
-        background-image: url(svg-encode($eve-accordion-header-arrow-right-icon));
-        background-position: left ($eve-accordion-header-height / 4) center;
+        background-image: url(svg-encode($eve-accordion-header-arrow-down-icon));
+        background-position: left ($eve-accordion-header-height / 3) center;
         background-repeat: no-repeat;
-        background-size: ($eve-accordion-header-height / 2) ($eve-accordion-header-height / 2);
+        background-size: $eve-accordion-header-icon-size $eve-accordion-header-icon-size;
         color: $eve-accordion-header-color;
         cursor: pointer;
         display: flex;
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
         overflow: hidden;
-        padding: 0 $eve-accordion-header-padding 0 $eve-accordion-header-height;
+        padding: 0 $eve-accordion-header-padding 0 (($eve-accordion-header-height / 3) + ($eve-accordion-header-height / 2) + $eve-spacing-tiny);
         text-overflow: ellipsis;
         white-space: nowrap;
     }

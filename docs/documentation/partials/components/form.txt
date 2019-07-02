@@ -1,22 +1,20 @@
 <div class="component">
     <div class="component-title">Form</div>
     <div class="component-content">
-        <div class="component-header">Control</div>
         <div class="component-example">
             <div class="eve-form-control">
                 <input type="text" class="eve-input">
-                <button class="eve-button is-primary">Save</button>
+                <button class="eve-button">Save</button>
             </div>
         </div>
         <div class="component-example">
             <div class="eve-form-control">
-                <button class="eve-button is-primary">Save</button>
+                <button class="eve-button">Save</button>
                 <input type="text" class="eve-input">
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Field</div>
         <div class="component-example">
             <div class="eve-form-field">
                 <label class="eve-form-label">Name</label>
@@ -25,20 +23,18 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Control + Field</div>
         <div class="component-example">
             <div class="eve-form-field">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
                     <input type="text" class="eve-input">
-                    <button class="eve-button is-primary">Save</button>
+                    <button class="eve-button">Save</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-example">
-            <div class="component-header">Inline</div>
             <div class="eve-form-field is-inline">
                 <label class="eve-form-label">Name</label>
                 <input type="text" class="eve-input">
@@ -46,48 +42,12 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Inline + Control</div>
         <div class="component-example">
             <div class="eve-form-field is-inline">
                 <label class="eve-form-label">Name</label>
                 <div class="eve-form-control">
                     <input type="text" class="eve-input">
-                    <button class="eve-button is-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Sizes</div>
-        <div class="component-example">
-            <div class="eve-form-field is-small">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input is-small">
-                    <button class="eve-button is-primary is-small">Save</button>
-                </div>
-            </div>
-            <div class="eve-form-field is-large">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input is-large">
-                    <button class="eve-button is-primary is-large">Save</button>
-                </div>
-            </div>
-        </div>
-        <div class="component-example">
-            <div class="eve-form-field is-inline is-small">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input is-small">
-                    <button class="eve-button is-primary is-small">Save</button>
-                </div>
-            </div>
-            <div class="eve-form-field is-inline is-large">
-                <label class="eve-form-label">Name</label>
-                <div class="eve-form-control">
-                    <input type="text" class="eve-input is-large">
-                    <button class="eve-button is-primary is-large">Save</button>
+                    <button class="eve-button">Save</button>
                 </div>
             </div>
         </div>

@@ -3,67 +3,20 @@
     <div class="component-content">
         <div class="component-example">
             <div class="eve-radio">
+                <input type="radio" checked="checked">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-radio">
                 <input type="radio">
                 <i></i>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Labeled</div>
-        <div class="component-example">
-            <label class="eve-radio-control">
-                <div class="eve-radio">
-                    <input type="radio">
-                    <i></i>
-                </div>
-                Radio control
-            </label>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">List</div>
-        <div class="component-example">
-            <div class="eve-radios">
-                <label class="eve-radio-control">
-                    <div class="eve-radio">
-                        <input type="radio" name="eve-radio2">
-                        <i></i>
-                    </div>
-                    Radio control 1
-                </label>
-                <label class="eve-radio-control">
-                    <div class="eve-radio">
-                        <input type="radio" name="eve-radio2">
-                        <i></i>
-                    </div>
-                    Radio control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Grouped</div>
-        <div class="component-example">
-            <div class="eve-radios is-inline">
-                <label class="eve-radio-control">
-                    <div class="eve-radio">
-                        <input type="radio" name="eve-radio">
-                        <i></i>
-                    </div>
-                    Radio control 1
-                </label>
-                <label class="eve-radio-control">
-                    <div class="eve-radio">
-                        <input type="radio" name="eve-radio">
-                        <i></i>
-                    </div>
-                    Radio control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <div class="eve-radio">
                 <input type="radio" disabled="disabled">

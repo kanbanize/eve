@@ -21,8 +21,8 @@
         background: $eve-color-light;
         color: $eve-color-dark;
         content: attr(data-content);
-        font-size: $eve-font-normal;
-        line-height: $eve-line-height-normal;
+        font-size: .875rem;
+        line-height: 1.25rem;
         padding: 0 $eve-spacing-tiny;
         z-index: 1;
     }

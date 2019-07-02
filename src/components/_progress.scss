@@ -1,9 +1,17 @@
 .eve-progress-line {
-    background: $eve-color-bright-silver;
-    height: 1px;
     overflow: hidden;
     position: relative;
-    width: 100%;
+
+    &::before {
+        background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
 
     &::after {
         animation-duration: .75s;
@@ -14,9 +22,11 @@
         background: $eve-color-primary;
         bottom: 0;
         content: '';
+        height: 1px;
         position: absolute;
         top: 0;
         width: 20%;
+        z-index: 2;
     }
 
     @keyframes eveProgressLine {
@@ -30,38 +40,44 @@
     }
 }
 
-.eve-progress-oval {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.eve-progress-circle {
+    overflow: hidden;
+    position: relative;
 
     &::before {
+        background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    &::after {
         animation-duration: .5s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        animation-name: eveProgressOval;
+        animation-name: eveProgressCircle;
         animation-timing-function: linear;
         background: transparent;
-        border: 1px solid $eve-color-bright-silver;
+        border: 1px solid transparent;
         border-radius: 50%;
         border-right-color: $eve-color-primary;
         border-top-color: $eve-color-primary;
         box-sizing: border-box;
         content: '';
         display: inline-block;
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        left: calc(50% - 1.5rem);
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        width: 3rem;
+        z-index: 2;
     }
 
-    &::after {
-        color: $eve-color-dark;
-        content: attr(data-label);
-        font-size: $eve-font-normal;
-        line-height: $eve-line-height-normal;
-        margin-left: $eve-spacing-small;
-    }
-
-    @keyframes eveProgressOval {
+    @keyframes eveProgressCircle {
         from {
             transform: rotate(0);
         }

@@ -1,50 +1,37 @@
 <div class="component">
     <div class="component-title">Button</div>
     <div class="component-content">
-        <div class="component-header">Colors</div>
         <div class="component-example">
-            <button class="eve-button is-primary">Primary</button>
-            <button class="eve-button is-success">Success</button>
-            <button class="eve-button is-warning">Warning</button>
-            <button class="eve-button is-danger">Danger</button>
+            <button class="eve-button">Default</button>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Outlined</div>
         <div class="component-example">
-            <button class="eve-button is-primary is-outlined">Primary</button>
-            <button class="eve-button is-success is-outlined">Success</button>
-            <button class="eve-button is-warning is-outlined">Warning</button>
-            <button class="eve-button is-danger is-outlined">Danger</button>
+            <button class="eve-button is-outlined">Outlined</button>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Inverted</div>
         <div class="component-example">
-            <button class="eve-button is-primary is-inverted">Primary</button>
-            <button class="eve-button is-success is-inverted">Success</button>
-            <button class="eve-button is-warning is-inverted">Warning</button>
-            <button class="eve-button is-danger is-inverted">Danger</button>
+            <button class="eve-button is-inverted">Inverted</button>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
-            <button class="eve-button is-primary has-icon">
+            <button class="eve-button has-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 Icon
             </button>
-            <button class="eve-button is-primary is-outlined has-icon">
+            <button class="eve-button is-outlined has-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 Icon
             </button>
-            <button class="eve-button is-primary is-inverted has-icon">
+            <button class="eve-button is-inverted has-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -52,240 +39,42 @@
                 Icon
             </button>
         </div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-            <button class="eve-button is-primary is-outlined is-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-            <button class="eve-button is-primary is-inverted is-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-        </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Loading</div>
         <div class="component-example">
-            <button class="eve-button is-primary is-loading">Loading</button>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Rounded</div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-rounded">Rounded</button>
-            <button class="eve-button is-primary is-icon is-rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Upload</div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-file">
+            <button class="eve-button is-file">
                 Upload...
                 <input type="file">
             </button>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Sizes</div>
         <div class="component-example">
-            <button class="eve-button is-primary is-small">Small</button>
-            <button class="eve-button is-primary is-large">Large</button>
+            <button class="eve-button" disabled="disabled">Disabled</button>
+            <button class="eve-button is-outlined" disabled="disabled">Disabled</button>
+            <button class="eve-button is-inverted" disabled="disabled">Disabled</button>
         </div>
         <div class="component-example">
-            <button class="eve-button is-primary has-icon is-small">
+            <button class="eve-button has-icon" disabled="disabled">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 Icon
             </button>
-            <button class="eve-button is-primary has-icon is-large">
+            <button class="eve-button has-icon is-outlined" disabled="disabled">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 Icon
             </button>
-        </div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-icon is-small">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-            <button class="eve-button is-primary is-icon is-large">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-        </div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-loading is-small">Loading</button>
-            <button class="eve-button is-primary is-loading is-large">Loading</button>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Grouped</div>
-        <div class="component-example">
-            <div class="eve-buttons">
-                <button class="eve-button is-primary">Button 1</button>
-                <button class="eve-button is-primary">Button 2</button>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Addons</div>
-        <div class="component-example">
-            <div class="eve-buttons has-addons">
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 1
-                </button>
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 2
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Position</div>
-        <div class="component-example">
-            <div class="eve-buttons is-left">
-                <button class="eve-button is-primary">Button 1</button>
-                <button class="eve-button is-primary">Button 2</button>
-            </div>
-            <div class="eve-buttons is-centered">
-                <button class="eve-button is-primary">Button 1</button>
-                <button class="eve-button is-primary">Button 2</button>
-            </div>
-            <div class="eve-buttons is-right">
-                <button class="eve-button is-primary">Button 1</button>
-                <button class="eve-button is-primary">Button 2</button>
-            </div>
-        </div>
-        <div class="component-example">
-            <div class="eve-buttons has-addons">
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 1
-                </button>
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 2
-                </button>
-            </div>
-            <div class="eve-buttons has-addons is-centered">
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 1
-                </button>
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 2
-                </button>
-            </div>
-            <div class="eve-buttons has-addons is-right">
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 1
-                </button>
-                <button class="eve-button is-primary has-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    Button 2
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Disabled</div>
-        <div class="component-example">
-            <button class="eve-button is-primary" disabled="disabled">Disabled</button>
-            <button class="eve-button is-primary is-outlined" disabled="disabled">Disabled</button>
-            <button class="eve-button is-primary is-inverted" disabled="disabled">Disabled</button>
-        </div>
-        <div class="component-example">
-            <button class="eve-button is-primary has-icon" disabled="disabled">
+            <button class="eve-button has-icon is-inverted" disabled="disabled">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 Icon
-            </button>
-            <button class="eve-button is-primary has-icon is-outlined" disabled="disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-                Icon
-            </button>
-            <button class="eve-button is-primary has-icon is-inverted" disabled="disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-                Icon
-            </button>
-        </div>
-        <div class="component-example">
-            <button class="eve-button is-primary is-icon" disabled="disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-            <button class="eve-button is-primary is-icon is-outlined" disabled="disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </button>
-            <button class="eve-button is-primary is-icon is-inverted" disabled="disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
             </button>
         </div>
     </div>

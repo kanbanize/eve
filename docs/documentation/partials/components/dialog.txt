@@ -1,61 +1,13 @@
 <div class="component">
     <div class="component-title">Dialog</div>
     <div class="component-content">
-        <div class="component-header">Primary</div>
         <div class="component-example">
-            <div class="eve-dialog is-primary">
+            <div class="eve-dialog">
                 <div class="eve-dialog-header">Header</div>
                 <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
                 <div class="eve-dialog-footer">
-                    <div class="eve-buttons is-right">
-                        <button class="eve-button is-primary is-outlined">Secondary</button>
-                        <button class="eve-button is-primary">Primary</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Success</div>
-        <div class="component-example">
-            <div class="eve-dialog is-success">
-                <div class="eve-dialog-header">Header</div>
-                <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
-                <div class="eve-dialog-footer">
-                    <div class="eve-buttons is-right">
-                        <button class="eve-button is-success is-outlined">Secondary</button>
-                        <button class="eve-button is-success">Primary</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Warning</div>
-        <div class="component-example">
-            <div class="eve-dialog is-warning">
-                <div class="eve-dialog-header">Header</div>
-                <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
-                <div class="eve-dialog-footer">
-                    <div class="eve-buttons is-right">
-                        <button class="eve-button is-warning is-outlined">Secondary</button>
-                        <button class="eve-button is-warning">Primary</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Danger</div>
-        <div class="component-example">
-            <div class="eve-dialog is-danger">
-                <div class="eve-dialog-header">Header</div>
-                <div class="eve-dialog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia quis expedita explicabo iure eaque in labore minima quaerat quae voluptate vitae, aliquam possimus, quos quibusdam? Sit ea eius explicabo.</div>
-                <div class="eve-dialog-footer">
-                    <div class="eve-buttons is-right">
-                        <button class="eve-button is-danger is-outlined">Secondary</button>
-                        <button class="eve-button is-danger">Primary</button>
-                    </div>
+                    <button class="eve-button is-outlined">Secondary</button>
+                    <button class="eve-button">Primary</button>
                 </div>
             </div>
         </div>

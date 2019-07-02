@@ -4,7 +4,7 @@ $eve-tree-arrow-right-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewB
 $eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-primary}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-tree {
-    font-size: $eve-font-normal;
+    font-size: .875rem;
     list-style: none;
     margin: 0;
     padding-left: $eve-spacing-normal;
@@ -29,8 +29,8 @@ $eve-tree-arrow-down-hover-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
 
     li {
         color: $eve-color-dark;
-        font-size: $eve-font-normal;
-        line-height: $eve-line-height-normal;
+        font-size: .875rem;
+        line-height: 1.25rem;
         position: relative;
 
         &:not(:last-child) {

@@ -10,7 +10,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
             <div class="eve-accordion has-icon">
                 <input type="checkbox" id="accordion-02">
@@ -26,7 +25,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Accordions</div>
         <div class="component-example">
             <div class="eve-accordions">
                 <div class="eve-accordion">

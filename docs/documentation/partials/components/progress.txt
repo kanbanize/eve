@@ -1,21 +1,26 @@
+<style>
+    .eve-progress-line,
+    .eve-progress-circle {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        width: 24rem;
+        padding: 1rem;
+        font-size: .875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+</style>
 <div class="component">
     <div class="component-title">Progress</div>
     <div class="component-content">
-        <div class="component-header">Line</div>
         <div class="component-example">
-            <div class="eve-progress-line"></div>
+            <div class="eve-progress-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci omnis repellat vero officiis vitae magni sequi reprehenderit exercitationem rerum cupiditate, saepe architecto ab quis corrupti nulla vel commodi reiciendis.</div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Oval</div>
         <div class="component-example">
-            <div class="eve-progress-oval"></div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Labeled Oval</div>
-        <div class="component-example">
-            <div class="eve-progress-oval" data-label="Loading..."></div>
+            <div class="eve-progress-circle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sit perspiciatis incidunt, eligendi vel asperiores molestiae beatae maxime, corporis dolores consequuntur quisquam quibusdam id quam rem sunt. Id, sit ad.</div>
         </div>
     </div>
 </div>

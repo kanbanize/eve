@@ -1,37 +1,22 @@
-$eve-button-colors: (
-    primary: $eve-color-primary,
-    success: $eve-color-success,
-    warning: $eve-color-warning,
-    danger: $eve-color-danger
-);
-$eve-button-sizes: (
-    small: 1.75rem,
-    normal: 2.25rem,
-    large: 3rem
-);
-$eve-button-paddings: (
-    small: $eve-spacing-tiny,
-    normal: $eve-spacing-small,
-    large: $eve-spacing-normal
-);
-$eve-button-font-sizes: (
-    small: $eve-font-small,
-    normal: $eve-font-normal,
-    large: $eve-font-large
-);
+$eve-button-size: 2.25rem;
 
 .eve-button {
     align-items: center;
-    border: 1px solid transparent;
+    background: $eve-color-primary;
+    border: 0;
     box-sizing: border-box;
     color: $eve-color-light;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
     font-family: inherit;
+    font-size: .875rem;
     font-weight: normal;
+    height: $eve-button-size;
     justify-content: center;
+    line-height: normal;
     outline: none;
+    padding: 0 $eve-spacing-small;
     text-decoration: none;
     user-select: none;
     vertical-align: top;
@@ -46,189 +31,54 @@ $eve-button-font-sizes: (
         text-decoration: none;
     }
 
-    @each $eve-button-size in map-keys($eve-button-sizes) {
-        $size: map-get($eve-button-sizes, $eve-button-size);
-        $padding: map-get($eve-button-paddings, $eve-button-size);
-        $font-size: map-get($eve-button-font-sizes, $eve-button-size);
+    &:hover {
+        background: darken($eve-color-primary, 10);
+    }
 
-        @if $eve-button-size == 'normal' {
-            font-size: $font-size;
-            height: $size;
-            line-height: $size;
-            padding: 0 $padding;
+    &.is-outlined {
+        border: 1px solid $eve-color-primary;
+        color: $eve-color-primary;
 
-            &.is-loading {
-                &::after {
-                    height: $size / 2;
-                    left: calc(50% - #{$size / 4});
-                    top: calc(50% - #{$size / 4});
-                    width: $size / 2;
-                }
+        &.has-icon {
+            svg {
+                fill: $eve-color-primary;
             }
+        }
 
-            &.is-icon {
-                width: $size;
-            }
-
-            &.is-icon,
-            &.has-icon {
-                svg {
-                    height: $size / 2;
-                    width: $size / 2;
-                }
-            }
-
-            &.has-icon {
-                padding-left: $size / 3;
-
-                svg {
-                    margin-right: $size / 8;
-                }
-            }
-
-            &.is-rounded {
-                border-radius: $size / 2;
-            }
-        } @else {
-            &.is-#{$eve-button-size} {
-                font-size: $font-size;
-                height: $size;
-                line-height: $size;
-                padding: 0 $padding;
-
-                &.is-loading {
-                    &::after {
-                        height: $size / 2;
-                        left: calc(50% - #{$size / 4});
-                        top: calc(50% - #{$size / 4});
-                        width: $size / 2;
-                    }
-                }
-
-                &.is-icon {
-                    width: $size;
-                }
-
-                &.is-icon,
-                &.has-icon {
-                    svg {
-                        height: $size / 2;
-                        width: $size / 2;
-                    }
-                }
-
-                &.has-icon {
-                    padding-left: $size / 3;
-
-                    svg {
-                        margin-right: $size / 4;
-                    }
-                }
-
-                &.is-rounded {
-                    border-radius: $size / 2;
-                }
-            }
+        &:hover {
+            background: lighten($eve-color-primary, 40);
+            border-color: lighten($eve-color-primary, 40);
         }
     }
 
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        $color: map-get($eve-button-colors, $eve-button-color);
+    &.is-inverted {
+        color: $eve-color-primary;
 
-        &.is-#{$eve-button-color} {
-            background: $color;
-
-            &:hover {
-                background: darken($color, 5);
+        &.has-icon {
+            svg {
+                fill: $eve-color-primary;
             }
+        }
 
-            &.is-outlined {
-                border-color: $color;
-                color: $color;
+        &:hover {
+            background: lighten($eve-color-primary, 40);
+        }
+    }
 
-                &.has-icon,
-                &.is-icon {
-                    svg {
-                        fill: $color;
-                    }
-                }
+    &.has-icon {
+        padding-left: .75rem;
 
-                &:hover {
-                    background: $color;
-                    color: $eve-color-light;
-
-                    &.has-icon,
-                    &.is-icon {
-                        svg {
-                            fill: $eve-color-light;
-                        }
-                    }
-                }
-            }
-
-            &.is-inverted {
-                color: $color;
-
-                &.is-icon,
-                &.has-icon {
-                    svg {
-                        fill: $color;
-                    }
-                }
-
-                &:hover {
-                    background: lighten($color, 40);
-                }
-            }
+        svg {
+            fill: $eve-color-light;
+            height: $eve-button-size / 2;
+            margin-right: $eve-button-size / 4;
+            width: $eve-button-size / 2;
         }
     }
 
     &.is-outlined,
     &.is-inverted {
         background: transparent;
-    }
-
-    &.is-loading {
-        color: transparent;
-        position: relative;
-
-        &.is-icon,
-        &.has-icon {
-            svg {
-                display: none;
-            }
-        }
-
-        &::after {
-            animation-duration: .5s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-name: eveButtonProgress;
-            animation-timing-function: linear;
-            border: 1px solid transparent;
-            border-radius: 50%;
-            border-right-color: $eve-color-light;
-            border-top-color: $eve-color-light;
-            box-sizing: border-box;
-            content: '';
-            position: absolute;
-            transform: translate(-50%, -50%);
-        }
-
-        @keyframes eveButtonProgress {
-            from {
-                transform: rotate(0);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    }
-
-    &.is-block {
-        display: flex;
-        width: 100%;
     }
 
     &.is-file {
@@ -256,107 +106,36 @@ $eve-button-font-sizes: (
         }
     }
 
-    &.is-icon {
-        padding: 0;
-
-        svg {
-            fill: $eve-color-light;
-        }
-    }
-
-    &.has-icon {
-        svg {
-            fill: $eve-color-light;
-        }
-    }
-
     &:disabled {
+        background: $eve-color-dark-silver;
         cursor: default;
 
-        @each $eve-button-color in map-keys($eve-button-colors) {
-            $color: map-get($eve-button-colors, $eve-button-color);
+        &.has-icon {
+            svg {
+                fill: $eve-color-light;
+            }
+        }
 
-            &.is-#{$eve-button-color} {
-                background: $eve-color-dark-silver;
+        &.is-outlined {
+            background: transparent;
+            border-color: $eve-color-dark-silver;
+            color: $eve-color-dark-silver;
 
-                &.is-icon,
-                &.has-icon {
-                    svg {
-                        fill: $eve-color-light;
-                    }
-                }
-
-                &.is-outlined {
-                    background: transparent;
-                    border-color: $eve-color-dark-silver;
-                    color: $eve-color-dark-silver;
-
-                    &.is-icon,
-                    &.has-icon {
-                        svg {
-                            fill: $eve-color-dark-silver;
-                        }
-                    }
-                }
-
-                &.is-inverted {
-                    background: transparent;
-                    border-color: transparent;
-                    color: $eve-color-dark-silver;
-
-                    &.is-icon,
-                    &.has-icon {
-                        svg {
-                            fill: $eve-color-dark-silver;
-                        }
-                    }
+            &.has-icon {
+                svg {
+                    fill: $eve-color-dark-silver;
                 }
             }
         }
-    }
-}
 
-.eve-buttons {
-    display: flex;
+        &.is-inverted {
+            background: transparent;
+            border-color: transparent;
+            color: $eve-color-dark-silver;
 
-    &.is-left {
-        justify-content: flex-start;
-    }
-
-    &.is-centered {
-        justify-content: center;
-    }
-
-    &.is-right {
-        justify-content: flex-end;
-    }
-
-    .eve-button {
-        &:not(:last-child) {
-            margin-right: $eve-spacing-small;
-        }
-    }
-
-    &.has-addons {
-        .eve-button {
-            box-shadow: 0 0 0 1px $eve-color-light;
-            margin: 0;
-
-            &.is-rounded {
-                &:not(:first-child) {
-                    &:not(:last-child) {
-                        border-radius: 0;
-                    }
-                }
-
-                &:first-child {
-                    border-bottom-right-radius: 0;
-                    border-top-right-radius: 0;
-                }
-
-                &:last-child {
-                    border-bottom-left-radius: 0;
-                    border-top-left-radius: 0;
+            &.has-icon {
+                svg {
+                    fill: $eve-color-dark-silver;
                 }
             }
         }

@@ -6,7 +6,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Content</div>
         <div class="component-example">
             <div class="eve-divider" data-content="Sign Up"></div>
         </div>

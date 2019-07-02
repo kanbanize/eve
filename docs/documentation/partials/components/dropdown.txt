@@ -13,7 +13,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Active</div>
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>
@@ -26,7 +25,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>
@@ -39,7 +37,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>
@@ -76,26 +73,38 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Headers</div>
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>
-                    <li class="is-header">Header 01</li>
-                    <li>Item 01</li>
-                    <li>Item 02</li>
-                    <li>Item 03</li>
-                    <li>Item 04</li>
-                </ul>
-                <ul>
-                    <li class="is-header">Header 02</li>
-                    <li>Item 01</li>
-                    <li>Item 02</li>
+                    <li>
+                        <div class="eve-avatar">
+                            <img src="assets/images/avatar-1.jpg">
+                        </div>
+                        Cristopher Ivanov
+                    </li>
+                    <li>
+                        <div class="eve-avatar">
+                            <img src="assets/images/avatar-2.jpg">
+                        </div>
+                        Miyah Myles
+                    </li>
+                    <li>
+                        <div class="eve-avatar">
+                            <img src="assets/images/avatar-3.jpg">
+                        </div>
+                        Brantlee Adair
+                    </li>
+                    <li>
+                        <div class="eve-avatar">
+                            <img src="assets/images/avatar-4.jpg">
+                        </div>
+                        Vivianna Kiser
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Dividers</div>
         <div class="component-example">
             <div class="eve-dropdown">
                 <ul>

@@ -76,34 +76,3 @@ $eve-checkbox-mark-border-width: .125rem;
         }
     }
 }
-
-.eve-checkbox-control {
-    align-items: center;
-    color: $eve-color-dark;
-    display: flex;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
-    word-break: break-word;
-
-    .eve-checkbox {
-        margin-right: $eve-spacing-tiny;
-    }
-}
-
-.eve-checkboxes {
-    .eve-checkbox-control {
-        &:not(:last-child) {
-            margin: 0 0 $eve-spacing-tiny;
-        }
-    }
-
-    &.is-inline {
-        display: flex;
-
-        .eve-checkbox-control {
-            &:not(:last-child) {
-                margin: 0 $eve-spacing-normal 0 0;
-            }
-        }
-    }
-}

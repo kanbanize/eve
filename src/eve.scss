@@ -7,7 +7,6 @@
 // Foundations
 @import 'foundations/colors';
 @import 'foundations/spacing';
-@import 'foundations/typography';
 
 // Grid
 @import 'grid/grid';
@@ -15,11 +14,9 @@
 // Components
 @import 'components/accordion';
 @import 'components/avatar';
-@import 'components/badge';
 @import 'components/button';
 @import 'components/checkbox';
 @import 'components/chip';
-@import 'components/color-picker';
 @import 'components/dialog';
 @import 'components/divider';
 @import 'components/dropdown';
@@ -30,15 +27,12 @@
 @import 'components/progress';
 @import 'components/radio';
 @import 'components/select';
-@import 'components/slider';
 @import 'components/switch';
 @import 'components/table';
 @import 'components/tabs';
-@import 'components/tag';
 @import 'components/textarea';
 @import 'components/tile';
 @import 'components/tooltip';
-@import 'components/tree';
 
 // Utilities
 @import 'utilities/cursor';
@@ -49,3 +43,8 @@
 @import 'utilities/position';
 @import 'utilities/text';
 @import 'utilities/visibility';
+
+// Experimentals
+@import 'experimentals/color-picker';
+@import 'experimentals/slider';
+@import 'experimentals/tree';

@@ -35,7 +35,7 @@ $eve-switch-height: 1.125rem;
                 cursor: default;
 
                 ~ i {
-                    background: $eve-color-bright-silver;
+                    background: $eve-color-dark-silver;
                 }
             }
         }
@@ -61,37 +61,6 @@ $eve-switch-height: 1.125rem;
             position: absolute;
             transition: left 150ms ease;
             width: $eve-switch-height - .25rem;
-        }
-    }
-}
-
-.eve-switch-control {
-    align-items: center;
-    color: $eve-color-dark;
-    display: flex;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
-    word-break: break-word;
-
-    .eve-switch {
-        margin-right: $eve-spacing-tiny;
-    }
-}
-
-.eve-switches {
-    .eve-switch-control {
-        &:not(:last-child) {
-            margin: 0 0 $eve-spacing-tiny;
-        }
-    }
-
-    &.is-inline {
-        display: flex;
-
-        .eve-switch-control {
-            &:not(:last-child) {
-                margin: 0 $eve-spacing-normal 0 0;
-            }
         }
     }
 }

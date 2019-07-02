@@ -1,22 +1,11 @@
-<style>
-    .eve-input:not(:last-child),
-    .eve-input-field:not(:last-child) {
-        margin-bottom: .5rem;
-    }
-
-    .eve-input-field .eve-input {
-        margin-bottom: 0;
-    }
-</style>
 <div class="component">
     <div class="component-title">Input</div>
     <div class="component-content">
         <div class="component-example">
-            <input type="text" class="eve-input" placeholder="Placeholder">
+            <input type="text" class="eve-input">
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Icon</div>
         <div class="component-example">
             <div class="eve-input-field has-icon">
                 <input type="text" class="eve-input" placeholder="Icon">
@@ -28,61 +17,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Loading</div>
-        <div class="component-example">
-            <div class="eve-input-field is-loading">
-                <input type="text" class="eve-input" placeholder="Loading">
-            </div>
-        </div>
-        <div class="component-example">
-            <div class="eve-input-field has-icon is-loading">
-                <input type="text" class="eve-input" placeholder="Loading">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Rounded</div>
-        <div class="component-example">
-            <input type="text" class="eve-input is-rounded" placeholder="Rounded">
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Sizes</div>
-        <div class="component-example">
-            <input type="text" class="eve-input is-small" placeholder="Small">
-            <input type="text" class="eve-input is-large" placeholder="Large">
-        </div>
-        <div class="component-example">
-            <div class="eve-input-field is-loading is-small">
-                <input type="text" class="eve-input is-small" placeholder="Loading">
-            </div>
-            <div class="eve-input-field is-loading is-large">
-                <input type="text" class="eve-input is-large" placeholder="Loading">
-            </div>
-        </div>
-        <div class="component-example">
-            <div class="eve-input-field has-icon is-small">
-                <input type="text" class="eve-input is-small" placeholder="Icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-            </div>
-            <div class="eve-input-field has-icon is-large">
-                <input type="text" class="eve-input is-large" placeholder="Icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <input type="text" value="Disabled" class="eve-input" disabled="disabled">
         </div>

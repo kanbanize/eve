@@ -1,20 +1,18 @@
-$eve-avatar-sizes: (
-    small: 1.5rem,
-    normal: 2rem,
-    large: 2.5rem,
-) !default;
-
 .eve-avatar {
+    align-items: center;
     border-radius: 50%;
-    display: inline-block;
+    display: inline-flex;
     flex-shrink: 0;
+    height: 2rem;
+    justify-content: center;
     position: relative;
-    text-align: center;
     vertical-align: top;
+    width: 2rem;
 
     &[data-initial] {
         background: $eve-color-primary;
         color: $eve-color-light;
+        font-size: .875rem;
 
          &::before {
             content: attr(data-initial);
@@ -32,63 +30,5 @@ $eve-avatar-sizes: (
         object-position: center;
         vertical-align: top;
         width: inherit;
-    }
-
-    @each $eve-avatar-size in map-keys($eve-avatar-sizes) {
-        $size: map-get($eve-avatar-sizes, $eve-avatar-size);
-
-        @if $eve-avatar-size == 'normal' {
-            font-size: $size / 2;
-            height: $size;
-            line-height: $size;
-            width: $size;
-        } @else {
-            &.is-#{$eve-avatar-size} {
-                font-size: $size / 2;
-                height: $size;
-                line-height: $size;
-                width: $size;
-            }
-        }
-    }
-}
-
-.eve-avatars {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -$eve-spacing-x-tiny;
-
-    .eve-avatar {
-        margin: $eve-spacing-x-tiny;
-    }
-}
-
-.eve-profile {
-    align-items: center;
-    color: $eve-color-dark;
-    display: flex;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
-
-    .eve-avatar {
-        margin-right: $eve-spacing-tiny;
-    }
-
-    svg {
-        fill: $eve-color-dark;
-        height: 1rem;
-        margin-left: $eve-spacing-tiny;
-        width: 1rem;
-    }
-}
-
-.eve-profiles {
-    display: flex;
-    flex-direction: column;
-
-    .eve-profile {
-        &:not(:last-child) {
-            margin-bottom: $eve-spacing-tiny;
-        }
     }
 }

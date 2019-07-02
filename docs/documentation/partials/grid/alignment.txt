@@ -8,13 +8,13 @@
     }
 
     .eve-row.is-vertical-top,
-    .eve-row.is-vertical-middle,
+    .eve-row.is-vertical-center,
     .eve-row.is-vertical-bottom {
         height: 6rem;
     }
 
     .eve-column > p {
-        background: #9e9e9e;
+        background: #2196f3;
         color: #fff;
         height: 3rem;
         display: flex;
@@ -26,7 +26,6 @@
 <div class="component">
     <div class="component-title">Grid Alignment</div>
     <div class="component-content">
-        <div class="component-header">Horizontal</div>
         <div class="component-example">
             <div class="eve-row is-horizontal-left">
                 <div class="eve-column is-4">
@@ -46,7 +45,6 @@
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Vertical</div>
         <div class="component-example">
             <div class="eve-row is-vertical-top">
                 <div class="eve-column">
@@ -61,6 +59,15 @@
             <div class="eve-row is-vertical-bottom">
                 <div class="eve-column">
                     <p>Bottom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-row is-horizontal-center is-vertical-center">
+                <div class="eve-column is-4">
+                    <p>Center/Center</p>
                 </div>
             </div>
         </div>

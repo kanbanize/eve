@@ -70,34 +70,3 @@ $eve-radio-size: 1.125rem;
         }
     }
 }
-
-.eve-radio-control {
-    align-items: center;
-    color: $eve-color-dark;
-    display: flex;
-    font-size: $eve-font-normal;
-    line-height: $eve-line-height-normal;
-    word-break: break-word;
-
-    .eve-radio {
-        margin-right: $eve-spacing-tiny;
-    }
-}
-
-.eve-radios {
-    .eve-radio-control {
-        &:not(:last-child) {
-            margin: 0 0 $eve-spacing-tiny;
-        }
-    }
-
-    &.is-inline {
-        display: flex;
-
-        .eve-radio-control {
-            &:not(:last-child) {
-                margin: 0 $eve-spacing-normal 0 0;
-            }
-        }
-    }
-}

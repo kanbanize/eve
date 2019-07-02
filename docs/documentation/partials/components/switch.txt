@@ -3,67 +3,20 @@
     <div class="component-content">
         <div class="component-example">
             <div class="eve-switch">
+                <input type="checkbox" checked="checked">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="component-content">
+        <div class="component-example">
+            <div class="eve-switch">
                 <input type="checkbox">
                 <i></i>
             </div>
         </div>
     </div>
     <div class="component-content">
-        <div class="component-header">Labeled</div>
-        <div class="component-example">
-            <label class="eve-switch-control">
-                <div class="eve-switch">
-                    <input type="checkbox">
-                    <i></i>
-                </div>
-                Switch control
-            </label>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">List</div>
-        <div class="component-example">
-            <div class="eve-switches">
-                <label class="eve-switch-control">
-                    <div class="eve-switch">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Switch control 1
-                </label>
-                <label class="eve-switch-control">
-                    <div class="eve-switch">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Switch control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Grouped</div>
-        <div class="component-example">
-            <div class="eve-switches is-inline">
-                <label class="eve-switch-control">
-                    <div class="eve-switch">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Switch control 1
-                </label>
-                <label class="eve-switch-control">
-                    <div class="eve-switch">
-                        <input type="checkbox">
-                        <i></i>
-                    </div>
-                    Switch control 2
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-header">Disabled</div>
         <div class="component-example">
             <div class="eve-switch">
                 <input type="checkbox" disabled="disabled">
