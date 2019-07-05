@@ -42,14 +42,6 @@
     </div>
     <div class="component-content">
         <div class="component-example">
-            <button class="eve-button is-file">
-                Upload...
-                <input type="file">
-            </button>
-        </div>
-    </div>
-    <div class="component-content">
-        <div class="component-example">
             <button class="eve-button" disabled="disabled">Disabled</button>
             <button class="eve-button is-outlined" disabled="disabled">Disabled</button>
             <button class="eve-button is-inverted" disabled="disabled">Disabled</button>

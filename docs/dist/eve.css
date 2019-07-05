@@ -325,13 +325,10 @@
       -ms-user-select: none;
           user-select: none;
   vertical-align: top; }
-  .eve-button:hover, .eve-button:active, .eve-button:focus {
-    color: #fff; }
-  .eve-button:focus {
-    text-decoration: none; }
   .eve-button:hover {
     background: #0c7cd5; }
   .eve-button.is-outlined {
+    background: transparent;
     border: 1px solid #2196f3;
     color: #2196f3; }
     .eve-button.is-outlined.has-icon svg {
@@ -340,6 +337,7 @@
       background: #e3f2fd;
       border-color: #e3f2fd; }
   .eve-button.is-inverted {
+    background: transparent;
     color: #2196f3; }
     .eve-button.is-inverted.has-icon svg {
       fill: #2196f3; }
@@ -352,25 +350,6 @@
       height: 1.125rem;
       margin-right: 0.5625rem;
       width: 1.125rem; }
-  .eve-button.is-outlined, .eve-button.is-inverted {
-    background: transparent; }
-  .eve-button.is-file {
-    overflow: hidden;
-    position: relative; }
-    .eve-button.is-file input[type='file'] {
-      border-radius: inherit;
-      bottom: 0;
-      cursor: inherit;
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%; }
-      .eve-button.is-file input[type='file']::-webkit-file-upload-button {
-        cursor: inherit; }
   .eve-button:disabled {
     background: #cfd8dc;
     cursor: default; }
@@ -1492,6 +1471,24 @@
         width: 2rem; }
         .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
           border-radius: 50%; }
+
+.eve-file {
+  overflow: hidden;
+  position: relative; }
+  .eve-file input[type='file'] {
+    border-radius: inherit;
+    bottom: 0;
+    cursor: inherit;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
+    .eve-file input[type='file']::-webkit-file-upload-button {
+      cursor: inherit; }
 
 .eve-slider {
   -webkit-appearance: none;
