@@ -1,0 +1,24 @@
+.eve-file {
+    overflow: hidden;
+    position: relative;
+
+    input {
+        &[type='file'] {
+            border-radius: inherit;
+            bottom: 0;
+            cursor: inherit;
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+
+            &::-webkit-file-upload-button { // sass-lint:disable-line no-vendor-prefixes
+                cursor: inherit;
+            }
+        }
+    }
+}
