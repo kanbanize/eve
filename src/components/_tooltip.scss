@@ -1,24 +1,22 @@
-$eve-tooltip-size: 1.75rem !default;
-$eve-tooltip-color: #263238 !default;
-$eve-tooltip-max-width: 20rem !default;
+$eve-tooltip-size: 1.5rem !default;
 
 .eve-tooltip {
     position: relative;
 
     &::after {
-        background: $eve-tooltip-color;
+        background: $eve-color-dark;
         border-radius: $eve-tooltip-size / 2;
         color: $eve-color-light;
         content: attr(data-tooltip);
         font-family: inherit;
-        font-size: .75rem;
+        font-size: $eve-tooltip-size / 2;
         font-weight: normal;
         height: $eve-tooltip-size;
         line-height: $eve-tooltip-size;
-        max-width: $eve-tooltip-max-width;
+        max-width: 20rem;
         opacity: 0;
         overflow: hidden;
-        padding: 0 $eve-spacing-small;
+        padding: 0 $eve-spacing-tiny;
         pointer-events: none;
         position: absolute;
         text-overflow: ellipsis;

@@ -226,8 +226,7 @@
   border-left: 1px solid #2196f3;
   font-size: .875rem;
   line-height: 1.25rem;
-  padding-left: 0.5rem;
-  position: relative; }
+  padding-left: 0.5rem; }
   .eve-accordion > input {
     display: none; }
     .eve-accordion > input:checked ~ .eve-accordion-header {
@@ -265,7 +264,6 @@
   flex-shrink: 0;
   height: 2rem;
   justify-content: center;
-  position: relative;
   vertical-align: top;
   width: 2rem; }
   .eve-avatar[data-initial] {
@@ -1057,19 +1055,19 @@
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
-    background: #263238;
-    border-radius: 0.875rem;
+    background: #333;
+    border-radius: 0.75rem;
     color: #fff;
     content: attr(data-tooltip);
     font-family: inherit;
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    height: 1.75rem;
-    line-height: 1.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     max-width: 20rem;
     opacity: 0;
     overflow: hidden;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     pointer-events: none;
     position: absolute;
     text-overflow: ellipsis;
