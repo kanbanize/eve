@@ -39,7 +39,7 @@ body {
     height: 100%;
 
     .sidebar {
-        background: linear-gradient(#2196f3 0%, #2156ff 100%);
+        background: #2196f3;
         width: 4rem;
         display: flex;
         flex-direction: column;
@@ -105,6 +105,10 @@ body {
             &.is-active {
                 color: #2196f3;
             }
+
+            &.is-active {
+                font-weight: 600;
+            }
         }
     }
 
@@ -122,6 +126,7 @@ body {
                 line-height: 1.75rem;
                 margin-bottom: 3rem;
                 text-transform: uppercase;
+                font-weight: 600;
             }
 
             .component-content {

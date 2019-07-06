@@ -34,32 +34,3 @@ $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" v
         cursor: default;
     }
 }
-
-.eve-select-field {
-    align-items: center;
-    display: flex;
-    position: relative;
-
-    &.has-icon {
-        svg {
-            fill: $eve-color-darker-silver;
-            height: $eve-select-size / 2;
-            left: $eve-select-size / 3;
-            position: absolute;
-            top: ($eve-select-size - ($eve-select-size / 2)) / 2;
-            width: $eve-select-size / 2;
-        }
-
-        .eve-select {
-            padding-left: ($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny;
-        }
-    }
-
-    &.is-disabled {
-        &.has-icon {
-            svg {
-                fill: $eve-color-light;
-            }
-        }
-    }
-}

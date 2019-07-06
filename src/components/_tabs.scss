@@ -1,49 +1,31 @@
-$eve-tabs-size: 3rem;
+$eve-tab-size: 3rem;
 
 .eve-tabs {
-    box-sizing: border-box;
     display: flex;
-    font-size: .875rem;
-    height: $eve-tabs-size;
-    line-height: $eve-tabs-size;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
+        box-sizing: border-box;
         color: $eve-color-dark;
         cursor: pointer;
         flex: 1;
+        height: $eve-tab-size;
+        line-height: $eve-tab-size;
         overflow: hidden;
         padding: 0 $eve-spacing-small;
         text-align: center;
         text-overflow: ellipsis;
         white-space: nowrap;
 
-        a {
-            color: inherit;
-            cursor: inherit;
-            display: block;
-            text-decoration: none;
-        }
-
         &:hover {
             color: $eve-color-primary;
         }
 
         &.is-active {
+            border-bottom: .125rem solid $eve-color-primary;
             color: $eve-color-primary;
-            position: relative;
-
-            &::after {
-                background: $eve-color-primary;
-                bottom: 0;
-                content: '';
-                height: .125rem;
-                left: 0;
-                position: absolute;
-                right: 0;
-            }
         }
 
         &.is-disabled {
@@ -51,9 +33,7 @@ $eve-tabs-size: 3rem;
             cursor: default;
 
             &.is-active {
-                &::after {
-                    background: $eve-color-dark-silver;
-                }
+                border-color: $eve-color-dark-silver;
             }
         }
     }

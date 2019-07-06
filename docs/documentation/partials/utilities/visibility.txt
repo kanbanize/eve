@@ -1,9 +1,0 @@
-<div class="component">
-    <div class="component-title">Visibility</div>
-    <div class="component-content">
-        <div class="component-example" style="display: none;">
-            <div class="eve-visibility-visible">visible</div>
-            <div class="eve-visibility-hidden">hidden</div>
-        </div>
-    </div>
-</div>

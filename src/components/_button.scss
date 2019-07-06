@@ -22,19 +22,13 @@ $eve-button-size: 2.25rem;
     vertical-align: top;
 
     &:hover {
-        background: darken($eve-color-primary, 10);
+        background: lighten($eve-color-primary, 5);
     }
 
     &.is-outlined {
         background: transparent;
-        border: 1px solid $eve-color-primary;
+        border: 1px solid $eve-color-dark-silver;
         color: $eve-color-primary;
-
-        &.has-icon {
-            svg {
-                fill: $eve-color-primary;
-            }
-        }
 
         &:hover {
             background: lighten($eve-color-primary, 40);
@@ -46,60 +40,25 @@ $eve-button-size: 2.25rem;
         background: transparent;
         color: $eve-color-primary;
 
-        &.has-icon {
-            svg {
-                fill: $eve-color-primary;
-            }
-        }
-
         &:hover {
             background: lighten($eve-color-primary, 40);
         }
     }
 
-    &.has-icon {
-        padding-left: .75rem;
-
-        svg {
-            fill: $eve-color-light;
-            height: $eve-button-size / 2;
-            margin-right: $eve-button-size / 4;
-            width: $eve-button-size / 2;
-        }
-    }
-
     &:disabled {
         background: $eve-color-dark-silver;
-        cursor: default;
-
-        &.has-icon {
-            svg {
-                fill: $eve-color-light;
-            }
-        }
+        pointer-events: none;
 
         &.is-outlined {
             background: transparent;
             border-color: $eve-color-dark-silver;
             color: $eve-color-dark-silver;
-
-            &.has-icon {
-                svg {
-                    fill: $eve-color-dark-silver;
-                }
-            }
         }
 
         &.is-inverted {
             background: transparent;
             border-color: transparent;
             color: $eve-color-dark-silver;
-
-            &.has-icon {
-                svg {
-                    fill: $eve-color-dark-silver;
-                }
-            }
         }
     }
 }
