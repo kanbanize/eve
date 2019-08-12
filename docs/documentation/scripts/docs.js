@@ -50,7 +50,7 @@
             }
         };
 
-        xhr.open('GET', 'partials/' + path + '.txt', true);
+        xhr.open('GET', 'partials/' + path + '.html', true);
         xhr.send();
 
         function loadTemplateHtml(html) {

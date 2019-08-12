@@ -474,23 +474,21 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: calc(1rem + 1px) 0 1rem;
   position: relative; }
-  .eve-divider[data-content] {
-    margin: 1rem 0 0.5rem; }
   .eve-divider::before {
-    border-top: 1px solid #2196f3;
+    border-top: 1px solid #cfd8dc;
     content: '';
     left: 0;
     position: absolute;
     right: 0; }
   .eve-divider::after {
     background: #fff;
-    color: #333;
+    color: #2196f3;
     content: attr(data-content);
     font-size: .875rem;
     line-height: 1.25rem;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     z-index: 1; }
 
 .eve-dropdown {
@@ -944,8 +942,7 @@
     font-size: .875rem;
     line-height: 1.25rem; }
     .eve-tile .eve-tile-content .eve-tile-title {
-      color: #333;
-      margin-bottom: 0.25rem; }
+      color: #333; }
     .eve-tile .eve-tile-content .eve-tile-description {
       color: #607d8b; }
   .eve-tile .eve-switch {
@@ -1010,10 +1007,9 @@
   .eve-tooltip.is-bottom:hover::after {
     -webkit-transform: translate(-50%, 0.5rem);
             transform: translate(-50%, 0.5rem); }
-  .eve-tooltip:hover.has-delay::after {
-    transition-delay: .25s; }
   .eve-tooltip:hover::after {
-    opacity: 1; }
+    opacity: 1;
+    transition-delay: .25s; }
 
 .eve-color-picker {
   background: #fff;
