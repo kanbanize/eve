@@ -285,6 +285,8 @@
        object-position: center;
     vertical-align: top;
     width: inherit; }
+  .eve-avatar.is-disabled {
+    opacity: .5; }
 
 .eve-button {
   align-items: center;

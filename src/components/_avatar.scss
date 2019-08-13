@@ -36,4 +36,8 @@ $eve-avatar-color: $eve-color-light !default;
         vertical-align: top;
         width: inherit;
     }
+
+    &.is-disabled {
+        opacity: .5;
+    }
 }
