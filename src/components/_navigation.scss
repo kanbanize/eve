@@ -29,14 +29,8 @@ $eve-tab-size: 2.25rem;
         }
 
         &.is-disabled {
-            color: $eve-color-dark-silver;
-            cursor: default;
-
-            &.is-active {
-                &::after {
-                    background: $eve-color-dark-silver;
-                }
-            }
+            opacity: .5;
+            pointer-events: none;
         }
     }
 }

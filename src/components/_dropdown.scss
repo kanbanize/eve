@@ -41,17 +41,8 @@
             }
 
             &.is-disabled {
-                color: $eve-color-dark-silver;
-                cursor: default;
-
-                svg {
-                    fill: $eve-color-dark-silver;
-                }
-
-                &:hover,
-                &.is-active {
-                    background: transparent;
-                }
+                opacity: .5;
+                pointer-events: none;
             }
         }
 

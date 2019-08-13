@@ -46,19 +46,7 @@ $eve-button-size: 2.25rem;
     }
 
     &:disabled {
-        background: $eve-color-dark-silver;
+        opacity: .5;
         pointer-events: none;
-
-        &.is-outlined {
-            background: transparent;
-            border-color: $eve-color-dark-silver;
-            color: $eve-color-dark-silver;
-        }
-
-        &.is-inverted {
-            background: transparent;
-            border-color: transparent;
-            color: $eve-color-dark-silver;
-        }
     }
 }

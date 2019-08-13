@@ -326,16 +326,8 @@
     .eve-button.is-inverted:hover {
       background: #e3f2fd; }
   .eve-button:disabled {
-    background: #cfd8dc;
+    opacity: .5;
     pointer-events: none; }
-    .eve-button:disabled.is-outlined {
-      background: transparent;
-      border-color: #cfd8dc;
-      color: #cfd8dc; }
-    .eve-button:disabled.is-inverted {
-      background: transparent;
-      border-color: transparent;
-      color: #cfd8dc; }
 
 .eve-checkbox {
   align-items: center;
@@ -362,11 +354,11 @@
       .eve-checkbox input[type='checkbox']:checked ~ i::after {
         display: block; }
     .eve-checkbox input[type='checkbox']:disabled {
-      cursor: default; }
+      pointer-events: none; }
       .eve-checkbox input[type='checkbox']:disabled ~ i {
-        border-color: #cfd8dc; }
+        opacity: .5; }
       .eve-checkbox input[type='checkbox']:disabled:checked ~ i {
-        background: #cfd8dc; }
+        opacity: .5; }
         .eve-checkbox input[type='checkbox']:disabled:checked ~ i::after {
           display: block; }
   .eve-checkbox i {
@@ -496,12 +488,8 @@
         height: 1.5rem;
         width: 1.5rem; }
       .eve-dropdown ul li.is-disabled {
-        color: #cfd8dc;
-        cursor: default; }
-        .eve-dropdown ul li.is-disabled svg {
-          fill: #cfd8dc; }
-        .eve-dropdown ul li.is-disabled:hover, .eve-dropdown ul li.is-disabled.is-active {
-          background: transparent; }
+        opacity: .5;
+        pointer-events: none; }
     .eve-dropdown ul hr {
       border: 0;
       border-top: 1px solid #cfd8dc;
@@ -550,15 +538,8 @@
     font-family: inherit;
     font-size: inherit; }
   .eve-input:disabled {
-    background: #cfd8dc;
-    color: #fff;
-    cursor: default; }
-    .eve-input:disabled::-webkit-input-placeholder {
-      color: #fff; }
-    .eve-input:disabled::-ms-input-placeholder {
-      color: #fff; }
-    .eve-input:disabled::placeholder {
-      color: #fff; }
+    opacity: .5;
+    pointer-events: none; }
 
 .eve-navigation {
   display: flex;
@@ -583,10 +564,8 @@
       color: #2196f3;
       padding-left: calc(1rem - .125rem); }
     .eve-navigation li.is-disabled {
-      color: #cfd8dc;
-      cursor: default; }
-      .eve-navigation li.is-disabled.is-active::after {
-        background: #cfd8dc; }
+      opacity: .5;
+      pointer-events: none; }
 
 .eve-radio {
   align-items: center;
@@ -613,11 +592,11 @@
       .eve-radio input[type='radio']:checked ~ i::after {
         display: block; }
     .eve-radio input[type='radio']:disabled {
-      cursor: default; }
+      pointer-events: none; }
       .eve-radio input[type='radio']:disabled ~ i {
-        border-color: #cfd8dc; }
+        opacity: .5; }
       .eve-radio input[type='radio']:disabled:checked ~ i {
-        background: #cfd8dc; }
+        opacity: .5; }
         .eve-radio input[type='radio']:disabled:checked ~ i::after {
           display: block; }
   .eve-radio i {
@@ -661,10 +640,8 @@
   .eve-select::-ms-expand {
     display: none; }
   .eve-select:disabled {
-    background-color: #cfd8dc;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-    color: #fff;
-    cursor: default; }
+    opacity: .5;
+    pointer-events: none; }
 
 .eve-switch {
   align-items: center;
@@ -690,9 +667,9 @@
       .eve-switch input[type='checkbox']:checked ~ i::after {
         left: 1rem; }
     .eve-switch input[type='checkbox']:disabled {
-      cursor: default; }
+      pointer-events: none; }
       .eve-switch input[type='checkbox']:disabled ~ i {
-        background: #cfd8dc; }
+        opacity: .5; }
   .eve-switch i {
     align-items: center;
     background: #b0bec5;
@@ -765,10 +742,8 @@
       border-bottom: 0.125rem solid #2196f3;
       color: #2196f3; }
     .eve-tabs li.is-disabled {
-      color: #cfd8dc;
-      cursor: default; }
-      .eve-tabs li.is-disabled.is-active {
-        border-color: #cfd8dc; }
+      opacity: .5;
+      pointer-events: none; }
 
 .eve-textarea {
   -webkit-appearance: none;
@@ -804,10 +779,8 @@
   .eve-textarea:read-only {
     resize: none; }
   .eve-textarea:disabled {
-    background: #cfd8dc;
-    border-color: #cfd8dc;
-    color: #fff;
-    cursor: default;
+    opacity: .5;
+    pointer-events: none;
     resize: none; }
 
 .eve-tooltip {
