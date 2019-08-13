@@ -808,23 +808,6 @@
     cursor: default;
     resize: none; }
 
-.eve-tile {
-  display: flex; }
-  .eve-tile .eve-avatar {
-    margin-right: 1.5rem; }
-  .eve-tile .eve-tile-content {
-    font-size: .875rem;
-    line-height: 1.25rem; }
-    .eve-tile .eve-tile-content .eve-tile-title {
-      color: #333; }
-    .eve-tile .eve-tile-content .eve-tile-description {
-      color: #607d8b; }
-  .eve-tile .eve-switch {
-    margin-left: 1.5rem; }
-
-.eve-tiles .eve-tile:not(:last-child) {
-  margin-bottom: 1rem; }
-
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
