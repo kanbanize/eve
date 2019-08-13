@@ -312,14 +312,14 @@
   .eve-button:hover {
     background: #39a1f4; }
   .eve-button.is-outlined {
-    background: transparent;
-    border: 1px solid #cfd8dc;
+    background: #fff;
+    border: 1px solid #2196f3;
     color: #2196f3; }
     .eve-button.is-outlined:hover {
       background: #e3f2fd;
       border-color: #e3f2fd; }
   .eve-button.is-inverted {
-    background: transparent;
+    background: #fff;
     color: #2196f3; }
     .eve-button.is-inverted:hover {
       background: #e3f2fd; }
@@ -442,34 +442,6 @@
   .eve-chips .eve-chip {
     margin: 0.25rem; }
 
-.eve-dialog {
-  background: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  position: relative;
-  width: 25rem; }
-  .eve-dialog .eve-dialog-header {
-    color: #2196f3;
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal; }
-  .eve-dialog .eve-dialog-content {
-    color: #333;
-    font-size: .875rem;
-    line-height: 1.25rem; }
-  .eve-dialog .eve-dialog-footer {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem; }
-    .eve-dialog .eve-dialog-footer .eve-button:not(:last-child) {
-      margin-right: 1rem; }
-
 .eve-divider {
   align-items: center;
   display: flex;
@@ -540,11 +512,11 @@
   line-height: 1.25rem;
   padding: 0.5rem 1rem; }
   .eve-feedback.is-success {
-    background: #d9eeda; }
+    background: #b5dfb7; }
   .eve-feedback.is-warning {
-    background: #ffeacc; }
+    background: #ffd699; }
   .eve-feedback.is-danger {
-    background: #fff8f7; }
+    background: #fccbc7; }
 
 .eve-input {
   -webkit-appearance: none;
@@ -613,104 +585,6 @@
       cursor: default; }
       .eve-navigation li.is-disabled.is-active::after {
         background: #cfd8dc; }
-
-.eve-progress-line {
-  overflow: hidden;
-  position: relative; }
-  .eve-progress-line::before {
-    background: rgba(255, 255, 255, 0.5);
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1; }
-  .eve-progress-line::after {
-    -webkit-animation-duration: .75s;
-            animation-duration: .75s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-name: eveProgressLine;
-            animation-name: eveProgressLine;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    background: #2196f3;
-    bottom: 0;
-    content: '';
-    height: 1px;
-    position: absolute;
-    top: 0;
-    width: 20%;
-    z-index: 2; }
-
-@-webkit-keyframes eveProgressLine {
-  from {
-    left: -20%; }
-  to {
-    left: 100%; } }
-
-@keyframes eveProgressLine {
-  from {
-    left: -20%; }
-  to {
-    left: 100%; } }
-
-.eve-progress-circle {
-  overflow: hidden;
-  position: relative; }
-  .eve-progress-circle::before {
-    background: rgba(255, 255, 255, 0.5);
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1; }
-  .eve-progress-circle::after {
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-name: eveProgressCircle;
-            animation-name: eveProgressCircle;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    border-right-color: #2196f3;
-    border-top-color: #2196f3;
-    box-sizing: border-box;
-    content: '';
-    display: inline-block;
-    height: 3rem;
-    left: calc(50% - 1.5rem);
-    position: absolute;
-    top: calc(50% - 1.5rem);
-    width: 3rem;
-    z-index: 2; }
-
-@-webkit-keyframes eveProgressCircle {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-@keyframes eveProgressCircle {
-  from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
 
 .eve-radio {
   align-items: center;
@@ -1084,109 +958,3 @@
     width: 100%; }
     .eve-file input[type='file']::-webkit-file-upload-button {
       cursor: inherit; }
-
-.eve-slider {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  display: block;
-  height: 1rem;
-  margin: 0;
-  width: 100%; }
-  .eve-slider:focus {
-    outline: 0; }
-  .eve-slider::-webkit-slider-runnable-track {
-    cursor: default;
-    height: 0.125rem;
-    width: 100%;
-    background: #eceff1; }
-  .eve-slider::-webkit-slider-thumb {
-    background: #2196f3;
-    border: 0;
-    border-radius: 50%;
-    cursor: default;
-    height: 1rem;
-    width: 1rem;
-    -webkit-appearance: none;
-            appearance: none;
-    margin-top: -0.4375rem; }
-  .eve-slider::-moz-range-track {
-    cursor: default;
-    height: 0.125rem;
-    width: 100%;
-    background: #eceff1;
-    height: 0.0625rem; }
-  .eve-slider::-moz-range-thumb {
-    background: #2196f3;
-    border: 0;
-    border-radius: 50%;
-    cursor: default;
-    height: -3rem;
-    width: -3rem; }
-  .eve-slider::-ms-track {
-    cursor: default;
-    height: 0.125rem;
-    width: 100%;
-    background: transparent;
-    border-color: transparent;
-    border-width: 0.5rem 0;
-    color: transparent; }
-  .eve-slider::-ms-fill-lower {
-    background: #eceff1; }
-  .eve-slider::-ms-fill-upper {
-    background: #eceff1; }
-  .eve-slider::-ms-thumb {
-    background: #2196f3;
-    border: 0;
-    border-radius: 50%;
-    cursor: default;
-    height: -3rem;
-    width: -3rem;
-    margin-top: 0.03125rem; }
-  .eve-slider:disabled::-webkit-slider-thumb {
-    background: #cfd8dc; }
-  .eve-slider:disabled::-moz-range-thumb {
-    background: #cfd8dc; }
-  .eve-slider:disabled::-ms-thumb {
-    background: #cfd8dc; }
-
-.eve-tree {
-  font-size: .875rem;
-  list-style: none;
-  margin: 0;
-  padding-left: 1.5rem; }
-  .eve-tree .eve-node {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-    content: '';
-    cursor: pointer;
-    display: block;
-    height: 1.25rem;
-    left: -1.5rem;
-    position: absolute;
-    width: 1.25rem; }
-    .eve-tree .eve-node:hover {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232196f3'%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
-  .eve-tree li {
-    color: #333;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    position: relative; }
-    .eve-tree li:not(:last-child) {
-      margin-bottom: 0.5rem; }
-    .eve-tree li input[type='checkbox'] {
-      display: none; }
-      .eve-tree li input[type='checkbox']:checked ~ .eve-node {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
-        .eve-tree li input[type='checkbox']:checked ~ .eve-node:hover {
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232196f3'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
-      .eve-tree li input[type='checkbox']:checked ~ ul {
-        display: block; }
-  .eve-tree ul {
-    display: none;
-    list-style: none;
-    margin-top: 0.5rem;
-    padding-left: 1.5rem; }

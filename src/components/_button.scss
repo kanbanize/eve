@@ -26,8 +26,8 @@ $eve-button-size: 2.25rem;
     }
 
     &.is-outlined {
-        background: transparent;
-        border: 1px solid $eve-color-dark-silver;
+        background: $eve-color-light;
+        border: 1px solid $eve-color-primary;
         color: $eve-color-primary;
 
         &:hover {
@@ -37,7 +37,7 @@ $eve-button-size: 2.25rem;
     }
 
     &.is-inverted {
-        background: transparent;
+        background: $eve-color-light;
         color: $eve-color-primary;
 
         &:hover {
