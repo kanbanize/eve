@@ -487,6 +487,7 @@
       -ms-user-select: none;
           user-select: none;
   vertical-align: top;
+  white-space: nowrap;
   font-size: 0.875rem;
   height: 2.25rem;
   padding: 0 1rem; }

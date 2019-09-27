@@ -34,6 +34,7 @@ $eve-button-font-sizes: (
     text-decoration: none;
     user-select: none;
     vertical-align: top;
+    white-space: nowrap;
 
     &:hover,
     &:active,
