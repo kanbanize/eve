@@ -1692,9 +1692,8 @@
     top: 0;
     width: 100%; }
     .eve-switch input[type='checkbox']:checked ~ i {
-      background: #4caf50; }
-      .eve-switch input[type='checkbox']:checked ~ i::after {
-        left: 1rem; }
+      background: #4caf50;
+      justify-content: flex-end; }
     .eve-switch input[type='checkbox']:disabled {
       cursor: default; }
       .eve-switch input[type='checkbox']:disabled ~ i {
@@ -1706,17 +1705,15 @@
     box-sizing: border-box;
     display: flex;
     height: 100%;
+    justify-content: flex-start;
+    padding: .125rem;
     pointer-events: none;
-    transition: background 150ms ease;
     width: 100%; }
     .eve-switch i::after {
       background: #fff;
       border-radius: 50%;
       content: '';
-      height: 0.875rem;
-      left: .125rem;
-      position: absolute;
-      transition: left 150ms ease;
+      height: 100%;
       width: 0.875rem; }
 
 .eve-switch-control {
