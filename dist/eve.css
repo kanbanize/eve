@@ -310,7 +310,8 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  vertical-align: top; }
+  vertical-align: top;
+  white-space: nowrap; }
   .eve-button:hover {
     background: #39a1f4; }
   .eve-button.is-outlined {
