@@ -1,0 +1,89 @@
+.eve-progress-line {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    &::after {
+        animation-duration: .75s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: eveProgressLine;
+        animation-timing-function: linear;
+        background: $eve-color-primary;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: 0;
+        width: 20%;
+        z-index: 2;
+    }
+
+    @keyframes eveProgressLine {
+        from {
+            left: -20%;
+        }
+
+        to {
+            left: 100%;
+        }
+    }
+}
+
+.eve-progress-circle {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    &::after {
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: eveProgressCircle;
+        animation-timing-function: linear;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        border-right-color: $eve-color-primary;
+        border-top-color: $eve-color-primary;
+        box-sizing: border-box;
+        content: '';
+        display: inline-block;
+        height: 3rem;
+        left: calc(50% - 1.5rem);
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        width: 3rem;
+        z-index: 2;
+    }
+
+    @keyframes eveProgressCircle {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

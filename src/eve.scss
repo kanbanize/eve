@@ -17,11 +17,13 @@
 @import 'components/button';
 @import 'components/checkbox';
 @import 'components/chip';
+@import 'components/color-picker';
 @import 'components/divider';
 @import 'components/dropdown';
 @import 'components/feedback';
 @import 'components/input';
 @import 'components/navigation';
+@import 'components/progress';
 @import 'components/radio';
 @import 'components/select';
 @import 'components/switch';
@@ -29,7 +31,3 @@
 @import 'components/tabs';
 @import 'components/textarea';
 @import 'components/tooltip';
-
-// Experimentals
-@import 'experimentals/color-picker';
-@import 'experimentals/file';

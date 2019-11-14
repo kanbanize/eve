@@ -437,6 +437,62 @@
   .eve-chips .eve-chip {
     margin: 0.25rem; }
 
+.eve-color-picker {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  flex-direction: column; }
+  .eve-color-picker > input {
+    display: none; }
+    .eve-color-picker > input:checked ~ .eve-color-picker-control label {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
+    .eve-color-picker > input:checked ~ .eve-color-picker-palette ul {
+      display: flex; }
+  .eve-color-picker .eve-color-picker-control {
+    border-bottom: 1px solid #cfd8dc;
+    display: flex;
+    padding: .5rem; }
+    .eve-color-picker .eve-color-picker-control label {
+      align-items: center;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.125rem;
+      border: 1px solid #cfd8dc;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: flex;
+      flex-shrink: 0;
+      height: 2.25rem;
+      justify-content: center;
+      margin-left: .5rem;
+      width: 2.25rem; }
+  .eve-color-picker .eve-color-picker-palette {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem; }
+    .eve-color-picker .eve-color-picker-palette ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .eve-color-picker .eve-color-picker-palette ul:first-child {
+        display: flex; }
+      .eve-color-picker .eve-color-picker-palette ul li {
+        align-items: center;
+        background: #2196f3;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+        margin: 0.25rem;
+        position: relative;
+        transition: border-radius 150ms ease;
+        width: 2rem; }
+        .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
+          border-radius: 50%; }
+
 .eve-divider {
   align-items: center;
   display: flex;
@@ -567,6 +623,104 @@
     .eve-navigation li.is-disabled {
       opacity: .5;
       pointer-events: none; }
+
+.eve-progress-line {
+  overflow: hidden;
+  position: relative; }
+  .eve-progress-line::before {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+  .eve-progress-line::after {
+    -webkit-animation-duration: .75s;
+            animation-duration: .75s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: eveProgressLine;
+            animation-name: eveProgressLine;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    background: #2196f3;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 2; }
+
+@-webkit-keyframes eveProgressLine {
+  from {
+    left: -20%; }
+  to {
+    left: 100%; } }
+
+@keyframes eveProgressLine {
+  from {
+    left: -20%; }
+  to {
+    left: 100%; } }
+
+.eve-progress-circle {
+  overflow: hidden;
+  position: relative; }
+  .eve-progress-circle::before {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+  .eve-progress-circle::after {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: eveProgressCircle;
+            animation-name: eveProgressCircle;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    border-right-color: #2196f3;
+    border-top-color: #2196f3;
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    height: 3rem;
+    left: calc(50% - 1.5rem);
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    width: 3rem;
+    z-index: 2; }
+
+@-webkit-keyframes eveProgressCircle {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes eveProgressCircle {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .eve-radio {
   align-items: center;
@@ -840,77 +994,3 @@
   .eve-tooltip:hover::after {
     opacity: 1;
     transition-delay: .25s; }
-
-.eve-color-picker {
-  background: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  display: inline-flex;
-  flex-direction: column; }
-  .eve-color-picker > input {
-    display: none; }
-    .eve-color-picker > input:checked ~ .eve-color-picker-control label {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
-    .eve-color-picker > input:checked ~ .eve-color-picker-palette ul {
-      display: flex; }
-  .eve-color-picker .eve-color-picker-control {
-    border-bottom: 1px solid #cfd8dc;
-    display: flex;
-    padding: .5rem; }
-    .eve-color-picker .eve-color-picker-control label {
-      align-items: center;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 1.125rem 1.125rem;
-      border: 1px solid #cfd8dc;
-      box-sizing: border-box;
-      cursor: pointer;
-      display: flex;
-      flex-shrink: 0;
-      height: 2.25rem;
-      justify-content: center;
-      margin-left: .5rem;
-      width: 2.25rem; }
-  .eve-color-picker .eve-color-picker-palette {
-    display: flex;
-    flex-direction: column;
-    padding: 0.25rem; }
-    .eve-color-picker .eve-color-picker-palette ul {
-      display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .eve-color-picker .eve-color-picker-palette ul:first-child {
-        display: flex; }
-      .eve-color-picker .eve-color-picker-palette ul li {
-        align-items: center;
-        background: #2196f3;
-        box-sizing: border-box;
-        cursor: pointer;
-        display: flex;
-        height: 2rem;
-        justify-content: center;
-        margin: 0.25rem;
-        position: relative;
-        transition: border-radius 150ms ease;
-        width: 2rem; }
-        .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
-          border-radius: 50%; }
-
-.eve-file {
-  overflow: hidden;
-  position: relative; }
-  .eve-file input[type='file'] {
-    border-radius: inherit;
-    bottom: 0;
-    cursor: inherit;
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%; }
-    .eve-file input[type='file']::-webkit-file-upload-button {
-      cursor: inherit; }
