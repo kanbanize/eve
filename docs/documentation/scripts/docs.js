@@ -24,7 +24,7 @@
 
                 document.title = getComponentName(el) + ' | Eve';
 
-                loadTemplate(el.getAttribute('data-path'));
+                loadTemplate(el.hash.substr(1, el.hash.length));
 
                 return false;
             }
@@ -50,7 +50,7 @@
             }
         };
 
-        xhr.open('GET', 'partials/' + path + '.txt', true);
+        xhr.open('GET', 'partials/' + path + '.html', true);
         xhr.send();
 
         function loadTemplateHtml(html) {
@@ -67,7 +67,7 @@
     function getComponentName(el) {
         var componentName = el.innerHTML;
 
-        if (el.getAttribute('data-path').indexOf('grid') > -1) {
+        if (el.hash.indexOf('grid') > -1) {
             return 'Grid ' + componentName;
         }
 
@@ -76,7 +76,5 @@
 
     if (location.hash) {
         document.querySelector('a[href="' + location.hash + '"]').click();
-    } else {
-        document.querySelector('a[href="#getting-started/installation"]').click();
     }
 })();

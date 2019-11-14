@@ -17,34 +17,19 @@
 @import 'components/button';
 @import 'components/checkbox';
 @import 'components/chip';
-@import 'components/dialog';
 @import 'components/divider';
 @import 'components/dropdown';
 @import 'components/feedback';
-@import 'components/form';
 @import 'components/input';
 @import 'components/navigation';
-@import 'components/progress';
 @import 'components/radio';
 @import 'components/select';
 @import 'components/switch';
 @import 'components/table';
 @import 'components/tabs';
 @import 'components/textarea';
-@import 'components/tile';
 @import 'components/tooltip';
-
-// Utilities
-@import 'utilities/cursor';
-@import 'utilities/display';
-@import 'utilities/float';
-@import 'utilities/gap';
-@import 'utilities/overflow';
-@import 'utilities/position';
-@import 'utilities/text';
-@import 'utilities/visibility';
 
 // Experimentals
 @import 'experimentals/color-picker';
-@import 'experimentals/slider';
-@import 'experimentals/tree';
+@import 'experimentals/file';

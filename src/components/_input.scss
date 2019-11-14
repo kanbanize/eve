@@ -23,42 +23,7 @@ $eve-input-size: 2.25rem;
     }
 
     &:disabled {
-        background: $eve-color-dark-silver;
-        color: $eve-color-light;
-        cursor: default;
-
-        &::placeholder {
-            color: $eve-color-light;
-        }
-    }
-}
-
-.eve-input-field {
-    align-items: center;
-    display: flex;
-    position: relative;
-
-
-    &.has-icon {
-        svg {
-            fill: $eve-color-darker-silver;
-            height: $eve-input-size / 2;
-            left: $eve-input-size / 3;
-            position: absolute;
-            top: ($eve-input-size - ($eve-input-size / 2)) / 2;
-            width: $eve-input-size / 2;
-        }
-
-        .eve-input {
-            padding-left: ($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny;
-        }
-    }
-
-    &.is-disabled {
-        &.has-icon {
-            svg {
-                fill: $eve-color-light;
-            }
-        }
+        opacity: .5;
+        pointer-events: none;
     }
 }

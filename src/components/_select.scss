@@ -1,6 +1,5 @@
 $eve-select-size: 2.25rem;
 $eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
-$eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-light}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-select {
     appearance: none;
@@ -28,38 +27,7 @@ $eve-select-arrow-down-disabled-icon: '<svg xmlns="http://www.w3.org/2000/svg" v
     }
 
     &:disabled {
-        background-color: $eve-color-dark-silver;
-        background-image: url(svg-encode($eve-select-arrow-down-disabled-icon));
-        color: $eve-color-light;
-        cursor: default;
-    }
-}
-
-.eve-select-field {
-    align-items: center;
-    display: flex;
-    position: relative;
-
-    &.has-icon {
-        svg {
-            fill: $eve-color-darker-silver;
-            height: $eve-select-size / 2;
-            left: $eve-select-size / 3;
-            position: absolute;
-            top: ($eve-select-size - ($eve-select-size / 2)) / 2;
-            width: $eve-select-size / 2;
-        }
-
-        .eve-select {
-            padding-left: ($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny;
-        }
-    }
-
-    &.is-disabled {
-        &.has-icon {
-            svg {
-                fill: $eve-color-light;
-            }
-        }
+        opacity: .5;
+        pointer-events: none;
     }
 }

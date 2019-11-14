@@ -22,29 +22,14 @@ $eve-button-size: 2.25rem;
     vertical-align: top;
     white-space: nowrap;
 
-    &:hover,
-    &:active,
-    &:focus {
-        color: $eve-color-light;
-    }
-
-    &:focus {
-        text-decoration: none;
-    }
-
     &:hover {
-        background: darken($eve-color-primary, 10);
+        background: lighten($eve-color-primary, 5);
     }
 
     &.is-outlined {
+        background: $eve-color-light;
         border: 1px solid $eve-color-primary;
         color: $eve-color-primary;
-
-        &.has-icon {
-            svg {
-                fill: $eve-color-primary;
-            }
-        }
 
         &:hover {
             background: lighten($eve-color-primary, 40);
@@ -53,92 +38,16 @@ $eve-button-size: 2.25rem;
     }
 
     &.is-inverted {
+        background: $eve-color-light;
         color: $eve-color-primary;
-
-        &.has-icon {
-            svg {
-                fill: $eve-color-primary;
-            }
-        }
 
         &:hover {
             background: lighten($eve-color-primary, 40);
         }
     }
 
-    &.has-icon {
-        padding-left: .75rem;
-
-        svg {
-            fill: $eve-color-light;
-            height: $eve-button-size / 2;
-            margin-right: $eve-button-size / 4;
-            width: $eve-button-size / 2;
-        }
-    }
-
-    &.is-outlined,
-    &.is-inverted {
-        background: transparent;
-    }
-
-    &.is-file {
-        overflow: hidden;
-        position: relative;
-
-        input {
-            &[type='file'] {
-                border-radius: inherit;
-                bottom: 0;
-                cursor: inherit;
-                display: block;
-                height: 100%;
-                left: 0;
-                opacity: 0;
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 100%;
-
-                &::-webkit-file-upload-button { // sass-lint:disable-line no-vendor-prefixes
-                    cursor: inherit;
-                }
-            }
-        }
-    }
-
     &:disabled {
-        background: $eve-color-dark-silver;
-        cursor: default;
-
-        &.has-icon {
-            svg {
-                fill: $eve-color-light;
-            }
-        }
-
-        &.is-outlined {
-            background: transparent;
-            border-color: $eve-color-dark-silver;
-            color: $eve-color-dark-silver;
-
-            &.has-icon {
-                svg {
-                    fill: $eve-color-dark-silver;
-                }
-            }
-        }
-
-        &.is-inverted {
-            background: transparent;
-            border-color: transparent;
-            color: $eve-color-dark-silver;
-
-            &.has-icon {
-                svg {
-                    fill: $eve-color-dark-silver;
-                }
-            }
-        }
+        opacity: .5;
+        pointer-events: none;
     }
 }

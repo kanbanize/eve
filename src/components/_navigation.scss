@@ -18,45 +18,19 @@ $eve-tab-size: 2.25rem;
         text-overflow: ellipsis;
         white-space: nowrap;
 
-        a {
-            color: inherit;
-            cursor: inherit;
-            display: block;
-            overflow: hidden;
-            text-decoration: none;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
         &:hover {
             color: $eve-color-primary;
         }
 
         &.is-active {
+            border-left: .125rem solid $eve-color-primary;
             color: $eve-color-primary;
-            position: relative;
-
-            &::after {
-                background: $eve-color-primary;
-                bottom: 0;
-                content: '';
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: .125rem;
-            }
+            padding-left: calc(#{$eve-spacing-small} - .125rem);
         }
 
         &.is-disabled {
-            background: transparent;
-            color: $eve-color-dark-silver;
-            cursor: default;
-
-            &.is-active {
-                &::after {
-                    background: $eve-color-dark-silver;
-                }
-            }
+            opacity: .5;
+            pointer-events: none;
         }
     }
 }

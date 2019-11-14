@@ -33,15 +33,15 @@ $eve-checkbox-mark-border-width: .125rem;
             }
 
             &:disabled {
-                cursor: default;
+                pointer-events: none;
 
                 ~ i {
-                    border-color: $eve-color-dark-silver;
+                    opacity: .5;
                 }
 
                 &:checked {
                     ~ i {
-                        background: $eve-color-dark-silver;
+                        opacity: .5;
 
                         &::after {
                             display: block;

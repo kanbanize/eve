@@ -15,7 +15,7 @@ $eve-feedback-colors: (
         $color: map-get($eve-feedback-colors, $eve-feedback-color);
 
         &.is-#{$eve-feedback-color} {
-            background: lighten($color, 40);
+            background: lighten($color, 30);
         }
     }
 }
