@@ -1,0 +1,32 @@
+$eve-icon-size: 2.25rem;
+
+.eve-icon {
+    align-items: center;
+    background: $eve-color-light;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    height: $eve-icon-size;
+    justify-content: center;
+    line-height: normal;
+    outline: none;
+    padding: 0;
+    vertical-align: top;
+    width: $eve-icon-size;
+
+    svg {
+        fill: $eve-color-darker-silver;
+        height: 1.125rem;
+        width: 1.125rem;
+    }
+
+    &:hover {
+        background: lighten($eve-color-primary, 40);
+
+        svg {
+            fill: $eve-color-primary;
+        }
+    }
+}
