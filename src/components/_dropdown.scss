@@ -3,21 +3,21 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-block;
     font-size: .875rem;
-    max-width: 20rem;
-    min-width: 10rem;
+    max-width: 17.5rem;
+    min-width: 7rem;
 
     ul {
         list-style: none;
         margin: 0;
-        padding: $eve-spacing-tiny 0;
+        padding: .5rem 0;
 
         li {
             align-items: center;
             color: $eve-color-dark;
             cursor: pointer;
             display: flex;
-            height: 2rem;
-            padding: 0 $eve-spacing-small;
+            height: 2.25rem;
+            padding: 0 1rem;
 
             &:hover,
             &.is-active {
@@ -26,7 +26,7 @@
 
             svg,
             .eve-avatar {
-                margin-right: $eve-spacing-tiny;
+                margin-right: .75rem;
             }
 
             svg {
@@ -49,7 +49,7 @@
         hr {
             border: 0;
             border-top: 1px solid $eve-color-dark-silver;
-            margin: $eve-spacing-tiny 0;
+            margin: .5rem 0;
         }
     }
 }
