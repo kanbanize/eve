@@ -15,21 +15,31 @@ $eve-button-size: 2.25rem;
     height: $eve-button-size;
     justify-content: center;
     line-height: normal;
+    min-width: 4rem;
     outline: none;
-    padding: 0 $eve-spacing-small;
+    padding: 0 1rem;
     text-decoration: none;
+    text-transform: uppercase;
     user-select: none;
     vertical-align: top;
     white-space: nowrap;
 
-    &:hover {
-        background: lighten($eve-color-primary, 5);
+    svg {
+        fill: $eve-color-light;
+        height: $eve-button-size / 2;
+        margin-left: -.25rem;
+        margin-right: .5rem;
+        width: $eve-button-size / 2;
     }
 
     &.is-outlined {
         background: $eve-color-light;
         border: 1px solid $eve-color-primary;
         color: $eve-color-primary;
+
+        svg {
+            fill: $eve-color-primary;
+        }
 
         &:hover {
             background: lighten($eve-color-primary, 40);
@@ -41,9 +51,17 @@ $eve-button-size: 2.25rem;
         background: $eve-color-light;
         color: $eve-color-primary;
 
+        svg {
+            fill: $eve-color-primary;
+        }
+
         &:hover {
             background: lighten($eve-color-primary, 40);
         }
+    }
+
+    &:hover {
+        background: lighten($eve-color-primary, 5);
     }
 
     &:disabled {
