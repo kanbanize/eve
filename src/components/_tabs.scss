@@ -14,9 +14,10 @@ $eve-tab-size: 3rem;
         height: $eve-tab-size;
         line-height: $eve-tab-size;
         overflow: hidden;
-        padding: 0 $eve-spacing-small;
+        padding: 0 1rem;
         text-align: center;
         text-overflow: ellipsis;
+        text-transform: uppercase;
         white-space: nowrap;
 
         &:hover {
@@ -24,7 +25,7 @@ $eve-tab-size: 3rem;
         }
 
         &.is-active {
-            border-bottom: .125rem solid $eve-color-primary;
+            border-bottom: 1px solid $eve-color-primary;
             color: $eve-color-primary;
         }
 
