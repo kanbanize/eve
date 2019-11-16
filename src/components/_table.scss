@@ -14,10 +14,8 @@
 
             th {
                 box-sizing: border-box;
-                color: $eve-color-darkest-silver;
-                font-weight: normal;
                 height: 3rem;
-                padding: $eve-spacing-tiny $eve-spacing-normal;
+                padding: 0 1rem;
                 text-align: left;
                 word-break: break-word;
             }
@@ -34,7 +32,7 @@
             }
 
             td {
-                padding: $eve-spacing-tiny $eve-spacing-normal;
+                padding: 0 1rem;
                 text-align: left;
                 word-wrap: break-word;
             }
