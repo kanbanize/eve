@@ -6,7 +6,6 @@
 
 // Foundations
 @import 'foundations/colors';
-@import 'foundations/spacing';
 
 // Grid
 @import 'grid/grid';
@@ -21,9 +20,10 @@
 @import 'components/divider';
 @import 'components/dropdown';
 @import 'components/feedback';
+@import 'components/icon';
 @import 'components/input';
+@import 'components/loader';
 @import 'components/navigation';
-@import 'components/progress';
 @import 'components/radio';
 @import 'components/select';
 @import 'components/switch';
