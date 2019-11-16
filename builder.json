@@ -1,0 +1,31 @@
+{
+    "eve": {
+        "src": ["src/**/*.scss"],
+        "dest": ["dist", "docs/dist"],
+        "out": "eve"
+    },
+    "docs": {
+        "js": {
+            "src": ["docs/documentation/scripts/**/*.js"],
+            "dest": "docs/documentation/dist",
+            "out": "eve-docs"
+        },
+        "css": {
+            "src": ["docs/documentation/styles/**/*.scss"],
+            "dest": "docs/documentation/dist",
+            "out": "eve-docs"
+        }
+    },
+    "site": {
+        "js": {
+            "src": ["docs/website/scripts/**/*.js"],
+            "dest": "docs/website/dist",
+            "out": "eve-website"
+        },
+        "css": {
+            "src": ["docs/website/styles/**/*.scss"],
+            "dest": "docs/website/dist",
+            "out": "eve-website"
+        }
+    }
+}
