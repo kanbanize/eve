@@ -42,7 +42,7 @@ var config = {
 };
 
 // Eve tasks
-gulp.task('build-eve', function() {
+gulp.task('build-eve', function () {
     return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync())
@@ -54,7 +54,7 @@ gulp.task('build-eve', function() {
         .pipe(gulp.dest(config.eve.dest[1]));
 });
 
-gulp.task('build-eve-min', function() {
+gulp.task('build-eve-min', function () {
     return gulp.src(config.eve.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync({
@@ -72,7 +72,7 @@ gulp.task('build-eve-min', function() {
 gulp.task('build', ['build-eve', 'build-eve-min']);
 
 // Docs tasks
-gulp.task('build-docs-js', function() {
+gulp.task('build-docs-js', function () {
     return gulp.src(config.docs.js.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(uglify())
@@ -80,7 +80,7 @@ gulp.task('build-docs-js', function() {
         .pipe(gulp.dest(config.docs.js.dest))
 });
 
-gulp.task('build-docs-css', function() {
+gulp.task('build-docs-css', function () {
     return gulp.src(config.docs.css.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync({
@@ -97,7 +97,7 @@ gulp.task('build-docs-css', function() {
 gulp.task('build-docs', ['build-docs-js', 'build-docs-css']);
 
 // Site tasks
-gulp.task('build-site-js', function() {
+gulp.task('build-site-js', function () {
     return gulp.src(config.site.js.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(uglify())
@@ -105,7 +105,7 @@ gulp.task('build-site-js', function() {
         .pipe(gulp.dest(config.site.js.dest))
 });
 
-gulp.task('build-site-css', function() {
+gulp.task('build-site-css', function () {
     return gulp.src(config.site.css.src)
         .pipe(gulpif(!process.env.TRAVIS, plumber()))
         .pipe(sass.sync({
@@ -122,7 +122,7 @@ gulp.task('build-site-css', function() {
 gulp.task('build-site', ['build-site-js', 'build-site-css']);
 
 // Watchers
-gulp.task('watch', ['build', 'build-docs', 'build-site'], function() {
+gulp.task('watch', ['build', 'build-docs', 'build-site'], function () {
     // Eve watcher
     gulp.watch(config.eve.src, ['build']);
 

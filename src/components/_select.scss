@@ -19,7 +19,7 @@ $eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0
     max-width: 100%;
     min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
     outline: none;
-    padding: 0 (($eve-input-size / 3) + ($eve-input-size / 2) + $eve-spacing-tiny) 0 $eve-spacing-small;
+    padding: 0 (($eve-input-size / 3) + ($eve-input-size / 2) + .5rem) 0 1rem;
     width: 100%;
 
     &::-ms-expand { // sass-lint:disable-line no-vendor-prefixes

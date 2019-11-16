@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: calc(#{$eve-spacing-small} + 1px) 0 $eve-spacing-small;
+    margin: calc(1rem + 1px) 0 1rem;
     position: relative;
 
     &::before {
@@ -19,7 +19,7 @@
         content: attr(data-content);
         font-size: .875rem;
         line-height: 1.25rem;
-        padding: 0 $eve-spacing-small;
+        padding: 0 1rem;
         z-index: 1;
     }
 }

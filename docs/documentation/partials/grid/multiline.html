@@ -1,12 +1,9 @@
 <style>
-    .eve-column > p {
+    .eve-column::after {
+        content: '';
+        display: block;
         background: #2196f3;
-        color: #fff;
         height: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
     }
 </style>
 <div class="component">
@@ -14,42 +11,22 @@
     <div class="component-content">
         <div class="component-example">
             <div class="eve-row has-gap-small is-multiline">
-                <div class="eve-column is-2">
-                    <p>2</p>
-                </div>
-                <div class="eve-column is-8">
-                    <p>8</p>
-                </div>
-                <div class="eve-column is-2">
-                    <p>2</p>
-                </div>
-                <div class="eve-column is-6">
-                    <p>6</p>
-                </div>
-                <div class="eve-column is-6">
-                    <p>6</p>
-                </div>
+                <div class="eve-column is-2"></div>
+                <div class="eve-column is-8"></div>
+                <div class="eve-column is-2"></div>
+                <div class="eve-column is-6"></div>
+                <div class="eve-column is-6"></div>
             </div>
         </div>
     </div>
     <div class="component-content">
         <div class="component-example">
             <div class="eve-row has-gap-small is-multiline">
-                <div class="eve-column">
-                    <p>Auto</p>
-                </div>
-                <div class="eve-column">
-                    <p>Auto</p>
-                </div>
-                <div class="eve-column is-6">
-                    <p>6</p>
-                </div>
-                <div class="eve-column is-8">
-                    <p>8</p>
-                </div>
-                <div class="eve-column">
-                    <p>Auto</p>
-                </div>
+                <div class="eve-column"></div>
+                <div class="eve-column"></div>
+                <div class="eve-column is-6"></div>
+                <div class="eve-column is-8"></div>
+                <div class="eve-column"></div>
             </div>
         </div>
     </div>

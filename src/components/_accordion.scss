@@ -6,7 +6,7 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
     border-left: 1px solid $eve-color-primary;
     font-size: .875rem;
     line-height: 1.25rem;
-    padding-left: $eve-spacing-tiny;
+    padding-left: .5rem;
 
     > input {
         display: none;
@@ -35,7 +35,7 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
         overflow: hidden;
-        padding: 0 (($eve-accordion-header-height / 3) + ($eve-accordion-header-height / 2) + $eve-spacing-tiny) 0 $eve-spacing-small;
+        padding: 0 (($eve-accordion-header-height / 3) + ($eve-accordion-header-height / 2) + .5rem) 0 1rem;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
@@ -43,14 +43,14 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
     .eve-accordion-content {
         color: $eve-color-dark;
         display: none;
-        padding: $eve-spacing-tiny $eve-spacing-small;
+        padding: .5rem 1rem;
     }
 }
 
 .eve-accordions {
     .eve-accordion {
         &:not(:last-child) {
-            margin-bottom: $eve-spacing-tiny;
+            margin-bottom: .5rem;
         }
     }
 }

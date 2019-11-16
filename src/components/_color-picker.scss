@@ -52,7 +52,7 @@ $eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
     .eve-color-picker-palette {
         display: flex;
         flex-direction: column;
-        padding: $eve-spacing-x-tiny;
+        padding: .25rem;
 
         ul {
             display: none;
@@ -72,7 +72,7 @@ $eve-color-picker-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBo
                 display: flex;
                 height: $eve-color-picker-color-size;
                 justify-content: center;
-                margin: $eve-spacing-x-tiny;
+                margin: .25rem;
                 position: relative;
                 transition: border-radius 150ms ease;
                 width: $eve-color-picker-color-size;

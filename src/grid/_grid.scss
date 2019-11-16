@@ -1,39 +1,14 @@
 // sass-lint:disable no-important
 $eve-grid-cells-count: 12;
 $eve-grid-gaps: (
-    tiny: $eve-spacing-tiny,
-    small: $eve-spacing-small,
-    normal: $eve-spacing-normal,
-    large: $eve-spacing-large,
-);
-$eve-grid-horizontal-alignments: (
-    left: flex-start,
-    center: center,
-    right: flex-end,
-    between: space-between,
-);
-$eve-grid-vertical-alignments: (
-    top: flex-start,
-    center: center,
-    bottom: flex-end
+    tiny: .5rem,
+    small: 1rem,
+    normal: 1.5rem,
+    large: 3rem,
 );
 
 .eve-row {
     display: flex;
-
-    .eve-column {
-        flex: 1;
-        max-width: 100%;
-
-        @for $i from 1 through $eve-grid-cells-count {
-            &.is-#{$i} {
-                $width: percentage($i / $eve-grid-cells-count);
-
-                flex: 1 $width;
-                max-width: $width;
-            }
-        }
-    }
 
     @each $eve-grid-gap in map-keys($eve-grid-gaps) {
         $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
@@ -44,18 +19,6 @@ $eve-grid-vertical-alignments: (
             > .eve-column {
                 padding: $gap;
             }
-        }
-    }
-
-    @each $eve-grid-horizontal-align in map-keys($eve-grid-horizontal-alignments) {
-        &.is-horizontal-#{$eve-grid-horizontal-align} {
-            justify-content: map-get($eve-grid-horizontal-alignments, $eve-grid-horizontal-align);
-        }
-    }
-
-    @each $eve-grid-vertical-align in map-keys($eve-grid-vertical-alignments) {
-        &.is-vertical-#{$eve-grid-vertical-align} {
-            align-items: map-get($eve-grid-vertical-alignments, $eve-grid-vertical-align);
         }
     }
 
@@ -76,6 +39,20 @@ $eve-grid-vertical-alignments: (
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .eve-column {
+        flex: 1;
+        max-width: 100%;
+
+        @for $i from 1 through $eve-grid-cells-count {
+            &.is-#{$i} {
+                $width: percentage($i / $eve-grid-cells-count);
+
+                flex: 1 $width;
+                max-width: $width;
             }
         }
     }
