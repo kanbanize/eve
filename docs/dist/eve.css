@@ -522,7 +522,8 @@
       .eve-dropdown ul li:hover, .eve-dropdown ul li.is-active {
         background: #eceff1; }
       .eve-dropdown ul li svg,
-      .eve-dropdown ul li .eve-avatar {
+      .eve-dropdown ul li .eve-avatar,
+      .eve-dropdown ul li .eve-priority {
         margin-right: .75rem; }
       .eve-dropdown ul li svg {
         fill: #b0bec5;
@@ -718,6 +719,19 @@
     .eve-navigation li.is-disabled {
       opacity: .5;
       pointer-events: none; }
+
+.eve-priority {
+  width: 1.125rem;
+  height: 1.125rem;
+  display: inline-block; }
+  .eve-priority.is-low {
+    background: #2196f3; }
+  .eve-priority.is-average {
+    background: #4caf50; }
+  .eve-priority.is-high {
+    background: #ff9800; }
+  .eve-priority.is-critical {
+    background: #f44336; }
 
 .eve-radio {
   align-items: center;

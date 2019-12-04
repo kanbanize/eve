@@ -1,0 +1,21 @@
+.eve-priority {
+    width: 1.125rem;
+    height: 1.125rem;
+    display: inline-block;
+
+    &.is-low {
+        background: $eve-color-primary;
+    }
+
+    &.is-average {
+        background: $eve-color-success;
+    }
+
+    &.is-high {
+        background: $eve-color-warning;
+    }
+
+    &.is-critical {
+        background: $eve-color-danger;
+    }
+}
