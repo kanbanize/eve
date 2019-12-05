@@ -1,0 +1,104 @@
+.eve-timeline {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::before {
+        border-top: 1px solid $eve-color-dark-silver;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    li {
+        background: $eve-color-light;
+        border-radius: 50%;
+        box-shadow: 0 0 0 .125rem $eve-color-light;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 1.5rem;
+        margin: 0 1.5rem;
+        position: relative;
+        width: 1.5rem;
+        z-index: 1;
+
+        &::after {
+            bottom: -1.25rem;
+            color: $eve-color-dark;
+            content: attr(data-label);
+            display: none;
+            font-size: .75rem;
+            left: 50%;
+            max-width: 4.25rem;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            text-overflow: ellipsis;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+        &.is-backlog {
+            border: 1px solid $eve-color-dark-silver;
+
+            &.is-active {
+                background: $eve-color-dark-silver;
+            }
+        }
+
+        &.is-requested {
+            border: 1px solid $eve-color-primary;
+
+            &.is-active {
+                background: $eve-color-primary;
+            }
+        }
+
+        &.is-progress {
+            border: 1px solid $eve-color-warning;
+
+            &.is-active {
+                background: $eve-color-warning;
+            }
+        }
+
+        &.is-done {
+            border: 1px solid $eve-color-success;
+
+            &.is-active {
+                background: $eve-color-success;
+            }
+        }
+
+        &.is-archive {
+            border: 1px solid $eve-color-info;
+
+            &.is-active {
+                background: $eve-color-info;
+            }
+        }
+
+        &.is-completed {
+            background-color: $eve-color-bright-silver;
+            background-image: url(svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-darker-silver}"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>'));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1rem;
+            border-color: $eve-color-bright-silver;
+        }
+    }
+
+    &:hover {
+        li {
+            &::after {
+                display: block;
+            }
+        }
+    }
+}

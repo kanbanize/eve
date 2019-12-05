@@ -969,36 +969,75 @@
     resize: none; }
 
 .eve-timeline {
+  align-items: center;
   display: flex;
+  height: 4rem;
+  justify-content: space-evenly;
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
-  justify-content: center;
   position: relative; }
   .eve-timeline::before {
     border-top: 1px solid #cfd8dc;
     content: '';
-    position: absolute;
     left: 0;
+    position: absolute;
     right: 0; }
   .eve-timeline li {
-    background: red;
-    width: 1.5rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.125rem #fff;
+    box-sizing: border-box;
+    cursor: pointer;
     height: 1.5rem;
     margin: 0 1.5rem;
-    border-radius: 50%;
+    position: relative;
+    width: 1.5rem;
     z-index: 1; }
+    .eve-timeline li::after {
+      bottom: -1.25rem;
+      color: #333;
+      content: attr(data-label);
+      display: none;
+      font-size: .75rem;
+      left: 50%;
+      max-width: 4.25rem;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      text-overflow: ellipsis;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      white-space: nowrap; }
     .eve-timeline li.is-backlog {
-      background: grey; }
+      border: 1px solid #cfd8dc; }
+      .eve-timeline li.is-backlog.is-active {
+        background: #cfd8dc; }
     .eve-timeline li.is-requested {
-      background: blue; }
+      border: 1px solid #2196f3; }
+      .eve-timeline li.is-requested.is-active {
+        background: #2196f3; }
     .eve-timeline li.is-progress {
-      background: orange; }
+      border: 1px solid #ff9800; }
+      .eve-timeline li.is-progress.is-active {
+        background: #ff9800; }
     .eve-timeline li.is-done {
-      background: green; }
+      border: 1px solid #4caf50; }
+      .eve-timeline li.is-done.is-active {
+        background: #4caf50; }
     .eve-timeline li.is-archive {
-      background: purple; }
+      border: 1px solid #9c27b0; }
+      .eve-timeline li.is-archive.is-active {
+        background: #9c27b0; }
+    .eve-timeline li.is-completed {
+      background-color: #eceff1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1rem;
+      border-color: #eceff1; }
+  .eve-timeline:hover li::after {
+    display: block; }
 
 .eve-tooltip {
   position: relative; }
