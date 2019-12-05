@@ -721,17 +721,40 @@
       pointer-events: none; }
 
 .eve-priority {
-  width: 1.125rem;
+  display: inline-block;
   height: 1.125rem;
-  display: inline-block; }
+  vertical-align: top;
+  width: 1.125rem; }
   .eve-priority.is-low {
     background: #2196f3; }
+    .eve-priority.is-low.is-figure {
+      background: transparent;
+      border-bottom: 0;
+      border-left: 0.5625rem solid transparent;
+      border-right: 0.5625rem solid transparent;
+      border-top: 1.125rem solid #2196f3;
+      height: 0;
+      width: 0; }
   .eve-priority.is-average {
     background: #4caf50; }
+    .eve-priority.is-average.is-figure {
+      background: transparent;
+      border: 0.125rem solid #4caf50;
+      box-sizing: border-box; }
   .eve-priority.is-high {
     background: #ff9800; }
+    .eve-priority.is-high.is-figure {
+      border-radius: 50%; }
   .eve-priority.is-critical {
     background: #f44336; }
+    .eve-priority.is-critical.is-figure {
+      background: transparent;
+      border-bottom: 1.125rem solid #f44336;
+      border-left: 0.5625rem solid transparent;
+      border-right: 0.5625rem solid transparent;
+      border-top: 0;
+      height: 0;
+      width: 0; }
 
 .eve-radio {
   align-items: center;
@@ -944,6 +967,38 @@
     opacity: .5;
     pointer-events: none;
     resize: none; }
+
+.eve-timeline {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .eve-timeline::before {
+    border-top: 1px solid #cfd8dc;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .eve-timeline li {
+    background: red;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    z-index: 1; }
+    .eve-timeline li.is-backlog {
+      background: grey; }
+    .eve-timeline li.is-requested {
+      background: blue; }
+    .eve-timeline li.is-progress {
+      background: orange; }
+    .eve-timeline li.is-done {
+      background: green; }
+    .eve-timeline li.is-archive {
+      background: purple; }
 
 .eve-tooltip {
   position: relative; }
