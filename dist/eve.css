@@ -611,47 +611,20 @@
     pointer-events: none; }
 
 .eve-loader {
+  align-items: center;
   background: rgba(255, 255, 255, 0.5);
   bottom: 0;
   content: '';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   left: 0;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 2147483648; }
-  .eve-loader.is-line::before {
-    -webkit-animation-duration: .75s;
-            animation-duration: .75s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-name: eveProgressLine;
-            animation-name: eveProgressLine;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    background: #2196f3;
-    bottom: 0;
-    content: '';
-    height: .125rem;
-    position: absolute;
-    top: 0;
-    width: 20%;
-    z-index: 2; }
-
-@-webkit-keyframes eveProgressLine {
-  from {
-    left: -20%; }
-  to {
-    left: 100%; } }
-
-@keyframes eveProgressLine {
-  from {
-    left: -20%; }
-  to {
-    left: 100%; } }
-  .eve-loader.is-circle::before {
+  .eve-loader::before {
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
     -webkit-animation-fill-mode: forwards;
@@ -663,7 +636,7 @@
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     background: transparent;
-    border: .125rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 50%;
     border-right-color: #2196f3;
     border-top-color: #2196f3;
@@ -671,11 +644,16 @@
     content: '';
     display: inline-block;
     height: 3rem;
-    left: calc(50% - 1.5rem);
-    position: absolute;
-    top: calc(50% - 1.5rem);
     width: 3rem;
     z-index: 2; }
+  .eve-loader[data-label]::after {
+    content: attr(data-label);
+    display: block;
+    margin-top: .5rem;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 @-webkit-keyframes eveProgressCircle {
   from {

@@ -1,7 +1,11 @@
 .eve-loader {
+    align-items: center;
     background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
     bottom: 0;
     content: '';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
     overflow: hidden;
     position: absolute;
@@ -9,65 +13,44 @@
     top: 0;
     z-index: 2147483648;
 
-    &.is-line {
-        &::before {
-            animation-duration: .75s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-name: eveProgressLine;
-            animation-timing-function: linear;
-            background: $eve-color-primary;
-            bottom: 0;
-            content: '';
-            height: .125rem;
-            position: absolute;
-            top: 0;
-            width: 20%;
-            z-index: 2;
-        }
+    &::before {
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: eveProgressCircle;
+        animation-timing-function: linear;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        border-right-color: $eve-color-primary;
+        border-top-color: $eve-color-primary;
+        box-sizing: border-box;
+        content: '';
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        z-index: 2;
+    }
 
-        @keyframes eveProgressLine {
-            from {
-                left: -20%;
-            }
-
-            to {
-                left: 100%;
-            }
+    &[data-label] {
+        &::after {
+            content: attr(data-label);
+            display: block;
+            margin-top: .5rem;
+            max-width: 50%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 
-    &.is-circle {
-        &::before {
-            animation-duration: .5s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-name: eveProgressCircle;
-            animation-timing-function: linear;
-            background: transparent;
-            border: .125rem solid transparent;
-            border-radius: 50%;
-            border-right-color: $eve-color-primary;
-            border-top-color: $eve-color-primary;
-            box-sizing: border-box;
-            content: '';
-            display: inline-block;
-            height: 3rem;
-            left: calc(50% - 1.5rem);
-            position: absolute;
-            top: calc(50% - 1.5rem);
-            width: 3rem;
-            z-index: 2;
+    @keyframes eveProgressCircle {
+        from {
+            transform: rotate(0);
         }
 
-        @keyframes eveProgressCircle {
-            from {
-                transform: rotate(0);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
+        to {
+            transform: rotate(360deg);
         }
     }
 }
