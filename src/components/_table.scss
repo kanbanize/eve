@@ -9,6 +9,8 @@
     width: 100%;
 
     thead {
+        background: $eve-color-bright-silver;
+
         tr {
             border-bottom: 1px solid $eve-color-dark-silver;
 
@@ -35,6 +37,16 @@
                 padding: 0 1rem;
                 text-align: left;
                 word-wrap: break-word;
+            }
+        }
+    }
+
+    &.is-stripped {
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: $eve-color-bright-silver;
+                }
             }
         }
     }

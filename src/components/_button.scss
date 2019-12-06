@@ -1,8 +1,12 @@
 $eve-button-size: 2.25rem;
 
+$eve-button-colors: (
+    success: $eve-color-success,
+    danger: $eve-color-danger
+);
+
 .eve-button {
     align-items: center;
-    background: $eve-color-primary;
     border: 0;
     box-sizing: border-box;
     color: $eve-color-light;
@@ -19,7 +23,6 @@ $eve-button-size: 2.25rem;
     outline: none;
     padding: 0 1rem;
     text-decoration: none;
-    text-transform: uppercase;
     user-select: none;
     vertical-align: top;
     white-space: nowrap;
@@ -32,40 +35,64 @@ $eve-button-size: 2.25rem;
         width: $eve-button-size / 2;
     }
 
-    &.is-outlined {
-        background: $eve-color-light;
-        border: 1px solid $eve-color-primary;
-        color: $eve-color-primary;
+    @include button-color($eve-color-primary);
 
-        svg {
-            fill: $eve-color-primary;
+    @each $eve-button-color in map-keys($eve-button-colors) {
+        $button-color: map-get($eve-button-colors, $eve-button-color);
+
+        &.is-#{$eve-button-color} {
+            @include button-color($button-color);
         }
-
-        &:hover {
-            background: lighten($eve-color-primary, 40);
-            border-color: lighten($eve-color-primary, 40);
-        }
-    }
-
-    &.is-inverted {
-        background: $eve-color-light;
-        color: $eve-color-primary;
-
-        svg {
-            fill: $eve-color-primary;
-        }
-
-        &:hover {
-            background: lighten($eve-color-primary, 40);
-        }
-    }
-
-    &:hover {
-        background: lighten($eve-color-primary, 5);
     }
 
     &:disabled {
         opacity: .5;
         pointer-events: none;
+    }
+}
+
+@mixin button-color($color) {
+    @include button-outlined($color);
+    @include button-inverted($color);
+    @include button-hover($color);
+}
+
+@mixin button-outlined($color) {
+    background: $color;
+
+    &.is-outlined {
+        background: $eve-color-light;
+        border: 1px solid $color;
+        color: $color;
+
+        svg {
+            fill: $color;
+        }
+
+        &:hover {
+            background: lighten($color, 40);
+            border-color: lighten($color, 40);
+        }
+    }
+}
+
+@mixin button-inverted($color) {
+    &.is-inverted {
+        background: $eve-color-light;
+        color: $color;
+
+        svg {
+            fill: $color;
+        }
+
+        &:hover {
+            background: lighten($color, 40);
+        }
+    }
+}
+
+@mixin button-hover($color) {
+    &:hover {
+        background: lighten($color, 5);
     }
 }
