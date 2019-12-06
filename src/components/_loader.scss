@@ -34,8 +34,11 @@
 
     &[data-label] {
         &::after {
+            color: $eve-color-dark;
             content: attr(data-label);
             display: block;
+            font-size: .875rem;
+            line-height: 1.25rem;
             margin-top: .5rem;
             max-width: 50%;
             overflow: hidden;

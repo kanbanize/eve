@@ -647,8 +647,11 @@
     width: 3rem;
     z-index: 2; }
   .eve-loader[data-label]::after {
+    color: #333;
     content: attr(data-label);
     display: block;
+    font-size: .875rem;
+    line-height: 1.25rem;
     margin-top: .5rem;
     max-width: 50%;
     overflow: hidden;
