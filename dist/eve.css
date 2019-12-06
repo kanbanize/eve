@@ -953,7 +953,7 @@
   align-items: center;
   display: flex;
   height: 4rem;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -970,6 +970,7 @@
     box-shadow: 0 0 0 0.125rem #fff;
     box-sizing: border-box;
     cursor: pointer;
+    flex-shrink: 0;
     height: 1.5rem;
     margin: 0 1.5rem;
     position: relative;
