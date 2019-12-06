@@ -1,0 +1,27 @@
+.eve-key {
+    align-items: center;
+    background: $eve-color-bright-silver;
+    border: 1px solid $eve-color-dark-silver;
+    border-bottom-width: .125rem;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    color: $eve-color-dark;
+    display: inline-flex;
+    font-size: .875rem;
+    height: 2rem;
+    justify-content: center;
+    line-height: 2rem;
+    min-width: 2rem;
+    padding: 0 .5rem;
+    text-align: center;
+}
+
+.eve-keys {
+    align-items: center;
+    display: flex;
+    margin: -.5rem;
+
+    .eve-key {
+        margin: .5rem;
+    }
+}

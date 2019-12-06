@@ -613,6 +613,30 @@
     opacity: .5;
     pointer-events: none; }
 
+.eve-key {
+  align-items: center;
+  background: #eceff1;
+  border: 1px solid #cfd8dc;
+  border-bottom-width: .125rem;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #333;
+  display: inline-flex;
+  font-size: .875rem;
+  height: 2rem;
+  justify-content: center;
+  line-height: 2rem;
+  min-width: 2rem;
+  padding: 0 .5rem;
+  text-align: center; }
+
+.eve-keys {
+  align-items: center;
+  display: flex;
+  margin: -.5rem; }
+  .eve-keys .eve-key {
+    margin: .5rem; }
+
 .eve-loader {
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
