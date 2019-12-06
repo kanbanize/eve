@@ -39,5 +39,6 @@ $eve-avatar-color: $eve-color-light !default;
 
     &.is-disabled {
         opacity: .5;
+        pointer-events: none;
     }
 }
