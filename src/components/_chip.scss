@@ -40,6 +40,11 @@ $eve-chip-size: 2rem;
             width: 100%;
         }
     }
+
+    &.is-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
 }
 
 .eve-chips {

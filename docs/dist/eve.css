@@ -416,6 +416,9 @@
       fill: #fff;
       height: 100%;
       width: 100%; }
+  .eve-chip.is-disabled {
+    opacity: .5;
+    pointer-events: none; }
 
 .eve-chips {
   display: flex;
