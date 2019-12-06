@@ -1,11 +1,12 @@
 $eve-button-size: 2.25rem;
-
 $eve-button-colors: (
     success: $eve-color-success,
     danger: $eve-color-danger
 );
 
 .eve-button {
+    @include button-color($eve-color-primary);
+
     align-items: center;
     border: 0;
     box-sizing: border-box;
@@ -27,22 +28,18 @@ $eve-button-colors: (
     vertical-align: top;
     white-space: nowrap;
 
+    @each $eve-button-color in map-keys($eve-button-colors) {
+        &.is-#{$eve-button-color} {
+            @include button-color(map-get($eve-button-colors, $eve-button-color));
+        }
+    }
+
     svg {
         fill: $eve-color-light;
         height: $eve-button-size / 2;
         margin-left: -.25rem;
         margin-right: .5rem;
         width: $eve-button-size / 2;
-    }
-
-    @include button-color($eve-color-primary);
-
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        $button-color: map-get($eve-button-colors, $eve-button-color);
-
-        &.is-#{$eve-button-color} {
-            @include button-color($button-color);
-        }
     }
 
     &:disabled {
@@ -55,11 +52,11 @@ $eve-button-colors: (
     @include button-outlined($color);
     @include button-inverted($color);
     @include button-hover($color);
+
+    background: $color;
 }
 
 @mixin button-outlined($color) {
-    background: $color;
-
     &.is-outlined {
         background: $eve-color-light;
         border: 1px solid $color;
