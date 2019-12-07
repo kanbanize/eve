@@ -6,3 +6,5 @@ docs
 gulpfile.js
 .github
 postcss.config.js
+builder.json
+CODE_OF_CONDUCT.md
