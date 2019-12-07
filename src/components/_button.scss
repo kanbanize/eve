@@ -4,50 +4,6 @@ $eve-button-colors: (
     danger: $eve-color-danger
 );
 
-.eve-button {
-    @include button-color($eve-color-primary);
-
-    align-items: center;
-    border: 0;
-    box-sizing: border-box;
-    color: $eve-color-light;
-    cursor: pointer;
-    display: inline-flex;
-    flex-shrink: 0;
-    font-family: inherit;
-    font-size: .875rem;
-    font-weight: normal;
-    height: $eve-button-size;
-    justify-content: center;
-    line-height: normal;
-    min-width: 4rem;
-    outline: none;
-    padding: 0 1rem;
-    text-decoration: none;
-    user-select: none;
-    vertical-align: top;
-    white-space: nowrap;
-
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        &.is-#{$eve-button-color} {
-            @include button-color(map-get($eve-button-colors, $eve-button-color));
-        }
-    }
-
-    svg {
-        fill: $eve-color-light;
-        height: $eve-button-size / 2;
-        margin-left: -.25rem;
-        margin-right: .5rem;
-        width: $eve-button-size / 2;
-    }
-
-    &:disabled {
-        opacity: .5;
-        pointer-events: none;
-    }
-}
-
 @mixin button-color($color) {
     @include button-outlined($color);
     @include button-inverted($color);
@@ -91,5 +47,49 @@ $eve-button-colors: (
 @mixin button-hover($color) {
     &:hover {
         background: lighten($color, 5);
+    }
+}
+
+.eve-button {
+    @include button-color($eve-color-primary);
+
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    color: $eve-color-light;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-family: inherit;
+    font-size: .875rem;
+    font-weight: normal;
+    height: $eve-button-size;
+    justify-content: center;
+    line-height: normal;
+    min-width: 4rem;
+    outline: none;
+    padding: 0 1rem;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+
+    @each $eve-button-color in map-keys($eve-button-colors) {
+        &.is-#{$eve-button-color} {
+            @include button-color(map-get($eve-button-colors, $eve-button-color));
+        }
+    }
+
+    svg {
+        fill: $eve-color-light;
+        height: $eve-button-size / 2;
+        margin-left: -.25rem;
+        margin-right: .5rem;
+        width: $eve-button-size / 2;
+    }
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
     }
 }

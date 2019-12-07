@@ -272,11 +272,12 @@
     vertical-align: top;
     width: inherit; }
   .eve-avatar.is-disabled {
-    opacity: .5; }
+    opacity: .5;
+    pointer-events: none; }
 
 .eve-button {
-  align-items: center;
   background: #2196f3;
+  align-items: center;
   border: 0;
   box-sizing: border-box;
   color: #fff;
@@ -299,12 +300,6 @@
           user-select: none;
   vertical-align: top;
   white-space: nowrap; }
-  .eve-button svg {
-    fill: #fff;
-    height: 1.125rem;
-    margin-left: -.25rem;
-    margin-right: .5rem;
-    width: 1.125rem; }
   .eve-button.is-outlined {
     background: #fff;
     border: 1px solid #2196f3;
@@ -325,12 +320,6 @@
     background: #39a1f4; }
   .eve-button.is-success {
     background: #4caf50; }
-    .eve-button.is-success svg {
-      fill: #fff;
-      height: 1.125rem;
-      margin-left: -.25rem;
-      margin-right: .5rem;
-      width: 1.125rem; }
     .eve-button.is-success.is-outlined {
       background: #fff;
       border: 1px solid #4caf50;
@@ -351,12 +340,6 @@
       background: #5cb860; }
   .eve-button.is-danger {
     background: #f44336; }
-    .eve-button.is-danger svg {
-      fill: #fff;
-      height: 1.125rem;
-      margin-left: -.25rem;
-      margin-right: .5rem;
-      width: 1.125rem; }
     .eve-button.is-danger.is-outlined {
       background: #fff;
       border: 1px solid #f44336;
@@ -375,6 +358,12 @@
         background: #fff8f7; }
     .eve-button.is-danger:hover {
       background: #f55a4e; }
+  .eve-button svg {
+    fill: #fff;
+    height: 1.125rem;
+    margin-left: -.25rem;
+    margin-right: .5rem;
+    width: 1.125rem; }
   .eve-button:disabled {
     opacity: .5;
     pointer-events: none; }
