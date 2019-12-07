@@ -756,7 +756,6 @@
     overflow: hidden;
     padding: 0 1rem;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .eve-navigation li:hover {
       color: #2196f3; }
@@ -971,7 +970,6 @@
     padding: 0 1rem;
     text-align: center;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap; }
     .eve-tabs li:hover {
       color: #2196f3; }
