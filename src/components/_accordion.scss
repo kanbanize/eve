@@ -1,6 +1,4 @@
 $eve-accordion-header-height: 2rem !default;
-$eve-accordion-header-arrow-up-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-blue}"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
-$eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-blue}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-accordion {
     border-left: 1px solid $eve-color-blue;
@@ -12,10 +10,6 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
         display: none;
 
         &:checked {
-            ~ .eve-accordion-header {
-                background-image: url(svg-encode($eve-accordion-header-arrow-up-icon));
-            }
-
             ~ .eve-accordion-content {
                 display: block;
             }
@@ -23,27 +17,47 @@ $eve-accordion-header-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" 
     }
 
     .eve-accordion-header {
-        align-items: center;
         background-color: $eve-color-bright-silver;
-        background-image: url(svg-encode($eve-accordion-header-arrow-down-icon));
-        background-position: right ($eve-accordion-header-height / 3) center;
-        background-repeat: no-repeat;
-        background-size: ($eve-accordion-header-height / 2) ($eve-accordion-header-height / 2);
         color: $eve-color-blue;
         cursor: pointer;
-        display: flex;
+        display: block;
         height: $eve-accordion-header-height;
         line-height: $eve-accordion-header-height;
         overflow: hidden;
-        padding: 0 (($eve-accordion-header-height / 3) + ($eve-accordion-header-height / 2) + .5rem) 0 1rem;
+        padding: 0 1rem;
+        position: relative;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+        .eve-accordion-header-icon {
+            align-items: center;
+            background: $eve-color-blue;
+            display: flex;
+            height: $eve-accordion-header-height;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: $eve-accordion-header-height;
+
+            svg {
+                fill: $eve-color-white;
+                height: 1.125rem;
+                width: 1.125rem;
+            }
+        }
     }
 
     .eve-accordion-content {
         color: $eve-color-black;
         display: none;
         padding: .5rem 1rem;
+    }
+
+    &.has-icon {
+        .eve-accordion-header {
+            padding-right: 3rem;
+        }
     }
 }
 
