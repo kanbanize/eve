@@ -23,8 +23,8 @@ $eve-radio-size: 1.125rem;
             width: 100%;
 
             &:checked ~ i {
-                background: $eve-color-success;
-                border-color: $eve-color-success;
+                background: $eve-color-green;
+                border-color: $eve-color-green;
 
                 &::after {
                     display: block;
@@ -52,8 +52,8 @@ $eve-radio-size: 1.125rem;
     }
 
     i {
-        background: $eve-color-light;
-        border: .125rem solid $eve-color-darker-silver;
+        background: $eve-color-white;
+        border: .125rem solid $eve-color-blacker-silver;
         border-radius: 50%;
         box-sizing: border-box;
         height: 100%;
@@ -61,7 +61,7 @@ $eve-radio-size: 1.125rem;
         width: 100%;
 
         &::after {
-            border: .1875rem solid $eve-color-light;
+            border: .1875rem solid $eve-color-white;
             border-radius: inherit;
             box-sizing: inherit;
             content: '';

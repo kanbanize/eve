@@ -1,9 +1,9 @@
 .eve-textarea {
     appearance: none;
-    background: $eve-color-light;
-    border: 1px solid $eve-color-dark-silver;
+    background: $eve-color-white;
+    border: 1px solid $eve-color-black-silver;
     box-sizing: border-box;
-    color: $eve-color-dark;
+    color: $eve-color-black;
     font-family: inherit;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -15,7 +15,7 @@
     width: 100%;
 
     &::placeholder {
-        color: $eve-color-darker-silver;
+        color: $eve-color-blacker-silver;
         font-family: inherit;
         font-size: inherit;
     }

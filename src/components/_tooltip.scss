@@ -4,9 +4,9 @@ $eve-tooltip-size: 1.5rem !default;
     position: relative;
 
     &::after {
-        background: $eve-color-dark;
+        background: $eve-color-black;
         border-radius: $eve-tooltip-size / 2;
-        color: $eve-color-light;
+        color: $eve-color-white;
         content: attr(data-tooltip);
         font-family: inherit;
         font-size: $eve-tooltip-size / 2;

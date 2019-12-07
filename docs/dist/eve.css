@@ -236,7 +236,7 @@
     text-overflow: ellipsis;
     white-space: nowrap; }
   .eve-accordion .eve-accordion-content {
-    color: #333;
+    color: #000;
     display: none;
     padding: .5rem 1rem; }
 
@@ -426,7 +426,7 @@
   align-items: center;
   background: #eceff1;
   border-radius: 1rem;
-  color: #333;
+  color: #000;
   display: inline-flex;
   font-size: .875rem;
   height: 2rem;
@@ -475,7 +475,7 @@
   .eve-color-picker > input {
     display: none; }
     .eve-color-picker > input:checked ~ .eve-color-picker-control label {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); }
     .eve-color-picker > input:checked ~ .eve-color-picker-palette ul {
       display: flex; }
   .eve-color-picker .eve-color-picker-control {
@@ -484,7 +484,7 @@
     padding: .5rem; }
     .eve-color-picker .eve-color-picker-control label {
       align-items: center;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 1.125rem 1.125rem;
@@ -557,7 +557,7 @@
     padding: .5rem 0; }
     .eve-dropdown ul li {
       align-items: center;
-      color: #333;
+      color: #000;
       cursor: pointer;
       display: flex;
       height: 2.25rem;
@@ -585,7 +585,7 @@
 
 .eve-feedback {
   box-sizing: border-box;
-  color: #333;
+  color: #000;
   font-size: .875rem;
   line-height: 1.25rem;
   padding: .5rem 1rem; }
@@ -635,7 +635,7 @@
   background: #fff;
   border: 1px solid #cfd8dc;
   box-sizing: border-box;
-  color: #333;
+  color: #000;
   font-family: inherit;
   font-size: .875rem;
   height: 2.25rem;
@@ -668,7 +668,7 @@
   border-bottom-width: .125rem;
   border-radius: .25rem;
   box-sizing: border-box;
-  color: #333;
+  color: #000;
   display: inline-flex;
   font-size: .875rem;
   height: 2rem;
@@ -722,7 +722,7 @@
     width: 3rem;
     z-index: 2; }
   .eve-loader[data-label]::after {
-    color: #333;
+    color: #000;
     content: attr(data-label);
     display: block;
     font-size: .875rem;
@@ -757,7 +757,7 @@
   margin: 0;
   padding: 0; }
   .eve-navigation li {
-    color: #333;
+    color: #000;
     cursor: pointer;
     height: 2.25rem;
     line-height: 2.25rem;
@@ -863,13 +863,13 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
   background-position: right 0.75rem center;
   background-repeat: no-repeat;
   background-size: 1.125rem 1.125rem;
   border: 1px solid #cfd8dc;
   border-radius: 0;
-  color: #333;
+  color: #000;
   cursor: pointer;
   display: block;
   font-family: inherit;
@@ -935,7 +935,7 @@
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   border-spacing: 0;
-  color: #333;
+  color: #000;
   font-size: .875rem;
   line-height: 1.25rem;
   table-layout: fixed;
@@ -969,7 +969,7 @@
   padding: 0; }
   .eve-tabs li {
     box-sizing: border-box;
-    color: #333;
+    color: #000;
     cursor: pointer;
     flex: 1;
     height: 3rem;
@@ -995,7 +995,7 @@
   background: #fff;
   border: 1px solid #cfd8dc;
   box-sizing: border-box;
-  color: #333;
+  color: #000;
   font-family: inherit;
   font-size: .875rem;
   line-height: 1.25rem;
@@ -1055,7 +1055,7 @@
     z-index: 1; }
     .eve-timeline li::after {
       bottom: -1.25rem;
-      color: #333;
+      color: #000;
       content: attr(data-label);
       display: none;
       font-size: .75rem;
@@ -1101,7 +1101,7 @@
 .eve-tooltip {
   position: relative; }
   .eve-tooltip::after {
-    background: #333;
+    background: #000;
     border-radius: 0.75rem;
     color: #fff;
     content: attr(data-tooltip);

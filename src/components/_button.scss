@@ -1,7 +1,7 @@
 $eve-button-size: 2.25rem;
 $eve-button-colors: (
-    success: $eve-color-success,
-    danger: $eve-color-danger
+    success: $eve-color-green,
+    danger: $eve-color-red
 );
 
 @mixin button-color($color) {
@@ -14,7 +14,7 @@ $eve-button-colors: (
 
 @mixin button-outlined($color) {
     &.is-outlined {
-        background: $eve-color-light;
+        background: $eve-color-white;
         border: 1px solid $color;
         color: $color;
 
@@ -31,7 +31,7 @@ $eve-button-colors: (
 
 @mixin button-inverted($color) {
     &.is-inverted {
-        background: $eve-color-light;
+        background: $eve-color-white;
         color: $color;
 
         svg {
@@ -51,12 +51,12 @@ $eve-button-colors: (
 }
 
 .eve-button {
-    @include button-color($eve-color-primary);
+    @include button-color($eve-color-blue);
 
     align-items: center;
     border: 0;
     box-sizing: border-box;
-    color: $eve-color-light;
+    color: $eve-color-white;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
@@ -81,7 +81,7 @@ $eve-button-colors: (
     }
 
     svg {
-        fill: $eve-color-light;
+        fill: $eve-color-white;
         height: $eve-button-size / 2;
         margin-left: -.25rem;
         margin-right: .5rem;

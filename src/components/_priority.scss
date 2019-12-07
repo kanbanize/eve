@@ -7,31 +7,31 @@ $eve-priority-size: 1.125rem !default;
     width: $eve-priority-size;
 
     &.is-low {
-        background: $eve-color-primary;
+        background: $eve-color-blue;
 
         &.is-figure {
             background: transparent;
             border-bottom: 0;
             border-left: $eve-priority-size / 2 solid transparent;
             border-right: $eve-priority-size / 2 solid transparent;
-            border-top: $eve-priority-size solid $eve-color-primary;
+            border-top: $eve-priority-size solid $eve-color-blue;
             height: 0;
             width: 0;
         }
     }
 
     &.is-average {
-        background: $eve-color-success;
+        background: $eve-color-green;
 
         &.is-figure {
             background: transparent;
-            border: .125rem solid $eve-color-success;
+            border: .125rem solid $eve-color-green;
             box-sizing: border-box;
         }
     }
 
     &.is-high {
-        background: $eve-color-warning;
+        background: $eve-color-orange;
 
         &.is-figure {
             border-radius: 50%;
@@ -39,11 +39,11 @@ $eve-priority-size: 1.125rem !default;
     }
 
     &.is-critical {
-        background: $eve-color-danger;
+        background: $eve-color-red;
 
         &.is-figure {
             background: transparent;
-            border-bottom: $eve-priority-size solid $eve-color-danger;
+            border-bottom: $eve-priority-size solid $eve-color-red;
             border-left: $eve-priority-size / 2 solid transparent;
             border-right: $eve-priority-size / 2 solid transparent;
             border-top: 0;

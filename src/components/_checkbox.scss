@@ -24,8 +24,8 @@ $eve-checkbox-mark-border-width: .125rem;
             width: 100%;
 
             &:checked ~ i {
-                background: $eve-color-success;
-                border-color: $eve-color-success;
+                background: $eve-color-green;
+                border-color: $eve-color-green;
 
                 &::after {
                     display: block;
@@ -53,8 +53,8 @@ $eve-checkbox-mark-border-width: .125rem;
     }
 
     i {
-        background: $eve-color-light;
-        border: .125rem solid $eve-color-darker-silver;
+        background: $eve-color-white;
+        border: .125rem solid $eve-color-blacker-silver;
         box-sizing: border-box;
         height: 100%;
         pointer-events: none;
@@ -62,8 +62,8 @@ $eve-checkbox-mark-border-width: .125rem;
         width: 100%;
 
         &::after {
-            border-bottom: $eve-checkbox-mark-border-width solid $eve-color-light;
-            border-right: $eve-checkbox-mark-border-width solid $eve-color-light;
+            border-bottom: $eve-checkbox-mark-border-width solid $eve-color-white;
+            border-right: $eve-checkbox-mark-border-width solid $eve-color-white;
             box-sizing: content-box;
             content: '';
             display: none;

@@ -1,21 +1,19 @@
 $eve-feedback-colors: (
-    success: $eve-color-success,
-    warning: $eve-color-warning,
-    danger: $eve-color-danger,
+    success: $eve-color-green,
+    warning: $eve-color-orange,
+    danger: $eve-color-red,
 );
 
 .eve-feedback {
     box-sizing: border-box;
-    color: $eve-color-dark;
+    color: $eve-color-black;
     font-size: .875rem;
     line-height: 1.25rem;
     padding: .5rem 1rem;
 
     @each $eve-feedback-color in map-keys($eve-feedback-colors) {
-        $color: map-get($eve-feedback-colors, $eve-feedback-color);
-
         &.is-#{$eve-feedback-color} {
-            background: lighten($color, 30);
+            background: lighten(map-get($eve-feedback-colors, $eve-feedback-color), 30);
         }
     }
 }

@@ -6,7 +6,7 @@
     position: relative;
 
     &::before {
-        border-top: 1px solid $eve-color-dark-silver;
+        border-top: 1px solid $eve-color-black-silver;
         content: '';
         left: 0;
         position: absolute;
@@ -14,8 +14,8 @@
     }
 
     &::after {
-        background: $eve-color-light;
-        color: $eve-color-primary;
+        background: $eve-color-white;
+        color: $eve-color-blue;
         content: attr(data-content);
         font-size: .875rem;
         line-height: 1.25rem;

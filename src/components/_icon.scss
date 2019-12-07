@@ -1,7 +1,7 @@
 $eve-icon-size: 2.25rem;
 $eve-icon-colors: (
-    success: $eve-color-success,
-    danger: $eve-color-danger
+    success: $eve-color-green,
+    danger: $eve-color-red
 );
 
 @mixin icon-color($color) {
@@ -15,10 +15,10 @@ $eve-icon-colors: (
 }
 
 .eve-icon {
-    @include icon-color($eve-color-primary);
+    @include icon-color($eve-color-blue);
 
     align-items: center;
-    background: $eve-color-light;
+    background: $eve-color-white;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -39,7 +39,7 @@ $eve-icon-colors: (
     }
 
     svg {
-        fill: $eve-color-darker-silver;
+        fill: $eve-color-blacker-silver;
         height: 1.125rem;
         width: 1.125rem;
     }

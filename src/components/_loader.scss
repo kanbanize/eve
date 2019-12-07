@@ -22,8 +22,8 @@
         background: transparent;
         border: 1px solid transparent;
         border-radius: 50%;
-        border-right-color: $eve-color-primary;
-        border-top-color: $eve-color-primary;
+        border-right-color: $eve-color-blue;
+        border-top-color: $eve-color-blue;
         box-sizing: border-box;
         content: '';
         display: inline-block;
@@ -34,7 +34,7 @@
 
     &[data-label] {
         &::after {
-            color: $eve-color-dark;
+            color: $eve-color-black;
             content: attr(data-label);
             display: block;
             font-size: .875rem;

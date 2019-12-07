@@ -8,7 +8,7 @@ $eve-tab-size: 3rem;
 
     li {
         box-sizing: border-box;
-        color: $eve-color-dark;
+        color: $eve-color-black;
         cursor: pointer;
         flex: 1;
         height: $eve-tab-size;
@@ -20,12 +20,12 @@ $eve-tab-size: 3rem;
         white-space: nowrap;
 
         &:hover {
-            color: $eve-color-primary;
+            color: $eve-color-blue;
         }
 
         &.is-active {
-            border-bottom: 1px solid $eve-color-primary;
-            color: $eve-color-primary;
+            border-bottom: 1px solid $eve-color-blue;
+            color: $eve-color-blue;
         }
 
         &.is-disabled {

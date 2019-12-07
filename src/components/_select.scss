@@ -1,5 +1,5 @@
 $eve-select-size: 2.25rem;
-$eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-dark}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
+$eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#{$eve-color-black}"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>';
 
 .eve-select {
     appearance: none;
@@ -7,9 +7,9 @@ $eve-select-arrow-down-icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0
     background-position: right ($eve-select-size / 3) center;
     background-repeat: no-repeat;
     background-size: ($eve-select-size / 2) ($eve-select-size / 2);
-    border: 1px solid $eve-color-dark-silver;
+    border: 1px solid $eve-color-black-silver;
     border-radius: 0;
-    color: $eve-color-dark;
+    color: $eve-color-black;
     cursor: pointer;
     display: block;
     font-family: inherit;

@@ -24,7 +24,7 @@ $eve-switch-height: 1.125rem;
             width: 100%;
 
             &:checked ~ i {
-                background: $eve-color-success;
+                background: $eve-color-green;
                 justify-content: flex-end;
             }
 
@@ -40,7 +40,7 @@ $eve-switch-height: 1.125rem;
 
     i {
         align-items: center;
-        background: $eve-color-darker-silver;
+        background: $eve-color-blacker-silver;
         border-radius: $eve-switch-height / 2;
         box-sizing: border-box;
         display: flex;
@@ -51,7 +51,7 @@ $eve-switch-height: 1.125rem;
         width: 100%;
 
         &::after {
-            background: $eve-color-light;
+            background: $eve-color-white;
             border-radius: 50%;
             content: '';
             height: 100%;

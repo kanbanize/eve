@@ -4,7 +4,7 @@ $eve-chip-size: 2rem;
     align-items: center;
     background: $eve-color-bright-silver;
     border-radius: $eve-chip-size / 2;
-    color: $eve-color-dark;
+    color: $eve-color-black;
     display: inline-flex;
     font-size: .875rem;
     height: $eve-chip-size;
@@ -23,7 +23,7 @@ $eve-chip-size: 2rem;
 
     .eve-chip-action {
         align-items: center;
-        background: $eve-color-darker-silver;
+        background: $eve-color-blacker-silver;
         border-radius: 50%;
         box-sizing: border-box;
         cursor: pointer;
@@ -35,7 +35,7 @@ $eve-chip-size: 2rem;
         width: 1.125rem;
 
         svg {
-            fill: $eve-color-light;
+            fill: $eve-color-white;
             height: 100%;
             width: 100%;
         }
