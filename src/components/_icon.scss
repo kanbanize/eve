@@ -1,6 +1,22 @@
 $eve-icon-size: 2.25rem;
+$eve-icon-colors: (
+    success: $eve-color-success,
+    danger: $eve-color-danger
+);
+
+@mixin icon-color($color) {
+    &:hover {
+        background: lighten($color, 40);
+
+        svg {
+            fill: $color;
+        }
+    }
+}
 
 .eve-icon {
+    @include icon-color($eve-color-primary);
+
     align-items: center;
     background: $eve-color-light;
     border: 0;
@@ -16,17 +32,15 @@ $eve-icon-size: 2.25rem;
     vertical-align: top;
     width: $eve-icon-size;
 
+    @each $eve-icon-color in map-keys($eve-icon-colors) {
+        &.is-#{$eve-icon-color} {
+            @include icon-color(map-get($eve-icon-colors, $eve-icon-color));
+        }
+    }
+
     svg {
         fill: $eve-color-darker-silver;
         height: 1.125rem;
         width: 1.125rem;
-    }
-
-    &:hover {
-        background: lighten($eve-color-primary, 40);
-
-        svg {
-            fill: $eve-color-primary;
-        }
     }
 }

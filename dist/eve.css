@@ -611,14 +611,22 @@
   padding: 0;
   vertical-align: top;
   width: 2.25rem; }
-  .eve-icon svg {
-    fill: #b0bec5;
-    height: 1.125rem;
-    width: 1.125rem; }
   .eve-icon:hover {
     background: #e3f2fd; }
     .eve-icon:hover svg {
       fill: #2196f3; }
+  .eve-icon.is-success:hover {
+    background: #d9eeda; }
+    .eve-icon.is-success:hover svg {
+      fill: #4caf50; }
+  .eve-icon.is-danger:hover {
+    background: #fff8f7; }
+    .eve-icon.is-danger:hover svg {
+      fill: #f44336; }
+  .eve-icon svg {
+    fill: #b0bec5;
+    height: 1.125rem;
+    width: 1.125rem; }
 
 .eve-input {
   -webkit-appearance: none;
