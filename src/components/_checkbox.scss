@@ -1,5 +1,4 @@
 $eve-checkbox-size: 1.125rem;
-$eve-checkbox-mark-border-width: .125rem;
 
 .eve-checkbox {
     align-items: center;
@@ -62,15 +61,15 @@ $eve-checkbox-mark-border-width: .125rem;
         width: 100%;
 
         &::after {
-            border-bottom: $eve-checkbox-mark-border-width solid $eve-color-white;
-            border-right: $eve-checkbox-mark-border-width solid $eve-color-white;
+            border-bottom: .125 solid $eve-color-white;
+            border-right: .125 solid $eve-color-white;
             box-sizing: content-box;
             content: '';
             display: none;
             height: calc(100% - #{$eve-checkbox-size / 4});
             left: 50%;
             position: absolute;
-            top: calc(50% - #{$eve-checkbox-mark-border-width});
+            top: calc(50% - .125);
             transform: translate(-50%, -50%) rotate(45deg);
             width: calc(100% - #{$eve-checkbox-size / 2});
         }

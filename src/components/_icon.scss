@@ -1,8 +1,4 @@
 $eve-icon-size: 2.25rem;
-$eve-icon-colors: (
-    success: $eve-color-green,
-    danger: $eve-color-red
-);
 
 @mixin icon-color($color) {
     &:hover {
@@ -32,10 +28,12 @@ $eve-icon-colors: (
     vertical-align: top;
     width: $eve-icon-size;
 
-    @each $eve-icon-color in map-keys($eve-icon-colors) {
-        &.is-#{$eve-icon-color} {
-            @include icon-color(map-get($eve-icon-colors, $eve-icon-color));
-        }
+    &.is-success {
+        @include icon-color($eve-color-blue);
+    }
+
+    &.is-danger {
+        @include icon-color($eve-color-red);
     }
 
     svg {

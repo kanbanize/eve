@@ -1,3 +1,5 @@
+$eve-key-size: 2rem;
+
 .eve-key {
     align-items: center;
     background: $eve-color-bright-silver;
@@ -8,10 +10,10 @@
     color: $eve-color-black;
     display: inline-flex;
     font-size: .875rem;
-    height: 2rem;
+    height: $eve-key-size;
     justify-content: center;
-    line-height: 2rem;
-    min-width: 2rem;
+    line-height: $eve-key-size;
+    min-width: $eve-key-size;
     padding: 0 .5rem;
     text-align: center;
 }

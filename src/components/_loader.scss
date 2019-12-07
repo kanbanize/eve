@@ -1,3 +1,5 @@
+$eve-loader-size: 3rem;
+
 .eve-loader {
     align-items: center;
     background: rgba(255, 255, 255, .5); // sass-lint:disable-line no-color-literals
@@ -27,8 +29,8 @@
         box-sizing: border-box;
         content: '';
         display: inline-block;
-        height: 3rem;
-        width: 3rem;
+        height: $eve-loader-size;
+        width: $eve-loader-size;
         z-index: 2;
     }
 

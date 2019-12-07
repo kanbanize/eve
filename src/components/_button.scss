@@ -1,8 +1,4 @@
 $eve-button-size: 2.25rem;
-$eve-button-colors: (
-    success: $eve-color-green,
-    danger: $eve-color-red
-);
 
 @mixin button-color($color) {
     @include button-outlined($color);
@@ -74,10 +70,12 @@ $eve-button-colors: (
     vertical-align: top;
     white-space: nowrap;
 
-    @each $eve-button-color in map-keys($eve-button-colors) {
-        &.is-#{$eve-button-color} {
-            @include button-color(map-get($eve-button-colors, $eve-button-color));
-        }
+    &.is-success {
+        @include button-color($eve-color-green);
+    }
+
+    &.is-danger {
+        @include button-color($eve-color-red);
     }
 
     svg {

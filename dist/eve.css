@@ -419,15 +419,15 @@
     position: relative;
     width: 100%; }
     .eve-checkbox i::after {
-      border-bottom: 0.125rem solid #fff;
-      border-right: 0.125rem solid #fff;
+      border-bottom: 0.125 solid #fff;
+      border-right: 0.125 solid #fff;
       box-sizing: content-box;
       content: '';
       display: none;
       height: calc(100% - 0.28125rem);
       left: 50%;
       position: absolute;
-      top: calc(50% - 0.125rem);
+      top: calc(50% - .125);
       -webkit-transform: translate(-50%, -50%) rotate(45deg);
               transform: translate(-50%, -50%) rotate(45deg);
       width: calc(100% - 0.5625rem); }
@@ -626,9 +626,9 @@
     .eve-icon:hover svg {
       fill: #2196f3; }
   .eve-icon.is-success:hover {
-    background: #d9eeda; }
+    background: #e3f2fd; }
     .eve-icon.is-success:hover svg {
-      fill: #4caf50; }
+      fill: #2196f3; }
   .eve-icon.is-danger:hover {
     background: #fff8f7; }
     .eve-icon.is-danger:hover svg {
