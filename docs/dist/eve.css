@@ -292,6 +292,26 @@
   .eve-avatars .eve-avatar {
     margin: .25rem; }
 
+.eve-breadcrumb {
+  display: flex;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .eve-breadcrumb li {
+    cursor: pointer;
+    display: flex; }
+    .eve-breadcrumb li:not(:last-child)::after {
+      color: #000;
+      content: '/';
+      padding: 0 1rem; }
+    .eve-breadcrumb li:hover, .eve-breadcrumb li.is-active {
+      color: #2196f3; }
+    .eve-breadcrumb li.is-disabled {
+      opacity: .5;
+      pointer-events: none; }
+
 .eve-button {
   background: #2196f3;
   align-items: center;

@@ -1,0 +1,31 @@
+.eve-breadcrumb {
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        cursor: pointer;
+        display: flex;
+
+        &:not(:last-child) {
+            &::after {
+                color: $eve-color-black;
+                content: '/';
+                padding: 0 1rem;
+            }
+        }
+
+        &:hover,
+        &.is-active {
+            color: $eve-color-blue;
+        }
+
+        &.is-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+    }
+}
