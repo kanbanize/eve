@@ -1,51 +1,38 @@
 $eve-checkbox-size: 1.125rem;
 
 .eve-checkbox {
-    align-items: center;
-    display: inline-flex;
-    flex-shrink: 0;
-    height: $eve-checkbox-size;
-    justify-content: center;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
     position: relative;
-    vertical-align: top;
-    width: $eve-checkbox-size;
 
     input {
         &[type='checkbox'] {
             cursor: pointer;
-            height: 100%;
+            height: $eve-checkbox-size;
             left: 0;
             margin: 0;
             opacity: 0;
             padding: 0;
             position: absolute;
-            top: 0;
-            width: 100%;
+            width: $eve-checkbox-size;
 
             &:checked ~ i {
                 background: $eve-color-green;
                 border-color: $eve-color-green;
 
                 &::after {
+                    border-bottom: .125rem solid $eve-color-white;
+                    border-right: .125rem solid $eve-color-white;
+                    box-sizing: content-box;
+                    content: '';
                     display: block;
-                }
-            }
-
-            &:disabled {
-                pointer-events: none;
-
-                ~ i {
-                    opacity: .5;
-                }
-
-                &:checked {
-                    ~ i {
-                        opacity: .5;
-
-                        &::after {
-                            display: block;
-                        }
-                    }
+                    height: calc(100% - #{$eve-checkbox-size / 4});
+                    left: 50%;
+                    position: absolute;
+                    top: calc(50% - .125rem);
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: calc(100% - #{$eve-checkbox-size / 2});
                 }
             }
         }
@@ -55,23 +42,25 @@ $eve-checkbox-size: 1.125rem;
         background: $eve-color-white;
         border: .125rem solid $eve-color-blacker-silver;
         box-sizing: border-box;
-        height: 100%;
+        height: $eve-checkbox-size;
+        margin-right: .5rem;
         pointer-events: none;
         position: relative;
-        width: 100%;
+        width: $eve-checkbox-size;
+    }
 
-        &::after {
-            border-bottom: .125rem solid $eve-color-white;
-            border-right: .125rem solid $eve-color-white;
-            box-sizing: content-box;
-            content: '';
-            display: none;
-            height: calc(100% - #{$eve-checkbox-size / 4});
-            left: 50%;
-            position: absolute;
-            top: calc(50% - .125rem);
-            transform: translate(-50%, -50%) rotate(45deg);
-            width: calc(100% - #{$eve-checkbox-size / 2});
-        }
+    &.is-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.eve-checkboxes {
+    display: flex;
+    flex-direction: column;
+    margin: -.25rem;
+
+    .eve-checkbox {
+        margin: .25rem;
     }
 }
