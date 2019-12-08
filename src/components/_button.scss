@@ -61,7 +61,7 @@ $eve-button-size: 2.25rem;
     font-weight: normal;
     height: $eve-button-size;
     justify-content: center;
-    line-height: normal;
+    line-height: $eve-button-size;
     min-width: 4rem;
     outline: none;
     padding: 0 1rem;
