@@ -2,38 +2,25 @@ $eve-switch-width: 2rem;
 $eve-switch-height: 1.125rem;
 
 .eve-switch {
-    align-items: center;
-    display: inline-flex;
-    flex-shrink: 0;
-    height: $eve-switch-height;
-    justify-content: center;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
     position: relative;
-    vertical-align: top;
-    width: $eve-switch-width;
 
     input {
         &[type='checkbox'] {
             cursor: pointer;
-            height: 100%;
+            height: $eve-switch-height;
             left: 0;
             margin: 0;
             opacity: 0;
             padding: 0;
             position: absolute;
-            top: 0;
-            width: 100%;
+            width: $eve-switch-width;
 
             &:checked ~ i {
                 background: $eve-color-green;
                 justify-content: flex-end;
-            }
-
-            &:disabled {
-                pointer-events: none;
-
-                ~ i {
-                    opacity: .5;
-                }
             }
         }
     }
@@ -44,11 +31,12 @@ $eve-switch-height: 1.125rem;
         border-radius: $eve-switch-height / 2;
         box-sizing: border-box;
         display: flex;
-        height: 100%;
+        height: $eve-switch-height;
         justify-content: flex-start;
+        margin-right: .5rem;
         padding: .125rem;
         pointer-events: none;
-        width: 100%;
+        width: $eve-switch-width;
 
         &::after {
             background: $eve-color-white;
@@ -57,5 +45,20 @@ $eve-switch-height: 1.125rem;
             height: 100%;
             width: $eve-switch-height - .25rem;
         }
+    }
+
+    &.is-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.eve-switches {
+    display: flex;
+    flex-direction: column;
+    margin: -.25rem;
+
+    .eve-switch {
+        margin: .25rem;
     }
 }
