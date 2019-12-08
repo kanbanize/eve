@@ -25,7 +25,7 @@ $eve-color-picker-color-size: 2rem;
     }
 
     .eve-color-picker-control {
-        border-bottom: 1px solid $eve-color-black-silver;
+        border-bottom: 1px solid $eve-color-dark-silver;
         display: flex;
         padding: .5rem;
 
@@ -35,7 +35,7 @@ $eve-color-picker-color-size: 2rem;
             background-position: center;
             background-repeat: no-repeat;
             background-size: 1.125rem 1.125rem;
-            border: 1px solid $eve-color-black-silver;
+            border: 1px solid $eve-color-dark-silver;
             box-sizing: border-box;
             cursor: pointer;
             display: flex;

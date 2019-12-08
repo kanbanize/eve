@@ -1,5 +1,5 @@
 .eve-table {
-    border: 1px solid $eve-color-black-silver;
+    border: 1px solid $eve-color-dark-silver;
     border-collapse: collapse;
     border-spacing: 0;
     color: $eve-color-black;
@@ -12,7 +12,7 @@
         background: $eve-color-bright-silver;
 
         tr {
-            border-bottom: 1px solid $eve-color-black-silver;
+            border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
                 box-sizing: border-box;
@@ -30,7 +30,7 @@
             height: 3rem;
 
             &:not(:last-child) {
-                border-bottom: 1px solid $eve-color-black-silver;
+                border-bottom: 1px solid $eve-color-dark-silver;
             }
 
             td {

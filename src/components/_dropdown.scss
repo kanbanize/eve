@@ -12,7 +12,7 @@
         background-repeat: no-repeat;
         background-size: 1.125rem;
         border: 0;
-        border-bottom: 1px solid $eve-color-black-silver;
+        border-bottom: 1px solid $eve-color-dark-silver;
         padding-left: 2.375rem;
     }
 
@@ -42,7 +42,7 @@
             }
 
             svg {
-                fill: $eve-color-blacker-silver;
+                fill: $eve-color-darker-silver;
                 height: 1.125rem;
                 width: 1.125rem;
             }
@@ -60,7 +60,7 @@
 
         hr {
             border: 0;
-            border-top: 1px solid $eve-color-black-silver;
+            border-top: 1px solid $eve-color-dark-silver;
             margin: .5rem 0;
         }
     }

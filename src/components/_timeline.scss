@@ -1,5 +1,5 @@
 $eve-timeline-section-colors: (
-    backlog: $eve-color-black-silver,
+    backlog: $eve-color-dark-silver,
     requested: $eve-color-blue,
     progress: $eve-color-orange,
     done: $eve-color-green,
@@ -17,7 +17,7 @@ $eve-timeline-section-colors: (
     position: relative;
 
     &::before {
-        border-top: 1px solid $eve-color-black-silver;
+        border-top: 1px solid $eve-color-dark-silver;
         content: '';
         left: 0;
         position: absolute;
