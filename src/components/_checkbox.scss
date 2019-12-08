@@ -42,6 +42,7 @@ $eve-checkbox-size: 1.125rem;
         background: $eve-color-white;
         border: .125rem solid $eve-color-blacker-silver;
         box-sizing: border-box;
+        flex-shrink: 0;
         height: $eve-checkbox-size;
         margin-right: .5rem;
         pointer-events: none;

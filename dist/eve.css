@@ -443,6 +443,7 @@
     background: #fff;
     border: 0.125rem solid #b0bec5;
     box-sizing: border-box;
+    flex-shrink: 0;
     height: 1.125rem;
     margin-right: .5rem;
     pointer-events: none;
@@ -886,6 +887,7 @@
     border: 0.125rem solid #b0bec5;
     border-radius: 50%;
     box-sizing: border-box;
+    flex-shrink: 0;
     height: 1.125rem;
     margin-right: .5rem;
     pointer-events: none;
@@ -952,6 +954,7 @@
     border-radius: 0.5625rem;
     box-sizing: border-box;
     display: flex;
+    flex-shrink: 0;
     height: 1.125rem;
     justify-content: flex-start;
     margin-right: .5rem;

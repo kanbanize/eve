@@ -38,6 +38,7 @@ $eve-radio-size: 1.125rem;
         border: .125rem solid $eve-color-blacker-silver;
         border-radius: 50%;
         box-sizing: border-box;
+        flex-shrink: 0;
         height: $eve-radio-size;
         margin-right: .5rem;
         pointer-events: none;
