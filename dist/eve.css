@@ -419,15 +419,15 @@
     position: relative;
     width: 100%; }
     .eve-checkbox i::after {
-      border-bottom: 0.125 solid #fff;
-      border-right: 0.125 solid #fff;
+      border-bottom: 0.125rem solid #fff;
+      border-right: 0.125rem solid #fff;
       box-sizing: content-box;
       content: '';
       display: none;
       height: calc(100% - 0.28125rem);
       left: 50%;
       position: absolute;
-      top: calc(50% - .125);
+      top: calc(50% - .125rem);
       -webkit-transform: translate(-50%, -50%) rotate(45deg);
               transform: translate(-50%, -50%) rotate(45deg);
       width: calc(100% - 0.5625rem); }
