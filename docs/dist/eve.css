@@ -254,12 +254,12 @@
   margin-bottom: .5rem; }
 
 .eve-avatar {
+  align-items: center;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-flex;
   flex-shrink: 0;
   height: 2rem;
-  line-height: 2rem;
-  text-align: center;
+  justify-content: center;
   vertical-align: top;
   width: 2rem; }
   .eve-avatar[data-initial] {
