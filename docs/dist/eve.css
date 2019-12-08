@@ -548,7 +548,6 @@
         display: flex; }
       .eve-color-picker .eve-color-picker-palette ul li {
         align-items: center;
-        background: #2196f3;
         box-sizing: border-box;
         cursor: pointer;
         display: flex;
@@ -556,10 +555,10 @@
         justify-content: center;
         margin: .25rem;
         position: relative;
-        transition: border-radius 150ms ease;
         width: 2rem; }
         .eve-color-picker .eve-color-picker-palette ul li:hover, .eve-color-picker .eve-color-picker-palette ul li.is-selected {
-          border-radius: 50%; }
+          border: 0.125rem solid #fff;
+          outline: 0.125rem solid #000; }
 
 .eve-divider {
   align-items: center;

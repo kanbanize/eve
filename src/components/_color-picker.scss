@@ -64,7 +64,6 @@ $eve-color-picker-color-size: 2rem;
 
             li {
                 align-items: center;
-                background: $eve-color-blue;
                 box-sizing: border-box;
                 cursor: pointer;
                 display: flex;
@@ -72,12 +71,12 @@ $eve-color-picker-color-size: 2rem;
                 justify-content: center;
                 margin: .25rem;
                 position: relative;
-                transition: border-radius 150ms ease;
                 width: $eve-color-picker-color-size;
 
                 &:hover,
                 &.is-selected {
-                    border-radius: 50%;
+                    border: .125rem solid $eve-color-white;
+                    outline: .125rem solid $eve-color-black;
                 }
             }
         }
