@@ -10,13 +10,13 @@ $eve-avatar-size: 2rem;
     vertical-align: top;
     width: $eve-avatar-size;
 
-    &[data-initial] {
+    &[data-initials] {
         background: $eve-color-blue;
         color: $eve-color-white;
         font-size: $eve-avatar-size / 2;
 
          &::before {
-            content: attr(data-initial);
+            content: attr(data-initials);
             font-size: inherit;
         }
     }

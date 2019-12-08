@@ -266,12 +266,12 @@
   justify-content: center;
   vertical-align: top;
   width: 2rem; }
-  .eve-avatar[data-initial] {
+  .eve-avatar[data-initials] {
     background: #2196f3;
     color: #fff;
     font-size: 1rem; }
-    .eve-avatar[data-initial]::before {
-      content: attr(data-initial);
+    .eve-avatar[data-initials]::before {
+      content: attr(data-initials);
       font-size: inherit; }
   .eve-avatar img {
     background-position: center;
