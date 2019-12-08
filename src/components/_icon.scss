@@ -29,7 +29,7 @@ $eve-icon-size: 2.25rem;
     width: $eve-icon-size;
 
     &.is-success {
-        @include icon-color($eve-color-blue);
+        @include icon-color($eve-color-green);
     }
 
     &.is-danger {

@@ -642,9 +642,9 @@
     .eve-icon:hover svg {
       fill: #2196f3; }
   .eve-icon.is-success:hover {
-    background: #e3f2fd; }
+    background: #d9eeda; }
     .eve-icon.is-success:hover svg {
-      fill: #2196f3; }
+      fill: #4caf50; }
   .eve-icon.is-danger:hover {
     background: #fff8f7; }
     .eve-icon.is-danger:hover svg {
