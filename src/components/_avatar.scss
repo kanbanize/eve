@@ -38,3 +38,13 @@ $eve-avatar-size: 2rem;
         pointer-events: none;
     }
 }
+
+.eve-avatars {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -.25rem;
+
+    .eve-avatar {
+        margin: .25rem;
+    }
+}

@@ -285,6 +285,13 @@
     opacity: .5;
     pointer-events: none; }
 
+.eve-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.25rem; }
+  .eve-avatars .eve-avatar {
+    margin: .25rem; }
+
 .eve-button {
   background: #2196f3;
   align-items: center;
