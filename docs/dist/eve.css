@@ -250,8 +250,12 @@
   .eve-accordion.has-icon .eve-accordion-header {
     padding-right: 3rem; }
 
-.eve-accordions .eve-accordion:not(:last-child) {
-  margin-bottom: .5rem; }
+.eve-accordions {
+  display: flex;
+  flex-direction: column;
+  margin: -.25rem; }
+  .eve-accordions .eve-accordion {
+    margin: .25rem; }
 
 .eve-avatar {
   align-items: center;
@@ -406,58 +410,54 @@
     pointer-events: none; }
 
 .eve-checkbox {
-  align-items: center;
-  display: inline-flex;
-  flex-shrink: 0;
-  height: 1.125rem;
-  justify-content: center;
-  position: relative;
-  vertical-align: top;
-  width: 1.125rem; }
+  display: flex;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  position: relative; }
   .eve-checkbox input[type='checkbox'] {
     cursor: pointer;
-    height: 100%;
+    height: 1.125rem;
     left: 0;
     margin: 0;
     opacity: 0;
     padding: 0;
     position: absolute;
-    top: 0;
-    width: 100%; }
+    width: 1.125rem; }
     .eve-checkbox input[type='checkbox']:checked ~ i {
       background: #4caf50;
       border-color: #4caf50; }
       .eve-checkbox input[type='checkbox']:checked ~ i::after {
-        display: block; }
-    .eve-checkbox input[type='checkbox']:disabled {
-      pointer-events: none; }
-      .eve-checkbox input[type='checkbox']:disabled ~ i {
-        opacity: .5; }
-      .eve-checkbox input[type='checkbox']:disabled:checked ~ i {
-        opacity: .5; }
-        .eve-checkbox input[type='checkbox']:disabled:checked ~ i::after {
-          display: block; }
+        border-bottom: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        box-sizing: content-box;
+        content: '';
+        display: block;
+        height: calc(100% - 0.28125rem);
+        left: 50%;
+        position: absolute;
+        top: calc(50% - .125rem);
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
+        width: calc(100% - 0.5625rem); }
   .eve-checkbox i {
     background: #fff;
     border: 0.125rem solid #b0bec5;
     box-sizing: border-box;
-    height: 100%;
+    height: 1.125rem;
+    margin-right: .5rem;
     pointer-events: none;
     position: relative;
-    width: 100%; }
-    .eve-checkbox i::after {
-      border-bottom: 0.125rem solid #fff;
-      border-right: 0.125rem solid #fff;
-      box-sizing: content-box;
-      content: '';
-      display: none;
-      height: calc(100% - 0.28125rem);
-      left: 50%;
-      position: absolute;
-      top: calc(50% - .125rem);
-      -webkit-transform: translate(-50%, -50%) rotate(45deg);
-              transform: translate(-50%, -50%) rotate(45deg);
-      width: calc(100% - 0.5625rem); }
+    width: 1.125rem; }
+  .eve-checkbox.is-disabled {
+    opacity: .5;
+    pointer-events: none; }
+
+.eve-checkboxes {
+  display: flex;
+  flex-direction: column;
+  margin: -.25rem; }
+  .eve-checkboxes .eve-checkbox {
+    margin: .25rem; }
 
 .eve-chip {
   align-items: center;
@@ -858,52 +858,48 @@
       width: 0; }
 
 .eve-radio {
-  align-items: center;
-  display: inline-flex;
-  flex-shrink: 0;
-  height: 1.125rem;
-  justify-content: center;
-  position: relative;
-  vertical-align: top;
-  width: 1.125rem; }
+  display: flex;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  position: relative; }
   .eve-radio input[type='radio'] {
     cursor: pointer;
-    height: 100%;
+    height: 1.125rem;
     left: 0;
     margin: 0;
     opacity: 0;
     padding: 0;
     position: absolute;
-    top: 0;
-    width: 100%; }
+    width: 1.125rem; }
     .eve-radio input[type='radio']:checked ~ i {
       background: #4caf50;
       border-color: #4caf50; }
       .eve-radio input[type='radio']:checked ~ i::after {
-        display: block; }
-    .eve-radio input[type='radio']:disabled {
-      pointer-events: none; }
-      .eve-radio input[type='radio']:disabled ~ i {
-        opacity: .5; }
-      .eve-radio input[type='radio']:disabled:checked ~ i {
-        opacity: .5; }
-        .eve-radio input[type='radio']:disabled:checked ~ i::after {
-          display: block; }
+        border: 0.1875rem solid #fff;
+        border-radius: inherit;
+        box-sizing: inherit;
+        content: '';
+        display: block;
+        height: 100%; }
   .eve-radio i {
     background: #fff;
     border: 0.125rem solid #b0bec5;
     border-radius: 50%;
     box-sizing: border-box;
-    height: 100%;
+    height: 1.125rem;
+    margin-right: .5rem;
     pointer-events: none;
-    width: 100%; }
-    .eve-radio i::after {
-      border: 0.1875rem solid #fff;
-      border-radius: inherit;
-      box-sizing: inherit;
-      content: '';
-      display: none;
-      height: 100%; }
+    width: 1.125rem; }
+  .eve-radio.is-disabled {
+    opacity: .5;
+    pointer-events: none; }
+
+.eve-radios {
+  display: flex;
+  flex-direction: column;
+  margin: -.25rem; }
+  .eve-radios .eve-radio {
+    margin: .25rem; }
 
 .eve-select {
   -webkit-appearance: none;
@@ -934,48 +930,50 @@
     pointer-events: none; }
 
 .eve-switch {
-  align-items: center;
-  display: inline-flex;
-  flex-shrink: 0;
-  height: 1.125rem;
-  justify-content: center;
-  position: relative;
-  vertical-align: top;
-  width: 2rem; }
+  display: flex;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  position: relative; }
   .eve-switch input[type='checkbox'] {
     cursor: pointer;
-    height: 100%;
+    height: 1.125rem;
     left: 0;
     margin: 0;
     opacity: 0;
     padding: 0;
     position: absolute;
-    top: 0;
-    width: 100%; }
+    width: 2rem; }
     .eve-switch input[type='checkbox']:checked ~ i {
       background: #4caf50;
       justify-content: flex-end; }
-    .eve-switch input[type='checkbox']:disabled {
-      pointer-events: none; }
-      .eve-switch input[type='checkbox']:disabled ~ i {
-        opacity: .5; }
   .eve-switch i {
     align-items: center;
     background: #b0bec5;
     border-radius: 0.5625rem;
     box-sizing: border-box;
     display: flex;
-    height: 100%;
+    height: 1.125rem;
     justify-content: flex-start;
+    margin-right: .5rem;
     padding: .125rem;
     pointer-events: none;
-    width: 100%; }
+    width: 2rem; }
     .eve-switch i::after {
       background: #fff;
       border-radius: 50%;
       content: '';
       height: 100%;
       width: 0.875rem; }
+  .eve-switch.is-disabled {
+    opacity: .5;
+    pointer-events: none; }
+
+.eve-switches {
+  display: flex;
+  flex-direction: column;
+  margin: -.25rem; }
+  .eve-switches .eve-switch {
+    margin: .25rem; }
 
 .eve-table {
   border: 1px solid #cfd8dc;
