@@ -576,7 +576,8 @@
         background: #eceff1; }
       .eve-dropdown ul li svg,
       .eve-dropdown ul li .eve-avatar,
-      .eve-dropdown ul li .eve-priority {
+      .eve-dropdown ul li .eve-priority,
+      .eve-dropdown ul li .eve-checkbox {
         margin-right: .75rem; }
       .eve-dropdown ul li svg {
         fill: #b0bec5;
