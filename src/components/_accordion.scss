@@ -62,9 +62,11 @@ $eve-accordion-header-height: 2rem;
 }
 
 .eve-accordions {
+    display: flex;
+    flex-direction: column;
+    margin: -.25rem;
+
     .eve-accordion {
-        &:not(:last-child) {
-            margin-bottom: .5rem;
-        }
+        margin: .25rem;
     }
 }
