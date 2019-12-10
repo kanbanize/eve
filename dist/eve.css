@@ -478,22 +478,12 @@
     margin-left: -.5rem;
     margin-right: .5rem;
     width: 1.5rem; }
-  .eve-chip .eve-chip-action {
-    align-items: center;
-    background: #b0bec5;
-    border-radius: 50%;
-    box-sizing: border-box;
+  .eve-chip i {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
     cursor: pointer;
-    display: flex;
-    height: 1.125rem;
-    justify-content: center;
+    height: 1.25rem;
     margin: 0 -.25rem 0 .5rem;
-    padding: .125rem;
-    width: 1.125rem; }
-    .eve-chip .eve-chip-action svg {
-      fill: #fff;
-      height: 100%;
-      width: 100%; }
+    width: 1.25rem; }
   .eve-chip.is-disabled {
     opacity: .5;
     pointer-events: none; }
