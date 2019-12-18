@@ -11,8 +11,8 @@ $eve-avatar-size: 2rem;
     width: $eve-avatar-size;
 
     &[data-initials] {
-        background: $eve-color-blue;
-        color: $eve-color-white;
+        background: $eve-color-bright-silver;
+        color: $eve-color-black;
         font-size: $eve-avatar-size / 2;
 
          &::before {
