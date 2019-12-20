@@ -78,14 +78,6 @@ $eve-button-size: 2.25rem;
         @include button-color($eve-color-red);
     }
 
-    svg {
-        fill: $eve-color-white;
-        height: $eve-button-size / 2;
-        margin-left: -.25rem;
-        margin-right: .5rem;
-        width: $eve-button-size / 2;
-    }
-
     &:disabled {
         opacity: .5;
         pointer-events: none;

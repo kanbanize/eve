@@ -299,7 +299,7 @@
 .eve-breadcrumb {
   display: flex;
   font-size: .875rem;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -399,12 +399,6 @@
         background: #fff8f7; }
     .eve-button.is-danger:hover {
       background: #f55a4e; }
-  .eve-button svg {
-    fill: #fff;
-    height: 1.125rem;
-    margin-left: -.25rem;
-    margin-right: .5rem;
-    width: 1.125rem; }
   .eve-button:disabled {
     opacity: .5;
     pointer-events: none; }
