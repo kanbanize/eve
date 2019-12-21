@@ -244,7 +244,6 @@
         height: 1.125rem;
         width: 1.125rem; }
   .eve-accordion .eve-accordion-content {
-    color: #000;
     display: none;
     padding: 0.5rem 1rem; }
   .eve-accordion.has-icon .eve-accordion-header {
@@ -325,7 +324,7 @@
     cursor: pointer;
     display: flex; }
     .eve-breadcrumb li:not(:last-child)::after {
-      color: #000;
+      color: #b0bec5;
       content: '/';
       padding: 0 1rem; }
     .eve-breadcrumb li:hover, .eve-breadcrumb li.is-active {
@@ -632,7 +631,7 @@
     background-size: 1.125rem;
     border: 0;
     border-bottom: 1px solid #cfd8dc;
-    padding-left: 2.375; }
+    padding-left: 2.375rem; }
   .eve-dropdown ul {
     list-style: none;
     margin: 0;
@@ -840,7 +839,6 @@
   margin: 0;
   padding: 0; }
   .eve-navigation li {
-    color: #000;
     cursor: pointer;
     height: 2.25rem;
     line-height: 2.25rem;
@@ -959,7 +957,7 @@
   max-width: 100%;
   min-width: 0;
   outline: none;
-  padding: 0 2.375 0 1rem;
+  padding: 0 2.375rem 0 1rem;
   width: 100%; }
   .eve-select::-ms-expand {
     display: none; }
@@ -980,7 +978,7 @@
     opacity: 0;
     padding: 0;
     position: absolute;
-    width: 2rem; }
+    width: 2.25rem; }
     .eve-switch input[type='checkbox']:checked ~ i {
       background: #4caf50;
       justify-content: flex-end; }
@@ -996,7 +994,7 @@
     margin-right: 0.5rem;
     padding: 0.125rem;
     pointer-events: none;
-    width: 2rem; }
+    width: 2.25rem; }
     .eve-switch i::after {
       background: #fff;
       border-radius: 50%;
@@ -1045,12 +1043,12 @@
 
 .eve-tabs {
   display: flex;
+  font-size: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0; }
   .eve-tabs li {
     box-sizing: border-box;
-    color: #000;
     cursor: pointer;
     flex: 1;
     height: 3rem;
@@ -1136,7 +1134,6 @@
     z-index: 1; }
     .eve-timeline li::after {
       bottom: -1.25rem;
-      color: #000;
       content: attr(data-label);
       display: none;
       font-size: 0.75rem;

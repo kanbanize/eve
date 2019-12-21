@@ -12,7 +12,7 @@
 
         &:not(:last-child) {
             &::after {
-                color: $eve-color-black;
+                color: $eve-color-darker-silver;
                 content: '/';
                 padding: 0 $eve-spacing-16;
             }

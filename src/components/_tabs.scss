@@ -2,13 +2,13 @@ $eve-tab-size: 3rem;
 
 .eve-tabs {
     display: flex;
+    font-size: $eve-font-14;
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
         box-sizing: border-box;
-        color: $eve-color-black;
         cursor: pointer;
         flex: 1;
         height: $eve-tab-size;

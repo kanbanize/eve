@@ -39,7 +39,6 @@ $eve-timeline-section-colors: (
 
         &::after {
             bottom: -1.25rem;
-            color: $eve-color-black;
             content: attr(data-label);
             display: none;
             font-size: $eve-font-12;
