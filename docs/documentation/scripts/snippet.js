@@ -29,7 +29,7 @@ var Snippet = (function() {
         for (var i = 0; i < examples.length; i++) {
             var example = examples[i];
 
-            example.insertAdjacentHTML('afterend', '<pre class="component-snippet">' + generateSnippet(example.innerHTML) + '</pre>');
+            example.insertAdjacentHTML('afterend', '<pre class="component-code">' + generateSnippet(example.innerHTML) + '</pre>');
         }
     }
 
@@ -69,7 +69,7 @@ var Snippet = (function() {
             .replace(/{val.*?}/g, function(str) {
                 return map.val(cache[str]);
             })
-            .replace(/^\s{12}/gm, '')
+            .replace(/^\s{8}/gm, '')
             .trim();
     }
 
