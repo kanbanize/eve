@@ -1,0 +1,39 @@
+.eve-dialog {
+    background: $eve-color-white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    padding: $eve-spacing-24;
+    width: 25rem;
+
+    .eve-dialog-header {
+        color: $eve-color-blue;
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.75rem;
+        margin-bottom: $eve-spacing-16;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+    }
+
+    .eve-dialog-content {
+        color: $eve-color-black;
+        font-size: $eve-font-14;
+        line-height: 1.25rem;
+    }
+
+    .eve-dialog-footer {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: $eve-spacing-16;
+
+        .eve-button {
+            margin-left: $eve-spacing-16;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

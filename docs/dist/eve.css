@@ -568,6 +568,35 @@
           border: 0.125rem solid #fff;
           outline: 0.125rem solid #000; }
 
+.eve-dialog {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 25rem; }
+  .eve-dialog .eve-dialog-header {
+    color: #2196f3;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal; }
+  .eve-dialog .eve-dialog-content {
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.25rem; }
+  .eve-dialog .eve-dialog-footer {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem; }
+    .eve-dialog .eve-dialog-footer .eve-button {
+      margin-left: 1rem; }
+      .eve-dialog .eve-dialog-footer .eve-button:first-child {
+        margin-left: 0; }
+
 .eve-divider {
   align-items: center;
   display: flex;
