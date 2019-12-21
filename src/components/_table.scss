@@ -1,4 +1,5 @@
 .eve-table {
+    background: $eve-color-white;
     border: 1px solid $eve-color-dark-silver;
     border-collapse: collapse;
     border-spacing: 0;
@@ -9,14 +10,12 @@
     width: 100%;
 
     thead {
-        background: $eve-color-bright-silver;
-
         tr {
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
                 box-sizing: border-box;
-                height: 3rem;
+                height: 3.5rem;
                 padding: 0 1rem;
                 text-align: left;
                 word-break: break-word;
@@ -26,14 +25,13 @@
 
     tbody {
         tr {
-            background: $eve-color-white;
-            height: 3rem;
-
             &:not(:last-child) {
                 border-bottom: 1px solid $eve-color-dark-silver;
             }
 
             td {
+                box-sizing: border-box;
+                height: 3.25rem;
                 padding: 0 1rem;
                 text-align: left;
                 word-wrap: break-word;
