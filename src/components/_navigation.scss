@@ -14,7 +14,7 @@ $eve-tab-size: 2.25rem;
         height: $eve-tab-size;
         line-height: $eve-tab-size;
         overflow: hidden;
-        padding: 0 1rem;
+        padding: 0 $eve-spacing-16;
         text-overflow: ellipsis;
         white-space: nowrap;
 
@@ -25,7 +25,7 @@ $eve-tab-size: 2.25rem;
         &.is-active {
             border-left: 1px solid $eve-color-blue;
             color: $eve-color-blue;
-            padding-left: calc(1rem - .125rem);
+            padding-left: calc(#{$eve-spacing-16} - .125rem);
         }
 
         &.is-disabled {

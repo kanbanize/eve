@@ -14,16 +14,16 @@ $eve-key-size: 2rem;
     justify-content: center;
     line-height: $eve-key-size;
     min-width: $eve-key-size;
-    padding: 0 .5rem;
+    padding: 0 $eve-spacing-8;
     text-align: center;
 }
 
 .eve-keys {
     align-items: center;
     display: flex;
-    margin: -.5rem;
+    margin: -$eve-spacing-8;
 
     .eve-key {
-        margin: .5rem;
+        margin: $eve-spacing-8;
     }
 }

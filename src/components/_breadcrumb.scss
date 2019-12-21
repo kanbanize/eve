@@ -14,7 +14,7 @@
             &::after {
                 color: $eve-color-black;
                 content: '/';
-                padding: 0 1rem;
+                padding: 0 $eve-spacing-16;
             }
         }
 

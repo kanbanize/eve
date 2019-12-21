@@ -13,7 +13,7 @@ $eve-input-size: 2.25rem;
     max-width: 100%;
     min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
     outline: none;
-    padding: 0 1rem;
+    padding: 0 $eve-spacing-16;
     width: 100%;
 
     &::placeholder {

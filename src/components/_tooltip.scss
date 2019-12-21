@@ -16,7 +16,7 @@ $eve-tooltip-size: 1.5rem;
         max-width: 20rem;
         opacity: 0;
         overflow: hidden;
-        padding: 0 .5rem;
+        padding: 0 $eve-spacing-8;
         pointer-events: none;
         position: absolute;
         text-overflow: ellipsis;

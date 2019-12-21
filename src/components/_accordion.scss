@@ -1,10 +1,10 @@
-$eve-accordion-header-height: 2rem;
+$eve-accordion-size: 2rem;
 
 .eve-accordion {
     border-left: 1px solid $eve-color-blue;
     font-size: $eve-font-14;
     line-height: 1.25rem;
-    padding-left: .5rem;
+    padding-left: $eve-spacing-8;
 
     > input {
         display: none;
@@ -21,10 +21,10 @@ $eve-accordion-header-height: 2rem;
         color: $eve-color-blue;
         cursor: pointer;
         display: block;
-        height: $eve-accordion-header-height;
-        line-height: $eve-accordion-header-height;
+        height: $eve-accordion-size;
+        line-height: $eve-accordion-size;
         overflow: hidden;
-        padding: 0 1rem;
+        padding: 0 $eve-spacing-16;
         position: relative;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -33,12 +33,12 @@ $eve-accordion-header-height: 2rem;
             align-items: center;
             background: $eve-color-blue;
             display: flex;
-            height: $eve-accordion-header-height;
+            height: $eve-accordion-size;
             justify-content: center;
             position: absolute;
             right: 0;
             top: 0;
-            width: $eve-accordion-header-height;
+            width: $eve-accordion-size;
 
             svg {
                 fill: $eve-color-white;
@@ -51,12 +51,12 @@ $eve-accordion-header-height: 2rem;
     .eve-accordion-content {
         color: $eve-color-black;
         display: none;
-        padding: .5rem 1rem;
+        padding: $eve-spacing-8 $eve-spacing-16;
     }
 
     &.has-icon {
         .eve-accordion-header {
-            padding-right: 3rem;
+            padding-right: $eve-spacing-48;
         }
     }
 }
@@ -64,9 +64,9 @@ $eve-accordion-header-height: 2rem;
 .eve-accordions {
     display: flex;
     flex-direction: column;
-    margin: -.25rem;
+    margin: -$eve-spacing-4;
 
     .eve-accordion {
-        margin: .25rem;
+        margin: $eve-spacing-4;
     }
 }

@@ -3,7 +3,7 @@
     color: $eve-color-black;
     font-size: $eve-font-14;
     line-height: 1.25rem;
-    padding: .5rem 1rem;
+    padding: $eve-spacing-8 $eve-spacing-16;
 
     &.is-success {
         background: lighten($eve-color-green, 30);

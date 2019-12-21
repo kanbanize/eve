@@ -14,7 +14,7 @@ $eve-tab-size: 3rem;
         height: $eve-tab-size;
         line-height: $eve-tab-size;
         overflow: hidden;
-        padding: 0 1rem;
+        padding: 0 $eve-spacing-16;
         text-align: center;
         text-overflow: ellipsis;
         white-space: nowrap;

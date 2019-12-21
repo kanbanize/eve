@@ -8,18 +8,18 @@
 
     > .eve-input {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); // sass-lint:disable-line quotes
-        background-position: .75rem;
+        background-position: $eve-spacing-12;
         background-repeat: no-repeat;
         background-size: 1.125rem;
         border: 0;
         border-bottom: 1px solid $eve-color-dark-silver;
-        padding-left: 2.375rem;
+        padding-left: $eve-spacing-38;
     }
 
     ul {
         list-style: none;
         margin: 0;
-        padding: .5rem 0;
+        padding: $eve-spacing-8 0;
 
         li {
             align-items: center;
@@ -27,7 +27,7 @@
             cursor: pointer;
             display: flex;
             height: 2.25rem;
-            padding: 0 1rem;
+            padding: 0 $eve-spacing-16;
 
             &:hover,
             &.is-active {
@@ -38,7 +38,7 @@
             .eve-avatar,
             .eve-priority,
             .eve-checkbox {
-                margin-right: .75rem;
+                margin-right: $eve-spacing-12;
             }
 
             svg {
@@ -61,7 +61,7 @@
         hr {
             border: 0;
             border-top: 1px solid $eve-color-dark-silver;
-            margin: .5rem 0;
+            margin: $eve-spacing-8 0;
         }
     }
 }

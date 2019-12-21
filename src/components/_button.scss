@@ -66,7 +66,7 @@ $eve-button-size: 2.25rem;
     line-height: $eve-button-size;
     min-width: 4rem;
     outline: none;
-    padding: 0 1rem;
+    padding: 0 $eve-spacing-16;
     text-decoration: none;
     user-select: none;
     vertical-align: top;

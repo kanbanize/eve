@@ -16,7 +16,7 @@
             th {
                 box-sizing: border-box;
                 height: 3.5rem;
-                padding: 0 1rem;
+                padding: 0 $eve-spacing-16;
                 text-align: left;
                 word-break: break-word;
             }
@@ -32,7 +32,7 @@
             td {
                 box-sizing: border-box;
                 height: 3.25rem;
-                padding: 0 1rem;
+                padding: 0 $eve-spacing-16;
                 text-align: left;
                 word-wrap: break-word;
             }

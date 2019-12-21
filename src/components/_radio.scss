@@ -40,7 +40,7 @@ $eve-radio-size: 1.125rem;
         box-sizing: border-box;
         flex-shrink: 0;
         height: $eve-radio-size;
-        margin-right: .5rem;
+        margin-right: $eve-spacing-8;
         pointer-events: none;
         width: $eve-radio-size;
     }
@@ -54,9 +54,9 @@ $eve-radio-size: 1.125rem;
 .eve-radios {
     display: flex;
     flex-direction: column;
-    margin: -.25rem;
+    margin: -$eve-spacing-4;
 
     .eve-radio {
-        margin: .25rem;
+        margin: $eve-spacing-4;
     }
 }

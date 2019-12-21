@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: calc(1rem + 1px) 0 1rem;
+    margin: $eve-spacing-16 0;
     position: relative;
 
     &::before {
@@ -19,7 +19,7 @@
         content: attr(data-content);
         font-size: $eve-font-14;
         line-height: 1.25rem;
-        padding: 0 1rem;
+        padding: 0 $eve-spacing-16;
         z-index: 1;
     }
 }

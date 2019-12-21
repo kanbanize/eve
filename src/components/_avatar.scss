@@ -13,7 +13,7 @@ $eve-avatar-size: 2rem;
     &[data-initials] {
         background: $eve-color-blue;
         color: $eve-color-white;
-        font-size: $eve-avatar-size / 2;
+        font-size: $eve-font-16;
 
          &::before {
             content: attr(data-initials);
@@ -42,9 +42,9 @@ $eve-avatar-size: 2rem;
 .eve-avatars {
     display: flex;
     flex-wrap: wrap;
-    margin: -.25rem;
+    margin: -$eve-spacing-4;
 
     .eve-avatar {
-        margin: .25rem;
+        margin: $eve-spacing-4;
     }
 }
