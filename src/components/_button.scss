@@ -29,6 +29,8 @@ $eve-button-size: 2.25rem;
     &.is-inverted {
         background: $eve-color-white;
         color: $color;
+        font-weight: bold;
+        text-transform: uppercase;
 
         svg {
             fill: $color;
