@@ -2,7 +2,7 @@
     background: $eve-color-white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-block;
-    font-size: .875rem;
+    font-size: $eve-font-14;
     max-width: 17.5rem;
     min-width: 7rem;
 

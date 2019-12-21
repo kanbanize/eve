@@ -39,7 +39,7 @@ $eve-loader-size: 3rem;
             color: $eve-color-black;
             content: attr(data-label);
             display: block;
-            font-size: .875rem;
+            font-size: $eve-font-14;
             line-height: 1.25rem;
             margin-top: .5rem;
             max-width: 50%;

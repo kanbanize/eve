@@ -9,7 +9,7 @@ $eve-tooltip-size: 1.5rem;
         color: $eve-color-white;
         content: attr(data-tooltip);
         font-family: inherit;
-        font-size: $eve-tooltip-size / 2;
+        font-size: $eve-font-12;
         font-weight: normal;
         height: $eve-tooltip-size;
         line-height: $eve-tooltip-size;

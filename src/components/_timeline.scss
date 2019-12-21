@@ -42,7 +42,7 @@ $eve-timeline-section-colors: (
             color: $eve-color-black;
             content: attr(data-label);
             display: none;
-            font-size: .75rem;
+            font-size: $eve-font-12;
             left: 50%;
             max-width: 4.25rem;
             overflow: hidden;

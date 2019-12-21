@@ -17,7 +17,7 @@
         background: $eve-color-white;
         color: $eve-color-blue;
         content: attr(data-content);
-        font-size: .875rem;
+        font-size: $eve-font-14;
         line-height: 1.25rem;
         padding: 0 1rem;
         z-index: 1;

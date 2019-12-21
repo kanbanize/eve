@@ -210,7 +210,7 @@
 
 .eve-accordion {
   border-left: 1px solid #2196f3;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   padding-left: .5rem; }
   .eve-accordion > input {
@@ -304,7 +304,7 @@
     box-sizing: border-box;
     color: #fff;
     content: attr(data-badge);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: normal;
     height: 1.125rem;
     line-height: 1.125rem;
@@ -316,7 +316,7 @@
 
 .eve-breadcrumb {
   display: flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   list-style: none;
   margin: 0;
@@ -344,7 +344,7 @@
   display: inline-flex;
   flex-shrink: 0;
   font-family: inherit;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: normal;
   height: 2.25rem;
   justify-content: center;
@@ -429,7 +429,7 @@
 
 .eve-checkbox {
   display: flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   position: relative; }
   .eve-checkbox input[type='checkbox'] {
@@ -484,13 +484,13 @@
   border-radius: 1rem;
   color: #000;
   display: inline-flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   height: 2rem;
   line-height: 2rem;
   padding: 0 .75rem;
   vertical-align: top; }
   .eve-chip .eve-avatar {
-    font-size: inherit;
+    font-size: 0.75rem;
     height: 1.5rem;
     line-height: 1.5rem;
     margin-left: -.5rem;
@@ -584,7 +584,7 @@
     background: #fff;
     color: #2196f3;
     content: attr(data-content);
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.25rem;
     padding: 0 1rem;
     z-index: 1; }
@@ -593,7 +593,7 @@
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
-  font-size: .875rem;
+  font-size: 0.875rem;
   max-width: 17.5rem;
   min-width: 7rem; }
   .eve-dropdown > .eve-input {
@@ -640,7 +640,7 @@
 .eve-feedback {
   box-sizing: border-box;
   color: #000;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   padding: .5rem 1rem; }
   .eve-feedback.is-success {
@@ -691,7 +691,7 @@
   box-sizing: border-box;
   color: #000;
   font-family: inherit;
-  font-size: .875rem;
+  font-size: 0.875rem;
   height: 2.25rem;
   line-height: 2.25rem;
   max-width: 100%;
@@ -724,7 +724,7 @@
   box-sizing: border-box;
   color: #000;
   display: inline-flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   height: 2rem;
   justify-content: center;
   line-height: 2rem;
@@ -779,7 +779,7 @@
     color: #000;
     content: attr(data-label);
     display: block;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.25rem;
     margin-top: .5rem;
     max-width: 50%;
@@ -806,7 +806,7 @@
 .eve-navigation {
   display: flex;
   flex-direction: column;
-  font-size: .875rem;
+  font-size: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -867,7 +867,7 @@
 
 .eve-radio {
   display: flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   position: relative; }
   .eve-radio input[type='radio'] {
@@ -924,7 +924,7 @@
   cursor: pointer;
   display: block;
   font-family: inherit;
-  font-size: .875rem;
+  font-size: 0.875rem;
   height: 2.25rem;
   line-height: 2.25rem;
   max-width: 100%;
@@ -940,7 +940,7 @@
 
 .eve-switch {
   display: flex;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   position: relative; }
   .eve-switch input[type='checkbox'] {
@@ -991,7 +991,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   color: #000;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   table-layout: fixed;
   width: 100%; }
@@ -1049,7 +1049,7 @@
   box-sizing: border-box;
   color: #000;
   font-family: inherit;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   max-width: 100%;
   min-height: 2.25rem;
@@ -1110,7 +1110,7 @@
       color: #000;
       content: attr(data-label);
       display: none;
-      font-size: .75rem;
+      font-size: 0.75rem;
       left: 50%;
       max-width: 4.25rem;
       overflow: hidden;

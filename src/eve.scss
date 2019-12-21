@@ -1,7 +1,8 @@
 @charset 'utf-8';
 
-// Foundations
-@import 'foundations/colors';
+// Variables
+@import 'variables/colors';
+@import 'variables/fonts';
 
 // Grid
 @import 'grid/grid';

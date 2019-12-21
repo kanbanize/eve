@@ -9,7 +9,7 @@ $eve-badge-size: 1.125rem;
         box-sizing: border-box;
         color: $eve-color-white;
         content: attr(data-badge);
-        font-size: 12px;
+        font-size: $eve-font-12;
         font-weight: normal;
         height: $eve-badge-size;
         line-height: $eve-badge-size;

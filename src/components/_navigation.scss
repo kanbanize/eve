@@ -3,7 +3,7 @@ $eve-tab-size: 2.25rem;
 .eve-navigation {
     display: flex;
     flex-direction: column;
-    font-size: .875rem;
+    font-size: $eve-font-14;
     list-style: none;
     margin: 0;
     padding: 0;
