@@ -1,0 +1,22 @@
+$eve-badge-size: 1.125rem;
+
+.eve-badge {
+    position: relative;
+
+    &::after {
+        background: $eve-color-red;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: $eve-color-white;
+        content: attr(data-badge);
+        font-size: 12px;
+        font-weight: normal;
+        height: $eve-badge-size;
+        line-height: $eve-badge-size;
+        position: absolute;
+        right: -($eve-badge-size / 2);
+        text-align: center;
+        top: -($eve-badge-size / 2);
+        width: $eve-badge-size;
+    }
+}
