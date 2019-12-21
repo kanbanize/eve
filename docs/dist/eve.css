@@ -296,6 +296,24 @@
   .eve-avatars .eve-avatar {
     margin: .25rem; }
 
+.eve-badge {
+  position: relative; }
+  .eve-badge::after {
+    background: #f44336;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    content: attr(data-badge);
+    font-size: 12px;
+    font-weight: normal;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    position: absolute;
+    right: -0.5625rem;
+    text-align: center;
+    top: -0.5625rem;
+    width: 1.125rem; }
+
 .eve-breadcrumb {
   display: flex;
   font-size: .875rem;
@@ -352,7 +370,9 @@
       border-color: #e3f2fd; }
   .eve-button.is-inverted {
     background: #fff;
-    color: #2196f3; }
+    color: #2196f3;
+    font-weight: bold;
+    text-transform: uppercase; }
     .eve-button.is-inverted svg {
       fill: #2196f3; }
     .eve-button.is-inverted:hover {
@@ -372,7 +392,9 @@
         border-color: #d9eeda; }
     .eve-button.is-success.is-inverted {
       background: #fff;
-      color: #4caf50; }
+      color: #4caf50;
+      font-weight: bold;
+      text-transform: uppercase; }
       .eve-button.is-success.is-inverted svg {
         fill: #4caf50; }
       .eve-button.is-success.is-inverted:hover {
@@ -392,7 +414,9 @@
         border-color: #fff8f7; }
     .eve-button.is-danger.is-inverted {
       background: #fff;
-      color: #f44336; }
+      color: #f44336;
+      font-weight: bold;
+      text-transform: uppercase; }
       .eve-button.is-danger.is-inverted svg {
         fill: #f44336; }
       .eve-button.is-danger.is-inverted:hover {
@@ -962,6 +986,7 @@
     margin: .25rem; }
 
 .eve-table {
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   border-spacing: 0;
@@ -970,25 +995,22 @@
   line-height: 1.25rem;
   table-layout: fixed;
   width: 100%; }
-  .eve-table thead {
-    background: #eceff1; }
-    .eve-table thead tr {
-      border-bottom: 1px solid #cfd8dc; }
-      .eve-table thead tr th {
-        box-sizing: border-box;
-        height: 3rem;
-        padding: 0 1rem;
-        text-align: left;
-        word-break: break-word; }
-  .eve-table tbody tr {
-    background: #fff;
-    height: 3rem; }
-    .eve-table tbody tr:not(:last-child) {
-      border-bottom: 1px solid #cfd8dc; }
-    .eve-table tbody tr td {
+  .eve-table thead tr {
+    border-bottom: 1px solid #cfd8dc; }
+    .eve-table thead tr th {
+      box-sizing: border-box;
+      height: 3.5rem;
       padding: 0 1rem;
       text-align: left;
-      word-wrap: break-word; }
+      word-break: break-word; }
+  .eve-table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #cfd8dc; }
+  .eve-table tbody tr td {
+    box-sizing: border-box;
+    height: 3.25rem;
+    padding: 0 1rem;
+    text-align: left;
+    word-wrap: break-word; }
   .eve-table.is-stripped tbody tr:nth-child(even) {
     background: #eceff1; }
 
