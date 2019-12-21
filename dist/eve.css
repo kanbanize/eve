@@ -267,8 +267,8 @@
   vertical-align: top;
   width: 2rem; }
   .eve-avatar[data-initials] {
-    background: #eceff1;
-    color: #000;
+    background: #2196f3;
+    color: #fff;
     font-size: 1rem; }
     .eve-avatar[data-initials]::before {
       content: attr(data-initials);
