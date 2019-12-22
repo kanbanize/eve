@@ -483,11 +483,18 @@
     margin-right: 0.5rem;
     width: 1.5rem; }
   .eve-chip i {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-color: #b0bec5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    border-radius: 50%;
     cursor: pointer;
-    height: 1.25rem;
+    height: 1.125rem;
     margin: 0 -0.25rem 0 0.5rem;
-    width: 1.25rem; }
+    width: 1.125rem; }
+    .eve-chip i:hover {
+      background-color: #f44336; }
   .eve-chip.is-disabled {
     opacity: .5;
     pointer-events: none; }
@@ -612,13 +619,8 @@
   max-width: 17.5rem;
   min-width: 7rem; }
   .eve-dropdown > .eve-input {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-    background-position: 0.75rem;
-    background-repeat: no-repeat;
-    background-size: 1.125rem;
     border: 0;
-    border-bottom: 1px solid #cfd8dc;
-    padding-left: 2.375rem; }
+    border-bottom: 1px solid #cfd8dc; }
   .eve-dropdown ul {
     list-style: none;
     margin: 0;
@@ -634,8 +636,9 @@
         background: #eceff1; }
       .eve-dropdown ul li svg,
       .eve-dropdown ul li .eve-avatar,
-      .eve-dropdown ul li .eve-priority,
-      .eve-dropdown ul li .eve-checkbox {
+      .eve-dropdown ul li .eve-priority {
+        margin-right: 0.75rem; }
+      .eve-dropdown ul li .eve-checkbox i {
         margin-right: 0.75rem; }
       .eve-dropdown ul li svg {
         fill: #b0bec5;
