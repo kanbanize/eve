@@ -1,57 +1,8 @@
 $eve-button-size: 2.25rem;
 
-@mixin button-color($color) {
-    @include button-outlined($color);
-    @include button-inverted($color);
-    @include button-hover($color);
-
-    background: $color;
-}
-
-@mixin button-outlined($color) {
-    &.is-outlined {
-        background: $eve-color-white;
-        border: 1px solid $color;
-        color: $color;
-
-        svg {
-            fill: $color;
-        }
-
-        &:hover {
-            background: lighten($color, 40);
-            border-color: lighten($color, 40);
-        }
-    }
-}
-
-@mixin button-inverted($color) {
-    &.is-inverted {
-        background: $eve-color-white;
-        color: $color;
-        font-weight: bold;
-        text-transform: uppercase;
-
-        svg {
-            fill: $color;
-        }
-
-        &:hover {
-            background: lighten($color, 40);
-        }
-    }
-}
-
-@mixin button-hover($color) {
-    &:hover {
-        background: lighten($color, 5);
-    }
-}
-
 .eve-button {
-    @include button-color($eve-color-blue);
-
     align-items: center;
+    background: $eve-color-blue;
     border: 0;
     box-sizing: border-box;
     color: $eve-color-white;
@@ -63,7 +14,6 @@ $eve-button-size: 2.25rem;
     font-weight: normal;
     height: $eve-button-size;
     justify-content: center;
-    line-height: $eve-button-size;
     min-width: 4rem;
     outline: none;
     padding: 0 $eve-spacing-16;
@@ -73,11 +23,89 @@ $eve-button-size: 2.25rem;
     white-space: nowrap;
 
     &.is-success {
-        @include button-color($eve-color-green);
+        background: $eve-color-green;
+
+        &.is-outlined {
+            background: $eve-color-white;
+            border: 1px solid $eve-color-green;
+            color: $eve-color-green;
+
+            &:hover {
+                background: $eve-color-green-50;
+                border-color: $eve-color-green-50;
+            }
+        }
+
+        &.is-inverted {
+            background: $eve-color-white;
+            color: $eve-color-green;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover {
+                background: $eve-color-green-50;
+            }
+        }
+
+        &:hover {
+            background: $eve-color-green-400;
+        }
     }
 
     &.is-danger {
-        @include button-color($eve-color-red);
+        background: $eve-color-red;
+
+        &.is-outlined {
+            background: $eve-color-white;
+            border: 1px solid $eve-color-red;
+            color: $eve-color-red;
+
+            &:hover {
+                background: $eve-color-red-50;
+                border-color: $eve-color-red-50;
+            }
+        }
+
+        &.is-inverted {
+            background: $eve-color-white;
+            color: $eve-color-red;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover {
+                background: $eve-color-red-50;
+            }
+        }
+
+        &:hover {
+            background: $eve-color-red-400;
+        }
+    }
+
+    &.is-outlined {
+        background: $eve-color-white;
+        border: 1px solid $eve-color-blue;
+        color: $eve-color-blue;
+
+        &:hover {
+            background: $eve-color-blue-50;
+            border-color: $eve-color-blue-50;
+        }
+    }
+
+    &.is-inverted {
+        background: $eve-color-white;
+        color: $eve-color-blue;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $eve-color-blue-50;
+        }
+    }
+
+    &:hover {
+        background: $eve-color-blue-400;
     }
 
     &:disabled {
