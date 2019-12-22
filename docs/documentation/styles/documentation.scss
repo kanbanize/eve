@@ -39,7 +39,7 @@ body {
     height: 100%;
 
     .sidebar {
-        background: #2196f3;
+        background: linear-gradient(#2196f3 0%, #2156ff 100%);
         width: 4rem;
         display: flex;
         flex-direction: column;
@@ -123,20 +123,17 @@ body {
             color: #2196f3;
             font-size: 1.25rem;
             line-height: 1.75rem;
-            margin-bottom: 3rem;
             text-transform: uppercase;
             font-weight: 600;
         }
 
         .component-content {
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-                padding-bottom: 2rem;
-                border-bottom: 1px dashed #cfd8dc;
-            }
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px dashed #cfd8dc;
 
             .component-example {
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
             }
 
             .component-code {
