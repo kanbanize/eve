@@ -299,7 +299,7 @@
   position: relative; }
   .eve-badge::after {
     background: #f44336;
-    border-radius: 50%;
+    border-radius: 0.5625rem;
     box-sizing: border-box;
     color: #fff;
     content: attr(data-badge);
@@ -307,11 +307,12 @@
     font-weight: normal;
     height: 1.125rem;
     line-height: 1.125rem;
+    min-width: 1.125rem;
+    padding: 0 0.25rem;
     position: absolute;
     right: -0.5625rem;
     text-align: center;
-    top: -0.5625rem;
-    width: 1.125rem; }
+    top: -0.5625rem; }
 
 .eve-breadcrumb {
   display: flex;
