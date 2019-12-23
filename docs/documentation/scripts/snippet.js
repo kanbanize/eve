@@ -16,10 +16,22 @@ var Snippet = (function() {
             }) + '</span>';
         },
         attr: function(attr) {
-            return '<span class="attr">' + attr + '</span>';
+            return '<span class="attr">' + attr.replace(/=/g, function(char) {
+                switch (char) {
+                    case '=': {
+                        return '<span class="sign">=</span>';
+                    }
+                }
+            }) + '</span>';
         },
         val: function(val) {
-            return '<span class="val">' + val + '</span>';
+            return '<span class="val">' + val.replace(/"/g, function(char) {
+                switch (char) {
+                    case '"': {
+                        return '<span class="sign">"</span>';
+                    }
+                }
+            }) + '</span>';
         }
     };
 

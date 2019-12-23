@@ -137,8 +137,8 @@ body {
             }
 
             .component-code {
-                background: #eceff1;
-                color: #37474f;
+                background: #263238;
+                color: #fff;
                 font-family: monospace;
                 font-size: .75rem;
                 line-height: 1.125rem;
@@ -148,19 +148,20 @@ body {
                 white-space: pre-wrap;
 
                 .tag {
-                    color: #3f51b5;
+                    color: #ff6188;
                 }
 
                 .attr {
-                    color: #37474f;
+                    color: #78dce8;
+                    font-style: italic;
                 }
 
                 .val {
-                    color: #c2185b;
+                    color: #a9dc76;
                 }
 
                 .sign {
-                    color: #3f51b5;
+                    color: #9e9e9e;
                 }
 
                 &:not(:last-child) {
