@@ -327,7 +327,7 @@
     .eve-breadcrumb li:not(:last-child)::after {
       color: #b0bec5;
       content: '/';
-      padding: 0 1rem; }
+      padding: 0 0.75rem; }
     .eve-breadcrumb li:hover, .eve-breadcrumb li.is-active {
       color: #2196f3; }
     .eve-breadcrumb li.is-disabled {
