@@ -718,6 +718,21 @@
       height: 0;
       width: 0; }
 
+.eve-profile {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+  .eve-profile .eve-avatar {
+    margin-right: 0.5rem; }
+
+.eve-profiles {
+  display: flex;
+  flex-direction: column;
+  margin: -0.25rem; }
+  .eve-profiles .eve-profile {
+    margin: 0.25rem; }
+
 .eve-radio {
   display: flex;
   font-size: 0.875rem;
