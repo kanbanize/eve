@@ -1,68 +1,23 @@
 // sass-lint:disable no-important
 $eve-grid-cells-count: 12;
-$eve-grid-gaps: (
-    tiny: .5rem,
-    small: 1rem,
-    normal: 1.5rem,
-    large: 3rem,
-);
 
 .eve-row {
     display: flex;
-
-    @each $eve-grid-gap in map-keys($eve-grid-gaps) {
-        $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
-
-        &.has-gap-#{$eve-grid-gap} {
-            margin: -#{$gap};
-
-            > .eve-column {
-                padding: $gap;
-            }
-        }
-    }
-
-    &.is-multiline {
-        flex-wrap: wrap;
-
-        @each $eve-grid-gap in map-keys($eve-grid-gaps) {
-            $gap: map-get($eve-grid-gaps, $eve-grid-gap) / 2;
-
-            &.has-gap-#{$eve-grid-gap} {
-                > .eve-column {
-                    @for $i from 1 through $eve-grid-cells-count {
-                        &.is-#{$i} {
-                            $width: calc(#{percentage($i / $eve-grid-cells-count)} - (#{$gap} * 2));
-
-                            flex: 1 $width;
-                            max-width: $width;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    flex-wrap: wrap;
+    margin: -$eve-spacing-8;
 
     .eve-column {
         flex: 1;
+        margin: $eve-spacing-8;
         max-width: 100%;
 
         @for $i from 1 through $eve-grid-cells-count {
             &.is-#{$i} {
-                $width: percentage($i / $eve-grid-cells-count);
+                $width: calc(#{percentage($i / $eve-grid-cells-count)} - #{$eve-spacing-16});
 
                 flex: 1 $width;
                 max-width: $width;
             }
-        }
-    }
-
-    @media (max-width: 480px) {
-        flex-direction: column;
-
-        .eve-column {
-            flex: 1 100% !important;
-            max-width: 100% !important;
         }
     }
 }
