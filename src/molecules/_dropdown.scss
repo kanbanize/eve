@@ -1,0 +1,67 @@
+.eve-dropdown {
+    background: $eve-color-white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    display: inline-block;
+    font-size: $eve-font-14;
+    max-width: 17.5rem;
+    min-width: 7rem;
+
+    > .eve-input {
+        border: 0;
+        border-bottom: 1px solid $eve-color-dark-silver;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: $eve-spacing-8 0;
+
+        li {
+            align-items: center;
+            color: $eve-color-black;
+            cursor: pointer;
+            display: flex;
+            height: 2.25rem;
+            padding: 0 $eve-spacing-16;
+
+            &:hover,
+            &.is-active {
+                background: $eve-color-bright-silver;
+            }
+
+            svg,
+            .eve-avatar,
+            .eve-priority {
+                margin-right: $eve-spacing-12;
+            }
+
+            .eve-checkbox {
+                i {
+                    margin-right: $eve-spacing-12;
+                }
+            }
+
+            svg {
+                fill: $eve-color-darker-silver;
+                height: 1.125rem;
+                width: 1.125rem;
+            }
+
+            .eve-avatar {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+
+            &.is-disabled {
+                opacity: .5;
+                pointer-events: none;
+            }
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid $eve-color-dark-silver;
+            margin: $eve-spacing-8 0;
+        }
+    }
+}
