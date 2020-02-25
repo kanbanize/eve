@@ -1,0 +1,16 @@
+.eve-form {
+    .eve-form-label {
+        margin-bottom: $eve-spacing-8;
+        display: block;
+    }
+}
+
+.eve-forms {
+    .eve-form {
+        margin-bottom: $eve-spacing-16;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

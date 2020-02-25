@@ -300,48 +300,6 @@
   .eve-checkboxes .eve-checkbox {
     margin: 0.25rem; }
 
-.eve-chip {
-  align-items: center;
-  background: #eceff1;
-  border-radius: 1rem;
-  color: #000;
-  display: inline-flex;
-  font-size: 0.875rem;
-  height: 2rem;
-  line-height: 2rem;
-  padding: 0 0.75rem;
-  vertical-align: top; }
-  .eve-chip .eve-avatar {
-    font-size: 0.75rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    margin-left: -0.5rem;
-    margin-right: 0.5rem;
-    width: 1.5rem; }
-  .eve-chip i {
-    background-color: #b0bec5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1.125rem;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 1.125rem;
-    margin: 0 -0.25rem 0 0.5rem;
-    width: 1.125rem; }
-    .eve-chip i:hover {
-      background-color: #f44336; }
-  .eve-chip.is-disabled {
-    opacity: .5;
-    pointer-events: none; }
-
-.eve-chips {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -0.25rem; }
-  .eve-chips .eve-chip {
-    margin: 0.25rem; }
-
 .eve-color-picker {
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -397,35 +355,6 @@
           border: 0.125rem solid #fff;
           outline: 0.125rem solid #000; }
 
-.eve-dialog {
-  background: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  width: 25rem; }
-  .eve-dialog .eve-dialog-header {
-    color: #2196f3;
-    font-size: 1.25rem;
-    font-weight: bold;
-    line-height: 1.75rem;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal; }
-  .eve-dialog .eve-dialog-content {
-    color: #000;
-    font-size: 0.875rem;
-    line-height: 1.25rem; }
-  .eve-dialog .eve-dialog-footer {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem; }
-    .eve-dialog .eve-dialog-footer .eve-button {
-      margin-left: 1rem; }
-      .eve-dialog .eve-dialog-footer .eve-button:first-child {
-        margin-left: 0; }
-
 .eve-divider {
   align-items: center;
   display: flex;
@@ -446,50 +375,6 @@
     line-height: 1.25rem;
     padding: 0 1rem;
     z-index: 1; }
-
-.eve-dropdown {
-  background: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  font-size: 0.875rem;
-  max-width: 17.5rem;
-  min-width: 7rem; }
-  .eve-dropdown > .eve-input {
-    border: 0;
-    border-bottom: 1px solid #cfd8dc; }
-  .eve-dropdown ul {
-    list-style: none;
-    margin: 0;
-    padding: 0.5rem 0; }
-    .eve-dropdown ul li {
-      align-items: center;
-      color: #000;
-      cursor: pointer;
-      display: flex;
-      height: 2.25rem;
-      padding: 0 1rem; }
-      .eve-dropdown ul li:hover, .eve-dropdown ul li.is-active {
-        background: #eceff1; }
-      .eve-dropdown ul li svg,
-      .eve-dropdown ul li .eve-avatar,
-      .eve-dropdown ul li .eve-priority {
-        margin-right: 0.75rem; }
-      .eve-dropdown ul li .eve-checkbox i {
-        margin-right: 0.75rem; }
-      .eve-dropdown ul li svg {
-        fill: #b0bec5;
-        height: 1.125rem;
-        width: 1.125rem; }
-      .eve-dropdown ul li .eve-avatar {
-        height: 1.5rem;
-        width: 1.5rem; }
-      .eve-dropdown ul li.is-disabled {
-        opacity: .5;
-        pointer-events: none; }
-    .eve-dropdown ul hr {
-      border: 0;
-      border-top: 1px solid #cfd8dc;
-      margin: 0.5rem 0; }
 
 .eve-feedback {
   box-sizing: border-box;
@@ -717,21 +602,6 @@
       border-top: 0;
       height: 0;
       width: 0; }
-
-.eve-profile {
-  align-items: center;
-  display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem; }
-  .eve-profile .eve-avatar {
-    margin-right: 0.5rem; }
-
-.eve-profiles {
-  display: flex;
-  flex-direction: column;
-  margin: -0.25rem; }
-  .eve-profiles .eve-profile {
-    margin: 0.25rem; }
 
 .eve-radio {
   display: flex;
@@ -1076,3 +946,142 @@
   .eve-tooltip:hover::after {
     opacity: 1;
     transition-delay: .25s; }
+
+.eve-chip {
+  align-items: center;
+  background: #eceff1;
+  border-radius: 1rem;
+  color: #000;
+  display: inline-flex;
+  font-size: 0.875rem;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.75rem;
+  vertical-align: top; }
+  .eve-chip .eve-avatar {
+    font-size: 0.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+    width: 1.5rem; }
+  .eve-chip i {
+    background-color: #b0bec5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.125rem;
+    margin: 0 -0.25rem 0 0.5rem;
+    width: 1.125rem; }
+    .eve-chip i:hover {
+      background-color: #f44336; }
+  .eve-chip.is-disabled {
+    opacity: .5;
+    pointer-events: none; }
+
+.eve-chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.25rem; }
+  .eve-chips .eve-chip {
+    margin: 0.25rem; }
+
+.eve-dialog {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 25rem; }
+  .eve-dialog .eve-dialog-header {
+    color: #2196f3;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal; }
+  .eve-dialog .eve-dialog-content {
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.25rem; }
+  .eve-dialog .eve-dialog-footer {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem; }
+    .eve-dialog .eve-dialog-footer .eve-button {
+      margin-left: 1rem; }
+      .eve-dialog .eve-dialog-footer .eve-button:first-child {
+        margin-left: 0; }
+
+.eve-dropdown {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  font-size: 0.875rem;
+  max-width: 17.5rem;
+  min-width: 7rem; }
+  .eve-dropdown > .eve-input {
+    border: 0;
+    border-bottom: 1px solid #cfd8dc; }
+  .eve-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0; }
+    .eve-dropdown ul li {
+      align-items: center;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      height: 2.25rem;
+      padding: 0 1rem; }
+      .eve-dropdown ul li:hover, .eve-dropdown ul li.is-active {
+        background: #eceff1; }
+      .eve-dropdown ul li svg,
+      .eve-dropdown ul li .eve-avatar,
+      .eve-dropdown ul li .eve-priority {
+        margin-right: 0.75rem; }
+      .eve-dropdown ul li .eve-checkbox i {
+        margin-right: 0.75rem; }
+      .eve-dropdown ul li svg {
+        fill: #b0bec5;
+        height: 1.125rem;
+        width: 1.125rem; }
+      .eve-dropdown ul li .eve-avatar {
+        height: 1.5rem;
+        width: 1.5rem; }
+      .eve-dropdown ul li.is-disabled {
+        opacity: .5;
+        pointer-events: none; }
+    .eve-dropdown ul hr {
+      border: 0;
+      border-top: 1px solid #cfd8dc;
+      margin: 0.5rem 0; }
+
+.eve-form .eve-form-label {
+  margin-bottom: 0.5rem;
+  display: block; }
+
+.eve-forms .eve-form {
+  margin-bottom: 1rem; }
+  .eve-forms .eve-form:last-child {
+    margin-bottom: 0; }
+
+.eve-profile {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+  .eve-profile .eve-avatar {
+    margin-right: 0.5rem; }
+
+.eve-profiles {
+  display: flex;
+  flex-direction: column;
+  margin: -0.25rem; }
+  .eve-profiles .eve-profile {
+    margin: 0.25rem; }
