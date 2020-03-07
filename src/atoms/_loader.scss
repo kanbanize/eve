@@ -26,7 +26,6 @@ $eve-loader-size: 3rem;
         border-radius: 50%;
         border-right-color: $eve-color-blue;
         border-top-color: $eve-color-blue;
-        box-sizing: border-box;
         content: '';
         display: inline-block;
         height: $eve-loader-size;
@@ -36,11 +35,8 @@ $eve-loader-size: 3rem;
 
     &[data-label] {
         &::after {
-            color: $eve-color-black;
             content: attr(data-label);
             display: block;
-            font-size: $eve-font-14;
-            line-height: 1.25rem;
             margin-top: $eve-spacing-8;
             max-width: 50%;
             overflow: hidden;

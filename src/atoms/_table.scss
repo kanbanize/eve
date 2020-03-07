@@ -3,9 +3,6 @@
     border: 1px solid $eve-color-dark-silver;
     border-collapse: collapse;
     border-spacing: 0;
-    color: $eve-color-black;
-    font-size: $eve-font-14;
-    line-height: 1.25rem;
     table-layout: fixed;
     width: 100%;
 
@@ -14,7 +11,6 @@
             border-bottom: 1px solid $eve-color-dark-silver;
 
             th {
-                box-sizing: border-box;
                 height: 3.5rem;
                 padding: 0 $eve-spacing-16;
                 text-align: left;
@@ -30,7 +26,6 @@
             }
 
             td {
-                box-sizing: border-box;
                 height: 3.25rem;
                 padding: 0 $eve-spacing-16;
                 text-align: left;

@@ -6,13 +6,11 @@ $eve-badge-size: 1.125rem;
     &::after {
         background: $eve-color-red;
         border-radius: $eve-badge-size / 2;
-        box-sizing: border-box;
         color: $eve-color-white;
         content: attr(data-badge);
         font-size: $eve-font-12;
         font-weight: normal;
         height: $eve-badge-size;
-        line-height: $eve-badge-size;
         min-width: $eve-badge-size;
         padding: 0 $eve-spacing-4;
         position: absolute;

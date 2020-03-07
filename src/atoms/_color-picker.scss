@@ -36,7 +36,6 @@ $eve-color-picker-size: 2rem;
             background-repeat: no-repeat;
             background-size: 1.125rem;
             border: 1px solid $eve-color-dark-silver;
-            box-sizing: border-box;
             cursor: pointer;
             display: flex;
             flex-shrink: 0;
@@ -64,7 +63,6 @@ $eve-color-picker-size: 2rem;
 
             li {
                 align-items: center;
-                box-sizing: border-box;
                 cursor: pointer;
                 display: flex;
                 height: $eve-color-picker-size;

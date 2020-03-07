@@ -6,20 +6,13 @@
 
     .eve-dialog-header {
         color: $eve-color-blue;
-        font-size: 1.25rem;
+        font-size: $eve-font-20;
         font-weight: bold;
-        line-height: 1.75rem;
         margin-bottom: $eve-spacing-16;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal;
-    }
-
-    .eve-dialog-content {
-        color: $eve-color-black;
-        font-size: $eve-font-14;
-        line-height: 1.25rem;
     }
 
     .eve-dialog-footer {

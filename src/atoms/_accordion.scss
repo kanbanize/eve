@@ -2,8 +2,6 @@ $eve-accordion-size: 2rem;
 
 .eve-accordion {
     border-left: 1px solid $eve-color-blue;
-    font-size: $eve-font-14;
-    line-height: 1.25rem;
     padding-left: $eve-spacing-8;
 
     > input {
@@ -17,12 +15,12 @@ $eve-accordion-size: 2rem;
     }
 
     .eve-accordion-header {
+        align-items: center;
         background-color: $eve-color-bright-silver;
         color: $eve-color-blue;
         cursor: pointer;
-        display: block;
+        display: flex;
         height: $eve-accordion-size;
-        line-height: $eve-accordion-size;
         overflow: hidden;
         padding: 0 $eve-spacing-16;
         position: relative;

@@ -1,3 +1,23 @@
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-size: 16px; }
+
+body {
+  margin: 0;
+  font-size: .875rem;
+  line-height: 1.5;
+  color: #000; }
+
 .eve-row {
   display: flex;
   flex-wrap: wrap;
@@ -45,20 +65,18 @@
 
 .eve-accordion {
   border-left: 1px solid #2196f3;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   padding-left: 0.5rem; }
   .eve-accordion > input {
     display: none; }
     .eve-accordion > input:checked ~ .eve-accordion-content {
       display: block; }
   .eve-accordion .eve-accordion-header {
+    align-items: center;
     background-color: #eceff1;
     color: #2196f3;
     cursor: pointer;
-    display: block;
+    display: flex;
     height: 2rem;
-    line-height: 2rem;
     overflow: hidden;
     padding: 0 1rem;
     position: relative;
@@ -135,13 +153,11 @@
   .eve-badge::after {
     background: #f44336;
     border-radius: 0.5625rem;
-    box-sizing: border-box;
     color: #fff;
     content: attr(data-badge);
     font-size: 0.75rem;
     font-weight: normal;
     height: 1.125rem;
-    line-height: 1.125rem;
     min-width: 1.125rem;
     padding: 0 0.25rem;
     position: absolute;
@@ -151,8 +167,6 @@
 
 .eve-breadcrumb {
   display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -173,7 +187,6 @@
   align-items: center;
   background: #2196f3;
   border: 0;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
@@ -250,9 +263,8 @@
     pointer-events: none; }
 
 .eve-checkbox {
+  align-items: center;
   display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   position: relative; }
   .eve-checkbox input[type='checkbox'] {
     cursor: pointer;
@@ -269,7 +281,6 @@
       .eve-checkbox input[type='checkbox']:checked ~ i::after {
         border-bottom: 0.125rem solid #fff;
         border-right: 0.125rem solid #fff;
-        box-sizing: content-box;
         content: '';
         display: block;
         height: calc(100% - 0.28125rem);
@@ -278,11 +289,11 @@
         top: calc(50% - .125rem);
         -webkit-transform: translate(-50%, -50%) rotate(45deg);
                 transform: translate(-50%, -50%) rotate(45deg);
-        width: calc(100% - 0.5625rem); }
+        width: calc(100% - 0.5625rem);
+        box-sizing: content-box; }
   .eve-checkbox i {
     background: #fff;
     border: 0.125rem solid #b0bec5;
-    box-sizing: border-box;
     flex-shrink: 0;
     height: 1.125rem;
     margin-right: 0.5rem;
@@ -322,7 +333,6 @@
       background-repeat: no-repeat;
       background-size: 1.125rem;
       border: 1px solid #cfd8dc;
-      box-sizing: border-box;
       cursor: pointer;
       display: flex;
       flex-shrink: 0;
@@ -343,7 +353,6 @@
         display: flex; }
       .eve-color-picker .eve-color-picker-palette ul li {
         align-items: center;
-        box-sizing: border-box;
         cursor: pointer;
         display: flex;
         height: 2rem;
@@ -371,16 +380,10 @@
     background: #fff;
     color: #2196f3;
     content: attr(data-content);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
     padding: 0 1rem;
     z-index: 1; }
 
 .eve-feedback {
-  box-sizing: border-box;
-  color: #000;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   padding: 0.5rem 1rem; }
   .eve-feedback.is-success {
     background: #c8e6c9; }
@@ -399,7 +402,6 @@
   flex-shrink: 0;
   height: 2.25rem;
   justify-content: center;
-  line-height: 2.25rem;
   outline: none;
   padding: 0;
   vertical-align: top;
@@ -427,12 +429,9 @@
           appearance: none;
   background: #fff;
   border: 1px solid #cfd8dc;
-  box-sizing: border-box;
-  color: #000;
   font-family: inherit;
   font-size: 0.875rem;
   height: 2.25rem;
-  line-height: 2.25rem;
   max-width: 100%;
   min-width: 0;
   outline: none;
@@ -460,13 +459,9 @@
   border: 1px solid #cfd8dc;
   border-bottom-width: .125rem;
   border-radius: .25rem;
-  box-sizing: border-box;
-  color: #000;
   display: inline-flex;
-  font-size: 0.875rem;
   height: 2rem;
   justify-content: center;
-  line-height: 2rem;
   min-width: 2rem;
   padding: 0 0.5rem;
   text-align: center; }
@@ -508,18 +503,14 @@
     border-radius: 50%;
     border-right-color: #2196f3;
     border-top-color: #2196f3;
-    box-sizing: border-box;
     content: '';
     display: inline-block;
     height: 3rem;
     width: 3rem;
     z-index: 2; }
   .eve-loader[data-label]::after {
-    color: #000;
     content: attr(data-label);
     display: block;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
     margin-top: 0.5rem;
     max-width: 50%;
     overflow: hidden;
@@ -545,14 +536,14 @@
 .eve-navigation {
   display: flex;
   flex-direction: column;
-  font-size: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0; }
   .eve-navigation li {
+    align-items: center;
     cursor: pointer;
+    display: flex;
     height: 2.25rem;
-    line-height: 2.25rem;
     overflow: hidden;
     padding: 0 1rem;
     text-overflow: ellipsis;
@@ -586,8 +577,7 @@
     background: #4caf50; }
     .eve-priority.is-average.is-figure {
       background: transparent;
-      border: 0.125rem solid #4caf50;
-      box-sizing: border-box; }
+      border: 0.125rem solid #4caf50; }
   .eve-priority.is-high {
     background: #ff9800; }
     .eve-priority.is-high.is-figure {
@@ -604,9 +594,8 @@
       width: 0; }
 
 .eve-radio {
+  align-items: center;
   display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   position: relative; }
   .eve-radio input[type='radio'] {
     cursor: pointer;
@@ -623,7 +612,6 @@
       .eve-radio input[type='radio']:checked ~ i::after {
         border: 0.1875rem solid #fff;
         border-radius: inherit;
-        box-sizing: inherit;
         content: '';
         display: block;
         height: 100%; }
@@ -631,7 +619,6 @@
     background: #fff;
     border: 0.125rem solid #b0bec5;
     border-radius: 50%;
-    box-sizing: border-box;
     flex-shrink: 0;
     height: 1.125rem;
     margin-right: 0.5rem;
@@ -658,13 +645,11 @@
   background-size: 1.125rem;
   border: 1px solid #cfd8dc;
   border-radius: 0;
-  color: #000;
   cursor: pointer;
   display: block;
   font-family: inherit;
   font-size: 0.875rem;
   height: 2.25rem;
-  line-height: 2.25rem;
   max-width: 100%;
   min-width: 0;
   outline: none;
@@ -677,9 +662,8 @@
     pointer-events: none; }
 
 .eve-switch {
+  align-items: center;
   display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   position: relative; }
   .eve-switch input[type='checkbox'] {
     cursor: pointer;
@@ -697,7 +681,6 @@
     align-items: center;
     background: #b0bec5;
     border-radius: 0.5625rem;
-    box-sizing: border-box;
     display: flex;
     flex-shrink: 0;
     height: 1.125rem;
@@ -728,15 +711,11 @@
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   border-spacing: 0;
-  color: #000;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   table-layout: fixed;
   width: 100%; }
   .eve-table thead tr {
     border-bottom: 1px solid #cfd8dc; }
     .eve-table thead tr th {
-      box-sizing: border-box;
       height: 3.5rem;
       padding: 0 1rem;
       text-align: left;
@@ -744,7 +723,6 @@
   .eve-table tbody tr:not(:last-child) {
     border-bottom: 1px solid #cfd8dc; }
   .eve-table tbody tr td {
-    box-sizing: border-box;
     height: 3.25rem;
     padding: 0 1rem;
     text-align: left;
@@ -754,18 +732,18 @@
 
 .eve-tabs {
   display: flex;
-  font-size: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0; }
   .eve-tabs li {
-    box-sizing: border-box;
+    align-items: center;
     cursor: pointer;
+    display: flex;
     flex: 1;
     height: 3rem;
-    line-height: 3rem;
     overflow: hidden;
     padding: 0 1rem;
+    justify-content: center;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap; }
@@ -784,11 +762,8 @@
           appearance: none;
   background: #fff;
   border: 1px solid #cfd8dc;
-  box-sizing: border-box;
-  color: #000;
   font-family: inherit;
   font-size: 0.875rem;
-  line-height: 1.25rem;
   max-width: 100%;
   min-height: 2.25rem;
   min-width: 100%;
@@ -835,7 +810,6 @@
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 0.25rem #fff;
-    box-sizing: border-box;
     cursor: pointer;
     flex-shrink: 0;
     height: 1.5rem;
@@ -898,7 +872,6 @@
     font-size: 0.75rem;
     font-weight: normal;
     height: 1.5rem;
-    line-height: 1.5rem;
     max-width: 20rem;
     opacity: 0;
     overflow: hidden;
@@ -951,17 +924,13 @@
   align-items: center;
   background: #eceff1;
   border-radius: 1rem;
-  color: #000;
   display: inline-flex;
-  font-size: 0.875rem;
   height: 2rem;
-  line-height: 2rem;
   padding: 0 0.75rem;
   vertical-align: top; }
   .eve-chip .eve-avatar {
     font-size: 0.75rem;
     height: 1.5rem;
-    line-height: 1.5rem;
     margin-left: -0.5rem;
     margin-right: 0.5rem;
     width: 1.5rem; }
@@ -998,16 +967,11 @@
     color: #2196f3;
     font-size: 1.25rem;
     font-weight: bold;
-    line-height: 1.75rem;
     margin-bottom: 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal; }
-  .eve-dialog .eve-dialog-content {
-    color: #000;
-    font-size: 0.875rem;
-    line-height: 1.25rem; }
   .eve-dialog .eve-dialog-footer {
     align-items: center;
     display: flex;
@@ -1022,7 +986,6 @@
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
-  font-size: 0.875rem;
   max-width: 17.5rem;
   min-width: 7rem; }
   .eve-dropdown > .eve-input {
@@ -1034,7 +997,6 @@
     padding: 0.5rem 0; }
     .eve-dropdown ul li {
       align-items: center;
-      color: #000;
       cursor: pointer;
       display: flex;
       height: 2.25rem;
@@ -1073,9 +1035,7 @@
 
 .eve-profile {
   align-items: center;
-  display: flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem; }
+  display: flex; }
   .eve-profile .eve-avatar {
     margin-right: 0.5rem; }
 

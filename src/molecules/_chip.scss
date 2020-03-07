@@ -4,18 +4,14 @@ $eve-chip-size: 2rem;
     align-items: center;
     background: $eve-color-bright-silver;
     border-radius: $eve-chip-size / 2;
-    color: $eve-color-black;
     display: inline-flex;
-    font-size: $eve-font-14;
     height: $eve-chip-size;
-    line-height: $eve-chip-size;
     padding: 0 $eve-spacing-12;
     vertical-align: top;
 
     .eve-avatar {
         font-size: $eve-font-12;
         height: 1.5rem;
-        line-height: 1.5rem;
         margin-left: -$eve-spacing-8;
         margin-right: $eve-spacing-8;
         width: 1.5rem;

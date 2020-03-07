@@ -1,9 +1,8 @@
 $eve-radio-size: 1.125rem;
 
 .eve-radio {
+    align-items: center;
     display: flex;
-    font-size: $eve-font-14;
-    line-height: 1.25rem;
     position: relative;
 
     input {
@@ -24,7 +23,6 @@ $eve-radio-size: 1.125rem;
                 &::after {
                     border: .1875rem solid $eve-color-white;
                     border-radius: inherit;
-                    box-sizing: inherit;
                     content: '';
                     display: block;
                     height: 100%;
@@ -37,7 +35,6 @@ $eve-radio-size: 1.125rem;
         background: $eve-color-white;
         border: .125rem solid $eve-color-darker-silver;
         border-radius: 50%;
-        box-sizing: border-box;
         flex-shrink: 0;
         height: $eve-radio-size;
         margin-right: $eve-spacing-8;

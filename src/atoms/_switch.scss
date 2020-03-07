@@ -2,9 +2,8 @@ $eve-switch-width: 2.25rem;
 $eve-switch-height: 1.125rem;
 
 .eve-switch {
+    align-items: center;
     display: flex;
-    font-size: $eve-font-14;
-    line-height: 1.25rem;
     position: relative;
 
     input {
@@ -29,7 +28,6 @@ $eve-switch-height: 1.125rem;
         align-items: center;
         background: $eve-color-darker-silver;
         border-radius: $eve-switch-height / 2;
-        box-sizing: border-box;
         display: flex;
         flex-shrink: 0;
         height: $eve-switch-height;

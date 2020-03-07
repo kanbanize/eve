@@ -1,9 +1,8 @@
 $eve-checkbox-size: 1.125rem;
 
 .eve-checkbox {
+    align-items: center;
     display: flex;
-    font-size: $eve-font-14;
-    line-height: 1.25rem;
     position: relative;
 
     input {
@@ -24,7 +23,6 @@ $eve-checkbox-size: 1.125rem;
                 &::after {
                     border-bottom: .125rem solid $eve-color-white;
                     border-right: .125rem solid $eve-color-white;
-                    box-sizing: content-box;
                     content: '';
                     display: block;
                     height: calc(100% - #{$eve-checkbox-size / 4});
@@ -33,6 +31,7 @@ $eve-checkbox-size: 1.125rem;
                     top: calc(50% - .125rem);
                     transform: translate(-50%, -50%) rotate(45deg);
                     width: calc(100% - #{$eve-checkbox-size / 2});
+                    box-sizing: content-box; // TODO: Remove this later
                 }
             }
         }
@@ -41,7 +40,6 @@ $eve-checkbox-size: 1.125rem;
     i {
         background: $eve-color-white;
         border: .125rem solid $eve-color-darker-silver;
-        box-sizing: border-box;
         flex-shrink: 0;
         height: $eve-checkbox-size;
         margin-right: $eve-spacing-8;
