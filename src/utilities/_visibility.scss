@@ -1,0 +1,11 @@
+// sass-lint:disable no-important
+$eve-visibilities: (
+    visible,
+    hidden
+);
+
+@each $eve-visibility in $eve-visibilities {
+    .eve-visibility-#{$eve-visibility} {
+        visibility: $eve-visibility !important;
+    }
+}

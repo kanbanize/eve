@@ -1,0 +1,26 @@
+$eve-input-size: 2.25rem;
+
+.eve-input {
+    appearance: none;
+    background: $eve-color-white;
+    border: 1px solid $eve-color-dark-silver;
+    font-family: inherit;
+    font-size: $eve-font-14;
+    height: $eve-input-size;
+    max-width: 100%;
+    min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
+    outline: none;
+    padding: 0 $eve-spacing-16;
+    width: 100%;
+
+    &::placeholder {
+        color: $eve-color-darker-silver;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}

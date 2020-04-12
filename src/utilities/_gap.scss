@@ -1,0 +1,35 @@
+// sass-lint:disable no-important
+$eve-gaps: (
+    tiny: $eve-spacing-4,
+    small: $eve-spacing-8,
+    normal: $eve-spacing-16,
+    large: $eve-spacing-24
+);
+$eve-sides: (
+    top,
+    right,
+    bottom,
+    left
+);
+
+@each $eve-gap in map-keys($eve-gaps) {
+    $gap: map-get($eve-gaps, $eve-gap);
+
+    &.eve-gap-#{$eve-gap} {
+        margin: $gap !important;
+    }
+
+    @each $eve-side in $eve-sides {
+        &.eve-gap-#{$eve-side}-#{$eve-gap} {
+            @if $eve-side == 'top' {
+                margin-top: $gap !important;
+            } @else if $eve-side == 'right' {
+                margin-right: $gap !important;
+            } @else if $eve-side == 'bottom' {
+                margin-bottom: $gap !important;
+            } @else if $eve-side == 'left' {
+                margin-left: $gap !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+$eve-tab-size: 2.25rem;
+
+.eve-navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: $eve-tab-size;
+        overflow: hidden;
+        padding: 0 $eve-spacing-16;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            color: $eve-color-blue;
+        }
+
+        &.is-active {
+            border-left: 1px solid $eve-color-blue;
+            color: $eve-color-blue;
+            padding-left: calc(#{$eve-spacing-16} - .125rem);
+        }
+
+        &.is-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+    }
+}
+

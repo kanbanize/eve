@@ -1,0 +1,13 @@
+.eve-placeholder {
+    padding: $eve-spacing-16;
+    border: 1px dashed $eve-color-dark-silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $eve-color-blue;
+        color: $eve-color-blue;
+    }
+}

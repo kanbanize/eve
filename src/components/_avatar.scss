@@ -1,0 +1,49 @@
+$eve-avatar-size: 2rem;
+
+.eve-avatar {
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-shrink: 0;
+    height: $eve-avatar-size;
+    justify-content: center;
+    vertical-align: top;
+    width: $eve-avatar-size;
+
+    &[data-initials] {
+        background: $eve-color-bright-silver;
+        font-size: $eve-font-16;
+
+         &::before {
+            content: attr(data-initials);
+            font-size: inherit;
+        }
+    }
+
+    img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: top;
+        width: inherit;
+    }
+
+    &.is-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.eve-avatars {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$eve-spacing-4;
+
+    .eve-avatar {
+        margin: $eve-spacing-4;
+    }
+}

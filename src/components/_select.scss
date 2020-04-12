@@ -1,0 +1,30 @@
+$eve-select-size: 2.25rem;
+
+.eve-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); // sass-lint:disable-line quotes
+    background-position: right $eve-spacing-12 center;
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    border: 1px solid $eve-color-dark-silver;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: $eve-font-14;
+    height: $eve-select-size;
+    max-width: 100%;
+    min-width: 0; // Fix: https://bugzilla.mozilla.org/show_bug.cgi?id=1114904
+    outline: none;
+    padding: 0 $eve-spacing-38 0 $eve-spacing-16;
+    width: 100%;
+
+    &::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
+        display: none;
+    }
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}

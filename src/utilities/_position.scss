@@ -1,0 +1,14 @@
+// sass-lint:disable no-important
+$eve-positions: (
+    static,
+    absolute,
+    fixed,
+    relative,
+    sticky
+);
+
+@each $eve-position in $eve-positions {
+    .eve-position-#{$eve-position} {
+        position: $eve-position !important;
+    }
+}

@@ -1,0 +1,91 @@
+$eve-tooltip-size: 1.5rem;
+
+.eve-tooltip {
+    position: relative;
+
+    &::after {
+        background: $eve-color-black;
+        border-radius: $eve-tooltip-size / 2;
+        color: $eve-color-white;
+        content: attr(data-tooltip);
+        font-family: inherit;
+        font-size: $eve-font-12;
+        font-weight: normal;
+        height: $eve-tooltip-size;
+        max-width: 20rem;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 $eve-spacing-8;
+        pointer-events: none;
+        position: absolute;
+        text-overflow: ellipsis;
+        text-transform: none;
+        transition: all .2s ease; // sass-lint:disable-line no-transition-all
+        white-space: nowrap;
+        word-wrap: normal;
+        z-index: 2147483648;
+    }
+
+    &.is-left {
+        &::after {
+            bottom: 50%;
+            right: 100%;
+            transform: translate(.5rem, 50%);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(-.5rem, 50%);
+            }
+        }
+    }
+
+    &.is-top {
+        &::after {
+            bottom: 100%;
+            left: 50%;
+            transform: translate(-50%, .5rem);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(-50%, -.5rem);
+            }
+        }
+    }
+
+    &.is-right {
+        &::after {
+            bottom: 50%;
+            left: 100%;
+            transform: translate(-.5rem, 50%);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(.5rem, 50%);
+            }
+        }
+    }
+
+    &.is-bottom {
+        &::after {
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -.5rem);
+        }
+
+        &:hover {
+            &::after {
+                transform: translate(-50%, .5rem);
+            }
+        }
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            transition-delay: .25s;
+        }
+    }
+}

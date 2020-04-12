@@ -8,11 +8,17 @@
     },
     "scripts": {
         "start": "node node_modules/http-server/bin/http-server -p 8000 -o -a localhost",
+        "build-eve": "gulp build-eve",
+        "build-eve-min": "gulp build-eve-min",
         "build": "gulp build",
+        "build-docs-js": "gulp build-docs-js",
+        "build-docs-css": "gulp build-docs-css",
         "build-docs": "gulp build-docs",
+        "build-site-js": "gulp build-site-js",
+        "build-site-css": "gulp build-site-css",
         "build-site": "gulp build-site",
-        "build-all": "gulp build-all",
-        "watch": "gulp watch"
+        "watch": "gulp watch",
+        "build-all": "gulp build-all"
     },
     "author": "Hristo Ivanov <hristo.penev.ivanov@gmail.com>",
     "license": "MIT",
