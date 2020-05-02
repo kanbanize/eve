@@ -8,10 +8,9 @@ $eve-tab-size: 2.25rem;
     padding: 0;
 
     li {
-        align-items: center;
         cursor: pointer;
-        display: flex;
         height: $eve-tab-size;
+        line-height: $eve-tab-size;
         overflow: hidden;
         padding: 0 $eve-spacing-16;
         text-overflow: ellipsis;

@@ -4,10 +4,8 @@
     padding: $eve-spacing-24;
     width: 25rem;
 
-    .eve-dialog-header {
+    h2 {
         color: $eve-color-blue;
-        font-size: $eve-font-20;
-        font-weight: bold;
         margin-bottom: $eve-spacing-16;
         overflow: hidden;
         text-overflow: ellipsis;

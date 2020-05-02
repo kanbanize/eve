@@ -9,16 +9,8 @@ $eve-avatar-size: 2rem;
     justify-content: center;
     vertical-align: top;
     width: $eve-avatar-size;
-
-    &[data-initials] {
-        background: $eve-color-bright-silver;
-        font-size: $eve-font-16;
-
-         &::before {
-            content: attr(data-initials);
-            font-size: inherit;
-        }
-    }
+    background: $eve-color-bright-silver;
+    font-size: $eve-font-16;
 
     img {
         background-position: center;

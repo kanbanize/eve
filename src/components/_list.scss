@@ -1,0 +1,13 @@
+.eve-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-bottom: $eve-spacing-8;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

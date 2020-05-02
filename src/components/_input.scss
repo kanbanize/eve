@@ -12,6 +12,7 @@ $eve-input-size: 2.25rem;
     outline: none;
     padding: 0 $eve-spacing-16;
     width: 100%;
+    font-weight: normal;
 
     &::placeholder {
         color: $eve-color-darker-silver;
@@ -22,5 +23,38 @@ $eve-input-size: 2.25rem;
     &:disabled {
         opacity: .5;
         pointer-events: none;
+    }
+}
+
+.eve-input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    svg {
+        position: absolute;
+        width: $eve-input-size / 2;
+        height: $eve-input-size / 2;
+        fill: $eve-color-darker-silver;
+    }
+
+    &.has-icon-left {
+        .eve-input {
+            padding-left: ($eve-input-size / 2) + $eve-spacing-24;
+        }
+
+        svg:first-of-type {
+            left: $eve-spacing-12;
+        }
+    }
+
+    &.has-icon-right {
+        .eve-input {
+            padding-right: ($eve-input-size / 2) + $eve-spacing-24;
+        }
+
+        svg:last-of-type {
+            right: $eve-spacing-12;
+        }
     }
 }

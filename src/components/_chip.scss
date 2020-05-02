@@ -22,7 +22,7 @@ $eve-chip-size: 2rem;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E"); // sass-lint:disable-line quotes
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 1.125rem;
+        background-size: $eve-chip-size / 2;
         border-radius: 50%;
         cursor: pointer;
         height: 1.125rem;
@@ -30,7 +30,7 @@ $eve-chip-size: 2rem;
         width: 1.125rem;
 
         &:hover {
-            background-color: $eve-color-red;
+            background-color: $eve-color-silver;
         }
     }
 
@@ -46,6 +46,12 @@ $eve-chip-size: 2rem;
     margin: -$eve-spacing-4;
 
     .eve-chip {
+        margin: $eve-spacing-4;
+    }
+
+    .eve-button {
+        width: $eve-chip-size;
+        height: $eve-chip-size;
         margin: $eve-spacing-4;
     }
 }

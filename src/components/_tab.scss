@@ -1,20 +1,18 @@
 $eve-tab-size: 3rem;
 
-.eve-tabs {
+.eve-tab {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid $eve-color-dark-silver;
 
     li {
-        align-items: center;
         cursor: pointer;
-        display: flex;
-        flex: 1;
         height: $eve-tab-size;
+        line-height: $eve-tab-size;
         overflow: hidden;
         padding: 0 $eve-spacing-16;
-        justify-content: center;
         text-align: center;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -24,8 +22,19 @@ $eve-tab-size: 3rem;
         }
 
         &.is-active {
-            border-bottom: 1px solid $eve-color-blue;
             color: $eve-color-blue;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 1px;
+                background: $eve-color-blue;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
         }
 
         &.is-disabled {

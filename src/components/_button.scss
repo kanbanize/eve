@@ -13,7 +13,6 @@ $eve-button-size: 2.25rem;
     font-weight: normal;
     height: $eve-button-size;
     justify-content: center;
-    min-width: 4rem;
     outline: none;
     padding: 0 $eve-spacing-16;
     text-decoration: none;
@@ -21,31 +20,59 @@ $eve-button-size: 2.25rem;
     vertical-align: top;
     white-space: nowrap;
 
-    &.is-success {
-        background: $eve-color-green;
+    &.is-outlined {
+        background: transparent;
+        border: 1px solid $eve-color-blue;
+        color: $eve-color-blue;
 
-        &.is-outlined {
-            background: $eve-color-white;
-            border: 1px solid $eve-color-green;
-            color: $eve-color-green;
-
-            &:hover {
-                background: $eve-color-green-50;
-                border-color: $eve-color-green-50;
-            }
-        }
-
-        &.is-inverted {
-            background: $eve-color-white;
-            color: $eve-color-green;
-
-            &:hover {
-                background: $eve-color-green-50;
+        &.is-icon {
+            svg {
+                fill: $eve-color-blue;
             }
         }
 
         &:hover {
-            background: $eve-color-green-400;
+            background: $eve-color-blue;
+            border-color: $eve-color-blue;
+            color: $eve-color-white;
+
+            &.is-icon {
+                svg {
+                    fill: $eve-color-white;
+                }
+            }
+        }
+    }
+
+    &.is-icon {
+        width: $eve-button-size;
+        padding: 0;
+        border-radius: 50%;
+
+        svg {
+            fill: $eve-color-white;
+            width: $eve-button-size / 2;
+            height: $eve-button-size / 2;
+        }
+    }
+
+    &.is-success {
+        background: $eve-color-green;
+
+        &.is-outlined {
+            border: 1px solid $eve-color-green;
+            color: $eve-color-green;
+
+            &.is-icon {
+                svg {
+                    fill: $eve-color-green;
+                }
+            }
+
+            &:hover {
+                background: $eve-color-green;
+                border-color: $eve-color-green;
+            }
         }
     }
 
@@ -53,52 +80,20 @@ $eve-button-size: 2.25rem;
         background: $eve-color-red;
 
         &.is-outlined {
-            background: $eve-color-white;
             border: 1px solid $eve-color-red;
             color: $eve-color-red;
 
-            &:hover {
-                background: $eve-color-red-50;
-                border-color: $eve-color-red-50;
+            &.is-icon {
+                svg {
+                    fill: $eve-color-red;
+                }
             }
-        }
-
-        &.is-inverted {
-            background: $eve-color-white;
-            color: $eve-color-red;
 
             &:hover {
-                background: $eve-color-red-50;
+                background: $eve-color-red;
+                border-color: $eve-color-red;
             }
         }
-
-        &:hover {
-            background: $eve-color-red-400;
-        }
-    }
-
-    &.is-outlined {
-        background: $eve-color-white;
-        border: 1px solid $eve-color-blue;
-        color: $eve-color-blue;
-
-        &:hover {
-            background: $eve-color-blue-50;
-            border-color: $eve-color-blue-50;
-        }
-    }
-
-    &.is-inverted {
-        background: $eve-color-white;
-        color: $eve-color-blue;
-
-        &:hover {
-            background: $eve-color-blue-50;
-        }
-    }
-
-    &:hover {
-        background: $eve-color-blue-400;
     }
 
     &:disabled {

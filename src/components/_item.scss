@@ -1,0 +1,24 @@
+.eve-item {
+    display: flex;
+    align-items: center;
+
+    svg,
+    .eve-checkbox,
+    .eve-radio,
+    .eve-switch,
+    .eve-avatar,
+    .eve-priority {
+        margin-right: $eve-spacing-8;
+    }
+
+    svg {
+        width: 1.125rem;
+        height: 1.125rem;
+        fill: $eve-color-darker-silver;
+    }
+
+    .eve-avatar {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

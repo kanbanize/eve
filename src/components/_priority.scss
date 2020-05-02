@@ -5,6 +5,7 @@ $eve-priority-size: 1.125rem;
     height: $eve-priority-size;
     vertical-align: top;
     width: $eve-priority-size;
+    flex-shrink: 0;
 
     &.is-low {
         background: $eve-color-blue;

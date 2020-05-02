@@ -42,7 +42,6 @@ $eve-checkbox-size: 1.125rem;
         border: .125rem solid $eve-color-darker-silver;
         flex-shrink: 0;
         height: $eve-checkbox-size;
-        margin-right: $eve-spacing-8;
         pointer-events: none;
         position: relative;
         width: $eve-checkbox-size;
@@ -51,15 +50,5 @@ $eve-checkbox-size: 1.125rem;
     &.is-disabled {
         opacity: .5;
         pointer-events: none;
-    }
-}
-
-.eve-checkboxes {
-    display: flex;
-    flex-direction: column;
-    margin: -$eve-spacing-4;
-
-    .eve-checkbox {
-        margin: $eve-spacing-4;
     }
 }

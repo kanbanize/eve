@@ -1,12 +1,12 @@
 @charset 'utf-8';
 
-// Global
-@import 'global';
-
 // Variables
 @import 'variables/colors';
 @import 'variables/fonts';
 @import 'variables/spacings';
+
+// Global
+@import 'global';
 
 // Grid
 @import 'grid';
@@ -25,19 +25,19 @@
 @import 'components/dropdown';
 @import 'components/feedback';
 @import 'components/form';
-@import 'components/icon';
 @import 'components/input';
+@import 'components/item';
 @import 'components/key';
+@import 'components/list';
 @import 'components/loader';
 @import 'components/navigation';
 @import 'components/placeholder';
 @import 'components/priority';
-@import 'components/profile';
 @import 'components/radio';
 @import 'components/select';
 @import 'components/switch';
 @import 'components/table';
-@import 'components/tabs';
+@import 'components/tab';
 @import 'components/textarea';
 @import 'components/timeline';
 @import 'components/tooltip';

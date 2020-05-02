@@ -1,25 +1,15 @@
 // sass-lint:disable no-important
 $eve-text-transforms: (
     lowercase,
-    uppercase,
-    capitalize
+    uppercase
 );
 $eve-text-decorations: (
-    line-through,
-    overline,
     underline
 );
 $eve-text-alignments: (
     left,
     center,
-    right,
-    justify
-);
-$eve-text-weights: (
-    light: 300,
-    medium: 400,
-    semibold: 600,
-    bold: 700
+    right
 );
 $eve-text-colors: (
     primary: $eve-color-blue,
@@ -53,31 +43,9 @@ $eve-text-colors: (
     }
 }
 
-@each $eve-text-weight in map-keys($eve-text-weights) {
-    .eve-text-#{$eve-text-weight} {
-        font-weight: map-get($eve-text-weights, $eve-text-weight) !important;
-    }
-}
-
 .eve-text-truncate {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
     word-wrap: normal !important;
-}
-
-.eve-text-unselectable {
-    user-select: none !important;
-}
-
-.eve-text-link {
-    color: $eve-color-blue !important;
-    cursor: pointer !important;
-    text-decoration: underline !important;
-}
-
-.eve-paragraph {
-    font-size: .875rem !important;
-    line-height: 1.25rem !important;
-    margin: 0 !important;
 }
