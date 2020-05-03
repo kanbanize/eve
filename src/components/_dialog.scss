@@ -6,11 +6,15 @@
 
     h2 {
         color: $eve-color-blue;
-        margin-bottom: $eve-spacing-16;
+        margin: 0 0 $eve-spacing-16;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal;
+    }
+
+    p {
+        margin: 0;
     }
 
     .eve-dialog-footer {

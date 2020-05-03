@@ -18,18 +18,6 @@ body {
   line-height: 1.4285714285714286;
   color: var(--color-black); }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  margin: 0; }
-
-p {
-  margin: 0; }
-
 .eve-row {
   display: flex;
   flex-wrap: wrap;
@@ -399,11 +387,13 @@ p {
   width: 25rem; }
   .eve-dialog h2 {
     color: #2196f3;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal; }
+  .eve-dialog p {
+    margin: 0; }
   .eve-dialog .eve-dialog-footer {
     align-items: center;
     display: flex;
