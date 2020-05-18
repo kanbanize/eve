@@ -776,25 +776,25 @@ body {
     opacity: .5;
     pointer-events: none; }
 
-.eve-table table {
+.eve-table {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-collapse: collapse;
   border-spacing: 0;
   table-layout: fixed;
   width: 100%; }
-  .eve-table table thead tr {
+  .eve-table thead tr {
     border-bottom: 1px solid #cfd8dc; }
-    .eve-table table thead tr th {
+    .eve-table thead tr th {
       height: 3rem;
       padding: 0 1rem;
       text-align: left;
       word-break: break-word; }
-  .eve-table table tbody tr {
+  .eve-table tbody tr {
     border-bottom: 1px solid #cfd8dc; }
-    .eve-table table tbody tr:last-child {
+    .eve-table tbody tr:last-child {
       border-bottom: 0; }
-    .eve-table table tbody tr td {
+    .eve-table tbody tr td {
       height: 3rem;
       padding: 0 1rem;
       text-align: left;
