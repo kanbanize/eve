@@ -143,24 +143,6 @@ body {
   .eve-avatars .eve-avatar {
     margin: 0.25rem; }
 
-.eve-breadcrumb {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .eve-breadcrumb li {
-    cursor: pointer;
-    display: flex; }
-    .eve-breadcrumb li:not(:last-child)::after {
-      color: #b0bec5;
-      content: '/';
-      padding: 0 0.75rem; }
-    .eve-breadcrumb li:hover, .eve-breadcrumb li.is-active {
-      color: #2196f3; }
-    .eve-breadcrumb li.is-disabled {
-      opacity: .5;
-      pointer-events: none; }
-
 .eve-button {
   align-items: center;
   background: #2196f3;
