@@ -10,15 +10,18 @@
         border-bottom: 1px solid $eve-color-dark-silver;
     }
 
-    .eve-list {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
         max-height: 20rem;
         overflow: auto;
 
-        .eve-item {
+        li {
             cursor: pointer;
             height: 2.25rem;
+            line-height: 2.25rem;
             padding: 0 $eve-spacing-16;
-            margin: 0;
 
             &:hover,
             &.is-active {

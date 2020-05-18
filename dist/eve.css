@@ -143,23 +143,6 @@ body {
   .eve-avatars .eve-avatar {
     margin: 0.25rem; }
 
-.eve-badge {
-  position: relative; }
-  .eve-badge::after {
-    background: #f44336;
-    border-radius: 0.5625rem;
-    color: #fff;
-    content: attr(data-badge);
-    font-size: 0.75rem;
-    font-weight: normal;
-    height: 1.125rem;
-    min-width: 1.125rem;
-    padding: 0 0.25rem;
-    position: absolute;
-    right: -0.5625rem;
-    text-align: center;
-    top: -0.5625rem; }
-
 .eve-breadcrumb {
   display: flex;
   list-style: none;
@@ -432,17 +415,20 @@ body {
   .eve-dropdown .eve-input {
     border: 0;
     border-bottom: 1px solid #cfd8dc; }
-  .eve-dropdown .eve-list {
+  .eve-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     max-height: 20rem;
     overflow: auto; }
-    .eve-dropdown .eve-list .eve-item {
+    .eve-dropdown ul li {
       cursor: pointer;
       height: 2.25rem;
-      padding: 0 1rem;
-      margin: 0; }
-      .eve-dropdown .eve-list .eve-item:hover, .eve-dropdown .eve-list .eve-item.is-active {
+      line-height: 2.25rem;
+      padding: 0 1rem; }
+      .eve-dropdown ul li:hover, .eve-dropdown ul li.is-active {
         background: #eceff1; }
-      .eve-dropdown .eve-list .eve-item.is-disabled {
+      .eve-dropdown ul li.is-disabled {
         opacity: .5;
         pointer-events: none; }
 
@@ -951,67 +937,6 @@ body {
       border-color: #eceff1; }
   .eve-timeline:hover li::after {
     display: block; }
-
-.eve-tooltip {
-  position: relative; }
-  .eve-tooltip::after {
-    background: #000;
-    border-radius: 0.75rem;
-    color: #fff;
-    content: attr(data-tooltip);
-    font-family: inherit;
-    font-size: 0.75rem;
-    font-weight: normal;
-    height: 1.5rem;
-    max-width: 20rem;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0 0.5rem;
-    pointer-events: none;
-    position: absolute;
-    text-overflow: ellipsis;
-    text-transform: none;
-    transition: all .2s ease;
-    white-space: nowrap;
-    word-wrap: normal;
-    z-index: 2147483648;
-    display: flex;
-    align-items: center; }
-  .eve-tooltip.is-left::after {
-    bottom: 50%;
-    right: 100%;
-    -webkit-transform: translate(0.5rem, 50%);
-            transform: translate(0.5rem, 50%); }
-  .eve-tooltip.is-left:hover::after {
-    -webkit-transform: translate(-0.5rem, 50%);
-            transform: translate(-0.5rem, 50%); }
-  .eve-tooltip.is-top::after {
-    bottom: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0.5rem);
-            transform: translate(-50%, 0.5rem); }
-  .eve-tooltip.is-top:hover::after {
-    -webkit-transform: translate(-50%, -0.5rem);
-            transform: translate(-50%, -0.5rem); }
-  .eve-tooltip.is-right::after {
-    bottom: 50%;
-    left: 100%;
-    -webkit-transform: translate(-0.5rem, 50%);
-            transform: translate(-0.5rem, 50%); }
-  .eve-tooltip.is-right:hover::after {
-    -webkit-transform: translate(0.5rem, 50%);
-            transform: translate(0.5rem, 50%); }
-  .eve-tooltip.is-bottom::after {
-    left: 50%;
-    top: 100%;
-    -webkit-transform: translate(-50%, -0.5rem);
-            transform: translate(-50%, -0.5rem); }
-  .eve-tooltip.is-bottom:hover::after {
-    -webkit-transform: translate(-50%, 0.5rem);
-            transform: translate(-50%, 0.5rem); }
-  .eve-tooltip:hover::after {
-    opacity: 1;
-    transition-delay: .25s; }
 
 .eve-cursor-default {
   cursor: default !important; }
