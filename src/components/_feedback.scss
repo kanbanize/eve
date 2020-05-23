@@ -1,15 +1,17 @@
 .eve-feedback {
     padding: $eve-spacing-8 $eve-spacing-16;
+    color: $eve-color-black;
+    font-size: $eve-font-14;
 
     &.is-success {
-        background: $eve-color-green-100;
+        background: $eve-color-bright-green;
     }
 
     &.is-warning {
-        background: $eve-color-orange-100;
+        background: $eve-color-bright-orange;
     }
 
     &.is-danger {
-        background: $eve-color-red-100;
+        background: $eve-color-bright-red;
     }
 }

@@ -4,11 +4,8 @@
     display: inline-block;
     max-width: 20rem;
     min-width: 10rem;
-
-    .eve-input {
-        border: 0;
-        border-bottom: 1px solid $eve-color-dark-silver;
-    }
+    color: $eve-color-black;
+    font-size: $eve-font-14;
 
     ul {
         list-style: none;
@@ -20,8 +17,29 @@
         li {
             cursor: pointer;
             height: 2.25rem;
-            line-height: 2.25rem;
             padding: 0 $eve-spacing-16;
+            display: flex;
+            align-items: center;
+
+            .eve-checkbox,
+            .eve-radio,
+            .eve-switch,
+            .eve-priority {
+                margin-right: $eve-spacing-8;
+            }
+
+            svg {
+                width: 1.125rem;
+                height: 1.125rem;
+                fill: $eve-color-darker-silver;
+                margin-right: $eve-spacing-8;
+            }
+
+            .eve-avatar {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: $eve-spacing-8;
+            }
 
             &:hover,
             &.is-active {

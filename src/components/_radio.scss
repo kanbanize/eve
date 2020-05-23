@@ -2,7 +2,7 @@ $eve-radio-size: 1.125rem;
 
 .eve-radio {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     position: relative;
 
     input {
@@ -28,6 +28,14 @@ $eve-radio-size: 1.125rem;
                     height: 100%;
                 }
             }
+
+            &:disabled {
+                pointer-events: none;
+
+                & ~ i {
+                    opacity: .5;
+                }
+            }
         }
     }
 
@@ -40,9 +48,25 @@ $eve-radio-size: 1.125rem;
         pointer-events: none;
         width: $eve-radio-size;
     }
+}
 
-    &.is-disabled {
-        opacity: .5;
-        pointer-events: none;
+.eve-radio-control {
+    display: flex;
+    align-items: flex-start;
+    font-size: $eve-font-14;
+    word-break: break-word;
+
+    .eve-radio {
+        margin-right: $eve-spacing-8;
+    }
+}
+
+.eve-radios {
+    .eve-radio-control {
+        margin-bottom: $eve-spacing-8;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

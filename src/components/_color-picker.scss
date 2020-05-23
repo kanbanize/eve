@@ -3,8 +3,7 @@ $eve-color-picker-size: 2rem;
 .eve-color-picker {
     background: $eve-color-white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
-    display: inline-flex;
-    flex-direction: column;
+    display: inline-block;
 
     > input {
         display: none;

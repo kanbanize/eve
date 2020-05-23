@@ -4,6 +4,7 @@
     justify-content: center;
     margin: $eve-spacing-16 0;
     position: relative;
+    font-size: $eve-font-14;
 
     &::before {
         border-top: 1px solid $eve-color-dark-silver;
@@ -19,5 +20,6 @@
         content: attr(data-content);
         padding: 0 $eve-spacing-16;
         z-index: 1;
+        max-width: 90%;
     }
 }

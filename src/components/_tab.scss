@@ -16,6 +16,9 @@ $eve-tab-size: 3rem;
         text-align: center;
         text-overflow: ellipsis;
         white-space: nowrap;
+        text-transform: uppercase;
+        color: $eve-color-black;
+        font-size: $eve-font-14;
 
         &:hover {
             color: $eve-color-blue;

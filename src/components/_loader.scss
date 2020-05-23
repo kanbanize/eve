@@ -31,18 +31,7 @@ $eve-loader-size: 3rem;
         height: $eve-loader-size;
         width: $eve-loader-size;
         z-index: 2;
-    }
-
-    &[data-label] {
-        &::after {
-            content: attr(data-label);
-            display: block;
-            margin-top: $eve-spacing-8;
-            max-width: 50%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+        flex-shrink: 0;
     }
 
     @keyframes eveProgressCircle {

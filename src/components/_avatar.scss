@@ -1,16 +1,19 @@
 $eve-avatar-size: 2rem;
 
 .eve-avatar {
-    align-items: center;
     border-radius: 50%;
-    display: inline-flex;
     flex-shrink: 0;
     height: $eve-avatar-size;
+    line-height: $eve-avatar-size;
     justify-content: center;
-    vertical-align: top;
     width: $eve-avatar-size;
     background: $eve-color-bright-silver;
     font-size: $eve-font-16;
+    color: $eve-color-black;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
 
     img {
         background-position: center;
@@ -20,7 +23,6 @@ $eve-avatar-size: 2rem;
         height: inherit;
         object-fit: cover;
         object-position: center;
-        vertical-align: top;
         width: inherit;
     }
 
@@ -37,5 +39,14 @@ $eve-avatar-size: 2rem;
 
     .eve-avatar {
         margin: $eve-spacing-4;
+    }
+}
+
+.eve-profile {
+    display: flex;
+    align-items: center;
+
+    .eve-avatar {
+        margin-right: $eve-spacing-8;
     }
 }

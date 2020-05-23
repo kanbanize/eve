@@ -3,7 +3,7 @@ $eve-switch-height: 1.125rem;
 
 .eve-switch {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     position: relative;
 
     input {
@@ -20,6 +20,14 @@ $eve-switch-height: 1.125rem;
             &:checked ~ i {
                 background: $eve-color-green;
                 justify-content: flex-end;
+            }
+
+            &:disabled {
+                pointer-events: none;
+
+                & ~ i {
+                    opacity: .5;
+                }
             }
         }
     }
@@ -44,9 +52,25 @@ $eve-switch-height: 1.125rem;
             width: $eve-switch-height - .25rem;
         }
     }
+}
 
-    &.is-disabled {
-        opacity: .5;
-        pointer-events: none;
+.eve-switch-control {
+    display: flex;
+    align-items: flex-start;
+    font-size: $eve-font-14;
+    word-break: break-word;
+
+    .eve-switch {
+        margin-right: $eve-spacing-8;
+    }
+}
+
+.eve-switches {
+    .eve-switch-control {
+        margin-bottom: $eve-spacing-8;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

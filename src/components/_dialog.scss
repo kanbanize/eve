@@ -11,24 +11,16 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal;
+        font-size: $eve-font-24;
     }
 
     p {
         margin: 0;
+        font-size: $eve-font-14;
+        color: $eve-color-black;
     }
 
-    .eve-dialog-footer {
-        align-items: center;
-        display: flex;
-        justify-content: flex-end;
+    .eve-buttons {
         margin-top: $eve-spacing-16;
-
-        .eve-button {
-            margin-left: $eve-spacing-16;
-
-            &:first-child {
-                margin-left: 0;
-            }
-        }
     }
 }

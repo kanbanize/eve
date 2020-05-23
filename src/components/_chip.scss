@@ -6,8 +6,11 @@ $eve-chip-size: 2rem;
     border-radius: $eve-chip-size / 2;
     display: inline-flex;
     height: $eve-chip-size;
+    line-height: $eve-chip-size;
     padding: 0 $eve-spacing-12;
-    vertical-align: top;
+    font-size: $eve-font-14;
+    color: $eve-color-black;
+    max-width: 100%;
 
     .eve-avatar {
         font-size: $eve-font-12;
@@ -28,6 +31,7 @@ $eve-chip-size: 2rem;
         height: 1.125rem;
         margin: 0 (-$eve-spacing-4) 0 $eve-spacing-8;
         width: 1.125rem;
+        flex-shrink: 0;
 
         &:hover {
             background-color: $eve-color-silver;
@@ -47,9 +51,11 @@ $eve-chip-size: 2rem;
 
     .eve-chip {
         margin: $eve-spacing-4;
+        max-width: calc(100% - #{$eve-spacing-8});
     }
 
     .eve-button {
+        border-radius: 50%;
         width: $eve-chip-size;
         height: $eve-chip-size;
         margin: $eve-spacing-4;

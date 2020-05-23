@@ -2,8 +2,8 @@
 
 // Variables
 @import 'variables/colors';
-@import 'variables/fonts';
 @import 'variables/spacings';
+@import 'variables/fonts';
 
 // Global
 @import 'global';
@@ -22,14 +22,10 @@
 @import 'components/divider';
 @import 'components/dropdown';
 @import 'components/feedback';
-@import 'components/form';
 @import 'components/input';
-@import 'components/item';
 @import 'components/key';
-@import 'components/list';
 @import 'components/loader';
 @import 'components/navigation';
-@import 'components/placeholder';
 @import 'components/priority';
 @import 'components/radio';
 @import 'components/select';
@@ -37,7 +33,6 @@
 @import 'components/table';
 @import 'components/tab';
 @import 'components/textarea';
-@import 'components/timeline';
 
 // Utilities
 @import 'utilities/cursor';
@@ -48,3 +43,6 @@
 @import 'utilities/position';
 @import 'utilities/text';
 @import 'utilities/visibility';
+
+// TODO: Remove this later
+@import 'temp';

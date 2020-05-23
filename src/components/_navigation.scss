@@ -1,4 +1,4 @@
-$eve-tab-size: 2.25rem;
+$eve-tab-size: 3rem;
 
 .eve-navigation {
     display: flex;
@@ -10,20 +10,50 @@ $eve-tab-size: 2.25rem;
     li {
         cursor: pointer;
         height: $eve-tab-size;
-        line-height: $eve-tab-size;
         overflow: hidden;
         padding: 0 $eve-spacing-16;
         text-overflow: ellipsis;
         white-space: nowrap;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: $eve-font-14;
+        color: $eve-color-black;
+
+        svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: $eve-color-darker-silver;
+            margin-right: $eve-spacing-12;
+            flex-shrink: 0;
+        }
 
         &:hover {
             color: $eve-color-blue;
+
+            svg {
+                fill: $eve-color-blue;
+            }
         }
 
         &.is-active {
-            border-left: 1px solid $eve-color-blue;
             color: $eve-color-blue;
-            padding-left: calc(#{$eve-spacing-16} - .125rem);
+            position: relative;
+
+            svg {
+                fill: $eve-color-blue;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 1px;
+                background: $eve-color-blue;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 0;
+            }
         }
 
         &.is-disabled {

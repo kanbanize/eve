@@ -2,7 +2,7 @@ $eve-checkbox-size: 1.125rem;
 
 .eve-checkbox {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     position: relative;
 
     input {
@@ -34,6 +34,14 @@ $eve-checkbox-size: 1.125rem;
                     box-sizing: content-box; // TODO: Remove this later
                 }
             }
+
+            &:disabled {
+                pointer-events: none;
+
+                & ~ i {
+                    opacity: .5;
+                }
+            }
         }
     }
 
@@ -47,8 +55,28 @@ $eve-checkbox-size: 1.125rem;
         width: $eve-checkbox-size;
     }
 
-    &.is-disabled {
-        opacity: .5;
-        pointer-events: none;
+.eve-checkbox-control {
+    display: flex;
+    align-items: flex-start;
+    font-size: $eve-font-14;
+    word-break: break-word;
+
+    .eve-checkbox {
+        margin-right: $eve-spacing-8;
+    }
+}
+
+.eve-checkboxes {
+    .eve-checkbox-control {
+        margin-bottom: $eve-spacing-8;
+
+        // TODO: Fix this later
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
+    }
+
+    .eve-checkboxes {
+        margin-left: $eve-checkbox-size + $eve-spacing-8;
     }
 }
