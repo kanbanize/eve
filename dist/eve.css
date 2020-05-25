@@ -278,9 +278,6 @@ body {
     pointer-events: none;
     position: relative;
     width: 1.125rem; }
-  .eve-checkbox.is-disabled {
-    opacity: .5;
-    pointer-events: none; }
 
 .eve-checkbox-control {
   display: flex;

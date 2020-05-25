@@ -54,6 +54,7 @@ $eve-checkbox-size: 1.125rem;
         position: relative;
         width: $eve-checkbox-size;
     }
+}
 
 .eve-checkbox-control {
     display: flex;
@@ -69,11 +70,6 @@ $eve-checkbox-size: 1.125rem;
 .eve-checkboxes {
     .eve-checkbox-control {
         margin-bottom: $eve-spacing-8;
-
-        // TODO: Fix this later
-        // &:last-child {
-        //     margin-bottom: 0;
-        // }
     }
 
     .eve-checkboxes {
