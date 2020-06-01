@@ -1,0 +1,29 @@
+.eve-control {
+    display: flex;
+    word-break: break-word;
+    align-items: flex-start;
+
+    .eve-checkbox,
+    .eve-radio,
+    .eve-switch {
+        margin-right: $eve-spacing-8;
+    }
+}
+
+.eve-controls {
+    .eve-control {
+        margin: 0 0 $eve-spacing-8;
+    }
+
+    .eve-controls {
+        margin: 0 0 0 $eve-spacing-24;
+    }
+
+    &.is-inline {
+        display: flex;
+
+        .eve-control {
+            margin: 0 $eve-spacing-8 0 0;
+        }
+    }
+}

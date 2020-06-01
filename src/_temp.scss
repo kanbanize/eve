@@ -125,3 +125,21 @@
         }
     }
 }
+
+.eve-grid {
+    &.is-vertical-center {
+        align-items: center;
+    }
+
+    &.is-horizontal-right {
+        justify-content: flex-end;
+    }
+
+    &.is-horizontal-center {
+        justify-content: center;
+    }
+
+    &.is-horizontal-between {
+        justify-content: space-between;
+    }
+}

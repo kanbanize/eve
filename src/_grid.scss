@@ -1,12 +1,12 @@
 // sass-lint:disable no-important
 $eve-grid-cells-count: 12;
 
-.eve-row {
+.eve-grid {
     display: flex;
     flex-wrap: wrap;
     margin: -$eve-spacing-8;
 
-    .eve-column {
+    .eve-cell {
         flex: 1;
         margin: $eve-spacing-8;
         max-width: 100%;
@@ -15,7 +15,7 @@ $eve-grid-cells-count: 12;
             &.is-#{$i} {
                 $width: calc(#{percentage($i / $eve-grid-cells-count)} - #{$eve-spacing-16});
 
-                flex: 1 $width;
+                flex-basis: $width;
                 max-width: $width;
             }
         }

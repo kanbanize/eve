@@ -49,24 +49,3 @@ $eve-radio-size: 1.125rem;
         width: $eve-radio-size;
     }
 }
-
-.eve-radio-control {
-    display: flex;
-    align-items: flex-start;
-    font-size: $eve-font-14;
-    word-break: break-word;
-
-    .eve-radio {
-        margin-right: $eve-spacing-8;
-    }
-}
-
-.eve-radios {
-    .eve-radio-control {
-        margin-bottom: $eve-spacing-8;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}

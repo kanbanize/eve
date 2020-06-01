@@ -10,10 +10,7 @@ $eve-tab-size: 3rem;
     li {
         cursor: pointer;
         height: $eve-tab-size;
-        overflow: hidden;
         padding: 0 $eve-spacing-16;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         display: flex;
         align-items: center;
         text-transform: uppercase;

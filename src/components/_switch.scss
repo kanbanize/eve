@@ -53,24 +53,3 @@ $eve-switch-height: 1.125rem;
         }
     }
 }
-
-.eve-switch-control {
-    display: flex;
-    align-items: flex-start;
-    font-size: $eve-font-14;
-    word-break: break-word;
-
-    .eve-switch {
-        margin-right: $eve-spacing-8;
-    }
-}
-
-.eve-switches {
-    .eve-switch-control {
-        margin-bottom: $eve-spacing-8;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}

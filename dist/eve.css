@@ -18,53 +18,53 @@ body {
   line-height: 1.4285714285714286;
   color: var(--color-black); }
 
-.eve-row {
+.eve-grid {
   display: flex;
   flex-wrap: wrap;
   margin: -0.5rem; }
-  .eve-row .eve-column {
+  .eve-grid .eve-cell {
     flex: 1;
     margin: 0.5rem;
     max-width: 100%; }
-    .eve-row .eve-column.is-1 {
-      flex: 1 calc(8.33333% - 1rem);
+    .eve-grid .eve-cell.is-1 {
+      flex-basis: calc(8.33333% - 1rem);
       max-width: calc(8.33333% - 1rem); }
-    .eve-row .eve-column.is-2 {
-      flex: 1 calc(16.66667% - 1rem);
+    .eve-grid .eve-cell.is-2 {
+      flex-basis: calc(16.66667% - 1rem);
       max-width: calc(16.66667% - 1rem); }
-    .eve-row .eve-column.is-3 {
-      flex: 1 calc(25% - 1rem);
+    .eve-grid .eve-cell.is-3 {
+      flex-basis: calc(25% - 1rem);
       max-width: calc(25% - 1rem); }
-    .eve-row .eve-column.is-4 {
-      flex: 1 calc(33.33333% - 1rem);
+    .eve-grid .eve-cell.is-4 {
+      flex-basis: calc(33.33333% - 1rem);
       max-width: calc(33.33333% - 1rem); }
-    .eve-row .eve-column.is-5 {
-      flex: 1 calc(41.66667% - 1rem);
+    .eve-grid .eve-cell.is-5 {
+      flex-basis: calc(41.66667% - 1rem);
       max-width: calc(41.66667% - 1rem); }
-    .eve-row .eve-column.is-6 {
-      flex: 1 calc(50% - 1rem);
+    .eve-grid .eve-cell.is-6 {
+      flex-basis: calc(50% - 1rem);
       max-width: calc(50% - 1rem); }
-    .eve-row .eve-column.is-7 {
-      flex: 1 calc(58.33333% - 1rem);
+    .eve-grid .eve-cell.is-7 {
+      flex-basis: calc(58.33333% - 1rem);
       max-width: calc(58.33333% - 1rem); }
-    .eve-row .eve-column.is-8 {
-      flex: 1 calc(66.66667% - 1rem);
+    .eve-grid .eve-cell.is-8 {
+      flex-basis: calc(66.66667% - 1rem);
       max-width: calc(66.66667% - 1rem); }
-    .eve-row .eve-column.is-9 {
-      flex: 1 calc(75% - 1rem);
+    .eve-grid .eve-cell.is-9 {
+      flex-basis: calc(75% - 1rem);
       max-width: calc(75% - 1rem); }
-    .eve-row .eve-column.is-10 {
-      flex: 1 calc(83.33333% - 1rem);
+    .eve-grid .eve-cell.is-10 {
+      flex-basis: calc(83.33333% - 1rem);
       max-width: calc(83.33333% - 1rem); }
-    .eve-row .eve-column.is-11 {
-      flex: 1 calc(91.66667% - 1rem);
+    .eve-grid .eve-cell.is-11 {
+      flex-basis: calc(91.66667% - 1rem);
       max-width: calc(91.66667% - 1rem); }
-    .eve-row .eve-column.is-12 {
-      flex: 1 calc(100% - 1rem);
+    .eve-grid .eve-cell.is-12 {
+      flex-basis: calc(100% - 1rem);
       max-width: calc(100% - 1rem); }
 
 .eve-accordion {
-  border-left: 1px solid #2778d9;
+  border-left: 1px solid #cfd8dc;
   padding-left: 0.5rem;
   font-size: 0.875rem; }
   .eve-accordion > input {
@@ -106,7 +106,8 @@ body {
   vertical-align: middle;
   overflow: hidden;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  text-transform: uppercase; }
   .eve-avatar img {
     background-position: center;
     background-repeat: no-repeat;
@@ -118,6 +119,8 @@ body {
     -o-object-position: center;
        object-position: center;
     width: inherit; }
+  .eve-avatar[data-initials]::before {
+    content: attr(data-initials); }
   .eve-avatar.is-disabled {
     opacity: .5;
     pointer-events: none; }
@@ -154,7 +157,8 @@ body {
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-block; }
   .eve-button.is-outlined {
     background: transparent;
     border: 1px solid #2778d9;
@@ -279,20 +283,6 @@ body {
     position: relative;
     width: 1.125rem; }
 
-.eve-checkbox-control {
-  display: flex;
-  align-items: flex-start;
-  font-size: 0.875rem;
-  word-break: break-word; }
-  .eve-checkbox-control .eve-checkbox {
-    margin-right: 0.5rem; }
-
-.eve-checkboxes .eve-checkbox-control {
-  margin-bottom: 0.5rem; }
-
-.eve-checkboxes .eve-checkboxes {
-  margin-left: 1.625rem; }
-
 .eve-chip {
   align-items: center;
   background: #eceff1;
@@ -393,11 +383,32 @@ body {
           border: 0.125rem solid #fff;
           outline: 0.125rem solid #000; }
 
+.eve-control {
+  display: flex;
+  word-break: break-word;
+  align-items: flex-start; }
+  .eve-control .eve-checkbox,
+  .eve-control .eve-radio,
+  .eve-control .eve-switch {
+    margin-right: 0.5rem; }
+
+.eve-controls .eve-control {
+  margin: 0 0 0.5rem; }
+
+.eve-controls .eve-controls {
+  margin: 0 0 0 1.5rem; }
+
+.eve-controls.is-inline {
+  display: flex; }
+  .eve-controls.is-inline .eve-control {
+    margin: 0 0.5rem 0 0; }
+
 .eve-dialog {
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  width: 25rem; }
+  width: 25rem;
+  z-index: 2147483648; }
   .eve-dialog h2 {
     color: #2778d9;
     margin: 0 0 1rem;
@@ -441,7 +452,8 @@ body {
   max-width: 20rem;
   min-width: 10rem;
   color: #000;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  z-index: 2147483648; }
   .eve-dropdown ul {
     list-style: none;
     padding: 0;
@@ -598,10 +610,7 @@ body {
   .eve-navigation li {
     cursor: pointer;
     height: 3rem;
-    overflow: hidden;
     padding: 0 1rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -705,19 +714,6 @@ body {
     pointer-events: none;
     width: 1.125rem; }
 
-.eve-radio-control {
-  display: flex;
-  align-items: flex-start;
-  font-size: 0.875rem;
-  word-break: break-word; }
-  .eve-radio-control .eve-radio {
-    margin-right: 0.5rem; }
-
-.eve-radios .eve-radio-control {
-  margin-bottom: 0.5rem; }
-  .eve-radios .eve-radio-control:last-child {
-    margin-bottom: 0; }
-
 .eve-select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -782,19 +778,6 @@ body {
       content: '';
       height: 100%;
       width: 0.875rem; }
-
-.eve-switch-control {
-  display: flex;
-  align-items: flex-start;
-  font-size: 0.875rem;
-  word-break: break-word; }
-  .eve-switch-control .eve-switch {
-    margin-right: 0.5rem; }
-
-.eve-switches .eve-switch-control {
-  margin-bottom: 0.5rem; }
-  .eve-switches .eve-switch-control:last-child {
-    margin-bottom: 0; }
 
 .eve-table {
   background: #fff;
@@ -1143,3 +1126,15 @@ body {
 
 .eve-tiles .eve-tile:not(:last-child) {
   margin-bottom: 0.5rem; }
+
+.eve-grid.is-vertical-center {
+  align-items: center; }
+
+.eve-grid.is-horizontal-right {
+  justify-content: flex-end; }
+
+.eve-grid.is-horizontal-center {
+  justify-content: center; }
+
+.eve-grid.is-horizontal-between {
+  justify-content: space-between; }

@@ -17,6 +17,7 @@ $eve-button-size: 2.25rem;
     user-select: none;
     white-space: nowrap;
     text-transform: uppercase;
+    display: inline-block;
 
     &.is-outlined {
         background: transparent;

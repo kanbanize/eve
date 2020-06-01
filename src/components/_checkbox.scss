@@ -55,24 +55,3 @@ $eve-checkbox-size: 1.125rem;
         width: $eve-checkbox-size;
     }
 }
-
-.eve-checkbox-control {
-    display: flex;
-    align-items: flex-start;
-    font-size: $eve-font-14;
-    word-break: break-word;
-
-    .eve-checkbox {
-        margin-right: $eve-spacing-8;
-    }
-}
-
-.eve-checkboxes {
-    .eve-checkbox-control {
-        margin-bottom: $eve-spacing-8;
-    }
-
-    .eve-checkboxes {
-        margin-left: $eve-checkbox-size + $eve-spacing-8;
-    }
-}
