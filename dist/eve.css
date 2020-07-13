@@ -4,12 +4,6 @@
   box-sizing: border-box; }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
   font-size: 16px; }
 
 body {
@@ -477,8 +471,10 @@ body {
         fill: #b0bec5;
         margin-right: 0.5rem; }
       .eve-dropdown ul li .eve-avatar {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        font-size: .875rem;
         margin-right: 0.5rem; }
       .eve-dropdown ul li:hover, .eve-dropdown ul li.is-active {
         background: #eceff1; }
