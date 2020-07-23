@@ -15,9 +15,12 @@ $eve-chip-size: 2rem;
     .eve-avatar {
         font-size: $eve-font-12;
         height: 1.5rem;
+        line-height: 1.5rem;
         margin-left: -$eve-spacing-8;
         margin-right: $eve-spacing-8;
         width: 1.5rem;
+        background: $eve-color-blue;
+        color: $eve-color-white;
     }
 
     i {
