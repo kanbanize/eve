@@ -63,6 +63,8 @@ body {
   font-size: 0.875rem; }
   .eve-accordion > input {
     display: none; }
+    .eve-accordion > input:checked ~ .eve-accordion-header {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232778d9'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E"); }
     .eve-accordion > input:checked ~ .eve-accordion-content {
       display: block; }
   .eve-accordion .eve-accordion-header {
@@ -73,11 +75,15 @@ body {
     display: flex;
     height: 2rem;
     overflow: hidden;
-    padding: 0 1rem;
+    padding: 0 1rem 0 2rem;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232778d9'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E");
+    background-position: left 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.125rem; }
   .eve-accordion .eve-accordion-content {
     display: none;
     padding: 0.5rem 1rem; }
