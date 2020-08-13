@@ -1156,6 +1156,7 @@ body {
     justify-content: center;
     border: 1px solid #cfd8dc;
     height: 2.25rem;
+    min-width: 2.25rem;
     line-height: 2.25rem;
     padding: 0 0.5rem; }
   .eve-form-group .eve-form-addon,
