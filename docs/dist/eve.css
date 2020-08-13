@@ -303,7 +303,8 @@ body {
     margin-right: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    flex-shrink: 0; }
   .eve-chip .eve-chip-icon {
     display: flex;
     align-items: center;
@@ -369,6 +370,17 @@ body {
     width: 2rem;
     height: 2rem;
     margin: 0.25rem; }
+  .eve-chips.is-autocomplete {
+    border: 1px solid #cfd8dc;
+    margin: 0;
+    padding: 0.25rem; }
+    .eve-chips.is-autocomplete .eve-input {
+      flex: 1;
+      border: 0;
+      padding: 0;
+      height: 2rem;
+      margin: 0.25rem;
+      min-width: 8rem; }
 
 .eve-color-picker {
   background: #fff;
@@ -1133,6 +1145,22 @@ body {
     margin: 0 1rem 0 0; }
     .eve-form-field.is-inline .eve-form-label {
       margin: 0 .5rem 0 0; }
+
+.eve-form-group {
+  display: flex;
+  margin-left: 1px; }
+  .eve-form-group .eve-form-addon {
+    background: #eceff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cfd8dc;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0 0.5rem; }
+  .eve-form-group .eve-form-addon,
+  .eve-form-group .eve-input {
+    margin-left: -1px; }
 
 .eve-accordion .eve-accordion-header .eve-accordion-header-icon {
   align-items: center;

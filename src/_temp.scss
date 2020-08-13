@@ -64,6 +64,27 @@
     }
 }
 
+.eve-form-group {
+    display: flex;
+    margin-left: 1px;
+
+    .eve-form-addon {
+        background: $eve-color-bright-silver;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $eve-color-dark-silver;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        padding: 0 $eve-spacing-8;
+    }
+
+    .eve-form-addon,
+    .eve-input {
+        margin-left: -1px;
+    }
+}
+
 .eve-accordion {
     .eve-accordion-header {
         .eve-accordion-header-icon {

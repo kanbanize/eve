@@ -20,6 +20,7 @@ $eve-chip-size: 2rem;
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 50%;
+        flex-shrink: 0;
     }
 
     .eve-chip-icon {
@@ -122,5 +123,20 @@ $eve-chip-size: 2rem;
         width: $eve-chip-size;
         height: $eve-chip-size;
         margin: $eve-spacing-4;
+    }
+
+    &.is-autocomplete {
+        border: 1px solid $eve-color-dark-silver;
+        margin: 0;
+        padding: $eve-spacing-4;
+
+        .eve-input {
+            flex: 1;
+            border: 0;
+            padding: 0;
+            height: 2rem;
+            margin: $eve-spacing-4;
+            min-width: 8rem;
+        }
     }
 }
