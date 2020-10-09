@@ -1,0 +1,15 @@
+.eve-placeholder {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed $eve-color-blue;
+    color: $eve-color-blue;
+    font-size: $eve-font-14;
+    background: rgba(6, 125, 183, 0.05);
+
+    &.is-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
