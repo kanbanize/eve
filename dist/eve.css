@@ -634,7 +634,8 @@ body {
     .eve-list li.is-header {
       pointer-events: none;
       color: #2778d9;
-      font-weight: bold; }
+      font-weight: bold;
+      padding: 0; }
     .eve-list li:hover, .eve-list li.is-active {
       background: #eceff1; }
     .eve-list li.is-disabled {
