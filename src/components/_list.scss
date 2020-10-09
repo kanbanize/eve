@@ -1,0 +1,50 @@
+.eve-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        cursor: pointer;
+        height: 2.25rem;
+        padding: 0 $eve-spacing-16;
+        display: flex;
+        align-items: center;
+
+        .eve-checkbox,
+        .eve-radio,
+        .eve-switch {
+            margin-right: $eve-spacing-8;
+        }
+
+        svg {
+            width: 1.125rem;
+            height: 1.125rem;
+            fill: $eve-color-darker-silver;
+            margin-right: $eve-spacing-8;
+        }
+
+        .eve-avatar {
+            width: 1.75rem;
+            height: 1.75rem;
+            line-height: 1.75rem;
+            font-size: .875rem;
+            margin-right: $eve-spacing-8;
+        }
+
+        &.is-header {
+            pointer-events: none;
+            color: $eve-color-blue;
+            font-weight: bold;
+        }
+
+        &:hover,
+        &.is-active {
+            background: $eve-color-bright-silver;
+        }
+
+        &.is-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+    }
+}

@@ -78,6 +78,8 @@
         min-width: 2.25rem;
         line-height: 2.25rem;
         padding: 0 $eve-spacing-8;
+        flex-shrink: 0;
+        max-width: 30%;
     }
 
     .eve-form-addon,
