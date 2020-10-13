@@ -1,0 +1,72 @@
+.eve-attachment {
+    display: flex;
+    height: 2.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background: $eve-color-bright-silver;
+
+        .eve-attachment-actions {
+            display: flex;
+        }
+    }
+
+    .eve-attachment-thumbnail {
+        background: $eve-color-bright-silver;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        flex-shrink: 0;
+        width: 3rem;
+
+        svg {
+            fill: $eve-color-blue;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: $eve-font-14;
+        }
+    }
+
+    .eve-attachment-name {
+        display: flex;
+        align-items: center;
+        padding: 0 $eve-spacing-16;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .eve-attachment-actions {
+        display: none;
+        align-items: center;
+
+        .eve-attachment-action {
+            display: flex;
+            margin-right: $eve-spacing-8;
+
+            svg {
+                fill: $eve-color-darker-silver;
+                width: 1.125rem;
+                height: 1.125rem;
+
+                &:hover {
+                    fill: $eve-color-silver;
+                }
+            }
+
+            &:last-child {
+                margin-right: $eve-spacing-12;
+            }
+        }
+    }
+}
+
+.eve-attachments {
+    .eve-attachment {
+        margin-bottom: $eve-spacing-8;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

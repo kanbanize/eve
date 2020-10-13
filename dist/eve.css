@@ -93,6 +93,53 @@ body {
   .eve-accordions .eve-accordion:last-child {
     margin-bottom: 0; }
 
+.eve-attachment {
+  display: flex;
+  height: 2.5rem;
+  cursor: pointer; }
+  .eve-attachment:hover {
+    background: #eceff1; }
+    .eve-attachment:hover .eve-attachment-actions {
+      display: flex; }
+  .eve-attachment .eve-attachment-thumbnail {
+    background: #eceff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    flex-shrink: 0;
+    width: 3rem; }
+    .eve-attachment .eve-attachment-thumbnail svg {
+      fill: #2778d9;
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 0.875rem; }
+  .eve-attachment .eve-attachment-name {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    flex: 1;
+    overflow: hidden; }
+  .eve-attachment .eve-attachment-actions {
+    display: none;
+    align-items: center; }
+    .eve-attachment .eve-attachment-actions .eve-attachment-action {
+      display: flex;
+      margin-right: 0.5rem; }
+      .eve-attachment .eve-attachment-actions .eve-attachment-action svg {
+        fill: #b0bec5;
+        width: 1.125rem;
+        height: 1.125rem; }
+        .eve-attachment .eve-attachment-actions .eve-attachment-action svg:hover {
+          fill: #607d8b; }
+      .eve-attachment .eve-attachment-actions .eve-attachment-action:last-child {
+        margin-right: 0.75rem; }
+
+.eve-attachments .eve-attachment {
+  margin-bottom: 0.5rem; }
+  .eve-attachments .eve-attachment:last-child {
+    margin-bottom: 0; }
+
 .eve-avatar {
   border-radius: 50%;
   flex-shrink: 0;
@@ -633,7 +680,6 @@ body {
       margin-right: 0.5rem; }
     .eve-list li.is-header {
       pointer-events: none;
-      color: #2778d9;
       font-weight: bold;
       padding: 0; }
     .eve-list li:hover, .eve-list li.is-active {
