@@ -75,12 +75,6 @@ body {
             color: #333;
         }
 
-        .navigation-list {
-            &:not(:last-child) {
-                margin-bottom: 1rem;
-            }
-        }
-
         .navigation-list-item {
             padding-left: 4rem;
             cursor: pointer;
