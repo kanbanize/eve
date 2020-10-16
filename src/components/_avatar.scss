@@ -10,10 +10,10 @@ $eve-avatar-size: 2rem;
     font-size: $eve-font-16;
     color: $eve-color-black;
     vertical-align: middle;
-    overflow: hidden;
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
+    position: relative;
 
     img {
         background-position: center;
@@ -38,6 +38,46 @@ $eve-avatar-size: 2rem;
         opacity: .5;
         pointer-events: none;
     }
+
+    .eve-avatar-presence {
+        width: .875rem;
+        height: .875rem;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -.125rem;
+        right: -.125rem;
+        border: .125rem solid $eve-color-white;
+
+        &.is-online {
+            background: $eve-color-green;
+        }
+
+        &.is-busy {
+            background: $eve-color-red;
+        }
+
+        &.is-away {
+            background: $eve-color-orange;
+        }
+
+        &.is-offline {
+            background: $eve-color-darker-silver;
+        }
+
+        &.has-icon {
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                fill: $eve-color-white;
+                width: .5rem;
+                height: .5rem;
+            }
+        }
+    }
 }
 
 .eve-avatars {
@@ -48,13 +88,16 @@ $eve-avatar-size: 2rem;
     .eve-avatar {
         margin: $eve-spacing-4;
     }
-}
 
-.eve-profile {
-    display: flex;
-    align-items: center;
+    &.is-stacked {
+        flex-wrap: nowrap;
+        margin: 0;
+        overflow: hidden;
 
-    .eve-avatar {
-        margin-right: $eve-spacing-8;
+        .eve-avatar {
+            &:not(:last-child) {
+                margin-right: -$eve-spacing-16;
+            }
+        }
     }
 }
