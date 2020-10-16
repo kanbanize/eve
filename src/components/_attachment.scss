@@ -48,14 +48,16 @@
                 fill: $eve-color-darker-silver;
                 width: 1.125rem;
                 height: 1.125rem;
-
-                &:hover {
-                    fill: $eve-color-silver;
-                }
             }
 
             &:last-child {
                 margin-right: $eve-spacing-12;
+            }
+
+            &:hover {
+                svg {
+                    fill: $eve-color-silver;
+                }
             }
         }
     }
