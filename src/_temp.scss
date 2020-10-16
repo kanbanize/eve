@@ -167,3 +167,18 @@
         justify-content: space-between;
     }
 }
+
+.eve-profile {
+    display: flex;
+    align-items: center;
+
+    .eve-avatar {
+        margin-right: $eve-spacing-8;
+    }
+}
+
+.eve-button {
+    &.is-block {
+        width: 100%;
+    }
+}
