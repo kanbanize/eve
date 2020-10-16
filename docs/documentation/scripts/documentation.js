@@ -60,7 +60,9 @@
                 content.scroll(0, 0);
             } catch (ex) { }
 
-            Snippet.load();
+            if (location.href.indexOf('localhost') < 0) {
+                Snippet.load();
+            }
         }
     }
 
