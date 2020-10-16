@@ -86,7 +86,7 @@ body {
     background-size: 1.125rem; }
   .eve-accordion .eve-accordion-content {
     display: none;
-    padding: 0.5rem 1rem; }
+    padding: 0.75rem 1rem; }
 
 .eve-accordions .eve-accordion {
   margin-bottom: 0.5rem; }
@@ -130,10 +130,10 @@ body {
         fill: #b0bec5;
         width: 1.125rem;
         height: 1.125rem; }
-        .eve-attachment .eve-attachment-actions .eve-attachment-action svg:hover {
-          fill: #607d8b; }
       .eve-attachment .eve-attachment-actions .eve-attachment-action:last-child {
         margin-right: 0.75rem; }
+      .eve-attachment .eve-attachment-actions .eve-attachment-action:hover svg {
+        fill: #607d8b; }
 
 .eve-attachments .eve-attachment {
   margin-bottom: 0.5rem; }
@@ -150,10 +150,10 @@ body {
   font-size: 1rem;
   color: #000;
   vertical-align: middle;
-  overflow: hidden;
   text-align: center;
   display: inline-block;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative; }
   .eve-avatar img {
     background-position: center;
     background-repeat: no-repeat;
@@ -172,6 +172,32 @@ body {
   .eve-avatar.is-disabled {
     opacity: .5;
     pointer-events: none; }
+  .eve-avatar .eve-avatar-presence {
+    width: .875rem;
+    height: .875rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -.125rem;
+    right: -.125rem;
+    border: 0.125rem solid #fff; }
+    .eve-avatar .eve-avatar-presence.is-online {
+      background: #42af49; }
+    .eve-avatar .eve-avatar-presence.is-busy {
+      background: #af0020; }
+    .eve-avatar .eve-avatar-presence.is-away {
+      background: #f38a30; }
+    .eve-avatar .eve-avatar-presence.is-offline {
+      background: #b0bec5; }
+    .eve-avatar .eve-avatar-presence.has-icon {
+      width: 1rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .eve-avatar .eve-avatar-presence.has-icon svg {
+        fill: #fff;
+        width: .5rem;
+        height: .5rem; }
 
 .eve-avatars {
   display: flex;
@@ -179,12 +205,12 @@ body {
   margin: -0.25rem; }
   .eve-avatars .eve-avatar {
     margin: 0.25rem; }
-
-.eve-profile {
-  display: flex;
-  align-items: center; }
-  .eve-profile .eve-avatar {
-    margin-right: 0.5rem; }
+  .eve-avatars.is-stacked {
+    flex-wrap: nowrap;
+    margin: 0;
+    overflow: hidden; }
+    .eve-avatars.is-stacked .eve-avatar:not(:last-child) {
+      margin-right: -1rem; }
 
 .eve-button {
   background: #2778d9;
@@ -486,6 +512,67 @@ body {
           border: 0.125rem solid #fff;
           outline: 0.125rem solid #000; }
 
+.eve-comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 20% 0 0; }
+  .eve-comment .eve-avatar {
+    margin: 0 1rem 0 0; }
+  .eve-comment .eve-comment-content {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    background: #eceff1;
+    position: relative; }
+    .eve-comment .eve-comment-content .eve-comment-title {
+      color: #000;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center; }
+      .eve-comment .eve-comment-content .eve-comment-title .eve-comment-author {
+        font-weight: bold; }
+      .eve-comment .eve-comment-content .eve-comment-title .eve-comment-date {
+        color: #607d8b;
+        margin-left: 0.5rem; }
+    .eve-comment .eve-comment-content .eve-comment-description {
+      word-break: break-word; }
+    .eve-comment .eve-comment-content .eve-comment-actions {
+      position: absolute;
+      right: -1rem;
+      top: -1rem;
+      display: none;
+      align-items: center;
+      justify-content: center; }
+      .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action {
+        width: 2rem;
+        height: 2rem;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer; }
+        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action svg {
+          width: 1.125rem;
+          height: 1.125rem;
+          fill: #b0bec5; }
+        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action:not(:last-child) {
+          margin-right: 0.5rem; }
+        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action:hover svg {
+          fill: #607d8b; }
+  .eve-comment.is-me {
+    flex-direction: row-reverse;
+    padding: 0 0 0 20%; }
+    .eve-comment.is-me .eve-avatar {
+      margin: 0 0 0 1rem; }
+    .eve-comment.is-me .eve-comment-content {
+      background: #c9ddf5; }
+  .eve-comment:hover .eve-comment-content .eve-comment-actions {
+    display: flex; }
+
+.eve-comments .eve-comment:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
 .eve-control {
   display: flex;
   word-break: break-word;
@@ -552,7 +639,7 @@ body {
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
-  max-width: 20rem;
+  max-width: 50vw;
   min-width: 10rem;
   color: #000;
   font-size: 0.875rem;
@@ -592,7 +679,7 @@ body {
         pointer-events: none; }
 
 .eve-feedback {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   color: #000;
   font-size: 0.875rem; }
   .eve-feedback.is-success {
@@ -949,7 +1036,7 @@ body {
       border-bottom: 1px solid #cfd8dc; }
       .eve-table thead tr th {
         height: 3rem;
-        padding: 0.5rem 1rem;
+        padding: 0.75rem 1rem;
         text-align: left;
         word-break: break-word;
         font-weight: normal; }
@@ -959,7 +1046,7 @@ body {
       border-bottom: 0; }
     .eve-table tbody tr td {
       height: 3rem;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1rem;
       text-align: left;
       word-wrap: break-word; }
 
@@ -1011,7 +1098,7 @@ body {
   min-height: 2.25rem;
   min-width: 100%;
   outline: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   width: 100%;
   color: #000; }
   .eve-textarea::-webkit-input-placeholder {
@@ -1315,3 +1402,12 @@ body {
 
 .eve-grid.is-horizontal-between {
   justify-content: space-between; }
+
+.eve-profile {
+  display: flex;
+  align-items: center; }
+  .eve-profile .eve-avatar {
+    margin-right: 0.5rem; }
+
+.eve-button.is-block {
+  width: 100%; }

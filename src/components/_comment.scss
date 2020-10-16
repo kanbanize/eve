@@ -1,0 +1,102 @@
+.eve-comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20% 0 0;
+
+    .eve-avatar {
+        margin: 0 $eve-spacing-16 0 0;
+    }
+
+    .eve-comment-content {
+        font-size: $eve-font-14;
+        padding: $eve-spacing-12 $eve-spacing-16;
+        background: $eve-color-bright-silver;
+        position: relative;
+
+        .eve-comment-title {
+            color: $eve-color-black;
+            margin-bottom: $eve-spacing-4;
+            display: flex;
+            align-items: center;
+
+            .eve-comment-author {
+                font-weight: bold;
+            }
+
+            .eve-comment-date {
+                color: $eve-color-silver;
+                margin-left: $eve-spacing-8;
+            }
+        }
+
+        .eve-comment-description {
+            word-break: break-word;
+        }
+
+        .eve-comment-actions {
+            position: absolute;
+            right: -1rem;
+            top: -1rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            .eve-comment-action {
+                width: 2rem;
+                height: 2rem;
+                background: $eve-color-white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+                cursor: pointer;
+
+                svg {
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    fill: $eve-color-darker-silver;
+                }
+
+                &:not(:last-child) {
+                    margin-right: $eve-spacing-8;
+                }
+
+                &:hover {
+                    svg {
+                        fill: $eve-color-silver;
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-me {
+        flex-direction: row-reverse;
+        padding: 0 0 0 20%;
+
+        .eve-avatar {
+            margin: 0 0 0 $eve-spacing-16;
+        }
+
+        .eve-comment-content {
+            background: $eve-color-bright-blue;
+        }
+    }
+
+    &:hover {
+        .eve-comment-content {
+            .eve-comment-actions {
+                display: flex;
+            }
+        }
+    }
+}
+
+.eve-comments {
+    .eve-comment {
+        &:not(:last-child) {
+            margin-bottom: $eve-spacing-24;
+        }
+    }
+}
