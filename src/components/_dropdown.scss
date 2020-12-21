@@ -2,17 +2,21 @@
     background: $eve-color-white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-block;
-    max-width: 50vw;
-    min-width: 10rem;
+    max-width: 17.5rem;
+    min-width: 7rem;
     color: $eve-color-black;
     font-size: $eve-font-14;
     z-index: 2147483648;
+
+    .eve-input {
+        border: 0;
+    }
 
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
-        max-height: 20rem;
+        max-height: 22.5rem;
         overflow: auto;
 
         li {
@@ -22,18 +26,47 @@
             display: flex;
             align-items: center;
 
+            .eve-dropdown-item-color {
+                height: 1.5rem;
+                width: .5rem;
+            }
+
+            .eve-dropdown-item-text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                flex: 1;
+            }
+
+            .eve-dropdown-item-action {
+                width: 2.25rem;
+                height: 2.25rem;
+                align-items: center;
+                justify-content: center;
+                margin-left: $eve-spacing-8;
+                display: none;
+
+                svg {
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    fill: $eve-color-darker-silver;
+                }
+            }
+
             .eve-checkbox,
             .eve-radio,
             .eve-switch,
-            .eve-priority {
-                margin-right: $eve-spacing-8;
+            .eve-priority,
+            .eve-avatar,
+            .eve-dropdown-item-color {
+                margin-right: $eve-spacing-12;
             }
 
-            svg {
+            & > svg {
                 width: 1.125rem;
                 height: 1.125rem;
                 fill: $eve-color-darker-silver;
-                margin-right: $eve-spacing-8;
+                margin-right: $eve-spacing-12;
             }
 
             .eve-avatar {
@@ -41,12 +74,37 @@
                 height: 1.75rem;
                 line-height: 1.75rem;
                 font-size: .875rem;
-                margin-right: $eve-spacing-8;
+            }
+
+            &.is-header {
+                pointer-events: none;
+                font-weight: bold;
             }
 
             &:hover,
             &.is-active {
                 background: $eve-color-bright-silver;
+
+                &.has-action {
+                    padding-right: 0;
+
+                    .eve-dropdown-item-action {
+                        display: flex;
+                        background: $eve-color-bright-blue;
+
+                        svg {
+                            fill: $eve-color-blue;
+                        }
+
+                        &:hover {
+                            background: $eve-color-blue;
+
+                            svg {
+                                fill: $eve-color-white;
+                            }
+                        }
+                    }
+                }
             }
 
             &.is-disabled {
