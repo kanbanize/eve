@@ -3,7 +3,7 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     display: inline-block;
     max-width: 17.5rem;
-    min-width: 7rem;
+    min-width: 10rem;
     color: $eve-color-black;
     font-size: $eve-font-14;
     z-index: 2147483648;
@@ -43,8 +43,9 @@
                 height: 2.25rem;
                 align-items: center;
                 justify-content: center;
-                margin-left: $eve-spacing-8;
+                margin-left: $eve-spacing-16;
                 display: none;
+                cursor: pointer;
 
                 svg {
                     width: 1.125rem;
@@ -107,9 +108,30 @@
                 }
             }
 
+            &.has-visible-action {
+                padding-right: 0;
+
+                .eve-dropdown-item-action {
+                    display: flex;
+                }
+            }
+
             &.is-disabled {
-                opacity: .5;
-                pointer-events: none;
+                &:not(.has-action) {
+                    opacity: .5;
+                    pointer-events: none;
+                }
+
+                &.has-action {
+                    cursor: default;
+
+                    .eve-avatar,
+                    .eve-dropdown-item-color,
+                    .eve-dropdown-item-text {
+                        opacity: .5;
+                        pointer-events: none;
+                    }
+                }
             }
         }
     }
