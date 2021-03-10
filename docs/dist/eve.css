@@ -594,7 +594,7 @@ body {
     margin: 0 0.5rem 0 0; }
 
 .eve-date-picker {
-  padding: 0.75rem;
+  padding: 0.5rem;
   display: inline-block;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   z-index: 2147483648;
@@ -606,18 +606,20 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 0.25rem; }
+    .eve-date-picker .eve-date-picker-header .eve-date-picker-period {
+      font-weight: bold; }
     .eve-date-picker .eve-date-picker-header .eve-date-picker-button {
       width: 2.25rem;
       height: 2.25rem;
-      background-size: 1.125rem;
+      background-size: 1.25rem;
       background-position: center;
       background-repeat: no-repeat;
       cursor: pointer;
       border-radius: 50%; }
       .eve-date-picker .eve-date-picker-header .eve-date-picker-button.is-prev {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/%3E%3C/svg%3E"); }
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/%3E%3C/svg%3E"); }
       .eve-date-picker .eve-date-picker-header .eve-date-picker-button.is-next {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0bec5'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3C/svg%3E"); }
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3C/svg%3E"); }
       .eve-date-picker .eve-date-picker-header .eve-date-picker-button:hover {
         background-color: #eceff1; }
   .eve-date-picker table {
