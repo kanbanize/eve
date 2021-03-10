@@ -1,0 +1,81 @@
+.eve-date-picker {
+    padding: $eve-spacing-12;
+    display: inline-block;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
+    z-index: 2147483648;
+    color: $eve-color-black;
+    background: $eve-color-white;
+    font-size: $eve-font-14;
+
+    .eve-date-picker-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $eve-spacing-4;
+
+        .eve-date-picker-button {
+            width: 2.25rem;
+            height: 2.25rem;
+            background-size: 1.125rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            border-radius: 50%;
+
+            &.is-prev {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z'/%3E%3C/svg%3E");
+            }
+
+            &.is-next {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3C/svg%3E");
+            }
+
+            &:hover {
+                background-color: $eve-color-bright-silver;
+            }
+        }
+    }
+
+    table {
+        border-spacing: $eve-spacing-4;
+        border-collapse: separate;
+
+        th,
+        td {
+            width: 2.25rem;
+            height: 2.25rem;
+            text-align: center;
+            font-size: $eve-font-12;
+        }
+
+        th {
+            color: $eve-color-silver;
+            font-weight: normal;
+        }
+
+        td {
+            cursor: pointer;
+            border-radius: 50%;
+
+            &.is-current {
+                background: $eve-color-bright-silver;
+            }
+
+            &.is-selected {
+                background: $eve-color-blue;
+                color: $eve-color-white;
+            }
+
+            &.is-inactive {
+                pointer-events: none;
+            }
+
+            &:hover {
+                &:not(.is-selected) {
+                    background: $eve-color-bright-blue;
+                    color: $eve-color-black;
+                }
+            }
+        }
+    }
+}
