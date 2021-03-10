@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 $eve-spacing-4;
+        padding: $eve-spacing-4;
 
         .eve-date-picker-period {
             font-weight: bold;
