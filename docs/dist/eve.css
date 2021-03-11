@@ -632,24 +632,25 @@ body {
       text-align: center;
       font-size: 0.75rem; }
     .eve-date-picker table th {
-      color: #607d8b;
-      font-weight: normal; }
+      font-weight: bold; }
     .eve-date-picker table td {
       cursor: pointer;
       border-radius: 50%; }
       .eve-date-picker table td.is-current {
-        background: #eceff1; }
+        border: 1px solid #000; }
       .eve-date-picker table td.is-selected {
         background: #2666be;
-        color: #fff; }
+        color: #fff;
+        border: 0; }
       .eve-date-picker table td.is-inactive {
         pointer-events: none; }
       .eve-date-picker table td.is-week {
-        color: #607d8b;
-        pointer-events: none; }
+        pointer-events: none;
+        font-weight: bold; }
       .eve-date-picker table td:hover:not(.is-selected) {
-        background: #c9ddf5;
-        color: #000; }
+        background: #eceff1;
+        color: #000;
+        border: 0; }
 
 .eve-dialog {
   background: #fff;

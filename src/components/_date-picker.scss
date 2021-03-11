@@ -53,8 +53,7 @@
         }
 
         th {
-            color: $eve-color-silver;
-            font-weight: normal;
+            font-weight: bold;
         }
 
         td {
@@ -62,12 +61,13 @@
             border-radius: 50%;
 
             &.is-current {
-                background: $eve-color-bright-silver;
+                border: 1px solid $eve-color-black;
             }
 
             &.is-selected {
                 background: $eve-color-blue;
                 color: $eve-color-white;
+                border: 0;
             }
 
             &.is-inactive {
@@ -75,14 +75,15 @@
             }
 
             &.is-week {
-                color: $eve-color-silver;
                 pointer-events: none;
+                font-weight: bold;
             }
 
             &:hover {
                 &:not(.is-selected) {
-                    background: $eve-color-bright-blue;
+                    background: $eve-color-bright-silver;
                     color: $eve-color-black;
+                    border: 0;
                 }
             }
         }
