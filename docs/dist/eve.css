@@ -637,20 +637,18 @@ body {
       cursor: pointer;
       border-radius: 50%; }
       .eve-date-picker table td.is-current {
-        border: 1px solid #000; }
+        background: #eceff1; }
       .eve-date-picker table td.is-selected {
         background: #2666be;
-        color: #fff;
-        border: 0; }
+        color: #fff; }
       .eve-date-picker table td.is-inactive {
         pointer-events: none; }
       .eve-date-picker table td.is-week {
         pointer-events: none;
         font-weight: bold; }
       .eve-date-picker table td:hover:not(.is-selected) {
-        background: #eceff1;
-        color: #000;
-        border: 0; }
+        background: #c9ddf5;
+        color: #000; }
 
 .eve-dialog {
   background: #fff;

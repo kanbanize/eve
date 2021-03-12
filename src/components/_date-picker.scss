@@ -61,13 +61,12 @@
             border-radius: 50%;
 
             &.is-current {
-                border: 1px solid $eve-color-black;
+                background: $eve-color-bright-silver;
             }
 
             &.is-selected {
                 background: $eve-color-blue;
                 color: $eve-color-white;
-                border: 0;
             }
 
             &.is-inactive {
@@ -81,9 +80,8 @@
 
             &:hover {
                 &:not(.is-selected) {
-                    background: $eve-color-bright-silver;
+                    background: $eve-color-bright-blue;
                     color: $eve-color-black;
-                    border: 0;
                 }
             }
         }
