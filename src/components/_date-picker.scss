@@ -1,5 +1,5 @@
 .eve-date-picker {
-    padding: $eve-spacing-8;
+    padding: $eve-spacing-16;
     display: inline-block;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1); // sass-lint:disable-line no-color-literals
     z-index: 2147483648;
@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: $eve-spacing-4;
+        padding: 0 $eve-spacing-4;
 
         .eve-date-picker-period {
             font-weight: bold;
@@ -53,7 +53,7 @@
         }
 
         th {
-            font-weight: bold;
+            font-weight: normal;
         }
 
         td {
@@ -75,7 +75,7 @@
 
             &.is-week {
                 pointer-events: none;
-                font-weight: bold;
+                color: $eve-color-silver;
             }
 
             &:hover {

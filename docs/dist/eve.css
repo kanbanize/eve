@@ -594,7 +594,7 @@ body {
     margin: 0 0.5rem 0 0; }
 
 .eve-date-picker {
-  padding: 0.5rem;
+  padding: 1rem;
   display: inline-block;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   z-index: 2147483648;
@@ -605,7 +605,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.25rem; }
+    padding: 0 0.25rem; }
     .eve-date-picker .eve-date-picker-header .eve-date-picker-period {
       font-weight: bold; }
     .eve-date-picker .eve-date-picker-header .eve-date-picker-button {
@@ -632,7 +632,7 @@ body {
       text-align: center;
       font-size: 0.75rem; }
     .eve-date-picker table th {
-      font-weight: bold; }
+      font-weight: normal; }
     .eve-date-picker table td {
       cursor: pointer;
       border-radius: 50%; }
@@ -645,7 +645,7 @@ body {
         pointer-events: none; }
       .eve-date-picker table td.is-week {
         pointer-events: none;
-        font-weight: bold; }
+        color: #607d8b; }
       .eve-date-picker table td:hover:not(.is-selected) {
         background: #c9ddf5;
         color: #000; }
@@ -781,6 +781,12 @@ body {
         .eve-dropdown ul li.is-disabled.has-action .eve-dropdown-item-text {
           opacity: .5;
           pointer-events: none; }
+        .eve-dropdown ul li.is-disabled.has-action:not(.has-immutable-action) .eve-dropdown-item-action {
+          opacity: .5;
+          pointer-events: none;
+          background: transparent; }
+          .eve-dropdown ul li.is-disabled.has-action:not(.has-immutable-action) .eve-dropdown-item-action svg {
+            fill: #b0bec5; }
 
 .eve-feedback {
   padding: 0.75rem 1rem;
@@ -1385,6 +1391,16 @@ body {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important; }
+
+.eve-text-transfer {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
 
 .eve-visibility-visible {
   visibility: visible !important; }

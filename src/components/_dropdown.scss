@@ -131,6 +131,18 @@
                         opacity: .5;
                         pointer-events: none;
                     }
+
+                    &:not(.has-immutable-action) {
+                        .eve-dropdown-item-action {
+                            opacity: .5;
+                            pointer-events: none;
+                            background: transparent;
+
+                            svg {
+                                fill: $eve-color-darker-silver;
+                            }
+                        }
+                    }
                 }
             }
         }
