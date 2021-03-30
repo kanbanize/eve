@@ -512,67 +512,6 @@ body {
           border: 0.125rem solid #fff;
           outline: 0.125rem solid #000; }
 
-.eve-comment {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 20% 0 0; }
-  .eve-comment .eve-avatar {
-    margin: 0 1rem 0 0; }
-  .eve-comment .eve-comment-content {
-    font-size: 0.875rem;
-    padding: 0.75rem 1rem;
-    background: #eceff1;
-    position: relative; }
-    .eve-comment .eve-comment-content .eve-comment-title {
-      color: #000;
-      margin-bottom: 0.25rem;
-      display: flex;
-      align-items: center; }
-      .eve-comment .eve-comment-content .eve-comment-title .eve-comment-author {
-        font-weight: bold;
-        margin-right: 0.5rem; }
-      .eve-comment .eve-comment-content .eve-comment-title .eve-comment-date {
-        color: #607d8b; }
-    .eve-comment .eve-comment-content .eve-comment-description {
-      word-break: break-word; }
-    .eve-comment .eve-comment-content .eve-comment-actions {
-      position: absolute;
-      right: -1rem;
-      top: -1rem;
-      display: none;
-      align-items: center;
-      justify-content: center; }
-      .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action {
-        width: 2rem;
-        height: 2rem;
-        background: #fff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-        cursor: pointer; }
-        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action svg {
-          width: 1.125rem;
-          height: 1.125rem;
-          fill: #b0bec5; }
-        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action:not(:last-child) {
-          margin-right: 0.5rem; }
-        .eve-comment .eve-comment-content .eve-comment-actions .eve-comment-action:hover svg {
-          fill: #607d8b; }
-  .eve-comment.is-me {
-    flex-direction: row-reverse;
-    padding: 0 0 0 20%; }
-    .eve-comment.is-me .eve-avatar {
-      margin: 0 0 0 1rem; }
-    .eve-comment.is-me .eve-comment-content {
-      background: #c9ddf5; }
-  .eve-comment:hover .eve-comment-content .eve-comment-actions {
-    display: flex; }
-
-.eve-comments .eve-comment:not(:last-child) {
-  margin-bottom: 1.5rem; }
-
 .eve-control {
   display: flex;
   word-break: break-word;
@@ -649,26 +588,6 @@ body {
       .eve-date-picker table td:hover:not(.is-selected) {
         background: #c9ddf5;
         color: #000; }
-
-.eve-dialog {
-  background: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  width: 25rem;
-  z-index: 2147483648; }
-  .eve-dialog h2 {
-    color: #2666be;
-    margin: 0 0 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 1.5rem; }
-  .eve-dialog p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: #000; }
-  .eve-dialog .eve-buttons {
-    margin-top: 1rem; }
 
 .eve-divider {
   align-items: center;
@@ -849,41 +768,6 @@ body {
   padding: 0 0.5rem;
   font-size: 0.875rem;
   color: #000; }
-
-.eve-list {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .eve-list li {
-    cursor: pointer;
-    height: 2.25rem;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center; }
-    .eve-list li .eve-checkbox,
-    .eve-list li .eve-radio,
-    .eve-list li .eve-switch {
-      margin-right: 0.5rem; }
-    .eve-list li svg {
-      width: 1.125rem;
-      height: 1.125rem;
-      fill: #b0bec5;
-      margin-right: 0.5rem; }
-    .eve-list li .eve-avatar {
-      width: 1.75rem;
-      height: 1.75rem;
-      line-height: 1.75rem;
-      font-size: .875rem;
-      margin-right: 0.5rem; }
-    .eve-list li.is-header {
-      pointer-events: none;
-      font-weight: bold;
-      padding: 0; }
-    .eve-list li:hover, .eve-list li.is-active {
-      background: #eceff1; }
-    .eve-list li.is-disabled {
-      opacity: .5;
-      pointer-events: none; }
 
 .eve-loader {
   align-items: center;
@@ -1122,7 +1006,7 @@ body {
     flex-shrink: 0;
     height: 1.125rem;
     justify-content: flex-start;
-    padding: 0.125rem;
+    padding: .125rem;
     pointer-events: none;
     width: 2.25rem; }
     .eve-switch i::after {
