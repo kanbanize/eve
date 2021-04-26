@@ -6,6 +6,16 @@ $eve-radio-size: 1.125rem;
     position: relative;
     vertical-align: middle;
 
+    i {
+        background: $eve-color-white;
+        border: .125rem solid $eve-color-darker-silver;
+        border-radius: 50%;
+        flex-shrink: 0;
+        height: $eve-radio-size;
+        pointer-events: none;
+        width: $eve-radio-size;
+    }
+
     input {
         &[type='radio'] {
             cursor: pointer;
@@ -38,15 +48,5 @@ $eve-radio-size: 1.125rem;
                 }
             }
         }
-    }
-
-    i {
-        background: $eve-color-white;
-        border: .125rem solid $eve-color-darker-silver;
-        border-radius: 50%;
-        flex-shrink: 0;
-        height: $eve-radio-size;
-        pointer-events: none;
-        width: $eve-radio-size;
     }
 }

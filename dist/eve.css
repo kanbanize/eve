@@ -212,11 +212,6 @@ body {
     .eve-avatars.is-stacked .eve-avatar:not(:last-child) {
       margin-right: -1rem; }
 
-.eve-board .eve-board-section {
-  height: .25rem; }
-  .eve-board .eve-board-section.is-requested {
-    background: #fff; }
-
 .eve-button {
   background: #2666be;
   border: 0;

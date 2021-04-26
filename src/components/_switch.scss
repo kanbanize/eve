@@ -7,6 +7,27 @@ $eve-switch-height: 1.125rem;
     position: relative;
     vertical-align: middle;
 
+    i {
+        align-items: center;
+        background: $eve-color-darker-silver;
+        border-radius: $eve-switch-height / 2;
+        display: flex;
+        flex-shrink: 0;
+        height: $eve-switch-height;
+        justify-content: flex-start;
+        padding: .125rem;
+        pointer-events: none;
+        width: $eve-switch-width;
+
+        &::after {
+            background: $eve-color-white;
+            border-radius: 50%;
+            content: '';
+            height: 100%;
+            width: $eve-switch-height - .25rem;
+        }
+    }
+
     input {
         &[type='checkbox'] {
             cursor: pointer;
@@ -30,27 +51,6 @@ $eve-switch-height: 1.125rem;
                     opacity: .5;
                 }
             }
-        }
-    }
-
-    i {
-        align-items: center;
-        background: $eve-color-darker-silver;
-        border-radius: $eve-switch-height / 2;
-        display: flex;
-        flex-shrink: 0;
-        height: $eve-switch-height;
-        justify-content: flex-start;
-        padding: .125rem;
-        pointer-events: none;
-        width: $eve-switch-width;
-
-        &::after {
-            background: $eve-color-white;
-            border-radius: 50%;
-            content: '';
-            height: 100%;
-            width: $eve-switch-height - .25rem;
         }
     }
 }

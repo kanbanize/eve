@@ -182,3 +182,65 @@
         width: 100%;
     }
 }
+
+$eve-choice-switch-width: 2.25rem;
+$eve-choice-switch-height: 1.125rem;
+
+.eve-choice {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+
+    .eve-choice-label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .eve-choice-switch {
+        align-items: center;
+        display: inline-flex;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 $eve-spacing-8;
+        flex-shrink: 0;
+
+        input {
+            &[type='checkbox'] {
+                cursor: pointer;
+                height: $eve-choice-switch-height;
+                left: 0;
+                margin: 0;
+                opacity: 0;
+                padding: 0;
+                position: absolute;
+                width: $eve-choice-switch-width;
+
+                &:checked ~ i {
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        i {
+            align-items: center;
+            background: $eve-color-blue;
+            border-radius: $eve-choice-switch-height / 2;
+            display: flex;
+            flex-shrink: 0;
+            height: $eve-choice-switch-height;
+            justify-content: flex-start;
+            padding: .125rem;
+            pointer-events: none;
+            width: $eve-choice-switch-width;
+
+            &::after {
+                background: $eve-color-white;
+                border-radius: 50%;
+                content: '';
+                height: 100%;
+                width: $eve-choice-switch-height - .25rem;
+            }
+        }
+    }
+}
