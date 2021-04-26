@@ -383,12 +383,6 @@ body {
     height: 1.5rem;
     border-radius: 50%;
     flex-shrink: 0; }
-  .eve-chip .eve-chip-icon {
-    margin-left: -0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    flex-shrink: 0; }
   .eve-chip .eve-chip-action {
     display: flex;
     align-items: center;
@@ -404,7 +398,12 @@ body {
   .eve-chip .eve-chip-icon {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-left: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    flex-shrink: 0; }
     .eve-chip .eve-chip-icon svg {
       width: 1.125rem;
       height: 1.125rem;
@@ -1432,3 +1431,47 @@ body {
 
 .eve-button.is-block {
   width: 100%; }
+
+.eve-choice {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden; }
+  .eve-choice .eve-choice-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .eve-choice .eve-choice-switch {
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+    flex-shrink: 0; }
+    .eve-choice .eve-choice-switch input[type='checkbox'] {
+      cursor: pointer;
+      height: 1.125rem;
+      left: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      width: 2.25rem; }
+      .eve-choice .eve-choice-switch input[type='checkbox']:checked ~ i {
+        justify-content: flex-end; }
+    .eve-choice .eve-choice-switch i {
+      align-items: center;
+      background: #2666be;
+      border-radius: 0.5625rem;
+      display: flex;
+      flex-shrink: 0;
+      height: 1.125rem;
+      justify-content: flex-start;
+      padding: .125rem;
+      pointer-events: none;
+      width: 2.25rem; }
+      .eve-choice .eve-choice-switch i::after {
+        background: #fff;
+        border-radius: 50%;
+        content: '';
+        height: 100%;
+        width: 0.875rem; }

@@ -23,14 +23,6 @@ $eve-chip-size: 2rem;
         flex-shrink: 0;
     }
 
-    .eve-chip-icon {
-        margin-left: -$eve-spacing-8;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50%;
-        flex-shrink: 0;
-    }
-
     .eve-chip-action {
         display: flex;
         align-items: center;
@@ -53,6 +45,11 @@ $eve-chip-size: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: -$eve-spacing-8;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        flex-shrink: 0;
 
         svg {
             width: 1.125rem;
