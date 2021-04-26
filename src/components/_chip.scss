@@ -13,7 +13,7 @@ $eve-chip-size: 2rem;
     max-width: 100%;
 
     .eve-chip-color,
-    .eve-chip-icon,
+    .eve-chip-action,
     .eve-avatar {
         margin-left: -$eve-spacing-8;
         margin-right: $eve-spacing-8;
@@ -24,6 +24,14 @@ $eve-chip-size: 2rem;
     }
 
     .eve-chip-icon {
+        margin-left: -$eve-spacing-8;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .eve-chip-action {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,6 +46,18 @@ $eve-chip-size: 2rem;
 
         &:hover {
             background-color: $eve-color-silver;
+        }
+    }
+
+    .eve-chip-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 1.125rem;
+            height: 1.125rem;
+            fill: $eve-color-darker-silver;
         }
     }
 
@@ -78,7 +98,7 @@ $eve-chip-size: 2rem;
         background: $eve-color-blue;
         color: $eve-color-white;
 
-        .eve-chip-icon {
+        .eve-chip-action {
             background: $eve-color-white;
 
             svg {
