@@ -21,7 +21,7 @@ $eve-accordion-size: 2rem;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232778d9'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E");
         background-position: left $eve-spacing-8 center;
         background-repeat: no-repeat;
-        background-size: 1.125rem;
+        background-size: 1.125rem 1.125rem;
     }
 
     .eve-accordion-content {
