@@ -212,6 +212,235 @@ body {
     .eve-avatars.is-stacked .eve-avatar:not(:last-child) {
       margin-right: -1rem; }
 
+.eve-board {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0.5rem; }
+  .eve-board thead .eve-board-sections {
+    height: .25rem; }
+    .eve-board thead .eve-board-sections .eve-board-section {
+      border-radius: .25rem; }
+      .eve-board thead .eve-board-sections .eve-board-section.is-backlog {
+        background: #eceff1; }
+      .eve-board thead .eve-board-sections .eve-board-section.is-requested {
+        background: #2666be; }
+      .eve-board thead .eve-board-sections .eve-board-section.is-progress {
+        background: #f38a30; }
+      .eve-board thead .eve-board-sections .eve-board-section.is-done {
+        background: #42af49; }
+      .eve-board thead .eve-board-sections .eve-board-section.is-archive {
+        background: #7333bd; }
+  .eve-board thead .eve-board-columns .eve-board-column {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: normal;
+    height: 2rem;
+    padding: 0 1rem;
+    min-width: 10rem;
+    cursor: pointer;
+    background: #fff;
+    border-radius: .25rem;
+    overflow: hidden; }
+    .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-name {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-capacity {
+        margin-left: 0.5rem;
+        height: 1.5rem;
+        min-width: 1.5rem;
+        background-color: #eceff1;
+        border-radius: 999px;
+        padding: 0 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        flex-shrink: 0; }
+        .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-capacity .eve-board-column-size {
+          font-weight: bold; }
+        .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-capacity .eve-board-column-limit {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-capacity .eve-board-column-limit::before {
+            content: '/';
+            display: block;
+            margin: 0 0.25rem; }
+      .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-policy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5rem;
+        flex-shrink: 0; }
+        .eve-board thead .eve-board-columns .eve-board-column .eve-board-column-label .eve-board-column-policy svg {
+          width: 1.125rem;
+          height: 1.125rem;
+          fill: #000; }
+    .eve-board thead .eve-board-columns .eve-board-column.is-collapsed {
+      width: 2rem;
+      min-width: 2rem;
+      max-width: 2rem; }
+      .eve-board thead .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-name {
+        display: none; }
+      .eve-board thead .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity {
+        margin: 0; }
+        .eve-board thead .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity .eve-board-column-limit {
+          display: none; }
+    .eve-board thead .eve-board-columns .eve-board-column.is-limit-reached {
+      background: #fce2cb; }
+      .eve-board thead .eve-board-columns .eve-board-column.is-limit-reached .eve-board-column-label .eve-board-column-capacity {
+        background: #f38a30;
+        color: #fff; }
+    .eve-board thead .eve-board-columns .eve-board-column.is-limit-exceeded {
+      background: #ebbfc7; }
+      .eve-board thead .eve-board-columns .eve-board-column.is-limit-exceeded .eve-board-column-label .eve-board-column-capacity {
+        background: #af0020;
+        color: #fff; }
+  .eve-board tbody .eve-board-columns .eve-board-column {
+    background: #eceff1;
+    border-radius: .25rem;
+    overflow: hidden;
+    padding: 0.5rem;
+    vertical-align: top; }
+    .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell {
+      border-radius: .25rem;
+      overflow: hidden;
+      padding: 0 1rem;
+      background: #fff; }
+      .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem; }
+        .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label .eve-board-cell-name {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label .eve-board-cell-capacity {
+          margin-left: 0.5rem;
+          height: 1.5rem;
+          min-width: 1.5rem;
+          background-color: #eceff1;
+          border-radius: 999px;
+          padding: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.75rem;
+          flex-shrink: 0; }
+          .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label .eve-board-cell-capacity .eve-board-cell-size {
+            font-weight: bold; }
+          .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label .eve-board-cell-capacity .eve-board-cell-limit {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell .eve-board-cell-label .eve-board-cell-capacity .eve-board-cell-limit::before {
+              content: '/';
+              display: block;
+              margin: 0 0.25rem; }
+      .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell.is-limit-reached {
+        background: #fce2cb; }
+        .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell.is-limit-reached .eve-board-cell-label .eve-board-cell-capacity {
+          background: #f38a30;
+          color: #fff; }
+      .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell.is-limit-exceeded {
+        background: #ebbfc7; }
+        .eve-board tbody .eve-board-columns .eve-board-column .eve-board-cell.is-limit-exceeded .eve-board-cell-label .eve-board-cell-capacity {
+          background: #af0020;
+          color: #fff; }
+    .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      background: #fff;
+      position: relative;
+      cursor: pointer; }
+      .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        background: none;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+        -webkit-transform: rotate(90deg) translate(-50%, -50%);
+                transform: rotate(90deg) translate(-50%, -50%);
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-name {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity {
+          margin-left: 0.5rem;
+          height: 1.5rem;
+          min-width: 1.5rem;
+          background-color: #eceff1;
+          border-radius: 999px;
+          padding: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.75rem;
+          flex-shrink: 0; }
+          .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity .eve-board-column-size {
+            font-weight: bold; }
+          .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity .eve-board-column-limit {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed .eve-board-column-label .eve-board-column-capacity .eve-board-column-limit::before {
+              content: '/';
+              display: block;
+              margin: 0 0.25rem; }
+      .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed.is-limit-reached {
+        background: #fce2cb; }
+        .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed.is-limit-reached .eve-board-column-label .eve-board-column-capacity {
+          background: #f38a30;
+          color: #fff; }
+      .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed.is-limit-exceeded {
+        background: #ebbfc7; }
+        .eve-board tbody .eve-board-columns .eve-board-column.is-collapsed.is-limit-exceeded .eve-board-column-label .eve-board-column-capacity {
+          background: #af0020;
+          color: #fff; }
+  .eve-board tbody .eve-board-columns.is-collapsed {
+    display: none; }
+  .eve-board tbody .eve-board-lane {
+    height: 2rem;
+    cursor: pointer; }
+    .eve-board tbody .eve-board-lane td {
+      border-radius: .25rem; }
+      .eve-board tbody .eve-board-lane td .eve-board-lane-label {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .eve-board tbody .eve-board-lane td .eve-board-lane-label .eve-board-lane-name {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .eve-board tbody .eve-board-lane td .eve-board-lane-label .eve-board-lane-capacity,
+        .eve-board tbody .eve-board-lane td .eve-board-lane-label .eve-board-lane-summary {
+          margin-left: 0.5rem;
+          height: 1.5rem;
+          min-width: 1.5rem;
+          background-color: #eceff1;
+          border-radius: 999px;
+          padding: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          flex-shrink: 0; }
+    .eve-board tbody .eve-board-lane.is-collapsed td .eve-board-lane-label .eve-board-lane-capacity {
+      display: none; }
+    .eve-board tbody .eve-board-lane.is-collapsed td .eve-board-lane-label .eve-board-lane-summary {
+      display: flex; }
+
 .eve-button {
   background: #2666be;
   border: 0;

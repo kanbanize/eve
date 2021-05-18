@@ -1,0 +1,272 @@
+<div class="component-name">Board</div>
+<div class="component-content">
+    <div class="component-example" style="height: 200vh;">
+        <table class="eve-board">
+            <thead>
+                <tr class="eve-board-sections">
+                    <th class="eve-board-section is-backlog"></th>
+                    <th class="eve-board-section is-requested"></th>
+                    <th colspan="2" class="eve-board-section is-progress"></th>
+                    <th class="eve-board-section is-done"></th>
+                    <th class="eve-board-section is-archive"></th>
+                </tr>
+                <tr class="eve-board-columns">
+                    <th rowspan="2" class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">10</div>
+                                <div class="eve-board-column-limit">10</div>
+                            </div>
+                        </div>
+                    </th>
+                    <th rowspan="2" class="eve-board-column is-limit-reached">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Requested</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">12</div>
+                                <div class="eve-board-column-limit">12</div>
+                            </div>
+                        </div>
+                    </th>
+                    <th colspan="2" class="eve-board-column is-limit-exceeded">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-policy">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+                                </svg>
+                            </div>
+                            <div class="eve-board-column-name">In progress</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">7</div>
+                                <div class="eve-board-column-limit">3</div>
+                            </div>
+                        </div>
+                    </th>
+                    <th rowspan="2" class="eve-board-column">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Done</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">56</div>
+                            </div>
+                        </div>
+                    </th>
+                    <th rowspan="2" class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">93</div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="eve-board-columns">
+                    <th class="eve-board-column">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-policy">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+                                </svg>
+                            </div>
+                            <div class="eve-board-column-name">Coding</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">2</div>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="eve-board-column">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Testing</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">2</div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="eve-board-lane">
+                    <td colspan="6" style="background: #000; color: #fff;">
+                        <div class="eve-board-lane-label">
+                            <div class="eve-board-lane-name">Expedite</div>
+                            <div class="eve-board-lane-capacity">
+                                4 in progress
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-columns">
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">63</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-lane">
+                    <td colspan="6" style="background: #af0020; color: #fff;">
+                        <div class="eve-board-lane-label">
+                            <div class="eve-board-lane-name">Customer issues</div>
+                            <div class="eve-board-lane-capacity">
+                                2 in progress
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-columns">
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td colspan="2" class="eve-board-column">
+                        <div class="eve-board-cell">
+                            <div class="eve-board-cell-label">
+                                <div class="eve-board-cell-name">Coding</div>
+                                <div class="eve-board-cell-capacity">
+                                    <div class="eve-board-cell-size">2</div>
+                                    <div class="eve-board-cell-limit">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">4</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-lane">
+                    <td colspan="6" style="background: #f38a30; color: #fff;">
+                        <div class="eve-board-lane-label">
+                            <div class="eve-board-lane-name">Bugs</div>
+                            <div class="eve-board-lane-capacity">
+                                3 in progress
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-columns">
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td colspan="2" class="eve-board-column">
+                        <div class="eve-board-cell is-limit-reached">
+                            <div class="eve-board-cell-label">
+                                <div class="eve-board-cell-name">Coding</div>
+                                <div class="eve-board-cell-capacity">
+                                    <div class="eve-board-cell-size">3</div>
+                                    <div class="eve-board-cell-limit">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">4</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-lane is-collapsed">
+                    <td colspan="6" style="background: #7333bd; color: #fff;">
+                        <div class="eve-board-lane-label">
+                            <div class="eve-board-lane-name">Customer business features</div>
+                            <div class="eve-board-lane-capacity">
+                                3 in progress
+                            </div>
+                            <div class="eve-board-lane-summary">1 requested, 4 in progress, 0 done</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-columns is-collapsed">
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">4</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-lane">
+                    <td colspan="6" style="background: #42af49; color: #fff;">
+                        <div class="eve-board-lane-label">
+                            <div class="eve-board-lane-name">Technical features</div>
+                            <div class="eve-board-lane-capacity">
+                                3 in progress
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="eve-board-columns">
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Backlog</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">3</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column"></td>
+                    <td class="eve-board-column is-collapsed">
+                        <div class="eve-board-column-label">
+                            <div class="eve-board-column-name">Ready to archive</div>
+                            <div class="eve-board-column-capacity">
+                                <div class="eve-board-column-size">4</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
