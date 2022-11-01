@@ -38,7 +38,7 @@
     "main": "dist/eve.min.css",
     "devDependencies": {
         "autoprefixer": "^8.6.5",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-if": "^2.0.2",
         "gulp-plumber": "^1.2.1",
